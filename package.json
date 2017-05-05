@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "node-fetch": "^1.6.3",
+    "octokat": "^0.7.0"
+  }
+}
