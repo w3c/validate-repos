@@ -47,7 +47,7 @@ fetch("https://w3c.github.io/spec-dashboard/groups.json")
                                         }, () => errors.invalidcontacts.push({repo: repofullname, value: username}));
                                 }
                             }));
-                        }).catch((err) => errors.now3cjson.push(repofullname)})
+                        }).catch(() => errors.now3cjson.push(repofullname))
                             .then(() => octo.repos(...repofullname.split('/'))
                                   .contents('CONTRIBUTING.md').fetch()
                                   .then(ghBlobToString)
