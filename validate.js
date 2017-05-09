@@ -30,6 +30,7 @@ fetch("https://w3c.github.io/spec-dashboard/groups.json")
                               octo.repos(...repofullname.split('/'))
                               .contents('w3c.json').fetch())
                         .then(ghBlobToString)
+                        .then(str => JSON.parse(str))
                         .then(function(w3cinfo) {
                             return Promise.all(w3cinfo.contacts.map(function(username) {
                                 if (typeof username !== "string") {
