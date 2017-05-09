@@ -20,7 +20,7 @@ fetch("https://w3c.github.io/spec-dashboard/groups.json")
                 //console.log(repos);
                 let contributing, contributingSw, license, licenseSw;
                 const octo = new Octokat({ token: config.ghToken });
-                const errors = {"now3cjson":[], "invalidcontacts":[], "nocontributing":[], "invalidcontributing": [], "nolicense": [], "invalidlicense": [], "noreadme": []};
+                const errors = {"now3cjson":[], "invalidcontacts":[], "nocontributing":[], "invalidcontributing": [], "nolicense": [], "invalidlicense": [], "noreadme": [], "contacts": new Set()};
                 Promise.all([...repos].map(repofullname => {
                     return octo.repos('w3c/licenses').contents('WG-CONTRIBUTING.md').fetch().then(ghBlobToString).then(text => contributing = text)
                         .then(() => octo.repos('w3c/licenses').contents('WG-CONTRIBUTING-SW.md').fetch().then(ghBlobToString).then(text => contributingSw = text))
@@ -39,6 +39,7 @@ fetch("https://w3c.github.io/spec-dashboard/groups.json")
                                 } else {
                                     return octo.users(username).fetch()
                                         .then(function(u) {
+                                            errors.contacts.add(u.email ? u.email : u.login);
 /*                                            if (!u.email) {
                                                 console.error("Cannot determine email of " + u.login + ", listed as contact for " + repofullname);
                                                 }*/
@@ -46,7 +47,7 @@ fetch("https://w3c.github.io/spec-dashboard/groups.json")
                                         }, () => errors.invalidcontacts.push({repo: repofullname, value: username}));
                                 }
                             }));
-                        }).catch(() => errors.now3cjson.push(repofullname))
+                        }).catch((err) => errors.now3cjson.push(repofullname)})
                             .then(() => octo.repos(...repofullname.split('/'))
                                   .contents('CONTRIBUTING.md').fetch()
                                   .then(ghBlobToString)
@@ -59,13 +60,16 @@ fetch("https://w3c.github.io/spec-dashboard/groups.json")
                               .then((repoLicense) => {
                                   if (!mdMatch(repoLicense, license) && !mdMatch(repoLicense, licenseSw)) errors.invalidlicense.push({repo: repofullname, license: repoLicense});
 
-                              }, (err) => errors.nolicense.push(repofullname)))
+                              }, () => errors.nolicense.push(repofullname)))
                         .then(() => octo.repos(...repofullname.split('/'))
                               .contents('README.md').fetch()
                               .then(ghBlobToString)
                               .then(() => {
                                   // test content
                               }, () => errors.noreadme.push(repofullname)));
-                })).then(() => console.log(JSON.stringify(errors,null,2)));
+                })).then(() => {
+                    errors.contacts = [...errors.contacts];
+                    console.log(JSON.stringify(errors,null,2));
+                });
             });
     });
