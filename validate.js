@@ -6,7 +6,7 @@ const ghBlobToString = blob => new Buffer(blob.content, 'base64').toString('utf8
 const nlToSpace = str => str.replace(/\n/g, " ").replace(/  /g, " ").trim();
 const httpToHttps = str => str.replace(/http:\/\/www.w3.org\//g, "https://www.w3.org/");
 
-const mdMatch = (md, ref) => nlToSpace(httpToHttps(md)).indexOf(nlToSpace(ref)) !== -1;
+const mdMatch = (md, ref) => nlToSpace(httpToHttps(md.toLowerCase())).indexOf(nlToSpace(ref.toLowerCase())) !== -1;
 
 fetch("https://w3c.github.io/spec-dashboard/groups.json")
     .then(r => r.json())
