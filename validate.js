@@ -20,8 +20,14 @@ fetch("https://w3c.github.io/spec-dashboard/groups.json")
                 //console.log(repos);
                 let contributing, contributingSw, license, licenseSw;
                 const octo = new Octokat({ token: config.ghToken });
-                const errors = {"now3cjson":[], "invalidcontacts":[], "nocontributing":[], "invalidcontributing": [], "nolicense": [], "invalidlicense": [], "noreadme": [], "contacts": new Set()};
-                Promise.all([...repos].map(repofullname => {
+                const errors = {"now3cjson":[], "invalidcontacts":[], "nocontributing":[], "invalidcontributing": [], "nolicense": [], "invalidlicense": [], "noreadme": [], "contacts": new Set(), "noashnazg": []};
+
+                fetch("https://labs.w3.org/hatchery/repo-manager/api/repos")
+                    .then(r => r.json())
+                    .then(repoData => {
+                        const groupsWithAshNazg = repoData.map(r => r.fullName);
+                        errors.noashnazg = [...repos].filter(r => groupsWithAshNazg.indexOf(r) === -1);
+                        return Promise.all([...repos].map(repofullname => {
                     return octo.repos('w3c/licenses').contents('WG-CONTRIBUTING.md').fetch().then(ghBlobToString).then(text => contributing = text)
                         .then(() => octo.repos('w3c/licenses').contents('WG-CONTRIBUTING-SW.md').fetch().then(ghBlobToString).then(text => contributingSw = text))
                         .then(() => octo.repos('w3c/licenses').contents('WG-LICENSE.md').fetch().then(ghBlobToString).then(text => license = text))
@@ -67,9 +73,10 @@ fetch("https://w3c.github.io/spec-dashboard/groups.json")
                               .then(() => {
                                   // test content
                               }, () => errors.noreadme.push(repofullname)));
-                })).then(() => {
-                    errors.contacts = [...errors.contacts];
-                    console.log(JSON.stringify(errors,null,2));
-                });
+                        }))
+                    }).then(() => {
+                        errors.contacts = [...errors.contacts];
+                        console.log(JSON.stringify(errors,null,2));
+                    });
             });
     });
