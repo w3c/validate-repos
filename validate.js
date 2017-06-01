@@ -12,12 +12,23 @@ fetch("https://w3c.github.io/spec-dashboard/groups.json")
     .then(r => r.json())
     .then(groupData => {
         const groupIds = Object.keys(groupData);
-        Promise.all(groupIds.map(id => fetch("https://w3c.github.io/spec-dashboard/pergroup/" + id + "-repo.json").then(r=>r.json()).catch(err => console.error("Failed to fetch data for group " + id + ": " + err))))
+        Promise.all(groupIds.map(id => fetch("https://w3c.github.io/spec-dashboard/pergroup/" + id + "-repo.json").then(r=>r.json()).then(specs => {return {groupId: id, specs};}).catch(err => console.error("Failed to fetch data for group " + id + ": " + err))))
             .then(results => {
                 const repos = new Set();
-                results.filter(x => x).forEach(groupSpecs => Object.keys(groupSpecs).forEach(spec => repos.add(groupSpecs[spec].repo.owner + '/' + groupSpecs[spec].repo.name)));
-
-                //console.log(repos);
+                const repoOwners = {};
+                results.filter(x => x && x.specs)
+                    .forEach(groupSpecs => {
+                        repoOwners[groupSpecs.groupId] = {};
+                        repoOwners[groupSpecs.groupId].name =groupData[groupSpecs.groupId].name;
+                        repoOwners[groupSpecs.groupId].repos = new Set();
+                        Object.keys(groupSpecs.specs)
+                            .forEach(spec => {
+                                 const repoFullname = groupSpecs.specs[spec].repo.owner + '/' + groupSpecs.specs[spec].repo.name;
+                                repoOwners[groupSpecs.groupId].repos.add(repoFullname);
+                                repos.add(repoFullname)
+                            });
+                        repoOwners[groupSpecs.groupId].repos = [...repoOwners[groupSpecs.groupId].repos];
+                    });
                 let contributing, contributingSw, license, licenseSw;
                 const octo = new Octokat({ token: config.ghToken });
                 const errors = {"now3cjson":[], "invalidcontacts":[], "nocontributing":[], "invalidcontributing": [], "nolicense": [], "invalidlicense": [], "noreadme": [], "contacts": new Set(), "noashnazg": []};
@@ -76,7 +87,7 @@ fetch("https://w3c.github.io/spec-dashboard/groups.json")
                         }))
                     }).then(() => {
                         errors.contacts = [...errors.contacts];
-                        console.log(JSON.stringify(errors,null,2));
+                        console.log(JSON.stringify({groups: repoOwners, errors},null,2));
                     });
             });
     });
