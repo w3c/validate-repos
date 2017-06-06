@@ -17,8 +17,7 @@ fetch("https://w3c.github.io/spec-dashboard/groups.json")
                                  .then(r=>r.json())
                                  .then(specs => {
                                      return {groupId: id,
-                                             // only keep rec track specs for our report
-                                             specs.filter(s => s.versions[0]['rec-track'])
+                                             specs
                                             }
                                      ;})
                                  .catch(err => console.error("Failed to fetch data for group " + id + ": " + err))))
@@ -31,6 +30,8 @@ fetch("https://w3c.github.io/spec-dashboard/groups.json")
                         repoOwners[groupSpecs.groupId].name =groupData[groupSpecs.groupId].name;
                         repoOwners[groupSpecs.groupId].repos = new Set();
                         Object.keys(groupSpecs.specs)
+                        // we only care about rec-track specs for this report
+                            .filter(s => groupSpecs.specs[s].recTrack)
                             .forEach(spec => {
                                  const repoFullname = groupSpecs.specs[spec].repo.owner + '/' + groupSpecs.specs[spec].repo.name;
                                 repoOwners[groupSpecs.groupId].repos.add(repoFullname);
