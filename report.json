@@ -25,15 +25,7 @@
     "32113": {
       "name": "Internationalization Working Group",
       "repos": [
-        "w3c/charmod-norm",
-        "w3c/clreq",
-        "w3c/elreq",
-        "whatwg/encoding",
-        "w3c/ilreq",
-        "w3c/bp-i18n-specdev",
-        "w3c/klreq",
-        "w3c/ltli",
-        "w3c/typography"
+        "whatwg/encoding"
       ]
     },
     "34314": {
@@ -46,9 +38,7 @@
     "35422": {
       "name": "Accessibility Guidelines Working Group",
       "repos": [
-        "w3c/coga",
-        "w3c/low-vision-a11y-tf",
-        "w3c/wcag",
+        "w3c/wcag-act",
         "w3c/wcag21"
       ]
     },
@@ -76,6 +66,7 @@
         "w3c/gyroscope",
         "w3c/html-media-capture",
         "w3c/magnetometer",
+        "w3c/orientation-sensor",
         "w3c/proximity",
         "w3c/wake-lock"
       ]
@@ -155,10 +146,6 @@
       "name": "Social Web Working Group",
       "repos": [
         "w3c/activitypub",
-        "w3c/activitystreams",
-        "dissolve/jf2",
-        "w3c/ldn",
-        "w3c/micropub",
         "tantek/post-type-discovery",
         "w3c-social/social-web-protocols",
         "w3c/websub"
@@ -192,7 +179,6 @@
     "83482": {
       "name": "Web Platform Working Group",
       "repos": [
-        "w3c/aria-in-html",
         "w3c/clipboard-apis",
         "w3c/webcomponents",
         "w3c/DOM-Parsing",
@@ -217,19 +203,22 @@
     "83726": {
       "name": "Accessible Rich Internet Applications Working Group",
       "repos": [
-        "w3c/aria",
-        "w3c/aria-practices"
+        "w3c/aria"
       ]
     },
     "83744": {
       "name": "Web Payments Working Group",
       "repos": [
-        "w3c/webpayments-methods-card",
+        "w3c/payment-handler",
         "w3c/webpayments-method-identifiers",
         "w3c/browser-payment-api",
         "w3c/webpayments-http-api",
         "w3c/webpayments-http-messages"
       ]
+    },
+    "83907": {
+      "name": "Accessible Platform Architectures Working Group",
+      "repos": []
     },
     "87227": {
       "name": "Web Authentication Working Group",
@@ -242,78 +231,48 @@
       "repos": [
         "w3c/poe"
       ]
+    },
+    "95969": {
+      "name": "Web of Things Working Group",
+      "repos": []
+    },
+    "98922": {
+      "name": "Verifiable Claims Working Group",
+      "repos": []
+    },
+    "99375": {
+      "name": "Dataset Exchange Working Group",
+      "repos": []
     }
   },
   "errors": {
     "now3cjson": [
-      "w3c/low-vision-a11y-tf",
-      "w3c/klreq",
-      "w3c/bp-i18n-specdev",
-      "w3c/ltli",
-      "whatwg/encoding",
-      "w3c/ilreq",
-      "w3c/webappsec-secure-contexts",
-      "w3c/aria-in-html",
       "webaudio/web-midi-api",
+      "w3c/presentation-api",
       "w3c/remote-playback",
+      "whatwg/encoding",
       "w3c/permissions",
-      "w3c/pointerevents",
-      "w3c/micropub",
       "w3c/webdriver",
-      "w3c/fxtf-drafts",
-      "w3c/automotive",
       "w3c/web-animations",
-      "w3c/typography",
-      "w3c/activitystreams",
-      "w3c/charmod-norm",
-      "w3c/csswg-drafts",
-      "w3c/webpayments-methods-card",
-      "w3c/elreq",
-      "webaudio/web-audio-api",
       "w3c-social/social-web-protocols",
-      "tantek/post-type-discovery",
-      "dissolve/jf2",
-      "w3c/sdw",
-      "w3c/websub",
-      "w3c/data-shapes",
-      "w3c/clreq",
       "w3c/findtext",
-      "w3c/ldn",
+      "w3c/webappsec-secure-contexts",
+      "w3c/wcag-act",
+      "w3c/automotive",
+      "w3c/pointerevents",
+      "tantek/post-type-discovery",
       "w3c/webappsec-uisecurity",
+      "w3c/sdw",
       "w3c/activitypub",
-      "w3c/presentation-api"
+      "w3c/data-shapes",
+      "webaudio/web-audio-api",
+      "w3c/fxtf-drafts",
+      "w3c/csswg-drafts",
+      "w3c/websub"
     ],
     "invalidcontacts": [
       {
-        "repo": "w3c/coga",
-        "value": {
-          "github": "michael-n-cooper",
-          "w3c": "cooper"
-        }
-      },
-      {
-        "repo": "w3c/wcag21",
-        "value": {
-          "github": "michael-n-cooper",
-          "w3c": "cooper"
-        }
-      },
-      {
-        "repo": "w3c/aria-practices",
-        "value": {
-          "github": "michael-n-cooper",
-          "w3c": "cooper"
-        }
-      },
-      {
         "repo": "w3c/aria",
-        "value": {
-          "github": "michael-n-cooper",
-          "w3c": "cooper"
-        }
-      },
-      {
-        "repo": "w3c/wcag",
         "value": {
           "github": "michael-n-cooper",
           "w3c": "cooper"
@@ -332,148 +291,87 @@
           "github": "siusin",
           "w3c": "xiaoqian"
         }
+      },
+      {
+        "repo": "w3c/wcag21",
+        "value": {
+          "github": "michael-n-cooper",
+          "w3c": "cooper"
+        }
       }
     ],
     "nocontributing": [
-      "w3c/low-vision-a11y-tf",
-      "w3c/ltli",
-      "whatwg/encoding",
-      "w3c/aria-in-html",
       "webaudio/web-midi-api",
+      "w3c/web-animations",
+      "w3c-social/social-web-protocols",
       "w3c/webappsec-secure-contexts",
+      "w3c/wcag-act",
+      "whatwg/encoding",
       "w3c/pointerevents",
       "w3c/permissions",
-      "w3c/webdriver",
-      "w3c/fxtf-drafts",
-      "w3c/web-animations",
-      "w3c/typography",
-      "w3c/activitystreams",
-      "w3c/aria-practices",
-      "w3c-social/social-web-protocols",
-      "webaudio/web-audio-api",
-      "tantek/post-type-discovery",
-      "dissolve/jf2",
-      "w3c/charmod-norm",
-      "w3c/websub",
-      "w3c/sdw",
+      "w3c/html-aam",
       "w3c/findtext",
-      "w3c/ldn",
-      "w3c/csswg-drafts",
-      "w3c/data-shapes",
+      "w3c/webdriver",
+      "tantek/post-type-discovery",
       "w3c/activitypub",
-      "w3c/html-aam"
+      "w3c/data-shapes",
+      "w3c/sdw",
+      "w3c/websub",
+      "webaudio/web-audio-api",
+      "w3c/fxtf-drafts",
+      "w3c/csswg-drafts"
     ],
     "invalidcontributing": [
-      {
-        "repo": "w3c/bp-i18n-specdev",
-        "contributing": "##Contributions\n\nContributions to this repository are intended to become part of the Internationalization Working Group documents governed by the [Software and Document License](http://www.w3.org/Consortium/Legal/copyright-software). By committing here, you agree to that licensing of your contributions.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all contributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the feature, you can remove yourself with the above syntax.\n\n\n\n##Copyright\n\nCopyright is a very important part of standardization activities. It allows the standards development organization to maintain vendor neutral control over a specification, and thus protect the consensus found within a Working Group.\n\nIn the course of the development of materials within the W3C, Task Force Participants will make contributions. Those contributions will be integrated into the jointly developed work thus creating shared copyright on the Task Force Participant's contribution. Most W3C Specifications contain a section with acknowledgement of contributions.\n\nTask Force Participants grant to the W3C a perpetual, nonexclusive, royalty-free, world-wide right and license under any Task Force Participant's copyrights on his or her contributions, to copy, publish and distribute the contribution under a license of W3C's choosing. Additionally, the Task Force Participant grants a right and license of the same scope to any derivative works prepared by the W3C and based on, or incorporating all or part of, his or her contribution and that any derivative works of this contribution prepared by the W3C shall be solely owned by the W3C. Furthermore, the Task Force Participant understands that W3C will be able to exercise all rights as a copyright owner of Task Force Participant's contribution, including enforcement against infringers without additional agreement or notice.\n\nNothing in this agreement restricts the Task Force Participant from using their individual contributions as they wish, even if those have later been amalgamated into joint works. Where W3C releases materials under a permissive license such as the W3C Software License or CC-BY, nothing in this agreement should be read to restrict the Task Force Participant from exercising the permissions granted by that license. The Task Force Participant represents that they are legally entitled to grant the above license. If their employer(s) have rights to intellectual property that the Task Force Participant creates that includes the contributions, they represent that they have received permission to make contributions on behalf of that employer or that the employer has waived such rights for the contributions to W3C.\n\n\n##Decency\n\nThe Task Force Participant will participate in the W3C Group in a decent way. Task Force Participants will refrain from defaming, harassing or otherwise offending other participants. The [Section 3.1 of the Process Document](https://www.w3.org/2015/Process-20150901/#ParticipationCriteria) applies, as does the W3C [Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n\nThe Task Force Participant will refrain from sending unsolicited commercial messages to W3C mailing-lists and other promotional activities for personal matters or for third parties. This is especially required from Task Force Participants sending messages to public W3C Groups.\n"
-      },
-      {
-        "repo": "w3c/ilreq",
-        "contributing": "## Contributions\n\nContributions to this repository are intended to become part of the Internationalization Interest Group and Internationalization Working Group documents governed by the [Software and Document License](http://www.w3.org/Consortium/Legal/copyright-software). By committing here, you agree to that licensing of your contributions.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all contributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the feature, you can remove yourself with the above syntax.\n\n\n\n## Copyright\n\nCopyright is a very important part of standardization activities. It allows the standards development organization to maintain vendor neutral control over a specification, and thus protect the consensus found within a Working Group.\n\nIn the course of the development of materials within the W3C, Task Force Participants will make contributions. Those contributions will be integrated into the jointly developed work thus creating shared copyright on the Task Force Participant's contribution. Most W3C Specifications contain a section with acknowledgement of contributions.\n\nTask Force Participants grant to the W3C a perpetual, nonexclusive, royalty-free, world-wide right and license under any Task Force Participant's copyrights on his or her contributions, to copy, publish and distribute the contribution under a license of W3C's choosing. Additionally, the Task Force Participant grants a right and license of the same scope to any derivative works prepared by the W3C and based on, or incorporating all or part of, his or her contribution and that any derivative works of this contribution prepared by the W3C shall be solely owned by the W3C. Furthermore, the Task Force Participant understands that W3C will be able to exercise all rights as a copyright owner of Task Force Participant's contribution, including enforcement against infringers without additional agreement or notice.\n\nNothing in this agreement restricts the Task Force Participant from using their individual contributions as they wish, even if those have later been amalgamated into joint works. Where W3C releases materials under a permissive license such as the W3C Software License or CC-BY, nothing in this agreement should be read to restrict the Task Force Participant from exercising the permissions granted by that license. The Task Force Participant represents that they are legally entitled to grant the above license. If their employer(s) have rights to intellectual property that the Task Force Participant creates that includes the contributions, they represent that they have received permission to make contributions on behalf of that employer or that the employer has waived such rights for the contributions to W3C.\n\n\n## Decency\n\nThe Task Force Participant will participate in the W3C Group in a decent way. Task Force Participants will refrain from defaming, harassing or otherwise offending other participants. The [Section 3.1 of the Process Document](https://www.w3.org/2015/Process-20150901/#ParticipationCriteria) applies, as does the W3C [Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n\nThe Task Force Participant will refrain from sending unsolicited commercial messages to W3C mailing-lists and other promotional activities for personal matters or for third parties. This is especially required from Task Force Participants sending messages to public W3C Groups.\n"
-      },
-      {
-        "repo": "w3c/klreq",
-        "contributing": "## Contributions\n\nContributions to this repository are intended to become part of the Internationalization Interest Group and Internationalization Working Group documents governed by the [Software and Document License](http://www.w3.org/Consortium/Legal/copyright-software). By committing here, you agree to that licensing of your contributions.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all contributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the feature, you can remove yourself with the above syntax.\n\n\n\n## Copyright\n\nCopyright is a very important part of standardization activities. It allows the standards development organization to maintain vendor neutral control over a specification, and thus protect the consensus found within a Working Group.\n\nIn the course of the development of materials within the W3C, Task Force Participants will make contributions. Those contributions will be integrated into the jointly developed work thus creating shared copyright on the Task Force Participant's contribution. Most W3C Specifications contain a section with acknowledgement of contributions.\n\nTask Force Participants grant to the W3C a perpetual, nonexclusive, royalty-free, world-wide right and license under any Task Force Participant's copyrights on his or her contributions, to copy, publish and distribute the contribution under a license of W3C's choosing. Additionally, the Task Force Participant grants a right and license of the same scope to any derivative works prepared by the W3C and based on, or incorporating all or part of, his or her contribution and that any derivative works of this contribution prepared by the W3C shall be solely owned by the W3C. Furthermore, the Task Force Participant understands that W3C will be able to exercise all rights as a copyright owner of Task Force Participant's contribution, including enforcement against infringers without additional agreement or notice.\n\nNothing in this agreement restricts the Task Force Participant from using their individual contributions as they wish, even if those have later been amalgamated into joint works. Where W3C releases materials under a permissive license such as the W3C Software License or CC-BY, nothing in this agreement should be read to restrict the Task Force Participant from exercising the permissions granted by that license. The Task Force Participant represents that they are legally entitled to grant the above license. If their employer(s) have rights to intellectual property that the Task Force Participant creates that includes the contributions, they represent that they have received permission to make contributions on behalf of that employer or that the employer has waived such rights for the contributions to W3C.\n\n\n## Decency\n\nThe Task Force Participant will participate in the W3C Group in a decent way. Task Force Participants will refrain from defaming, harassing or otherwise offending other participants. The [Section 3.1 of the Process Document](https://www.w3.org/2015/Process-20150901/#ParticipationCriteria) applies, as does the W3C [Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n\nThe Task Force Participant will refrain from sending unsolicited commercial messages to W3C mailing-lists and other promotional activities for personal matters or for third parties. This is especially required from Task Force Participants sending messages to public W3C Groups.\n"
-      },
-      {
-        "repo": "w3c/micropub",
-        "contributing": "By contributing to this repository, you agree to waive your copyright and related or neighboring rights to this work under [CC0](http://creativecommons.org/publicdomain/zero/1.0/), as well as make your contributions available under the [Open Web Foundation Agreement Version 1.0](http://www.openwebfoundation.org/legal/the-owf-1-0-agreements/owfa-1-0)."
-      },
-      {
-        "repo": "w3c/elreq",
-        "contributing": "##Contributions\n\nContributions to this repository are intended to become part of the Internationalization Interest Group and Internationalization Working Group documents governed by the [Software and Document License](http://www.w3.org/Consortium/Legal/copyright-software). By committing here, you agree to that licensing of your contributions.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all contributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the feature, you can remove yourself with the above syntax.\n\n\n\n##Copyright\n\nCopyright is a very important part of standardization activities. It allows the standards development organization to maintain vendor neutral control over a specification, and thus protect the consensus found within a Working Group.\n\nIn the course of the development of materials within the W3C, Task Force Participants will make contributions. Those contributions will be integrated into the jointly developed work thus creating shared copyright on the Task Force Participant's contribution. Most W3C Specifications contain a section with acknowledgement of contributions.\n\nTask Force Participants grant to the W3C a perpetual, nonexclusive, royalty-free, world-wide right and license under any Task Force Participant's copyrights on his or her contributions, to copy, publish and distribute the contribution under a license of W3C's choosing. Additionally, the Task Force Participant grants a right and license of the same scope to any derivative works prepared by the W3C and based on, or incorporating all or part of, his or her contribution and that any derivative works of this contribution prepared by the W3C shall be solely owned by the W3C. Furthermore, the Task Force Participant understands that W3C will be able to exercise all rights as a copyright owner of Task Force Participant's contribution, including enforcement against infringers without additional agreement or notice.\n\nNothing in this agreement restricts the Task Force Participant from using their individual contributions as they wish, even if those have later been amalgamated into joint works. Where W3C releases materials under a permissive license such as the W3C Software License or CC-BY, nothing in this agreement should be read to restrict the Task Force Participant from exercising the permissions granted by that license. The Task Force Participant represents that they are legally entitled to grant the above license. If their employer(s) have rights to intellectual property that the Task Force Participant creates that includes the contributions, they represent that they have received permission to make contributions on behalf of that employer or that the employer has waived such rights for the contributions to W3C.\n\n\n##Decency\n\nThe Task Force Participant will participate in the W3C Group in a decent way. Task Force Participants will refrain from defaming, harassing or otherwise offending other participants. The [Section 3.1 of the Process Document](https://www.w3.org/2015/Process-20150901/#ParticipationCriteria) applies, as does the W3C [Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n\nThe Task Force Participant will refrain from sending unsolicited commercial messages to W3C mailing-lists and other promotional activities for personal matters or for third parties. This is especially required from Task Force Participants sending messages to public W3C Groups.\n"
-      },
-      {
-        "repo": "w3c/clreq",
-        "contributing": "## Contributions\n\nContributions to this repository are intended to become part of the Internationalization Interest Group and Internationalization Working Group documents governed by the [Software and Document License](http://www.w3.org/Consortium/Legal/copyright-software). By committing here, you agree to that licensing of your contributions.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all contributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the feature, you can remove yourself with the above syntax.\n\n\n\n## Copyright\n\nCopyright is a very important part of standardization activities. It allows the standards development organization to maintain vendor neutral control over a specification, and thus protect the consensus found within a Working Group.\n\nIn the course of the development of materials within the W3C, Task Force Participants will make contributions. Those contributions will be integrated into the jointly developed work thus creating shared copyright on the Task Force Participant's contribution. Most W3C Specifications contain a section with acknowledgement of contributions.\n\nTask Force Participants grant to the W3C a perpetual, nonexclusive, royalty-free, world-wide right and license under any Task Force Participant's copyrights on his or her contributions, to copy, publish and distribute the contribution under a license of W3C's choosing. Additionally, the Task Force Participant grants a right and license of the same scope to any derivative works prepared by the W3C and based on, or incorporating all or part of, his or her contribution and that any derivative works of this contribution prepared by the W3C shall be solely owned by the W3C. Furthermore, the Task Force Participant understands that W3C will be able to exercise all rights as a copyright owner of Task Force Participant's contribution, including enforcement against infringers without additional agreement or notice.\n\nNothing in this agreement restricts the Task Force Participant from using their individual contributions as they wish, even if those have later been amalgamated into joint works. Where W3C releases materials under a permissive license such as the W3C Software License or CC-BY, nothing in this agreement should be read to restrict the Task Force Participant from exercising the permissions granted by that license. The Task Force Participant represents that they are legally entitled to grant the above license. If their employer(s) have rights to intellectual property that the Task Force Participant creates that includes the contributions, they represent that they have received permission to make contributions on behalf of that employer or that the employer has waived such rights for the contributions to W3C.\n\n\n## Decency\n\nThe Task Force Participant will participate in the W3C Group in a decent way. Task Force Participants will refrain from defaming, harassing or otherwise offending other participants. The [Section 3.1 of the Process Document](https://www.w3.org/2015/Process-20150901/#ParticipationCriteria) applies, as does the W3C [Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n\nThe Task Force Participant will refrain from sending unsolicited commercial messages to W3C mailing-lists and other promotional activities for personal matters or for third parties. This is especially required from Task Force Participants sending messages to public W3C Groups.\n"
-      },
       {
         "repo": "w3c/remote-playback",
         "contributing": "## Contributing\n\nPlease refer to the group's [Work Mode](https://www.w3.org/wiki/Second_Screen/Work_Mode)."
       },
       {
-        "repo": "w3c/resource-timing",
-        "contributing": "Contributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nFor our editing test-driven process, see [CONTRIBUTING.md](https://github.com/w3c/web-performance/blob/gh-pages/CONTRIBUTING.md).\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
+        "repo": "w3c/presentation-api",
+        "contributing": "## Contributing\n\nPlease refer to the group's [Work Mode](https://www.w3.org/wiki/Second_Screen/Work_Mode)."
       },
       {
         "repo": "w3c/webappsec-uisecurity",
         "contributing": "# Web Application Security Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents \ngoverned by the [W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](http://www.w3.org/Consortium/Legal/copyright-documents). To contribute, you must \neither participate in the relevant W3C Working Group or make a non-member patent licensing\n commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request's body or in subsequent comments.\n\n To add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n ```\n +@github_username\n ```\n\n If you added a contributor by mistake, you can remove them in a comment with:\n\n ```\n -@github_username\n ```\n\n If you are making a pull request on behalf of someone else but you had no part in designing the \n feature, you can remove yourself with the above syntax.\n"
       },
       {
+        "repo": "w3c/mediacapture-depth",
+        "contributing": "Contributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](http://www.w3.org/Consortium/Legal/copyright-documents). To bring substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all contributors in the \ncommit message. In the commit, please include on a new line,\n<pre>Contributors: +@githubusername1, +@githubusername2, ...</pre>\n"
+      },
+      {
+        "repo": "w3c/webauthn",
+        "contributing": "# Web Authentication Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents \ngoverned by the [W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](http://www.w3.org/Consortium/Legal/copyright-documents). To contribute, you must \neither participate in the relevant W3C Working Group or make a non-member patent licensing\n commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request's body or in subsequent comments.\n\n To add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n ```\n +@github_username\n ```\n\n If you added a contributor by mistake, you can remove them in a comment with:\n\n ```\n -@github_username\n ```\n\n If you are making a pull request on behalf of someone else but you had no part in designing the \n feature, you can remove yourself with the above syntax.\n"
+      },
+      {
         "repo": "w3c/hr-time",
         "contributing": "Contributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nFor our editing test-driven process, see [CONTRIBUTING.md](https://github.com/w3c/web-performance/blob/gh-pages/CONTRIBUTING.md).\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
-      },
-      {
-        "repo": "w3c/preload",
-        "contributing": "Contributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nFor our editing test-driven process, see [CONTRIBUTING.md](https://github.com/w3c/web-performance/blob/gh-pages/CONTRIBUTING.md).\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
-      },
-      {
-        "repo": "w3c/html-media-capture",
-        "contributing": "# Device APIs Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents \ngoverned by the [W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](http://www.w3.org/Consortium/Legal/copyright-documents). To contribute, you must \neither participate in the relevant W3C Working Group or make a non-member patent licensing\n commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request's body or in subsequent comments.\n\n To add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n ```\n +@github_username\n ```\n\n If you added a contributor by mistake, you can remove them in a comment with:\n\n ```\n -@github_username\n ```\n\n If you are making a pull request on behalf of someone else but you had no part in designing the \n feature, you can remove yourself with the above syntax.\n"
-      },
-      {
-        "repo": "w3c/mediacapture-image",
-        "contributing": "Contributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](http://www.w3.org/Consortium/Legal/copyright-documents). To bring substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all contributors in the \ncommit message. In the commit, please include on a new line,\n<pre>Contributors: +@githubusername1, +@githubusername2, ...</pre>\n"
       },
       {
         "repo": "w3c/imsc",
         "contributing": "# Timed Text Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents \ngoverned by the [W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](http://www.w3.org/Consortium/Legal/copyright-documents). To contribute, you must \neither participate in the relevant W3C Working Group or make a non-member patent licensing\n commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request's body or in subsequent comments.\n\n To add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n ```\n +@github_username\n ```\n\n If you added a contributor by mistake, you can remove them in a comment with:\n\n ```\n -@github_username\n ```\n\n If you are making a pull request on behalf of someone else but you had no part in designing the \n feature, you can remove yourself with the above syntax.\n"
       },
       {
-        "repo": "w3c/webappsec-credential-management",
-        "contributing": "# Web Application Security Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents \ngoverned by the [W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](http://www.w3.org/Consortium/Legal/copyright-documents). To contribute, you must \neither participate in the relevant W3C Working Group or make a non-member patent licensing\n commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request's body or in subsequent comments.\n\n To add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n ```\n +@github_username\n ```\n\n If you added a contributor by mistake, you can remove them in a comment with:\n\n ```\n -@github_username\n ```\n\n If you are making a pull request on behalf of someone else but you had no part in designing the \n feature, you can remove yourself with the above syntax.\n"
-      },
-      {
-        "repo": "w3c/webappsec-mixed-content",
-        "contributing": "# Web Application Security Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents \ngoverned by the [W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](http://www.w3.org/Consortium/Legal/copyright-documents). To contribute, you must \neither participate in the relevant W3C Working Group or make a non-member patent licensing\n commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request's body or in subsequent comments.\n\n To add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n ```\n +@github_username\n ```\n\n If you added a contributor by mistake, you can remove them in a comment with:\n\n ```\n -@github_username\n ```\n\n If you are making a pull request on behalf of someone else but you had no part in designing the \n feature, you can remove yourself with the above syntax.\n"
-      },
-      {
-        "repo": "w3c/webappsec-clear-site-data",
-        "contributing": "# Web Application Security Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents \ngoverned by the [W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](http://www.w3.org/Consortium/Legal/copyright-documents). To contribute, you must \neither participate in the relevant W3C Working Group or make a non-member patent licensing\n commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request's body or in subsequent comments.\n\n To add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n ```\n +@github_username\n ```\n\n If you added a contributor by mistake, you can remove them in a comment with:\n\n ```\n -@github_username\n ```\n\n If you are making a pull request on behalf of someone else but you had no part in designing the \n feature, you can remove yourself with the above syntax.\n"
-      },
-      {
-        "repo": "w3c/wake-lock",
-        "contributing": "# Contributing\n\nEveryone is welcome to contribute to this effort.\n\nAny simple editorial contribution can simply be done with a GitHub Pull Request.\nYou can even do an inline edit of the file on GitHub.\n\nFor more substantial contributions, please first start a thread in the\n[public-device-apis@w3.org mailing list](http://lists.w3.org/Archives/Public/public-device-apis/).\n\nContributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Software and Document License](http://www.w3.org/Consortium/Legal/copyright-\nsoftware). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n\n# Style guide to contributors \n\n- the spec uses [ReSpec](https://www.w3.org/respec/) \n- the spec is tidied using [HTML5 Tidy](https://github.com/w3c/tidy-html5). For\ninstructions on running HTML5 tidy, see below.  \n- put comments in front of sections, for better readability with\n  syntax coloring   editors\n\n\n# Running HTML5 Tidy\n\nPlease make sure you have HTML5 tidy installed, instead of\nthe the one that  ships with *nix systems. You can comfirm this by running:\n\n```bash \ntidy --version  #HTML Tidy for HTML5 (experimental) for ...\n```\nOnce you have confirmed (make sure you have committed your changes before\nrunning tidy, as the changes are destructive ... in a good way:)):\n\n```bash \ntidy -config tidyconfig.txt -o index.html index.html\n```\n"
-      },
-      {
-        "repo": "w3c/mediacapture-main",
-        "contributing": "Since we are a lot of people contributing to the specification, we have defined a few guidelines. Please follow them and we will be able to review your PR a lot faster when we don't have to point out style and other non-technical issues. Thank you.\n\n### W3C Legal\nContributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](http://www.w3.org/Consortium/Legal/copyright-documents). To bring substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all contributors in the \ncommit message. In the commit, please include on a new line,\n<pre>Contributors: +@githubusername1, +@githubusername2, ...</pre>\n\n### Line Wrapping\n\n#### Recommendations\nFormat new text to break each line within 80 characters. If you add a few new words to an existing paragraph, it's OK if that line exceeds 80 characters. If fixing the width means that the next line gets to wide, and so on, it's better to leave it since touching a lot of lines unrelated to the actual fix makes the PR harder to review. We will make automatic re-flows of the document every once in a while.\n\n#### Automatic Formatting\nYou can use [webrtc-respec-ci](https://github.com/w3c/webrtc-respec-ci) to automatically format your code. Note that this script formats the entire document and may change lines that are not part of your original patch. This can make your changes harder to review.\n\n1. Follow the instructions on \"Local use\" to setup the scripts.\n2. Run: ```make -f ../webrtc-respec-ci/Makefile linewrap LINEWRAPLENGTH=80```.\n\n### Pull Request Names\nChoose a name for your PR that would make sense in a change log.  \nExample: Add support for new attribute X on Y (fixes: #123).  \nAvoid: Fix for #123.\n\n### Linked Names\nMake names of interfaces, enums and other identifiers clickable like this ```<code><a>MediaStreamTrack</a></code>```.\n\n### Refactoring: Moving Text\nIf your PR needs to both move a section of text and update it, please do these operations in two separate commits (or even PRs). That will make the review process simpler.\n"
-      },
-      {
-        "repo": "w3c/mediacapture-record",
-        "contributing": "# Device APIs Working Group and Web Real-Time Communications Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents \ngoverned by the [W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](http://www.w3.org/Consortium/Legal/copyright-documents). To contribute, you must \neither participate in the relevant W3C Working Group or make a non-member patent licensing\n commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request's body or in subsequent comments.\n\n To add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n ```\n +@github_username\n ```\n\n If you added a contributor by mistake, you can remove them in a comment with:\n\n ```\n -@github_username\n ```\n\n If you are making a pull request on behalf of someone else but you had no part in designing the \n feature, you can remove yourself with the above syntax.\n"
-      },
-      {
-        "repo": "w3c/html",
-        "contributing": "Contributions to this repository are likely to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Software and Document License](http://www.w3.org/Consortium/Legal/copyright-software). \n\nTo make substantive contributions to the HTML specification (i.e. ones that change conformance in some way),\nyou must either be a member of the Web Platform Working Group or make a non-member patent licensing commitment. \n\nIf you propose a contribution in a Pull Request, but you are not a member nor have you made an IPR commitment,\nan automatic test on your proposed commit will tell you that the \"IPR check failed\". \nThe Working Group chairs and W3C staff will be notified. \nIf the contribution is not substantive you don't need to do anything - it will be checked, marked, and queued for review. This process requires a human, so it may take some time - usually hours or a day or two.\n\nIf it is substantive, the chairs will contact you about making a commitment to the terms of the [W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/).\n\nIf you work for a W3C member that is not participating in the Web Platform Working Group, please ask your\nW3C Advisory Committee representative if you can join.\n\nIf you do not work for a W3C member, you may be eligible to be invited to participate as an Invited Expert.\nAlternately, you can make a commitment to the terms of the Patent Policy, without joining the Working Group.\n\n\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n"
-      },
-      {
-        "repo": "w3c/webappsec-referrer-policy",
-        "contributing": "# Web Application Security Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents \ngoverned by the [W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](http://www.w3.org/Consortium/Legal/copyright-documents). To contribute, you must \neither participate in the relevant W3C Working Group or make a non-member patent licensing\n commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request's body or in subsequent comments.\n\n To add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n ```\n +@github_username\n ```\n\n If you added a contributor by mistake, you can remove them in a comment with:\n\n ```\n -@github_username\n ```\n\n If you are making a pull request on behalf of someone else but you had no part in designing the \n feature, you can remove yourself with the above syntax.\n"
-      },
-      {
-        "repo": "w3c/resource-hints",
+        "repo": "w3c/preload",
         "contributing": "Contributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nFor our editing test-driven process, see [CONTRIBUTING.md](https://github.com/w3c/web-performance/blob/gh-pages/CONTRIBUTING.md).\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
       },
       {
-        "repo": "w3c/IndexedDB",
-        "contributing": "# Web Platform Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents\ngoverned by the [W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](http://www.w3.org/Consortium/Legal/copyright-documents). To contribute, you must\neither participate in the relevant W3C Working Group or make a non-member patent licensing\ncommitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request's body or in subsequent comments.\n\n To add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n ```\n +@github_username\n ```\n\n If you added a contributor by mistake, you can remove them in a comment with:\n\n ```\n -@github_username\n ```\n\n If you are making a pull request on behalf of someone else but you had no part in designing the\n feature, you can remove yourself with the above syntax.\n\n# Tests\n\nFor normative changes, a corresponding\n[web-platform-tests](https://github.com/w3c/web-platform-tests) PR is highly appreciated. Typically,\nboth PRs will be merged at the same time. Note that a test change that contradicts the spec should\nnot be merged before the corresponding spec change. If testing is not practical, please explain why\nand if appropriate [file an issue](https://github.com/w3c/web-platform-tests/issues/new) to follow\nup later. Add the `type:untestable` or `type:missing-coverage` label as appropriate.\n"
+        "repo": "w3c/encrypted-media",
+        "contributing": "# HTML Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents \ngoverned by the [W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](https://www.w3.org/Consortium/Legal/copyright-documents). To contribute, you must \neither participate in the relevant W3C Working Group or make a non-member patent licensing\n commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request's body or in subsequent comments.\n\n To add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n ```\n +@github_username\n ```\n\n If you added a contributor by mistake, you can remove them in a comment with:\n\n ```\n -@github_username\n ```\n\n If you are making a pull request on behalf of someone else but you had no part in designing the \n feature, you can remove yourself with the above syntax.\n"
       },
       {
-        "repo": "w3c/mediacapture-depth",
+        "repo": "w3c/mediacapture-image",
         "contributing": "Contributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](http://www.w3.org/Consortium/Legal/copyright-documents). To bring substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all contributors in the \ncommit message. In the commit, please include on a new line,\n<pre>Contributors: +@githubusername1, +@githubusername2, ...</pre>\n"
       },
       {
-        "repo": "w3c/uievents",
-        "contributing": "# Web Platform Working Group\n\nContributions to this repository are intended to become part of\nRecommendation-track documents governed by the\n\t[W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/)\nand\n\t[Software and Document License](http://www.w3.org/Consortium/Legal/copyright-software).\nTo make substantive contributions to specifications, you must either participate\nin the W3C\n\t[Web Platform Working Group](https://www.w3.org/WebPlatform/WG/)\nor make a\n\t[non-member patent licensing commitment](https://www.w3.org/2004/01/pp-impl/83482/nmlc).\n\nIf you are not the sole contributor to a contribution (pull request), please\nidentify all contributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per\nline as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part\nin designing the feature, you can remove yourself with the above syntax.\n"
-      },
-      {
-        "repo": "w3c/user-timing",
+        "repo": "w3c/requestidlecallback",
         "contributing": "Contributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nFor our editing test-driven process, see [CONTRIBUTING.md](https://github.com/w3c/web-performance/blob/gh-pages/CONTRIBUTING.md).\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
       },
       {
-        "repo": "w3c/webrtc-stats",
+        "repo": "w3c/uievents-code",
+        "contributing": "# Web Platform Working Group\n\nContributions to this repository are intended to become part of\nRecommendation-track documents governed by the\n\t[W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/)\nand\n\t[Software and Document License](http://www.w3.org/Consortium/Legal/copyright-software).\nTo make substantive contributions to specifications, you must either participate\nin the W3C\n\t[Web Platform Working Group](https://www.w3.org/WebPlatform/WG/)\nor make a\n\t[non-member patent licensing commitment](https://www.w3.org/2004/01/pp-impl/83482/nmlc).\n\nIf you are not the sole contributor to a contribution (pull request), please\nidentify all contributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per\nline as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part\nin designing the feature, you can remove yourself with the above syntax.\n"
+      },
+      {
+        "repo": "w3c/mediacapture-screen-share",
         "contributing": "Contributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](http://www.w3.org/Consortium/Legal/copyright-documents). To bring substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all contributors in the \ncommit message. In the commit, please include on a new line,\n<pre>Contributors: +@githubusername1, +@githubusername2, ...</pre>\n"
       },
       {
@@ -481,12 +379,64 @@
         "contributing": "Contributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nFor our editing test-driven process, see [CONTRIBUTING.md](https://github.com/w3c/web-performance/blob/gh-pages/CONTRIBUTING.md).\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
       },
       {
-        "repo": "w3c/ttml2",
-        "contributing": "# Timed Text Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents \ngoverned by the [W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](http://www.w3.org/Consortium/Legal/copyright-documents). To contribute, you must \neither participate in the relevant W3C Working Group or make a non-member patent licensing\ncommitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request's body or in subsequent comments.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
+        "repo": "w3c/page-visibility",
+        "contributing": "Contributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nFor our editing test-driven process, see [CONTRIBUTING.md](https://github.com/w3c/web-performance/blob/gh-pages/CONTRIBUTING.md).\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
       },
       {
-        "repo": "w3c/mediacapture-screen-share",
+        "repo": "w3c/gyroscope",
+        "contributing": "Contributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Software and Document License](http://www.w3.org/Consortium/Legal/copyright-\nsoftware). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
+      },
+      {
+        "repo": "w3c/webappsec-mixed-content",
+        "contributing": "# Web Application Security Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents \ngoverned by the [W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](http://www.w3.org/Consortium/Legal/copyright-documents). To contribute, you must \neither participate in the relevant W3C Working Group or make a non-member patent licensing\n commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request's body or in subsequent comments.\n\n To add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n ```\n +@github_username\n ```\n\n If you added a contributor by mistake, you can remove them in a comment with:\n\n ```\n -@github_username\n ```\n\n If you are making a pull request on behalf of someone else but you had no part in designing the \n feature, you can remove yourself with the above syntax.\n"
+      },
+      {
+        "repo": "w3c/mediacapture-record",
+        "contributing": "# Device APIs Working Group and Web Real-Time Communications Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents \ngoverned by the [W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](http://www.w3.org/Consortium/Legal/copyright-documents). To contribute, you must \neither participate in the relevant W3C Working Group or make a non-member patent licensing\n commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request's body or in subsequent comments.\n\n To add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n ```\n +@github_username\n ```\n\n If you added a contributor by mistake, you can remove them in a comment with:\n\n ```\n -@github_username\n ```\n\n If you are making a pull request on behalf of someone else but you had no part in designing the \n feature, you can remove yourself with the above syntax.\n"
+      },
+      {
+        "repo": "w3c/webrtc-stats",
         "contributing": "Contributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](http://www.w3.org/Consortium/Legal/copyright-documents). To bring substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all contributors in the \ncommit message. In the commit, please include on a new line,\n<pre>Contributors: +@githubusername1, +@githubusername2, ...</pre>\n"
+      },
+      {
+        "repo": "w3c/resource-hints",
+        "contributing": "Contributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nFor our editing test-driven process, see [CONTRIBUTING.md](https://github.com/w3c/web-performance/blob/gh-pages/CONTRIBUTING.md).\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
+      },
+      {
+        "repo": "w3c/svgwg",
+        "contributing": "# SVG Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents \ngoverned by the [W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](http://www.w3.org/Consortium/Legal/copyright-documents). To contribute, you must \neither participate in the relevant W3C Working Group or make a non-member patent licensing\n commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request's body or in subsequent comments.\n\n To add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n ```\n +@github_username\n ```\n\n If you added a contributor by mistake, you can remove them in a comment with:\n\n ```\n -@github_username\n ```\n\n If you are making a pull request on behalf of someone else but you had no part in designing the \n feature, you can remove yourself with the above syntax.\n"
+      },
+      {
+        "repo": "w3c/html",
+        "contributing": "Contributions to this repository are likely to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Software and Document License](http://www.w3.org/Consortium/Legal/copyright-software). \n\nTo make substantive contributions to the HTML specification (i.e. ones that change conformance in some way),\nyou must either be a member of the Web Platform Working Group or make a non-member patent licensing commitment. \n\nIf you propose a contribution in a Pull Request, but you are not a member nor have you made an IPR commitment,\nan automatic test on your proposed commit will tell you that the \"IPR check failed\". \nThe Working Group chairs and W3C staff will be notified. \nIf the contribution is not substantive you don't need to do anything - it will be checked, marked, and queued for review. This process requires a human, so it may take some time - usually hours or a day or two.\n\nIf it is substantive, the chairs will contact you about making a commitment to the terms of the [W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/).\n\nIf you work for a W3C member that is not participating in the Web Platform Working Group, please ask your\nW3C Advisory Committee representative if you can join.\n\nIf you do not work for a W3C member, you may be eligible to be invited to participate as an Invited Expert.\nAlternately, you can make a commitment to the terms of the Patent Policy, without joining the Working Group.\n\n\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n"
+      },
+      {
+        "repo": "w3c/webappsec-clear-site-data",
+        "contributing": "# Web Application Security Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents \ngoverned by the [W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](http://www.w3.org/Consortium/Legal/copyright-documents). To contribute, you must \neither participate in the relevant W3C Working Group or make a non-member patent licensing\n commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request's body or in subsequent comments.\n\n To add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n ```\n +@github_username\n ```\n\n If you added a contributor by mistake, you can remove them in a comment with:\n\n ```\n -@github_username\n ```\n\n If you are making a pull request on behalf of someone else but you had no part in designing the \n feature, you can remove yourself with the above syntax.\n"
+      },
+      {
+        "repo": "w3c/resource-timing",
+        "contributing": "Contributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nFor our editing test-driven process, see [CONTRIBUTING.md](https://github.com/w3c/web-performance/blob/gh-pages/CONTRIBUTING.md).\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
+      },
+      {
+        "repo": "w3c/navigation-timing",
+        "contributing": "Contributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nFor our editing test-driven process, see [CONTRIBUTING.md](https://github.com/w3c/web-performance/blob/gh-pages/CONTRIBUTING.md).\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
+      },
+      {
+        "repo": "w3c/ServiceWorker",
+        "contributing": "# Web Platform Working Group\n\n## Spec and API development\n\nFor the nitty-gritty of the API, the [draft W3C specification](https://w3c.github.io/ServiceWorker/) is authoritative. For implementers and developers who seek a more stable version, [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) is a right document with which the contributors only focus on fixing bugs and resolving compatibility issues.\n\nSpec development happens via [issues in this repository](https://github.com/w3c/ServiceWorker/issues). For general discussion, please use the [public-webapps@w3.org mailing list](http://lists.w3.org/Archives/Public/public-webapps/) with a `Subject:` prefix of `[service-workers]`.\n\nUpdates to the spec must reference [resolved issues marked `needs spec`](https://github.com/w3c/ServiceWorker/issues?q=is%3Aclosed+label%3A%22needs+spec%22).\n\nTo make edits to the design, please send pull requests against the Nightly spec on the master branch. We use [bikeshed](https://github.com/tabatkins/bikeshed). So, change `docs/index.bs` and submit it with the corresponding bikesheded `index.html`.\n\nFor normative changes, a corresponding [web-platform-tests](https://github.com/w3c/web-platform-tests) PR is highly appreciated. Typically, both PRs will be merged at the same time. Note that a test change that contradicts the spec should not be merged before the corresponding spec change. If testing is not practical, please explain why and if appropriate [file an issue](https://github.com/w3c/web-platform-tests/issues/new) to follow up later.\n\nContributions to this repository are intended to become part of Recommendation-track documents\ngoverned by the [W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Software and Document License](http://www.w3.org/Consortium/Legal/copyright-software). To contribute, you must\neither participate in the relevant W3C Working Group or make a non-member patent licensing\ncommitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request's body or in subsequent comments.\n\n To add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n ```\n +@github_username\n ```\n\n If you added a contributor by mistake, you can remove them in a comment with:\n\n ```\n -@github_username\n ```\n\n If you are making a pull request on behalf of someone else but you had no part in designing the\n feature, you can remove yourself with the above syntax.\n"
+      },
+      {
+        "repo": "w3c/user-timing",
+        "contributing": "Contributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nFor our editing test-driven process, see [CONTRIBUTING.md](https://github.com/w3c/web-performance/blob/gh-pages/CONTRIBUTING.md).\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
+      },
+      {
+        "repo": "w3c/webappsec-csp",
+        "contributing": "# Web Application Security Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents \ngoverned by the [W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](http://www.w3.org/Consortium/Legal/copyright-documents). To contribute, you must \neither participate in the relevant W3C Working Group or make a non-member patent licensing\n commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request's body or in subsequent comments.\n\n To add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n ```\n +@github_username\n ```\n\n If you added a contributor by mistake, you can remove them in a comment with:\n\n ```\n -@github_username\n ```\n\n If you are making a pull request on behalf of someone else but you had no part in designing the \n feature, you can remove yourself with the above syntax.\n"
+      },
+      {
+        "repo": "w3c/mediacapture-output",
+        "contributing": "# Device APIs Working Group and Web Real-Time Communications Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents\ngoverned by the [W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](http://www.w3.org/Consortium/Legal/copyright-documents). To contribute, you must\neither participate in the relevant W3C Working Group or make a non-member patent licensing\n commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request's body or in subsequent comments.\n\n To add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n ```\n +@github_username\n ```\n\n If you added a contributor by mistake, you can remove them in a comment with:\n\n ```\n -@github_username\n ```\n\n If you are making a pull request on behalf of someone else but you had no part in designing the\n feature, you can remove yourself with the above syntax."
       },
       {
         "repo": "w3c/ambient-light",
@@ -497,55 +447,23 @@
         "contributing": "# Web Application Security Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents \ngoverned by the [W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](http://www.w3.org/Consortium/Legal/copyright-documents). To contribute, you must \neither participate in the relevant W3C Working Group or make a non-member patent licensing\n commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request's body or in subsequent comments.\n\n To add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n ```\n +@github_username\n ```\n\n If you added a contributor by mistake, you can remove them in a comment with:\n\n ```\n -@github_username\n ```\n\n If you are making a pull request on behalf of someone else but you had no part in designing the \n feature, you can remove yourself with the above syntax.\n"
       },
       {
-        "repo": "w3c/page-visibility",
-        "contributing": "Contributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nFor our editing test-driven process, see [CONTRIBUTING.md](https://github.com/w3c/web-performance/blob/gh-pages/CONTRIBUTING.md).\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
-      },
-      {
-        "repo": "w3c/beacon",
-        "contributing": "Contributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nFor our editing test-driven process, see [CONTRIBUTING.md](https://github.com/w3c/web-performance/blob/gh-pages/CONTRIBUTING.md).\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
-      },
-      {
-        "repo": "w3c/webappsec-upgrade-insecure-requests",
-        "contributing": "# Web Application Security Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents \ngoverned by the [W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](http://www.w3.org/Consortium/Legal/copyright-documents). To contribute, you must \neither participate in the relevant W3C Working Group or make a non-member patent licensing\n commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request's body or in subsequent comments.\n\n To add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n ```\n +@github_username\n ```\n\n If you added a contributor by mistake, you can remove them in a comment with:\n\n ```\n -@github_username\n ```\n\n If you are making a pull request on behalf of someone else but you had no part in designing the \n feature, you can remove yourself with the above syntax.\n"
-      },
-      {
-        "repo": "w3c/gyroscope",
-        "contributing": "Contributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Software and Document License](http://www.w3.org/Consortium/Legal/copyright-\nsoftware). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
-      },
-      {
-        "repo": "w3c/webappsec-csp",
-        "contributing": "# Web Application Security Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents \ngoverned by the [W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](http://www.w3.org/Consortium/Legal/copyright-documents). To contribute, you must \neither participate in the relevant W3C Working Group or make a non-member patent licensing\n commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request's body or in subsequent comments.\n\n To add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n ```\n +@github_username\n ```\n\n If you added a contributor by mistake, you can remove them in a comment with:\n\n ```\n -@github_username\n ```\n\n If you are making a pull request on behalf of someone else but you had no part in designing the \n feature, you can remove yourself with the above syntax.\n"
-      },
-      {
-        "repo": "w3c/presentation-api",
-        "contributing": "## Contributing\n\nPlease refer to the group's [Work Mode](https://www.w3.org/wiki/Second_Screen/Work_Mode)."
-      },
-      {
-        "repo": "w3c/ServiceWorker",
-        "contributing": "# Web Platform Working Group\n\n## Spec and API development\n\nFor the nitty-gritty of the API, the [draft W3C specification](https://w3c.github.io/ServiceWorker/) is authoritative. For implementers and developers who seek a more stable version, [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) is a right document with which the contributors only focus on fixing bugs and resolving compatibility issues.\n\nSpec development happens via [issues in this repository](https://github.com/w3c/ServiceWorker/issues). For general discussion, please use the [public-webapps@w3.org mailing list](http://lists.w3.org/Archives/Public/public-webapps/) with a `Subject:` prefix of `[service-workers]`.\n\nUpdates to the spec must reference [resolved issues marked `needs spec`](https://github.com/w3c/ServiceWorker/issues?q=is%3Aclosed+label%3A%22needs+spec%22).\n\nTo make edits to the design, please send pull requests against the Nightly spec on the master branch. We use [bikeshed](https://github.com/tabatkins/bikeshed). So, change `docs/index.bs` and submit it with the corresponding bikesheded `index.html`.\n\nFor normative changes, a corresponding [web-platform-tests](https://github.com/w3c/web-platform-tests) PR is highly appreciated. Typically, both PRs will be merged at the same time. Note that a test change that contradicts the spec should not be merged before the corresponding spec change. If testing is not practical, please explain why and if appropriate [file an issue](https://github.com/w3c/web-platform-tests/issues/new) to follow up later.\n\nContributions to this repository are intended to become part of Recommendation-track documents\ngoverned by the [W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Software and Document License](http://www.w3.org/Consortium/Legal/copyright-software). To contribute, you must\neither participate in the relevant W3C Working Group or make a non-member patent licensing\ncommitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request's body or in subsequent comments.\n\n To add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n ```\n +@github_username\n ```\n\n If you added a contributor by mistake, you can remove them in a comment with:\n\n ```\n -@github_username\n ```\n\n If you are making a pull request on behalf of someone else but you had no part in designing the\n feature, you can remove yourself with the above syntax.\n"
-      },
-      {
-        "repo": "w3c/navigation-timing",
-        "contributing": "Contributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nFor our editing test-driven process, see [CONTRIBUTING.md](https://github.com/w3c/web-performance/blob/gh-pages/CONTRIBUTING.md).\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
-      },
-      {
-        "repo": "w3c/encrypted-media",
-        "contributing": "# HTML Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents \ngoverned by the [W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](https://www.w3.org/Consortium/Legal/copyright-documents). To contribute, you must \neither participate in the relevant W3C Working Group or make a non-member patent licensing\n commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request's body or in subsequent comments.\n\n To add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n ```\n +@github_username\n ```\n\n If you added a contributor by mistake, you can remove them in a comment with:\n\n ```\n -@github_username\n ```\n\n If you are making a pull request on behalf of someone else but you had no part in designing the \n feature, you can remove yourself with the above syntax.\n"
-      },
-      {
-        "repo": "w3c/mediacapture-fromelement",
-        "contributing": "Contributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](http://www.w3.org/Consortium/Legal/copyright-documents). To bring substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all contributors in the \ncommit message. In the commit, please include on a new line,\n<pre>Contributors: +@githubusername1, +@githubusername2, ...</pre>\n"
+        "repo": "w3c/html-media-capture",
+        "contributing": "# Device APIs Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents \ngoverned by the [W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](http://www.w3.org/Consortium/Legal/copyright-documents). To contribute, you must \neither participate in the relevant W3C Working Group or make a non-member patent licensing\n commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request's body or in subsequent comments.\n\n To add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n ```\n +@github_username\n ```\n\n If you added a contributor by mistake, you can remove them in a comment with:\n\n ```\n -@github_username\n ```\n\n If you are making a pull request on behalf of someone else but you had no part in designing the \n feature, you can remove yourself with the above syntax.\n"
       },
       {
         "repo": "w3c/battery",
         "contributing": "# Device APIs Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents \ngoverned by the [W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](http://www.w3.org/Consortium/Legal/copyright-documents). To contribute, you must \neither participate in the relevant W3C Working Group or make a non-member patent licensing\n commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request's body or in subsequent comments.\n\n To add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n ```\n +@github_username\n ```\n\n If you added a contributor by mistake, you can remove them in a comment with:\n\n ```\n -@github_username\n ```\n\n If you are making a pull request on behalf of someone else but you had no part in designing the \n feature, you can remove yourself with the above syntax.\n"
       },
       {
-        "repo": "w3c/svgwg",
-        "contributing": "# SVG Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents \ngoverned by the [W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](http://www.w3.org/Consortium/Legal/copyright-documents). To contribute, you must \neither participate in the relevant W3C Working Group or make a non-member patent licensing\n commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request's body or in subsequent comments.\n\n To add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n ```\n +@github_username\n ```\n\n If you added a contributor by mistake, you can remove them in a comment with:\n\n ```\n -@github_username\n ```\n\n If you are making a pull request on behalf of someone else but you had no part in designing the \n feature, you can remove yourself with the above syntax.\n"
+        "repo": "w3c/webappsec-upgrade-insecure-requests",
+        "contributing": "# Web Application Security Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents \ngoverned by the [W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](http://www.w3.org/Consortium/Legal/copyright-documents). To contribute, you must \neither participate in the relevant W3C Working Group or make a non-member patent licensing\n commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request's body or in subsequent comments.\n\n To add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n ```\n +@github_username\n ```\n\n If you added a contributor by mistake, you can remove them in a comment with:\n\n ```\n -@github_username\n ```\n\n If you are making a pull request on behalf of someone else but you had no part in designing the \n feature, you can remove yourself with the above syntax.\n"
       },
       {
-        "repo": "w3c/requestidlecallback",
+        "repo": "w3c/wake-lock",
+        "contributing": "# Contributing\n\nEveryone is welcome to contribute to this effort.\n\nAny simple editorial contribution can simply be done with a GitHub Pull Request.\nYou can even do an inline edit of the file on GitHub.\n\nFor more substantial contributions, please first start a thread in the\n[public-device-apis@w3.org mailing list](http://lists.w3.org/Archives/Public/public-device-apis/).\n\nContributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Software and Document License](http://www.w3.org/Consortium/Legal/copyright-\nsoftware). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n\n# Style guide to contributors \n\n- the spec uses [ReSpec](https://www.w3.org/respec/) \n- the spec is tidied using [HTML5 Tidy](https://github.com/w3c/tidy-html5). For\ninstructions on running HTML5 tidy, see below.  \n- put comments in front of sections, for better readability with\n  syntax coloring   editors\n\n\n# Running HTML5 Tidy\n\nPlease make sure you have HTML5 tidy installed, instead of\nthe the one that  ships with *nix systems. You can comfirm this by running:\n\n```bash \ntidy --version  #HTML Tidy for HTML5 (experimental) for ...\n```\nOnce you have confirmed (make sure you have committed your changes before\nrunning tidy, as the changes are destructive ... in a good way:)):\n\n```bash \ntidy -config tidyconfig.txt -o index.html index.html\n```\n"
+      },
+      {
+        "repo": "w3c/beacon",
         "contributing": "Contributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nFor our editing test-driven process, see [CONTRIBUTING.md](https://github.com/w3c/web-performance/blob/gh-pages/CONTRIBUTING.md).\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
       },
       {
@@ -553,101 +471,98 @@
         "contributing": "Since we are a lot of people contributing to the specification, we have defined a few guidelines. Please follow them and we will be able to review your PR a lot faster when we don't have to point out style and other non-technical issues. Thank you.\n\n### W3C Legal\nContributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](https://www.w3.org/Consortium/Legal/copyright-documents). To bring substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all contributors in the \ncommit message. In the commit, please include on a new line,\n<pre>Contributors: +@githubusername1, +@githubusername2, ...</pre>\n\n### 80 Characters\nFormat new text to break each line within 80 characters. If you add a few new words to an existing paragraph, it's OK if that line exceeds 80 characters. If fixing the width means that the next line gets to wide, and so on, it's better to leave it since touching a lot of lines unrelated to the actual fix makes the PR harder to review. We will make automatic re-flows of the document every once in a while.\n\n### Pull Request Names\nChoose a name for your PR that would make sense in a change log.  \nExample: Add support for new attribute X on Y (fixes: #123).  \nAvoid: Fix for #123.\n\n### Linked Names\nMake names of interfaces, enums and other identifiers clickable like this ```<code><a>MediaStreamTrack</a></code>```.\n\n### JSEP References\nReference specific sections of JSEP where possible. The syntax looks like this:  \n```<span data-jsep=\"initial-offers initial-answers\">[[!JSEP]]</span>```  \nSection aliases, to be used as data-jsep values, are found in [jsep-mapping/map.json](jsep-mapping/map.json). Information on how to update the map is found in [jsep-mapping/README.md](jsep-mapping/README.md).\n\n### Refactoring: Moving Text\nIf your PR needs to both move a section of text and update it, please do these operations in two separate commits (or even PRs). That will make the review process simpler.\n"
       },
       {
-        "repo": "w3c/uievents-code",
-        "contributing": "# Web Platform Working Group\n\nContributions to this repository are intended to become part of\nRecommendation-track documents governed by the\n\t[W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/)\nand\n\t[Software and Document License](http://www.w3.org/Consortium/Legal/copyright-software).\nTo make substantive contributions to specifications, you must either participate\nin the W3C\n\t[Web Platform Working Group](https://www.w3.org/WebPlatform/WG/)\nor make a\n\t[non-member patent licensing commitment](https://www.w3.org/2004/01/pp-impl/83482/nmlc).\n\nIf you are not the sole contributor to a contribution (pull request), please\nidentify all contributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per\nline as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part\nin designing the feature, you can remove yourself with the above syntax.\n"
+        "repo": "w3c/orientation-sensor",
+        "contributing": "Contributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Software and Document License](http://www.w3.org/Consortium/Legal/copyright-\nsoftware). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
       },
       {
-        "repo": "w3c/webauthn",
-        "contributing": "# Web Authentication Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents \ngoverned by the [W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](http://www.w3.org/Consortium/Legal/copyright-documents). To contribute, you must \neither participate in the relevant W3C Working Group or make a non-member patent licensing\n commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request's body or in subsequent comments.\n\n To add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n ```\n +@github_username\n ```\n\n If you added a contributor by mistake, you can remove them in a comment with:\n\n ```\n -@github_username\n ```\n\n If you are making a pull request on behalf of someone else but you had no part in designing the \n feature, you can remove yourself with the above syntax.\n"
+        "repo": "w3c/ttml2",
+        "contributing": "# Timed Text Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents \ngoverned by the [W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](http://www.w3.org/Consortium/Legal/copyright-documents). To contribute, you must \neither participate in the relevant W3C Working Group or make a non-member patent licensing\ncommitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request's body or in subsequent comments.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
       },
       {
-        "repo": "w3c/mediacapture-output",
-        "contributing": "# Device APIs Working Group and Web Real-Time Communications Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents\ngoverned by the [W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](http://www.w3.org/Consortium/Legal/copyright-documents). To contribute, you must\neither participate in the relevant W3C Working Group or make a non-member patent licensing\n commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request's body or in subsequent comments.\n\n To add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n ```\n +@github_username\n ```\n\n If you added a contributor by mistake, you can remove them in a comment with:\n\n ```\n -@github_username\n ```\n\n If you are making a pull request on behalf of someone else but you had no part in designing the\n feature, you can remove yourself with the above syntax."
+        "repo": "w3c/mediacapture-main",
+        "contributing": "Since we are a lot of people contributing to the specification, we have defined a few guidelines. Please follow them and we will be able to review your PR a lot faster when we don't have to point out style and other non-technical issues. Thank you.\n\n### W3C Legal\nContributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](http://www.w3.org/Consortium/Legal/copyright-documents). To bring substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all contributors in the \ncommit message. In the commit, please include on a new line,\n<pre>Contributors: +@githubusername1, +@githubusername2, ...</pre>\n\n### Line Wrapping\n\n#### Recommendations\nFormat new text to break each line within 80 characters. If you add a few new words to an existing paragraph, it's OK if that line exceeds 80 characters. If fixing the width means that the next line gets to wide, and so on, it's better to leave it since touching a lot of lines unrelated to the actual fix makes the PR harder to review. We will make automatic re-flows of the document every once in a while.\n\n#### Automatic Formatting\nYou can use [webrtc-respec-ci](https://github.com/w3c/webrtc-respec-ci) to automatically format your code. Note that this script formats the entire document and may change lines that are not part of your original patch. This can make your changes harder to review.\n\n1. Follow the instructions on \"Local use\" to setup the scripts.\n2. Run: ```make -f ../webrtc-respec-ci/Makefile linewrap LINEWRAPLENGTH=80```.\n\n### Pull Request Names\nChoose a name for your PR that would make sense in a change log.  \nExample: Add support for new attribute X on Y (fixes: #123).  \nAvoid: Fix for #123.\n\n### Linked Names\nMake names of interfaces, enums and other identifiers clickable like this ```<code><a>MediaStreamTrack</a></code>```.\n\n### Refactoring: Moving Text\nIf your PR needs to both move a section of text and update it, please do these operations in two separate commits (or even PRs). That will make the review process simpler.\n"
+      },
+      {
+        "repo": "w3c/webappsec-credential-management",
+        "contributing": "# Web Application Security Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents \ngoverned by the [W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](http://www.w3.org/Consortium/Legal/copyright-documents). To contribute, you must \neither participate in the relevant W3C Working Group or make a non-member patent licensing\n commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request's body or in subsequent comments.\n\n To add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n ```\n +@github_username\n ```\n\n If you added a contributor by mistake, you can remove them in a comment with:\n\n ```\n -@github_username\n ```\n\n If you are making a pull request on behalf of someone else but you had no part in designing the \n feature, you can remove yourself with the above syntax.\n"
+      },
+      {
+        "repo": "w3c/IndexedDB",
+        "contributing": "# Web Platform Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents\ngoverned by the [W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](http://www.w3.org/Consortium/Legal/copyright-documents). To contribute, you must\neither participate in the relevant W3C Working Group or make a non-member patent licensing\ncommitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request's body or in subsequent comments.\n\n To add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n ```\n +@github_username\n ```\n\n If you added a contributor by mistake, you can remove them in a comment with:\n\n ```\n -@github_username\n ```\n\n If you are making a pull request on behalf of someone else but you had no part in designing the\n feature, you can remove yourself with the above syntax.\n\n# Tests\n\nFor normative changes, a corresponding\n[web-platform-tests](https://github.com/w3c/web-platform-tests) PR is highly appreciated. Typically,\nboth PRs will be merged at the same time. Note that a test change that contradicts the spec should\nnot be merged before the corresponding spec change. If testing is not practical, please explain why\nand if appropriate [file an issue](https://github.com/w3c/web-platform-tests/issues/new) to follow\nup later. Add the `type:untestable` or `type:missing-coverage` label as appropriate.\n"
       },
       {
         "repo": "w3c/uievents-key",
         "contributing": "# Web Platform Working Group\n\nContributions to this repository are intended to become part of\nRecommendation-track documents governed by the\n\t[W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/)\nand\n\t[Software and Document License](http://www.w3.org/Consortium/Legal/copyright-software).\nTo make substantive contributions to specifications, you must either participate\nin the W3C\n\t[Web Platform Working Group](https://www.w3.org/WebPlatform/WG/)\nor make a\n\t[non-member patent licensing commitment](https://www.w3.org/2004/01/pp-impl/83482/nmlc).\n\nIf you are not the sole contributor to a contribution (pull request), please\nidentify all contributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per\nline as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part\nin designing the feature, you can remove yourself with the above syntax.\n"
+      },
+      {
+        "repo": "w3c/uievents",
+        "contributing": "# Web Platform Working Group\n\nContributions to this repository are intended to become part of\nRecommendation-track documents governed by the\n\t[W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/)\nand\n\t[Software and Document License](http://www.w3.org/Consortium/Legal/copyright-software).\nTo make substantive contributions to specifications, you must either participate\nin the W3C\n\t[Web Platform Working Group](https://www.w3.org/WebPlatform/WG/)\nor make a\n\t[non-member patent licensing commitment](https://www.w3.org/2004/01/pp-impl/83482/nmlc).\n\nIf you are not the sole contributor to a contribution (pull request), please\nidentify all contributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per\nline as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part\nin designing the feature, you can remove yourself with the above syntax.\n"
+      },
+      {
+        "repo": "w3c/mediacapture-fromelement",
+        "contributing": "Contributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](http://www.w3.org/Consortium/Legal/copyright-documents). To bring substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all contributors in the \ncommit message. In the commit, please include on a new line,\n<pre>Contributors: +@githubusername1, +@githubusername2, ...</pre>\n"
+      },
+      {
+        "repo": "w3c/webappsec-referrer-policy",
+        "contributing": "# Web Application Security Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents \ngoverned by the [W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](http://www.w3.org/Consortium/Legal/copyright-documents). To contribute, you must \neither participate in the relevant W3C Working Group or make a non-member patent licensing\n commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request's body or in subsequent comments.\n\n To add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n ```\n +@github_username\n ```\n\n If you added a contributor by mistake, you can remove them in a comment with:\n\n ```\n -@github_username\n ```\n\n If you are making a pull request on behalf of someone else but you had no part in designing the \n feature, you can remove yourself with the above syntax.\n"
       }
     ],
     "nolicense": [
-      "w3c/low-vision-a11y-tf",
-      "w3c/ltli",
-      "w3c/bp-i18n-specdev",
-      "whatwg/encoding",
-      "w3c/webappsec-secure-contexts",
-      "w3c/aria-in-html",
       "webaudio/web-midi-api",
-      "w3c/micropub",
-      "w3c/permissions",
-      "w3c/pointerevents",
-      "w3c/webdriver",
-      "w3c/ilreq",
-      "w3c/klreq",
-      "w3c/fxtf-drafts",
-      "w3c/web-animations",
-      "w3c/typography",
-      "w3c/aria-practices",
-      "webaudio/web-audio-api",
-      "w3c/elreq",
-      "w3c/activitystreams",
-      "w3c/charmod-norm",
-      "dissolve/jf2",
-      "w3c/findtext",
-      "w3c/clreq",
-      "w3c/remote-playback",
-      "w3c/ldn",
-      "tantek/post-type-discovery",
-      "w3c/csswg-drafts",
+      "w3c/presentation-api",
+      "w3c/wcag-act",
+      "whatwg/encoding",
       "w3c-social/social-web-protocols",
-      "w3c/sdw",
-      "w3c/websub",
+      "w3c/html-aam",
+      "w3c/webappsec-secure-contexts",
+      "w3c/pointerevents",
+      "w3c/remote-playback",
+      "w3c/web-animations",
+      "w3c/findtext",
+      "w3c/webdriver",
+      "w3c/permissions",
+      "tantek/post-type-discovery",
       "w3c/activitypub",
       "w3c/data-shapes",
-      "w3c/html-aam",
-      "w3c/presentation-api"
+      "w3c/sdw",
+      "w3c/fxtf-drafts",
+      "w3c/csswg-drafts",
+      "w3c/websub",
+      "webaudio/web-audio-api"
     ],
     "invalidlicense": [],
     "noreadme": [
-      "w3c/pointerevents",
       "w3c/webappsec-secure-contexts",
+      "w3c/pointerevents",
+      "w3c/activitypub",
+      "w3c/webappsec-csp",
       "w3c/fxtf-drafts",
       "w3c/csswg-drafts",
-      "w3c/webappsec-mixed-content",
-      "w3c/activitypub",
-      "w3c/webappsec-csp"
+      "w3c/webappsec-mixed-content"
     ],
     "contacts": [
-      "plh@w3.org",
       "dom@w3.org",
-      "vivienlacourba",
-      "mike@w3.org",
-      "wendy+gh@seltzer.org",
-      "chaals",
       "xiaoqian@w3.org",
+      "plh@w3.org",
+      "weiler",
+      "vivienlacourba",
+      "wendy+gh@seltzer.org",
+      "doug@schepers.cc",
       "ianbjacobs",
       "yves@w3.org",
-      "weiler",
-      "doug@schepers.cc",
+      "chaals",
+      "mike@w3.org",
       "phila@w3.org"
     ],
     "noashnazg": [
       "w3c/fxtf-drafts",
       "w3c/csswg-drafts",
       "w3c/web-animations",
-      "w3c/charmod-norm",
-      "w3c/clreq",
-      "w3c/elreq",
       "whatwg/encoding",
-      "w3c/ilreq",
-      "w3c/bp-i18n-specdev",
-      "w3c/klreq",
-      "w3c/ltli",
-      "w3c/typography",
       "w3c/imsc",
-      "w3c/coga",
-      "w3c/low-vision-a11y-tf",
-      "w3c/wcag",
+      "w3c/wcag-act",
       "w3c/wcag21",
+      "w3c/orientation-sensor",
       "webaudio/web-audio-api",
       "webaudio/web-midi-api",
       "w3c/permissions",
@@ -655,10 +570,6 @@
       "w3c/webdriver",
       "w3c/pointerevents",
       "w3c/activitypub",
-      "w3c/activitystreams",
-      "dissolve/jf2",
-      "w3c/ldn",
-      "w3c/micropub",
       "tantek/post-type-discovery",
       "w3c-social/social-web-protocols",
       "w3c/websub",
@@ -667,11 +578,10 @@
       "w3c/remote-playback",
       "w3c/sdw",
       "w3c/automotive",
-      "w3c/aria-in-html",
       "w3c/findtext",
       "w3c/html-aam",
       "w3c/aria",
-      "w3c/aria-practices"
+      "w3c/payment-handler"
     ]
   }
 }
