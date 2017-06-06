@@ -12,7 +12,16 @@ fetch("https://w3c.github.io/spec-dashboard/groups.json")
     .then(r => r.json())
     .then(groupData => {
         const groupIds = Object.keys(groupData);
-        Promise.all(groupIds.map(id => fetch("https://w3c.github.io/spec-dashboard/pergroup/" + id + "-repo.json").then(r=>r.json()).then(specs => {return {groupId: id, specs};}).catch(err => console.error("Failed to fetch data for group " + id + ": " + err))))
+        Promise.all(groupIds.map(id =>
+                                 fetch("https://w3c.github.io/spec-dashboard/pergroup/" + id + "-repo.json")
+                                 .then(r=>r.json())
+                                 .then(specs => {
+                                     return {groupId: id,
+                                             // only keep rec track specs for our report
+                                             specs.filter(s => s.versions[0]['rec-track'])
+                                            }
+                                     ;})
+                                 .catch(err => console.error("Failed to fetch data for group " + id + ": " + err))))
             .then(results => {
                 const repos = new Set();
                 const repoOwners = {};
