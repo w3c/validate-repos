@@ -9,18 +9,28 @@ const errortypes = {
     "noashnazg": "Not configured with the Repo Manager"
 };
 
+// from https://stackoverflow.com/a/5158301
+function getParameterByName(name) {
+    const match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+    return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+}
+
 fetch("report.json")
     .then(r => r.json())
     .then(data => {
         const report = document.getElementById('report');
         const groups = data.groups;
+        const filterParam = getParameterByName("filter");
+        const errorFilter = new Set((getParameterByName("filter") || "").split(",").filter(e => e !==''));
+        console.log(errorFilter.size);
         Object.keys(groups).sort((a,b) => groups[a].name.localeCompare(groups[b].name))
             .forEach(groupId => {
                 const section = document.createElement('section');
                 const title = document.createElement('h2');
                 title.appendChild(document.createTextNode(groups[groupId].name));
                 section.appendChild(title);
-                Object.keys(errortypes).forEach(err => {
+                Object.keys(errortypes).filter(t => errorFilter.size === 0 || errorFilter.has(t))
+                    .forEach(err => {
                     const repos = data.errors[err].filter(r => groups[groupId].repos.indexOf(r) !== -1);
                     if (repos.length) {
                         const errsection = document.createElement('section');
