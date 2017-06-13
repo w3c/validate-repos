@@ -30,25 +30,31 @@ fetch("report.json")
                 const title = document.createElement('h2');
                 title.appendChild(document.createTextNode(groups[groupId].name));
                 section.appendChild(title);
-                Object.keys(errortypes).filter(t => errorFilter.size === 0 || errorFilter.has(t))
-                    .forEach(err => {
-                    const repos = data.errors[err].filter(r => groups[groupId].repos.indexOf(r) !== -1);
-                    if (repos.length) {
-                        const errsection = document.createElement('section');
-                        const errtitle = document.createElement('h3');
-                        errtitle.appendChild(document.createTextNode(errortypes[err]));
-                        errsection.appendChild(errtitle);
+                if (!groups[groupId].repos.length) {
+                    const p = document.createElement('p');
+                    p.appendChild(document.createTextNode('No identified repo for rec-track spec.'));
+                    section.appendChild(p);
+                } else {
+                    Object.keys(errortypes).filter(t => errorFilter.size === 0 || errorFilter.has(t))
+                        .forEach(err => {
+                            const repos = data.errors[err].filter(r => groups[groupId].repos.indexOf(r) !== -1);
+                            if (repos.length) {
+                                const errsection = document.createElement('section');
+                                const errtitle = document.createElement('h3');
+                                errtitle.appendChild(document.createTextNode(errortypes[err]));
+                                errsection.appendChild(errtitle);
 
-                        const list = document.createElement('ul');
-                        repos.forEach(repo => {
-                            const li = document.createElement('li');
-                            li.appendChild(document.createTextNode(repo))
-                            list.appendChild(li);
-                        });
-                        errsection.appendChild(list);
-                        section.appendChild(errsection);
-                    }
-                });
+                                const list = document.createElement('ul');
+                                repos.forEach(repo => {
+                                    const li = document.createElement('li');
+                                    li.appendChild(document.createTextNode(repo))
+                                    list.appendChild(li);
+                                });
+                                errsection.appendChild(list);
+                                section.appendChild(errsection);
+                            }
+                    });
+                }
                 report.appendChild(section);
             });
     });
