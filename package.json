@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "node-fetch": "^1.6.3",
+    "node-w3capi": "^1.4.0",
     "octokat": "^0.7.0"
   }
 }
