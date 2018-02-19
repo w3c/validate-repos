@@ -1,0 +1,686 @@
+{
+  "groups": {
+    "18797": {
+      "name": "XML Query Working Group",
+      "repos": []
+    },
+    "19480": {
+      "name": "SVG Working Group",
+      "repos": [
+        "w3c/svgwg"
+      ]
+    },
+    "19552": {
+      "name": "XSLT Working Group",
+      "repos": []
+    },
+    "32061": {
+      "name": "Cascading Style Sheets (CSS) Working Group",
+      "repos": [
+        "w3c/csswg-drafts",
+        "w3c/web-animations"
+      ]
+    },
+    "32113": {
+      "name": "Internationalization Working Group",
+      "repos": [
+        "whatwg/encoding"
+      ]
+    },
+    "34314": {
+      "name": "Timed Text Working Group",
+      "repos": [
+        "w3c/imsc",
+        "w3c/ttml2",
+        "w3c/webvtt"
+      ]
+    },
+    "35422": {
+      "name": "Accessibility Guidelines Working Group",
+      "repos": [
+        "w3c/wcag-act",
+        "w3c/wcag21"
+      ]
+    },
+    "35532": {
+      "name": "Education and Outreach Working Group",
+      "repos": []
+    },
+    "38502": {
+      "name": "Efficient XML Interchange Working Group",
+      "repos": []
+    },
+    "40318": {
+      "name": "HTML Media Extensions Working Group",
+      "repos": []
+    },
+    "43696": {
+      "name": "Device and Sensors Working Group",
+      "repos": [
+        "w3c/accelerometer",
+        "w3c/ambient-light",
+        "w3c/battery",
+        "w3c/sensors",
+        "w3c/gyroscope",
+        "w3c/magnetometer",
+        "w3c/orientation-sensor",
+        "w3c/proximity",
+        "w3c/wake-lock"
+      ]
+    },
+    "44556": {
+      "name": "Web Fonts Working Group",
+      "repos": [
+        "w3c/woff"
+      ]
+    },
+    "45211": {
+      "name": "Web Performance Working Group",
+      "repos": [
+        "w3c/beacon",
+        "w3c/hr-time",
+        "w3c/longtasks",
+        "w3c/navigation-timing",
+        "w3c/page-visibility",
+        "w3c/paint-timing",
+        "w3c/performance-timeline",
+        "w3c/preload",
+        "w3c/requestidlecallback",
+        "w3c/resource-hints",
+        "w3c/resource-timing",
+        "w3c/server-timing",
+        "w3c/user-timing"
+      ]
+    },
+    "46884": {
+      "name": "Audio Working Group",
+      "repos": [
+        "webaudio/web-audio-api",
+        "webaudio/web-midi-api"
+      ]
+    },
+    "47318": {
+      "name": "Web Real-Time Communications Working Group",
+      "repos": [
+        "w3c/mediacapture-output",
+        "w3c/mediacapture-image",
+        "w3c/mediacapture-depth",
+        "w3c/mediacapture-fromelement",
+        "w3c/mediacapture-main",
+        "w3c/mediacapture-record",
+        "w3c/mediacapture-screen-share",
+        "w3c/webrtc-pc",
+        "w3c/webrtc-stats"
+      ]
+    },
+    "49309": {
+      "name": "Web Application Security Working Group",
+      "repos": [
+        "w3c/webappsec-clear-site-data",
+        "w3c/webappsec-cowl",
+        "w3c/webappsec-credential-management",
+        "w3c/webappsec-csp",
+        "w3c/webappsec-mixed-content",
+        "w3c/permissions",
+        "w3c/webappsec-referrer-policy",
+        "w3c/webappsec-secure-contexts",
+        "w3c/webappsec-uisecurity",
+        "w3c/webappsec-upgrade-insecure-requests"
+      ]
+    },
+    "49311": {
+      "name": "Tracking Protection Working Group",
+      "repos": [
+        "w3c/dnt"
+      ]
+    },
+    "49799": {
+      "name": "Browser Testing and Tools Working Group",
+      "repos": [
+        "w3c/webdriver"
+      ]
+    },
+    "59096": {
+      "name": "Pointer Events Working Group",
+      "repos": [
+        "w3c/pointerevents"
+      ]
+    },
+    "73865": {
+      "name": "RDF Data Shapes Working Group",
+      "repos": []
+    },
+    "74168": {
+      "name": "Second Screen Working Group",
+      "repos": [
+        "w3c/presentation-api",
+        "w3c/remote-playback"
+      ]
+    },
+    "75471": {
+      "name": "Spatial Data on the Web Working Group",
+      "repos": []
+    },
+    "76043": {
+      "name": "Automotive Working Group",
+      "repos": [
+        "w3c/automotive"
+      ]
+    },
+    "83482": {
+      "name": "Web Platform Working Group",
+      "repos": [
+        "w3c/manifest",
+        "w3c/clipboard-apis",
+        "w3c/webcomponents",
+        "w3c/DOM-Parsing",
+        "w3c/dom",
+        "w3c/FileAPI",
+        "w3c/gamepad",
+        "w3c/html-aam",
+        "w3c/html-aria",
+        "w3c/html",
+        "w3c/input-events",
+        "w3c/IntersectionObserver",
+        "w3c/microdata",
+        "w3c/pointerlock",
+        "w3c/push-api",
+        "w3c/screen-orientation",
+        "w3c/selection-api",
+        "w3c/uievents",
+        "w3c/uievents-code",
+        "w3c/uievents-key"
+      ]
+    },
+    "83726": {
+      "name": "Accessible Rich Internet Applications Working Group",
+      "repos": [
+        "w3c/aria",
+        "w3c/graphics-aam",
+        "w3c/graphics-aria",
+        "w3c/personalization-semantics"
+      ]
+    },
+    "83744": {
+      "name": "Web Payments Working Group",
+      "repos": [
+        "w3c/payment-handler",
+        "w3c/payment-method-id",
+        "w3c/payment-method-manifest",
+        "w3c/payment-request",
+        "w3c/webpayments-http-messages"
+      ]
+    },
+    "83907": {
+      "name": "Accessible Platform Architectures Working Group",
+      "repos": []
+    },
+    "87227": {
+      "name": "Web Authentication Working Group",
+      "repos": [
+        "w3c/webauthn"
+      ]
+    },
+    "87755": {
+      "name": "Permissions and Obligations Expression Working Group",
+      "repos": [
+        "w3c/poe"
+      ]
+    },
+    "95969": {
+      "name": "Web of Things Working Group",
+      "repos": [
+        "w3c/wot-architecture",
+        "w3c/wot-scripting-api",
+        "w3c/wot-thing-description"
+      ]
+    },
+    "98922": {
+      "name": "Verifiable Claims Working Group",
+      "repos": [
+        "w3c/vc-data-model"
+      ]
+    },
+    "99375": {
+      "name": "Dataset Exchange Working Group",
+      "repos": []
+    },
+    "100074": {
+      "name": "Publishing Working Group",
+      "repos": [
+        "w3c/pwpub",
+        "w3c/wpub",
+        "w3c/wpub-ann"
+      ]
+    },
+    "101196": {
+      "name": "Web Assembly Working Group",
+      "repos": []
+    },
+    "101220": {
+      "name": "Service Workers Working Group",
+      "repos": [
+        "w3c/ServiceWorker"
+      ]
+    }
+  },
+  "errors": {
+    "now3cjson": [
+      "webaudio/web-audio-api",
+      "w3c/mediacapture-main",
+      "w3c/poe",
+      "w3c/wpub-ann",
+      "w3c/pwpub",
+      "w3c/selection-api",
+      "w3c/wot-thing-description",
+      "w3c/aria",
+      "w3c/html-aam",
+      "w3c/ServiceWorker",
+      "w3c/presentation-api",
+      "w3c/uievents-code",
+      "w3c/html",
+      "w3c/webauthn",
+      "w3c/payment-method-id",
+      "w3c/wot-architecture",
+      "w3c/webdriver",
+      "w3c/webappsec-secure-contexts",
+      "w3c/push-api",
+      "w3c/payment-request",
+      "w3c/payment-handler",
+      "w3c/payment-method-manifest",
+      "w3c/vc-data-model",
+      "w3c/wot-scripting-api",
+      "w3c/personalization-semantics",
+      "w3c/clipboard-apis",
+      "w3c/graphics-aria",
+      "w3c/wpub",
+      "w3c/wcag-act",
+      "w3c/ttml2",
+      "w3c/sensors",
+      "w3c/webappsec-mixed-content",
+      "w3c/mediacapture-depth",
+      "w3c/uievents",
+      "w3c/dom",
+      "w3c/csswg-drafts",
+      "w3c/user-timing",
+      "w3c/hr-time",
+      "w3c/battery",
+      "w3c/requestidlecallback",
+      "whatwg/encoding",
+      "w3c/accelerometer",
+      "w3c/gyroscope",
+      "w3c/pointerevents",
+      "w3c/longtasks",
+      "w3c/mediacapture-fromelement",
+      "w3c/web-animations",
+      "w3c/FileAPI",
+      "w3c/mediacapture-record",
+      "w3c/woff",
+      "w3c/server-timing",
+      "w3c/gamepad",
+      "w3c/performance-timeline",
+      "w3c/wake-lock",
+      "w3c/webappsec-credential-management",
+      "w3c/svgwg",
+      "w3c/resource-hints",
+      "w3c/webappsec-referrer-policy",
+      "w3c/webrtc-stats",
+      "w3c/automotive",
+      "w3c/DOM-Parsing",
+      "w3c/webrtc-pc",
+      "w3c/input-events",
+      "w3c/mediacapture-screen-share",
+      "w3c/html-aria",
+      "w3c/webappsec-upgrade-insecure-requests",
+      "w3c/resource-timing",
+      "w3c/preload",
+      "w3c/graphics-aam",
+      "w3c/navigation-timing",
+      "w3c/dnt",
+      "w3c/webappsec-uisecurity",
+      "w3c/paint-timing",
+      "w3c/microdata",
+      "w3c/remote-playback",
+      "w3c/pointerlock",
+      "w3c/screen-orientation",
+      "w3c/manifest",
+      "w3c/webcomponents",
+      "w3c/webappsec-csp",
+      "w3c/permissions",
+      "w3c/IntersectionObserver",
+      "w3c/proximity",
+      "w3c/imsc",
+      "w3c/webappsec-clear-site-data",
+      "w3c/webvtt",
+      "w3c/wcag21",
+      "w3c/mediacapture-output",
+      "w3c/orientation-sensor",
+      "w3c/page-visibility",
+      "w3c/beacon",
+      "w3c/webappsec-cowl",
+      "w3c/uievents-key",
+      "w3c/magnetometer",
+      "w3c/ambient-light",
+      "w3c/mediacapture-image",
+      "webaudio/web-midi-api",
+      "w3c/webpayments-http-messages"
+    ],
+    "invalidcontacts": [],
+    "nocontributing": [
+      "webaudio/web-audio-api",
+      "w3c/mediacapture-main",
+      "w3c/poe",
+      "w3c/selection-api",
+      "w3c/wot-scripting-api",
+      "w3c/pwpub",
+      "w3c/graphics-aria",
+      "w3c/wpub-ann",
+      "w3c/wot-architecture",
+      "w3c/uievents-code",
+      "w3c/vc-data-model",
+      "w3c/aria",
+      "w3c/webappsec-secure-contexts",
+      "w3c/ServiceWorker",
+      "w3c/webauthn",
+      "w3c/payment-method-manifest",
+      "w3c/personalization-semantics",
+      "w3c/payment-request",
+      "w3c/presentation-api",
+      "w3c/payment-handler",
+      "w3c/webdriver",
+      "w3c/payment-method-id",
+      "w3c/wot-thing-description",
+      "w3c/push-api",
+      "w3c/html-aam",
+      "w3c/html",
+      "w3c/clipboard-apis",
+      "w3c/dom",
+      "w3c/uievents",
+      "w3c/webappsec-mixed-content",
+      "w3c/server-timing",
+      "w3c/woff",
+      "w3c/mediacapture-depth",
+      "w3c/webrtc-pc",
+      "w3c/mediacapture-record",
+      "w3c/FileAPI",
+      "w3c/webappsec-referrer-policy",
+      "w3c/resource-timing",
+      "w3c/mediacapture-fromelement",
+      "w3c/ttml2",
+      "w3c/wpub",
+      "w3c/sensors",
+      "w3c/uievents-key",
+      "w3c/webappsec-cowl",
+      "w3c/wake-lock",
+      "w3c/input-events",
+      "whatwg/encoding",
+      "w3c/svgwg",
+      "w3c/DOM-Parsing",
+      "w3c/longtasks",
+      "w3c/requestidlecallback",
+      "w3c/gamepad",
+      "w3c/webrtc-stats",
+      "w3c/battery",
+      "w3c/hr-time",
+      "w3c/resource-hints",
+      "w3c/user-timing",
+      "w3c/csswg-drafts",
+      "w3c/webappsec-credential-management",
+      "w3c/webcomponents",
+      "w3c/webappsec-csp",
+      "w3c/permissions",
+      "w3c/performance-timeline",
+      "w3c/manifest",
+      "w3c/screen-orientation",
+      "w3c/microdata",
+      "w3c/beacon",
+      "w3c/remote-playback",
+      "w3c/preload",
+      "w3c/page-visibility",
+      "w3c/dnt",
+      "w3c/paint-timing",
+      "w3c/navigation-timing",
+      "w3c/wcag21",
+      "w3c/webvtt",
+      "w3c/graphics-aam",
+      "w3c/mediacapture-screen-share",
+      "w3c/webappsec-clear-site-data",
+      "w3c/mediacapture-output",
+      "w3c/webappsec-upgrade-insecure-requests",
+      "w3c/imsc",
+      "w3c/proximity",
+      "w3c/wcag-act",
+      "w3c/orientation-sensor",
+      "w3c/webappsec-uisecurity",
+      "w3c/IntersectionObserver",
+      "w3c/gyroscope",
+      "w3c/automotive",
+      "w3c/html-aria",
+      "w3c/pointerevents",
+      "w3c/pointerlock",
+      "w3c/web-animations",
+      "w3c/accelerometer",
+      "w3c/magnetometer",
+      "webaudio/web-midi-api",
+      "w3c/webpayments-http-messages",
+      "w3c/ambient-light",
+      "w3c/mediacapture-image"
+    ],
+    "invalidcontributing": [],
+    "nolicense": [
+      "w3c/mediacapture-main",
+      "webaudio/web-audio-api",
+      "w3c/poe",
+      "w3c/wpub-ann",
+      "w3c/selection-api",
+      "w3c/wot-scripting-api",
+      "w3c/wpub",
+      "w3c/webappsec-referrer-policy",
+      "w3c/wot-architecture",
+      "w3c/pwpub",
+      "w3c/graphics-aria",
+      "w3c/uievents",
+      "w3c/mediacapture-depth",
+      "w3c/push-api",
+      "w3c/clipboard-apis",
+      "w3c/payment-request",
+      "w3c/vc-data-model",
+      "w3c/personalization-semantics",
+      "w3c/webdriver",
+      "w3c/payment-handler",
+      "w3c/dom",
+      "w3c/webappsec-mixed-content",
+      "w3c/html",
+      "w3c/wot-thing-description",
+      "w3c/html-aam",
+      "w3c/server-timing",
+      "w3c/presentation-api",
+      "w3c/mediacapture-record",
+      "w3c/ServiceWorker",
+      "w3c/aria",
+      "w3c/resource-timing",
+      "w3c/webappsec-secure-contexts",
+      "w3c/payment-method-id",
+      "w3c/payment-method-manifest",
+      "w3c/FileAPI",
+      "w3c/uievents-code",
+      "w3c/webrtc-pc",
+      "w3c/ttml2",
+      "w3c/webauthn",
+      "w3c/sensors",
+      "w3c/woff",
+      "w3c/mediacapture-fromelement",
+      "w3c/uievents-key",
+      "w3c/webappsec-cowl",
+      "w3c/wake-lock",
+      "w3c/input-events",
+      "w3c/resource-hints",
+      "w3c/DOM-Parsing",
+      "w3c/battery",
+      "w3c/performance-timeline",
+      "w3c/permissions",
+      "w3c/hr-time",
+      "w3c/gamepad",
+      "w3c/webrtc-stats",
+      "w3c/webappsec-csp",
+      "w3c/longtasks",
+      "w3c/requestidlecallback",
+      "w3c/webappsec-credential-management",
+      "w3c/svgwg",
+      "whatwg/encoding",
+      "w3c/proximity",
+      "w3c/mediacapture-screen-share",
+      "w3c/webappsec-upgrade-insecure-requests",
+      "w3c/imsc",
+      "w3c/page-visibility",
+      "w3c/dnt",
+      "w3c/webappsec-clear-site-data",
+      "w3c/mediacapture-output",
+      "w3c/paint-timing",
+      "w3c/navigation-timing",
+      "w3c/manifest",
+      "w3c/microdata",
+      "w3c/preload",
+      "w3c/beacon",
+      "w3c/automotive",
+      "w3c/remote-playback",
+      "w3c/web-animations",
+      "w3c/IntersectionObserver",
+      "w3c/screen-orientation",
+      "w3c/webvtt",
+      "w3c/webappsec-uisecurity",
+      "w3c/orientation-sensor",
+      "w3c/html-aria",
+      "w3c/gyroscope",
+      "w3c/webcomponents",
+      "w3c/graphics-aam",
+      "w3c/csswg-drafts",
+      "w3c/pointerevents",
+      "w3c/user-timing",
+      "w3c/wcag21",
+      "w3c/pointerlock",
+      "w3c/accelerometer",
+      "w3c/wcag-act",
+      "w3c/webpayments-http-messages",
+      "webaudio/web-midi-api",
+      "w3c/magnetometer",
+      "w3c/ambient-light",
+      "w3c/mediacapture-image"
+    ],
+    "invalidlicense": [],
+    "noreadme": [
+      "webaudio/web-audio-api",
+      "w3c/wpub-ann",
+      "w3c/selection-api",
+      "w3c/poe",
+      "w3c/mediacapture-main",
+      "w3c/wot-scripting-api",
+      "w3c/wot-architecture",
+      "w3c/wpub",
+      "w3c/dom",
+      "w3c/webappsec-mixed-content",
+      "w3c/ServiceWorker",
+      "w3c/woff",
+      "w3c/resource-timing",
+      "w3c/push-api",
+      "w3c/vc-data-model",
+      "w3c/FileAPI",
+      "w3c/payment-request",
+      "w3c/presentation-api",
+      "w3c/wake-lock",
+      "w3c/webrtc-pc",
+      "w3c/ttml2",
+      "w3c/mediacapture-depth",
+      "w3c/mediacapture-fromelement",
+      "w3c/clipboard-apis",
+      "w3c/hr-time",
+      "w3c/svgwg",
+      "w3c/graphics-aria",
+      "w3c/payment-handler",
+      "w3c/uievents",
+      "w3c/webdriver",
+      "w3c/webrtc-stats",
+      "w3c/payment-method-manifest",
+      "w3c/sensors",
+      "w3c/wot-thing-description",
+      "w3c/aria",
+      "w3c/mediacapture-record",
+      "w3c/payment-method-id",
+      "w3c/performance-timeline",
+      "w3c/DOM-Parsing",
+      "w3c/resource-hints",
+      "w3c/permissions",
+      "w3c/html-aam",
+      "w3c/webappsec-csp",
+      "w3c/uievents-code",
+      "whatwg/encoding",
+      "w3c/personalization-semantics",
+      "w3c/webauthn",
+      "w3c/webappsec-credential-management",
+      "w3c/requestidlecallback",
+      "w3c/battery",
+      "w3c/webappsec-referrer-policy",
+      "w3c/webappsec-cowl",
+      "w3c/pwpub",
+      "w3c/webappsec-secure-contexts",
+      "w3c/uievents-key",
+      "w3c/html",
+      "w3c/longtasks",
+      "w3c/server-timing",
+      "w3c/input-events",
+      "w3c/mediacapture-screen-share",
+      "w3c/proximity",
+      "w3c/webappsec-upgrade-insecure-requests",
+      "w3c/imsc",
+      "w3c/webappsec-clear-site-data",
+      "w3c/dnt",
+      "w3c/manifest",
+      "w3c/web-animations",
+      "w3c/page-visibility",
+      "w3c/navigation-timing",
+      "w3c/remote-playback",
+      "w3c/beacon",
+      "w3c/graphics-aam",
+      "w3c/webvtt",
+      "w3c/screen-orientation",
+      "w3c/paint-timing",
+      "w3c/orientation-sensor",
+      "w3c/html-aria",
+      "w3c/preload",
+      "w3c/webappsec-uisecurity",
+      "w3c/IntersectionObserver",
+      "w3c/user-timing",
+      "w3c/wcag21",
+      "w3c/csswg-drafts",
+      "w3c/pointerlock",
+      "w3c/gyroscope",
+      "w3c/automotive",
+      "w3c/microdata",
+      "w3c/pointerevents",
+      "w3c/webcomponents",
+      "w3c/webpayments-http-messages",
+      "w3c/magnetometer",
+      "webaudio/web-midi-api",
+      "w3c/ambient-light",
+      "w3c/mediacapture-image",
+      "w3c/accelerometer",
+      "w3c/mediacapture-output",
+      "w3c/gamepad",
+      "w3c/wcag-act"
+    ],
+    "contacts": [],
+    "noashnazg": [
+      "w3c/csswg-drafts",
+      "w3c/web-animations",
+      "whatwg/encoding",
+      "w3c/wcag-act",
+      "w3c/wcag21",
+      "webaudio/web-audio-api",
+      "webaudio/web-midi-api",
+      "w3c/pointerevents",
+      "w3c/automotive",
+      "w3c/payment-method-manifest",
+      "w3c/wpub-ann"
+    ]
+  }
+}
