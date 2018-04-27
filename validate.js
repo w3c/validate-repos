@@ -40,7 +40,7 @@ fetch("https://w3c.github.io/spec-dashboard/groups.json")
                         repoOwners[groupSpecs.groupId].repos = [...repoOwners[groupSpecs.groupId].repos];
                     });
                 let contributing, contributingSw, license, licenseSw;
-                const octo = new Octokat({ token: config.ghToken });
+                const octo = new Octokat({ token: config.ghapitoken });
                 const errors = {"now3cjson":[], "invalidcontacts":[], "nocontributing":[], "invalidcontributing": [], "nolicense": [], "invalidlicense": [], "noreadme": [], "contacts": new Set(), "noashnazg": []};
 
                 fetch("https://labs.w3.org/hatchery/repo-manager/api/repos")
