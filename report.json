@@ -269,13 +269,55 @@
     "now3cjson": [
       "w3c/wcag-act",
       "whatwg/encoding",
-      "webassembly/spec",
       "w3c/web-animations",
       "w3c/dxwg",
+      "w3c/ttml2",
+      "w3c/webappsec-referrer-policy",
+      "w3c/svgwg",
+      "w3c/remote-playback",
+      "w3c/gyroscope",
+      "w3c/uievents-code",
+      "w3c/html-aam",
+      "w3c/mediacapture-screen-share",
+      "w3c/microdata",
+      "w3c/vc-data-model",
+      "w3c/webappsec-credential-management",
+      "w3c/webrtc-stats",
+      "w3c/webappsec-mixed-content",
+      "w3c/preload",
+      "w3c/beacon",
+      "w3c/longtasks",
+      "w3c/page-visibility",
+      "w3c/pwpub",
+      "w3c/uievents",
+      "w3c/gamepad",
+      "w3c/webappsec-csp",
+      "w3c/aria",
+      "w3c/pointerlock",
+      "w3c/graphics-aria",
       "w3c/wpub",
-      "w3c/dnt",
+      "w3c/html",
+      "w3c/payment-request",
+      "w3c/screen-orientation",
+      "w3c/graphics-aam",
+      "w3c/mediacapture-record",
+      "w3c/FileAPI",
+      "w3c/permissions",
+      "w3c/wot-thing-description",
+      "w3c/mediacapture-depth",
+      "w3c/wot-scripting-api",
+      "webaudio/web-audio-api",
+      "w3c/accname",
+      "w3c/mst-content-hint",
+      "w3c/payment-method-manifest",
       "w3c/webpayments-http-messages",
-      "w3c/css-houdini-drafts"
+      "w3c/webappsec-secure-contexts",
+      "w3c/webrtc-pc",
+      "w3c/wot-architecture",
+      "webassembly/spec",
+      "w3c/push-api",
+      "w3c/mediacapture-output",
+      "w3c/personalization-semantics"
     ],
     "invalidcontacts": [
       {
@@ -293,149 +335,19 @@
         }
       },
       {
-        "repo": "w3c/aria",
-        "value": {
-          "github": "michael-n-cooper",
-          "w3c": "cooper"
-        }
+        "repo": "w3c/battery",
+        "value": "dontcallmedom"
       },
       {
-        "repo": "w3c/accname",
-        "value": {
-          "github": "michael-n-cooper",
-          "w3c": "cooper"
-        }
+        "repo": "w3c/ambient-light",
+        "value": "dontcallmedom"
       },
       {
-        "repo": "w3c/screen-orientation",
-        "value": "siusin"
-      },
-      {
-        "repo": "w3c/pointerevents",
+        "repo": "w3c/resource-hints",
         "value": "plehegar"
       },
       {
-        "repo": "w3c/webappsec-csp",
-        "value": "wseltzer"
-      },
-      {
-        "repo": "w3c/webrtc-pc",
-        "value": "vivienlacourba"
-      },
-      {
-        "repo": "w3c/webrtc-stats",
-        "value": "dontcallmedom"
-      },
-      {
-        "repo": "w3c/webrtc-stats",
-        "value": "vivienlacourba"
-      },
-      {
-        "repo": "w3c/mediacapture-fromelement",
-        "value": "dontcallmedom"
-      },
-      {
-        "repo": "w3c/mediacapture-fromelement",
-        "value": "vivienlacourba"
-      },
-      {
-        "repo": "w3c/manifest",
-        "value": "siusin"
-      },
-      {
-        "repo": "w3c/mediacapture-screen-share",
-        "value": "dontcallmedom"
-      },
-      {
-        "repo": "w3c/pwpub",
-        "value": "iherman"
-      },
-      {
-        "repo": "w3c/webappsec-cowl",
-        "value": "wseltzer"
-      },
-      {
-        "repo": "w3c/performance-timeline",
-        "value": "plehegar"
-      },
-      {
-        "repo": "w3c/orientation-sensor",
-        "value": "dontcallmedom"
-      },
-      {
-        "repo": "w3c/webappsec-secure-contexts",
-        "value": "plehegar"
-      },
-      {
-        "repo": "w3c/pointerlock",
-        "value": "siusin"
-      },
-      {
-        "repo": "w3c/wpub-ann",
-        "value": "iherman"
-      },
-      {
-        "repo": "w3c/hr-time",
-        "value": "plehegar"
-      },
-      {
-        "repo": "w3c/gyroscope",
-        "value": "dontcallmedom"
-      },
-      {
-        "repo": "w3c/mst-content-hint",
-        "value": "dontcallmedom"
-      },
-      {
-        "repo": "w3c/dom",
-        "value": "siusin"
-      },
-      {
-        "repo": "w3c/mst-content-hint",
-        "value": "vivienlacourba"
-      },
-      {
-        "repo": "w3c/webrtc-dscp-exp",
-        "value": "vivienlacourba"
-      },
-      {
-        "repo": "w3c/webauthn",
-        "value": "weiler"
-      },
-      {
-        "repo": "w3c/longtasks",
-        "value": "plehegar"
-      },
-      {
-        "repo": "w3c/html-aam",
-        "value": "siusin"
-      },
-      {
-        "repo": "w3c/mediacapture-main",
-        "value": "dontcallmedom"
-      },
-      {
-        "repo": "w3c/graphics-aria",
-        "value": "michael-n-cooper"
-      },
-      {
-        "repo": "w3c/html-aria",
-        "value": "siusin"
-      },
-      {
-        "repo": "w3c/mediacapture-image",
-        "value": "vivienlacourba"
-      },
-      {
-        "repo": "w3c/webrtc-dscp-exp",
-        "value": "dontcallmedom"
-      },
-      {
-        "repo": "w3c/webrtc-pc",
-        "value": "dontcallmedom"
-      },
-      {
-        "repo": "w3c/resource-timing",
+        "repo": "w3c/webappsec-uisecurity",
         "value": "plehegar"
       },
       {
@@ -443,39 +355,63 @@
         "value": "dontcallmedom"
       },
       {
-        "repo": "w3c/DOM-Parsing",
+        "repo": "w3c/fxtf-drafts",
+        "value": "svgeesus"
+      },
+      {
+        "repo": "w3c/user-timing",
         "value": "siusin"
       },
       {
-        "repo": "w3c/ServiceWorker",
-        "value": "ylafon"
-      },
-      {
-        "repo": "w3c/html-aam",
-        "value": "ylafon"
-      },
-      {
-        "repo": "w3c/mediacapture-screen-share",
-        "value": "vivienlacourba"
-      },
-      {
-        "repo": "w3c/ttml2",
+        "repo": "w3c/user-timing",
         "value": "plehegar"
       },
       {
-        "repo": "w3c/FileAPI",
+        "repo": "w3c/webcomponents",
         "value": "siusin"
-      },
-      {
-        "repo": "w3c/dom",
-        "value": "chaals"
       },
       {
         "repo": "w3c/ServiceWorker",
         "value": "sideshowbarker"
       },
       {
-        "repo": "w3c/permissions",
+        "repo": "w3c/webauthn",
+        "value": "weiler"
+      },
+      {
+        "repo": "w3c/hr-time",
+        "value": "plehegar"
+      },
+      {
+        "repo": "w3c/wpub-ann",
+        "value": "iherman"
+      },
+      {
+        "repo": "w3c/dnt",
+        "value": "wseltzer"
+      },
+      {
+        "repo": "w3c/dnt",
+        "value": "bert-github"
+      },
+      {
+        "repo": "w3c/presentation-api",
+        "value": "tidoust"
+      },
+      {
+        "repo": "w3c/mediacapture-image",
+        "value": "dontcallmedom"
+      },
+      {
+        "repo": "w3c/mediacapture-image",
+        "value": "vivienlacourba"
+      },
+      {
+        "repo": "w3c/sensors",
+        "value": "dontcallmedom"
+      },
+      {
+        "repo": "w3c/pointerevents",
         "value": "plehegar"
       },
       {
@@ -483,471 +419,491 @@
         "value": "siusin"
       },
       {
-        "repo": "w3c/presentation-api",
-        "value": "tidoust"
+        "repo": "w3c/selection-api",
+        "value": "siusin"
       },
       {
-        "repo": "w3c/user-timing",
+        "repo": "w3c/mediacapture-fromelement",
+        "value": "dontcallmedom"
+      },
+      {
+        "repo": "w3c/webauthn",
+        "value": "wseltzer"
+      },
+      {
+        "repo": "w3c/webrtc-dscp-exp",
+        "value": "dontcallmedom"
+      },
+      {
+        "repo": "w3c/webappsec-cowl",
+        "value": "wseltzer"
+      },
+      {
+        "repo": "w3c/payment-handler",
+        "value": "ianbjacobs"
+      },
+      {
+        "repo": "w3c/webrtc-dscp-exp",
+        "value": "vivienlacourba"
+      },
+      {
+        "repo": "w3c/manifest",
+        "value": "siusin"
+      },
+      {
+        "repo": "w3c/ServiceWorker",
+        "value": "ylafon"
+      },
+      {
+        "repo": "w3c/orientation-sensor",
+        "value": "dontcallmedom"
+      },
+      {
+        "repo": "w3c/mediacapture-fromelement",
+        "value": "vivienlacourba"
+      },
+      {
+        "repo": "w3c/proximity",
+        "value": "dontcallmedom"
+      },
+      {
+        "repo": "w3c/requestidlecallback",
         "value": "plehegar"
       },
       {
-        "repo": "w3c/mediacapture-image",
-        "value": "dontcallmedom"
+        "repo": "w3c/webvtt",
+        "value": "plehegar"
+      },
+      {
+        "repo": "w3c/server-timing",
+        "value": "siusin"
+      },
+      {
+        "repo": "w3c/payment-method-id",
+        "value": "sideshowbarker"
+      },
+      {
+        "repo": "w3c/ttml1",
+        "value": "plehegar"
+      },
+      {
+        "repo": "w3c/input-events",
+        "value": "siusin"
+      },
+      {
+        "repo": "w3c/server-timing",
+        "value": "plehegar"
+      },
+      {
+        "repo": "w3c/performance-timeline",
+        "value": "plehegar"
+      },
+      {
+        "repo": "w3c/DOM-Parsing",
+        "value": "siusin"
       },
       {
         "repo": "w3c/clipboard-apis",
         "value": "siusin"
       },
       {
-        "repo": "w3c/webappsec-uisecurity",
-        "value": "plehegar"
-      },
-      {
-        "repo": "w3c/webappsec-referrer-policy",
-        "value": "wseltzer"
-      },
-      {
-        "repo": "w3c/gamepad",
+        "repo": "w3c/uievents-key",
         "value": "siusin"
       },
       {
-        "repo": "w3c/payment-method-manifest",
-        "value": "ianbjacobs"
-      },
-      {
-        "repo": "w3c/automotive",
-        "value": "tguild"
-      },
-      {
-        "repo": "w3c/vc-data-model",
-        "value": "liamquin"
-      },
-      {
-        "repo": "w3c/html",
-        "value": "siusin"
-      },
-      {
-        "repo": "w3c/uievents-code",
-        "value": "siusin"
-      },
-      {
-        "repo": "webaudio/web-audio-api",
+        "repo": "w3c/csswg-drafts",
         "value": "svgeesus"
       },
       {
-        "repo": "w3c/paint-timing",
-        "value": "yoavweiss"
-      },
-      {
-        "repo": "w3c/mediacapture-depth",
-        "value": "vivienlacourba"
-      },
-      {
-        "repo": "w3c/mediacapture-depth",
-        "value": "dontcallmedom"
-      },
-      {
-        "repo": "w3c/mediacapture-record",
-        "value": "vivienlacourba"
-      },
-      {
-        "repo": "w3c/input-events",
-        "value": "chaals"
-      },
-      {
-        "repo": "w3c/mediacapture-output",
-        "value": "vivienlacourba"
-      },
-      {
-        "repo": "w3c/microdata",
-        "value": "siusin"
-      },
-      {
-        "repo": "w3c/input-events",
-        "value": "siusin"
-      },
-      {
-        "repo": "w3c/uievents",
-        "value": "siusin"
-      },
-      {
-        "repo": "w3c/wot-thing-description",
-        "value": "ashimura"
-      },
-      {
-        "repo": "w3c/wot-scripting-api",
-        "value": "ashimura"
+        "repo": "webaudio/web-midi-api",
+        "value": "svgeesus"
       },
       {
         "repo": "w3c/webappsec-upgrade-insecure-requests",
         "value": "wseltzer"
       },
       {
-        "repo": "w3c/microdata",
-        "value": "ylafon"
+        "repo": "w3c/dom",
+        "value": "chaals"
       },
       {
-        "repo": "w3c/payment-request",
-        "value": "ianbjacobs"
+        "repo": "w3c/webappsec-clear-site-data",
+        "value": "wseltzer"
       },
       {
-        "repo": "w3c/mediacapture-record",
+        "repo": "w3c/css-houdini-drafts",
+        "value": "svgeesus"
+      },
+      {
+        "repo": "w3c/imsc",
+        "value": "plehegar"
+      },
+      {
+        "repo": "w3c/mediacapture-main",
         "value": "dontcallmedom"
       },
       {
-        "repo": "w3c/uievents-key",
+        "repo": "w3c/paint-timing",
+        "value": "yoavweiss"
+      },
+      {
+        "repo": "w3c/dom",
         "value": "siusin"
       },
       {
-        "repo": "w3c/mediacapture-output",
+        "repo": "w3c/input-events",
+        "value": "chaals"
+      },
+      {
+        "repo": "w3c/automotive",
+        "value": "tguild"
+      },
+      {
+        "repo": "w3c/mediacapture-main",
+        "value": "vivienlacourba"
+      },
+      {
+        "repo": "w3c/html-aria",
+        "value": "siusin"
+      },
+      {
+        "repo": "w3c/wake-lock",
         "value": "dontcallmedom"
       },
       {
-        "repo": "w3c/webcomponents",
-        "value": "siusin"
+        "repo": "w3c/navigation-timing",
+        "value": "plehegar"
+      },
+      {
+        "repo": "w3c/accelerometer",
+        "value": "dontcallmedom"
+      },
+      {
+        "repo": "w3c/resource-timing",
+        "value": "plehegar"
       }
     ],
     "nocontributing": [
-      "w3c/wcag-act",
-      "webassembly/spec",
-      "w3c/wake-lock",
-      "w3c/imsc",
-      "w3c/beacon",
-      "w3c/aria",
-      "w3c/webappsec-credential-management",
+      "w3c/svg-aam",
       "w3c/core-aam",
       "w3c/web-animations",
-      "w3c/preload",
-      "w3c/webvtt",
-      "w3c/webappsec-mixed-content",
-      "w3c/remote-playback",
-      "w3c/navigation-timing",
-      "w3c/accname",
-      "w3c/dxwg",
-      "w3c/server-timing",
-      "w3c/csswg-drafts",
-      "w3c/ttml1",
-      "w3c/proximity",
-      "w3c/gyroscope",
-      "w3c/wpub-ann",
-      "w3c/graphics-aam",
-      "w3c/webappsec-secure-contexts",
-      "w3c/personalization-semantics",
-      "w3c/performance-timeline",
-      "w3c/payment-handler",
-      "w3c/pwpub",
-      "w3c/magnetometer",
-      "w3c/webrtc-stats",
-      "w3c/resource-timing",
-      "w3c/pointerevents",
-      "w3c/webrtc-dscp-exp",
-      "w3c/wpub",
-      "w3c/html-aria",
-      "webaudio/web-midi-api",
-      "w3c/pointerlock",
-      "w3c/graphics-aria",
-      "w3c/push-api",
-      "w3c/page-visibility",
-      "w3c/sensors",
-      "w3c/user-timing",
-      "w3c/screen-orientation",
-      "w3c/fxtf-drafts",
-      "w3c/svgwg",
-      "w3c/webappsec-clear-site-data",
-      "w3c/battery",
-      "w3c/accelerometer",
-      "w3c/ambient-light",
-      "w3c/requestidlecallback",
-      "w3c/webauthn",
-      "w3c/webappsec-cowl",
-      "w3c/manifest",
-      "w3c/webrtc-pc",
-      "w3c/DOM-Parsing",
-      "w3c/mediacapture-main",
-      "w3c/mediacapture-fromelement",
-      "w3c/ServiceWorker",
-      "w3c/dnt",
-      "w3c/IntersectionObserver",
-      "w3c/wot-architecture",
-      "w3c/presentation-api",
-      "w3c/mst-content-hint",
-      "w3c/payment-method-id",
-      "w3c/longtasks",
-      "w3c/mediacapture-screen-share",
-      "w3c/webpayments-http-messages",
-      "w3c/orientation-sensor",
-      "w3c/selection-api",
-      "w3c/hr-time",
-      "w3c/mediacapture-image",
-      "w3c/FileAPI",
-      "w3c/html-aam",
-      "w3c/dom",
-      "w3c/permissions",
-      "w3c/css-houdini-drafts",
-      "w3c/ttml2",
-      "w3c/resource-hints",
-      "w3c/webappsec-csp",
-      "w3c/clipboard-apis",
-      "w3c/webappsec-uisecurity",
-      "w3c/automotive",
-      "w3c/html",
-      "w3c/gamepad",
-      "webaudio/web-audio-api",
-      "w3c/vc-data-model",
-      "w3c/payment-method-manifest",
-      "w3c/mediacapture-depth",
-      "w3c/paint-timing",
-      "w3c/uievents-code",
-      "w3c/uievents",
-      "w3c/wot-thing-description",
-      "w3c/input-events",
-      "w3c/wot-scripting-api",
-      "w3c/webappsec-upgrade-insecure-requests",
-      "w3c/mediacapture-record",
-      "w3c/payment-request",
-      "w3c/uievents-key",
-      "w3c/mediacapture-output",
-      "w3c/microdata",
-      "w3c/webappsec-referrer-policy",
-      "w3c/webcomponents"
-    ],
-    "invalidcontributing": [
-      {
-        "repo": "w3c/svg-aam",
-        "contributing": "# Accessible Rich Internet Applications Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](https://www.w3.org/Consortium/Legal/copyright-documents). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
-      },
-      {
-        "repo": "whatwg/encoding",
-        "contributing": "Please see the [WHATWG Contributor Guidelines](https://github.com/whatwg/meta/blob/master/CONTRIBUTING.md).\n"
-      }
-    ],
-    "nolicense": [
       "whatwg/encoding",
       "w3c/wcag-act",
-      "w3c/svg-aam",
-      "w3c/wake-lock",
-      "w3c/core-aam",
-      "webassembly/spec",
-      "w3c/web-animations",
-      "w3c/webappsec-credential-management",
-      "w3c/aria",
-      "w3c/beacon",
-      "w3c/imsc",
-      "w3c/preload",
-      "w3c/accname",
       "w3c/dxwg",
-      "w3c/navigation-timing",
-      "webaudio/web-midi-api",
-      "w3c/performance-timeline",
-      "w3c/webappsec-mixed-content",
-      "w3c/wpub-ann",
-      "w3c/wpub",
-      "w3c/personalization-semantics",
-      "w3c/gyroscope",
-      "w3c/pointerevents",
-      "w3c/webappsec-secure-contexts",
-      "w3c/webvtt",
-      "w3c/graphics-aam",
-      "w3c/webrtc-stats",
-      "w3c/payment-handler",
-      "w3c/proximity",
-      "w3c/pointerlock",
-      "w3c/ttml1",
-      "w3c/html-aria",
-      "w3c/csswg-drafts",
-      "w3c/webrtc-dscp-exp",
-      "w3c/user-timing",
-      "w3c/screen-orientation",
-      "w3c/page-visibility",
-      "w3c/resource-timing",
-      "w3c/graphics-aria",
-      "w3c/magnetometer",
-      "w3c/pwpub",
-      "w3c/fxtf-drafts",
-      "w3c/ambient-light",
-      "w3c/battery",
-      "w3c/sensors",
-      "w3c/server-timing",
-      "w3c/push-api",
-      "w3c/requestidlecallback",
-      "w3c/mediacapture-main",
-      "w3c/DOM-Parsing",
-      "w3c/ServiceWorker",
-      "w3c/manifest",
-      "w3c/webrtc-pc",
-      "w3c/webappsec-cowl",
-      "w3c/mst-content-hint",
-      "w3c/wot-architecture",
-      "w3c/selection-api",
-      "w3c/dnt",
-      "w3c/hr-time",
-      "w3c/webauthn",
-      "w3c/webpayments-http-messages",
-      "w3c/longtasks",
-      "w3c/orientation-sensor",
-      "w3c/payment-method-id",
-      "w3c/mediacapture-screen-share",
-      "w3c/accelerometer",
-      "w3c/svgwg",
-      "w3c/remote-playback",
-      "w3c/presentation-api",
-      "w3c/webappsec-clear-site-data",
-      "w3c/html-aam",
       "w3c/ttml2",
-      "w3c/FileAPI",
+      "w3c/longtasks",
+      "w3c/pwpub",
+      "w3c/gyroscope",
+      "w3c/page-visibility",
+      "w3c/svgwg",
+      "w3c/beacon",
+      "w3c/mediacapture-screen-share",
+      "w3c/webappsec-credential-management",
+      "w3c/preload",
+      "w3c/webrtc-stats",
+      "w3c/vc-data-model",
+      "w3c/battery",
+      "w3c/webappsec-mixed-content",
+      "w3c/uievents-code",
+      "w3c/remote-playback",
+      "w3c/webappsec-uisecurity",
+      "w3c/ambient-light",
+      "w3c/webcomponents",
+      "w3c/pointerlock",
+      "w3c/user-timing",
+      "w3c/webappsec-csp",
+      "w3c/webappsec-referrer-policy",
+      "w3c/gamepad",
+      "w3c/wpub-ann",
+      "w3c/hr-time",
+      "w3c/aria",
+      "w3c/fxtf-drafts",
+      "w3c/resource-hints",
+      "w3c/uievents",
+      "w3c/magnetometer",
+      "w3c/html-aam",
+      "w3c/graphics-aria",
+      "w3c/sensors",
+      "w3c/mediacapture-image",
+      "w3c/presentation-api",
+      "w3c/screen-orientation",
+      "w3c/html",
+      "w3c/payment-request",
+      "w3c/wpub",
       "w3c/mediacapture-fromelement",
+      "w3c/webrtc-dscp-exp",
+      "webaudio/web-audio-api",
+      "w3c/ServiceWorker",
+      "w3c/webappsec-cowl",
+      "w3c/orientation-sensor",
+      "w3c/payment-handler",
+      "w3c/manifest",
+      "w3c/wot-scripting-api",
+      "w3c/webauthn",
+      "w3c/wot-thing-description",
+      "w3c/mediacapture-depth",
+      "w3c/selection-api",
       "w3c/IntersectionObserver",
+      "w3c/pointerevents",
+      "w3c/permissions",
+      "w3c/dnt",
+      "w3c/microdata",
+      "w3c/mediacapture-output",
+      "w3c/css-houdini-drafts",
+      "w3c/input-events",
+      "w3c/paint-timing",
+      "w3c/payment-method-manifest",
+      "w3c/webappsec-clear-site-data",
+      "w3c/clipboard-apis",
+      "w3c/performance-timeline",
+      "w3c/csswg-drafts",
+      "w3c/webappsec-secure-contexts",
+      "w3c/wot-architecture",
+      "w3c/dom",
+      "w3c/webrtc-pc",
+      "w3c/accname",
+      "w3c/DOM-Parsing",
+      "w3c/requestidlecallback",
+      "w3c/uievents-key",
+      "w3c/webappsec-upgrade-insecure-requests",
+      "w3c/mediacapture-main",
+      "w3c/server-timing",
+      "w3c/mst-content-hint",
+      "w3c/mediacapture-record",
+      "w3c/payment-method-id",
+      "webaudio/web-midi-api",
+      "w3c/graphics-aam",
+      "w3c/webvtt",
+      "w3c/imsc",
+      "w3c/proximity",
+      "w3c/automotive",
+      "webassembly/spec",
+      "w3c/FileAPI",
+      "w3c/webpayments-http-messages",
+      "w3c/ttml1",
+      "w3c/accelerometer",
+      "w3c/navigation-timing",
+      "w3c/wake-lock",
+      "w3c/push-api",
+      "w3c/html-aria",
+      "w3c/resource-timing",
+      "w3c/personalization-semantics"
+    ],
+    "invalidcontributing": [],
+    "nolicense": [
+      "w3c/core-aam",
+      "w3c/svg-aam",
+      "whatwg/encoding",
+      "w3c/web-animations",
+      "w3c/dxwg",
+      "w3c/wcag-act",
+      "w3c/pwpub",
+      "w3c/gyroscope",
+      "w3c/page-visibility",
+      "w3c/remote-playback",
+      "w3c/webappsec-mixed-content",
+      "w3c/uievents-code",
+      "w3c/battery",
+      "w3c/webrtc-stats",
+      "w3c/vc-data-model",
+      "w3c/webappsec-credential-management",
+      "w3c/mediacapture-screen-share",
+      "w3c/preload",
+      "w3c/longtasks",
+      "w3c/ttml2",
+      "w3c/webappsec-uisecurity",
+      "w3c/ambient-light",
+      "w3c/webappsec-referrer-policy",
+      "w3c/gamepad",
+      "w3c/user-timing",
+      "w3c/webcomponents",
+      "w3c/pointerlock",
+      "w3c/svgwg",
+      "w3c/beacon",
+      "w3c/wpub-ann",
+      "w3c/hr-time",
+      "w3c/html-aam",
+      "w3c/magnetometer",
+      "w3c/webappsec-csp",
+      "w3c/wpub",
+      "w3c/selection-api",
+      "w3c/orientation-sensor",
+      "w3c/mediacapture-depth",
+      "w3c/fxtf-drafts",
       "w3c/mediacapture-image",
       "w3c/resource-hints",
-      "w3c/permissions",
-      "w3c/css-houdini-drafts",
-      "w3c/dom",
-      "w3c/mediacapture-depth",
-      "webaudio/web-audio-api",
-      "w3c/gamepad",
-      "w3c/automotive",
+      "w3c/webauthn",
+      "w3c/payment-handler",
+      "w3c/IntersectionObserver",
+      "w3c/pointerevents",
+      "w3c/presentation-api",
+      "w3c/sensors",
       "w3c/html",
-      "w3c/paint-timing",
-      "w3c/vc-data-model",
-      "w3c/wot-scripting-api",
-      "w3c/uievents-key",
-      "w3c/webappsec-uisecurity",
-      "w3c/input-events",
-      "w3c/wot-thing-description",
-      "w3c/uievents",
-      "w3c/clipboard-apis",
-      "w3c/payment-method-manifest",
-      "w3c/webappsec-csp",
-      "w3c/mediacapture-record",
       "w3c/payment-request",
+      "w3c/graphics-aria",
+      "w3c/webappsec-cowl",
+      "w3c/wot-scripting-api",
+      "w3c/screen-orientation",
+      "webaudio/web-audio-api",
+      "w3c/mediacapture-fromelement",
+      "w3c/permissions",
+      "w3c/dnt",
+      "w3c/webrtc-dscp-exp",
+      "w3c/manifest",
+      "w3c/uievents",
+      "w3c/input-events",
+      "w3c/css-houdini-drafts",
+      "w3c/wot-architecture",
       "w3c/mediacapture-output",
+      "w3c/graphics-aam",
       "w3c/webappsec-upgrade-insecure-requests",
+      "w3c/FileAPI",
+      "w3c/csswg-drafts",
+      "w3c/payment-method-id",
+      "w3c/proximity",
+      "w3c/mst-content-hint",
+      "w3c/accname",
+      "webassembly/spec",
+      "w3c/mediacapture-main",
+      "w3c/webappsec-clear-site-data",
+      "w3c/dom",
+      "w3c/uievents-key",
+      "w3c/paint-timing",
+      "w3c/DOM-Parsing",
+      "w3c/webappsec-secure-contexts",
+      "w3c/webvtt",
+      "w3c/webrtc-pc",
+      "w3c/ttml1",
+      "w3c/performance-timeline",
+      "webaudio/web-midi-api",
       "w3c/microdata",
-      "w3c/uievents-code",
-      "w3c/webappsec-referrer-policy",
-      "w3c/webcomponents"
+      "w3c/wot-thing-description",
+      "w3c/aria",
+      "w3c/ServiceWorker",
+      "w3c/server-timing",
+      "w3c/automotive",
+      "w3c/imsc",
+      "w3c/accelerometer",
+      "w3c/push-api",
+      "w3c/navigation-timing",
+      "w3c/wake-lock",
+      "w3c/mediacapture-record",
+      "w3c/payment-method-manifest",
+      "w3c/html-aria",
+      "w3c/requestidlecallback",
+      "w3c/clipboard-apis",
+      "w3c/resource-timing",
+      "w3c/webpayments-http-messages",
+      "w3c/personalization-semantics"
     ],
     "invalidlicense": [],
     "noreadme": [
+      "w3c/core-aam",
       "w3c/svg-aam",
       "whatwg/encoding",
-      "w3c/wcag-act",
-      "w3c/wake-lock",
       "w3c/web-animations",
-      "w3c/aria",
-      "webassembly/spec",
-      "w3c/core-aam",
-      "w3c/beacon",
-      "w3c/accname",
-      "w3c/webappsec-credential-management",
-      "w3c/imsc",
-      "w3c/wpub",
-      "w3c/graphics-aam",
-      "w3c/webappsec-secure-contexts",
-      "w3c/gyroscope",
-      "w3c/wpub-ann",
-      "w3c/proximity",
-      "w3c/pointerlock",
-      "w3c/personalization-semantics",
-      "w3c/payment-handler",
-      "w3c/performance-timeline",
-      "w3c/pwpub",
-      "w3c/resource-timing",
-      "w3c/manifest",
-      "w3c/page-visibility",
-      "w3c/graphics-aria",
-      "w3c/DOM-Parsing",
-      "w3c/navigation-timing",
-      "w3c/screen-orientation",
-      "w3c/user-timing",
-      "w3c/ttml1",
       "w3c/dxwg",
-      "w3c/webrtc-dscp-exp",
-      "w3c/push-api",
-      "w3c/html-aria",
-      "w3c/sensors",
-      "w3c/fxtf-drafts",
-      "w3c/csswg-drafts",
-      "w3c/ServiceWorker",
-      "w3c/ambient-light",
+      "w3c/page-visibility",
+      "w3c/pwpub",
+      "w3c/gyroscope",
       "w3c/preload",
-      "w3c/remote-playback",
-      "w3c/presentation-api",
-      "w3c/webappsec-clear-site-data",
-      "w3c/webappsec-mixed-content",
-      "webaudio/web-midi-api",
-      "w3c/pointerevents",
-      "w3c/webrtc-stats",
-      "w3c/webvtt",
-      "w3c/battery",
-      "w3c/orientation-sensor",
-      "w3c/requestidlecallback",
-      "w3c/mst-content-hint",
-      "w3c/hr-time",
-      "w3c/wot-architecture",
-      "w3c/dnt",
-      "w3c/webpayments-http-messages",
-      "w3c/longtasks",
-      "w3c/accelerometer",
-      "w3c/payment-method-id",
-      "w3c/server-timing",
-      "w3c/selection-api",
-      "w3c/webappsec-cowl",
-      "w3c/mediacapture-main",
-      "w3c/svgwg",
-      "w3c/webrtc-pc",
-      "w3c/mediacapture-screen-share",
-      "w3c/webauthn",
-      "w3c/automotive",
-      "w3c/input-events",
-      "w3c/html",
-      "w3c/css-houdini-drafts",
-      "webaudio/web-audio-api",
       "w3c/ttml2",
-      "w3c/gamepad",
-      "w3c/uievents",
-      "w3c/dom",
-      "w3c/webappsec-uisecurity",
-      "w3c/wot-scripting-api",
-      "w3c/resource-hints",
-      "w3c/mediacapture-depth",
-      "w3c/wot-thing-description",
-      "w3c/permissions",
-      "w3c/paint-timing",
-      "w3c/FileAPI",
+      "w3c/longtasks",
+      "w3c/mediacapture-screen-share",
+      "w3c/battery",
       "w3c/vc-data-model",
-      "w3c/mediacapture-fromelement",
-      "w3c/uievents-key",
-      "w3c/mediacapture-image",
-      "w3c/html-aam",
-      "w3c/clipboard-apis",
-      "w3c/IntersectionObserver",
-      "w3c/webappsec-csp",
-      "w3c/payment-method-manifest",
-      "w3c/mediacapture-record",
-      "w3c/mediacapture-output",
-      "w3c/payment-request",
+      "w3c/remote-playback",
       "w3c/uievents-code",
-      "w3c/microdata",
-      "w3c/webappsec-upgrade-insecure-requests",
-      "w3c/magnetometer",
+      "w3c/webappsec-mixed-content",
+      "w3c/wcag-act",
+      "w3c/ambient-light",
+      "w3c/svgwg",
+      "w3c/webappsec-credential-management",
+      "w3c/webrtc-stats",
       "w3c/webappsec-referrer-policy",
-      "w3c/webcomponents"
+      "w3c/beacon",
+      "w3c/user-timing",
+      "w3c/pointerlock",
+      "w3c/webappsec-uisecurity",
+      "w3c/magnetometer",
+      "w3c/webappsec-csp",
+      "w3c/gamepad",
+      "w3c/webcomponents",
+      "w3c/hr-time",
+      "w3c/html-aam",
+      "w3c/wpub-ann",
+      "w3c/mediacapture-depth",
+      "w3c/IntersectionObserver",
+      "w3c/webappsec-cowl",
+      "w3c/FileAPI",
+      "w3c/webauthn",
+      "w3c/graphics-aam",
+      "w3c/payment-request",
+      "w3c/ttml1",
+      "w3c/wot-architecture",
+      "w3c/pointerevents",
+      "w3c/webvtt",
+      "w3c/orientation-sensor",
+      "w3c/input-events",
+      "w3c/DOM-Parsing",
+      "w3c/css-houdini-drafts",
+      "w3c/manifest",
+      "w3c/uievents-key",
+      "w3c/dnt",
+      "w3c/mediacapture-image",
+      "w3c/presentation-api",
+      "w3c/wpub",
+      "w3c/mst-content-hint",
+      "w3c/proximity",
+      "w3c/webrtc-dscp-exp",
+      "w3c/mediacapture-record",
+      "w3c/resource-hints",
+      "w3c/uievents",
+      "w3c/webpayments-http-messages",
+      "w3c/mediacapture-output",
+      "w3c/aria",
+      "w3c/navigation-timing",
+      "w3c/payment-handler",
+      "w3c/screen-orientation",
+      "webassembly/spec",
+      "w3c/permissions",
+      "w3c/webappsec-secure-contexts",
+      "w3c/clipboard-apis",
+      "w3c/graphics-aria",
+      "w3c/imsc",
+      "w3c/automotive",
+      "w3c/push-api",
+      "w3c/wake-lock",
+      "w3c/payment-method-id",
+      "w3c/ServiceWorker",
+      "w3c/csswg-drafts",
+      "w3c/resource-timing",
+      "w3c/mediacapture-fromelement",
+      "w3c/paint-timing",
+      "w3c/wot-scripting-api",
+      "webaudio/web-audio-api",
+      "w3c/performance-timeline",
+      "w3c/html",
+      "w3c/wot-thing-description",
+      "w3c/webappsec-clear-site-data",
+      "w3c/webrtc-pc",
+      "w3c/payment-method-manifest",
+      "w3c/html-aria",
+      "w3c/mediacapture-main",
+      "w3c/server-timing",
+      "w3c/microdata",
+      "webaudio/web-midi-api",
+      "w3c/dom",
+      "w3c/fxtf-drafts",
+      "w3c/selection-api",
+      "w3c/webappsec-upgrade-insecure-requests",
+      "w3c/accname",
+      "w3c/accelerometer",
+      "w3c/sensors",
+      "w3c/requestidlecallback",
+      "w3c/personalization-semantics"
     ],
-    "contacts": [
-      "wendy+gh@seltzer.org",
-      "dom@w3.org",
-      "svgeesus",
-      "plh@w3.org",
-      "xiaoqian@w3.org",
-      "ij@w3.org",
-      "fd@w3.org",
-      "liamquin",
-      "mike@w3.org",
-      "vivienlacourba",
-      "michael-n-cooper",
-      "ashimura"
-    ],
+    "contacts": [],
     "noashnazg": [
       "w3c/web-animations",
       "whatwg/encoding",
