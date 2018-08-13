@@ -46,8 +46,8 @@ fetch("https://w3c.github.io/spec-dashboard/groups.json")
                 fetch("https://labs.w3.org/hatchery/repo-manager/api/repos")
                     .then(r => r.json())
                     .then(repoData => {
-                        const groupsWithAshNazg = repoData.map(r => r.fullName);
-                      errors.noashnazg = [...repos].map(r => r.toLowerCase()).filter(r => groupsWithAshNazg.indexOf(r) === -1);
+                        const groupsWithAshNazg = repoData.map(r => r.fullName.toLowerCase());
+                        errors.noashnazg = [...repos].map(r => r.toLowerCase()).filter(r => groupsWithAshNazg.indexOf(r) === -1);
                         return Promise.all([...repos].map(repofullname => {
                     return octo.repos('w3c/licenses').contents('WG-CONTRIBUTING.md').fetch().then(ghBlobToString).then(text => contributing = text)
                         .then(() => octo.repos('w3c/licenses').contents('WG-CONTRIBUTING-SW.md').fetch().then(ghBlobToString).then(text => contributingSw = text))
