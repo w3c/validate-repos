@@ -4,6 +4,7 @@ const errortypes = {
     "nocontributing": "No CONTRIBUTING.md file",
     //    "invalidcontributing": "Invalid CONTRIBUTING.MD file",
     "nolicense": "No LICENSE.md file",
+    "nocodeofconduct": "No CODE_OF_CONDUCT.md file",
     "invalidlicense": "Invalid LICENSE.md file",
     "noreadme": "No README.md file",
     "noashnazg": "Not configured with the Repo Manager"
