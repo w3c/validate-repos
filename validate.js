@@ -1,6 +1,7 @@
 const fetch = require("node-fetch");
 const Octokat = require("octokat");
 const config = require("./config.json");
+const w3cLicenses = require("./w3cLicenses.js");
 
 const ghBlobToString = blob => new Buffer(blob.content, 'base64').toString('utf8');
 const nlToSpace = str => str.replace(/\n/g, " ").replace(/  /g, " ").trim();
@@ -43,19 +44,19 @@ fetch("https://w3c.github.io/spec-dashboard/groups.json")
                 const octo = new Octokat({ token: config.ghToken });
                 const errors = {"now3cjson":[], "invalidcontacts":[], "nocontributing":[], "invalidcontributing": [], "nolicense": [], "invalidlicense": [], "noreadme": [], "contacts": new Set(), "noashnazg": []};
 
-                fetch("https://labs.w3.org/hatchery/repo-manager/api/repos")
+                w3cLicenses().then(lic => {
+                    contributing = lic.contributing;
+                    contributingSw = lic.contributingSw;
+                    license = lic.license;
+                    licenseSw = lic.licenseSw;
+                  }).then(() => fetch("https://labs.w3.org/hatchery/repo-manager/api/repos"))
                     .then(r => r.json())
                     .then(repoData => {
                         const groupsWithAshNazg = repoData.map(r => r.fullName);
                       errors.noashnazg = [...repos].map(r => r.toLowerCase()).filter(r => groupsWithAshNazg.indexOf(r) === -1);
                         return Promise.all([...repos].map(repofullname => {
-                    return octo.repos('w3c/licenses').contents('WG-CONTRIBUTING.md').fetch().then(ghBlobToString).then(text => contributing = text)
-                        .then(() => octo.repos('w3c/licenses').contents('WG-CONTRIBUTING-SW.md').fetch().then(ghBlobToString).then(text => contributingSw = text))
-                        .then(() => octo.repos('w3c/licenses').contents('WG-LICENSE.md').fetch().then(ghBlobToString).then(text => license = text))
-                        .then(() => octo.repos('w3c/licenses').contents('WG-LICENSE-SW.md').fetch().then(ghBlobToString).then(text => licenseSw = text))
-                        .then(() =>
-                              octo.repos(...repofullname.split('/'))
-                              .contents('w3c.json').fetch())
+                    return octo.repos(...repofullname.split('/'))
+                              .contents('w3c.json').fetch()
                         .then(ghBlobToString)
                         .then(str => JSON.parse(str))
                         .then(function(w3cinfo) {
