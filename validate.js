@@ -41,7 +41,7 @@ fetch("https://w3c.github.io/spec-dashboard/groups.json")
                     });
                 let contributing, contributingSw, license, licenseSw;
                 const octo = new Octokat({ token: config.ghToken });
-                const errors = {"now3cjson":[], "invalidcontacts":[], "nocontributing":[], "invalidcontributing": [], "nolicense": [], "invalidlicense": [], "noreadme": [], "contacts": new Set(), "noashnazg": []};
+                const errors = {"now3cjson":[], "invalidcontacts":[], "nocontributing":[], "invalidcontributing": [], "nolicense": [], "nocodeofconduct": [], "invalidlicense": [], "noreadme": [], "contacts": new Set(), "noashnazg": []};
 
                 fetch("https://labs.w3.org/hatchery/repo-manager/api/repos")
                     .then(r => r.json())
@@ -88,6 +88,12 @@ fetch("https://w3c.github.io/spec-dashboard/groups.json")
                                   if (!mdMatch(repoLicense, license) && !mdMatch(repoLicense, licenseSw)) errors.invalidlicense.push({repo: repofullname, license: repoLicense});
 
                               }, () => errors.nolicense.push(repofullname)))
+                        .then(() => octo.repos(...repofullname.split('/'))
+                              .contents('CODE_OF_CONDUCT.md').fetch()
+                              .then(ghBlobToString)
+                              .then((repoLicense) => {
+                                  // test content
+                              }, () => errors.nocodeofconduct.push(repofullname)))
                         .then(() => octo.repos(...repofullname.split('/'))
                               .contents('README.md').fetch()
                               .then(ghBlobToString)
