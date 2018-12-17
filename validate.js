@@ -1,103 +1,173 @@
 const fetch = require("node-fetch");
-const Octokat = require("octokat");
+const w3c = require("node-w3capi");
+const graphql = require("./graphql.js");
+
+
+const w3cLicenses = require("./w3cLicenses.js");
 const config = require("./config.json");
 
-const ghBlobToString = blob => new Buffer(blob.content, 'base64').toString('utf8');
+w3c.apiKey = config.w3capikey;
+
+const orgs = ["w3c", "WebAudio", "immersive-web", "webassembly", "w3ctag"];
+const errors = {"inconsistentgroups": [], "now3cjson":[], "invalidw3cjson": [], "illformedw3cjson":[], "incompletew3cjson":[], "nocontributing":[], "invalidcontributing": [], "nolicense": [], "nocodeofconduct": [], "invalidlicense": [], "noreadme": [],  "noashnazg": []};
+const validRepoTypes = ['rec-track', 'note', 'cg-report', 'process', 'homepage', 'article', 'tool', 'project', 'others'];
+
+
+let allgroups = new Set();
+let groupRepos = {};
+let crawl;
+let contributing, contributingSw, license, licenseSw;
+
+
+const arrayify = x => Array.isArray(x) ? x : [x];
+const repoSort = (r1, r2) => typeof r1 === "string" ? r1.localeCompare(r2) : r1.repo.localeCompare(r2.repo);
+
 const nlToSpace = str => str.replace(/\n/g, " ").replace(/  /g, " ").trim();
 const httpToHttps = str => str.replace(/http:\/\/www.w3.org\//g, "https://www.w3.org/");
 
 const mdMatch = (md, ref) => nlToSpace(httpToHttps(md.toLowerCase())).indexOf(nlToSpace(ref.toLowerCase())) !== -1;
 
-fetch("https://w3c.github.io/spec-dashboard/groups.json")
-    .then(r => r.json())
-    .then(groupData => {
-        const groupIds = Object.keys(groupData);
-        Promise.all(groupIds.map(id =>
-                                 fetch("https://w3c.github.io/spec-dashboard/pergroup/" + id + "-repo.json")
-                                 .then(r=>r.json())
-                                 .then(specs => {
-                                     return {groupId: id,
-                                             specs
-                                            }
-                                     ;})
-                                 .catch(err => console.error("Failed to fetch data for group " + id + ": " + err))))
-            .then(results => {
-                const repos = new Set();
-                const repoOwners = {};
-                results.filter(x => x && x.specs)
-                    .forEach(groupSpecs => {
-                        repoOwners[groupSpecs.groupId] = {};
-                        repoOwners[groupSpecs.groupId].name =groupData[groupSpecs.groupId].name;
-                        repoOwners[groupSpecs.groupId].repos = new Set();
-                        Object.keys(groupSpecs.specs)
-                        // we only care about rec-track specs for this report
-                            .filter(s => groupSpecs.specs[s].recTrack)
-                            .forEach(spec => {
-                                 const repoFullname = groupSpecs.specs[spec].repo.owner + '/' + groupSpecs.specs[spec].repo.name;
-                                repoOwners[groupSpecs.groupId].repos.add(repoFullname);
-                                repos.add(repoFullname)
-                            });
-                        repoOwners[groupSpecs.groupId].repos = [...repoOwners[groupSpecs.groupId].repos];
-                    });
-                let contributing, contributingSw, license, licenseSw;
-                const octo = new Octokat({ token: config.ghapitoken });
-                const errors = {"now3cjson":[], "invalidcontacts":[], "nocontributing":[], "invalidcontributing": [], "nolicense": [], "invalidlicense": [], "noreadme": [], "contacts": new Set(), "noashnazg": []};
+const fullName = r => r.owner.login + '/' + r.name;
 
-                fetch("https://labs.w3.org/hatchery/repo-manager/api/repos")
-                    .then(r => r.json())
-                    .then(repoData => {
-                        const groupsWithAshNazg = repoData.map(r => r.fullName.toLowerCase());
-                        errors.noashnazg = [...repos].map(r => r.toLowerCase()).filter(r => groupsWithAshNazg.indexOf(r) === -1);
-                        return Promise.all([...repos].map(repofullname => {
-                    return octo.repos('w3c/licenses').contents('WG-CONTRIBUTING.md').fetch().then(ghBlobToString).then(text => contributing = text)
-                        .then(() => octo.repos('w3c/licenses').contents('WG-CONTRIBUTING-SW.md').fetch().then(ghBlobToString).then(text => contributingSw = text))
-                        .then(() => octo.repos('w3c/licenses').contents('WG-LICENSE.md').fetch().then(ghBlobToString).then(text => license = text))
-                        .then(() => octo.repos('w3c/licenses').contents('WG-LICENSE-SW.md').fetch().then(ghBlobToString).then(text => licenseSw = text))
-                        .then(() =>
-                              octo.repos(...repofullname.split('/'))
-                              .contents('w3c.json').fetch())
-                        .then(ghBlobToString)
-                        .then(str => JSON.parse(str))
-                        .then(function(w3cinfo) {
-                            return Promise.all(w3cinfo.contacts.map(function(username) {
-                                if (typeof username !== "string") {
-                                    errors.invalidcontacts.push({repo: repofullname, value: username});
-                                    return;
-                                } else {
-                                    return octo.users(username).fetch()
-                                        .then(function(u) {
-                                            errors.contacts.add(u.email ? u.email : u.login);
-/*                                            if (!u.email) {
-                                                console.error("Cannot determine email of " + u.login + ", listed as contact for " + repofullname);
-                                                }*/
-                                            return;
-                                        }, () => errors.invalidcontacts.push({repo: repofullname, value: username}));
-                                }
-                            }));
-                        }).catch(() => errors.now3cjson.push(repofullname))
-                            .then(() => octo.repos(...repofullname.split('/'))
-                                  .contents('CONTRIBUTING.md').fetch()
-                                  .then(ghBlobToString)
-                                  .then((repoContributing) => {
-                                      if (!mdMatch(repoContributing, contributing) && !mdMatch(repoContributing,contributingSw)) errors.invalidcontributing.push({repo: repofullname, contributing: repoContributing});
-                                  }, () => errors.nocontributing.push(repofullname)))
-                        .then(() => octo.repos(...repofullname.split('/'))
-                              .contents('LICENSE.md').fetch()
-                              .then(ghBlobToString)
-                              .then((repoLicense) => {
-                                  if (!mdMatch(repoLicense, license) && !mdMatch(repoLicense, licenseSw)) errors.invalidlicense.push({repo: repofullname, license: repoLicense});
+async function fetchRepoPage(org, acc = [], cursor = null) {
+  let res = await graphql(`
+ query {
+  organization(login:"${org}") {
+    repositories(first:100 after:"${cursor}") {
+      edges {
+        node {
+          id, name, owner { login } , isArchived, homepageUrl, description
+          w3cjson: object(expression: "HEAD:w3c.json") {
+            ... on Blob {
+              text
+            }
+          }
+          contributing: object(expression: "HEAD:CONTRIBUTING.md") {
+            ... on Blob {
+              text
+            }
+          }
+          license: object(expression: "HEAD:LICENSE.md") {
+            ... on Blob {
+              text
+            }
+          }
+          codeOfConduct { body }
+          readme: object(expression: "HEAD:README.md") {
+            ... on Blob {
+              text
+            }
+          }
+        }
+        cursor
+      }
+      pageInfo {
+        endCursor
+        hasNextPage
+      }
+    }
+  }
+ }`);
+  const data = acc.concat(res.organization.repositories.edges.map(e => e.node));
+  if (res.organization.repositories.pageInfo.hasNextPage) {
+    return fetchRepoPage(org, data, res.organization.repositories.pageInfo.endCursor);
+  } else {
+    return data;
+  }
+}
 
-                              }, () => errors.nolicense.push(repofullname)))
-                        .then(() => octo.repos(...repofullname.split('/'))
-                              .contents('README.md').fetch()
-                              .then(ghBlobToString)
-                              .then(() => {
-                                  // test content
-                              }, () => errors.noreadme.push(repofullname)));
-                        }))
-                    }).then(() => {
-                        errors.contacts = [...errors.contacts];
-                        console.log(JSON.stringify({groups: repoOwners, errors},null,2));
-                    });
+Promise.all(orgs.map(org => fetchRepoPage(org)))
+  .then(res => crawl = [].concat(...res))
+  .then(w3cLicenses)
+  .then(lic => {
+    contributing = lic.contributing;
+    contributingSw = lic.contributingSw;
+    license = lic.license;
+    licenseSw = lic.licenseSw;
+  }).then(() => fetch("https://labs.w3.org/hatchery/repo-manager/api/repos"))
+  .then(r => r.json())
+  .then(repoData => {
+    crawl.filter(r => !r.isArchived).forEach(r => {
+      if (!r.readme) {
+        errors.noreadme.push(fullName(r));
+      }
+      if (!r.codeofconduct) {
+        errors.nocodeofconduct.push(fullName(r));
+      }
+      if (!r.license || !r.license.text) {
+        errors.nolicense.push(fullName(r));
+      } else {
+        if (!mdMatch(r.license.text, license) && !mdMatch(r.license.text, licenseSw))
+          errors.invalidlicense.push({ repo: fullName(r), error: "doesn't match SW or DOC license", license: r.license.text });
+      }
+      if (!r.contributing || !r.contributing.text) {
+        errors.nocontributing.push(fullName(r));
+      } else {
+        if (!mdMatch(r.contributing.text, contributing) && !mdMatch(r.contributing.text, contributingSw))
+          errors.invalidcontributing.push({ repo: fullName(r), error: "doesn't match SW or DOC contributing", contributing: r.contributing.text });
+      }
+
+      if (r.w3cjson) {
+        let conf = null;
+        try {
+          conf = JSON.parse(r.w3cjson.text);
+        } catch (e) {
+          errors.illformedw3cjson.push(fullName(r));
+        }
+        if (conf) {
+          // TODO: replace with JSON schema?
+          if (!conf["repo-type"]) {
+            errors.incompletew3cjson.push({repo: fullName(r), error: "repo-type"});
+          } else {
+            const unknownTypes = arrayify(conf['repo-type']).filter(t => !validRepoTypes.includes(t));
+            if (unknownTypes.length) {
+              errors.invalidw3cjson.push({repo: fullName(r), error: "unknown types: " + JSON.stringify(unknownTypes)});
+            }
+          }
+          if (!conf.group) {
+            errors.incompletew3cjson.push({repo: fullName(r), error: "group"});
+          } else {
+            const groups = arrayify(conf.group).map(id => parseInt(id, 10));
+            allgroups = new Set([...allgroups, ...groups]);
+            groups.forEach(gid => {
+              if (!groupRepos[gid])
+                groupRepos[gid] = [];
+              groupRepos[gid].push({ ...r, fullName: fullName(r) });
             });
+            if (conf["repo-type"] && (conf["repo-type"] === 'rec-track' || conf["repo-type"] === 'cg-report')) {
+              const ashRepo = repoData.find(x => x.owner.toLowerCase() === r.owner.login.toLowerCase() && x.name.toLowerCase() === r.name.toLowerCase());
+              if (!ashRepo) {
+                errors.noashnazg.push(fullName(r));
+              } else {
+                const ashGroups = ashRepo.groups.map(g => parseInt(g.w3cid, 10));
+                if (ashGroups.filter(x => groups.includes(x)).length !== ashGroups.length) {
+                  errors.inconsistentgroups.push({repo: fullName(r), ashnazgroups: ashGroups, error: JSON.stringify(groups) + ' vs ' + JSON.stringify(ashGroups)});
+                }
+              }
+            }
+          }
+          if (!conf.contacts) {
+            errors.incompletew3cjson.push({repo: fullName(r), error: "contacts"});
+          } else {
+            if (arrayify(conf.contacts).some(x => typeof x !== "string")) {
+              errors.invalidw3cjson.push({repo: fullName(r), error: "invalid contacts: " + JSON.stringify(conf.contacts)});
+            }
+          }
+        }
+      } else {
+        errors.now3cjson.push(fullName(r));
+      }
     });
+    Object.keys(errors).forEach(k => {
+      errors[k] = errors[k].sort(repoSort);
+    });
+    w3c.groups().fetch({embed: true}, (err, w3cgroups) => {
+      const results = {errors};
+      results.groups = w3cgroups.filter(g => allgroups.has(g.id)).reduce((acc, group) => {
+        acc[group.id] = {...group, repos: groupRepos[group.id] };
+        return acc;
+      }, {});
+      console.log(JSON.stringify(results, null, 2));
+    });
+
+  });
