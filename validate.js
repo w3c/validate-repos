@@ -174,7 +174,7 @@ Promise.all(orgs.map(org => fetchRepoPage(org)))
               errors.invalidw3cjson.push({repo: fullName(r), error: "unknown types: " + JSON.stringify(unknownTypes)});
             }
           }
-          if (!conf.group) {
+          if (!conf.group && ["rec-track", "note", "cg-report"].includes(conf["repo-type"])) {
             errors.incompletew3cjson.push({repo: fullName(r), error: "group"});
           } else {
             const groups = arrayify(conf.group).map(id => parseInt(id, 10));
