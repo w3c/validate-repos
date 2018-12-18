@@ -18,9 +18,16 @@ function getParameterByName(name) {
   return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
 }
 
+const defaultReport = ["now3cjson", "inconsistengroups", "invalidw3cjson", "incompletew3cjson", "noashnazg"];
+
 const writeErrorEntry = (name, list, details) => {
   const li = document.createElement('li');
-  li.appendChild(document.createTextNode(name + (details ? ': ' + details : '')));
+  const link = document.createElement('a');
+  link.href = 'https://github.com/' + name;
+  link.appendChild(document.createTextNode(name));
+  li.appendChild(link);
+  if (details)
+    li.appendChild(document.createTextNode(': ' + details));
   list.appendChild(li);
 };
 
@@ -33,7 +40,7 @@ fetch("report.json")
     const groups = data.groups;
     const filterParam = getParameterByName("filter");
     const groupFilter = gid => getParameterByName("grouptype") ? (groups[gid].type || '').replace(' ', '') === getParameterByName("grouptype") : true;
-    const errorFilter = new Set((getParameterByName("filter") || "").split(",").filter(e => e !==''));
+    const errorFilter = new Set((getParameterByName("filter") || defaultReport.join(',')).split(",").filter(e => e !==''));
     Object.keys(groups).sort((a,b) => groups[a].name.localeCompare(groups[b].name))
       .filter(groupFilter)
       .forEach(groupId => {
@@ -81,6 +88,7 @@ fetch("report.json")
     data.errors.illformedw3cjson
       .forEach(x => writeErrorEntry(x, ul, "ill-formed JSON"));
     data.errors.now3cjson
+      .filter(x => x.startsWith('w3c'))
       .forEach(x => writeErrorEntry(x, ul, "no w3c.json"));
     section.appendChild(ul);
     report.appendChild(section);
