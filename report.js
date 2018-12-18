@@ -42,12 +42,12 @@ fetch("report.json")
     const groupFilter = gid => getParameterByName("grouptype") ? (groups[gid].type || '').replace(' ', '') === getParameterByName("grouptype") : true;
     const errorFilter = new Set((getParameterByName("filter") || defaultReport.join(',')).split(",").filter(e => e !==''));
     Object.keys(groups).sort((a,b) => groups[a].name.localeCompare(groups[b].name))
-      .filter(groupFilter)
       .forEach(groupId => {
         const section = document.createElement('section');
         const title = document.createElement('h2');
         title.appendChild(document.createTextNode(groups[groupId].name));
-        section.appendChild(title);
+        if (groupFilter(groupId))
+          section.appendChild(title);
         // FIXME: check repo-type
         if (!groups[groupId].repos.length) {
           const p = document.createElement('p');
@@ -71,7 +71,8 @@ fetch("report.json")
 
                 });
                 errsection.appendChild(list);
-                section.appendChild(errsection);
+                if (groupFilter(groupId))
+                  section.appendChild(errsection);
               }
             });
         }
