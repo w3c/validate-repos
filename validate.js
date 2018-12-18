@@ -29,6 +29,33 @@ const mdMatch = (md, ref) => nlToSpace(httpToHttps(md.toLowerCase())).indexOf(nl
 
 const fullName = r => r.owner.login + '/' + r.name;
 
+async function fetchLabelPage(org, repo, acc = [], cursor = null) {
+  let res = await graphql(`
+ query {
+    repository(owner:"${org}",name:"${repo}") {
+        labels(first: 100 after:"${cursor}") {
+            edges {
+              node {
+                name
+                color
+              }
+            }
+            pageInfo {
+    	  	endCursor
+      	        hasNextPage
+            }
+         }
+    }
+
+}`);
+    const data = acc.concat(res.repository.labels.edges);
+    if (res.repository.labels.pageInfo.hasNextPage) {
+      return fetchLabelPage(org, repo, data, res.repository.labels.pageInfo.endCursor);
+  } else {
+    return data.map(e => e.node);
+  }
+}
+
 async function fetchRepoPage(org, acc = [], cursor = null) {
   let res = await graphql(`
  query {
@@ -37,6 +64,18 @@ async function fetchRepoPage(org, acc = [], cursor = null) {
       edges {
         node {
           id, name, owner { login } , isArchived, homepageUrl, description
+          labels(first: 100) {
+            edges {
+              node {
+                name
+                color
+              }
+            }
+            pageInfo {
+    	  	endCursor
+      	        hasNextPage
+            }
+          }
           w3cjson: object(expression: "HEAD:w3c.json") {
             ... on Blob {
               text
@@ -68,12 +107,19 @@ async function fetchRepoPage(org, acc = [], cursor = null) {
     }
   }
  }`);
-  const data = acc.concat(res.organization.repositories.edges.map(e => e.node));
-  if (res.organization.repositories.pageInfo.hasNextPage) {
-    return fetchRepoPage(org, data, res.organization.repositories.pageInfo.endCursor);
-  } else {
-    return data;
-  }
+  // Fetch labels if they are paginated
+  return Promise.all(
+    res.organization.repositories.edges
+      .filter(e => e.node.labels.pageInfo.hasNextPage)
+      .map(e => fetchLabelPage(e.node.owner.login, e.node.name, e.node.labels.edges, e.node.labels.pageInfo.endCursor))
+  ).then(() => {
+    const data = acc.concat(res.organization.repositories.edges.map(e => e.node));
+    if (res.organization.repositories.pageInfo.hasNextPage) {
+      return fetchRepoPage(org, data, res.organization.repositories.pageInfo.endCursor);
+    } else {
+      return data;
+    }
+  });
 }
 
 Promise.all(orgs.map(org => fetchRepoPage(org)))
