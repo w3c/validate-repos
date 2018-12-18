@@ -208,7 +208,7 @@ Promise.all(orgs.map(org => fetchRepoPage(org)))
         }
       } else {
         // is the repo associated with a CG in the CG monitor?
-        const cgRepo = cgData.data.find(cg => cg.repositories.includes('https://github.com/' + fullName(r) || cg.repositories.includes('https://github.com/' + fullName(r) + '/'));
+        const cgRepo = cgData.data.find(cg => cg.repositories.includes('https://github.com/' + fullName(r) || cg.repositories.includes('https://github.com/' + fullName(r) + '/')));
         if (cgRepo) {
           if (!groupRepos[cgRepo.id])
             groupRepos[cgRepo.id] = [];
