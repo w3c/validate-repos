@@ -48,12 +48,12 @@ fetch("report.json")
         title.appendChild(document.createTextNode(groups[groupId].name));
         if (groupFilter(groupId))
           section.appendChild(title);
-        // FIXME: check repo-type
-        if (!groups[groupId].repos.length) {
+        if (groups[groupId].type === "working group" && !groups[groupId].repos.some(r => JSON.parse((r.w3cjson || {}).text)["repo-type"] === "rec-track")) {
           const p = document.createElement('p');
           p.appendChild(document.createTextNode('No identified repo for rec-track spec.'));
           section.appendChild(p);
-        } else {
+        }
+        if (groups[groupId].repos.length) {
           Object.keys(errortypes).filter(t => errorFilter.size === 0 || errorFilter.has(t))
             .forEach(err => {
               const repos = data.errors[err].filter(r => groups[groupId].repos.find(x => x.fullName === r || x.fullName === r.repo));
