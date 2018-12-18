@@ -8,8 +8,10 @@ const config = require("./config.json");
 
 w3c.apiKey = config.w3capikey;
 
-const orgs = ["w3c", "WebAudio", "immersive-web", "webassembly", "w3ctag"];
+const orgs = ["w3c", "WebAudio", "immersive-web", "webassembly", "w3ctag", "WICG"];
 const errors = {"inconsistentgroups": [], "now3cjson":[], "invalidw3cjson": [], "illformedw3cjson":[], "incompletew3cjson":[], "nocontributing":[], "invalidcontributing": [], "nolicense": [], "nocodeofconduct": [], "invalidlicense": [], "noreadme": [],  "noashnazg": []};
+
+// extract from https://w3c.github.io/w3c.json.html with [...document.querySelectorAll('#repo-type + dd .value')].map(n => n.textContent)
 const validRepoTypes = ['rec-track', 'note', 'cg-report', 'process', 'homepage', 'article', 'tool', 'project', 'others'];
 
 
@@ -130,9 +132,11 @@ Promise.all(orgs.map(org => fetchRepoPage(org)))
     contributingSw = lic.contributingSw;
     license = lic.license;
     licenseSw = lic.licenseSw;
-  }).then(() => fetch("https://labs.w3.org/hatchery/repo-manager/api/repos"))
-  .then(r => r.json())
-  .then(repoData => {
+  }).then(() => Promise.all([
+    fetch("https://labs.w3.org/hatchery/repo-manager/api/repos").then(r => r.json()),
+    fetch("https://w3c.github.io/cg-monitor/report.json").then(r => r.json()),
+  ]))
+  .then(([repoData, cgData]) => {
     crawl.filter(r => !r.isArchived).forEach(r => {
       if (!r.readme) {
         errors.noreadme.push(fullName(r));
@@ -182,6 +186,8 @@ Promise.all(orgs.map(org => fetchRepoPage(org)))
             });
             if (conf["repo-type"] && (conf["repo-type"] === 'rec-track' || conf["repo-type"] === 'cg-report')) {
               const ashRepo = repoData.find(x => x.owner.toLowerCase() === r.owner.login.toLowerCase() && x.name.toLowerCase() === r.name.toLowerCase());
+              // TODO: check repos associated to CG in cgData
+              // but with dissenting w3c.json
               if (!ashRepo) {
                 errors.noashnazg.push(fullName(r));
               } else {
@@ -201,6 +207,13 @@ Promise.all(orgs.map(org => fetchRepoPage(org)))
           }
         }
       } else {
+        // is the repo associated with a CG in the CG monitor?
+        const cgRepo = cgData.data.find(cg => cg.repositories.includes('https://github.com/' + fullName(r) || cg.repositories.includes('https://github.com/' + fullName(r) + '/'));
+        if (cgRepo) {
+          if (!groupRepos[cgRepo.id])
+            groupRepos[cgRepo.id] = [];
+          groupRepos[cgRepo.id].push({ ...r, fullName: fullName(r) });
+        }
         errors.now3cjson.push(fullName(r));
       }
     });
