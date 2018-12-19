@@ -4755,20 +4755,13 @@
     ],
     "noashnazg": [
       "immersive-web/editor-collab",
-      "w3c/charmod-norm",
       "w3c/low-vision-SC",
       "w3c/UAAG",
       "w3c/wcag-act",
-      "w3c/webappsec-cspee",
-      "w3c/webappsec-feature-policy",
       "w3c/webcrypto",
       "WICG/frame-timing"
     ],
     "inconsistentstatus": [
-      {
-        "repo": "w3c/charmod-norm",
-        "error": "TR document: false, vs repo: true"
-      },
       {
         "repo": "w3c/charter-webperf",
         "error": "repo: false, vs repo manager: true"
@@ -4800,14 +4793,6 @@
       {
         "repo": "w3c/poe",
         "error": "TR document: false, vs repo manager: true"
-      },
-      {
-        "repo": "w3c/tt-reqs",
-        "error": "repo: false, vs repo manager: true"
-      },
-      {
-        "repo": "w3c/ttwg",
-        "error": "repo: false, vs repo manager: true"
       },
       {
         "repo": "w3c/web-annotation",
@@ -6977,7 +6962,7 @@
             }
           },
           "w3cjson": {
-            "text": "{\n  \"group\":     32113\n, \"contacts\":  [ \"r12a\" ]\n, \"policy\":    \"open\"\n, \"repo-type\": \"rec-track\"\n}\n"
+            "text": "{\n  \"group\":     32113\n, \"contacts\":  \"r12a\"\n, \"policy\":    \"open\"\n, \"repo-type\": \"note\"\n}\n"
           },
           "contributing": null,
           "license": null,
@@ -9166,8 +9151,7 @@
           "readme": {
             "text": "# Timed Text Working Group (TTWG)\n\n## Introduction\n\nThis repository is used to track Working Group level actions, issues etc for the\nW3C Timed Text Working Group.\n"
           },
-          "fullName": "w3c/ttwg",
-          "hasRecTrack": true
+          "fullName": "w3c/ttwg"
         },
         {
           "id": "MDEwOlJlcG9zaXRvcnkxNTcxMTE3NjQ=",
@@ -9267,8 +9251,7 @@
           "readme": {
             "text": "# TTML Requirements\n"
           },
-          "fullName": "w3c/tt-reqs",
-          "hasRecTrack": true
+          "fullName": "w3c/tt-reqs"
         }
       ]
     },
@@ -15772,10 +15755,16 @@
                   "name": "translations",
                   "color": "bada55"
                 }
+              },
+              {
+                "node": {
+                  "name": "content",
+                  "color": "0e8a16"
+                }
               }
             ],
             "pageInfo": {
-              "endCursor": "Y3Vyc29yOnYyOpHORSfA-A==",
+              "endCursor": "Y3Vyc29yOnYyOpHORYlaTg==",
               "hasNextPage": false
             }
           },
@@ -24358,7 +24347,8 @@
           "readme": {
             "text": "# webappsec-feature-policy"
           },
-          "fullName": "w3c/webappsec-feature-policy"
+          "fullName": "w3c/webappsec-feature-policy",
+          "hasRecTrack": true
         }
       ]
     },
@@ -47983,7 +47973,7 @@
             "login": "w3c"
           },
           "isArchived": false,
-          "homepageUrl": "",
+          "homepageUrl": "https://w3c.github.io/wp-vocab/",
           "description": "Vocabulary and context for the Web Publication Manifest",
           "labels": {
             "edges": [
