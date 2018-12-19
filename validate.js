@@ -9,7 +9,7 @@ const config = require("./config.json");
 w3c.apiKey = config.w3capikey;
 
 const orgs = ["w3c", "WebAudio", "immersive-web", "webassembly", "w3ctag", "WICG"];
-const errors = {"inconsistentgroups": [], "now3cjson":[], "invalidw3cjson": [], "illformedw3cjson":[], "incompletew3cjson":[], "nocontributing":[], "invalidcontributing": [], "nolicense": [], "nocodeofconduct": [], "invalidlicense": [], "noreadme": [],  "noashnazg": []};
+const errors = {"inconsistentgroups": [], "now3cjson":[], "invalidw3cjson": [], "illformedw3cjson":[], "incompletew3cjson":[], "nocontributing":[], "invalidcontributing": [], "nolicense": [], "nocodeofconduct": [], "invalidlicense": [], "noreadme": [],  "noashnazg": [], "inconsistentstatus": []};
 
 // extract from https://w3c.github.io/w3c.json.html with [...document.querySelectorAll('#repo-type + dd .value')].map(n => n.textContent)
 const validRepoTypes = ['rec-track', 'note', 'cg-report', 'process', 'homepage', 'article', 'tool', 'project', 'others'];
@@ -135,8 +135,9 @@ Promise.all(orgs.map(org => fetchRepoPage(org)))
   }).then(() => Promise.all([
     fetch("https://labs.w3.org/hatchery/repo-manager/api/repos").then(r => r.json()),
     fetch("https://w3c.github.io/cg-monitor/report.json").then(r => r.json()),
+    fetch("https://w3c.github.io/spec-dashboard/repo-map.json").then(r => r.json())
   ]))
-  .then(([repoData, cgData]) => {
+  .then(([repoData, cgData, repoMap]) => {
     crawl.filter(r => !r.isArchived).forEach(r => {
       if (!r.readme) {
         errors.noreadme.push(fullName(r));
@@ -156,6 +157,21 @@ Promise.all(orgs.map(org => fetchRepoPage(org)))
         if (!mdMatch(r.contributing.text, contributing) && !mdMatch(r.contributing.text, contributingSw))
           errors.invalidcontributing.push({ repo: fullName(r), error: "doesn't match SW or DOC contributing", contributing: r.contributing.text });
       }
+      let shouldBeRepoManaged = false;
+      let hasRecTrack = {ashnazg: null, repotype:null, tr: null}; // TODO detect conflicting information (repo-type vs ash-nazg vs TR doc)
+
+      let groups = [];
+      // is the repo associated with a CG in the CG monitor?
+      const cgRepo = cgData.data.find(cg => cg.repositories.includes('https://github.com/' + fullName(r) || cg.repositories.includes('https://github.com/' + fullName(r) + '/')));
+      // is the repo associated with a WG in the spec dashboard?
+      const wgRepo = repoMap[fullName(r)];
+
+      if (wgRepo)
+        hasRecTrack.tr = wgRepo.some(x => x.recTrack);
+
+      const ashRepo = repoData.find(x => x.owner.toLowerCase() === r.owner.login.toLowerCase() && x.name.toLowerCase() === r.name.toLowerCase());
+      if (ashRepo)
+        hasRecTrack.ashnazg = ashRepo.groups.some(g => g.groupType === "WG");
 
       if (r.w3cjson) {
         let conf = null;
@@ -167,8 +183,10 @@ Promise.all(orgs.map(org => fetchRepoPage(org)))
         if (conf) {
           // TODO: replace with JSON schema?
           if (!conf["repo-type"]) {
-            errors.incompletew3cjson.push({repo: fullName(r), error: "repo-type"});
+            errors.incompletew3cjson.push({repo: fullName(r), error: "repo-type" + (hasRecTrack === null ? " (unknown)" : (hasRecTrack.tr || hasRecTrack.ashnazg ? " (rec-track)" : " (not rec-track)")) });
           } else {
+            hasRecTrack.repotype = arrayify(conf["repo-type"]).includes('rec-track') ;
+
             const unknownTypes = arrayify(conf['repo-type']).filter(t => !validRepoTypes.includes(t));
             if (unknownTypes.length) {
               errors.invalidw3cjson.push({repo: fullName(r), error: "unknown types: " + JSON.stringify(unknownTypes)});
@@ -177,26 +195,8 @@ Promise.all(orgs.map(org => fetchRepoPage(org)))
           if (!conf.group && ["rec-track", "note", "cg-report"].includes(conf["repo-type"])) {
             errors.incompletew3cjson.push({repo: fullName(r), error: "group"});
           } else {
-            const groups = arrayify(conf.group).map(id => parseInt(id, 10));
-            allgroups = new Set([...allgroups, ...groups]);
-            groups.forEach(gid => {
-              if (!groupRepos[gid])
-                groupRepos[gid] = [];
-              groupRepos[gid].push({ ...r, fullName: fullName(r) });
-            });
-            if (conf["repo-type"] && (conf["repo-type"] === 'rec-track' || conf["repo-type"] === 'cg-report')) {
-              const ashRepo = repoData.find(x => x.owner.toLowerCase() === r.owner.login.toLowerCase() && x.name.toLowerCase() === r.name.toLowerCase());
-              // TODO: check repos associated to CG in cgData
-              // but with dissenting w3c.json
-              if (!ashRepo) {
-                errors.noashnazg.push(fullName(r));
-              } else {
-                const ashGroups = ashRepo.groups.map(g => parseInt(g.w3cid, 10));
-                if (ashGroups.filter(x => groups.includes(x)).length !== ashGroups.length) {
-                  errors.inconsistentgroups.push({repo: fullName(r), ashnazgroups: ashGroups, error: JSON.stringify(groups) + ' vs ' + JSON.stringify(ashGroups)});
-                }
-              }
-            }
+            groups = arrayify(conf.group).map(id => parseInt(id, 10));
+            shouldBeRepoManaged = conf["repo-type"] && (conf["repo-type"] === 'rec-track' || conf["repo-type"] === 'cg-report');
           }
           if (!conf.contacts) {
             errors.incompletew3cjson.push({repo: fullName(r), error: "contacts"});
@@ -207,16 +207,43 @@ Promise.all(orgs.map(org => fetchRepoPage(org)))
           }
         }
       } else {
-        // is the repo associated with a CG in the CG monitor?
-        const cgRepo = cgData.data.find(cg => cg.repositories.includes('https://github.com/' + fullName(r) || cg.repositories.includes('https://github.com/' + fullName(r) + '/')));
         if (cgRepo) {
-          allgroups.add(cgRepo.id);
-          if (!groupRepos[cgRepo.id])
-            groupRepos[cgRepo.id] = [];
-          groupRepos[cgRepo.id].push({ ...r, fullName: fullName(r) });
+          groups = [cgRepo.id];
+        }
+        if (wgRepo && wgRepo.length) {
+          groups = groups.concat(wgRepo.map(x => x.group));
         }
         errors.now3cjson.push(fullName(r));
       }
+      shouldBeRepoManaged = shouldBeRepoManaged || (wgRepo && wgRepo.some(x => x.recTrack));
+
+      allgroups = new Set([...allgroups, ...groups]);
+
+      if (shouldBeRepoManaged) {
+        if (!ashRepo) {
+          errors.noashnazg.push(fullName(r));
+        } else {
+          const ashGroups = ashRepo.groups.map(g => parseInt(g.w3cid, 10));
+          if (ashGroups.filter(x => groups.includes(x)).length !== ashGroups.length) {
+            errors.inconsistentgroups.push({repo: fullName(r), ashnazgroups: ashGroups, error: JSON.stringify(groups) + ' vs ' + JSON.stringify(ashGroups)});
+          }
+        }
+      }
+      if (hasRecTrack.tr !== null && hasRecTrack.repotype !== null && hasRecTrack.tr !== hasRecTrack.repotype) {
+        errors.inconsistentstatus.push({repo: fullName(r), error: "TR document: " + hasRecTrack.tr + ", vs repo: " + hasRecTrack.repotype});
+      }
+      if (hasRecTrack.tr !== null && hasRecTrack.ashnazg !== null && hasRecTrack.tr !== hasRecTrack.ashnazg) {
+        errors.inconsistentstatus.push({repo: fullName(r), error: "TR document: " + hasRecTrack.tr + ", vs repo manager: " + hasRecTrack.ashnazg});
+      }
+      if (hasRecTrack.repotype !== null && hasRecTrack.ashnazg !== null && hasRecTrack.repotype !== hasRecTrack.ashnazg) {
+        errors.inconsistentstatus.push({repo: fullName(r), error: "repo: " + hasRecTrack.repotype + ", vs repo manager: " + hasRecTrack.ashnazg});
+      }
+      const recTrackStatus = hasRecTrack.tr || hasRecTrack.ashnazg || hasRecTrack.repo;
+      groups.forEach(gid => {
+        if (!groupRepos[gid])
+          groupRepos[gid] = [];
+        groupRepos[gid].push({ ...r, fullName: fullName(r), hasRecTrack: recTrackStatus });
+      });
     });
     Object.keys(errors).forEach(k => {
       errors[k] = errors[k].sort(repoSort);
