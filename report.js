@@ -9,8 +9,10 @@ const errortypes = {
   "nocodeofconduct": "No CODE_OF_CONDUCT.md file",
   "invalidlicense": "Invalid LICENSE.md file",
   "noreadme": "No README.md file",
-  "noashnazg": "Not configured with the Repo Manager"
+  "noashnazg": "Not configured with the Repo Manager",
+  "inconsistentstatus": "Inconsistent rec-track status"
 };
+const defaultReport = ["now3cjson", "inconsistengroups", "invalidw3cjson", "incompletew3cjson", "noashnazg", "inconsistentstatus"];
 
 // from https://stackoverflow.com/a/5158301
 function getParameterByName(name) {
@@ -18,7 +20,6 @@ function getParameterByName(name) {
   return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
 }
 
-const defaultReport = ["now3cjson", "inconsistengroups", "invalidw3cjson", "incompletew3cjson", "noashnazg"];
 
 const writeErrorEntry = (name, list, details) => {
   const li = document.createElement('li');
@@ -48,7 +49,7 @@ fetch("report.json")
         title.appendChild(document.createTextNode(groups[groupId].name));
         if (groupFilter(groupId))
           section.appendChild(title);
-        if (groups[groupId].type === "working group" && !groups[groupId].repos.some(r => JSON.parse((r.w3cjson || {}).text)["repo-type"] === "rec-track")) {
+        if (groups[groupId].type === "working group" && !groups[groupId].repos.some(r => r.hasRecTrack)) {
           const p = document.createElement('p');
           p.appendChild(document.createTextNode('No identified repo for rec-track spec.'));
           section.appendChild(p);
