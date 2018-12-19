@@ -90,7 +90,7 @@ fetch("report.json")
     data.errors.illformedw3cjson
       .forEach(x => writeErrorEntry(x, ul, "ill-formed JSON"));
     data.errors.now3cjson
-      .filter(x => x.startsWith('w3c') || x.startsWith('WICG') || x.startsWith('WebAudio'))
+      .filter(x => x.startsWith('w3c/') || x.startsWith('WICG') || x.startsWith('WebAudio'))
       .filter(x => !mentionedRepos.has(x))
       .forEach(x => writeErrorEntry(x, ul, "no w3c.json"));
     section.appendChild(ul);
