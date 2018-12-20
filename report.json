@@ -536,20 +536,12 @@
         "error": "repo-type (rec-track)"
       },
       {
-        "repo": "w3c/automotive",
-        "error": "repo-type (rec-track)"
-      },
-      {
         "repo": "w3c/automotive-pay",
         "error": "repo-type (rec-track)"
       },
       {
         "repo": "w3c/coga",
         "error": "repo-type (not rec-track)"
-      },
-      {
-        "repo": "w3c/correlation-context",
-        "error": "repo-type (rec-track)"
       },
       {
         "repo": "w3c/css-aam",
@@ -1064,10 +1056,6 @@
         "error": "repo-type (not rec-track)"
       },
       {
-        "repo": "WICG/feature-policy",
-        "error": "repo-type (not rec-track)"
-      },
-      {
         "repo": "WICG/focus-visible",
         "error": "repo-type (unknown)"
       },
@@ -1146,6 +1134,10 @@
       {
         "repo": "WICG/web-share-target",
         "error": "repo-type (not rec-track)"
+      },
+      {
+        "repo": "WICG/webappsec-feature-policy",
+        "error": "repo-type (unknown)"
       },
       {
         "repo": "WICG/webusb",
@@ -2845,11 +2837,6 @@
         "contributing": "# Event Timing\n\nContributions to this repository are intended to become part of Recommendation-track documents\ngoverned by the [W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](http://www.w3.org/Consortium/Legal/copyright-documents). To contribute, you must\neither participate in the relevant W3C Working Group or make a non-member patent licensing\n commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request's body or in subsequent comments.\n\n To add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n ```\n +@github_username\n ```\n\n If you added a contributor by mistake, you can remove them in a comment with:\n\n ```\n -@github_username\n ```\n\n If you are making a pull request on behalf of someone else but you had no part in designing the\n feature, you can remove yourself with the above syntax.\n"
       },
       {
-        "repo": "WICG/feature-policy",
-        "error": "doesn't match SW or DOC contributing",
-        "contributing": "# Web Platform Incubator Community Group\n\nThis repository is being used for work in the Web Platform Incubator Community Group, governed by the [W3C Community License \nAgreement (CLA)](http://www.w3.org/community/about/agreements/cla/). To contribute, you must join \nthe CG. \n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request's body or in subsequent comments.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n\n# Tests\n\nFor normative changes, a corresponding\n[web-platform-tests](https://github.com/web-platform-tests/wpt) PR is highly appreciated. Typically,\nboth PRs will be merged at the same time. Note that a test change that contradicts the spec should\nnot be merged before the corresponding spec change. If testing is not practical, please explain why\nand if appropriate [file a web-platform-tests issue](https://github.com/web-platform-tests/wpt/issues/new)\nto follow up later. Add the `type:untestable` or `type:missing-coverage` label as appropriate.\n"
-      },
-      {
         "repo": "WICG/focus-visible",
         "error": "doesn't match SW or DOC contributing",
         "contributing": "# Web Platform Incubator Community Group\n\nThis repository is being used for work in the Web Platform Incubator Community Group, governed by the [W3C Community License \nAgreement (CLA)](http://www.w3.org/community/about/agreements/cla/). To contribute, you must join \nthe CG. \n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request's body or in subsequent comments.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
@@ -3023,6 +3010,11 @@
         "repo": "WICG/web-share-target",
         "error": "doesn't match SW or DOC contributing",
         "contributing": "# Web Platform Incubator Community Group\n\nThis repository is being used for work in the W3C Web Platform Incubator\nCommunity Group, governed by the [W3C Community License Agreement\n(CLA)](http://www.w3.org/community/about/agreements/cla/). To make substantive\ncontributions, you must join the CG.\n\nIf you are not the sole contributor to a contribution (pull request), please\nidentify all contributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per\nline as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part\nin designing the feature, you can remove yourself with the above syntax.\n"
+      },
+      {
+        "repo": "WICG/webappsec-feature-policy",
+        "error": "doesn't match SW or DOC contributing",
+        "contributing": "# Web Platform Incubator Community Group\n\nThis repository is being used for work in the Web Platform Incubator Community Group, governed by the [W3C Community License \nAgreement (CLA)](http://www.w3.org/community/about/agreements/cla/). To contribute, you must join \nthe CG. \n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request's body or in subsequent comments.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n\n# Tests\n\nFor normative changes, a corresponding\n[web-platform-tests](https://github.com/web-platform-tests/wpt) PR is highly appreciated. Typically,\nboth PRs will be merged at the same time. Note that a test change that contradicts the spec should\nnot be merged before the corresponding spec change. If testing is not practical, please explain why\nand if appropriate [file a web-platform-tests issue](https://github.com/web-platform-tests/wpt/issues/new)\nto follow up later. Add the `type:untestable` or `type:missing-coverage` label as appropriate.\n"
       },
       {
         "repo": "WICG/webpackage",
@@ -4202,7 +4194,6 @@
       "WICG/encrypted-media-encryption-scheme",
       "WICG/entries-api",
       "WICG/event-timing",
-      "WICG/feature-policy",
       "WICG/focus-visible",
       "WICG/frame-timing",
       "WICG/gesture-delegation",
@@ -4249,6 +4240,7 @@
       "WICG/web-locks",
       "WICG/web-share",
       "WICG/web-share-target",
+      "WICG/webappsec-feature-policy",
       "WICG/webpackage",
       "WICG/webusb",
       "WICG/wicg.io",
@@ -4506,11 +4498,6 @@
         "license": "All Reports in this Repository are licensed by Contributors under the \n[W3C Software and Document\nLicense](http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document). Contributions to\nSpecifications are made under the [W3C CLA](https://www.w3.org/community/about/agreements/cla/).\n\n"
       },
       {
-        "repo": "WICG/feature-policy",
-        "error": "doesn't match SW or DOC license",
-        "license": "All Reports in this Repository are licensed by Contributors under the \n[W3C Software and Document\nLicense](http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document). Contributions to\nSpecifications are made under the [W3C CLA](https://www.w3.org/community/about/agreements/cla/).\n\n"
-      },
-      {
         "repo": "WICG/focus-visible",
         "error": "doesn't match SW or DOC license",
         "license": "All Reports in this Repository are licensed by Contributors under the \n[W3C Software and Document\nLicense](http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document). Contributions to\nSpecifications are made under the [W3C CLA](https://www.w3.org/community/about/agreements/cla/).\n\n"
@@ -4659,6 +4646,11 @@
         "repo": "WICG/web-share-target",
         "error": "doesn't match SW or DOC license",
         "license": "All Reports in this Repository are licensed by Contributors\nunder the\n[W3C Software and Document License](http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document).\n\nContributions to Specifications are made under the\n[W3C CLA](https://www.w3.org/community/about/agreements/cla/).\n"
+      },
+      {
+        "repo": "WICG/webappsec-feature-policy",
+        "error": "doesn't match SW or DOC license",
+        "license": "All Reports in this Repository are licensed by Contributors under the \n[W3C Software and Document\nLicense](http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document). Contributions to\nSpecifications are made under the [W3C CLA](https://www.w3.org/community/about/agreements/cla/).\n\n"
       },
       {
         "repo": "WICG/webpackage",
@@ -21721,10 +21713,16 @@
                   "name": "TPAC 2018",
                   "color": "ac2aed"
                 }
+              },
+              {
+                "node": {
+                  "name": "Ready for Review",
+                  "color": "e8cd63"
+                }
               }
             ],
             "pageInfo": {
-              "endCursor": "Y3Vyc29yOnYyOpHOQNN_IQ==",
+              "endCursor": "Y3Vyc29yOnYyOpHORZ7iGg==",
               "hasNextPage": false
             }
           },
@@ -26356,7 +26354,7 @@
             }
           },
           "w3cjson": {
-            "text": "{\n  \"group\":     76043\n, \"contacts\":  [\"tguild\"]\n, \"policy\":    \"open\"\n}\n"
+            "text": "{\n  \"group\":     76043\n, \"contacts\":  \"tguild\"\n, \"policy\":    \"open\"\n, \"repo-type\": \"rec-track\"\n}\n"
           },
           "contributing": {
             "text": "Contributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Software and Document License](http://www.w3.org/Consortium/Legal/copyright-software). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
@@ -31759,7 +31757,7 @@
         },
         {
           "id": "MDEwOlJlcG9zaXRvcnk1NTI2Mzc0NQ==",
-          "name": "feature-policy",
+          "name": "webappsec-feature-policy",
           "owner": {
             "login": "WICG"
           },
@@ -31835,7 +31833,7 @@
           "readme": {
             "text": "# Feature Policy\n\nA web platform API which gives a website the ability to allow and deny the use of browser features in its own frame, and in iframes that it embeds. Examples of [features](https://github.com/WICG/feature-policy/blob/master/features.md) that could be controlled by feature policy include:\n\n- getUserMedia (Camera, Speakers and Microphone)\n- Fullscreen\n- Geolocation\n- MIDI\n- Payments\n- Synchronous XHR\n- Synchronous scripts\n- Lazyload\n- ...\n\nThe spec is hosted on this repo, at https://wicg.github.io/feature-policy/\n\nFor more explanation, use cases, examples, etc., please refer to [the explainer document](https://docs.google.com/document/d/1k0Ua-ZWlM_PsFCFdLMa8kaVTo32PeNZ4G7FFHqpFx4E/edit).\n\nQuestions, suggestions? Please open an issue or send a pull request!\n"
           },
-          "fullName": "WICG/feature-policy"
+          "fullName": "WICG/webappsec-feature-policy"
         },
         {
           "id": "MDEwOlJlcG9zaXRvcnk1NTcxODY2MA==",
@@ -50167,7 +50165,7 @@
             }
           },
           "w3cjson": {
-            "text": "{\n  \"group\":     108594\n, \"contacts\":  [\"plehegar\"]\n, \"policy\":    \"open\"\n, \"report-type\": \"rec-track\"\n}\n"
+            "text": "{\n  \"group\":     108594\n, \"contacts\":  [\"plehegar\"]\n, \"policy\":    \"open\"\n, \"repo-type\": \"rec-track\"\n}\n"
           },
           "contributing": {
             "text": "# Contributing into Correlation Context\n\nThis repository is being used for work in the [W3C Distributed Trace Context Working Group](https://www.w3.org/2018/distributed-tracing/).\n\nContributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy/) and\n[Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n``` bash\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n``` bash\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n\n## Editing report\n\nThis repository follows the best practices from https://w3c.github.io/\n\n- Report is generated by [ReSpec](https://github.com/w3c/respec/wiki)\n- To view report locally - start the local server like `python -m SimpleHTTPServer` to avoid cross-site file loading issue\n- You can preview report from your branch or fork `http://htmlpreview.github.io/?https://github.com/<organization or form name>/correlation-context/blob/<branch name>/index.html`. It is useful to review PR suggestions."
