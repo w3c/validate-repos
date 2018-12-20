@@ -183,7 +183,7 @@ Promise.all(orgs.map(org => fetchRepoPage(org)))
         if (conf) {
           // TODO: replace with JSON schema?
           if (!conf["repo-type"]) {
-            errors.incompletew3cjson.push({repo: fullName(r), error: "repo-type" + (hasRecTrack === null ? " (unknown)" : (hasRecTrack.tr || hasRecTrack.ashnazg ? " (rec-track)" : " (not rec-track)")) });
+            errors.incompletew3cjson.push({repo: fullName(r), error: "repo-type" + (Object.values(hasRecTrack).every(x => x === null) ? " (unknown)" : (hasRecTrack.tr || hasRecTrack.ashnazg ? " (rec-track)" : " (not rec-track)")) });
           } else {
             hasRecTrack.repotype = arrayify(conf["repo-type"]).includes('rec-track') ;
 
