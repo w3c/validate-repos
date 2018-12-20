@@ -275,7 +275,6 @@
       "w3c/web-annotation-tests",
       "w3c/web-based-signage-bg",
       "w3c/web-ledger",
-      "w3c/web-networks-charter",
       "w3c/web-nfc",
       "w3c/web-of-things-framework",
       "w3c/web-roadmaps",
@@ -550,7 +549,7 @@
       },
       {
         "repo": "w3c/correlation-context",
-        "error": "repo-type (unknown)"
+        "error": "repo-type (rec-track)"
       },
       {
         "repo": "w3c/css-aam",
@@ -4749,32 +4748,28 @@
     ],
     "inconsistentstatus": [
       {
-        "repo": "w3c/charter-webperf",
-        "error": "repo: false, vs repo manager: true"
-      },
-      {
         "repo": "w3c/deviceorientation",
         "error": "TR document: false, vs repo: true"
       },
       {
         "repo": "w3c/deviceorientation",
         "error": "TR document: false, vs repo manager: true"
-      },
-      {
-        "repo": "w3c/dnt",
-        "error": "repo: false, vs repo manager: true"
       },
       {
         "repo": "w3c/dnt",
         "error": "TR document: true, vs repo: false"
       },
       {
-        "repo": "w3c/payment-method-basic-card",
-        "error": "TR document: false, vs repo: true"
+        "repo": "w3c/dnt",
+        "error": "repo: false, vs repo manager: true"
       },
       {
         "repo": "w3c/payment-method-basic-card",
         "error": "TR document: false, vs repo manager: true"
+      },
+      {
+        "repo": "w3c/payment-method-basic-card",
+        "error": "repo: false, vs repo manager: true"
       },
       {
         "repo": "w3c/poe",
@@ -9215,10 +9210,34 @@
                   "name": "agenda",
                   "color": "0121a3"
                 }
+              },
+              {
+                "node": {
+                  "name": "imsc only",
+                  "color": "f98b89"
+                }
+              },
+              {
+                "node": {
+                  "name": "ttml3",
+                  "color": "efe85d"
+                }
+              },
+              {
+                "node": {
+                  "name": "met by TTML2",
+                  "color": "0e8a16"
+                }
+              },
+              {
+                "node": {
+                  "name": "met by IMSC1.1",
+                  "color": "2d9613"
+                }
               }
             ],
             "pageInfo": {
-              "endCursor": "Y3Vyc29yOnYyOpHOQyE6wQ==",
+              "endCursor": "Y3Vyc29yOnYyOpHORZxiqA==",
               "hasNextPage": false
             }
           },
@@ -19913,8 +19932,7 @@
           "readme": {
             "text": "# charter-webperf\n\n Web Performance Group charter\n\nLive @ https://w3c.github.io/charter-webperf/\n"
           },
-          "fullName": "w3c/charter-webperf",
-          "hasRecTrack": true
+          "fullName": "w3c/charter-webperf"
         },
         {
           "id": "MDEwOlJlcG9zaXRvcnkzMzI2NTEzMA==",
@@ -41530,7 +41548,7 @@
             }
           },
           "w3cjson": {
-            "text": "{\n  \"group\": [ 83744 ],\n  \"contacts\": [\n    \"ianbjacobs\"\n  ],\n  \"policy\": \"open\",\n  \"repo-type\": \"rec-track\",\n  \"shortName\": \"payment-method-basic-card\"\n}"
+            "text": "{\n  \"group\": [ 83744 ],\n  \"contacts\": [\n    \"ianbjacobs\"\n  ],\n  \"policy\": \"open\",\n  \"repo-type\": \"note\",\n  \"shortName\": \"payment-method-basic-card\"\n}\n"
           },
           "contributing": {
             "text": "# Web Payments Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Software and Document License](http://www.w3.org/Consortium/Legal/copyright-software). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
@@ -50172,7 +50190,8 @@
           "readme": {
             "text": "# Correlation Context Specification\n\nThis repository is associated with the [Correlation Context](https://w3c.github.io/correlation-context/) specification.\n\n- Correlation Context\n  [Report](https://w3c.github.io/distributed-tracing/).\n  Status: initial draft.\n  - Rationale [document](correlation_context/HTTP_HEADER_FORMAT_RATIONALE.md)\n\n## Team Communication\n\nSee [communication](https://github.com/w3c/distributed-tracing-wg#team-communication)\n\nWe appreciate feedback and contributions. Please make sure to read rationale documents when you have a question about particular\ndecision made in specification.\n\n## Goal\n\nThis specification defines event correlation\nusing trace context information across systems. Our goal is\nto share this with the community so that various tracing and diagnostics products can operate\ntogether.\n\n## Reference Implementations\n\nTODO: add link here\n\n## Why are we doing this\n\nSee [Why](https://github.com/w3c/distributed-tracing-wg#why-are-we-doing-this)\n\n## Contributing\n\nSee [Contributing.md](CONTRIBUTING.md) for details."
           },
-          "fullName": "w3c/correlation-context"
+          "fullName": "w3c/correlation-context",
+          "hasRecTrack": true
         },
         {
           "id": "MDEwOlJlcG9zaXRvcnkxNTUyMjY2Mjc=",
