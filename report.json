@@ -4764,14 +4764,6 @@
         "error": "repo: false, vs repo manager: true"
       },
       {
-        "repo": "w3c/payment-method-basic-card",
-        "error": "TR document: false, vs repo manager: true"
-      },
-      {
-        "repo": "w3c/payment-method-basic-card",
-        "error": "repo: false, vs repo manager: true"
-      },
-      {
         "repo": "w3c/poe",
         "error": "TR document: false, vs repo manager: true"
       },
@@ -41562,8 +41554,7 @@
           "readme": {
             "text": "\n## Method Specification: Basic Card\n\nThis repository contains a draft specification from the [W3C Web Payments Working Group](https://www.w3.org/Payments/WG/).\n\nThis is a Payment Method Specification that describes the __Basic Card Payment Method__.\n\nThe editor's draft is available at: http://w3c.github.io/payment-method-basic-card/\n"
           },
-          "fullName": "w3c/payment-method-basic-card",
-          "hasRecTrack": true
+          "fullName": "w3c/payment-method-basic-card"
         },
         {
           "id": "MDEwOlJlcG9zaXRvcnk1OTU2MDYwMQ==",
