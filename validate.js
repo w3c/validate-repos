@@ -12,7 +12,7 @@ const orgs = ["w3c", "WebAudio", "immersive-web", "webassembly", "w3ctag", "WICG
 const errors = {"inconsistentgroups": [], "now3cjson":[], "invalidw3cjson": [], "illformedw3cjson":[], "incompletew3cjson":[], "nocontributing":[], "invalidcontributing": [], "nolicense": [], "nocodeofconduct": [], "invalidlicense": [], "noreadme": [],  "noashnazg": [], "inconsistentstatus": []};
 
 // extract from https://w3c.github.io/w3c.json.html with [...document.querySelectorAll('#repo-type + dd .value')].map(n => n.textContent)
-const validRepoTypes = ['rec-track', 'note', 'cg-report', 'process', 'homepage', 'article', 'tool', 'project', 'others'];
+const validRepoTypes = ['rec-track', 'note', 'cg-report', 'process', 'homepage', 'article', 'tool', 'project', 'others', 'workshop', 'tests'];
 
 
 let allgroups = new Set();
