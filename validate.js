@@ -35,7 +35,7 @@ async function fetchLabelPage(org, repo, acc = [], cursor = null) {
   let res = await graphql(`
  query {
     repository(owner:"${org}",name:"${repo}") {
-        labels(first: 100 after:"${cursor}") {
+        labels(first: 30 after:"${cursor}") {
             edges {
               node {
                 name
@@ -51,7 +51,7 @@ async function fetchLabelPage(org, repo, acc = [], cursor = null) {
 
 }`);
     const data = acc.concat(res.repository.labels.edges);
-    if (res.repository.labels.pageInfo.hasNextPage) {
+    if (res.repository && res.repository.labels.pageInfo.hasNextPage) {
       return fetchLabelPage(org, repo, data, res.repository.labels.pageInfo.endCursor);
   } else {
     return data.map(e => e.node);
@@ -62,11 +62,11 @@ async function fetchRepoPage(org, acc = [], cursor = null) {
   let res = await graphql(`
  query {
   organization(login:"${org}") {
-    repositories(first:100 after:"${cursor}") {
+    repositories(first:30 after:"${cursor}") {
       edges {
         node {
           id, name, owner { login } , isArchived, homepageUrl, description
-          labels(first: 100) {
+          labels(first: 30) {
             edges {
               node {
                 name
