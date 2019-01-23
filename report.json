@@ -486,14 +486,6 @@
       {
         "repo": "w3c/wcag-eo",
         "error": "invalid contacts: [{\"github\":\"michael-n-cooper\",\"w3c\":\"cooper\"}]"
-      },
-      {
-        "repo": "w3c/webvr-content-workshop",
-        "error": "unknown types: [\"workshop\"]"
-      },
-      {
-        "repo": "w3c/woff2-tests",
-        "error": "unknown types: [\"tests\"]"
       }
     ],
     "illformedw3cjson": [
