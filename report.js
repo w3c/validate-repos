@@ -1,25 +1,67 @@
+let data;
 const errortypes = {
   "now3cjson": "No w3c.json file",
-  "inconsistentgroups": "Inconsistent groups info w3c.json / repo-manager",
   "invalidw3cjson": "Invalid data in w3c.json",
   "incompletew3cjson": "Missing data in w3c.json",
+  "noashnazg": "Not configured with the Repo Manager",
+  "inconsistentstatus": "Inconsistent rec-track status",
+  "inconsistentgroups": "Inconsistent groups info w3c.json / repo-manager",
   "nocontributing": "No CONTRIBUTING.md file",
   //    "invalidcontributing": "Invalid CONTRIBUTING.MD file",
   "nolicense": "No LICENSE.md file",
   "nocodeofconduct": "No CODE_OF_CONDUCT.md file",
   "invalidlicense": "Invalid LICENSE.md file",
-  "noreadme": "No README.md file",
-  "noashnazg": "Not configured with the Repo Manager",
-  "inconsistentstatus": "Inconsistent rec-track status"
+  "noreadme": "No README.md file"
 };
 const defaultReport = ["now3cjson", "inconsistengroups", "invalidw3cjson", "incompletew3cjson", "noashnazg", "inconsistentstatus"];
 
-// from https://stackoverflow.com/a/5158301
-function getParameterByName(name) {
-  const match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
-  return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+// from https://stackoverflow.com/questions/10970078/modifying-a-query-string-without-reloading-the-page
+function insertUrlParam(key, value) {
+    if (history.pushState) {
+        let searchParams = new URLSearchParams(window.location.search);
+        searchParams.set(key, value);
+        let newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + '?' + searchParams.toString();
+        window.history.pushState({path: newurl}, '', newurl);
+    }
 }
 
+// from https://stackoverflow.com/a/5158301
+function getUrlParam(name) {
+  let searchParams = new URLSearchParams(window.location.search);
+  return searchParams.get(name);
+}
+
+// Add filter UI
+const filterUI = document.getElementById("filter");
+const errorSelectorHtml = Object.keys(errortypes).map(t => `<label><input name='filter' type='checkbox' value='${t}'> ${errortypes[t]}</label>`).join(' ');
+filterUI.innerHTML = `
+ <fieldset><legend>Filter report</legend>
+ <label for=grouptype>Group type:</label> <select id='grouptype' name='grouptype'><option value=''>All</option><option value=workinggroup>Working Group</option><option value=communitygroup>Community Group</option></select></label>
+ <label for='errors'>Errors:</label> <span id='errors'>${errorSelectorHtml}</span></fieldset>`;
+
+const groupSelector = document.getElementById('grouptype');
+const errorSelector = document.getElementById('errors');
+
+if (getUrlParam("grouptype")) {
+  [...groupSelector.querySelectorAll('option')].forEach(o => o.selected = false);
+  (groupSelector.querySelector(`option[value='${getUrlParam("grouptype")}']`) || {}).selected = true;
+}
+if (getUrlParam("filter")) {
+  errorTypes = getUrlParam("filter").split(',');
+  [...errorSelector.querySelectorAll('input')].forEach(inp => inp.checked = errorTypes.includes(inp.value));
+} else {
+  [...errorSelector.querySelectorAll('input')].forEach(inp => inp.checked = defaultReport.includes(inp.value));
+}
+
+groupSelector.addEventListener("change", () => {
+  insertUrlParam("grouptype", groupSelector.value);
+  writeReport();
+});
+
+errorSelector.addEventListener("input", (e) => {
+  insertUrlParam("filter", [...errorSelector.querySelectorAll('input:checked')].map(inp => inp.value).join(','));
+  writeReport();
+});
 
 const writeErrorEntry = (name, list, details) => {
   const li = document.createElement('li');
@@ -32,16 +74,21 @@ const writeErrorEntry = (name, list, details) => {
   list.appendChild(li);
 };
 
+
 fetch("report.json")
   .then(r => r.json())
-  .then(data => {
-    let mentionedRepos = new Set();
+  .then(fetcheddata => { data = fetcheddata; writeReport();} );
 
-    const report = document.getElementById('report');
+
+function writeReport() {
+  if (!data) return;
+  let mentionedRepos = new Set();
+  const groupFilter = gid => getUrlParam("grouptype") ? (groups[gid].type || '').replace(' ', '') === getUrlParam("grouptype") : true;
+  const errorFilter = new Set((getUrlParam("filter") || defaultReport.join(',')).split(",").filter(e => e !==''));
+
+  const report = document.getElementById('report');
+  report.innerHTML = '';
     const groups = data.groups;
-    const filterParam = getParameterByName("filter");
-    const groupFilter = gid => getParameterByName("grouptype") ? (groups[gid].type || '').replace(' ', '') === getParameterByName("grouptype") : true;
-    const errorFilter = new Set((getParameterByName("filter") || defaultReport.join(',')).split(",").filter(e => e !==''));
     Object.keys(groups).sort((a,b) => groups[a].name.localeCompare(groups[b].name))
       .forEach(groupId => {
         const section = document.createElement('section');
@@ -95,5 +142,5 @@ fetch("report.json")
       .forEach(x => writeErrorEntry(x, ul, "no w3c.json"));
     section.appendChild(ul);
     report.appendChild(section);
+}
 
-  });
