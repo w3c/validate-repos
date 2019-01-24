@@ -50,11 +50,13 @@ async function fetchLabelPage(org, repo, acc = [], cursor = null) {
     }
 
 }`);
+  if (res && res.repository) {
     const data = acc.concat(res.repository.labels.edges);
-    if (res.repository && res.repository.labels.pageInfo.hasNextPage) {
+    if (res.repository.labels.pageInfo.hasNextPage) {
       return fetchLabelPage(org, repo, data, res.repository.labels.pageInfo.endCursor);
-  } else {
-    return data.map(e => e.node);
+    } else {
+      return data.map(e => e.node);
+    }
   }
 }
 
