@@ -489,8 +489,6 @@
       }
     ],
     "illformedw3cjson": [
-      "w3c/me-media-timed-events",
-      "w3c/publ-a11y",
       "WICG/get-installed-related-apps"
     ],
     "incompletew3cjson": [
@@ -4693,10 +4691,6 @@
       },
       {
         "repo": "w3c/wot-binding-templates",
-        "error": "repo: false, vs repo manager: true"
-      },
-      {
-        "repo": "w3c/wp-vocab",
         "error": "repo: false, vs repo manager: true"
       }
     ]
@@ -13070,7 +13064,7 @@
             }
           },
           "w3cjson": {
-            "text": "{\n      \"group\":      35532\n  ,   \"contacts\":   [\"slhenry\"]\n  ,   \"repo-type\":  \"article\"\n  }\n"
+            "text": "{\n      \"group\":      35532\n  ,   \"contacts\":   [\"slhenry\"]\n  ,   \"repo-type\":  \"article\"\n  }\n\n"
           },
           "contributing": null,
           "license": null,
@@ -19718,6 +19712,134 @@
           },
           "fullName": "w3c/device-memory",
           "hasRecTrack": true
+        }
+      ]
+    },
+    "46300": {
+      "id": 46300,
+      "name": "Media and Entertainment Interest Group",
+      "discr": "w3cgroup",
+      "is-closed": false,
+      "description": "The mission of the Media and Entertainment Interest Group, formerly known as the Web and TV Interest Group, is to provide a forum for media-related technical discussions to track progress of media features on the Web within W3C groups and use of Web technologies by external organizations, and to identify use cases and requirements that existing and/or new specifications need to meet to achieve a tighter support of media services on the Web.",
+      "staging": false,
+      "_links": {
+        "self": {
+          "href": "https://api.w3.org/groups/46300"
+        },
+        "homepage": {
+          "href": "http://www.w3.org/2011/webtv/"
+        },
+        "users": {
+          "href": "https://api.w3.org/groups/46300/users"
+        },
+        "services": {
+          "href": "https://api.w3.org/groups/46300/services"
+        },
+        "specifications": {
+          "href": "https://api.w3.org/groups/46300/specifications"
+        },
+        "chairs": {
+          "href": "https://api.w3.org/groups/46300/chairs"
+        },
+        "team-contacts": {
+          "href": "https://api.w3.org/groups/46300/teamcontacts"
+        },
+        "charters": {
+          "href": "https://api.w3.org/groups/46300/charters"
+        },
+        "active-charter": {
+          "href": "https://api.w3.org/groups/46300/charters/341"
+        },
+        "join": {
+          "href": "https://www.w3.org/2004/01/pp-impl/46300/join"
+        },
+        "pp-status": {
+          "href": "https://www.w3.org/2004/01/pp-impl/46300/status"
+        },
+        "participations": {
+          "href": "https://api.w3.org/groups/46300/participations"
+        }
+      },
+      "type": "interest group",
+      "participation-as-public-ie-allowed": true,
+      "start-date": "2011-02-07",
+      "end-date": "2019-04-30",
+      "repos": [
+        {
+          "id": "MDEwOlJlcG9zaXRvcnkxMzAwMDE3MDk=",
+          "name": "me-media-timed-events",
+          "owner": {
+            "login": "w3c"
+          },
+          "isArchived": false,
+          "homepageUrl": null,
+          "description": "Media Timed Events TF of the Media and Entertainment IG",
+          "labels": {
+            "edges": [
+              {
+                "node": {
+                  "name": "bug",
+                  "color": "d73a4a"
+                }
+              },
+              {
+                "node": {
+                  "name": "duplicate",
+                  "color": "cfd3d7"
+                }
+              },
+              {
+                "node": {
+                  "name": "enhancement",
+                  "color": "a2eeef"
+                }
+              },
+              {
+                "node": {
+                  "name": "help wanted",
+                  "color": "008672"
+                }
+              },
+              {
+                "node": {
+                  "name": "good first issue",
+                  "color": "7057ff"
+                }
+              },
+              {
+                "node": {
+                  "name": "invalid",
+                  "color": "e4e669"
+                }
+              },
+              {
+                "node": {
+                  "name": "question",
+                  "color": "d876e3"
+                }
+              },
+              {
+                "node": {
+                  "name": "wontfix",
+                  "color": "ffffff"
+                }
+              }
+            ],
+            "pageInfo": {
+              "endCursor": "Y3Vyc29yOnYyOpHONfk60Q==",
+              "hasNextPage": false
+            }
+          },
+          "w3cjson": {
+            "text": "{\n  \"group\":     [\"46300\"],\n  \"contacts\":  [\"ashimura\"],\n  \"shortName\":  \"me-media-timed-events\",\n  \"repo-type\": \"note\"\n}\n"
+          },
+          "contributing": null,
+          "license": null,
+          "codeOfConduct": null,
+          "readme": {
+            "text": "# Media Timed Events\n\nMedia Timed Events TF of the Media and Entertainment IG\n\n* [Draft Use Case and Requirements Document](https://w3c.github.io/me-media-timed-events)\n* [Open Issues](https://github.com/w3c/me-media-timed-events/issues)\n"
+          },
+          "fullName": "w3c/me-media-timed-events"
         }
       ]
     },
@@ -26673,10 +26795,22 @@
                   "name": "wontfix",
                   "color": "ffffff"
                 }
+              },
+              {
+                "node": {
+                  "name": "Post SIMD MVP",
+                  "color": "bfd4f2"
+                }
+              },
+              {
+                "node": {
+                  "name": "tracking",
+                  "color": "fbca04"
+                }
               }
             ],
             "pageInfo": {
-              "endCursor": "Y3Vyc29yOnYyOpHOIp-yRw==",
+              "endCursor": "Y3Vyc29yOnYyOpHOR9wwyA==",
               "hasNextPage": false
             }
           },
@@ -30212,7 +30346,7 @@
           },
           "codeOfConduct": null,
           "readme": {
-            "text": "# Resize Observer\n\n[Explainer Doc](./explainer.md)\n\n[Draft Spec](https://wicg.github.io/ResizeObserver/)\n"
+            "text": "# Resize Observer\n\nResizeObserver spec work has moved to [CSSWG](https://github.com/w3c/csswg-drafts/tree/master/resize-observer-1).\n\n[Draft Spec](https://drafts.csswg.org/resize-observer-1/)\n\n[Explainer Doc](https://github.com/w3c/csswg-drafts/blob/master/resize-observer-1/explainer.md)\n\n[Issues](https://github.com/w3c/csswg-drafts/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+resize-observer)\n"
           },
           "fullName": "WICG/ResizeObserver"
         },
@@ -46313,6 +46447,80 @@
           "hasRecTrack": true
         },
         {
+          "id": "MDEwOlJlcG9zaXRvcnkxMDA1MDY3OTY=",
+          "name": "publ-a11y",
+          "owner": {
+            "login": "w3c"
+          },
+          "isArchived": false,
+          "homepageUrl": null,
+          "description": "Accessibility related discussions on the Publishing WG",
+          "labels": {
+            "edges": [
+              {
+                "node": {
+                  "name": "bug",
+                  "color": "ee0701"
+                }
+              },
+              {
+                "node": {
+                  "name": "duplicate",
+                  "color": "cccccc"
+                }
+              },
+              {
+                "node": {
+                  "name": "enhancement",
+                  "color": "84b6eb"
+                }
+              },
+              {
+                "node": {
+                  "name": "help wanted",
+                  "color": "128A0C"
+                }
+              },
+              {
+                "node": {
+                  "name": "invalid",
+                  "color": "e6e6e6"
+                }
+              },
+              {
+                "node": {
+                  "name": "question",
+                  "color": "cc317c"
+                }
+              },
+              {
+                "node": {
+                  "name": "wontfix",
+                  "color": "ffffff"
+                }
+              }
+            ],
+            "pageInfo": {
+              "endCursor": "Y3Vyc29yOnYyOpHOJ_EHCg==",
+              "hasNextPage": false
+            }
+          },
+          "w3cjson": {
+            "text": " {\n    \"group\":      100074\n,   \"contacts\":   [\"iherman\"]\n,   \"repo-type\" : \"article\"\n}\n"
+          },
+          "contributing": {
+            "text": "# Publishing Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Software and Document License](http://www.w3.org/Consortium/Legal/copyright-software). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n"
+          },
+          "license": {
+            "text": "All documents in this Repository are licensed by contributors under the\n[W3C Software and Document License](http://www.w3.org/Consortium/Legal/copyright-software).\n"
+          },
+          "codeOfConduct": null,
+          "readme": {
+            "text": "\n![W3C Logo](https://www.w3.org/Icons/w3c_home)\n\n# Accessibility Discussions on the Publishing Working Group\n\nThis is the repository for the Accessibility related discussions of the [Publishing Working Group](https://www.w3.org/publishing/groups/publ-wg/). \n\n## Contributing to the Repository\n\nUse the standard fork, branch, and pull request workflow to propose changes to the specification. Please make branch names informative—by including the issue or bug number for example.\n\nEditorial changes that improve the readability of the spec or correct spelling or grammatical mistakes are welcome.\n\nPlease read [CONTRIBUTING.md](CONTRIBUTING.md), about licensing contributions.\n\n"
+          },
+          "fullName": "w3c/publ-a11y"
+        },
+        {
           "id": "MDEwOlJlcG9zaXRvcnkxMDU3NDc5NDM=",
           "name": "wpub-ann",
           "owner": {
@@ -46654,8 +46862,7 @@
           "readme": {
             "text": "\n\n![W3C Logo](https://www.w3.org/Icons/w3c_home)\n\n# Vocabulary for Web Publications Manifest\n\nThis is the repository for the Web Publication Manifest vocabulary and JSON-LD context files. It is adjunct to the work on Web Publications, developed by the [Publishing Working Group](https://www.w3.org/publishing/groups/publ-wg/).\n\n## Contributing to the Repository\n\nUse the standard fork, branch, and pull request workflow to propose changes to the specification. Please make branch names informative—by including the issue or bug number for example.\n\nEditorial changes that improve the readability of the spec or correct spelling or grammatical mistakes are welcome.\n\nPlease read [CONTRIBUTING.md](CONTRIBUTING.md), about licensing contributions.\n\n## Final locations of the documents\n\nThese files are _not_ aimed to be part of a W3C Technical Report. Instead, the `wp.*` and `wp-context.*` files are meant to be copied to the `https://www.w3.org/ns/` directory (which can only be done by a W3C staff member).\n\n## Code of Conduct\n\nW3C functions under a [code of conduct](https://www.w3.org/Consortium/cepc/).\n"
           },
-          "fullName": "w3c/wp-vocab",
-          "hasRecTrack": true
+          "fullName": "w3c/wp-vocab"
         }
       ]
     },
