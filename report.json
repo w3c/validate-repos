@@ -57,7 +57,6 @@
       "w3c/annotation-model",
       "w3c/apiary",
       "w3c/architecture",
-      "w3c/archival-workshop",
       "w3c/ATAG20-auth-trans-zh",
       "w3c/automotive-bg",
       "w3c/blockchain",
@@ -66,21 +65,13 @@
       "w3c/charter-html",
       "w3c/charter-media-wg",
       "w3c/charter-timed-text",
-      "w3c/charters-dashboard",
-      "w3c/chinese-ig-charter",
       "w3c/ColorWeb-CG",
       "w3c/cred-claims",
       "w3c/credweb",
-      "w3c/css-a11y",
-      "w3c/css-checker",
       "w3c/css-validator",
-      "w3c/css-validator-testsuite",
       "w3c/csswg-apiclient",
       "w3c/csswg-www",
       "w3c/data-shapes",
-      "w3c/design",
-      "w3c/dpub-charter",
-      "w3c/dpubwg-charter",
       "w3c/dummy",
       "w3c/dwbp",
       "w3c/EasierRDF",
@@ -88,15 +79,11 @@
       "w3c/elements-of-html",
       "w3c/emma",
       "w3c/encodingtests",
-      "w3c/epubcheck",
       "w3c/exi-specs",
       "w3c/exi-testsuite",
       "w3c/findtext",
       "w3c/fingerprinting-guidance",
       "w3c/games-workshop",
-      "w3c/ganesh",
-      "w3c/geofencing-api",
-      "w3c/geolocation-api",
       "w3c/github_sync",
       "w3c/glossary",
       "w3c/hanuman",
@@ -107,10 +94,8 @@
       "w3c/hcls-fhir-rdf",
       "w3c/hlreq",
       "w3c/html-media",
-      "w3c/html-reference",
       "w3c/html-tools",
       "w3c/html-transcript",
-      "w3c/htmldiff-nav",
       "w3c/HTMLSourcingInbandTracks",
       "w3c/i18n-activity",
       "w3c/i18n-checker",
@@ -120,7 +105,6 @@
       "w3c/i18n-tests",
       "w3c/idn-issues",
       "w3c/iip",
-      "w3c/immersive-web-wg-charter",
       "w3c/imsc-tests",
       "w3c/imsc-vnext-reqs",
       "w3c/infobot",
@@ -136,20 +120,17 @@
       "w3c/ldn",
       "w3c/ldp-next",
       "w3c/ldp-testsuite",
-      "w3c/libwww",
       "w3c/limitfiles",
       "w3c/link-checker",
       "w3c/locadd",
       "w3c/machine-learning-workshop",
       "w3c/mailing-list-archives",
-      "w3c/manual-of-style",
       "w3c/markup-validator",
       "w3c/mathml",
       "w3c/mdn-spec-links",
       "w3c/media-and-entertainment",
       "w3c/microdata-rdf",
       "w3c/Micropub",
-      "w3c/midgard",
       "w3c/mlreq",
       "w3c/mlw-metadata-us-impl",
       "w3c/mmi",
@@ -166,23 +147,16 @@
       "w3c/ortc",
       "w3c/perf-security-privacy",
       "w3c/permissions-ws-2018",
-      "w3c/pheme",
       "w3c/ping",
       "w3c/ping-security-questionnaire",
       "w3c/png-hdr-pq",
-      "w3c/prbuildbot",
       "w3c/privacy-considerations",
-      "w3c/pronunciation",
       "w3c/publ-cg",
-      "w3c/publ-epub-revision",
-      "w3c/publ-wg",
-      "w3c/pywebsocket",
       "w3c/qt3tests",
       "w3c/rangefinder",
       "w3c/rdf-tests",
       "w3c/rdfvalidator-ng",
       "w3c/respec",
-      "w3c/rqtf",
       "w3c/sakura",
       "w3c/sdw",
       "w3c/sealreq",
@@ -193,12 +167,10 @@
       "w3c/setImmediate",
       "w3c/shacl",
       "w3c/smufl",
-      "w3c/snapshot-generator",
       "w3c/sparql-exists",
       "w3c/spec-generator",
       "w3c/specberus",
       "w3c/speech-api",
-      "w3c/standards-track",
       "w3c/staticrange",
       "w3c/strategy",
       "w3c/string-meta",
@@ -208,8 +180,6 @@
       "w3c/swig",
       "w3c/test-results",
       "w3c/testing-how-to",
-      "w3c/testtwf-website",
-      "w3c/testtwf-website-src",
       "w3c/time-series-and-spatial-data",
       "w3c/timed-text-dashboard",
       "w3c/tlreq",
@@ -223,18 +193,14 @@
       "w3c/tvcontrol-api",
       "w3c/tweetie",
       "w3c/type-samples",
-      "w3c/UAAG-Implementations",
       "w3c/unicode-xml",
-      "w3c/Unicorn",
       "w3c/unspecified-web",
       "w3c/vc-test-suite",
       "w3c/vc-use-cases",
       "w3c/w3c-api",
       "w3c/w3c-waet",
-      "w3c/w3c.github.io",
       "w3c/W3CLifecycleEventsBundle",
       "w3c/W3CPasswordStrengthBundle",
-      "w3c/w3process-obsolete-rescinded",
       "w3c/wai-act-quickref",
       "w3c/wai-aria-intro",
       "w3c/wai-axsdb-services",
@@ -258,7 +224,6 @@
       "w3c/wai-website-theme-beta",
       "w3c/WAIsite",
       "w3c/wasm-wg",
-      "w3c/wbs-design",
       "w3c/wcag-act-rules",
       "w3c/wcag-act-rules-cg",
       "w3c/WCAG21-Chinese-Unoffical-Translation",
@@ -272,18 +237,14 @@
       "w3c/web-roadmaps",
       "w3c/webappsec",
       "w3c/webappsec-cors-for-developers",
-      "w3c/WebIDL",
       "w3c/webidl2.js",
       "w3c/webmediaapi",
       "w3c/webmediaguidelines",
       "w3c/webmediaporting",
       "w3c/webmention",
-      "w3c/webpayments-ig",
-      "w3c/webpayments-overview",
       "w3c/WebPlatformWG",
       "w3c/websec",
       "w3c/websub",
-      "w3c/wg-effectiveness",
       "w3c/woff2-compiled-tests",
       "w3c/wot",
       "w3c/wot-arduino",
@@ -479,15 +440,13 @@
         "error": "unknown types: [\"document\"]"
       },
       {
-        "repo": "w3c/wcag",
-        "error": "invalid contacts: [{\"github\":\"michael-n-cooper\",\"w3c\":\"cooper\"}]"
-      },
-      {
         "repo": "w3c/wcag-eo",
         "error": "invalid contacts: [{\"github\":\"michael-n-cooper\",\"w3c\":\"cooper\"}]"
       }
     ],
     "illformedw3cjson": [
+      "w3c/css-validator-testsuite",
+      "w3c/libwww",
       "WICG/get-installed-related-apps"
     ],
     "incompletew3cjson": [
@@ -508,24 +467,8 @@
         "error": "repo-type (unknown)"
       },
       {
-        "repo": "w3c/aria-at",
-        "error": "repo-type (rec-track)"
-      },
-      {
-        "repo": "w3c/aria-common",
-        "error": "repo-type (rec-track)"
-      },
-      {
         "repo": "w3c/automotive-pay",
         "error": "repo-type (rec-track)"
-      },
-      {
-        "repo": "w3c/coga",
-        "error": "repo-type (not rec-track)"
-      },
-      {
-        "repo": "w3c/css-aam",
-        "error": "repo-type (unknown)"
       },
       {
         "repo": "w3c/dom",
@@ -533,10 +476,6 @@
       },
       {
         "repo": "w3c/DOM-Parsing",
-        "error": "repo-type (rec-track)"
-      },
-      {
-        "repo": "w3c/dpub-aam",
         "error": "repo-type (rec-track)"
       },
       {
@@ -624,14 +563,6 @@
         "error": "repo-type (rec-track)"
       },
       {
-        "repo": "w3c/math-aam",
-        "error": "repo-type (not rec-track)"
-      },
-      {
-        "repo": "w3c/math-aria",
-        "error": "repo-type (not rec-track)"
-      },
-      {
         "repo": "w3c/me-cloud-browser",
         "error": "repo-type (unknown)"
       },
@@ -678,10 +609,6 @@
       {
         "repo": "w3c/scholarly-html",
         "error": "repo-type (unknown)"
-      },
-      {
-        "repo": "w3c/silver",
-        "error": "repo-type (not rec-track)"
       },
       {
         "repo": "w3c/socialwg",
@@ -836,10 +763,6 @@
         "error": "repo-type (rec-track)"
       },
       {
-        "repo": "w3c/wcag",
-        "error": "repo-type (not rec-track)"
-      },
-      {
         "repo": "w3c/wcag-act",
         "error": "repo-type (rec-track)"
       },
@@ -898,6 +821,10 @@
       {
         "repo": "w3c/webpayments-methods-tokenization",
         "error": "repo-type (rec-track)"
+      },
+      {
+        "repo": "w3c/webpayments-overview",
+        "error": "repo-type (unknown)"
       },
       {
         "repo": "w3c/websockets",
@@ -1085,9 +1012,7 @@
       "w3c/ColorWeb-CG",
       "w3c/cred-claims",
       "w3c/credweb",
-      "w3c/css-a11y",
       "w3c/css-aam",
-      "w3c/css-checker",
       "w3c/css-validator-testsuite",
       "w3c/csswg-apiclient",
       "w3c/csswg-www",
@@ -1100,14 +1025,12 @@
       "w3c/display_errata",
       "w3c/dpub-accessibility",
       "w3c/dpub-annotation",
-      "w3c/dpub-charter",
       "w3c/dpub-content-and-markup",
       "w3c/dpub-metadata",
       "w3c/dpub-pagination",
       "w3c/dpub-pwp-arch",
       "w3c/dpub-pwp-loc",
       "w3c/dpub-stem",
-      "w3c/dpubwg-charter",
       "w3c/dummy",
       "w3c/dwbp",
       "w3c/EasierRDF",
@@ -1120,8 +1043,6 @@
       "w3c/findtext",
       "w3c/fingerprinting-guidance",
       "w3c/games-workshop",
-      "w3c/ganesh",
-      "w3c/geofencing-api",
       "w3c/github_sync",
       "w3c/github-notify-ml-config",
       "w3c/glossary",
@@ -1199,18 +1120,14 @@
       "w3c/permissions-ws-2018",
       "w3c/pheme",
       "w3c/ping-security-questionnaire",
-      "w3c/prbuildbot",
       "w3c/privacy-considerations",
-      "w3c/pronunciation",
       "w3c/publ-cg",
       "w3c/publ-epub-revision",
       "w3c/publishing",
       "w3c/PWETF",
-      "w3c/pywebsocket",
       "w3c/qt3tests",
       "w3c/rangefinder",
       "w3c/rdfvalidator-ng",
-      "w3c/rqtf",
       "w3c/sakura",
       "w3c/scholarly-html",
       "w3c/scribejs",
@@ -1235,7 +1152,6 @@
       "w3c/swig",
       "w3c/test-results",
       "w3c/testing-how-to",
-      "w3c/testtwf-website",
       "w3c/third-party-resources-checker",
       "w3c/time-series-and-spatial-data",
       "w3c/timed-text-dashboard",
@@ -1252,7 +1168,6 @@
       "w3c/tweetie",
       "w3c/typography",
       "w3c/UAAG",
-      "w3c/UAAG-Implementations",
       "w3c/unicode-xml",
       "w3c/Unicorn",
       "w3c/unspecified-web",
@@ -1367,13 +1282,11 @@
       "w3c/web-of-things-framework",
       "w3c/web-roadmaps",
       "w3c/webex",
-      "w3c/WebIDL",
       "w3c/webidl2.js",
       "w3c/webmediaapi",
       "w3c/webmediaguidelines",
       "w3c/webmediaporting",
       "w3c/webmention",
-      "w3c/webpayments-ig",
       "w3c/webpayments-overview",
       "w3c/webperf-dashboard",
       "w3c/WebPlatformWG",
@@ -1650,6 +1563,11 @@
         "contributing": "# Contributing into Correlation Context\n\nThis repository is being used for work in the [W3C Distributed Trace Context Working Group](https://www.w3.org/2018/distributed-tracing/).\n\nContributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy/) and\n[Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n``` bash\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n``` bash\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n\n## Editing report\n\nThis repository follows the best practices from https://w3c.github.io/\n\n- Report is generated by [ReSpec](https://github.com/w3c/respec/wiki)\n- To view report locally - start the local server like `python -m SimpleHTTPServer` to avoid cross-site file loading issue\n- You can preview report from your branch or fork `http://htmlpreview.github.io/?https://github.com/<organization or form name>/correlation-context/blob/<branch name>/index.html`. It is useful to review PR suggestions."
       },
       {
+        "repo": "w3c/css-a11y",
+        "error": "doesn't match SW or DOC contributing",
+        "contributing": "# Accessible Platform Architectures Working Group, ,Accessible Rich Internet Applications Working Group, and Cascading Style Sheets (CSS) Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](https://www.w3.org/Consortium/Legal/copyright-documents). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
+      },
+      {
         "repo": "w3c/css-houdini-drafts",
         "error": "doesn't match SW or DOC contributing",
         "contributing": "# Cascading Style Sheets (CSS) Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
@@ -1828,11 +1746,6 @@
         "repo": "w3c/html-media-capture",
         "error": "doesn't match SW or DOC contributing",
         "contributing": "# Device and Sensors Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents \ngoverned by the [W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](http://www.w3.org/Consortium/Legal/copyright-documents). To contribute, you must \neither participate in the relevant W3C Working Group or make a non-member patent licensing\n commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request's body or in subsequent comments.\n\n To add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n ```\n +@github_username\n ```\n\n If you added a contributor by mistake, you can remove them in a comment with:\n\n ```\n -@github_username\n ```\n\n If you are making a pull request on behalf of someone else but you had no part in designing the \n feature, you can remove yourself with the above syntax.\n\n# Tests\n\nFor normative changes, a corresponding\n[web-platform-tests](https://github.com/web-platform-tests/wpt) PR is highly appreciated. Typically,\nboth PRs will be merged at the same time. Note that a test change that contradicts the spec should\nnot be merged before the corresponding spec change. If testing is not practical, please explain why\nand if appropriate [file a web-platform-tests issue](https://github.com/web-platform-tests/wpt/issues/new)\nto follow up later. Add the `type:untestable` or `type:missing-coverage` label as appropriate.\n"
-      },
-      {
-        "repo": "w3c/html-reference",
-        "error": "doesn't match SW or DOC contributing",
-        "contributing": "# Web Platform Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Software and Document License](http://www.w3.org/Consortium/Legal/copyright-software). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n\n"
       },
       {
         "repo": "w3c/iip",
@@ -2130,6 +2043,11 @@
         "contributing": "## Contributing\n\nPlease refer to the group's [Work Mode](https://www.w3.org/wiki/Second_Screen/Work_Mode).\n\nContributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Software and Document License](http://www.w3.org/Consortium/Legal/copyright-\nsoftware). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n\n# Tests\n\nFor normative changes, a corresponding\n[web-platform-tests](https://github.com/web-platform-tests/wpt) PR is highly appreciated. Typically,\nboth PRs will be merged at the same time. Note that a test change that contradicts the spec should\nnot be merged before the corresponding spec change. If testing is not practical, please explain why\nand if appropriate [file a web-platform-tests issue](https://github.com/web-platform-tests/wpt/issues/new)\nto follow up later. Add the `type:untestable` or `type:missing-coverage` label as appropriate.\n"
       },
       {
+        "repo": "w3c/pronunciation",
+        "error": "doesn't match SW or DOC contributing",
+        "contributing": "# Accessible Platform Architectures Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](https://www.w3.org/Consortium/Legal/copyright-documents). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
+      },
+      {
         "repo": "w3c/proximity",
         "error": "doesn't match SW or DOC contributing",
         "contributing": "Contributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy/) and\n[Software and Document License](https://www.w3.org/Consortium/Legal/copyright-\nsoftware). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n\n# Tests\n\nFor normative changes, a corresponding\n[web-platform-tests](https://github.com/web-platform-tests/wpt) PR is highly appreciated. Typically,\nboth PRs will be merged at the same time. Note that a test change that contradicts the spec should\nnot be merged before the corresponding spec change. If testing is not practical, please explain why\nand if appropriate [file a web-platform-tests issue](https://github.com/web-platform-tests/wpt/issues/new)\nto follow up later. Add the `type:untestable` or `type:missing-coverage` label as appropriate.\n"
@@ -2203,6 +2121,11 @@
         "repo": "w3c/respec",
         "error": "doesn't match SW or DOC contributing",
         "contributing": "Everyone is welcome to contribute. \n\nPlease see our [developer guide](https://github.com/w3c/respec/wiki/Developers-Guide) to get started!  \n"
+      },
+      {
+        "repo": "w3c/rqtf",
+        "error": "doesn't match SW or DOC contributing",
+        "contributing": "# Accessible Platform Architectures Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](https://www.w3.org/Consortium/Legal/copyright-documents). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
       },
       {
         "repo": "w3c/screen-orientation",
@@ -2283,11 +2206,6 @@
         "repo": "w3c/sync-media-pub",
         "error": "doesn't match SW or DOC contributing",
         "contributing": "# W3C Synchronized Multimedia for Publications Community Group\n\nThis repository is being used for work in the W3C W3C Synchronized Multimedia for Publications Community Group, governed by the [W3C Community License Agreement (CLA)](https://www.w3.org/community/about/agreements/cla/). To make substantive contributions, you must join the BG. \n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax."
-      },
-      {
-        "repo": "w3c/testtwf-website-src",
-        "error": "doesn't match SW or DOC contributing",
-        "contributing": "## Grant of License\n\nBy contributing material to this repository (\"Contribution\"),\nyou hereby agree to license your Contribution under the\n[Creative Commons Attribution License (CC-BY 3.0)][cc-by], and to\ninclude the appropriate copyright notice required by the license.\n\nYou represent that that you are legally entitled to grant the above license. If\nyour employer(s) has rights to the intellectual property that you create that\nincludes your Contributions, you represent that you have received permission to\nmake Contributions on behalf of that employer and that your employer has waived\nsuch rights for your Contributions to W3C.\n\n## Disclaimer\n\nAll content from this repository is provided as is, and W3C makes no\nrepresentations or warranties, express or implied, including, but not limited\nto, warranties of merchantability, fitness for a particular purpose,\nnon-infringement, or title; nor that the contents of this repository are\nsuitable for any purpose.\n\n***\n\n## Build tool\n\nThis website is [Jekyll][jekyll]. This transforms the source content\ninto a set of static HTML pages which can then be served using any\nwebserver.\n\n## Deployment in Production\n\nThe production copy of this website is located at\n[testthewebforward.org domain][testtwf-org]. It is hosted on\n[GitHub][github-io]. In order to build the static copy of the website,\na [travis][travis] script is run on each commit to the master branch. This\nperforms the build steps and pushes the result to a second repository\ncontaining only the output HTML and other assets.\n\n### Testing Changes Locally\n\nBuilding the tests locally requires [Ruby][ruby] and\n[Ruby Gems][gems]. These are installed by default on many systems; if\nthey are not present on your system they can be installed using your\npackage manager or via the installers downloadable on their websites.\n\nIf it not already installed the `bundler` program should then be\ninstalled using\n\n    $ gem install bundler\n\nThe dependencies can then be installed using the `bundle` command:\n\n    $ bundle install\n\nIf you are running Xcode 5.1 or over and get the following error when installing,\n\n    clang: error: unknown argument: '-multiply_definedsuppress' [-Wunused-command-line-argument-hard-error-in-future]\n\nthis is [a known issue][jekyll-clang-bug] and you will need to install jekyll\nwith the following command. (You may need to do this from a superuser shell.)\n\n    $ ARCHFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future gem install github-pages\n\nThis will also install `rake`, a `make`-like tool that defines a\nnumber of targets corresponding to useful operations. To start a local\nserver use `rake serve`\n\n    $ rake serve\n\nOnce this has finished building, navigate your browser to\n`http://localhost:4000` to see the site.\n\nModifications to the source code get automatically picked-up and\ndisplayed on page refresh.\n\n## Documentation format\n\nDocumentation should be written using [Markdown][markdown]. It will be\ntransformed into HTML during the build process.\n\nTo ease online review, lines should be no longer than 80 characters. This is\ngreatly simplified by using [reference style links][ref-style] placed at the\nbottom of the page. For example (lifted off John Gruber's\n[Markdown Syntax guide][markdown]):\n\n    This is [an example][eg] reference-style link.\n\n    [...]\n\n    Then, anywhere in the document (usually at the end), you define your link\n    label like this, on a line by itself:\n\n    [eg]: http://example.com/\n\nFavor named referenced over indexed ones, as those make refactoring much\nsimpler.\n\nAs an added benefit, this syntax makes keeping links up to date a\nlot easier as they are all placed together at the bottom of the page.\n\n## Blog post format\n\nBlog post should be written using either HTML or [Markdown][markdown]. In Jekyll,\nblog posts are just regular text files which get treated differently when\nfollowing a few simple conventions (mainly file names and directory structure)\nas described in the [online documentation][jekyll-blog].\n\nAll blog posts must be located in the `_posts` directory and must use the `post`\ntemplate (which should be specified in the [YAML front-matter][front-matter]).\n\nBlog posts can be of three different types. Regular, in depth posts should use the\n`post` type, shorter posts, the `quickpost` type, and `newsletter` posts… the\n`newsletter` type. Types are added using [YAML front-matter][front-matter].\n\nNote that posts of type `post` will have data pulled from the `people` database\nlocated in the [site-wide config file][config] in order to populate their \"about the\nauthor section\".\n\nAlso noteworthy is the ability to signal when posts have been cross-posted elsewhere.\nThis can be done using the `x-post` property in the [YAML front-matter][front-matter].\n\n## Event page format\n\nEvent pages should be written in HTML. A lot of the content is automatically\ngenerated from data placed in the [YAML front-matter][front-matter]. This\nincludes:\n\n* name of the city (`city`, and `localized_city` fields),\n* date of the event (`date`, and `localized_date` fields),\n* title of the page (optional `title` field),\n* list of event sponsors (`sponsors` field),\n* list of event speakers (`speakers` field), and\n* list of event experts (`experts` field).\n\nSetting the language of the page (`lang` field) can help automatically\nlocalize some of the above.\n\nThere are good examples of how to author this YAML front-matter in the\n[page for the Seattle event][event-eg].\n\nThe `sponsors`, `speakers` and `experts` field simply pull data out of the\n[site-wide config file][config] (a poor man's db) which they run through\n[templates][templates] to produce markup. So for example:\n\n``` yaml\n---\nlang: zho\nspeakers: [Rebecca Hauck]\n---\n```\n\nwill automatically create the following HTML markup:\n\n``` html\n<div class=\"speakers\">\n  <h2 id=\"speakers\">专家</h2>\n  <div class=\"media col-md-4\">\n    <img class=\"media-object thumbnail pull-left\" width=\"48\" height=\"48\"\n      src=\"/assets/experts/rhauck.jpg\" alt=\"Picture of Rebecca Hauck\">\n    <h4 class=\"media-heading\">Rebecca Hauck</h4>\n       <p>Adobe, CSS Working Group</p>\n    </li>\n  </div>\n</div>\n```\n\nNote that while sponsors get automatically added to the end of the events page,\nspeakers and experts need to be included via an `include tag` at the desired\nlocation. E.g.:\n\n``` html\n<p>Some content goes here:</p>\n\n{% include events/speakers.html %}\n\n<p>All talks will be given in English.</p>\n\n{% include events/experts.html %}\n```\n\nShould you need to modify or add a speaker, expert or sponsor, please do so in\nthe [config file][config]. The format is [YAML][yaml] of which JSON is a\nsubset. Note that speakers and experts share the same `people` entry.\n\n## File names\n\nFile names should be lowercased, hyphenated and use the `.md` extension for\n[Markdown](markdown)-formated content (e.g.: `review-process.md`). The build\nstep will change these to `review-process.html` and use it as URL.\n\n## Contribution workflow\n\nContributions should follow the standard open source GitHub workflow (fork\nthe repository, work off topic-branches, send atomic commits as pull requests,\nand get them reviewed by a peer).\n\nGenerally, contributing to a doc will imply:\n\n1.  commenting on the issue to announce you're planning to work on it,\n2.  looking at [existing docs][resources] to find related content,\n3.  using an [online service][fuckyeahmarkdown] to convert that content to\n    [Markdown][markdown],\n4.  copyediting it,\n5.  adding [YAML front-matter][front-matter], and\n6.  sending a pull request.\n\nThanks for your help!\n\n[cc-by]: https://creativecommons.org/licenses/by/3.0/\n[config]: https://github.com/w3c/testtwf-website/blob/gh-pages/_config.yml\n[front-matter]: http://jekyllrb.com/docs/frontmatter/\n[event-eg]: https://github.com/w3c/testtwf-website/blob/gh-pages/events/2013/seattle.html#L1-L8\n[fuckyeahmarkdown]: http://fuckyeahmarkdown.com/\n[gems]: https://rubygems.org/\n[gh-pages]: http://pages.github.com/\n[github-io]: http://w3c.github.io/testtwf-website/\n[install-jekyll]: https://help.github.com/articles/using-jekyll-with-pages\n[jekyll]: http://jekyllrb.com/\n[jekyll-blog]: http://jekyllrb.com/docs/posts/\n[jekyll-clang-bug]: https://github.com/jekyll/jekyll/issues/2125\n[markdown]: http://daringfireball.net/projects/markdown/syntax\n[ref-style]: http://daringfireball.net/projects/markdown/syntax#link\n[resources]: https://github.com/w3c/testtwf-website/blob/gh-pages/RESOURCES.md\n[ruby]: https://www.ruby-lang.org/\n[staging]: http://www.testthewebforward-staging.org/\n[templates]: https://github.com/w3c/testtwf-website/blob/gh-pages/_includes\n[travis]: https://travis-ci.org\n[testtwf-org]: http://testthewebforward.org\n[yaml]: http://www.yaml.org/\n"
       },
       {
         "repo": "w3c/tlreq",
@@ -2984,9 +2902,7 @@
       "w3c/ColorWeb-CG",
       "w3c/cred-claims",
       "w3c/credweb",
-      "w3c/css-a11y",
       "w3c/css-aam",
-      "w3c/css-checker",
       "w3c/css-validator-testsuite",
       "w3c/csswg-apiclient",
       "w3c/csswg-www",
@@ -2997,7 +2913,6 @@
       "w3c/devicesensors-wg",
       "w3c/display_errata",
       "w3c/dpub-annotation",
-      "w3c/dpub-charter",
       "w3c/dpub-content-and-markup",
       "w3c/dpub-metadata",
       "w3c/dpub-pagination",
@@ -3005,7 +2920,6 @@
       "w3c/dpub-pwp-loc",
       "w3c/dpub-pwp-ucr",
       "w3c/dpub-stem",
-      "w3c/dpubwg-charter",
       "w3c/dummy",
       "w3c/dwbp",
       "w3c/EasierRDF",
@@ -3019,8 +2933,6 @@
       "w3c/findtext",
       "w3c/fingerprinting-guidance",
       "w3c/games-workshop",
-      "w3c/ganesh",
-      "w3c/geofencing-api",
       "w3c/geolocation-api",
       "w3c/github_sync",
       "w3c/github-notify-ml-config",
@@ -3107,15 +3019,12 @@
       "w3c/ping-security-questionnaire",
       "w3c/predefined-counter-styles",
       "w3c/privacy-considerations",
-      "w3c/pronunciation",
       "w3c/publ-cg",
       "w3c/publ-epub-revision",
       "w3c/PWETF",
-      "w3c/pywebsocket",
       "w3c/qt3tests",
       "w3c/rangefinder",
       "w3c/rdfvalidator-ng",
-      "w3c/rqtf",
       "w3c/sakura",
       "w3c/scholarly-html",
       "w3c/scribejs",
@@ -3143,8 +3052,6 @@
       "w3c/swig",
       "w3c/test-results",
       "w3c/testing-how-to",
-      "w3c/testtwf-website",
-      "w3c/testtwf-website-src",
       "w3c/third-party-resources-checker",
       "w3c/time-series-and-spatial-data",
       "w3c/timed-text-dashboard",
@@ -3164,7 +3071,6 @@
       "w3c/type-samples",
       "w3c/typography",
       "w3c/UAAG",
-      "w3c/UAAG-Implementations",
       "w3c/unicode-xml",
       "w3c/Unicorn",
       "w3c/unspecified-web",
@@ -3270,13 +3176,11 @@
       "w3c/web-of-things-framework",
       "w3c/web-roadmaps",
       "w3c/webex",
-      "w3c/WebIDL",
       "w3c/webidl2.js",
       "w3c/webmediaapi",
       "w3c/webmediaguidelines",
       "w3c/webmediaporting",
       "w3c/webmention",
-      "w3c/webpayments-ig",
       "w3c/webpayments-overview",
       "w3c/webperf-dashboard",
       "w3c/WebPlatformWG",
@@ -3479,7 +3383,6 @@
       "w3c/credweb",
       "w3c/css-a11y",
       "w3c/css-aam",
-      "w3c/css-checker",
       "w3c/css-houdini-drafts",
       "w3c/css-validator",
       "w3c/css-validator-testsuite",
@@ -3503,7 +3406,6 @@
       "w3c/dpub-accessibility",
       "w3c/dpub-annotation",
       "w3c/dpub-aria",
-      "w3c/dpub-charter",
       "w3c/dpub-content-and-markup",
       "w3c/dpub-metadata",
       "w3c/dpub-pagination",
@@ -3511,7 +3413,6 @@
       "w3c/dpub-pwp-loc",
       "w3c/dpub-pwp-ucr",
       "w3c/dpub-stem",
-      "w3c/dpubwg-charter",
       "w3c/dummy",
       "w3c/dwbp",
       "w3c/dxwg",
@@ -3537,8 +3438,6 @@
       "w3c/fxtf-drafts",
       "w3c/gamepad",
       "w3c/games-workshop",
-      "w3c/ganesh",
-      "w3c/geofencing-api",
       "w3c/geolocation-api",
       "w3c/geolocation-sensor",
       "w3c/github_sync",
@@ -3563,7 +3462,6 @@
       "w3c/html-landscape",
       "w3c/html-media",
       "w3c/html-media-capture",
-      "w3c/html-reference",
       "w3c/html-tools",
       "w3c/html-transcript",
       "w3c/htmldiff-nav",
@@ -3689,7 +3587,6 @@
       "w3c/poe",
       "w3c/pointerevents",
       "w3c/pointerlock",
-      "w3c/prbuildbot",
       "w3c/predefined-counter-styles",
       "w3c/preload",
       "w3c/presentation-api",
@@ -3705,7 +3602,6 @@
       "w3c/push-api",
       "w3c/PWETF",
       "w3c/pwpub",
-      "w3c/pywebsocket",
       "w3c/qt3tests",
       "w3c/qtspecs",
       "w3c/quota-api",
@@ -3759,8 +3655,6 @@
       "w3c/sync-media-pub",
       "w3c/test-results",
       "w3c/testing-how-to",
-      "w3c/testtwf-website",
-      "w3c/testtwf-website-src",
       "w3c/third-party-resources-checker",
       "w3c/time-series-and-spatial-data",
       "w3c/timed-text-dashboard",
@@ -3787,7 +3681,6 @@
       "w3c/type-samples",
       "w3c/typography",
       "w3c/UAAG",
-      "w3c/UAAG-Implementations",
       "w3c/uievents",
       "w3c/uievents-code",
       "w3c/uievents-key",
@@ -3940,7 +3833,6 @@
       "w3c/webcrypto",
       "w3c/webdriver",
       "w3c/webex",
-      "w3c/WebIDL",
       "w3c/webidl2.js",
       "w3c/webmediaapi",
       "w3c/webmediaguidelines",
@@ -3952,7 +3844,6 @@
       "w3c/webpayments-flows",
       "w3c/webpayments-http-api",
       "w3c/webpayments-http-messages",
-      "w3c/webpayments-ig",
       "w3c/webpayments-methods-tokenization",
       "w3c/webpayments-overview",
       "w3c/webperf-dashboard",
@@ -4273,11 +4164,6 @@
         "repo": "w3c/opentrack-cg",
         "error": "doesn't match SW or DOC license",
         "license": "All Reports in this Repository are licensed by Contributors\nunder the \n[W3C Software and Document License](http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document).  \n\nContributions to Specifications are made under the\n[W3C CLA](https://www.w3.org/community/about/agreements/cla/).\n\nContributions to Test Suites are made under the\n[W3C 3-clause BSD License](https://www.w3.org/Consortium/Legal/2008/03-bsd-license.html)\n\n"
-      },
-      {
-        "repo": "w3c/prbuildbot",
-        "error": "doesn't match SW or DOC license",
-        "license": "# W3C 3-clause BSD License\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n*    Redistributions of works must retain the original copyright notice, this list of conditions and the following disclaimer.\n*    Redistributions in binary form must reproduce the original copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n*    Neither the name of the W3C nor the names of its contributors may be used to endorse or promote products derived from this work without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n"
       },
       {
         "repo": "w3c/publ-bg",
@@ -4608,12 +4494,9 @@
       "w3c/machine-learning-workshop",
       "w3c/mediacapture-scenarios",
       "w3c/nodejs",
-      "w3c/pywebsocket",
       "w3c/snapshot-generator",
       "w3c/socialwg",
       "w3c/src",
-      "w3c/standards-track",
-      "w3c/testtwf-website",
       "w3c/ttml1-tests",
       "w3c/tvcontrol-api",
       "w3c/wai-act-quickref",
@@ -4628,7 +4511,6 @@
       "w3c/web-ledger",
       "w3c/web-of-things-framework",
       "w3c/webappsec-subresource-integrity",
-      "w3c/WebIDL",
       "w3c/webpayments-overview",
       "w3c/webrtc-charter",
       "w3c/wot-arduino",
@@ -4652,6 +4534,8 @@
     ],
     "noashnazg": [
       "immersive-web/editor-collab",
+      "w3c/css-aam",
+      "w3c/geolocation-api",
       "w3c/low-vision-SC",
       "w3c/UAAG",
       "w3c/wcag-act",
@@ -4661,12 +4545,28 @@
     ],
     "inconsistentstatus": [
       {
-        "repo": "w3c/deviceorientation",
+        "repo": "w3c/apa",
         "error": "TR document: false, vs repo: true"
+      },
+      {
+        "repo": "w3c/aria-at",
+        "error": "repo: false, vs repo manager: true"
+      },
+      {
+        "repo": "w3c/aria-common",
+        "error": "repo: false, vs repo manager: true"
+      },
+      {
+        "repo": "w3c/css-a11y",
+        "error": "repo: false, vs repo manager: true"
       },
       {
         "repo": "w3c/deviceorientation",
         "error": "TR document: false, vs repo manager: true"
+      },
+      {
+        "repo": "w3c/deviceorientation",
+        "error": "TR document: false, vs repo: true"
       },
       {
         "repo": "w3c/dnt",
@@ -4675,6 +4575,10 @@
       {
         "repo": "w3c/poe",
         "error": "TR document: false, vs repo manager: true"
+      },
+      {
+        "repo": "w3c/wcag",
+        "error": "TR document: false, vs repo: true"
       },
       {
         "repo": "w3c/web-annotation",
@@ -4718,6 +4622,148 @@
         }
       },
       "repos": [
+        {
+          "id": "MDEwOlJlcG9zaXRvcnk0NzU3ODI2OA==",
+          "name": "standards-track",
+          "owner": {
+            "login": "w3c"
+          },
+          "isArchived": false,
+          "homepageUrl": "https://www.w3.org/Guide/standards-track/",
+          "description": "Best Practices for Bringing Work to the W3C Recommendation Track",
+          "labels": {
+            "edges": [
+              {
+                "node": {
+                  "name": "bug",
+                  "color": "fc2929"
+                }
+              },
+              {
+                "node": {
+                  "name": "duplicate",
+                  "color": "cccccc"
+                }
+              },
+              {
+                "node": {
+                  "name": "enhancement",
+                  "color": "84b6eb"
+                }
+              },
+              {
+                "node": {
+                  "name": "help wanted",
+                  "color": "159818"
+                }
+              },
+              {
+                "node": {
+                  "name": "invalid",
+                  "color": "e6e6e6"
+                }
+              },
+              {
+                "node": {
+                  "name": "question",
+                  "color": "cc317c"
+                }
+              },
+              {
+                "node": {
+                  "name": "wontfix",
+                  "color": "ffffff"
+                }
+              }
+            ],
+            "pageInfo": {
+              "endCursor": "Y3Vyc29yOnYyOpHOEa38aA==",
+              "hasNextPage": false
+            }
+          },
+          "w3cjson": {
+            "text": "{\n    \"group\":     7756\n,   \"contacts\":  [\"koalie\"]\n,   \"repo-type\": \"process\"\n}\n"
+          },
+          "contributing": null,
+          "license": null,
+          "codeOfConduct": null,
+          "readme": {
+            "text": "# standards-track\nBest Practices for Bringing Work to the W3C Recommendation Track\n\nRepo to host AB work on the matter\n"
+          },
+          "fullName": "w3c/standards-track"
+        },
+        {
+          "id": "MDEwOlJlcG9zaXRvcnk2NzY1NTg4Ng==",
+          "name": "w3process-obsolete-rescinded",
+          "owner": {
+            "login": "w3c"
+          },
+          "isArchived": false,
+          "homepageUrl": "https://w3c.github.io/w3process-obsolete-rescinded/",
+          "description": "Superseded, Obsolete, Rescinded",
+          "labels": {
+            "edges": [
+              {
+                "node": {
+                  "name": "bug",
+                  "color": "ee0701"
+                }
+              },
+              {
+                "node": {
+                  "name": "duplicate",
+                  "color": "cccccc"
+                }
+              },
+              {
+                "node": {
+                  "name": "enhancement",
+                  "color": "84b6eb"
+                }
+              },
+              {
+                "node": {
+                  "name": "help wanted",
+                  "color": "128A0C"
+                }
+              },
+              {
+                "node": {
+                  "name": "invalid",
+                  "color": "e6e6e6"
+                }
+              },
+              {
+                "node": {
+                  "name": "question",
+                  "color": "cc317c"
+                }
+              },
+              {
+                "node": {
+                  "name": "wontfix",
+                  "color": "ffffff"
+                }
+              }
+            ],
+            "pageInfo": {
+              "endCursor": "Y3Vyc29yOnYyOpHOGiTO9A==",
+              "hasNextPage": false
+            }
+          },
+          "w3cjson": {
+            "text": "{\n    \"group\":     7756\n,   \"contacts\":  [\"plehegar\"]\n,   \"repo-type\": \"process\"\n}\n"
+          },
+          "contributing": null,
+          "license": {
+            "text": "All documents in this Repository are licensed by contributors\nunder the [W3C Document License](http://www.w3.org/Consortium/Legal/copyright-documents).\n\n"
+          },
+          "codeOfConduct": null,
+          "readme": {
+            "text": "# w3process\n\nFor W3C Team, W3C Advisory Board and collaborators related to the [Revising the W3C Process Community Group](http://www.w3.org/community/w3process) who need to edit documents collaboratively.\n"
+          },
+          "fullName": "w3c/w3process-obsolete-rescinded"
+        },
         {
           "id": "MDEwOlJlcG9zaXRvcnk4ODk1OTE4Mg==",
           "name": "w3process",
@@ -6159,6 +6205,89 @@
           },
           "readme": null,
           "fullName": "w3c/fxtf-drafts",
+          "hasRecTrack": true
+        },
+        {
+          "id": "MDEwOlJlcG9zaXRvcnk4MDU1NzIzOQ==",
+          "name": "css-a11y",
+          "owner": {
+            "login": "w3c"
+          },
+          "isArchived": false,
+          "homepageUrl": null,
+          "description": "Main repository for the CSS Accessibility Task Force",
+          "labels": {
+            "edges": [
+              {
+                "node": {
+                  "name": "bug",
+                  "color": "ee0701"
+                }
+              },
+              {
+                "node": {
+                  "name": "duplicate",
+                  "color": "cccccc"
+                }
+              },
+              {
+                "node": {
+                  "name": "enhancement",
+                  "color": "84b6eb"
+                }
+              },
+              {
+                "node": {
+                  "name": "help wanted",
+                  "color": "128A0C"
+                }
+              },
+              {
+                "node": {
+                  "name": "invalid",
+                  "color": "e6e6e6"
+                }
+              },
+              {
+                "node": {
+                  "name": "question",
+                  "color": "cc317c"
+                }
+              },
+              {
+                "node": {
+                  "name": "wontfix",
+                  "color": "ffffff"
+                }
+              },
+              {
+                "node": {
+                  "name": "urgent",
+                  "color": "d93f0b"
+                }
+              }
+            ],
+            "pageInfo": {
+              "endCursor": "Y3Vyc29yOnYyOpHOIw9vJQ==",
+              "hasNextPage": false
+            }
+          },
+          "w3cjson": {
+            "text": " {\n    \"group\":      [83907,83726,32061]\n,   \"contacts\":   [\"michael-n-cooper\"]\n,   \"repo-type\":  \"others\",\n\t\"policy\":     \"restricted\"\n}\n"
+          },
+          "contributing": {
+            "text": "# Accessible Platform Architectures Working Group, ,Accessible Rich Internet Applications Working Group, and Cascading Style Sheets (CSS) Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](https://www.w3.org/Consortium/Legal/copyright-documents). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
+          },
+          "license": {
+            "text": "All documents in this Repository are licensed by contributors\nunder the \n[W3C Document License](https://www.w3.org/Consortium/Legal/copyright-documents).\n\n"
+          },
+          "codeOfConduct": {
+            "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n"
+          },
+          "readme": {
+            "text": "# css-a11y\nMain repository for the CSS Accessibility Task Force.\nGeneral information about the taskforce and official participation can be found at https://www.w3.org/WAI/APA/task-forces/css-a11y/\n"
+          },
+          "fullName": "w3c/css-a11y",
           "hasRecTrack": true
         }
       ]
@@ -8680,7 +8809,7 @@
             }
           },
           "w3cjson": {
-            "text": "{\n  \"group\": 35422,\n  \"contacts\": [\n    {\n      \"github\": \"michael-n-cooper\",\n      \"w3c\": \"cooper\"\n    }\n  ],\n  \"policy\": \"restricted\" \n}"
+            "text": "{\n  \"group\": 35422,\n  \"contacts\": \"michael-n-cooper\",\n  \"policy\": \"restricted\",\n  \"repo-type\": [\"note\", \"rec-track\", \"tool\"]\n}"
           },
           "contributing": {
             "text": "Contributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](https://www.w3.org/Consortium/Legal/copyright-documents). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n\nPublic comments can be made by opening a new Issue https://github.com/w3c/wcag/issues/new. The public can also comment on any issue threads on Github https://github.com/w3c/wcag/issues.\n"
@@ -26805,10 +26934,16 @@
                   "name": "tracking",
                   "color": "fbca04"
                 }
+              },
+              {
+                "node": {
+                  "name": "ToolChain",
+                  "color": "fef2c0"
+                }
               }
             ],
             "pageInfo": {
-              "endCursor": "Y3Vyc29yOnYyOpHOR9wwyA==",
+              "endCursor": "Y3Vyc29yOnYyOpHOR_NxQQ==",
               "hasNextPage": false
             }
           },
@@ -27095,7 +27230,7 @@
           "license": null,
           "codeOfConduct": null,
           "readme": {
-            "text": "# WebAssembly meetings\n\nInformation on official in-person WebAssembly meetings hosted by the W3C\n[Community Group](https://w3.org/community/webassembly/). Each meeting will have its own\nagenda published before the meeting, and minutes will be posted in the\ninvitation document after the meeting, including topics discussions and\ndecisions.\n\nIf you're unfamiliar with standards meetings,\n[Allen's paper on standards committee participation for newbees](http://wirfs-brock.com/allen/files/papers/standpats-asianplop2016.pdf)\nmay be helpful.\n\n## Process\n\nMeeting process is documented:\n\n* [Attendance](process/attendance.md)\n* [Day-of](process/day-of.md)\n* [Consensus](process/consensus.md)\n* [Hosting](process/hosting.md)\n\n## Meetings\n\n* 2017\n\n   * [CG May in-person](2017/CG-05.md)\n   * [CG July 6th video call](2017/CG-07-06.md)\n   * [CG July in-person](2017/CG-07.md)\n   * [CG August 8th video call](2017/CG-08-08.md)\n   * [CG August 22nd video call](2017/CG-08-22.md)\n   * [CG September 5th video call](2017/CG-09-05.md)\n   * [WG September 15th video call](2017/WG-09-15.md)\n   * [CG September 19th video call](2017/CG-09-19.md)\n   * [CG October 3rd video call](2017/CG-10-03.md)\n   * [CG October 17th video call](2017/CG-10-17.md)\n   * [CG November in-person](2017/CG-11.md)\n   * [TPAC](2017/TPAC.md)\n   * [CG November 14th video call](2017/CG-11-14.md)\n   * [CG November 28th video call](2017/CG-11-28.md)\n   * [WG December 6th video call](2017/WG-12-06.md)\n   * [CG December 12th video call](2017/CG-12-12.md)\n\n* 2018\n\n   * [CG January 9th video call](2018/CG-01-09.md)\n   * [WG January 11th video call](2018/WG-01-11.md)\n   * [CG January 26th video call](2018/CG-01-26.md)\n   * [CG February 6th video call](2018/CG-02-06.md)\n   * [WG February 12th video call](2018/WG-02-12.md)\n   * [CG February 21st video call](2018/CG-02-21.md)\n   * [WG February 28th video call](2018/WG-02-28.md)\n   * [CG March 6th video call](2018/CG-03-06.md)\n   * [CG March 20th/21st video call](2018/CG-03-20v21.md)\n   * [WG March 21st/22nd video call](2018/WG-03-21v22.md)\n   * [CG April in-person](2018/CG-04.md)\n   * [WG April 4th video call](2018/WG-04-04.md)\n   * [CG May 1st video call](2018/CG-05-01.md)\n   * [WG May 2nd video call](2018/WG-05-02.md)\n   * [CG May 15th video call](2018/CG-05-15.md)\n   * [WG May 23rd video call](2018/WG-05-23.md)\n   * [CG May 29th video call](2018/CG-05-29.md)\n   * [WG June 6th video call](2018/WG-06-06.md)\n   * [CG June 12th video call](2018/CG-06-12.md)\n   * [CG June 26th video call](2018/CG-06-26.md)\n   * [CG July 10th video call](2018/CG-07-10.md)\n   * [WG July 18th video call](2018/WG-07-18.md)\n   * [CG July 24th video call](2018/CG-07-24.md)\n   * [CG August 7th video call](2018/CG-08-07.md)\n   * [WG August 15th video call](2018/WG-08-15.md)\n   * [CG August 21st video call](2018/CG-08-21.md)\n   * [WG August 29th video call](2018/WG-08-29.md)\n   * [CG September 4th video call](2018/CG-09-04.md)\n   * [WG September 12th video call](2018/WG-09-12.md)\n   * [CG September 18th video call](2018/CG-09-18.md)\n   * [WG September 26th video call](2018/WG-09-26.md)\n   * [CG October 2nd video call](2018/CG-10-02.md)\n   * [WG October 10th video call](2018/WG-10-10.md)\n   * [CG October 16th video call](2018/CG-10-16.md)\n   * [TPAC - CG/WG October in-person](2018/TPAC.md)\n   * [WG November 7th video call](2018/WG-11-7.md)\n   * [CG November 13th video call](2018/CG-11-13.md)\n   * [CG November 27th video call](2018/CG-11-27.md)\n   * [WG December 5th video call](2018/WG-12-05.md)\n   * [CG December 11th video call](2018/CG-12-11.md)\n\n* 2019\n\n   * [CG January 8th video call](2019/CG-01-08.md)\n   * [WG January 16th video call](2019/WG-01-16.md)\n   * [CG January 22nd video call](2019/CG-01-22.md)\n"
+            "text": "# WebAssembly meetings\n\nInformation on official in-person WebAssembly meetings hosted by the W3C\n[Community Group](https://w3.org/community/webassembly/). Each meeting will have its own\nagenda published before the meeting, and minutes will be posted in the\ninvitation document after the meeting, including topics discussions and\ndecisions.\n\nIf you're unfamiliar with standards meetings,\n[Allen's paper on standards committee participation for newbees](http://wirfs-brock.com/allen/files/papers/standpats-asianplop2016.pdf)\nmay be helpful.\n\n## Process\n\nMeeting process is documented:\n\n* [Attendance](process/attendance.md)\n* [Day-of](process/day-of.md)\n* [Consensus](process/consensus.md)\n* [Hosting](process/hosting.md)\n\n## Meetings\n\n<details open>\n<summary>2019</summary>\n  \n   * [CG January 8th video call](2019/CG-01-08.md)\n   * [WG January 16th video call](2019/WG-01-16.md)\n   * [CG January 22nd video call](2019/CG-01-22.md)\n   * [CG February 5th video call](2019/CG-02-05.md)\n   * [WG February 13th video call](2019/WG-02-13.md)\n   * [CG February 19th video call](2019/CG-02-19.md)\n\n</details>\n\n<details>\n<summary>2018</summary>\n\n   * [CG January 9th video call](2018/CG-01-09.md)\n   * [WG January 11th video call](2018/WG-01-11.md)\n   * [CG January 26th video call](2018/CG-01-26.md)\n   * [CG February 6th video call](2018/CG-02-06.md)\n   * [WG February 12th video call](2018/WG-02-12.md)\n   * [CG February 21st video call](2018/CG-02-21.md)\n   * [WG February 28th video call](2018/WG-02-28.md)\n   * [CG March 6th video call](2018/CG-03-06.md)\n   * [CG March 20th/21st video call](2018/CG-03-20v21.md)\n   * [WG March 21st/22nd video call](2018/WG-03-21v22.md)\n   * [CG April in-person](2018/CG-04.md)\n   * [WG April 4th video call](2018/WG-04-04.md)\n   * [CG May 1st video call](2018/CG-05-01.md)\n   * [WG May 2nd video call](2018/WG-05-02.md)\n   * [CG May 15th video call](2018/CG-05-15.md)\n   * [WG May 23rd video call](2018/WG-05-23.md)\n   * [CG May 29th video call](2018/CG-05-29.md)\n   * [WG June 6th video call](2018/WG-06-06.md)\n   * [CG June 12th video call](2018/CG-06-12.md)\n   * [CG June 26th video call](2018/CG-06-26.md)\n   * [CG July 10th video call](2018/CG-07-10.md)\n   * [WG July 18th video call](2018/WG-07-18.md)\n   * [CG July 24th video call](2018/CG-07-24.md)\n   * [CG August 7th video call](2018/CG-08-07.md)\n   * [WG August 15th video call](2018/WG-08-15.md)\n   * [CG August 21st video call](2018/CG-08-21.md)\n   * [WG August 29th video call](2018/WG-08-29.md)\n   * [CG September 4th video call](2018/CG-09-04.md)\n   * [WG September 12th video call](2018/WG-09-12.md)\n   * [CG September 18th video call](2018/CG-09-18.md)\n   * [WG September 26th video call](2018/WG-09-26.md)\n   * [CG October 2nd video call](2018/CG-10-02.md)\n   * [WG October 10th video call](2018/WG-10-10.md)\n   * [CG October 16th video call](2018/CG-10-16.md)\n   * [TPAC - CG/WG October in-person](2018/TPAC.md)\n   * [WG November 7th video call](2018/WG-11-7.md)\n   * [CG November 13th video call](2018/CG-11-13.md)\n   * [CG November 27th video call](2018/CG-11-27.md)\n   * [WG December 5th video call](2018/WG-12-05.md)\n   * [CG December 11th video call](2018/CG-12-11.md)\n\n</details>\n\n<details>\n<summary>2017</summary>\n\n   * [CG May in-person](2017/CG-05.md)\n   * [CG July 6th video call](2017/CG-07-06.md)\n   * [CG July in-person](2017/CG-07.md)\n   * [CG August 8th video call](2017/CG-08-08.md)\n   * [CG August 22nd video call](2017/CG-08-22.md)\n   * [CG September 5th video call](2017/CG-09-05.md)\n   * [WG September 15th video call](2017/WG-09-15.md)\n   * [CG September 19th video call](2017/CG-09-19.md)\n   * [CG October 3rd video call](2017/CG-10-03.md)\n   * [CG October 17th video call](2017/CG-10-17.md)\n   * [CG November in-person](2017/CG-11.md)\n   * [TPAC](2017/TPAC.md)\n   * [CG November 14th video call](2017/CG-11-14.md)\n   * [CG November 28th video call](2017/CG-11-28.md)\n   * [WG December 6th video call](2017/WG-12-06.md)\n   * [CG December 12th video call](2017/CG-12-12.md)\n\n</details>\n"
           },
           "fullName": "WebAssembly/meetings"
         },
@@ -38813,7 +38948,7 @@
             }
           },
           "w3cjson": {
-            "text": " {\n    \"group\":      [\"83726\"]\n,   \"contacts\":   [\"michael-n-cooper\"]\n}\n"
+            "text": " {\n    \"group\":      [\"83726\"]\n,   \"contacts\":   [\"michael-n-cooper\"],\n\t\"policy\":     \"restricted\",\n\t\"repo-type\":  \"tool\"\n}\n"
           },
           "contributing": {
             "text": "Contributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](https://www.w3.org/Consortium/Legal/copyright-documents). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
@@ -38828,6 +38963,89 @@
             "text": "# ARIA Common Files\n\n[This is the repository for aria-common](https://github.com/w3c/aria-common). It contains files shared by several other ARIA repositories, and copied into those repositories. Note *content must be updated in w3c/aria-common*; changes made in copies are overwritten next time content from this repository is synced.\n\nResources in the common files:\n\n## Terms\n\nThe specifications share a common set of term definitions, located in [terms.html](terms.html). Add and update terms there, keeping in mind your edits will affect all specifications. To use the terms, at the place you want the terms to be included, provide the following line:\n\n```html\n<div data-include=\"../common/terms.html\" data-oninclude=\"restrictReferences\"></div>\n```\n\nThis includes the terms file and filters it to only output ones that are referenced in that particular specification.\n\n## Bibliography\n\nThe Respec processor loads a bibliography called [Specref](https://github.com/tobie/specref). This resource automatically includes most publications that have been published to the W3C Technical Reports page. While it is possible to request additions to this via pull requests, in practice to use references that are not in that database, it is easier to use a [`localBiblio`](https://github.com/w3c/respec/wiki/localBiblio). This allows the Respec configuration to load additional bibliographic entries, structured in the same way as in Specref.\n\nMany of the supplementary bibliographic entries needed for the ARIA publications are common to several specifications. Therefore the bibliographic entries are all stored in [biblio.js](biblio.js). This is loaded with the other scripts at the top of the file with the following line:\n\n```html\n<script src=\"../common/biblio.js\" class=\"remove\"></script>\n```\n\nIn the respecConfig, instead of providing the set of bibliographic entries directly, simply reference the object created by that script:\n\n```html\nlocalBiblio: biblio,\n```\n\n## Images, CSS, and Scripts\n\nThe `common` directory also contains shared images, CSS, and scripts. Some of the scripts extend the Respec formatting processor, and others are meant to be used with the final output version. When a resource is, or is likely to be, shared, put it in the common directory. Resources specific to a particular specification, including overriding CSS, can be placed in the directory for that specification. Use the same sub-directory structure of `img`, `css`, and `script` to help keep files organized.\n"
           },
           "fullName": "w3c/aria-common",
+          "hasRecTrack": true
+        },
+        {
+          "id": "MDEwOlJlcG9zaXRvcnk4MDU1NzIzOQ==",
+          "name": "css-a11y",
+          "owner": {
+            "login": "w3c"
+          },
+          "isArchived": false,
+          "homepageUrl": null,
+          "description": "Main repository for the CSS Accessibility Task Force",
+          "labels": {
+            "edges": [
+              {
+                "node": {
+                  "name": "bug",
+                  "color": "ee0701"
+                }
+              },
+              {
+                "node": {
+                  "name": "duplicate",
+                  "color": "cccccc"
+                }
+              },
+              {
+                "node": {
+                  "name": "enhancement",
+                  "color": "84b6eb"
+                }
+              },
+              {
+                "node": {
+                  "name": "help wanted",
+                  "color": "128A0C"
+                }
+              },
+              {
+                "node": {
+                  "name": "invalid",
+                  "color": "e6e6e6"
+                }
+              },
+              {
+                "node": {
+                  "name": "question",
+                  "color": "cc317c"
+                }
+              },
+              {
+                "node": {
+                  "name": "wontfix",
+                  "color": "ffffff"
+                }
+              },
+              {
+                "node": {
+                  "name": "urgent",
+                  "color": "d93f0b"
+                }
+              }
+            ],
+            "pageInfo": {
+              "endCursor": "Y3Vyc29yOnYyOpHOIw9vJQ==",
+              "hasNextPage": false
+            }
+          },
+          "w3cjson": {
+            "text": " {\n    \"group\":      [83907,83726,32061]\n,   \"contacts\":   [\"michael-n-cooper\"]\n,   \"repo-type\":  \"others\",\n\t\"policy\":     \"restricted\"\n}\n"
+          },
+          "contributing": {
+            "text": "# Accessible Platform Architectures Working Group, ,Accessible Rich Internet Applications Working Group, and Cascading Style Sheets (CSS) Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](https://www.w3.org/Consortium/Legal/copyright-documents). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
+          },
+          "license": {
+            "text": "All documents in this Repository are licensed by contributors\nunder the \n[W3C Document License](https://www.w3.org/Consortium/Legal/copyright-documents).\n\n"
+          },
+          "codeOfConduct": {
+            "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n"
+          },
+          "readme": {
+            "text": "# css-a11y\nMain repository for the CSS Accessibility Task Force.\nGeneral information about the taskforce and official participation can be found at https://www.w3.org/WAI/APA/task-forces/css-a11y/\n"
+          },
+          "fullName": "w3c/css-a11y",
           "hasRecTrack": true
         },
         {
@@ -39009,7 +39227,7 @@
             }
           },
           "w3cjson": {
-            "text": "{\n  \"group\": 83726,\n  \"contacts\": [\n    \"michael-n-cooper\"\n  ],\n  \"repo-type\": \"rec-track\"\n}"
+            "text": "{\n  \"group\": 83726,\n  \"contacts\": [\n    \"michael-n-cooper\"\n  ],\n  \"repo-type\": \"rec-track\",\n  \"policy\": \"restricted\"\n}"
           },
           "contributing": {
             "text": "# Accessible Rich Internet Applications Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](https://www.w3.org/Consortium/Legal/copyright-documents). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
@@ -39199,7 +39417,7 @@
             }
           },
           "w3cjson": {
-            "text": "{\n  \"group\": 83726,\n  \"contacts\": [\n    \"michael-n-cooper\"\n  ],\n  \"repo-type\": \"rec-track\"\n}"
+            "text": "{\n  \"group\": 83726,\n  \"contacts\": [\n    \"michael-n-cooper\"\n  ],\n  \"repo-type\": \"rec-track\",\n  \"policy\": \"restricted\"\n}"
           },
           "contributing": {
             "text": "# Accessible Rich Internet Applications Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](https://www.w3.org/Consortium/Legal/copyright-documents). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
@@ -39282,7 +39500,7 @@
             }
           },
           "w3cjson": {
-            "text": " {\n    \"group\":      [\"83726\"]\n,   \"contacts\":   [\"michael-n-cooper\"]\n}\n"
+            "text": " {\n    \"group\":      [\"83726\"]\n,   \"contacts\":   [\"michael-n-cooper\"],\n\t\"policy\": \"restricted\",\n\t\"repo-type\": \"rec-track\"\n}\n"
           },
           "contributing": {
             "text": "# Accessible Rich Internet Applications Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](https://www.w3.org/Consortium/Legal/copyright-documents). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
@@ -39365,7 +39583,7 @@
             }
           },
           "w3cjson": {
-            "text": "{\n  \"group\":      [\"83726\"],\n  \"contacts\":   [\n    {\n      \"github\": \"michael-n-cooper\",\n      \"w3c\": \"cooper\"\n    }\n  ],\n  \"policy\":     \"restricted\" \n}\n"
+            "text": "{\n  \"group\":      [\"83726\"],\n  \"contacts\":   [\n    {\n      \"github\": \"michael-n-cooper\",\n      \"w3c\": \"cooper\"\n    }\n  ],\n  \"policy\":     \"restricted\",\n  \"repo-type\":  \"cg-report\"\n}\n"
           },
           "contributing": {
             "text": "# Accessible Rich Internet Applications Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](https://www.w3.org/Consortium/Legal/copyright-documents). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
@@ -40405,6 +40623,74 @@
           "hasRecTrack": true
         },
         {
+          "id": "MDEwOlJlcG9zaXRvcnk2Mjk3NzI0NA==",
+          "name": "webpayments-overview",
+          "owner": {
+            "login": "w3c"
+          },
+          "isArchived": false,
+          "homepageUrl": "https://w3c.github.io/webpayments-overview/",
+          "description": "An overview of the Web Payments ecosystem",
+          "labels": {
+            "edges": [
+              {
+                "node": {
+                  "name": "bug",
+                  "color": "ee0701"
+                }
+              },
+              {
+                "node": {
+                  "name": "duplicate",
+                  "color": "cccccc"
+                }
+              },
+              {
+                "node": {
+                  "name": "enhancement",
+                  "color": "84b6eb"
+                }
+              },
+              {
+                "node": {
+                  "name": "help wanted",
+                  "color": "128A0C"
+                }
+              },
+              {
+                "node": {
+                  "name": "invalid",
+                  "color": "e6e6e6"
+                }
+              },
+              {
+                "node": {
+                  "name": "question",
+                  "color": "cc317c"
+                }
+              },
+              {
+                "node": {
+                  "name": "wontfix",
+                  "color": "ffffff"
+                }
+              }
+            ],
+            "pageInfo": {
+              "endCursor": "Y3Vyc29yOnYyOpHOGC12IQ==",
+              "hasNextPage": false
+            }
+          },
+          "w3cjson": {
+            "text": "{\n  \"group\": [\"83744\"],\n  \"contacts\": [\"ianbjacobs\"],\n  \"shortName\": \"webpayments-overview\"\n}\n"
+          },
+          "contributing": null,
+          "license": null,
+          "codeOfConduct": null,
+          "readme": null,
+          "fullName": "w3c/webpayments-overview"
+        },
+        {
           "id": "MDEwOlJlcG9zaXRvcnk2MzY5NDI4OA==",
           "name": "payment-handler",
           "owner": {
@@ -41201,7 +41487,7 @@
             }
           },
           "w3cjson": {
-            "text": "{\n  \"group\": 83907,\n  \"contacts\": [ \"michael-n-cooper\" ],\n  \"policy\": \"restricted\",\n  \"repo-type\": \"note\"\n}\n"
+            "text": "{\n  \"group\": 83907,\n  \"contacts\": [ \"michael-n-cooper\" ],\n  \"policy\": \"restricted\",\n  \"repo-type\": [\"note\", \"rec-track\"]\n}\n"
           },
           "contributing": {
             "text": "Contributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](https://www.w3.org/Consortium/Legal/copyright-documents). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
@@ -41216,6 +41502,83 @@
             "text": "# apa\nAccessible Platform Architectures WG deliverables\n"
           },
           "fullName": "w3c/apa"
+        },
+        {
+          "id": "MDEwOlJlcG9zaXRvcnk2MDg2NjQ2MQ==",
+          "name": "rqtf",
+          "owner": {
+            "login": "w3c"
+          },
+          "isArchived": false,
+          "homepageUrl": null,
+          "description": "Research Questions Task Force deliverables",
+          "labels": {
+            "edges": [
+              {
+                "node": {
+                  "name": "bug",
+                  "color": "ee0701"
+                }
+              },
+              {
+                "node": {
+                  "name": "duplicate",
+                  "color": "cccccc"
+                }
+              },
+              {
+                "node": {
+                  "name": "enhancement",
+                  "color": "84b6eb"
+                }
+              },
+              {
+                "node": {
+                  "name": "help wanted",
+                  "color": "128A0C"
+                }
+              },
+              {
+                "node": {
+                  "name": "invalid",
+                  "color": "e6e6e6"
+                }
+              },
+              {
+                "node": {
+                  "name": "question",
+                  "color": "cc317c"
+                }
+              },
+              {
+                "node": {
+                  "name": "wontfix",
+                  "color": "ffffff"
+                }
+              }
+            ],
+            "pageInfo": {
+              "endCursor": "Y3Vyc29yOnYyOpHOF0rHAg==",
+              "hasNextPage": false
+            }
+          },
+          "w3cjson": {
+            "text": " {\n    \"group\":      [83907]\n,   \"contacts\":   [\"michael-n-cooper\"]\n,   \"repo-type\":  \"rec-track\"\n}\n"
+          },
+          "contributing": {
+            "text": "# Accessible Platform Architectures Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](https://www.w3.org/Consortium/Legal/copyright-documents). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
+          },
+          "license": {
+            "text": "All documents in this Repository are licensed by contributors\nunder the \n[W3C Document License](https://www.w3.org/Consortium/Legal/copyright-documents).\n\n"
+          },
+          "codeOfConduct": {
+            "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n"
+          },
+          "readme": {
+            "text": "# rqtf\nResearch Questions Task Force deliverables\n"
+          },
+          "fullName": "w3c/rqtf",
+          "hasRecTrack": true
         },
         {
           "id": "MDEwOlJlcG9zaXRvcnk2Njg4NzU4NA==",
@@ -41334,6 +41697,172 @@
             "text": "# personalization-semantics\nSemantics to describe user personalization preferences.\n\n[Current Working Draft](https://w3c.github.io/personalization-semantics/)\n\n\nContributors to this repository should read the [License](LICENSE.md), [Contributing](CONTRIBUTING.md), and [Code of Conduct](CODE_OF_CONDUCT.md) pages. Contributors also need to ensure they are known to the W3C patent policy system in order to ensure contributions can be accepted. On the [My Account](https://www.w3.org/Systems/db/userInfo) page, choose the \"Connected Accounts\" link and add your GitHub username.\n"
           },
           "fullName": "w3c/personalization-semantics",
+          "hasRecTrack": true
+        },
+        {
+          "id": "MDEwOlJlcG9zaXRvcnk4MDU1NzIzOQ==",
+          "name": "css-a11y",
+          "owner": {
+            "login": "w3c"
+          },
+          "isArchived": false,
+          "homepageUrl": null,
+          "description": "Main repository for the CSS Accessibility Task Force",
+          "labels": {
+            "edges": [
+              {
+                "node": {
+                  "name": "bug",
+                  "color": "ee0701"
+                }
+              },
+              {
+                "node": {
+                  "name": "duplicate",
+                  "color": "cccccc"
+                }
+              },
+              {
+                "node": {
+                  "name": "enhancement",
+                  "color": "84b6eb"
+                }
+              },
+              {
+                "node": {
+                  "name": "help wanted",
+                  "color": "128A0C"
+                }
+              },
+              {
+                "node": {
+                  "name": "invalid",
+                  "color": "e6e6e6"
+                }
+              },
+              {
+                "node": {
+                  "name": "question",
+                  "color": "cc317c"
+                }
+              },
+              {
+                "node": {
+                  "name": "wontfix",
+                  "color": "ffffff"
+                }
+              },
+              {
+                "node": {
+                  "name": "urgent",
+                  "color": "d93f0b"
+                }
+              }
+            ],
+            "pageInfo": {
+              "endCursor": "Y3Vyc29yOnYyOpHOIw9vJQ==",
+              "hasNextPage": false
+            }
+          },
+          "w3cjson": {
+            "text": " {\n    \"group\":      [83907,83726,32061]\n,   \"contacts\":   [\"michael-n-cooper\"]\n,   \"repo-type\":  \"others\",\n\t\"policy\":     \"restricted\"\n}\n"
+          },
+          "contributing": {
+            "text": "# Accessible Platform Architectures Working Group, ,Accessible Rich Internet Applications Working Group, and Cascading Style Sheets (CSS) Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](https://www.w3.org/Consortium/Legal/copyright-documents). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
+          },
+          "license": {
+            "text": "All documents in this Repository are licensed by contributors\nunder the \n[W3C Document License](https://www.w3.org/Consortium/Legal/copyright-documents).\n\n"
+          },
+          "codeOfConduct": {
+            "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n"
+          },
+          "readme": {
+            "text": "# css-a11y\nMain repository for the CSS Accessibility Task Force.\nGeneral information about the taskforce and official participation can be found at https://www.w3.org/WAI/APA/task-forces/css-a11y/\n"
+          },
+          "fullName": "w3c/css-a11y",
+          "hasRecTrack": true
+        },
+        {
+          "id": "MDEwOlJlcG9zaXRvcnkxNTMzMTM5OTY=",
+          "name": "pronunciation",
+          "owner": {
+            "login": "w3c"
+          },
+          "isArchived": false,
+          "homepageUrl": "https://www.w3.org/WAI/APA/task-forces/pronunciation/",
+          "description": "Pronunciation Task Force deliverables",
+          "labels": {
+            "edges": [
+              {
+                "node": {
+                  "name": "bug",
+                  "color": "d73a4a"
+                }
+              },
+              {
+                "node": {
+                  "name": "duplicate",
+                  "color": "cfd3d7"
+                }
+              },
+              {
+                "node": {
+                  "name": "enhancement",
+                  "color": "a2eeef"
+                }
+              },
+              {
+                "node": {
+                  "name": "help wanted",
+                  "color": "008672"
+                }
+              },
+              {
+                "node": {
+                  "name": "good first issue",
+                  "color": "7057ff"
+                }
+              },
+              {
+                "node": {
+                  "name": "invalid",
+                  "color": "e4e669"
+                }
+              },
+              {
+                "node": {
+                  "name": "question",
+                  "color": "d876e3"
+                }
+              },
+              {
+                "node": {
+                  "name": "wontfix",
+                  "color": "ffffff"
+                }
+              }
+            ],
+            "pageInfo": {
+              "endCursor": "Y3Vyc29yOnYyOpHOQSqgdQ==",
+              "hasNextPage": false
+            }
+          },
+          "w3cjson": {
+            "text": " {\n    \"group\":      [83907]\n,   \"contacts\":   [\"michael-n-cooper\"]\n,   \"repo-type\":  \"rec-track\"\n}\n"
+          },
+          "contributing": {
+            "text": "# Accessible Platform Architectures Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](https://www.w3.org/Consortium/Legal/copyright-documents). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
+          },
+          "license": {
+            "text": "All documents in this Repository are licensed by contributors\nunder the \n[W3C Document License](https://www.w3.org/Consortium/Legal/copyright-documents).\n\n"
+          },
+          "codeOfConduct": {
+            "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n"
+          },
+          "readme": {
+            "text": "# pronunciation\nPronunciation Task Force deliverables\n"
+          },
+          "fullName": "w3c/pronunciation",
           "hasRecTrack": true
         }
       ]
@@ -43620,7 +44149,7 @@
             }
           },
           "w3cjson": {
-            "text": " {\n    \"group\":      [\"89907\"]\n,   \"contacts\":   [\"michael-n-cooper\"]\n}\n"
+            "text": " {\n    \"group\":      [\"89907\"]\n,   \"contacts\":   [\"michael-n-cooper\"],\n    \"policy\": \"restricted\",\n    \"repo-type\": \"cg-report\"\n}\n"
           },
           "contributing": {
             "text": "# Getting Math onto Web Pages Community Group\n\nThis repository is being used for work in the W3C Getting Math onto Web Pages Community Group, governed by the [W3C Community License\nAgreement (CLA)](http://www.w3.org/community/about/agreements/cla/). To make substantive contributions,\nyou must join the CG.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n"
@@ -43702,7 +44231,7 @@
             }
           },
           "w3cjson": {
-            "text": " {\n    \"group\":      [\"89907\"]\n,   \"contacts\":   [\"michael-n-cooper\"]\n}\n"
+            "text": " {\n    \"group\":      [\"89907\"]\n,   \"contacts\":   [\"michael-n-cooper\"],\n    \"policy\":     \"restricted\",\n\t\"repo-type\":  \"cg-report\"\n}\n"
           },
           "contributing": {
             "text": "# Getting Math onto Web Pages Community Group\n\nThis repository is being used for work in the W3C Getting Math onto Web Pages Community Group, governed by the [W3C Community License\nAgreement (CLA)](http://www.w3.org/community/about/agreements/cla/). To make substantive contributions,\nyou must join the CG.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n"
@@ -44685,6 +45214,428 @@
       "type": "community group",
       "repos": [
         {
+          "id": "MDEwOlJlcG9zaXRvcnkxMzU3NjAwNg==",
+          "name": "epubcheck",
+          "owner": {
+            "login": "w3c"
+          },
+          "isArchived": false,
+          "homepageUrl": "",
+          "description": "Validation tool for EPUB",
+          "labels": {
+            "edges": [
+              {
+                "node": {
+                  "name": "type: bug",
+                  "color": "e11d21"
+                }
+              },
+              {
+                "node": {
+                  "name": "type: duplicate",
+                  "color": "eeeeee"
+                }
+              },
+              {
+                "node": {
+                  "name": "type: improvement",
+                  "color": "84b6eb"
+                }
+              },
+              {
+                "node": {
+                  "name": "type: invalid",
+                  "color": "eeeeee"
+                }
+              },
+              {
+                "node": {
+                  "name": "type: question",
+                  "color": "cc317c"
+                }
+              },
+              {
+                "node": {
+                  "name": "type: wontfix",
+                  "color": "eeeeee"
+                }
+              },
+              {
+                "node": {
+                  "name": "status: needs review",
+                  "color": "fbca04"
+                }
+              },
+              {
+                "node": {
+                  "name": "type: spec",
+                  "color": "84b6eb"
+                }
+              },
+              {
+                "node": {
+                  "name": "spec: EDUPUB",
+                  "color": "006b75"
+                }
+              },
+              {
+                "node": {
+                  "name": "type: feature",
+                  "color": "84b6eb"
+                }
+              },
+              {
+                "node": {
+                  "name": "status: waiting for feedback",
+                  "color": "fbca04"
+                }
+              },
+              {
+                "node": {
+                  "name": "status: has PR",
+                  "color": "009800"
+                }
+              },
+              {
+                "node": {
+                  "name": "type: docs",
+                  "color": "d4c5f9"
+                }
+              },
+              {
+                "node": {
+                  "name": "priority: low",
+                  "color": "009800"
+                }
+              },
+              {
+                "node": {
+                  "name": "status: ready for implem",
+                  "color": "bfe5bf"
+                }
+              },
+              {
+                "node": {
+                  "name": "type: maintenance",
+                  "color": "fef2c0"
+                }
+              },
+              {
+                "node": {
+                  "name": "spec: EPUB 3.2",
+                  "color": "006b75"
+                }
+              },
+              {
+                "node": {
+                  "name": "status: accepted",
+                  "color": "bfe5bf"
+                }
+              },
+              {
+                "node": {
+                  "name": "spec: EPUB 2.x",
+                  "color": "006b75"
+                }
+              },
+              {
+                "node": {
+                  "name": "priority: critical",
+                  "color": "e11d21"
+                }
+              },
+              {
+                "node": {
+                  "name": "priority: high",
+                  "color": "eb6420"
+                }
+              },
+              {
+                "node": {
+                  "name": "priority: medium",
+                  "color": "fbca04"
+                }
+              },
+              {
+                "node": {
+                  "name": "status: blocked",
+                  "color": "e11d21"
+                }
+              },
+              {
+                "node": {
+                  "name": "status: completed",
+                  "color": "555555"
+                }
+              },
+              {
+                "node": {
+                  "name": "status: in discussion",
+                  "color": "1d76db"
+                }
+              },
+              {
+                "node": {
+                  "name": "status: in progress",
+                  "color": "1d76db"
+                }
+              },
+              {
+                "node": {
+                  "name": "status: stalled",
+                  "color": "000000"
+                }
+              },
+              {
+                "node": {
+                  "name": "type: tests",
+                  "color": "fef2c0"
+                }
+              },
+              {
+                "node": {
+                  "name": "spec: all",
+                  "color": "006b75"
+                }
+              },
+              {
+                "node": {
+                  "name": "spec: EPUB 3.x",
+                  "color": "006b75"
+                }
+              }
+            ],
+            "pageInfo": {
+              "endCursor": "Y3Vyc29yOnYyOpHORTlUuw==",
+              "hasNextPage": true
+            }
+          },
+          "w3cjson": {
+            "text": "{\n  \"group\": \"96810\",\n  \"contacts\": [\n    \"iherman\", \"dauwhe\"\n  ],\n  \"repo-type\": [\"tool\"]\n}\n"
+          },
+          "contributing": {
+            "text": "Contributions to this repository are intended to become part of software\nlicensed under the [3-clause BSD License](https://opensource.org/licenses/BSD-3-Clause).\n\nIf you are not the sole contributor to a contribution (pull request), please\nidentify all contributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one\nper line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part\nin designing the feature, you can remove yourself with the above syntax.\n\nFor detailed guidelines on how to contribute to EPUBCheck, please refer to the\n[contributing guidelines](https://github.com/w3c/epubcheck/wiki/Contribute)."
+          },
+          "license": {
+            "text": "Copyright © 2007 Adobe Systems Incorporated\nCopyright © 2008 IDPF\nCopyright © 2017 W3C (MIT, ERCIM, Keio, Beihang)\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this\n   list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice,\n   this list of conditions and the following disclaimer in the documentation\n   and/or other materials provided with the distribution.\n\n3. Neither the name of the copyright holder nor the names of its\n   contributors may be used to endorse or promote products derived from\n   this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"\nAND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE\nFOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR\nSERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER\nCAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,\nOR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
+          },
+          "codeOfConduct": {
+            "body": "# Code of Conduct\n\nAll contributors to this project agree to follow the [W3C Code of Ethics and Professional Conduct](http://www.w3.org/Consortium/cepc/).\n\nIf you want to take action, you can contact W3C Staff as explained in [W3C Procedures](http://www.w3.org/Consortium/pwe/#Procedures)."
+          },
+          "readme": {
+            "text": "[![Current Release](https://img.shields.io/github/release/w3c/epubcheck.svg)](https://github.com/w3c/epubcheck/releases/latest) [![Github All Releases Downloads](https://img.shields.io/github/downloads/w3c/epubcheck/total.svg?colorB=A9A9A9)](https://github.com/w3c/epubcheck/releases/) [![Build Status](https://travis-ci.org/w3c/epubcheck.svg?branch=master)](https://travis-ci.org/w3c/epubcheck/)\n\n\nEPUBCheck\n=========\n\nEPUBCheck is a tool to validate the conformance of EPUB publications against the EPUB specifications.\nEPUBCheck can be run as a standalone command-line tool or used as a Java library.\n\nEPUBCheck is open source software, maintained by the [DAISY Consortium](http://www.daisy.org) on behalf of the [W3C](https://www.w3.org/publishing/epubcheck_fundraising).\n\n\n**We Need Your Support!!**  \nFinancial support is critical to the development of EPUBCheck, the tool we all use to validate EPUB files.\nWe need to make sure that the resources are adequate to both update the tool and provide for its continued maintenance over the next two years;\nplease [help us fund and support EPUBCheck](https://www.w3.org/publishing/epubcheck_fundraising), and join the [list of donators](#donators)!\n\n\n## Downloads\n\nCheck the [releases page](https://github.com/w3c/epubcheck/releases) to get the latest distribution.\n\n[EPUBCheck 4.1.1](https://github.com/w3c/epubcheck/releases/tag/v4.1.1) is the latest stable version to validate both EPUB 2 and 3 files. EPUB 3 publications are checked against the EPUB 3.0.1 family of specifications.\n\n[EPUBCheck 4.2.0-alpha-1](https://github.com/w3c/epubcheck/releases/tag/v4.2.0-alpha-1) is the latest preview version of the forthcoming 4.2.0 version, which will bring support for the EPUB 3.2 family of specifications.\n\n\n\n## Documentation\n\nDocumentation on how to **use** EPUBCheck, to **contribute** to the project or to **translate** messages is available on the [EPUBCheck wiki](https://github.com/w3c/epubcheck/wiki).\n\nTechnical discussions are held on our public [mailing list](https://lists.w3.org/Archives/Public/public-epubcheck/). To subscribe to the mailing list, send an email with subject `subscribe` to [public-epubcheck-request@w3.org](mailto:public-epubcheck-request@w3.org?subject=subscribe). To participate in the discussion, simply send an email to [public-epubcheck@w3.org](mailto:public-epubcheck-request@w3.org).\n\nHistorical archives of discussions prior to October 2017 are stored at the old [EPUBCheck Google Group](https://groups.google.com/forum/#!forum/epubcheck).\n\n## Building EPUBCheck\n\nTo build epubcheck from the sources you need Java Development Kit (JDK) 1.7 or above and [Apache Maven](http://maven.apache.org/) 3.0 or above installed.\n\nYou will also need Python to be able to run the BookReporter and related tools.\n\nBuild and run tests:\n\n```\n$ mvn install\n```\nWill copy `.*jar` files and packages to `target/` folder...\n\n## Credits\n\nMost of the EPUBCheck functionality comes from the schema validation tool [Jing](http://www.thaiopensource.com/relaxng/jing.html) and schemas that were developed by [IDPF](http://www.idpf.org/) and [DAISY](http://www.daisy.org/). Initial EPUBCheck development was largely done at [Adobe Systems](http://www.adobe.com/).\n\nInitial (pre 2012) authors and contributors to EPUBCheck include: Peter Sorotokin, Garth Conboy, Markus Gylling, Piotr Kula, Paul Norton, Jessica Hekman, Liza Daly, George Bina, Bogdan Iordache, Ionut-Maxim Margelatu\n\nEPUBCheck 4.0 was largely developed by\n* [DAISY](http://www.daisy.org/), namely: Romain Deltour, Markus Gylling\n* [Barnes & Noble](https://www.barnesandnoble.com), namely: Steve Antoch, Arwen Pond\n\nRegular contributors between 2012 and 2017 include: Romain Deltour, Tobias Fischer, Markus Gylling, Satoshi KOJIMA, Thomas Ledoux, Masayoshi Takahashi\n\nMany thanks are also extended to the numerous people who have contributed to the evolution of EPUBCheck through bug reports and patches!\n\n## Donators\n\nThe following organizations are supporting the development of EPUBCheck by their contribution to the [fundraising initiative](https://www.w3.org/publishing/epubcheck_fundraising):\n\n<p float=\"left\">\n  <a href=\"https://www.macmillanlearning.com\"><img alt=\"MacMillan Learning\" src=\"https://github.com/w3c/publishing/blob/master/donators_logos/MacLearn_logo_cmyk.png?raw=true\" width=\"200\" hspace=\"20\" align=\"middle\"/></a>\n  <a href=\"https://www.google.com\"><img alt=\"Google\" src=\"https://github.com/w3c/publishing/blob/master/donators_logos/Google.png?raw=true\" width=\"400\" hspace=\"20\" align=\"middle\"/></a>\n  <a href=\"http://daisy.org\"><img alt=\"DAISY\" src=\"https://github.com/w3c/publishing/blob/master/donators_logos/daisy_high.jpg?raw=true\" width=\"100\" hspace=\"20\" align=\"middle\"/></a>\n  <a href=\"https://pubhub.dk\"><img alt=\"Publizon A/S\" src=\"https://github.com/w3c/publishing/blob/master/donators_logos/publizon-logo.jpg?raw=true\" width=\"100\" hspace=\"20\" align=\"middle\"/></a>\n  <a href=\"https://www.wiley.com\"><img alt=\"Wiley\" src=\"https://github.com/w3c/publishing/blob/master/donators_logos/Wiley_Wordmark_black.png?raw=true\" width=\"200\" hspace=\"20\" align=\"middle\"/></a>\n  <a href=\"https://www.hachette.com\"><img alt=\"Hachette Livre\" src=\"https://github.com/w3c/publishing/blob/master/donators_logos/Hachette%20Livre.jpg?raw=true\" width=\"300\" hspace=\"20\" align=\"middle\"/></a>\n  <a href=\"https://www.learningmate.com\"><img alt=\"LearningMate Solutions Inc\" src=\"https://github.com/w3c/publishing/blob/master/donators_logos/LearningMate%20Logo.png?raw=true\" width=\"100\" hspace=\"20\" align=\"middle\"/></a>\n  <a href=\"https://www.voyager.co.jp\"><img alt=\"Voyager Japan, Inc.\" src=\"https://github.com/w3c/publishing/blob/master/donators_logos/rectangle_VJstar_logo_512.jpg?raw=true\" width=\"100\" hspace=\"20\" align=\"middle\"/></a>\n  <a href=\"https://qainfotech.com\"><img alt=\"QA Info Tech\" src=\"https://github.com/w3c/publishing/blob/master/donators_logos/QA%20InfoTech%20Logo%20PNG%20Format.png?raw=true\" width=\"200\" hspace=\"20\" align=\"middle\"/></a>\n  <a href=\"https://wwnorton.com\"><img alt=\"W. W. Norton\" src=\"https://github.com/w3c/publishing/blob/master/donators_logos/NortonLogo_notagline.jpg?raw=true\" width=\"100\" hspace=\"20\" align=\"middle\"/></a>\n  <a href=\"https://luminadatamatics.com\"><img alt=\"Lumina Datamatics, Inc.\" src=\"https://github.com/w3c/publishing/blob/master/donators_logos/Datamatics_logo.jpg?raw=true\" width=\"100\" hspace=\"20\" align=\"middle\"/></a>\n  <a href=\"https://www.harpercollins.com\"><img alt=\"Harper Collins\" src=\"https://github.com/w3c/publishing/blob/master/donators_logos/HarperCollins.png?raw=true\" width=\"200\" hspace=\"20\" align=\"middle\"/></a>\n  <a href=\"https://www.vitalsource.com\"><img alt=\"Vital Source\" src=\"https://github.com/w3c/publishing/blob/master/donators_logos/VS_Logo_HOR_Ingram_Tag(RGB).jpg?raw=true\" width=\"300\" hspace=\"20\" align=\"middle\"/></a>\n</p>\n\n## License\n\nEPUBCheck is made available under the terms of the [3-Clause BSD License](http://opensource.org/licenses/BSD-3-Clause)\n"
+          },
+          "fullName": "w3c/epubcheck"
+        },
+        {
+          "id": "MDEwOlJlcG9zaXRvcnkzMjgwMTkwNg==",
+          "name": "publ-epub-revision",
+          "owner": {
+            "login": "w3c"
+          },
+          "isArchived": false,
+          "homepageUrl": "",
+          "description": "Shared workspace for EPUB 3 specifications.",
+          "labels": {
+            "edges": [
+              {
+                "node": {
+                  "name": "Status-Duplicate",
+                  "color": "e6e6e6"
+                }
+              },
+              {
+                "node": {
+                  "name": "Status-Invalid",
+                  "color": "e6e6e6"
+                }
+              },
+              {
+                "node": {
+                  "name": "Type-Defect",
+                  "color": "ededed"
+                }
+              },
+              {
+                "node": {
+                  "name": "Priority-Medium",
+                  "color": "ededed"
+                }
+              },
+              {
+                "node": {
+                  "name": "Type-SpecIssue",
+                  "color": "ededed"
+                }
+              },
+              {
+                "node": {
+                  "name": "Type-SchemaIssue",
+                  "color": "ededed"
+                }
+              },
+              {
+                "node": {
+                  "name": "Priority-High",
+                  "color": "ededed"
+                }
+              },
+              {
+                "node": {
+                  "name": "Spec-OCF",
+                  "color": "c7def8"
+                }
+              },
+              {
+                "node": {
+                  "name": "Schema-OCF",
+                  "color": "ededed"
+                }
+              },
+              {
+                "node": {
+                  "name": "Spec-OPS",
+                  "color": "c7def8"
+                }
+              },
+              {
+                "node": {
+                  "name": "Schema-OPS",
+                  "color": "ededed"
+                }
+              },
+              {
+                "node": {
+                  "name": "Type-FeatureRequest",
+                  "color": "ededed"
+                }
+              },
+              {
+                "node": {
+                  "name": "Spec-OPF",
+                  "color": "c7def8"
+                }
+              },
+              {
+                "node": {
+                  "name": "Priority-Low",
+                  "color": "ededed"
+                }
+              },
+              {
+                "node": {
+                  "name": "Spec-Overview",
+                  "color": "c7def8"
+                }
+              },
+              {
+                "node": {
+                  "name": "Spec-General",
+                  "color": "c7def8"
+                }
+              },
+              {
+                "node": {
+                  "name": "Spec-ContentDocs",
+                  "color": "c7def8"
+                }
+              },
+              {
+                "node": {
+                  "name": "Spec-CSSProfile",
+                  "color": "c7def8"
+                }
+              },
+              {
+                "node": {
+                  "name": "Type-Task",
+                  "color": "ededed"
+                }
+              },
+              {
+                "node": {
+                  "name": "Schema-OPF",
+                  "color": "ededed"
+                }
+              },
+              {
+                "node": {
+                  "name": "Type-ReviewComment",
+                  "color": "ededed"
+                }
+              },
+              {
+                "node": {
+                  "name": "Spec-MediaOverlays",
+                  "color": "c7def8"
+                }
+              },
+              {
+                "node": {
+                  "name": "Priority-Critical",
+                  "color": "ededed"
+                }
+              },
+              {
+                "node": {
+                  "name": "Type-Patch",
+                  "color": "ededed"
+                }
+              },
+              {
+                "node": {
+                  "name": "Spec-StructureVocab",
+                  "color": "c7def8"
+                }
+              },
+              {
+                "node": {
+                  "name": "Type-Typo",
+                  "color": "ededed"
+                }
+              },
+              {
+                "node": {
+                  "name": "Spec-CFI",
+                  "color": "c7def8"
+                }
+              },
+              {
+                "node": {
+                  "name": "Spec-FXL",
+                  "color": "c7def8"
+                }
+              },
+              {
+                "node": {
+                  "name": "Spec-Changes",
+                  "color": "c7def8"
+                }
+              },
+              {
+                "node": {
+                  "name": "Type-Review",
+                  "color": "ededed"
+                }
+              }
+            ],
+            "pageInfo": {
+              "endCursor": "Y3Vyc29yOnYyOpHOC2iwgg==",
+              "hasNextPage": true
+            }
+          },
+          "w3cjson": {
+            "text": "{\n  \"group\": \"96810\",\n  \"contacts\": [\n    \"iherman\", \"dauwhe\"\n  ],\n  \"repo-type\": [\"cg-report\"]\n}\n"
+          },
+          "contributing": null,
+          "license": null,
+          "codeOfConduct": null,
+          "readme": {
+            "text": "# Repository for EPUB 3 Revisions in W3C\n\n---\n\n## EPUBCheck Needs Your Help!\n\n\nThe W3C is raising money to fund further development of EPUBCheck, so that it can support EPUB 3.2. Please [contribute](https://www.w3.org/publishing/epubcheck_fundraising) if you can. Thank you!\n\n---\n\nThe next revision of EPUB 3 will be EPUB 3.2, which seeks to update EPUB 3.1 to make a successor that is compatible with [EPUB 3.0.1](http://www.idpf.org/epub/301/spec/epub-publications.html) (i.e., that reverts the package document version number change introduced in 3.1).\n\nCreators of EPUB content are advised __not to implement 3.1__, but to continue to create content compatible with EPUB 3.0.1 until work on EPUB 3.2 is complete.\n\nTo participate in this revision, please join the [EPUB 3 Community Group](https://www.w3.org/community/epub3/).\n\n## EPUB 3.2 Revision Documents\n### Draft Specifications\n\n1. [EPUB 3.2 Specification](https://w3c.github.io/publ-epub-revision/epub32/spec/epub-spec.html)\n2. [EPUB Packages 3.2](https://w3c.github.io/publ-epub-revision/epub32/spec/epub-packages.html)\n3. [EPUB Content Documents 3.2](https://w3c.github.io/publ-epub-revision/epub32/spec/epub-contentdocs.html)\n4. [EPUB Media Overlays 3.2](https://w3c.github.io/publ-epub-revision/epub32/spec/epub-mediaoverlays.html)\n5. [EPUB Open Container Format](https://w3c.github.io/publ-epub-revision/epub32/spec/epub-ocf.html)\n6. [EPUB Accessibility](https://w3c.github.io/publ-epub-revision/a11y/accessibility.html)\n7. [EPUB 3.2 Overview](https://w3c.github.io/publ-epub-revision/epub32/spec/epub-overview.html)\n8. [EPUB 3.2 Changes from 3.0.1](https://w3c.github.io/publ-epub-revision/epub32/spec/epub-changes.html)\n\n\n### Draft Vocabularies\n\n1. [EPUB Accessibility Vocabulary](https://idpf.github.io/epub-vocabs/package/a11y/a11y.html)\n2. [EPUB Manifest Properties Vocabulary](https://idpf.github.io/epub-vocabs/package/item/item.html)\n3. [EPUB Meta Properties Vocabulary](https://idpf.github.io/epub-vocabs/package/meta/meta.html)\n4. [EPUB Metadata Link Vocabulary](https://idpf.github.io/epub-vocabs/package/link/link.html)\n5. [EPUB Package Rendering Vocabulary](https://idpf.github.io/epub-vocabs/rendition/rendition.html)\n6. [EPUB Spine Properties Vocabulary](https://idpf.github.io/epub-vocabs/package/itemref/itemref.html)\n7. [EPUB Structural Semantics Vocabulary](https://idpf.github.io/epub-vocabs/structure/structure.html)\n8. [EPUB 3 Magazine Navigation Vocabulary](https://idpf.github.io/epub-vocabs/structure/magazine/magazine.html)\n9. [Media Overlays Vocabulary](https://idpf.github.io/epub-vocabs/overlays/overlays.html)\n\nLocated at: https://github.com/IDPF/epub-vocabs\n\n### Draft Prefixes\n\n1. [EPUB Packages Reserved Prefixes](https://idpf.github.io/epub-prefixes/packages/packages.html)\n2. [EPUB Content Documents Reserved Prefixes](https://idpf.github.io/epub-prefixes/contentdocs/contentdocs.html)\n\nLocated at: https://github.com/IDPF/epub-prefixes\n\n### Draft Registries\n\n1. [EPUB Collection Roles Registry](http://idpf.github.io/epub-registries/roles/roles.html)\n2. [EPUB Identifier Schemes Registry](http://idpf.github.io/epub-registries/identifiers/identifiers.html)\n3. [EPUB Optimized Publication Standards Registry](http://idpf.github.io/epub-registries/optimizations/optimizations.html)\n4. [EPUB Publication Types Registry](http://idpf.github.io/epub-registries/types/types.html)\n5. [EPUB Subject Authorities Registry](http://idpf.github.io/epub-registries/authorities/authorities.html)\n\nLocated at: https://github.com/IDPF/epub-registries\n\n---\n\nFor any further help, contact  [Ivan Herman](ivan@w3.org) or [Dave Cramer](dauwhe@gmail.com).\n"
+          },
+          "fullName": "w3c/publ-epub-revision"
+        },
+        {
           "id": "MDEwOlJlcG9zaXRvcnk4ODk3MzU3MA==",
           "name": "publ-cg",
           "owner": {
@@ -44790,10 +45741,16 @@
                   "name": "Best Practice",
                   "color": "5319e7"
                 }
+              },
+              {
+                "node": {
+                  "name": "triage",
+                  "color": "5319e7"
+                }
               }
             ],
             "pageInfo": {
-              "endCursor": "Y3Vyc29yOnYyOpHONR-W1Q==",
+              "endCursor": "Y3Vyc29yOnYyOpHOR-1Asg==",
               "hasNextPage": false
             }
           },
@@ -45041,7 +45998,7 @@
             }
           },
           "w3cjson": {
-            "text": " {\n    \"group\":      [\"97795\"]\n,   \"contacts\":   [\"michael-n-cooper\"]\n}\n"
+            "text": " {\n    \"group\":      [\"97795\"]\n,   \"contacts\":   [\"michael-n-cooper\"],\n    \"policy\": \"restricted\",\n    \"repo-type\": \"cg-report\"\n}\n"
           },
           "contributing": {
             "text": "# Silver Community Group\n\nThis repository is being used for work in the W3C Silver Community Group, governed by the [W3C Community License\nAgreement (CLA)](http://www.w3.org/community/about/agreements/cla/). To make substantive contributions,\nyou must join the CG.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n"
@@ -45908,6 +46865,152 @@
             "text": "![W3C Logo](https://www.w3.org/Icons/w3c_home)\n\n# Web Publications Use Cases and Requirements\n\nThis is the repository for the Use Cases and Requirements for the W3C’s specification on Web Publications, developed by the [Publishing Working Group](https://www.w3.org/publishing/groups/publ-wg/). The editors’ draft of the specification can also be [read directly](https://w3c.github.io/dpub-pwp-ucr/).\n\n## History\n\nA previous version of this document was published by the [Digital Publishing Interest Group](https://www.w3.org/dpub/IG) as an <a href=\"https://www.w3.org/TR/2017/NOTE-pwp-ucr-20170502/\">Interest Group Note</a>. After the closure of that Interest Group the [Publishing Working Group](https://www.w3.org/publishing/groups/publ-wg/) took it over for further work. The final version of this document is planned to be published as a Working Group Note.\n\n## Contributing to the Repository\n\nUse the standard fork, branch, and pull request workflow to propose changes to the specification. Please make branch names informative—by including the issue or bug number for example.\n\nEditorial changes that improve the readability of the spec or correct spelling or grammatical mistakes are welcome.\n\nPlease read [CONTRIBUTING.md](CONTRIBUTING.md), about licensing contributions.\n\n## Code of Conduct\n\nW3C functions under a [code of conduct](https://www.w3.org/Consortium/cepc/).\n\n– Ivan Herman (ivan@w3.org)\n"
           },
           "fullName": "w3c/dpub-pwp-ucr"
+        },
+        {
+          "id": "MDEwOlJlcG9zaXRvcnk5MjQwNzYzOQ==",
+          "name": "publ-wg",
+          "owner": {
+            "login": "w3c"
+          },
+          "isArchived": false,
+          "homepageUrl": "https://www.w3.org/publishing/groups/publ-wg/",
+          "description": "Home page of the Publishing Working Group",
+          "labels": {
+            "edges": [
+              {
+                "node": {
+                  "name": "priority:medium",
+                  "color": "006b75"
+                }
+              },
+              {
+                "node": {
+                  "name": "status:duplicate",
+                  "color": "cccccc"
+                }
+              },
+              {
+                "node": {
+                  "name": "status:invalid",
+                  "color": "dddddd"
+                }
+              },
+              {
+                "node": {
+                  "name": "status:postponed",
+                  "color": "eeeeee"
+                }
+              },
+              {
+                "node": {
+                  "name": "topic:security",
+                  "color": "d93f0b"
+                }
+              },
+              {
+                "node": {
+                  "name": "status:need group decision",
+                  "color": "006b75"
+                }
+              },
+              {
+                "node": {
+                  "name": "priority:high",
+                  "color": "e99695"
+                }
+              },
+              {
+                "node": {
+                  "name": "topic:internationalization",
+                  "color": "006b75"
+                }
+              },
+              {
+                "node": {
+                  "name": "topic:bug",
+                  "color": "b60205"
+                }
+              },
+              {
+                "node": {
+                  "name": "topic:privacy",
+                  "color": "c2e0c6"
+                }
+              },
+              {
+                "node": {
+                  "name": "priority:low",
+                  "color": "0052cc"
+                }
+              },
+              {
+                "node": {
+                  "name": "status:question",
+                  "color": "e99695"
+                }
+              },
+              {
+                "node": {
+                  "name": "status:wontfix",
+                  "color": "ffffff"
+                }
+              },
+              {
+                "node": {
+                  "name": "topic:accessibility",
+                  "color": "c2e0c6"
+                }
+              },
+              {
+                "node": {
+                  "name": "document:WP",
+                  "color": "c5def5"
+                }
+              },
+              {
+                "node": {
+                  "name": "document:PWP",
+                  "color": "006b75"
+                }
+              },
+              {
+                "node": {
+                  "name": "document:ARIA 2.0",
+                  "color": "fbca04"
+                }
+              },
+              {
+                "node": {
+                  "name": "document:EPUB4",
+                  "color": "c5def5"
+                }
+              },
+              {
+                "node": {
+                  "name": "topic: smil lite",
+                  "color": "0e8a16"
+                }
+              }
+            ],
+            "pageInfo": {
+              "endCursor": "Y3Vyc29yOnYyOpHOKXsJCA==",
+              "hasNextPage": false
+            }
+          },
+          "w3cjson": {
+            "text": "{\n  \"group\": [\n    \"100074\"\n  ],\n  \"contacts\": [\n    \"iherman\"\n  ],\n  \"repo-type\": \"homepage\"\n}\n"
+          },
+          "contributing": {
+            "text": "\nContributions to the Publishing Working Group repositories are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](http://www.w3.org/Consortium/Legal/copyright-documents). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n"
+          },
+          "license": {
+            "text": "\nAll documents in this Repository are licensed by contributors under the [W3C Software and Document License](http://www.w3.org/Consortium/Legal/copyright-software).\n"
+          },
+          "codeOfConduct": null,
+          "readme": {
+            "text": "\n![W3C Logo](https://www.w3.org/Icons/w3c_home)\n\n# W3C Publishing Working Group\n\nThis is the repository for the home page of the W3C Publishing Working Group:\n\nhttps://www.w3.org/publishing/groups/publ-wg/\n\n(That URL is redirected to the `w3c.github.io` view of this repository.)\n\n## Specifications\n\nGitHub repositories are linked from each specification.\n\n## Contributing to the Publishing Working Group Repositories\n\nUse the standard fork, branch, and pull request workflow to propose changes to the specification. Please make branch names informative—by including the issue or bug number for example.\n\nEditorial changes that improve the readability of the spec or correct spelling or grammatical mistakes are welcome.\n\nPlease read [CONTRIBUTING.md](CONTRIBUTING.md), about licensing contributions.\n\n## Tools\n\nGenerating weekly minutes is done via the\n[scribejs](https://github.com/w3c/scribejs) script and some additional\nconfiguration settings provided in this repo (see `.scribejs.json`).\n\nTo use this repository's scribejs setup first install the tools...\n\n```bash\n$ npm install\n```\n\nThen run the following (with date\ninformation changed to match your scenario):\n\n```bash\n$ npm run scribejs -- -d 2018-07-09 -o Meetings/Minutes/2018/2018-07-09-pwg.md\n```\n\nThis will request the IRC logs for the correct channel and convert them into\nthe Kramdown (a more feature rich form of Markdown) with settings to match this\nrepositories other documents.\n\nIf you need to make edits to the IRC log before generating the output (due to\nincorrect scribenick or similar), you can download the W3C logs from URLs such\nas `https://www.w3.org/2018/07/09-pwg-irc.txt`. Once downloaded, you can\nreference that input document directly (rather than using the automagic\ndate-based retrieval).\n\nFor example:\n\n```bash\n$ curl https://www.w3.org/2018/07/09-pwg-irc.txt > 2018-07-09-pwg-irc.txt\n$ npm run scribejs -- 2018-07-09-pwg-irc.txt -d 2018-07-09 -o Meetings/Minutes/2018/2018-07-09-pwg.md\n```\nEdit the .txt file and repeat the `npm run scribejs` line as necessary. Once\nfinished, you can commit the `.md` file and delete the `.txt` file (or keep it\nfor your records).\n"
+          },
+          "fullName": "w3c/publ-wg"
         },
         {
           "id": "MDEwOlJlcG9zaXRvcnk5NTU2MzA2Mg==",
@@ -47428,7 +48531,7 @@
           "license": null,
           "codeOfConduct": null,
           "readme": {
-            "text": "<img style=\"float: right\" src=\"./photos/people-2018-04-15-500.png\" alt=\"group phroto\" />\n\n## W3C Credible Web Community Group\n\nSee mission, members, and how to join at [W3C group page](https://www.w3.org/community/credibility/)\n\nGroup website at <https://credweb.org> (driven by [github pages](https://github.com/w3c/credweb)).\n\n[Mailing list archives](https://lists.w3.org/Archives/Public/public-credibility/) - mostly just for announcements about meetings and significant group news\n\n### Documents\n\n* **Draft Report**: [Technological Approaches to Improving Credibility Assessment on the Web](https://credweb.org/report/)\n* **Draft Spec**: [Credibility Signals](https://credweb.org/signals/) replacing [CCIV (Content Credibility Indicators Vocabulary)](https://credweb.org/cciv)\n* Slides: [2018-05 Presentation to W3C Advisory Committee](http://hawke.org/talk-ac-2018/)\n\n### Meetings\n\nMost meetings use <https://zoom.us/j/988170706>. Please try to be on-camera, if possible. For more, see [how to connect](how-to-connect.md)\n\nCalendars: [Meetings (gcal)](https://calendar.google.com/calendar/embed?src=iq5eb1hefes165c7es0krrflno%40group.calendar.google.com), [Meetings (ics)](https://calendar.google.com/calendar/ical/iq5eb1hefes165c7es0krrflno%40group.calendar.google.com/public/basic.ics),  [Related events](https://calendar.google.com/calendar/embed?src=certifiedcontentcoalition.org_9cd49bitubv0sicvpt6gvf9km0%40group.calendar.google.com),\n\n* Upcoming face-to-face: [f2f3](f2f3) (October in Lyon, France)\n* Weekly meetings currently paused; please participate via comments on documents)\n\n---\n\n* 2018-09-05 Wed Main group [Agenda](agenda/20180905.md)\n* 2018-08-29 Wed Main group *canceled* [Agenda](https://lists.w3.org/Archives/Public/public-credibility/2018Aug/0013.html), [Cancelation](https://lists.w3.org/Archives/Public/public-credibility/2018Aug/0014.html)\n* 2018-08-22 Wed Main group [Agenda](agenda/20180822.md), [Summary](https://lists.w3.org/Archives/Public/public-credibility/2018Aug/0009.html)\n* 2018-08-16 Area-1 Inspection subgroup (with CredCo) Noon US/Eastern, [agenda](https://lists.w3.org/Archives/Public/public-credibility/2018Aug/0003.html), [minutes](https://docs.google.com/document/d/1kjb7_qHhW1m2GMDPxnedcrJVyMSPSIQPMnxpgsU6lus)\n* 2018-08-15 Wed Main group [Agenda](agenda/20180815.md), [minutes](./minutes/20180815.md)\n* 2018-07-26 / 2018-07-27 **Face to Face meeting SF**, [Agenda](f2f2.md), [minutes](./minutes/f2f2.md)\n* 2018-07-25 Wed _No Main group meeting_ (day before F2F)\n* 2018-07-23 Mon _No Subgroup-1 group meeting_ \n* 2018-07-18 Wed Main group [Agenda](agenda/20180718.md), [minutes](./minutes/20180718.md)\n* 2018-07-16 Mon Area-1 Inspection subgroup [Agenda](agenda/20180716.md), [minutes](./minutes/20180716.md)\n* 2018-07-11 Wed Main group [Agenda](agenda/20180711.md), [minutes](./minutes/20180711.md)\n* 2018-07-02 Mon Area-1 Inspection subgroup [Agenda](agenda/20180702.md), [minutes](./minutes/20180702.md)\n* 2018-06-27 Wed Main group [Agenda](agenda/20180627.md), [minutes](./minutes/20180627.md)\n* 2018-06-13 Wed Main group [Agenda](agenda/20180613.md), [minutes](./minutes/20180613.md)\n* 2018-06-11 Mon (1605 UTC) Subgroup on Inspection [Agenda](agenda/20180611.md), [minutes](./minutes/20180611.md)\n* 2018-06-04 (1605 UTC) Subgroup on Inspection [Agenda](agenda/20180604.md), [minutes](./minutes/20180604.html), [chat log](https://credweb.zulipchat.com/#narrow/stream/114583-meeting/topic/2018-06-04)\n* 2018-05-30 [Agenda, main topic Reputation](agenda/20180530.md) , [minutes](./minutes/20180530.html), [chat log](https://credweb.zulipchat.com/#narrow/stream/114583-meeting/topic/2018-05-30)\n* 2018-05-23 [Agenda, main topic Fact Checking](agenda/20180523.md), [minutes](./minutes/20180523.html), [chat log](https://credweb.zulipchat.com/#narrow/stream/114583-meeting/topic/2018-05-23)\n* 2018-05-09 [Agenda](agenda/20180509.md), [minutes](./minutes/20180509.html), [chat log](https://credweb.zulipchat.com/#narrow/stream/114583-meeting/topic/2018-05-09)\n* 2018-05-02 [Agenda](agenda/20180502.md), [minutes](./minutes/20180502.html), [chat log](https://credweb.zulipchat.com/#narrow/stream/114583-meeting/topic/2018-05-02)\n* 2018-04-25 [Agenda](agenda/20180425.md), [minutes](./minutes/20180425.html), [chat log](https://credweb.zulipchat.com/#narrow/stream/114583-meeting/topic/2018-04-25)\n* 2018-04-18 [Agenda](agenda/20180418.md), [minutes](./minutes/20180418.html), [chat log](https://credweb.zulipchat.com/#narrow/stream/114583-meeting/topic/2018-04-18)\n* 2018-04-11 [Agenda](agenda/20180411.md), [minutes](./minutes/20180411.html), [chat log](https://credweb.zulipchat.com/#narrow/stream/114583-meeting/topic/2018-04-11)\n* 2017-11-10 [Agenda](https://www.w3.org/wiki/File:Credibility-2017-11-10-agenda.pdf), [Minutes](https://www.w3.org/community/credibility/wiki/2017-11-10-minutes)\n* 2017-11-08 [TPAC Breakout Minutes](https://www.w3.org/community/credibility/wiki/2017-11-08-minutes)\n\n[Related activities & organizations](https://docs.google.com/spreadsheets/d/1vWE3iOn6yxUsRJyS_mks83m0Gwv_7cK0WtVt-SNsYzY/edit#gid=0)"
+            "text": "<img style=\"float: right\" src=\"./photos/people-2018-04-15-500.png\" alt=\"group phroto\" />\n\n## W3C Credible Web Community Group\n\nSee mission, members, and how to join at [W3C group page](https://www.w3.org/community/credibility/)\n\nGroup website at <https://credweb.org> (driven by [github pages](https://github.com/w3c/credweb)).\n\n[Mailing list archives](https://lists.w3.org/Archives/Public/public-credibility/) - mostly just for announcements about meetings and significant group news\n\n### Documents\n\n* **Draft Report**: [Technological Approaches to Improving Credibility Assessment on the Web](https://credweb.org/report/)\n* **Draft Spec**: [Credibility Signals](https://credweb.org/signals/) replacing [CCIV (Content Credibility Indicators Vocabulary)](https://credweb.org/cciv)\n* Slides: [2018-05 Presentation to W3C Advisory Committee](http://hawke.org/talk-ac-2018/)\n\n### Meetings\n\nMost meetings use <https://zoom.us/j/988170706>. Please try to be on-camera, if possible. For more, see [how to connect](how-to-connect.md)\n\nCalendars: [Meetings (gcal)](https://calendar.google.com/calendar/embed?src=iq5eb1hefes165c7es0krrflno%40group.calendar.google.com), [Meetings (ics)](https://calendar.google.com/calendar/ical/iq5eb1hefes165c7es0krrflno%40group.calendar.google.com/public/basic.ics),  [Related events](https://calendar.google.com/calendar/embed?src=certifiedcontentcoalition.org_9cd49bitubv0sicvpt6gvf9km0%40group.calendar.google.com),\n\n* No general meetings currently scheduled; please participate via comments on documents\n\n---\n* 2018-10-23 / 2018-10-26: Face-to-face meeting [f2f3](f2f3) (Lyon, France)\n* 2018-09-05 Wed Main group [Agenda](agenda/20180905.md)\n* 2018-08-29 Wed Main group *canceled* [Agenda](https://lists.w3.org/Archives/Public/public-credibility/2018Aug/0013.html), [Cancelation](https://lists.w3.org/Archives/Public/public-credibility/2018Aug/0014.html)\n* 2018-08-22 Wed Main group [Agenda](agenda/20180822.md), [Summary](https://lists.w3.org/Archives/Public/public-credibility/2018Aug/0009.html)\n* 2018-08-16 Area-1 Inspection subgroup (with CredCo) Noon US/Eastern, [agenda](https://lists.w3.org/Archives/Public/public-credibility/2018Aug/0003.html), [minutes](https://docs.google.com/document/d/1kjb7_qHhW1m2GMDPxnedcrJVyMSPSIQPMnxpgsU6lus)\n* 2018-08-15 Wed Main group [Agenda](agenda/20180815.md), [minutes](./minutes/20180815.md)\n* 2018-07-26 / 2018-07-27 **Face to Face meeting SF**, [Agenda](f2f2.md), [minutes](./minutes/f2f2.md)\n* 2018-07-25 Wed _No Main group meeting_ (day before F2F)\n* 2018-07-23 Mon _No Subgroup-1 group meeting_ \n* 2018-07-18 Wed Main group [Agenda](agenda/20180718.md), [minutes](./minutes/20180718.md)\n* 2018-07-16 Mon Area-1 Inspection subgroup [Agenda](agenda/20180716.md), [minutes](./minutes/20180716.md)\n* 2018-07-11 Wed Main group [Agenda](agenda/20180711.md), [minutes](./minutes/20180711.md)\n* 2018-07-02 Mon Area-1 Inspection subgroup [Agenda](agenda/20180702.md), [minutes](./minutes/20180702.md)\n* 2018-06-27 Wed Main group [Agenda](agenda/20180627.md), [minutes](./minutes/20180627.md)\n* 2018-06-13 Wed Main group [Agenda](agenda/20180613.md), [minutes](./minutes/20180613.md)\n* 2018-06-11 Mon (1605 UTC) Subgroup on Inspection [Agenda](agenda/20180611.md), [minutes](./minutes/20180611.md)\n* 2018-06-04 (1605 UTC) Subgroup on Inspection [Agenda](agenda/20180604.md), [minutes](./minutes/20180604.html), [chat log](https://credweb.zulipchat.com/#narrow/stream/114583-meeting/topic/2018-06-04)\n* 2018-05-30 [Agenda, main topic Reputation](agenda/20180530.md) , [minutes](./minutes/20180530.html), [chat log](https://credweb.zulipchat.com/#narrow/stream/114583-meeting/topic/2018-05-30)\n* 2018-05-23 [Agenda, main topic Fact Checking](agenda/20180523.md), [minutes](./minutes/20180523.html), [chat log](https://credweb.zulipchat.com/#narrow/stream/114583-meeting/topic/2018-05-23)\n* 2018-05-09 [Agenda](agenda/20180509.md), [minutes](./minutes/20180509.html), [chat log](https://credweb.zulipchat.com/#narrow/stream/114583-meeting/topic/2018-05-09)\n* 2018-05-02 [Agenda](agenda/20180502.md), [minutes](./minutes/20180502.html), [chat log](https://credweb.zulipchat.com/#narrow/stream/114583-meeting/topic/2018-05-02)\n* 2018-04-25 [Agenda](agenda/20180425.md), [minutes](./minutes/20180425.html), [chat log](https://credweb.zulipchat.com/#narrow/stream/114583-meeting/topic/2018-04-25)\n* 2018-04-18 [Agenda](agenda/20180418.md), [minutes](./minutes/20180418.html), [chat log](https://credweb.zulipchat.com/#narrow/stream/114583-meeting/topic/2018-04-18)\n* 2018-04-11 [Agenda](agenda/20180411.md), [minutes](./minutes/20180411.html), [chat log](https://credweb.zulipchat.com/#narrow/stream/114583-meeting/topic/2018-04-11)\n* 2017-11-10 [Agenda](https://www.w3.org/wiki/File:Credibility-2017-11-10-agenda.pdf), [Minutes](https://www.w3.org/community/credibility/wiki/2017-11-10-minutes)\n* 2017-11-08 [TPAC Breakout Minutes](https://www.w3.org/community/credibility/wiki/2017-11-08-minutes)\n\n[Related activities & organizations](https://docs.google.com/spreadsheets/d/1vWE3iOn6yxUsRJyS_mks83m0Gwv_7cK0WtVt-SNsYzY/edit#gid=0)"
           },
           "fullName": "w3c/credweb"
         },
@@ -48888,6 +49991,80 @@
       "start-date": "2018-09-20",
       "end-date": "2020-09-30",
       "repos": [
+        {
+          "id": "MDEwOlJlcG9zaXRvcnkxMzczMTc3MjM=",
+          "name": "chinese-ig-charter",
+          "owner": {
+            "login": "w3c"
+          },
+          "isArchived": false,
+          "homepageUrl": "https://w3c.github.io/chinese-ig-charter/",
+          "description": "Chinese Web Interest Group charter",
+          "labels": {
+            "edges": [
+              {
+                "node": {
+                  "name": "bug",
+                  "color": "d73a4a"
+                }
+              },
+              {
+                "node": {
+                  "name": "duplicate",
+                  "color": "cfd3d7"
+                }
+              },
+              {
+                "node": {
+                  "name": "enhancement",
+                  "color": "a2eeef"
+                }
+              },
+              {
+                "node": {
+                  "name": "help wanted",
+                  "color": "008672"
+                }
+              },
+              {
+                "node": {
+                  "name": "good first issue",
+                  "color": "7057ff"
+                }
+              },
+              {
+                "node": {
+                  "name": "invalid",
+                  "color": "e4e669"
+                }
+              },
+              {
+                "node": {
+                  "name": "question",
+                  "color": "d876e3"
+                }
+              },
+              {
+                "node": {
+                  "name": "wontfix",
+                  "color": "ffffff"
+                }
+              }
+            ],
+            "pageInfo": {
+              "endCursor": "Y3Vyc29yOnYyOpHOOXv8TA==",
+              "hasNextPage": false
+            }
+          },
+          "w3cjson": {
+            "text": "{\n  \"group\": 109611,\n  \"contacts\": [\n    \"xfq\",\n    \"xueyuanjia\"\n  ],\n  \"policy\": \"open\",\n  \"repo-type\": \"process\"\n}\n"
+          },
+          "contributing": null,
+          "license": null,
+          "codeOfConduct": null,
+          "readme": null,
+          "fullName": "w3c/chinese-ig-charter"
+        },
         {
           "id": "MDEwOlJlcG9zaXRvcnkxNDk0MTUwMTY=",
           "name": "chinese-ig",
