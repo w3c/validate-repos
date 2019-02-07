@@ -35,7 +35,7 @@ async function fetchLabelPage(org, repo, acc = [], cursor = null) {
   let res = await graphql(`
  query {
     repository(owner:"${org}",name:"${repo}") {
-        labels(first: 30 after:"${cursor}") {
+        labels(first:10 after:"${cursor}") {
             edges {
               node {
                 name
@@ -64,11 +64,11 @@ async function fetchRepoPage(org, acc = [], cursor = null) {
   let res = await graphql(`
  query {
   organization(login:"${org}") {
-    repositories(first:30 after:"${cursor}") {
+    repositories(first:10 after:"${cursor}") {
       edges {
         node {
           id, name, owner { login } , isArchived, homepageUrl, description
-          labels(first: 30) {
+          labels(first:10) {
             edges {
               node {
                 name
@@ -112,18 +112,20 @@ async function fetchRepoPage(org, acc = [], cursor = null) {
   }
  }`);
   // Fetch labels if they are paginated
-  return Promise.all(
-    res.organization.repositories.edges
-      .filter(e => e.node.labels.pageInfo.hasNextPage)
-      .map(e => fetchLabelPage(e.node.owner.login, e.node.name, e.node.labels.edges, e.node.labels.pageInfo.endCursor))
-  ).then(() => {
-    const data = acc.concat(res.organization.repositories.edges.map(e => e.node));
-    if (res.organization.repositories.pageInfo.hasNextPage) {
-      return fetchRepoPage(org, data, res.organization.repositories.pageInfo.endCursor);
-    } else {
+  if (res && res.organization) {
+    return Promise.all(
+      res.organization.repositories.edges
+        .filter(e => e.node.labels.pageInfo.hasNextPage)
+        .map(e => fetchLabelPage(e.node.owner.login, e.node.name, e.node.labels.edges, e.node.labels.pageInfo.endCursor))
+    ).then(() => {
+      const data = acc.concat(res.organization.repositories.edges.map(e => e.node));
+      if (res.organization.repositories.pageInfo.hasNextPage) {
+        return fetchRepoPage(org, data, res.organization.repositories.pageInfo.endCursor);
+      } else {
       return data;
-    }
-  });
+      }
+    });
+  }
 }
 
 Promise.all(orgs.map(org => fetchRepoPage(org)))
@@ -252,6 +254,7 @@ Promise.all(orgs.map(org => fetchRepoPage(org)))
     });
     w3c.groups().fetch({embed: true}, (err, w3cgroups) => {
       const results = {errors};
+      results.timestamp = new Date();
       results.groups = w3cgroups.filter(g => allgroups.has(g.id)).reduce((acc, group) => {
         acc[group.id] = {...group, repos: groupRepos[group.id] };
         return acc;
