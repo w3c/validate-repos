@@ -11,6 +11,19 @@ w3c.apiKey = config.w3capikey;
 const orgs = ["w3c", "WebAudio", "immersive-web", "webassembly", "w3ctag", "WICG"];
 const errors = {"inconsistentgroups": [], "now3cjson":[], "invalidw3cjson": [], "illformedw3cjson":[], "incompletew3cjson":[], "nocontributing":[], "invalidcontributing": [], "nolicense": [], "nocodeofconduct": [], "invalidlicense": [], "noreadme": [],  "noashnazg": [], "inconsistentstatus": []};
 
+// for some repos, having the w3c.json administrative file is felt as awkward
+// we hard-code their equivalent here
+const hardcodedRepoData = {
+  'w3c/markup-validator': {
+    'contacts': 'sideshowbarker',
+    'repo-type': 'tool'
+  },
+  'w3c/css-validator': {
+    'contacts': 'ylafon',
+    'repo-type': 'tool'
+  }
+}
+
 // extract from https://w3c.github.io/w3c.json.html with [...document.querySelectorAll('#repo-type + dd .value')].map(n => n.textContent)
 const validRepoTypes = ['rec-track', 'note', 'cg-report', 'process', 'homepage', 'article', 'tool', 'project', 'others', 'workshop', 'tests'];
 
@@ -110,9 +123,16 @@ async function fetchRepoPage(org, acc = [], cursor = null) {
       }
     }
   }
+  rateLimit {
+    limit
+    cost
+    remaining
+    resetAt
+  }
  }`);
   // Fetch labels if they are paginated
   if (res && res.organization) {
+    console.error(JSON.stringify(res.rateLimit));
     return Promise.all(
       res.organization.repositories.edges
         .filter(e => e.node.labels.pageInfo.hasNextPage)
@@ -177,37 +197,39 @@ Promise.all(orgs.map(org => fetchRepoPage(org)))
       if (ashRepo)
         hasRecTrack.ashnazg = ashRepo.groups.some(g => g.groupType === "WG");
 
+      let conf = null;
       if (r.w3cjson) {
-        let conf = null;
         try {
           conf = JSON.parse(r.w3cjson.text);
         } catch (e) {
           errors.illformedw3cjson.push(fullName(r));
         }
-        if (conf) {
-          // TODO: replace with JSON schema?
-          if (!conf["repo-type"]) {
-            errors.incompletew3cjson.push({repo: fullName(r), error: "repo-type" + (Object.values(hasRecTrack).every(x => x === null) ? " (unknown)" : (hasRecTrack.tr || hasRecTrack.ashnazg ? " (rec-track)" : " (not rec-track)")) });
-          } else {
-            hasRecTrack.repotype = arrayify(conf["repo-type"]).includes('rec-track') ;
+      } else if (hardcodedRepoData[fullName(r)]) {
+        conf = hardcodedRepoData[fullName(r)];
+      }
+      if (conf) {
+        // TODO: replace with JSON schema?
+        if (!conf["repo-type"]) {
+          errors.incompletew3cjson.push({repo: fullName(r), error: "repo-type" + (Object.values(hasRecTrack).every(x => x === null) ? " (unknown)" : (hasRecTrack.tr || hasRecTrack.ashnazg ? " (rec-track)" : " (not rec-track)")) });
+        } else {
+          hasRecTrack.repotype = arrayify(conf["repo-type"]).includes('rec-track') ;
 
-            const unknownTypes = arrayify(conf['repo-type']).filter(t => !validRepoTypes.includes(t));
-            if (unknownTypes.length) {
-              errors.invalidw3cjson.push({repo: fullName(r), error: "unknown types: " + JSON.stringify(unknownTypes)});
-            }
+          const unknownTypes = arrayify(conf['repo-type']).filter(t => !validRepoTypes.includes(t));
+          if (unknownTypes.length) {
+            errors.invalidw3cjson.push({repo: fullName(r), error: "unknown types: " + JSON.stringify(unknownTypes)});
           }
-          if (!conf.group && ["rec-track", "note", "cg-report"].includes(conf["repo-type"])) {
-            errors.incompletew3cjson.push({repo: fullName(r), error: "group"});
-          } else {
-            groups = arrayify(conf.group).map(id => parseInt(id, 10));
-            shouldBeRepoManaged = conf["repo-type"] && (conf["repo-type"] === 'rec-track' || conf["repo-type"] === 'cg-report');
-          }
-          if (!conf.contacts) {
-            errors.incompletew3cjson.push({repo: fullName(r), error: "contacts"});
-          } else {
-            if (arrayify(conf.contacts).some(x => typeof x !== "string")) {
-              errors.invalidw3cjson.push({repo: fullName(r), error: "invalid contacts: " + JSON.stringify(conf.contacts)});
-            }
+        }
+        if (!conf.group && ["rec-track", "note", "cg-report"].includes(conf["repo-type"])) {
+          errors.incompletew3cjson.push({repo: fullName(r), error: "group"});
+        } else {
+          groups = arrayify(conf.group).map(id => parseInt(id, 10));
+          shouldBeRepoManaged = conf["repo-type"] && (conf["repo-type"] === 'rec-track' || conf["repo-type"] === 'cg-report');
+        }
+        if (!conf.contacts) {
+          errors.incompletew3cjson.push({repo: fullName(r), error: "contacts"});
+        } else {
+          if (arrayify(conf.contacts).some(x => typeof x !== "string")) {
+            errors.invalidw3cjson.push({repo: fullName(r), error: "invalid contacts: " + JSON.stringify(conf.contacts)});
           }
         }
       } else {
