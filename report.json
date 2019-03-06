@@ -54,34 +54,21 @@
       "immersive-web/webxr-test-api",
       "immersive-web/xr-gamepad-mappings",
       "w3c/a11ySlackers",
-      "w3c/activitypub",
-      "w3c/activitystreams",
-      "w3c/activitystreams-testing",
       "w3c/annotation-model",
       "w3c/architecture",
       "w3c/ATAG20-auth-trans-zh",
       "w3c/automotive-bg",
       "w3c/blockchain",
       "w3c/cciv",
-      "w3c/charter-html",
       "w3c/cred-claims",
       "w3c/credweb",
       "w3c/css-validator",
       "w3c/csswg-apiclient",
       "w3c/csswg-www",
-      "w3c/data-shapes",
-      "w3c/dummy",
-      "w3c/dwbp",
       "w3c/EasierRDF",
       "w3c/elements-of-html",
-      "w3c/emma",
-      "w3c/exi-specs",
-      "w3c/exi-testsuite",
-      "w3c/findtext",
       "w3c/fingerprinting-guidance",
-      "w3c/github_sync",
       "w3c/glossary",
-      "w3c/hanuman",
       "w3c/hcls",
       "w3c/hcls-ccda-rdf",
       "w3c/hcls-drug-drug-interaction",
@@ -94,29 +81,20 @@
       "w3c/i18n-issues",
       "w3c/i18n-tests",
       "w3c/idn-issues",
-      "w3c/imsc-tests",
-      "w3c/imsc-vnext-reqs",
       "w3c/keyboard-lock",
       "w3c/kiss",
-      "w3c/ldn",
       "w3c/ldp-next",
-      "w3c/ldp-testsuite",
       "w3c/link-checker",
       "w3c/locadd",
       "w3c/mailing-list-archives",
       "w3c/markup-validator",
-      "w3c/mathml",
       "w3c/microdata-rdf",
-      "w3c/Micropub",
-      "w3c/mmi",
-      "w3c/mmi-discovery",
       "w3c/mnx",
       "w3c/musicxml",
       "w3c/N3",
       "w3c/odrl",
       "w3c/omn",
       "w3c/ortc",
-      "w3c/perf-security-privacy",
       "w3c/permissions-ws-2018",
       "w3c/ping",
       "w3c/ping-security-questionnaire",
@@ -128,8 +106,6 @@
       "w3c/rdf-tests",
       "w3c/rdfvalidator-ng",
       "w3c/respec",
-      "w3c/security-disclosure",
-      "w3c/setImmediate",
       "w3c/shacl",
       "w3c/smufl",
       "w3c/sparql-exists",
@@ -142,11 +118,8 @@
       "w3c/time-series-and-spatial-data",
       "w3c/timed-text-dashboard",
       "w3c/touch-events",
-      "w3c/ttml1-tests",
-      "w3c/ttml2-tests",
       "w3c/ttml3-tests",
       "w3c/unspecified-web",
-      "w3c/vc-imp-guide",
       "w3c/W3CLifecycleEventsBundle",
       "w3c/W3CPasswordStrengthBundle",
       "w3c/wai-act-quickref",
@@ -175,7 +148,6 @@
       "w3c/WCAG21-Chinese-Unoffical-Translation",
       "w3c/WCAG21-zh",
       "w3c/web-advertising",
-      "w3c/web-annotation-tests",
       "w3c/web-based-signage-bg",
       "w3c/web-ledger",
       "w3c/web-nfc",
@@ -186,10 +158,8 @@
       "w3c/webmediaapi",
       "w3c/webmediaguidelines",
       "w3c/webmediaporting",
-      "w3c/webmention",
       "w3c/WebPlatformWG",
       "w3c/websec",
-      "w3c/websub",
       "w3c/woff2-compiled-tests",
       "w3c/wot",
       "w3c/wot-arduino",
@@ -387,10 +357,6 @@
       {
         "repo": "w3c/translation-management",
         "error": "unknown types: [\"document\"]"
-      },
-      {
-        "repo": "w3c/wcag-eo",
-        "error": "invalid contacts: [{\"github\":\"michael-n-cooper\",\"w3c\":\"cooper\"}]"
       }
     ],
     "illformedw3cjson": [
@@ -487,10 +453,6 @@
       },
       {
         "repo": "w3c/ime-api",
-        "error": "repo-type (rec-track)"
-      },
-      {
-        "repo": "w3c/imsc",
         "error": "repo-type (rec-track)"
       },
       {
@@ -700,10 +662,6 @@
       {
         "repo": "w3c/wasm",
         "error": "repo-type (rec-track)"
-      },
-      {
-        "repo": "w3c/wcag-eo",
-        "error": "repo-type (unknown)"
       },
       {
         "repo": "w3c/web-annotation",
@@ -942,7 +900,6 @@
       "w3c/charter-drafts",
       "w3c/charter-html",
       "w3c/charter-media-wg",
-      "w3c/charter-timed-text",
       "w3c/charter-webperf",
       "w3c/charters-dashboard",
       "w3c/chinese-ig",
@@ -969,7 +926,6 @@
       "w3c/dpub-pwp-arch",
       "w3c/dpub-pwp-loc",
       "w3c/dpub-stem",
-      "w3c/dummy",
       "w3c/dwbp",
       "w3c/EasierRDF",
       "w3c/EasyChecks",
@@ -1051,8 +1007,6 @@
       "w3c/omn",
       "w3c/orcid_in_respec",
       "w3c/ortc",
-      "w3c/perf-security-privacy",
-      "w3c/perf-timing-primer",
       "w3c/permissions-ws-2018",
       "w3c/pheme",
       "w3c/ping-security-questionnaire",
@@ -1098,8 +1052,6 @@
       "w3c/transitions",
       "w3c/translation-glossaries",
       "w3c/translation-management",
-      "w3c/ttml1-tests",
-      "w3c/ttml2-tests",
       "w3c/ttml3-tests",
       "w3c/tv-ggie",
       "w3c/tvcontrol-api",
@@ -1490,6 +1442,11 @@
         "repo": "w3c/browser-compat-data",
         "error": "doesn't match SW or DOC contributing",
         "contributing": "We're really happy to accept contributions to the mdn-browser-compat-data repository!\nThis file lists some general guidelines to help you contributing effectively.\n\n## Types of contribution\n\nThere are many ways you can help improve this repository! For example:\n\n* **Adding new compat data**: familiarize yourself with the [schema](https://github.com/mdn/browser-compat-data/blob/master/schemas/compat-data.schema.json) and read the [schema docs](https://github.com/mdn/browser-compat-data/blob/master/schemas/compat-data-schema.md) to add new files.\n* **Fixing existing compat data**: maybe a browser now supports a certain feature. Yay! If you open a PR to fix a browser's data, it would be most helpful if you include a link to a bug report or similar so that we can double-check the good news.\n* **Fixing a bug:** we have a list of [issues](https://github.com/mdn/browser-compat-data/issues),\nor maybe you found your own.\n* **Reviewing a pull request:** there is a list of [PRs](https://github.com/mdn/browser-compat-data/pulls).\nLet us know if these look good to you.\n* **Publishing a new package (staff only):** A new npm package should be published regularly, [see below](#publishing-a-new-package-version) for details.\n\n## Validating the data\nYou can use `npm test` to validate data against the schema. You might need to install the devDependencies using `npm install`.\nThe JSON data is validated against the schema using [`ajv`](http://epoberezkin.github.io/ajv/).\n\n## Generating data using the Web API Confluence Dashboard\nIf the feature you're interested in is a JavaScript API, you can cross-reference data against [Web API Confluence](https://web-confluence.appspot.com/) using the `confluence` command. This command overwrites data in your current working tree according to data from the dashboard. See [Using Confluence](USING-CONFLUENCE.md) for instructions.\n\n## Test rendering\nYou can use `npm run render $query $dept $aggregateMode` to output the table HTML as it would be rendered on MDN.\nThe parameters are the same as the [`{{compat}}` macro](https://github.com/mdn/kumascript/blob/master/macros/Compat.ejs).\n\nPaste the generated HTML into the MDN editor (source mode). You can use a new page, for example: https://developer.mozilla.org/en-US/docs/new and verify if the output looks correct.\n\n## Checklist\nNot everything is enforced or validated by the schema. A few things to pay attention to:\n\n* Feature identifiers (the data namespaces, like `css.properties.background`) should make sense and are spelled correctly.\n* Nesting of feature identifiers should make sense.\n* Notes use correct grammar and spelling. They should be complete sentences ending with a period.\n\n## Code style\n\nThe JSON files should be formatted according to the [.editorconfig](https://github.com/mdn/browser-compat-data/blob/master/.editorconfig) file.\n\n\n## Publishing a new package version\n\nRegularly, a new release of [mdn-browser-compat-data](https://www.npmjs.com/package/mdn-browser-compat-data) is created by MDN staff and will then be [deployed to the MDN site](https://github.com/mdn/browser-compat-data#browser-compatibility-tables-on-mdn). Usually this is done every Thursday (MDN never deploys to production on Fridays). Releases should be coordinated with the project owner [Florian Scholz](https://github.com/Elchi3), but anyone with merge permissions on the mdn/browser-compat-data repository has the ability to run the following steps which will create a new package version:\n\n 1. Figure out the new version number by looking at [past releases](https://github.com/mdn/browser-compat-data/releases). The project is in alpha, so we're using only patch versions. Lets assume the next version should be `0.0.43`.\n 2. On your updated and clean master branch, run `npm version patch -m \"43rd alpha version\"`. Locally, this updates `package.json`, creates a new commit, and creates a new release tag (see also the docs for [npm version](https://docs.npmjs.com/cli/version)).\n 3. Push the commit to master: `git push origin master`.\n 4. Check if the commit passes fine on [Travis CI](https://travis-ci.org/mdn/browser-compat-data).\n 5. If Travis is alright, push the git tag as well: `git push origin v0.0.43`.\n This step will trigger Travis to publish to npm automatically (see our [.travis.yml file](https://github.com/mdn/browser-compat-data/blob/master/.travis.yml)).\n 6. Check [Travis CI](https://travis-ci.org/mdn/browser-compat-data) again for the v0.0.43 build and also check [mdn-browser-compat-data on npm](https://www.npmjs.com/package/mdn-browser-compat-data) to see if `0.0.43` shows up correctly once Travis has finished its work.\n 7. Notify the [#mdndev](irc://irc.mozilla.org/mdndev) IRC channel on irc.mozilla.org about the new release and coordinate with jwhitlock or rjohnson a deployment of the new package to the MDN site.\n 8. Create a new [release on GitHub](https://github.com/mdn/browser-compat-data/releases) by running `npm run release-notes -- v0.0.43`).\n\n## Licensing\n\nPlease note that the compatibility data is made available under the\n[CC0 license](https://github.com/mdn/browser-compat-data/blob/master/LICENSE),\nso any contributions must be compatible with that license. If you're not sure about that, just ask.\n\n## Getting help\n\nIf you need help with this repository or have any questions, contact the MDN team\nin the [#mdn](irc://irc.mozilla.org/mdn) IRC channel on irc.mozilla.org or write us on [discourse](https://discourse.mozilla-community.org/c/mdn).\n"
+      },
+      {
+        "repo": "w3c/charter-timed-text",
+        "error": "doesn't match SW or DOC contributing",
+        "contributing": "Contributions to this repository are intended to be governed by the\n[Document License](https://www.w3.org/Consortium/Legal/copyright-documents).\n"
       },
       {
         "repo": "w3c/clipboard-apis",
@@ -1957,6 +1914,16 @@
         "contributing": "# Web Payments Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Software and Document License](http://www.w3.org/Consortium/Legal/copyright-software). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n"
       },
       {
+        "repo": "w3c/perf-security-privacy",
+        "error": "doesn't match SW or DOC contributing",
+        "contributing": "Contributions to this repository are intended to become part of software or documents licensed under the [Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software). By committing here, you agree to that licensing of your contributions.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all contributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the feature, you can remove yourself with the above syntax.\n"
+      },
+      {
+        "repo": "w3c/perf-timing-primer",
+        "error": "doesn't match SW or DOC contributing",
+        "contributing": "Contributions to this repository are intended to become part of software or documents licensed under the [Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software). By committing here, you agree to that licensing of your contributions.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all contributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the feature, you can remove yourself with the above syntax.\n"
+      },
+      {
         "repo": "w3c/performance-timeline",
         "error": "doesn't match SW or DOC contributing",
         "contributing": "Contributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nFor our editing test-driven process, see [CONTRIBUTING.md](https://github.com/w3c/web-performance/blob/gh-pages/CONTRIBUTING.md).\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
@@ -1999,7 +1966,7 @@
       {
         "repo": "w3c/presentation-api",
         "error": "doesn't match SW or DOC contributing",
-        "contributing": "## Contributing\n\nPlease refer to the group's [Work Mode](https://www.w3.org/wiki/Second_Screen/Work_Mode).\n\nContributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Software and Document License](http://www.w3.org/Consortium/Legal/copyright-\nsoftware). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n\n# Tests\n\nFor normative changes, a corresponding\n[web-platform-tests](https://github.com/web-platform-tests/wpt) PR is highly appreciated. Typically,\nboth PRs will be merged at the same time. Note that a test change that contradicts the spec should\nnot be merged before the corresponding spec change. If testing is not practical, please explain why\nand if appropriate [file a web-platform-tests issue](https://github.com/web-platform-tests/wpt/issues/new)\nto follow up later. Add the `type:untestable` or `type:missing-coverage` label as appropriate.\n"
+        "contributing": "## Contributing\n\nPlease refer to the group's [Work Mode](https://www.w3.org/wiki/Second_Screen/Work_Mode).\n\nContributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Software and Document License](http://www.w3.org/Consortium/Legal/copyright-software).\nTo make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n\n# Tests\n\nFor normative changes, a corresponding\n[web-platform-tests](https://github.com/web-platform-tests/wpt) PR is highly appreciated. Typically,\nboth PRs will be merged at the same time. Note that a test change that contradicts the spec should\nnot be merged before the corresponding spec change. If testing is not practical, please explain why\nand if appropriate [file a web-platform-tests issue](https://github.com/web-platform-tests/wpt/issues/new)\nto follow up later. Add the `type:untestable` or `type:missing-coverage` label as appropriate.\n"
       },
       {
         "repo": "w3c/pronunciation",
@@ -2127,11 +2094,6 @@
         "contributing": "# Web Platform Working Group\n\n## Spec and API development\n\nFor the nitty-gritty of the API, the [draft W3C specification](https://w3c.github.io/ServiceWorker/) is authoritative. For implementers and developers who seek a more stable version, [Service Workers 1](https://w3c.github.io/ServiceWorker/v1/) is a right document with which the contributors only focus on fixing bugs and resolving compatibility issues.\n\nSpec development happens via [issues in this repository](https://github.com/w3c/ServiceWorker/issues). For general discussion, please use the [public-webapps@w3.org mailing list](http://lists.w3.org/Archives/Public/public-webapps/) with a `Subject:` prefix of `[service-workers]`.\n\nUpdates to the spec must reference [resolved issues marked `needs spec`](https://github.com/w3c/ServiceWorker/issues?q=is%3Aclosed+label%3A%22needs+spec%22).\n\nTo make edits to the design, please send pull requests against the Nightly spec on the master branch. We use [bikeshed](https://github.com/tabatkins/bikeshed). So, change and submit `docs/index.bs`. When your pull request is merged, Travis CI will automatically build the spec.\n\nFor normative changes, a corresponding [web-platform-tests](https://github.com/web-platform-tests/wpt) PR is highly appreciated. Typically, both PRs will be merged at the same time. Note that a test change that contradicts the spec should not be merged before the corresponding spec change. If testing is not practical, please explain why and if appropriate [file an issue](https://github.com/web-platform-tests/wpt/issues/new) to follow up later. Add the `type:untestable` or `type:missing-coverage` label as appropriate.\n\nContributions to this repository are intended to become part of Recommendation-track documents\ngoverned by the [W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Software and Document License](http://www.w3.org/Consortium/Legal/copyright-software). To contribute, you must\neither participate in the relevant W3C Working Group or make a non-member patent licensing\ncommitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request's body or in subsequent comments.\n\n To add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n ```\n +@github_username\n ```\n\n If you added a contributor by mistake, you can remove them in a comment with:\n\n ```\n -@github_username\n ```\n\n If you are making a pull request on behalf of someone else but you had no part in designing the\n feature, you can remove yourself with the above syntax.\n"
       },
       {
-        "repo": "w3c/setImmediate",
-        "error": "doesn't match SW or DOC contributing",
-        "contributing": "Contributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](http://www.w3.org/Consortium/Legal/copyright-documents). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
-      },
-      {
         "repo": "w3c/silver",
         "error": "doesn't match SW or DOC contributing",
         "contributing": "# Silver Community Group\n\nThis repository is being used for work in the W3C Silver Community Group, governed by the [W3C Community License\nAgreement (CLA)](http://www.w3.org/community/about/agreements/cla/). To make substantive contributions,\nyou must join the CG.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n"
@@ -2222,9 +2184,19 @@
         "contributing": "# Timed Text Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents \ngoverned by the [W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](http://www.w3.org/Consortium/Legal/copyright-documents). To contribute, you must \neither participate in the relevant W3C Working Group or make a non-member patent licensing\n commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request's body or in subsequent comments.\n\n To add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n ```\n +@github_username\n ```\n\n If you added a contributor by mistake, you can remove them in a comment with:\n\n ```\n -@github_username\n ```\n\n If you are making a pull request on behalf of someone else but you had no part in designing the \n feature, you can remove yourself with the above syntax.\n"
       },
       {
+        "repo": "w3c/ttml1-tests",
+        "error": "doesn't match SW or DOC contributing",
+        "contributing": "Contributions to this repository are intended to become part of software licensed under the [3-clause BSD License](https://www.w3.org/Consortium/Legal/2008/03-bsd-license.html). \n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n"
+      },
+      {
         "repo": "w3c/ttml2",
         "error": "doesn't match SW or DOC contributing",
         "contributing": "# Timed Text Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents \ngoverned by the [W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](http://www.w3.org/Consortium/Legal/copyright-documents). To contribute, you must \neither participate in the relevant W3C Working Group or make a non-member patent licensing\ncommitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request's body or in subsequent comments.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
+      },
+      {
+        "repo": "w3c/ttml2-tests",
+        "error": "doesn't match SW or DOC contributing",
+        "contributing": "Contributions to this repository are intended to become part of software licensed under the [3-clause BSD License](https://www.w3.org/Consortium/Legal/2008/03-bsd-license.html). \n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n"
       },
       {
         "repo": "w3c/ttml3",
@@ -2930,7 +2902,6 @@
       "w3c/dpub-pwp-loc",
       "w3c/dpub-pwp-ucr",
       "w3c/dpub-stem",
-      "w3c/dummy",
       "w3c/dwbp",
       "w3c/EasierRDF",
       "w3c/EasyChecks",
@@ -3021,7 +2992,6 @@
       "w3c/omn",
       "w3c/orcid_in_respec",
       "w3c/ortc",
-      "w3c/perf-security-privacy",
       "w3c/permissions-ws-2018",
       "w3c/pheme",
       "w3c/ping-security-questionnaire",
@@ -3073,8 +3043,6 @@
       "w3c/transitions",
       "w3c/translation-glossaries",
       "w3c/translation-management",
-      "w3c/ttml1-tests",
-      "w3c/ttml2-tests",
       "w3c/ttml3-tests",
       "w3c/tv-ggie",
       "w3c/tvcontrol-api",
@@ -3085,7 +3053,6 @@
       "w3c/unicode-xml",
       "w3c/Unicorn",
       "w3c/unspecified-web",
-      "w3c/vc-imp-guide",
       "w3c/vc-test-suite",
       "w3c/w3c-api",
       "w3c/w3c.github.io",
@@ -3434,7 +3401,6 @@
       "w3c/dpub-pwp-loc",
       "w3c/dpub-pwp-ucr",
       "w3c/dpub-stem",
-      "w3c/dummy",
       "w3c/dwbp",
       "w3c/dxwg",
       "w3c/earl",
@@ -3649,7 +3615,6 @@
       "w3c/server-timing",
       "w3c/service-workers-wg",
       "w3c/ServiceWorker",
-      "w3c/setImmediate",
       "w3c/shacl",
       "w3c/silver",
       "w3c/smufl",
@@ -4254,6 +4219,16 @@
         "license": "All Reports in this Repository are licensed by contributors\nunder the\n[W3C Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software).\n\nAll tests in this Repository are licensed by contributors to be distributed under the\n[W3C 3-clause BSD License](https://www.w3.org/Consortium/Legal/2008/03-bsd-license.html).\n\n"
       },
       {
+        "repo": "w3c/ttml1-tests",
+        "error": "doesn't match SW or DOC license",
+        "license": "#Dual-License for W3C Test Suites\n\nAll documents in this Repository are licensed by contributors to be distributed under both the [W3C Test Suite License](#w3c-test-suite-license) and the [W3C 3-clause BSD License](#w3c-3-clause-bsd-license), reproduced below. The choice of license is up to the licensee. For more information, see [Licenses for W3C Test Suites](https://www.w3.org/Consortium/Legal/2008/04-testsuite-copyright.html)\n\n# W3C Test Suite License\n\nThis document, Test Suites and other documents that link to this statement are provided by the copyright holders under the following license: By using and/or copying this document, or the W3C document from which this statement is linked, you (the licensee) agree that you have read, understood, and will comply with the following terms and conditions:\n\nPermission to copy, and distribute the contents of this document, or the W3C document from which this statement is linked, in any medium for any purpose and without fee or royalty is hereby granted, provided that you include the following on ALL copies of the document, or portions thereof, that you use:\n\n*    A link or URL to the original W3C document.\n*    The pre-existing copyright notice of the original author, or if it doesn't exist, a notice (hypertext is preferred, but a textual representation is permitted) of the form: \"Copyright © [$date-of-document] World Wide Web Consortium, (MIT, ERCIM, Keio, Beihang) and others. All Rights Reserved. https://www.w3.org/Consortium/Legal/2008/04-testsuite-copyright.html\"\n*    If it exists, the STATUS of the W3C document.\n\nWhen space permits, inclusion of the full text of this NOTICE should be provided. We request that authorship attribution be provided in any software, documents, or other items or products that you create pursuant to the implementation of the contents of this document, or any portion thereof.\n\nNo right to create modifications or derivatives of W3C documents is granted pursuant to this license. However, if additional requirements (documented in the Copyright FAQ) are satisfied, the right to create modifications or derivatives is sometimes granted by the W3C to individuals complying with those requirements.\n\nIf a Test Suite distinguishes the test harness (or, framework for navigation) and the actual tests, permission is given to remove or alter the harness or navigation if the Test Suite in question allows to do so. The tests themselves shall NOT be changed in any way.\n\nThe name and trademarks of W3C and other copyright holders may NOT be used in advertising or publicity pertaining to this document or other documents that link to this statement without specific, written prior permission. Title to copyright in this document will at all times remain with copyright holders. Permission is given to use the trademarked string \"W3C\" within claims of performance concerning W3C Specifications or features described therein, and there only, if the test suite so authorizes.\n\nTHIS WORK IS PROVIDED BY W3C, MIT, ERCIM, KEIO, BEIHANG, THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL W3C, MIT, ERCIM, KEIO, BEIHANG, THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n# W3C 3-clause BSD License\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n*    Redistributions of works must retain the original copyright notice, this list of conditions and the following disclaimer.\n*    Redistributions in binary form must reproduce the original copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n*    Neither the name of the W3C nor the names of its contributors may be used to endorse or promote products derived from this work without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n"
+      },
+      {
+        "repo": "w3c/ttml2-tests",
+        "error": "doesn't match SW or DOC license",
+        "license": "#Dual-License for W3C Test Suites\n\nAll documents in this Repository are licensed by contributors to be distributed under both the [W3C Test Suite License](#w3c-test-suite-license) and the [W3C 3-clause BSD License](#w3c-3-clause-bsd-license), reproduced below. The choice of license is up to the licensee. For more information, see [Licenses for W3C Test Suites](https://www.w3.org/Consortium/Legal/2008/04-testsuite-copyright.html)\n\n# W3C Test Suite License\n\nThis document, Test Suites and other documents that link to this statement are provided by the copyright holders under the following license: By using and/or copying this document, or the W3C document from which this statement is linked, you (the licensee) agree that you have read, understood, and will comply with the following terms and conditions:\n\nPermission to copy, and distribute the contents of this document, or the W3C document from which this statement is linked, in any medium for any purpose and without fee or royalty is hereby granted, provided that you include the following on ALL copies of the document, or portions thereof, that you use:\n\n*    A link or URL to the original W3C document.\n*    The pre-existing copyright notice of the original author, or if it doesn't exist, a notice (hypertext is preferred, but a textual representation is permitted) of the form: \"Copyright © [$date-of-document] World Wide Web Consortium, (MIT, ERCIM, Keio, Beihang) and others. All Rights Reserved. https://www.w3.org/Consortium/Legal/2008/04-testsuite-copyright.html\"\n*    If it exists, the STATUS of the W3C document.\n\nWhen space permits, inclusion of the full text of this NOTICE should be provided. We request that authorship attribution be provided in any software, documents, or other items or products that you create pursuant to the implementation of the contents of this document, or any portion thereof.\n\nNo right to create modifications or derivatives of W3C documents is granted pursuant to this license. However, if additional requirements (documented in the Copyright FAQ) are satisfied, the right to create modifications or derivatives is sometimes granted by the W3C to individuals complying with those requirements.\n\nIf a Test Suite distinguishes the test harness (or, framework for navigation) and the actual tests, permission is given to remove or alter the harness or navigation if the Test Suite in question allows to do so. The tests themselves shall NOT be changed in any way.\n\nThe name and trademarks of W3C and other copyright holders may NOT be used in advertising or publicity pertaining to this document or other documents that link to this statement without specific, written prior permission. Title to copyright in this document will at all times remain with copyright holders. Permission is given to use the trademarked string \"W3C\" within claims of performance concerning W3C Specifications or features described therein, and there only, if the test suite so authorizes.\n\nTHIS WORK IS PROVIDED BY W3C, MIT, ERCIM, KEIO, BEIHANG, THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL W3C, MIT, ERCIM, KEIO, BEIHANG, THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n# W3C 3-clause BSD License\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n*    Redistributions of works must retain the original copyright notice, this list of conditions and the following disclaimer.\n*    Redistributions in binary form must reproduce the original copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n*    Neither the name of the W3C nor the names of its contributors may be used to endorse or promote products derived from this work without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n"
+      },
+      {
         "repo": "w3c/validate-repos",
         "error": "doesn't match SW or DOC license",
         "license": "# The MIT License (MIT)\n\nCopyright &copy; 2016&ndash;2017 [World Wide Web Consortium](https://www.w3.org/).\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &ldquo;software&rdquo;),\nto deal in the software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the software, and to permit persons to whom the software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the software.\n\n**The software is provided &ldquo;as is&rdquo;, without warranty of any kind, express or implied, including but not limited to the warranties of\nmerchantability, fitness for a particular purpose and noninfringement.\nIn no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise,\narising from, out of or in connection with the software or the use or other dealings in the software.**\n"
@@ -4559,7 +4534,6 @@
       "w3c/css-houdini-drafts",
       "w3c/csswg-drafts",
       "w3c/dap-charter",
-      "w3c/dummy",
       "w3c/earl",
       "w3c/fxtf-drafts",
       "w3c/github_sync",
@@ -4577,7 +4551,6 @@
       "w3c/ttml1-tests",
       "w3c/ttml3-tests",
       "w3c/tvcontrol-api",
-      "w3c/vc-imp-guide",
       "w3c/wai-act-quickref",
       "w3c/wai-gh-training-2015-06-29",
       "w3c/wai-policies-prototype",
@@ -4613,13 +4586,23 @@
     ],
     "noashnazg": [
       "immersive-web/editor-collab",
+      "w3c/activitypub",
+      "w3c/activitystreams",
       "w3c/ColorWeb-CG",
       "w3c/css-aam",
+      "w3c/data-shapes",
+      "w3c/dwbp",
+      "w3c/exi-specs",
       "w3c/geolocation-api",
+      "w3c/ldn",
       "w3c/low-vision-SC",
+      "w3c/mathml",
+      "w3c/Micropub",
       "w3c/UAAG",
       "w3c/wcag-act",
       "w3c/webcrypto",
+      "w3c/webmention",
+      "w3c/websub",
       "WebAssembly/bulk-memory-operations",
       "WebAssembly/threads",
       "WebAudio/web-audio-cg",
@@ -4689,7 +4672,7 @@
       }
     ]
   },
-  "timestamp": "2019-03-05T13:54:13.913Z",
+  "timestamp": "2019-03-06T09:32:04.190Z",
   "groups": {
     "7756": {
       "id": 7756,
@@ -7995,7 +7978,7 @@
             }
           },
           "w3cjson": {
-            "text": " {\n    \"group\":      [\"34314\"]\n,   \"contacts\":   [\"plehegar\"]\n,   \"shortName\":  \"imsc1\"\n}"
+            "text": " {\n    \"group\":      34314\n,   \"contacts\":   [\"plehegar\"]\n,   \"policy\":     \"open\"\n,   \"repo-type\":  \"rec-track\"\n}\n"
           },
           "contributing": {
             "text": "# Timed Text Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents \ngoverned by the [W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](http://www.w3.org/Consortium/Legal/copyright-documents). To contribute, you must \neither participate in the relevant W3C Working Group or make a non-member patent licensing\n commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request's body or in subsequent comments.\n\n To add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n ```\n +@github_username\n ```\n\n If you added a contributor by mistake, you can remove them in a comment with:\n\n ```\n -@github_username\n ```\n\n If you are making a pull request on behalf of someone else but you had no part in designing the \n feature, you can remove yourself with the above syntax.\n"
@@ -8271,7 +8254,7 @@
             "text": "All documents in this Repository are licensed by contributors under the [W3C Document\nLicense](http://www.w3.org/Consortium/Legal/copyright-documents).\n"
           },
           "codeOfConduct": {
-            "body": "# Code of Conduct\n\nAll code and communication in this repository are covered by the [W3C\nCode of Ethics and Professional\nConduct](https://www.w3.org/Consortium/cepc/).\n"
+            "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n"
           },
           "readme": {
             "text": "\n# Specification 'ttml-webvtt-mapping'\n\nThis is the repository for ttml-webvtt-mapping. You're welcome to contribute! Let's make the Web rock our socks\noff!\n\nLink to the gh-pages served document: https://w3c.github.io/ttml-webvtt-mapping\n"
@@ -8347,12 +8330,14 @@
           "w3cjson": {
             "text": " {\n    \"group\":      34314\n,   \"contacts\":   [\"plehegar\"]\n,   \"policy\":     \"open\"\n,   \"repo-type\":  \"process\"\n}\n"
           },
-          "contributing": null,
+          "contributing": {
+            "text": "Contributions to this repository are intended to be governed by the\n[Document License](https://www.w3.org/Consortium/Legal/copyright-documents).\n"
+          },
           "license": {
             "text": "All documents in this Repository are licensed by contributors under the [W3C Document\nLicense](http://www.w3.org/Consortium/Legal/copyright-documents).\n"
           },
           "codeOfConduct": {
-            "body": "# Code of Conduct\n\nAll code and communication in this repository are covered by the [W3C\nCode of Ethics and Professional\nConduct](https://www.w3.org/Consortium/cepc/).\n"
+            "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n"
           },
           "readme": {
             "text": "Draft Charter for the Timed Text Working Group\n\nLive @\n\nhttps://w3c.github.io/charter-timed-text/\n\n"
@@ -8440,13 +8425,361 @@
             "text": "All documents in this Repository are licensed by contributors under the [W3C Document\nLicense](http://www.w3.org/Consortium/Legal/copyright-documents).\n"
           },
           "codeOfConduct": {
-            "body": "# Code of Conduct\n\nAll code and communication in this repository are covered by the [W3C\nCode of Ethics and Professional\nConduct](https://www.w3.org/Consortium/cepc/).\n"
+            "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n"
           },
           "readme": {
             "text": "# tt-profile-registry\nProfile registry for TTML\n\nSee https://w3c.github.io/tt-profile-registry/\n"
           },
           "fullName": "w3c/tt-profile-registry",
           "hasRecTrack": true
+        },
+        {
+          "id": "MDEwOlJlcG9zaXRvcnk4ODE3NDUzNA==",
+          "name": "imsc-tests",
+          "owner": {
+            "login": "w3c"
+          },
+          "isArchived": false,
+          "homepageUrl": "https://w3c.github.io/imsc-tests/",
+          "description": "IMSC test suites",
+          "labels": {
+            "edges": [
+              {
+                "node": {
+                  "name": "bug",
+                  "color": "ee0701"
+                }
+              },
+              {
+                "node": {
+                  "name": "duplicate",
+                  "color": "cccccc"
+                }
+              },
+              {
+                "node": {
+                  "name": "enhancement",
+                  "color": "84b6eb"
+                }
+              },
+              {
+                "node": {
+                  "name": "help wanted",
+                  "color": "128A0C"
+                }
+              },
+              {
+                "node": {
+                  "name": "invalid",
+                  "color": "e6e6e6"
+                }
+              },
+              {
+                "node": {
+                  "name": "question",
+                  "color": "cc317c"
+                }
+              },
+              {
+                "node": {
+                  "name": "wontfix",
+                  "color": "ffffff"
+                }
+              },
+              {
+                "node": {
+                  "name": "PR open",
+                  "color": "fbca04"
+                }
+              },
+              {
+                "node": {
+                  "name": "imsc1.1",
+                  "color": "d4c5f9"
+                }
+              }
+            ],
+            "pageInfo": {
+              "endCursor": "Y3Vyc29yOnYyOpHONSPkAQ==",
+              "hasNextPage": false
+            }
+          },
+          "w3cjson": {
+            "text": " {\n    \"group\":      34314\n,   \"contacts\":   [\"plehegar\"]\n,   \"policy\":     \"open\"\n,   \"repo-type\":  \"tests\"\n}\n"
+          },
+          "contributing": {
+            "text": "Grant of License\n----------------\n\nBy contributing to this repository, you and the company you represent, if the\ncompany holds any copyrights in the contribution, grant to the W3C a perpetual,\nnon-exclusive, royalty-free, world-wide right and license under all of your\ncopyrights in this contribution to copy, publish, use, and modify the\ncontribution and to distribute the contribution under a BSD License or one with\nmore restrictive terms, as well as a right and license of the same scope to any\nderivative works prepared by the W3C and based on or incorporating all or part\nof the contribution. You further agree that any derivative works of this\ncontribution prepared by the W3C shall be solely owned by the W3C.\n\nYou state, to the best of your knowledge, that you, or the company you\nrepresent, have all rights necessary to contribute the materials.\n\nW3C will retain attribution of initial authorship to you. The W3C makes no\na-priori commitment to support or distribute contributions.\n\nDisclaimer\n----------\n\nAll content from this repository is provided as is, and W3C makes no\nrepresentations or warranties, express or implied, including, but not limited\nto, warranties of merchantability, fitness for a particular purpose,\nnon-infringement, or title; nor that the contents of this repository are\nsuitable for any purpose. We make no representations, express or implied, that\nthe content of this repository or the use thereof indicates conformance to a\nspecification. All content is provided as-is to help reach interoperability.\n"
+          },
+          "license": {
+            "text": "# Dual-License for W3C Test Suites\n\nUnless another compatible license is present in the documents themselves, all documents in this Repository are licensed by contributors to be distributed under both the [W3C Test Suite License](#w3c-test-suite-license) and the [W3C 3-clause BSD License](#w3c-3-clause-bsd-license), reproduced below. The choice of license is up to the licensee. For more information, see [Licenses for W3C Test Suites](https://www.w3.org/Consortium/Legal/2008/04-testsuite-copyright.html)\n\n# W3C Test Suite License\n\nThis document, Test Suites and other documents that link to this statement are provided by the copyright holders under the following license: By using and/or copying this document, or the W3C document from which this statement is linked, you (the licensee) agree that you have read, understood, and will comply with the following terms and conditions:\n\nPermission to copy, and distribute the contents of this document, or the W3C document from which this statement is linked, in any medium for any purpose and without fee or royalty is hereby granted, provided that you include the following on ALL copies of the document, or portions thereof, that you use:\n\n*    A link or URL to the original W3C document.\n*    The pre-existing copyright notice of the original author, or if it doesn't exist, a notice (hypertext is preferred, but a textual representation is permitted) of the form: \"Copyright © [$date-of-document] World Wide Web Consortium, (MIT, ERCIM, Keio, Beihang) and others. All Rights Reserved. http://www.w3.org/Consortium/Legal/2008/04-testsuite-copyright.html\"\n*    If it exists, the STATUS of the W3C document.\n\nWhen space permits, inclusion of the full text of this NOTICE should be provided. We request that authorship attribution be provided in any software, documents, or other items or products that you create pursuant to the implementation of the contents of this document, or any portion thereof.\n\nNo right to create modifications or derivatives of W3C documents is granted pursuant to this license. However, if additional requirements (documented in the Copyright FAQ) are satisfied, the right to create modifications or derivatives is sometimes granted by the W3C to individuals complying with those requirements.\n\nIf a Test Suite distinguishes the test harness (or, framework for navigation) and the actual tests, permission is given to remove or alter the harness or navigation if the Test Suite in question allows to do so. The tests themselves shall NOT be changed in any way.\n\nThe name and trademarks of W3C and other copyright holders may NOT be used in advertising or publicity pertaining to this document or other documents that link to this statement without specific, written prior permission. Title to copyright in this document will at all times remain with copyright holders. Permission is given to use the trademarked string \"W3C\" within claims of performance concerning W3C Specifications or features described therein, and there only, if the test suite so authorizes.\n\nTHIS WORK IS PROVIDED BY W3C, MIT, ERCIM, KEIO, BEIHANG, THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL W3C, MIT, ERCIM, KEIO, BEIHANG, THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n# W3C 3-clause BSD License\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n*    Redistributions of works must retain the original copyright notice, this list of conditions and the following disclaimer.\n*    Redistributions in binary form must reproduce the original copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n*    Neither the name of the W3C nor the names of its contributors may be used to endorse or promote products derived from this work without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n"
+          },
+          "codeOfConduct": {
+            "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n"
+          },
+          "readme": {
+            "text": "# imsc-tests\n\nIMSC test suites for the [IMSC family of specifications](https://github.com/w3c/imsc/).\n\nNote that multiple tests, identified by the presence of the metadata element `<ebuttm:conformsToStandard>urn:ebu:tt:distribution:2014-01</ebuttm:conformsToStandard>`, conform to [EBU-TT-D](https://tech.ebu.ch/publications/tech3380) in addition to a profile of IMSC.\n\n# Ackowledgements\n\nWe thank the Institut für Rundfunktechnik (IRT) for providing the basis of multiple IMSC1 tests. \n\n"
+          },
+          "fullName": "w3c/imsc-tests"
+        },
+        {
+          "id": "MDEwOlJlcG9zaXRvcnk5OTI0NDg5Mg==",
+          "name": "imsc-vnext-reqs",
+          "owner": {
+            "login": "w3c"
+          },
+          "isArchived": false,
+          "homepageUrl": "https://w3c.github.io/imsc-vnext-reqs/",
+          "description": "IMSC Next version Requirements",
+          "labels": {
+            "edges": [
+              {
+                "node": {
+                  "name": "bug",
+                  "color": "ee0701"
+                }
+              },
+              {
+                "node": {
+                  "name": "duplicate",
+                  "color": "cccccc"
+                }
+              },
+              {
+                "node": {
+                  "name": "enhancement",
+                  "color": "84b6eb"
+                }
+              },
+              {
+                "node": {
+                  "name": "help wanted",
+                  "color": "128A0C"
+                }
+              },
+              {
+                "node": {
+                  "name": "invalid",
+                  "color": "e6e6e6"
+                }
+              },
+              {
+                "node": {
+                  "name": "question",
+                  "color": "cc317c"
+                }
+              },
+              {
+                "node": {
+                  "name": "wontfix",
+                  "color": "ffffff"
+                }
+              },
+              {
+                "node": {
+                  "name": "for review",
+                  "color": "5319e7"
+                }
+              },
+              {
+                "node": {
+                  "name": "blocked",
+                  "color": "fbca04"
+                }
+              },
+              {
+                "node": {
+                  "name": "agenda",
+                  "color": "0052cc"
+                }
+              }
+            ],
+            "pageInfo": {
+              "endCursor": "Y3Vyc29yOnYyOpHOLfIajg==",
+              "hasNextPage": true
+            }
+          },
+          "w3cjson": {
+            "text": " {\n    \"group\":      34314\n,   \"contacts\":   [\"plehegar\"]\n,   \"policy\":     \"open\"\n,   \"repo-type\":  \"note\"\n}\n"
+          },
+          "contributing": {
+            "text": "Contributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Software and Document License](http://www.w3.org/Consortium/Legal/copyright-software). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
+          },
+          "license": null,
+          "codeOfConduct": {
+            "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n"
+          },
+          "readme": {
+            "text": "Technical requirements for [IMSC1.1](https://www.w3.org/TR/ttml-imsc1.1/), the next revision of [TTML Profiles for Internet Media Subtitles and Captions 1.0.1 (IMSC1)](https://www.w3.org/TR/ttml-imsc1.0.1/).\n\n[Latest draft](https://w3c.github.io/imsc-vnext-reqs/)\n"
+          },
+          "fullName": "w3c/imsc-vnext-reqs"
+        },
+        {
+          "id": "MDEwOlJlcG9zaXRvcnkxMzI5MDk0OTM=",
+          "name": "ttml1-tests",
+          "owner": {
+            "login": "w3c"
+          },
+          "isArchived": false,
+          "homepageUrl": null,
+          "description": "Tests for TTML1",
+          "labels": {
+            "edges": [
+              {
+                "node": {
+                  "name": "bug",
+                  "color": "d73a4a"
+                }
+              },
+              {
+                "node": {
+                  "name": "duplicate",
+                  "color": "cfd3d7"
+                }
+              },
+              {
+                "node": {
+                  "name": "enhancement",
+                  "color": "a2eeef"
+                }
+              },
+              {
+                "node": {
+                  "name": "help wanted",
+                  "color": "008672"
+                }
+              },
+              {
+                "node": {
+                  "name": "good first issue",
+                  "color": "7057ff"
+                }
+              },
+              {
+                "node": {
+                  "name": "invalid",
+                  "color": "e4e669"
+                }
+              },
+              {
+                "node": {
+                  "name": "question",
+                  "color": "d876e3"
+                }
+              },
+              {
+                "node": {
+                  "name": "wontfix",
+                  "color": "ffffff"
+                }
+              }
+            ],
+            "pageInfo": {
+              "endCursor": "Y3Vyc29yOnYyOpHON15wXg==",
+              "hasNextPage": false
+            }
+          },
+          "w3cjson": {
+            "text": " {\n    \"group\":      34314\n,   \"contacts\":   [\"plehegar\"]\n,   \"policy\":     \"open\"\n,   \"repo-type\":  \"tests\"\n}\n"
+          },
+          "contributing": {
+            "text": "Contributions to this repository are intended to become part of software licensed under the [3-clause BSD License](https://www.w3.org/Consortium/Legal/2008/03-bsd-license.html). \n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n"
+          },
+          "license": {
+            "text": "#Dual-License for W3C Test Suites\n\nAll documents in this Repository are licensed by contributors to be distributed under both the [W3C Test Suite License](#w3c-test-suite-license) and the [W3C 3-clause BSD License](#w3c-3-clause-bsd-license), reproduced below. The choice of license is up to the licensee. For more information, see [Licenses for W3C Test Suites](https://www.w3.org/Consortium/Legal/2008/04-testsuite-copyright.html)\n\n# W3C Test Suite License\n\nThis document, Test Suites and other documents that link to this statement are provided by the copyright holders under the following license: By using and/or copying this document, or the W3C document from which this statement is linked, you (the licensee) agree that you have read, understood, and will comply with the following terms and conditions:\n\nPermission to copy, and distribute the contents of this document, or the W3C document from which this statement is linked, in any medium for any purpose and without fee or royalty is hereby granted, provided that you include the following on ALL copies of the document, or portions thereof, that you use:\n\n*    A link or URL to the original W3C document.\n*    The pre-existing copyright notice of the original author, or if it doesn't exist, a notice (hypertext is preferred, but a textual representation is permitted) of the form: \"Copyright © [$date-of-document] World Wide Web Consortium, (MIT, ERCIM, Keio, Beihang) and others. All Rights Reserved. https://www.w3.org/Consortium/Legal/2008/04-testsuite-copyright.html\"\n*    If it exists, the STATUS of the W3C document.\n\nWhen space permits, inclusion of the full text of this NOTICE should be provided. We request that authorship attribution be provided in any software, documents, or other items or products that you create pursuant to the implementation of the contents of this document, or any portion thereof.\n\nNo right to create modifications or derivatives of W3C documents is granted pursuant to this license. However, if additional requirements (documented in the Copyright FAQ) are satisfied, the right to create modifications or derivatives is sometimes granted by the W3C to individuals complying with those requirements.\n\nIf a Test Suite distinguishes the test harness (or, framework for navigation) and the actual tests, permission is given to remove or alter the harness or navigation if the Test Suite in question allows to do so. The tests themselves shall NOT be changed in any way.\n\nThe name and trademarks of W3C and other copyright holders may NOT be used in advertising or publicity pertaining to this document or other documents that link to this statement without specific, written prior permission. Title to copyright in this document will at all times remain with copyright holders. Permission is given to use the trademarked string \"W3C\" within claims of performance concerning W3C Specifications or features described therein, and there only, if the test suite so authorizes.\n\nTHIS WORK IS PROVIDED BY W3C, MIT, ERCIM, KEIO, BEIHANG, THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL W3C, MIT, ERCIM, KEIO, BEIHANG, THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n# W3C 3-clause BSD License\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n*    Redistributions of works must retain the original copyright notice, this list of conditions and the following disclaimer.\n*    Redistributions in binary form must reproduce the original copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n*    Neither the name of the W3C nor the names of its contributors may be used to endorse or promote products derived from this work without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n"
+          },
+          "codeOfConduct": {
+            "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n"
+          },
+          "readme": null,
+          "fullName": "w3c/ttml1-tests"
+        },
+        {
+          "id": "MDEwOlJlcG9zaXRvcnkxMzI5MDk1NzQ=",
+          "name": "ttml2-tests",
+          "owner": {
+            "login": "w3c"
+          },
+          "isArchived": false,
+          "homepageUrl": null,
+          "description": null,
+          "labels": {
+            "edges": [
+              {
+                "node": {
+                  "name": "bug",
+                  "color": "d73a4a"
+                }
+              },
+              {
+                "node": {
+                  "name": "duplicate",
+                  "color": "cfd3d7"
+                }
+              },
+              {
+                "node": {
+                  "name": "enhancement",
+                  "color": "a2eeef"
+                }
+              },
+              {
+                "node": {
+                  "name": "help wanted",
+                  "color": "008672"
+                }
+              },
+              {
+                "node": {
+                  "name": "good first issue",
+                  "color": "7057ff"
+                }
+              },
+              {
+                "node": {
+                  "name": "invalid",
+                  "color": "e4e669"
+                }
+              },
+              {
+                "node": {
+                  "name": "question",
+                  "color": "d876e3"
+                }
+              },
+              {
+                "node": {
+                  "name": "wontfix",
+                  "color": "ffffff"
+                }
+              },
+              {
+                "node": {
+                  "name": "agenda",
+                  "color": "b56b36"
+                }
+              }
+            ],
+            "pageInfo": {
+              "endCursor": "Y3Vyc29yOnYyOpHOPm7h6A==",
+              "hasNextPage": false
+            }
+          },
+          "w3cjson": {
+            "text": " {\n    \"group\":      34314\n,   \"contacts\":   [\"plehegar\"]\n,   \"policy\":     \"open\"\n,   \"repo-type\":  \"tests\"\n}\n"
+          },
+          "contributing": {
+            "text": "Contributions to this repository are intended to become part of software licensed under the [3-clause BSD License](https://www.w3.org/Consortium/Legal/2008/03-bsd-license.html). \n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n"
+          },
+          "license": {
+            "text": "#Dual-License for W3C Test Suites\n\nAll documents in this Repository are licensed by contributors to be distributed under both the [W3C Test Suite License](#w3c-test-suite-license) and the [W3C 3-clause BSD License](#w3c-3-clause-bsd-license), reproduced below. The choice of license is up to the licensee. For more information, see [Licenses for W3C Test Suites](https://www.w3.org/Consortium/Legal/2008/04-testsuite-copyright.html)\n\n# W3C Test Suite License\n\nThis document, Test Suites and other documents that link to this statement are provided by the copyright holders under the following license: By using and/or copying this document, or the W3C document from which this statement is linked, you (the licensee) agree that you have read, understood, and will comply with the following terms and conditions:\n\nPermission to copy, and distribute the contents of this document, or the W3C document from which this statement is linked, in any medium for any purpose and without fee or royalty is hereby granted, provided that you include the following on ALL copies of the document, or portions thereof, that you use:\n\n*    A link or URL to the original W3C document.\n*    The pre-existing copyright notice of the original author, or if it doesn't exist, a notice (hypertext is preferred, but a textual representation is permitted) of the form: \"Copyright © [$date-of-document] World Wide Web Consortium, (MIT, ERCIM, Keio, Beihang) and others. All Rights Reserved. https://www.w3.org/Consortium/Legal/2008/04-testsuite-copyright.html\"\n*    If it exists, the STATUS of the W3C document.\n\nWhen space permits, inclusion of the full text of this NOTICE should be provided. We request that authorship attribution be provided in any software, documents, or other items or products that you create pursuant to the implementation of the contents of this document, or any portion thereof.\n\nNo right to create modifications or derivatives of W3C documents is granted pursuant to this license. However, if additional requirements (documented in the Copyright FAQ) are satisfied, the right to create modifications or derivatives is sometimes granted by the W3C to individuals complying with those requirements.\n\nIf a Test Suite distinguishes the test harness (or, framework for navigation) and the actual tests, permission is given to remove or alter the harness or navigation if the Test Suite in question allows to do so. The tests themselves shall NOT be changed in any way.\n\nThe name and trademarks of W3C and other copyright holders may NOT be used in advertising or publicity pertaining to this document or other documents that link to this statement without specific, written prior permission. Title to copyright in this document will at all times remain with copyright holders. Permission is given to use the trademarked string \"W3C\" within claims of performance concerning W3C Specifications or features described therein, and there only, if the test suite so authorizes.\n\nTHIS WORK IS PROVIDED BY W3C, MIT, ERCIM, KEIO, BEIHANG, THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL W3C, MIT, ERCIM, KEIO, BEIHANG, THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n# W3C 3-clause BSD License\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n*    Redistributions of works must retain the original copyright notice, this list of conditions and the following disclaimer.\n*    Redistributions in binary form must reproduce the original copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n*    Neither the name of the W3C nor the names of its contributors may be used to endorse or promote products derived from this work without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n"
+          },
+          "codeOfConduct": {
+            "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n"
+          },
+          "readme": {
+            "text": "# TTML2 Test Suites\n\nThe TTML2 Test Suites consist of a validation test suite and a presentation test suite. The purpose of these test suites is to demonstrate adequate implementation experience of each (designated) feature of the [TTML2 Specification](https://www.w3.org/TR/ttml2/) as documented by the [TTML2 Implementation Report](https://www.w3.org/wiki/TimedText/TTML2ImplementationReport). An ancillary purpose is to promote ineroperability between implementations.\n\nThe tests found in these test suites focus on functionality and constraints thereof that derive directly from normative text in the [TTML2 Specification](https://www.w3.org/TR/ttml2/). Additional tests that go beyond the normative specification text are included here as well; however, though such tests are useful for wider interoperability testing, the results from their exercise are not reported in the [TTML2 Implementation Report](https://www.w3.org/wiki/TimedText/TTML2ImplementationReport). See also [Excluded Tests](#excluded-tests).\n\n## Validation Test Suite\n\nThe validation test suite is found under the `validation` directory, and is divided into two parts: (1) tests for valid content (validity tests) and (2) tests for invalid content (invalidity tests). The result of each test can be characterized as PASS or FAIL.\n\nA PASS result for a validity test occurs if the validator does not reject (report a validation error for) the content of the test. In contrast, a FAIL result for a validity test occurs if the validator rejects (reports a validation error for) the content of the test, in which case, such a result is deemed a _false negative_ result.\n\nA PASS result for an invalidity test occcurs if the validator rejects (reports a validation error for) the content of the test. In contrast, a FAIL result for an invalidity test occurs if the validator does not reject (report a validation error for) the content of the test, in which case, such a result is deemed a _false positive_ result.\n\nA validator is considered to **_strictly pass_** the test suite if it does not report a false negative for any validity test. A validator is considered to **_fully pass_** the test suite if it (1) strictly passes the test suite and (2) does not report a false positive for any invalidity test.\n\nFor the purpose of reporting an implementation of the validation function for a specific (designated) feature, the implementation must strictly pass all tests for that feature; however, it is not required to fully pass all tests for that feature since the TTML2 specification does not require a validator to detect all possibile invalidities, about which see [validate document](https://www.w3.org/TR/ttml2/#semantics-procedure-validate-document).\n\nA mapping from (designated) features to specific tests is found in `validation/tests.json`, which, for each new TTML2 feature designator, lists validity and invalidity tests (by name), and optionally includes a per-test exclusion flag if the test is intended to be excluded from exit criteria consideration. We refer to this mapping file as the *validation test manifest*.\n\n## Presentation Test Suite\n\nThe presentation test suite is found under the `presentation` directory, and is divided into two parts: (1) tests for presenting valid content and (2) tests for presenting invalid content.\n\nA mapping from (designated) features to specific tests is found in `presentation/tests.json`, which, for each new TTML2 feature designator, lists presentation tests (by name), and optionally includes a per-test exclusion flag if the test is intended to be excluded from exit criteria consideration. We refer to this mapping file as the *presentation test manifest*.\n\nFor tests having primarily visual presentation semantics, each presentation test is associated with a like named ZIP archive with the suffix `.expected.zip`, which contains the output of a particular reference implementation (TTPE). Each such _reference archive_ contains a manifest file and one or more image frames represented in some image format. In the present form of the reference archives, the image format is `image/svg+xml`. These image frames should **not** be construed as normative, but merely serve as a possible reference image for performing (human visual) comparisons of expected output.\n\n## Excluded Tests\n\nAs noted above, the two (validation and presentation) test manifests employ an *exclusion* flag to denote that a test is excluded from exit criteria consideration. The tests marked as excluded (presently) consist of tests that may be useful for testing implementations, but are not necessarily derived from normative specification language, as well as tests for which there is some question as to whether they correctly represent normative specification requirements. In both cases, these tests may, but need not be exercised by implementations, and there is no expectation that the results from such tests will be reported by implementors.\n\n## Pending Tests\n\nTests located in the `pending` directory are under consideration for future addition to the test suite. They are not considered part of the formal test suite at this time; furthermore, there is no (fixed) schedule for their addition (or not) to the test suite.\n\n## Test Annotation Attributes\n\nIn addition to standard, TTML2 defined attributes, each test contains certain tool-specific annotation attributes in a namespace associated with the `ttva` prefix. These attributes are used by a certain reference implementation, [TTV](https://github.com/skynav/ttt/tree/master/ttt-ttv), to facilitate the testing process. Note that TTML2 content processing requires processors to prune (ignore) unrecognized namespace qualified attributes. See [Annotations](https://github.com/skynav/ttt/tree/master/ttt-ttv#annotations) for further information on their usage.\n"
+          },
+          "fullName": "w3c/ttml2-tests"
         },
         {
           "id": "MDEwOlJlcG9zaXRvcnkxNTcxMTE2NTM=",
@@ -8535,7 +8868,7 @@
             "text": "All documents in this Repository are licensed by contributors under the [W3C Document\nLicense](http://www.w3.org/Consortium/Legal/copyright-documents).\n"
           },
           "codeOfConduct": {
-            "body": "# Code of Conduct\n\nAll code and communication in this repository are covered by the [W3C\nCode of Ethics and Professional\nConduct](https://www.w3.org/Consortium/cepc/).\n"
+            "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n"
           },
           "readme": {
             "text": "# Timed Text Working Group (TTWG)\n\n## Introduction\n\nThis repository is used to track Working Group level actions, issues etc for the\nW3C Timed Text Working Group.\n"
@@ -8629,7 +8962,7 @@
             "text": "All documents in this Repository are licensed by contributors under the [W3C Document\nLicense](http://www.w3.org/Consortium/Legal/copyright-documents).\n"
           },
           "codeOfConduct": {
-            "body": "# Code of Conduct\n\nAll code and communication in this repository are covered by the [W3C\nCode of Ethics and Professional\nConduct](https://www.w3.org/Consortium/cepc/).\n"
+            "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n"
           },
           "readme": {
             "text": "# TTML Requirements\n"
@@ -9209,7 +9542,7 @@
             }
           },
           "w3cjson": {
-            "text": "{\n  \"group\": 35422,\n  \"contacts\": [\n    {\n      \"github\": \"michael-n-cooper\",\n      \"w3c\": \"cooper\"\n    }\n  ],\n  \"policy\": \"restricted\" \n}"
+            "text": "{\n  \"group\": 35422,\n  \"contacts\": \"michael-n-cooper\",\n  \"policy\": \"restricted\",\n  \"repo-type\": \"note\"\n}"
           },
           "contributing": {
             "text": "Contributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](https://www.w3.org/Consortium/Legal/copyright-documents). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n\nPublic comments can be made by opening a new Issue https://github.com/w3c/wcag/issues/new. The public can also comment on any issue threads on Github https://github.com/w3c/wcag/issues.\n"
@@ -18543,7 +18876,9 @@
           "w3cjson": {
             "text": "{\n  \"group\": 45211,\n  \"contacts\": [\n    \"siusin\"\n  ],\n  \"policy\": \"open\",\n  \"repo-type\": \"note\"\n}"
           },
-          "contributing": null,
+          "contributing": {
+            "text": "Contributions to this repository are intended to become part of software or documents licensed under the [Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software). By committing here, you agree to that licensing of your contributions.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all contributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the feature, you can remove yourself with the above syntax.\n"
+          },
           "license": {
             "text": "All documents in this Repository are licensed by contributors\nunder the \n[W3C Software and Document License](http://www.w3.org/Consortium/Legal/copyright-software).\n\n"
           },
@@ -18649,6 +18984,82 @@
           },
           "fullName": "w3c/reporting",
           "hasRecTrack": true
+        },
+        {
+          "id": "MDEwOlJlcG9zaXRvcnk1ODM5OTk5NA==",
+          "name": "perf-security-privacy",
+          "owner": {
+            "login": "w3c"
+          },
+          "isArchived": false,
+          "homepageUrl": null,
+          "description": "Privacy and Security considerations for Web Performance API’s",
+          "labels": {
+            "edges": [
+              {
+                "node": {
+                  "name": "bug",
+                  "color": "ee0701"
+                }
+              },
+              {
+                "node": {
+                  "name": "duplicate",
+                  "color": "cccccc"
+                }
+              },
+              {
+                "node": {
+                  "name": "enhancement",
+                  "color": "84b6eb"
+                }
+              },
+              {
+                "node": {
+                  "name": "help wanted",
+                  "color": "128A0C"
+                }
+              },
+              {
+                "node": {
+                  "name": "invalid",
+                  "color": "e6e6e6"
+                }
+              },
+              {
+                "node": {
+                  "name": "question",
+                  "color": "cc317c"
+                }
+              },
+              {
+                "node": {
+                  "name": "wontfix",
+                  "color": "ffffff"
+                }
+              }
+            ],
+            "pageInfo": {
+              "endCursor": "Y3Vyc29yOnYyOpHOFkF1Vg==",
+              "hasNextPage": false
+            }
+          },
+          "w3cjson": {
+            "text": "{\n  \"group\": 45211,\n  \"contacts\": [\n    \"siusin\"\n  ],\n  \"policy\": \"open\",\n  \"repo-type\": \"note\"\n}"
+          },
+          "contributing": {
+            "text": "Contributions to this repository are intended to become part of software or documents licensed under the [Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software). By committing here, you agree to that licensing of your contributions.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all contributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the feature, you can remove yourself with the above syntax.\n"
+          },
+          "license": {
+            "text": "All documents in this Repository are licensed by contributors\nunder the \n[W3C Software and Document License](http://www.w3.org/Consortium/Legal/copyright-software).\n\n"
+          },
+          "codeOfConduct": {
+            "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n"
+          },
+          "readme": {
+            "text": "# Performance API's, Security and Privacy\n\nThe fact that something is possible to measure, and may even be highly desirable and useful to expose to developers, does not meant that it can be exposed as runtime JavaScript API in the browser, due to various privacy and security constraints. The goal of this document is to explain why that is the case, and to provide guidance for what needs to be considered when making or evaluating a proposal for such API's.\n\nLatest draft: https://w3c.github.io/perf-security-privacy\n\nQuestions, suggestions? Please open an issue or send a pull request!\n"
+          },
+          "fullName": "w3c/perf-security-privacy"
         },
         {
           "id": "MDEwOlJlcG9zaXRvcnk2NDE3MzIyNQ==",
@@ -24549,7 +24960,7 @@
             "text": "{\n  \"group\": [\n    \"74168\"\n  ],\n  \"contacts\": [\n    \"tidoust\"\n  ],\n  \"shortName\": \"presentation-api\",\n  \"repo-type\": \"rec-track\"\n}"
           },
           "contributing": {
-            "text": "## Contributing\n\nPlease refer to the group's [Work Mode](https://www.w3.org/wiki/Second_Screen/Work_Mode).\n\nContributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Software and Document License](http://www.w3.org/Consortium/Legal/copyright-\nsoftware). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n\n# Tests\n\nFor normative changes, a corresponding\n[web-platform-tests](https://github.com/web-platform-tests/wpt) PR is highly appreciated. Typically,\nboth PRs will be merged at the same time. Note that a test change that contradicts the spec should\nnot be merged before the corresponding spec change. If testing is not practical, please explain why\nand if appropriate [file a web-platform-tests issue](https://github.com/web-platform-tests/wpt/issues/new)\nto follow up later. Add the `type:untestable` or `type:missing-coverage` label as appropriate.\n"
+            "text": "## Contributing\n\nPlease refer to the group's [Work Mode](https://www.w3.org/wiki/Second_Screen/Work_Mode).\n\nContributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Software and Document License](http://www.w3.org/Consortium/Legal/copyright-software).\nTo make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n\n# Tests\n\nFor normative changes, a corresponding\n[web-platform-tests](https://github.com/web-platform-tests/wpt) PR is highly appreciated. Typically,\nboth PRs will be merged at the same time. Note that a test change that contradicts the spec should\nnot be merged before the corresponding spec change. If testing is not practical, please explain why\nand if appropriate [file a web-platform-tests issue](https://github.com/web-platform-tests/wpt/issues/new)\nto follow up later. Add the `type:untestable` or `type:missing-coverage` label as appropriate.\n"
           },
           "license": {
             "text": "All documents in this Repository are licensed by contributors\nunder the \n[W3C Software and Document License](http://www.w3.org/Consortium/Legal/copyright-software).\n\n"
@@ -28119,7 +28530,7 @@
           "license": null,
           "codeOfConduct": null,
           "readme": {
-            "text": "# [WebAssembly][webassembly_specification] proposals\n\nProposals follow [this process document](https://github.com/WebAssembly/meetings/blob/master/process/phases.md).\n\n## Standardized proposals\n\n| Proposal                                                             | Champion         |\n| -------------------------------------------------------------------- | ---------------- |\n| [Import/Export of Mutable Globals][import_export_of_mutable_globals] | Ben Smith        |\n\n## Active proposals\n\n### Phase 4 - Standardize the Feature (WG)\n\n| Proposal                                                                       | Champion   |\n| ------------------------------------------------------------------------------ | ---------- |\n| [Non-trapping float-to-int conversions][non-trapping_float-to-int_conversions] | Dan Gohman |\n| [Sign-extension operators][sign-extension_operators]                           | Ben Smith  |\n\n### Phase 3 - Implementation Phase (CG + WG)\n\n| Proposal                           | Champion         |\n| ---------------------------------- | ---------------- |\n| [Multi-value][multi-value]         | Andreas Rossberg |\n| [Reference Types][reference_types] | Andreas Rossberg |\n| [Tail call][tail_call]             | Andreas Rossberg |\n\n### Phase 2 - Proposed Spec Text Available (CG + WG)\n\n| Proposal                                                                                             | Champion         |\n| ---------------------------------------------------------------------------------------------------- | ---------------- |\n| [JavaScript BigInt to WebAssembly i64 integration][javascript_bigint_to_webassembly_i64_integration] | Dan Ehrenberg    |\n| [Bulk memory operations][bulk_memory_operations]                                                     | Ben Smith        |\n| [Threads][threads]                                                                                   | Ben Smith        |\n\n### Phase 1 - Feature Proposal (CG)\n\n| Proposal                                                                                         | Champion                    |\n| ------------------------------------------------------------------------------------------------ | --------------------------- |\n| [Custom Annotation Syntax in the Text Format][custom_annotation_syntax_in_the_text_format]       | Andreas Rossberg            |\n| [ECMAScript module integration][ecmascript_module_integration]                                   | Lin Clark                   |\n| [Exception handling][exception_handling]                                                         | Heejin Ahn                  |\n| [Fixed-width SIMD][fixed-width_simd]                                                             | Peter Jensen and Arun Purushan   |\n| [Garbage collection][garbage_collection]                                                         | Andreas Rossberg            |\n| [Host bindings][host_bindings]                                                                   | Luke Wagner                 |\n| [Type Reflection for WebAssembly JavaScript API][type_reflection_for_webassembly_javascript_api] | Till Schneidereit           |\n| [WebAssembly C and C++ API][wasm_c_api]                                                          | Andreas Rossberg            |\n\n### Phase 0 - Pre-Proposal (CG)\n\n| Proposal                                                   | Champion         |\n| ---------------------------------------------------------- | ---------------- |\n| [Typed Function References][function_references]           | Andreas Rossberg |\n| [Unmanaged closures][unmanaged_closures]                   | Mark Miller      |\n| [Web Content Security Policy][web_content_security_policy] | Ben Titzer       |\n| [Funclets: Flexible Intraprocedural Control Flow][funclets]| Dan Gohman       |\n\n### Contributing new proposals\n\nPlease see [Contributing to WebAssembly](https://github.com/WebAssembly/design/blob/master/Contributing.md) for the most up-to-date information on contributing proposals to standard.\n\n[bulk_memory_operations]: https://github.com/webassembly/bulk-memory-operations\n[custom_annotation_syntax_in_the_text_format]: https://github.com/WebAssembly/annotations/blob/master/proposals/annotations/Overview.md\n[ecmascript_module_integration]: https://github.com/webassembly/esm-integration\n[exception_handling]: https://github.com/WebAssembly/exception-handling/blob/master/proposals/Exceptions.md\n[fixed-width_simd]: https://github.com/webassembly/simd/blob/master/proposals/simd/SIMD.md\n[function_references]: https://github.com/WebAssembly/function-references\n[garbage_collection]: https://github.com/webassembly/gc/blob/master/proposals/gc/Overview.md\n[host_bindings]: https://github.com/webassembly/host-bindings\n[import_export_of_mutable_globals]: https://github.com/WebAssembly/mutable-global\n[javascript_bigint_to_webassembly_i64_integration]: https://github.com/WebAssembly/JS-BigInt-integration\n[non-trapping_float-to-int_conversions]: https://github.com/WebAssembly/nontrapping-float-to-int-conversions\n[multi-value]: https://github.com/WebAssembly/multi-value\n[reference_types]: https://github.com/WebAssembly/reference-types\n[sign-extension_operators]: https://github.com/WebAssembly/sign-extension-ops/blob/master/proposals/sign-extension-ops/Overview.md\n[tail_call]: https://github.com/webassembly/tail-call\n[threads]: https://github.com/webassembly/threads/blob/master/proposals/threads/Overview.md\n[type_reflection_for_webassembly_javascript_api]: https://github.com/webassembly/js-types/blob/master/proposals/js-types/Overview.md\n[unmanaged_closures]: https://github.com/WebAssembly/proposals/issues/6\n[wasm_c_api]: https://github.com/WebAssembly/wasm-c-api\n[web_content_security_policy]: https://github.com/WebAssembly/content-security-policy/blob/master/proposals/CSP.md\n[webassembly_specification]: https://github.com/WebAssembly/spec\n[funclets]: https://github.com/WebAssembly/funclets\n"
+            "text": "# [WebAssembly][webassembly_specification] proposals\n\nProposals follow [this process document](https://github.com/WebAssembly/meetings/blob/master/process/phases.md).\n\n## Standardized proposals\n\n| Proposal                                                             | Champion         |\n| -------------------------------------------------------------------- | ---------------- |\n| [Import/Export of Mutable Globals][import_export_of_mutable_globals] | Ben Smith        |\n\n## Active proposals\n\n### Phase 4 - Standardize the Feature (WG)\n\n| Proposal                                                                       | Champion   |\n| ------------------------------------------------------------------------------ | ---------- |\n| [Non-trapping float-to-int conversions][non-trapping_float-to-int_conversions] | Dan Gohman |\n| [Sign-extension operators][sign-extension_operators]                           | Ben Smith  |\n\n### Phase 3 - Implementation Phase (CG + WG)\n\n| Proposal                                         | Champion         |\n| ------------------------------------------------ | ---------------- |\n| [Multi-value][multi-value]                       | Andreas Rossberg |\n| [Reference Types][reference_types]               | Andreas Rossberg |\n| [Tail call][tail_call]                           | Andreas Rossberg |\n| [Bulk memory operations][bulk_memory_operations] | Ben Smith        |\n\n### Phase 2 - Proposed Spec Text Available (CG + WG)\n\n| Proposal                                                                                             | Champion         |\n| ---------------------------------------------------------------------------------------------------- | ---------------- |\n| [JavaScript BigInt to WebAssembly i64 integration][javascript_bigint_to_webassembly_i64_integration] | Dan Ehrenberg    |\n| [Threads][threads]                                                                                   | Ben Smith        |\n\n### Phase 1 - Feature Proposal (CG)\n\n| Proposal                                                                                         | Champion                         |\n| ------------------------------------------------------------------------------------------------ | -------------------------------- |\n| [Custom Annotation Syntax in the Text Format][custom_annotation_syntax_in_the_text_format]       | Andreas Rossberg                 |\n| [ECMAScript module integration][ecmascript_module_integration]                                   | Lin Clark                        |\n| [Exception handling][exception_handling]                                                         | Heejin Ahn                       |\n| [Fixed-width SIMD][fixed-width_simd]                                                             | Peter Jensen and Arun Purushan   |\n| [Garbage collection][garbage_collection]                                                         | Andreas Rossberg                 |\n| [Host bindings][host_bindings]                                                                   | Luke Wagner                      |\n| [Type Reflection for WebAssembly JavaScript API][type_reflection_for_webassembly_javascript_api] | Till Schneidereit                |\n| [WebAssembly C and C++ API][wasm_c_api]                                                          | Andreas Rossberg                 |\n\n### Phase 0 - Pre-Proposal (CG)\n\n| Proposal                                                   | Champion         |\n| ---------------------------------------------------------- | ---------------- |\n| [Typed Function References][function_references]           | Andreas Rossberg |\n| [Unmanaged closures][unmanaged_closures]                   | Mark Miller      |\n| [Web Content Security Policy][web_content_security_policy] | Ben Titzer       |\n| [Funclets: Flexible Intraprocedural Control Flow][funclets]| Dan Gohman       |\n\n### Contributing new proposals\n\nPlease see [Contributing to WebAssembly](https://github.com/WebAssembly/design/blob/master/Contributing.md) for the most up-to-date information on contributing proposals to standard.\n\n[bulk_memory_operations]: https://github.com/webassembly/bulk-memory-operations\n[custom_annotation_syntax_in_the_text_format]: https://github.com/WebAssembly/annotations/blob/master/proposals/annotations/Overview.md\n[ecmascript_module_integration]: https://github.com/webassembly/esm-integration\n[exception_handling]: https://github.com/WebAssembly/exception-handling/blob/master/proposals/Exceptions.md\n[fixed-width_simd]: https://github.com/webassembly/simd/blob/master/proposals/simd/SIMD.md\n[function_references]: https://github.com/WebAssembly/function-references\n[garbage_collection]: https://github.com/webassembly/gc/blob/master/proposals/gc/Overview.md\n[host_bindings]: https://github.com/webassembly/host-bindings\n[import_export_of_mutable_globals]: https://github.com/WebAssembly/mutable-global\n[javascript_bigint_to_webassembly_i64_integration]: https://github.com/WebAssembly/JS-BigInt-integration\n[non-trapping_float-to-int_conversions]: https://github.com/WebAssembly/nontrapping-float-to-int-conversions\n[multi-value]: https://github.com/WebAssembly/multi-value\n[reference_types]: https://github.com/WebAssembly/reference-types\n[sign-extension_operators]: https://github.com/WebAssembly/sign-extension-ops/blob/master/proposals/sign-extension-ops/Overview.md\n[tail_call]: https://github.com/webassembly/tail-call\n[threads]: https://github.com/webassembly/threads/blob/master/proposals/threads/Overview.md\n[type_reflection_for_webassembly_javascript_api]: https://github.com/webassembly/js-types/blob/master/proposals/js-types/Overview.md\n[unmanaged_closures]: https://github.com/WebAssembly/proposals/issues/6\n[wasm_c_api]: https://github.com/WebAssembly/wasm-c-api\n[web_content_security_policy]: https://github.com/WebAssembly/content-security-policy/blob/master/proposals/CSP.md\n[webassembly_specification]: https://github.com/WebAssembly/spec\n[funclets]: https://github.com/WebAssembly/funclets\n"
           },
           "fullName": "WebAssembly/proposals"
         },
@@ -28423,6 +28834,46 @@
           },
           "fullName": "w3c/media-source",
           "hasRecTrack": true
+        },
+        {
+          "id": "MDEwOlJlcG9zaXRvcnkxMzk2MDI2Mw==",
+          "name": "serial",
+          "owner": {
+            "login": "WICG"
+          },
+          "isArchived": false,
+          "homepageUrl": "https://wicg.github.io/serial/",
+          "description": "Serial ports API for the platform. ",
+          "labels": {
+            "edges": [
+              {
+                "node": {
+                  "name": "good first issue",
+                  "color": "bfe5bf"
+                }
+              }
+            ],
+            "pageInfo": {
+              "endCursor": "Y3Vyc29yOnYyOpHOLqh6mA==",
+              "hasNextPage": false
+            }
+          },
+          "w3cjson": {
+            "text": " {\n    \"group\":      [\"80485\"]\n,   \"contacts\":   [\"marcoscaceres\",\"reillyeon\"]\n}\n"
+          },
+          "contributing": {
+            "text": "For significant contributions (i.e., non-editorial changes to the API), \nwe require you to become a member of the \n[Web Platform Incubator CG](http://www.w3.org/community/wicg/). This helps \nkeep the spec royalty free and gives us some patent protection! \n\nThis spec is written using [ReSpec](http://w3.org/respec/). For\nconfiguration options, etc. please see the [ReSpec\nrefeference](www.w3.org/respec/ref.html).\n\nPlease make sure you run [HTML5 Tidy](http://w3c.github.io/tidy-html5/) \nbefore sending a Pull Request:\n\n```Bash \ntidy -config tidyconfig.txt -o index.html index.html \n```\n"
+          },
+          "license": {
+            "text": "All Reports in this Repository are licensed by Contributors\nunder the\n[W3C Software and Document License](http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document).\n\nContributions to Specifications are made under the\n[W3C CLA](https://www.w3.org/community/about/agreements/cla/).\n\nContributions to Test Suites are made under the\n[W3C 3-clause BSD License](https://www.w3.org/Consortium/Legal/2008/03-bsd-license.html)\n\n"
+          },
+          "codeOfConduct": {
+            "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n"
+          },
+          "readme": {
+            "text": "# Serial API\n\n[Serial ports API](http://wicg.github.io/serial/) for the platform. \n\n### Code of conduct\n\nWe are committed to providing a friendly, safe and welcoming environment for all. Please read and respect the [W3C Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n"
+          },
+          "fullName": "WICG/serial"
         },
         {
           "id": "MDEwOlJlcG9zaXRvcnkxNzIwNzExMw==",
@@ -29043,80 +29494,6 @@
             "text": "# Historical\nThis API was superseded by the [AOM API](https://github.com/WICG/aom).  \n\n# Historical - a11yapi\n[View spec online](https://wicg.github.io/historical-a11yapi/)\n\nBrowser-based applications need an API to use the accessibility features of modern operating systems, and to manage input across a wide array of devices (touch, mouse, keyboard, pen, voice, etc.). Accessibility in browsers is enabled today by putting markup in web content, but this approach can be difficult for app developers to apply in practice.\n\nThe intent of this work is to take different APIs that are under development for this purpose, specifically Microsoft [WAPA](https://github.com/cyns/wapa) proposal, the Mozilla Web Accessibility API project, and the [IndieUI Events draft](http://www.w3.org/TR/indie-ui-events/), and native platform APIs and work toward a single specification, guidance for mapping to platform APIs, and suggestions to platform implementers on how to fill holes in those APIs.\n"
           },
           "fullName": "WICG/historical-a11yapi"
-        },
-        {
-          "id": "MDEwOlJlcG9zaXRvcnkzNTMwNTc3Mw==",
-          "name": "webusb",
-          "owner": {
-            "login": "WICG"
-          },
-          "isArchived": false,
-          "homepageUrl": "https://wicg.github.io/webusb/",
-          "description": "Connecting hardware to the web.",
-          "labels": {
-            "edges": [
-              {
-                "node": {
-                  "name": "bug",
-                  "color": "fc2929"
-                }
-              },
-              {
-                "node": {
-                  "name": "duplicate",
-                  "color": "cccccc"
-                }
-              },
-              {
-                "node": {
-                  "name": "enhancement",
-                  "color": "84b6eb"
-                }
-              },
-              {
-                "node": {
-                  "name": "help wanted",
-                  "color": "159818"
-                }
-              },
-              {
-                "node": {
-                  "name": "invalid",
-                  "color": "e6e6e6"
-                }
-              },
-              {
-                "node": {
-                  "name": "question",
-                  "color": "cc317c"
-                }
-              },
-              {
-                "node": {
-                  "name": "wontfix",
-                  "color": "ffffff"
-                }
-              }
-            ],
-            "pageInfo": {
-              "endCursor": "Y3Vyc29yOnYyOpHODHnHTg==",
-              "hasNextPage": false
-            }
-          },
-          "w3cjson": {
-            "text": " {\n    \"group\":      [\"80485\"]\n,   \"contacts\":   [\"yoavweiss\"]\n,   \"shortName\":  \"webusb\"\n}"
-          },
-          "contributing": {
-            "text": "# Web Platform Incubator Community Group\n\nThis repository is being used for work in the Web Platform Incubator Community Group, governed by the [W3C Community License \nAgreement (CLA)](http://www.w3.org/community/about/agreements/cla/). To contribute, you must join \nthe CG. \n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request's body or in subsequent comments.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n\n# Tests\n\nFor normative changes, a corresponding\n[web-platform-tests](https://github.com/web-platform-tests/wpt) PR is highly appreciated. Typically,\nboth PRs will be merged at the same time. Note that a test change that contradicts the spec should\nnot be merged before the corresponding spec change. If testing is not practical, please explain why\nand if appropriate [file an issue](https://github.com/web-platform-tests/wpt/issues/new) to follow\nup later. Add the `type:untestable` or `type:missing-coverage` label as appropriate.\n"
-          },
-          "license": {
-            "text": "All Reports in this Repository are licensed by Contributors under the \n[W3C Software and Document\nLicense](http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document). Contributions to\nSpecifications are made under the [W3C CLA](https://www.w3.org/community/about/agreements/cla/).\n\n"
-          },
-          "codeOfConduct": null,
-          "readme": {
-            "text": "WebUSB\n======\n\nConnecting hardware to the web.\n\n[![Build status](https://travis-ci.org/WICG/webusb.svg?branch=master)](https://travis-ci.org/WICG/webusb?branch=master)\n\nDocuments\n---------\n\n* [Specification](https://wicg.github.io/webusb/) (Editor's Draft)\n* [Test API Specification](https://wicg.github.io/webusb/test/) (Editor's Draft)\n\nCommunication\n-------------\n\n* [Stack Overflow](https://stackoverflow.com/questions/tagged/webusb) for questions & answers about **using** WebUSB.\n* [Issue Tracker](https://github.com/wicg/webusb/issues) for **specification** issues.\n* [Chromium Issue Tracker](https://bugs.chromium.org/p/chromium/issues/list?q=component%3ABlink>USB) for Chrome **implementation** issues.\n\nImplementation Status\n---------------------\n\n* WebUSB is available in Chrome 61 for Android, Chrome OS, Linux, macOS and Windows.\n* A port for Node.js also exists - https://github.com/thegecko/webusb\n\n**Note:** The WebUSB landing page notification is currently disabled in Chrome on Windows due to [Chromium issue 656702](https://crbug.com/656702). Implementation of new, more stable USB support for Windows is tracked by Chromium issues [422562](https://crbug.com/422562) and [637404](https://crbug.com/637404).\n\nDemos\n-----\n\n* [Arduino Integration](https://github.com/webusb/arduino/)\n* [WebLight](https://github.com/sowbug/weblight)\n* [Yubikey HOTP](https://github.com/santiagotorres/yubikey-webusb)\n* [USB Device Firmware Upgrade (DFU)](https://github.com/devanlai/webdfu)\n* [WebADB](https://github.com/webadb/webadb.js)\n* [Zephyr JS IDE](https://github.com/01org/zephyrjs-ide), [hosted IDE](https://01org.github.io/zephyrjs-ide/)\n\nArticles\n--------\n\n* [Access USB Devices on the Web](https://developers.google.com/web/updates/2016/03/access-usb-devices-on-the-web)\n* [The WebUSB Security Model](https://medium.com/dev-channel/the-webusb-security-model-f48ee04de0ab)\n* [WebUSB and JavaScript Robotics](http://iceddev.com/blog/webusb-and-javascript-robotics/) (PageNodes)\n* [Program a smart device directly, no install needed](https://medium.com/@kennethrohde/program-a-smart-device-directly-no-install-needed-cd8b29320d76) (Arduino running Zephyr)\n* [Web enabling legacy devices](https://medium.com/@larsgk/web-enabling-legacy-devices-dc3ecb9400ed) Discusses USB CDC (USB Serial devices)\n"
-          },
-          "fullName": "WICG/webusb"
         },
         {
           "id": "MDEwOlJlcG9zaXRvcnkzODM4MjU0Mw==",
@@ -30625,92 +31002,6 @@
             "text": "# HTMLVideoElement Playback Quality\n\nWICG repository for HTMLVideoElement extension for playback quality\n\nThis group is working on an improved version of `HTMLVideoELement.getVideoPlaybackQuality()` from the [MSE specification](https://w3c.github.io/media-source/#idl-def-VideoPlaybackQuality).\n"
           },
           "fullName": "WICG/media-playback-quality"
-        },
-        {
-          "id": "MDEwOlJlcG9zaXRvcnk2MDY3MDEyNw==",
-          "name": "web-share",
-          "owner": {
-            "login": "WICG"
-          },
-          "isArchived": false,
-          "homepageUrl": "https://wicg.github.io/web-share/",
-          "description": "Web API proposal for sharing data from a web page",
-          "labels": {
-            "edges": [
-              {
-                "node": {
-                  "name": "bug",
-                  "color": "ee0701"
-                }
-              },
-              {
-                "node": {
-                  "name": "duplicate",
-                  "color": "cccccc"
-                }
-              },
-              {
-                "node": {
-                  "name": "enhancement",
-                  "color": "84b6eb"
-                }
-              },
-              {
-                "node": {
-                  "name": "help wanted",
-                  "color": "128A0C"
-                }
-              },
-              {
-                "node": {
-                  "name": "invalid",
-                  "color": "e6e6e6"
-                }
-              },
-              {
-                "node": {
-                  "name": "question",
-                  "color": "cc317c"
-                }
-              },
-              {
-                "node": {
-                  "name": "wontfix",
-                  "color": "ffffff"
-                }
-              },
-              {
-                "node": {
-                  "name": "18n-comment",
-                  "color": "d65eac"
-                }
-              },
-              {
-                "node": {
-                  "name": "i18n-tracking",
-                  "color": "2a8191"
-                }
-              }
-            ],
-            "pageInfo": {
-              "endCursor": "Y3Vyc29yOnYyOpHOK4QOjw==",
-              "hasNextPage": false
-            }
-          },
-          "w3cjson": {
-            "text": " {\n    \"group\":      [\"80485\"]\n,   \"contacts\":   [\"marcoscaceres\"]\n,   \"shortName\":  \"web-share\"\n}"
-          },
-          "contributing": {
-            "text": "# Web Platform Incubator Community Group\n\nThis repository is being used for work in the W3C Web Platform Incubator\nCommunity Group, governed by the [W3C Community License Agreement\n(CLA)](http://www.w3.org/community/about/agreements/cla/). To make substantive\ncontributions, you must join the CG.\n\nIf you are not the sole contributor to a contribution (pull request), please\nidentify all contributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per\nline as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part\nin designing the feature, you can remove yourself with the above syntax.\n"
-          },
-          "license": {
-            "text": "All Reports in this Repository are licensed by Contributors\nunder the\n[W3C Software and Document License](http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document).\n\nContributions to Specifications are made under the\n[W3C CLA](https://www.w3.org/community/about/agreements/cla/).\n"
-          },
-          "codeOfConduct": null,
-          "readme": {
-            "text": "# Web Share API\n\n**Written**: 2016-06-08, **Updated**: 2017-07-13\n\n**Web Share** is a Web platform API for sharing text, URLs and images to an\narbitrary destination of the user's choice:\n\n```js\nnavigator.share({title: 'Example Page', url: 'https://example.com'});\n```\n\n## Implementation status\n\n* The Level 1 API (images/files not supported) is shipping in:\n  * Google Chrome 61 on Android.\n  * [Safari 66](https://developer.apple.com/safari/technology-preview/release-notes/#r66).\n* The Level 2 API is a work in progress and should not be implemented.\n\n## Links\n\n* [Explainer document](docs/explainer.md), a high-level overview of the proposal.\n* [Specification - Level 1](https://wicg.github.io/web-share/).\n* [Specification - Level 2](https://wicg.github.io/web-share/level-2/).\n* [Native integration survey](docs/native.md), for platform-specific matters.\n* [Web platform\n  tests](https://github.com/web-platform-tests/wpt/tree/master/web-share), for\n  automatic and manual testing against an implementation.\n\nThis is a product of the [Ballista\nproject](https://github.com/chromium/ballista), which aims to explore\nwebsite-to-website and website-to-native interoperability.\n\n## Licensing and contributions\n\nSee [LICENSE](LICENSE.md) and [CONTRIBUTING](CONTRIBUTING.md).\n"
-          },
-          "fullName": "WICG/web-share"
         },
         {
           "id": "MDEwOlJlcG9zaXRvcnk2MDY3MDkxMQ==",
@@ -32565,6 +32856,96 @@
             "text": "# Document User Activation Delegation Web Standard\n\n## Explainer\n\nAn [explainer document](explainer.md) is available in the repository and describes the use cases and requirements used to define the API in addition of some optional use cases and requirements that can be discussed with the community. The explainer document also contains a proposed API to kick off the discussion.\n\n## Code of conduct\n\nWe are committed to providing a friendly, safe and welcoming environment for all. Please read and\nrespect the [W3C Code of Conduct](https://www.w3.org/Consortium/cepc/).\n"
           },
           "fullName": "WICG/gesture-delegation"
+        },
+        {
+          "id": "MDEwOlJlcG9zaXRvcnkxMDM2NjAxNTk=",
+          "name": "trusted-types",
+          "owner": {
+            "login": "WICG"
+          },
+          "isArchived": false,
+          "homepageUrl": "",
+          "description": "A browser API that aims to prevent DOM-Based Cross Site Scripting in modern web applications.",
+          "labels": {
+            "edges": [
+              {
+                "node": {
+                  "name": "bug",
+                  "color": "ee0701"
+                }
+              },
+              {
+                "node": {
+                  "name": "duplicate",
+                  "color": "cccccc"
+                }
+              },
+              {
+                "node": {
+                  "name": "enhancement",
+                  "color": "84b6eb"
+                }
+              },
+              {
+                "node": {
+                  "name": "help wanted",
+                  "color": "33aa3f"
+                }
+              },
+              {
+                "node": {
+                  "name": "good first issue",
+                  "color": "7057ff"
+                }
+              },
+              {
+                "node": {
+                  "name": "invalid",
+                  "color": "e6e6e6"
+                }
+              },
+              {
+                "node": {
+                  "name": "question",
+                  "color": "cc317c"
+                }
+              },
+              {
+                "node": {
+                  "name": "wontfix",
+                  "color": "ffffff"
+                }
+              },
+              {
+                "node": {
+                  "name": "polyfill",
+                  "color": "f9d0c4"
+                }
+              },
+              {
+                "node": {
+                  "name": "spec",
+                  "color": "0052cc"
+                }
+              }
+            ],
+            "pageInfo": {
+              "endCursor": "Y3Vyc29yOnYyOpHOKeX7sQ==",
+              "hasNextPage": true
+            }
+          },
+          "w3cjson": null,
+          "contributing": {
+            "text": "# Web Platform Incubator Community Group\n\nThis repository is being used for work in the Web Platform Incubator Community Group, governed by the [W3C Community License\nAgreement (CLA)](http://www.w3.org/community/about/agreements/cla/). To contribute, you must join\nthe CG.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request's body or in subsequent comments.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n\n# Tests\n\nFor normative changes, a corresponding\n[web-platform-tests](https://github.com/web-platform-tests/wpt) PR is highly appreciated. Typically,\nboth PRs will be merged at the same time. Note that a test change that contradicts the spec should\nnot be merged before the corresponding spec change. If testing is not practical, please explain why\nand if appropriate [file an issue](https://github.com/web-platform-tests/wpt/issues/new) to follow\nup later. Add the `type:untestable` or `type:missing-coverage` label as appropriate.\n\n# Spec Changes\n\nIf you would like to propose a spec change, please send a PR that changes\n[spec/index.bs][] *and* regenerate [dist/spec/index.html][].\n\nHere's a workflow to get you started:\n\n1.  Fork github.com/WICG/trusted-types\n1.  `git clone` your fork and `cd trusted-types`\n1.  `npm install` to get everything set up.\n1.  Run `git checkout -b your-branch-name` to setup a branch to hold your patch.\n1.  Optionally, [install bikeshed](https://tabatkins.github.io/bikeshed/#installing)\n1.  Run `node_modules/.bin/gulp spec.watch` which will regnerate `dist/spec/index.html`\n    every time you modify [spec/index.bs][].\n1.  Open a browser to your local [dist/spec/index.html][].\n1.  Until you're happy, make edits to your local [spec/index.bs][].\n    To help, you might refer to:\n    *   The [bikeshed docs](https://tabatkins.github.io/bikeshed/)\n    *   The [bikeshed doc source](https://github.com/tabatkins/bikeshed/blob/master/docs/index.bs)\n        which shows bikeshed in practice.\n    *   The source for the other specifications like\n        [CSP3](https://github.com/w3c/webappsec-csp/blob/master/index.src.html)\n1.  Be aware of [issue 112](https://github.com/WICG/trusted-types/issues/112) if you're\n    having trouble with the watcher.\n1.  Maybe locally enable\n    [`Complain About: broken-links yes`](https://github.com/WICG/trusted-types/blob/9445a47f720f255d066621ba6975228e558453f5/spec/index.bs#L18)\n    and double check that there are no broken links.\n    Broken-link checking is slooow during development.\n1.  Commit and push your branch to your fork and send us a PR.\n1.  Check the PR to see if bots need you to sign any contributor agreements.\n\nOnce your PR is merged, it'll be available at\nhttps://wicg.github.io/trusted-types/dist/spec/\nbut if you want a shareable link to your PR, try filling in the blanks:\n\n> <tt>https\\://raw.githack.com/<b>\\<YOUR-GITHUB-HANDLE\\></b>/trusted-types/<b>\\<YOUR-BRANCH-NAME\\></b>/dist/spec/index.html</tt>\n\n\n[spec/index.bs]: https://github.com/WICG/trusted-types/blob/master/spec/index.bs\n[dist/spec/index.html]: https://github.com/WICG/trusted-types/blob/master/dist/spec/index.html\n"
+          },
+          "license": {
+            "text": "All Reports in this Repository are licensed by Contributors under the\n[W3C Software and Document\nLicense](http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document). Contributions to\nSpecifications are made under the [W3C CLA](https://www.w3.org/community/about/agreements/cla/).\n"
+          },
+          "codeOfConduct": null,
+          "readme": {
+            "text": "# Explainer: Trusted Types for DOM Manipulation\n\nSee the [specification draft](https://wicg.github.io/trusted-types/dist/spec/) for a more comprehensive description of the API.\n\n[![Build Status](https://travis-ci.org/WICG/trusted-types.svg)](https://travis-ci.org/WICG/trusted-types)\n\n## The Problem\n\nAs described in Christoph Kern's \"[Securing the Tangled Web](https://research.google.com/pubs/pub42934.html)\",\nGoogle has been fairly successful at combating DOM-based XSS attacks by relying on a set of\n[typed objects](https://github.com/google/safe-html-types/blob/master/doc/index.md) instead of\nstrings to represent HTML snippets, URLs, etc. Compilation-time analysis done for JavaScript code\nensures that only these types can be used with various DOM APIs that can be used as DOM-based XSS\nsinks (`el.innerHTML`, `location.href`, `ScriptElement.src` and so on). These types do not obliterate\nDOM XSS in themselves, as authors may still create an instance of a type with an untrusted value.\nInstead, it simplifies the security analysis of the application - security reviewers don't need to\ndeeply understand and review each and every usage of a given *sink*, but can instead focus their\nefforts on the code that *generates* the typed objects. As long as these \"trusted\" types are always\ngenerated from a small, reviewable subset of overall application code - safe templating libraries,\nsanitizers, and so on, developers can have a high degree of confidence that the risk of DOM-based\nXSS remains low.\n\nGoogle's internal implementation has a number of bells and whistles (and makes a number of\nassumptions about requirements) that probably aren't suitable for the world at large. It would be\ninteresting to explore how we might extract some more generic version of this concept from those\ninternal tools in order to bring this kind of functionality to the web in a generic fashion.\nFor example, different applications might have different opinions about what makes a particular\nHTML snippet \"safe\", but regardless of the definition, it seems clear that the browser is\nwell-positioned to enforce type constraints dynamically at runtime. That would be a substantial\nimprovement over the tight link between the type system and the compiler.\n\n## A Possible Approach\n\nWhile we could jam all sorts of sanitization functionality into such a system, it seems reasonable\nto start small until we know how existing templating systems and sanitizers will layer any\nprimitives we introduce into their existing systems. The following approach seems compelling as a\nfirst step:\n\n1.  Introduce a number of types that correspond to the XSS sinks we wish to protect. For example,\n    we could define a `TrustedHTML` object that marks it as suitable for using via `innerHTML`\n    (instead of a string). Or a `TrustedScriptURL` object that's suitable to be assigned to a\n    `ScriptElement.src` attribute.\n\n    These types should be pretty minimal in nature, making them polyfillable in browsers that don't\n    support them natively.\n\n2.  Enumerate all the XSS sinks we wish to protect, and overload each of them with a variant that\n    accepts the matching type. For example, `Element.innerHTML`'s setter could accept `(DOMString or TrustedHTML)`,\n    and we could overload `document.write(DOMString)` with `document.write(TrustedHTML)`.\n\n    As above, this mechanism should be polyfillable; the polyfilled types define stringifiers which\n    would enable them to be automatically cast into strings when called on existing setters.\n\n3.  Introduce a mechanism for disabling the raw string version of each of the sinks identified\n    above. For example, `Content-Security-Policy: trusted-types`\n    header could cause the `innerHTML` setter to throw a `TypeError` if a raw string was passed in.\n\n    This is possible to polyfill for many setters and\n    methods, apart from the ones that aren't marked as [`[Unforgeable]`](https://heycam.github.io/webidl/#Unforgeable).\n\n### Trusted Types\n\n*   **TrustedHTML**: This type would be used to represent a trusted snippet that could be passed\n    into an HTML context.\n\n    ```\n    interface TrustedHTML {\n      stringifier;\n    }\n    ```\n\n*   **TrustedURL**: This type would be used to represent a trusted URL that could be used to load\n    non-scripting resources or navigate a frame.\n\n    ```\n    interface TrustedURL {\n      stringifier;\n    }\n    ```\n\n*   **TrustedScriptURL**: This type would be used to represent a URL that could be used to load\n    resources that may result in script execution in the current document.\n\n    ```\n    interface TrustedScriptURL {\n      stringifier;\n    }\n    ```\n\n*   **TrustedScript**: This type would be used to represent a trusted JavaScript code block i.e.\n    something that is trusted by the author to be executed by adding it to a `<script>` element\n    content, inline event handler or passing to an `eval` function family.\n\n    ```\n    interface TrustedScript {\n      stringifier;\n    }\n    ```\n\n### Policies\n\nIntroducing and requiring typed objects is, sadly, not sufficient: Exposing raw Trusted Types constructors to the web authors presents a significant problem, in that\nit only marginally improves the situation: while it allows certain libraries to produce and use typed\nvalues in place of strings, it also allows constructing the types at will (see https://github.com/WICG/trusted-types/issues/31), and every\ntyped value construction in the application is a potential DOM XSS. Consider the following code\nsnippet from the previous version of the API:\n\n```javascript\n// DEPRECATED.\nnode.innerHTML = TrustedHTML.unsafelyCreate(variable)\n```\n\nReasoning about DOM XSS susceptibility of an application riddled with the statements like above\nis just as hard, as it was in the original DOM API. Therefore we propose the concept of *policies*\n(not to be confused with CSP).\n\nRaw typed object constructors from a string are forbidden. Instead, we introduce a programmatic\nJavaScript API, allowing web authors to specify how the aforementioned objects can be created.\nAn application can create multiple named policies for a document. Typed objects can be constructed from a\nstring only by invoking one of those policies.\n\nFor example, an application may define a policy, in which `TrustedScriptURL` is a same-origin URL or the domain is from a whitelisted domain list. A\nseparate policy may pass a string through a custom HTML sanitization function before producing a\n`TrustedHTML` object. As authors may create multiple policies with different rules, application may\nhand over certain policies to separate submodules of its codebase, guarding how those submodules can\ninteract with DOM.\n\nFor example: the application author trusts the Foo library not to cause DOM XSS (it's known\nto have a very robust HTML sanitizer, was already security reviewed and is well-maintained), so it\nmay initialize Foo with a no-op policy. At the same time, a 3rd party chat widget, or an Analytics\nscript should only be trusted to create `<div>` and `<img>` elements, so it's initialized with a\npolicy that only allows for that, and escapes (or removes) any other content.\n\nSuch API allows the authors to specify a set of policies that guard the typed objects creation.\nAs valid trusted type objects must originate from a policy, those policies alone form the **trusted codebase in regards to DOM XSS**, reducing the attack and security review surface considerably.\n\n#### Policies API\n\n```\ninterface TrustedTypePolicyFactory {\n    TrustedTypePolicy createPolicy(DOMString policyName, TrustedTypeInnerPolicy policy, optional boolean expose = false);\n    TrustedTypePolicy getExposedPolicy(DOMString policyName);\n    Array<DOMString> getPolicyNames();\n}\n```\nWe propose to provide a `TrustedTypePolicyFactory` implementation under `window.TrustedTypes`. The most important function available in a `TrustedTypePolicyFactory` is `createPolicy`.\n\nThe policy rules for creating individual types are configured via the properties of `TrustedTypeInnerPolicy` object. Note that the functions operate on strings. The actual type construction is provided by the private API, not exposed to the authors.\n\n```\ninterface TrustedTypeInnerPolicy {\n    string createHTML(string);\n    string createURL(string);\n    string createScriptURL(string);\n    string createScript(string);\n}\n```\n\nPolicy (with a unique name) can be created like this:\n\n```javascript\nconst myPolicy = TrustedTypes.createPolicy('https://example.com#mypolicy', {\n    createHTML: (s) => { return customSanitize(s) },\n    createURL: (s) => { /* parse and validate the url. throw if non-conformant */ },\n})\n```\n\nThe policy object is returned, and can be used as a capability to create typed objects i.e. code parts without a reference to the policy object cannot use it.\n\nOptionally, the policy may be exposed globally by calling `createPolicy` with `expose` argument set to `true`. Exposed policies can be retrieved via `TrustedTypes.getExposedPolicy`. This mode is recommended only for the strict, sanitizing, \"last resort\" type of policies.\n\nThe policy object can be used directly to create typed values that conform to its rules:\n\n```javascript\n const trustedHtml = myPolicy.createHTML('<p>ok<script>not ok</script></p>')\n document.body.innerHTML = trustedHtml // does not throw.\n trustedHtml.toString() // <p>ok</p>, as the customSanitize removed the script.\n```\n\nThis forms the core of the API, but there are additional features in development, it's best to see\nthe polyfill code.\n\n#### Limiting policies\n\nWe propose to allow for whitelisting policy names in a CSP, e.g. in a following fashion:\n```\nContent-Security-Policy: trusted-types foo bar\n```\n\nThat will assure that no additional policies are created at runtime. Creating a policy with a name\nthat was already created, or was not specified in the CSP throws, so introduction of non-reviewed\npolicies breaks the application functionally.\n\n#### Default policy\n\nThere is an experimental support for a default policy that allows applications\nto use strings with the injection sinks. These strings would be passed to a single\nuser-defined policy that sanitizes the value or rejects it. The intention is to\nallow for a gradual migration of the code from strings towards Trusted Types.\nPlease check the [specification draft](https://wicg.github.io/trusted-types/dist/spec/#default-policy-hdr) for details.\n\n### DOM Sinks\n\n*   **HTML Contexts**: Given something like `typedef (DOMString or TrustedHTML) HTMLString`, we'd\n    poke at a number of methods and attribute setters to accept the new type:\n\n    ```\n    partial interface Element {\n        attribute HTMLString innerHTML;\n        attribute HTMLString outerHTML;\n        void insertAdjacentHTML(DOMString position, HTMLString text);\n    };\n    ```\n\n    ```\n    partial interface Document {\n        void write(HTMLString text);\n        void writeln(HTMLString text);\n    };\n    ```\n\n    ```\n    partial interface DOMParser {\n        Document parseFromString(HTMLString str, SupportedType type);\n    };\n    ```\n\n    ```\n    partial interface Range {\n        DocumentFragment createContextualFragment(HTMLString fragment);\n    };\n    ```\n\n    ```\n    partial interface HTMLIFrameElement {\n         DOMString srcdoc;\n    };\n    ```\n\n*   **URL Contexts**: Given something like `typedef (USVString or TrustedURL) URLString`, we'd poke\n    at a number of methods and attribute setters to accept the new type:\n\n    ```\n    partial interface Location {\n        stringifier attribute URLString href;\n        void assign(URLString url);\n        void replace(URLString url);\n\n        // (These aren't `URLString`, but they should be something)\n        DOMString pathname;\n        DOMString search;\n    };\n    ```\n\n    ```\n    // A few element types go here. `HTMLBaseElement`, `HTMLLinkElement`\n    // `HTMLHyperlinkElementUtils` from a quick skim through HTML.\n    partial interface HTMLXXXElement : HTMLElement {\n        attribute URLString href;\n    };\n    ```\n\n    ```\n    // A few element types go here. `HTMLSourceElement`, `HTMLImageElement`,\n    // `HTMLIFrameElement`, `HTMLTrackElement`, `HTMLMediaElement`,\n    // `HTMLInputElement`,  `HTMLFrameElement`\n    // from a quick skim through HTML.\n    //\n    // The same applies to their SVG variants.\n    partial interface HTMLXXXElement : HTMLElement {\n        attribute URLString src;\n        attribute URLString srcset; // Only `HTMLSourceElement` and `HTMLImageElement`\n    };\n    ```\n\n    ```\n    partial interface HTMLObjectElement : HTMLElement {\n        attribute URLString data;\n        attribute URLString codebase;\n    };\n    ```\n    ```\n    partial interface Document {\n        attribute URLString location;\n    };\n    ```\n\n    ```\n    partial interface Window {\n        attribute URLString location;\n        void open(URLString location);\n    };\n    ```\n\n* **Script URL Context**: Given something like `typedef (USVString or TrustedScriptURL) ScriptURLString`,\n    we'd poke at a number of methods and attribute setters to accept the new type:\n\n    ```\n    partial interface WorkerGlobalScope {\n        void importScripts(ScriptURLString... urls);\n    };\n    ```\n\n    ```\n    // A few element types go here. `HTMLEmbedElement`, `HTMLScriptElement`\n    // from a quick skim through HTML.\n    //\n    // The same applies to their SVG variants.\n    partial interface HTMLXXXElement : HTMLElement {\n        attribute ScriptURLString src;\n    };\n    ```\n\n*   **JavaScript Contexts**: Replace `DOMString` in the following with something\n    reasonable.\n\n    ```\n    partial interface Window {\n        void eval(DOMString code);\n        void setTimeout(DOMString code, int timeout);\n        void setInterval(DOMString code, int timeout);\n    };\n    ```\n\n    ```\n    partial interface HTMLScriptElement : HTMLElement {\n        attribute DOMString innerText;\n        attribute DOMString text;\n        attribute DOMString textContent;\n    };\n    ```\n\n## Open Questions\n\nSome details have still not been sketched out - see [issues](https://github.com/WICG/trusted-types/issues).\n\n## Polyfill\n\nThis repository contains a polyfill implementation. The compiled versions are stored in [`dist` directory](dist/)\n\n### Browsers\nThe es5/es6 builds can be loaded directly in the browsers. There are two variants of the browser polyfill - **api_only** (light) and **full**. The *api_only* variant defines the API, so you can create policies and types. *Full* version also enables the type enforcement in the DOM, based on the CSP policy it infers from the current document (see [src/polyfill/full.js](src/polyfill/full.js)).\n\n```html\n<!-- API only -->\n<script src=\"https://wicg.github.io/trusted-types/dist/es5/trustedtypes.api_only.build.js\"></script>\n<script>\n     const p = TrustedTypes.createPolicy('foo', ...)\n     document.body.innerHTML = p.createHTML('foo'); // works\n     document.body.innerHTML = 'foo'; // but this one works too (no enforcement).\n</script>\n```\n\n```html\n<!-- Full -->\n<script src=\"https://wicg.github.io/trusted-types/dist/es5/trustedtypes.build.js\" data-csp=\"trusted-types foo bar\"></script>\n<script>\n    TrustedTypes.createPolicy('foo', ...);\n    TrustedTypes.createPolicy('unknown', ...); // throws\n    document.body.innerHTML = 'foo'; // throws\n</script>\n\n```\n\n### NodeJS\nCommonJS polyfill is published as an npm package [trusted-types](https://www.npmjs.com/package/trusted-types):\n\n```\n$ npm install trusted-types\n```\n\n```javascript\nconst tt = require('trusted-types');\ntt.createPolicy(...);\n```\n### Tinyfill\n\nDue to the way the API is designed, it's possible to polyfill the most important\nAPI surface (`TrustedTypes.createPolicy` function) with the following snippet:\n\n```\nif(typeof TrustedTypes == “undefined”)TrustedTypes={createPolicy:(n, rules) => rules};\n```\nIt does not enable the enforcement, but allows the creation of policies that\nreturn string values instead of Trusted Types in non-supporting browsers. Since\nthe injection sinks in those browsers accept strings, the values will be accepted\nunless the policy throws an error. This tinyfill code allows most applications\nto work in both Trusted-Type-enforcing and a legacy environment.\n\n## Building\n\nTo build the polyfill yourself (Java required):\n\n```\n$ git clone https://github.com/mikewest/trusted-types/\n$ cd trusted-types\n$ npm install\n$ npm run build\n```\n\n## Demo\nTo see the polyfill in action, visit the [demo page](https://wicg.github.io/trusted-types/demo/).\n\n## Testing\nIt can be tested by running:\n```\n$ npm test\n```\nThe polyfill can also be run against the [web platform test suite](https://github.com/w3c/web-platform-tests), but that requires small patches to the suite - see [tests/platform-tests/platform-tests-runner.sh](tests/platform-tests/platform-tests-runner.sh).\n\n# Contributing\n\nSee [CONTRIBUTING](CONTRIBUTING.md).\n\n# Questions?\n\nOur [wiki](https://github.com/WICG/trusted-types/wiki) or the [specification](https://wicg.github.io/trusted-types/dist/spec/) may already contain an answer\nto your question. If not, please [contact us](https://github.com/WICG/trusted-types/wiki/Contact)!\n"
+          },
+          "fullName": "WICG/trusted-types"
         },
         {
           "id": "MDEwOlJlcG9zaXRvcnkxMDM2OTczNjc=",
@@ -34551,54 +34932,88 @@
           "fullName": "WICG/wicg.github.io"
         },
         {
-          "id": "MDEwOlJlcG9zaXRvcnkxMzk2MDI2Mw==",
-          "name": "serial",
+          "id": "MDEwOlJlcG9zaXRvcnkzNTMwNTc3Mw==",
+          "name": "webusb",
           "owner": {
             "login": "WICG"
           },
           "isArchived": false,
-          "homepageUrl": "https://wicg.github.io/serial/",
-          "description": "Serial ports API for the platform. ",
+          "homepageUrl": "https://wicg.github.io/webusb/",
+          "description": "Connecting hardware to the web.",
           "labels": {
             "edges": [
               {
                 "node": {
-                  "name": "good first issue",
-                  "color": "bfe5bf"
+                  "name": "bug",
+                  "color": "fc2929"
+                }
+              },
+              {
+                "node": {
+                  "name": "duplicate",
+                  "color": "cccccc"
+                }
+              },
+              {
+                "node": {
+                  "name": "enhancement",
+                  "color": "84b6eb"
+                }
+              },
+              {
+                "node": {
+                  "name": "help wanted",
+                  "color": "159818"
+                }
+              },
+              {
+                "node": {
+                  "name": "invalid",
+                  "color": "e6e6e6"
+                }
+              },
+              {
+                "node": {
+                  "name": "question",
+                  "color": "cc317c"
+                }
+              },
+              {
+                "node": {
+                  "name": "wontfix",
+                  "color": "ffffff"
                 }
               }
             ],
             "pageInfo": {
-              "endCursor": "Y3Vyc29yOnYyOpHOLqh6mA==",
+              "endCursor": "Y3Vyc29yOnYyOpHODHnHTg==",
               "hasNextPage": false
             }
           },
           "w3cjson": {
-            "text": " {\n    \"group\":      [\"80485\"]\n,   \"contacts\":   [\"marcoscaceres\",\"reillyeon\"]\n}\n"
+            "text": " {\n    \"group\":      [\"80485\"]\n,   \"contacts\":   [\"yoavweiss\"]\n,   \"shortName\":  \"webusb\"\n}"
           },
           "contributing": {
-            "text": "For significant contributions (i.e., non-editorial changes to the API), \nwe require you to become a member of the \n[Web Platform Incubator CG](http://www.w3.org/community/wicg/). This helps \nkeep the spec royalty free and gives us some patent protection! \n\nThis spec is written using [ReSpec](http://w3.org/respec/). For\nconfiguration options, etc. please see the [ReSpec\nrefeference](www.w3.org/respec/ref.html).\n\nPlease make sure you run [HTML5 Tidy](http://w3c.github.io/tidy-html5/) \nbefore sending a Pull Request:\n\n```Bash \ntidy -config tidyconfig.txt -o index.html index.html \n```\n"
+            "text": "# Web Platform Incubator Community Group\n\nThis repository is being used for work in the Web Platform Incubator Community Group, governed by the [W3C Community License \nAgreement (CLA)](http://www.w3.org/community/about/agreements/cla/). To contribute, you must join \nthe CG. \n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request's body or in subsequent comments.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n\n# Tests\n\nFor normative changes, a corresponding\n[web-platform-tests](https://github.com/web-platform-tests/wpt) PR is highly appreciated. Typically,\nboth PRs will be merged at the same time. Note that a test change that contradicts the spec should\nnot be merged before the corresponding spec change. If testing is not practical, please explain why\nand if appropriate [file an issue](https://github.com/web-platform-tests/wpt/issues/new) to follow\nup later. Add the `type:untestable` or `type:missing-coverage` label as appropriate.\n"
           },
           "license": {
-            "text": "All Reports in this Repository are licensed by Contributors\nunder the\n[W3C Software and Document License](http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document).\n\nContributions to Specifications are made under the\n[W3C CLA](https://www.w3.org/community/about/agreements/cla/).\n\nContributions to Test Suites are made under the\n[W3C 3-clause BSD License](https://www.w3.org/Consortium/Legal/2008/03-bsd-license.html)\n\n"
+            "text": "All Reports in this Repository are licensed by Contributors under the \n[W3C Software and Document\nLicense](http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document). Contributions to\nSpecifications are made under the [W3C CLA](https://www.w3.org/community/about/agreements/cla/).\n\n"
           },
-          "codeOfConduct": {
-            "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n"
-          },
+          "codeOfConduct": null,
           "readme": {
-            "text": "# Serial API\n\n[Serial ports API](http://wicg.github.io/serial/) for the platform. \n\n### Code of conduct\n\nWe are committed to providing a friendly, safe and welcoming environment for all. Please read and respect the [W3C Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n"
+            "text": "WebUSB\n======\n\nConnecting hardware to the web.\n\n[![Build status](https://travis-ci.org/WICG/webusb.svg?branch=master)](https://travis-ci.org/WICG/webusb?branch=master)\n\nDocuments\n---------\n\n* [Specification](https://wicg.github.io/webusb/) (Editor's Draft)\n* [Test API Specification](https://wicg.github.io/webusb/test/) (Editor's Draft)\n\nCommunication\n-------------\n\n* [Stack Overflow](https://stackoverflow.com/questions/tagged/webusb) for questions & answers about **using** WebUSB.\n* [Issue Tracker](https://github.com/wicg/webusb/issues) for **specification** issues.\n* [Chromium Issue Tracker](https://bugs.chromium.org/p/chromium/issues/list?q=component%3ABlink>USB) for Chrome **implementation** issues.\n\nImplementation Status\n---------------------\n\n* WebUSB is available in Chrome 61 for Android, Chrome OS, Linux, macOS and Windows.\n* A port for Node.js also exists - https://github.com/thegecko/webusb\n\n**Note:** The WebUSB landing page notification is currently disabled in Chrome on Windows due to [Chromium issue 656702](https://crbug.com/656702). Implementation of new, more stable USB support for Windows is tracked by Chromium issues [422562](https://crbug.com/422562) and [637404](https://crbug.com/637404).\n\nDemos\n-----\n\n* [Arduino Integration](https://github.com/webusb/arduino/)\n* [WebLight](https://github.com/sowbug/weblight)\n* [Yubikey HOTP](https://github.com/santiagotorres/yubikey-webusb)\n* [USB Device Firmware Upgrade (DFU)](https://github.com/devanlai/webdfu)\n* [WebADB](https://github.com/webadb/webadb.js)\n* [Zephyr JS IDE](https://github.com/01org/zephyrjs-ide), [hosted IDE](https://01org.github.io/zephyrjs-ide/)\n\nArticles\n--------\n\n* [Access USB Devices on the Web](https://developers.google.com/web/updates/2016/03/access-usb-devices-on-the-web)\n* [The WebUSB Security Model](https://medium.com/dev-channel/the-webusb-security-model-f48ee04de0ab)\n* [WebUSB and JavaScript Robotics](http://iceddev.com/blog/webusb-and-javascript-robotics/) (PageNodes)\n* [Program a smart device directly, no install needed](https://medium.com/@kennethrohde/program-a-smart-device-directly-no-install-needed-cd8b29320d76) (Arduino running Zephyr)\n* [Web enabling legacy devices](https://medium.com/@larsgk/web-enabling-legacy-devices-dc3ecb9400ed) Discusses USB CDC (USB Serial devices)\n"
           },
-          "fullName": "WICG/serial"
+          "fullName": "WICG/webusb"
         },
         {
-          "id": "MDEwOlJlcG9zaXRvcnkxMDM2NjAxNTk=",
-          "name": "trusted-types",
+          "id": "MDEwOlJlcG9zaXRvcnk2MDY3MDEyNw==",
+          "name": "web-share",
           "owner": {
             "login": "WICG"
           },
           "isArchived": false,
-          "homepageUrl": "",
-          "description": "A browser API that aims to prevent DOM-Based Cross Site Scripting in modern web applications.",
+          "homepageUrl": "https://wicg.github.io/web-share/",
+          "description": "Web API proposal for sharing data from a web page",
           "labels": {
             "edges": [
               {
@@ -34622,13 +35037,7 @@
               {
                 "node": {
                   "name": "help wanted",
-                  "color": "33aa3f"
-                }
-              },
-              {
-                "node": {
-                  "name": "good first issue",
-                  "color": "7057ff"
+                  "color": "128A0C"
                 }
               },
               {
@@ -34651,34 +35060,36 @@
               },
               {
                 "node": {
-                  "name": "polyfill",
-                  "color": "f9d0c4"
+                  "name": "18n-comment",
+                  "color": "d65eac"
                 }
               },
               {
                 "node": {
-                  "name": "spec",
-                  "color": "0052cc"
+                  "name": "i18n-tracking",
+                  "color": "2a8191"
                 }
               }
             ],
             "pageInfo": {
-              "endCursor": "Y3Vyc29yOnYyOpHOKeX7sQ==",
-              "hasNextPage": true
+              "endCursor": "Y3Vyc29yOnYyOpHOK4QOjw==",
+              "hasNextPage": false
             }
           },
-          "w3cjson": null,
+          "w3cjson": {
+            "text": " {\n    \"group\":      [\"80485\"]\n,   \"contacts\":   [\"marcoscaceres\"]\n,   \"shortName\":  \"web-share\"\n}"
+          },
           "contributing": {
-            "text": "# Web Platform Incubator Community Group\n\nThis repository is being used for work in the Web Platform Incubator Community Group, governed by the [W3C Community License\nAgreement (CLA)](http://www.w3.org/community/about/agreements/cla/). To contribute, you must join\nthe CG.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request's body or in subsequent comments.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n\n# Tests\n\nFor normative changes, a corresponding\n[web-platform-tests](https://github.com/web-platform-tests/wpt) PR is highly appreciated. Typically,\nboth PRs will be merged at the same time. Note that a test change that contradicts the spec should\nnot be merged before the corresponding spec change. If testing is not practical, please explain why\nand if appropriate [file an issue](https://github.com/web-platform-tests/wpt/issues/new) to follow\nup later. Add the `type:untestable` or `type:missing-coverage` label as appropriate.\n\n# Spec Changes\n\nIf you would like to propose a spec change, please send a PR that changes\n[spec/index.bs][] *and* regenerate [dist/spec/index.html][].\n\nHere's a workflow to get you started:\n\n1.  Fork github.com/WICG/trusted-types\n1.  `git clone` your fork and `cd trusted-types`\n1.  `npm install` to get everything set up.\n1.  Run `git checkout -b your-branch-name` to setup a branch to hold your patch.\n1.  Optionally, [install bikeshed](https://tabatkins.github.io/bikeshed/#installing)\n1.  Run `node_modules/.bin/gulp spec.watch` which will regnerate `dist/spec/index.html`\n    every time you modify [spec/index.bs][].\n1.  Open a browser to your local [dist/spec/index.html][].\n1.  Until you're happy, make edits to your local [spec/index.bs][].\n    To help, you might refer to:\n    *   The [bikeshed docs](https://tabatkins.github.io/bikeshed/)\n    *   The [bikeshed doc source](https://github.com/tabatkins/bikeshed/blob/master/docs/index.bs)\n        which shows bikeshed in practice.\n    *   The source for the other specifications like\n        [CSP3](https://github.com/w3c/webappsec-csp/blob/master/index.src.html)\n1.  Be aware of [issue 112](https://github.com/WICG/trusted-types/issues/112) if you're\n    having trouble with the watcher.\n1.  Maybe locally enable\n    [`Complain About: broken-links yes`](https://github.com/WICG/trusted-types/blob/9445a47f720f255d066621ba6975228e558453f5/spec/index.bs#L18)\n    and double check that there are no broken links.\n    Broken-link checking is slooow during development.\n1.  Commit and push your branch to your fork and send us a PR.\n1.  Check the PR to see if bots need you to sign any contributor agreements.\n\nOnce your PR is merged, it'll be available at\nhttps://wicg.github.io/trusted-types/dist/spec/\nbut if you want a shareable link to your PR, try filling in the blanks:\n\n> <tt>https\\://raw.githack.com/<b>\\<YOUR-GITHUB-HANDLE\\></b>/trusted-types/<b>\\<YOUR-BRANCH-NAME\\></b>/dist/spec/index.html</tt>\n\n\n[spec/index.bs]: https://github.com/WICG/trusted-types/blob/master/spec/index.bs\n[dist/spec/index.html]: https://github.com/WICG/trusted-types/blob/master/dist/spec/index.html\n"
+            "text": "# Web Platform Incubator Community Group\n\nThis repository is being used for work in the W3C Web Platform Incubator\nCommunity Group, governed by the [W3C Community License Agreement\n(CLA)](http://www.w3.org/community/about/agreements/cla/). To make substantive\ncontributions, you must join the CG.\n\nIf you are not the sole contributor to a contribution (pull request), please\nidentify all contributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per\nline as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part\nin designing the feature, you can remove yourself with the above syntax.\n"
           },
           "license": {
-            "text": "All Reports in this Repository are licensed by Contributors under the\n[W3C Software and Document\nLicense](http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document). Contributions to\nSpecifications are made under the [W3C CLA](https://www.w3.org/community/about/agreements/cla/).\n"
+            "text": "All Reports in this Repository are licensed by Contributors\nunder the\n[W3C Software and Document License](http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document).\n\nContributions to Specifications are made under the\n[W3C CLA](https://www.w3.org/community/about/agreements/cla/).\n"
           },
           "codeOfConduct": null,
           "readme": {
-            "text": "# Explainer: Trusted Types for DOM Manipulation\n\nSee the [specification draft](https://wicg.github.io/trusted-types/dist/spec/) for a more comprehensive description of the API.\n\n[![Build Status](https://travis-ci.org/WICG/trusted-types.svg)](https://travis-ci.org/WICG/trusted-types)\n\n## The Problem\n\nAs described in Christoph Kern's \"[Securing the Tangled Web](https://research.google.com/pubs/pub42934.html)\",\nGoogle has been fairly successful at combating DOM-based XSS attacks by relying on a set of\n[typed objects](https://github.com/google/safe-html-types/blob/master/doc/index.md) instead of\nstrings to represent HTML snippets, URLs, etc. Compilation-time analysis done for JavaScript code\nensures that only these types can be used with various DOM APIs that can be used as DOM-based XSS\nsinks (`el.innerHTML`, `location.href`, `ScriptElement.src` and so on). These types do not obliterate\nDOM XSS in themselves, as authors may still create an instance of a type with an untrusted value.\nInstead, it simplifies the security analysis of the application - security reviewers don't need to\ndeeply understand and review each and every usage of a given *sink*, but can instead focus their\nefforts on the code that *generates* the typed objects. As long as these \"trusted\" types are always\ngenerated from a small, reviewable subset of overall application code - safe templating libraries,\nsanitizers, and so on, developers can have a high degree of confidence that the risk of DOM-based\nXSS remains low.\n\nGoogle's internal implementation has a number of bells and whistles (and makes a number of\nassumptions about requirements) that probably aren't suitable for the world at large. It would be\ninteresting to explore how we might extract some more generic version of this concept from those\ninternal tools in order to bring this kind of functionality to the web in a generic fashion.\nFor example, different applications might have different opinions about what makes a particular\nHTML snippet \"safe\", but regardless of the definition, it seems clear that the browser is\nwell-positioned to enforce type constraints dynamically at runtime. That would be a substantial\nimprovement over the tight link between the type system and the compiler.\n\n## A Possible Approach\n\nWhile we could jam all sorts of sanitization functionality into such a system, it seems reasonable\nto start small until we know how existing templating systems and sanitizers will layer any\nprimitives we introduce into their existing systems. The following approach seems compelling as a\nfirst step:\n\n1.  Introduce a number of types that correspond to the XSS sinks we wish to protect. For example,\n    we could define a `TrustedHTML` object that marks it as suitable for using via `innerHTML`\n    (instead of a string). Or a `TrustedScriptURL` object that's suitable to be assigned to a\n    `ScriptElement.src` attribute.\n\n    These types should be pretty minimal in nature, making them polyfillable in browsers that don't\n    support them natively.\n\n2.  Enumerate all the XSS sinks we wish to protect, and overload each of them with a variant that\n    accepts the matching type. For example, `Element.innerHTML`'s setter could accept `(DOMString or TrustedHTML)`,\n    and we could overload `document.write(DOMString)` with `document.write(TrustedHTML)`.\n\n    As above, this mechanism should be polyfillable; the polyfilled types define stringifiers which\n    would enable them to be automatically cast into strings when called on existing setters.\n\n3.  Introduce a mechanism for disabling the raw string version of each of the sinks identified\n    above. For example, `Content-Security-Policy: trusted-types`\n    header could cause the `innerHTML` setter to throw a `TypeError` if a raw string was passed in.\n\n    This is possible to polyfill for many setters and\n    methods, apart from the ones that aren't marked as [`[Unforgeable]`](https://heycam.github.io/webidl/#Unforgeable).\n\n### Trusted Types\n\n*   **TrustedHTML**: This type would be used to represent a trusted snippet that could be passed\n    into an HTML context.\n\n    ```\n    interface TrustedHTML {\n      stringifier;\n    }\n    ```\n\n*   **TrustedURL**: This type would be used to represent a trusted URL that could be used to load\n    non-scripting resources or navigate a frame.\n\n    ```\n    interface TrustedURL {\n      stringifier;\n    }\n    ```\n\n*   **TrustedScriptURL**: This type would be used to represent a URL that could be used to load\n    resources that may result in script execution in the current document.\n\n    ```\n    interface TrustedScriptURL {\n      stringifier;\n    }\n    ```\n\n*   **TrustedScript**: This type would be used to represent a trusted JavaScript code block i.e.\n    something that is trusted by the author to be executed by adding it to a `<script>` element\n    content, inline event handler or passing to an `eval` function family.\n\n    ```\n    interface TrustedScript {\n      stringifier;\n    }\n    ```\n\n### Policies\n\nIntroducing and requiring typed objects is, sadly, not sufficient: Exposing raw Trusted Types constructors to the web authors presents a significant problem, in that\nit only marginally improves the situation: while it allows certain libraries to produce and use typed\nvalues in place of strings, it also allows constructing the types at will (see https://github.com/WICG/trusted-types/issues/31), and every\ntyped value construction in the application is a potential DOM XSS. Consider the following code\nsnippet from the previous version of the API:\n\n```javascript\n// DEPRECATED.\nnode.innerHTML = TrustedHTML.unsafelyCreate(variable)\n```\n\nReasoning about DOM XSS susceptibility of an application riddled with the statements like above\nis just as hard, as it was in the original DOM API. Therefore we propose the concept of *policies*\n(not to be confused with CSP).\n\nRaw typed object constructors from a string are forbidden. Instead, we introduce a programmatic\nJavaScript API, allowing web authors to specify how the aforementioned objects can be created.\nAn application can create multiple named policies for a document. Typed objects can be constructed from a\nstring only by invoking one of those policies.\n\nFor example, an application may define a policy, in which `TrustedScriptURL` is a same-origin URL or the domain is from a whitelisted domain list. A\nseparate policy may pass a string through a custom HTML sanitization function before producing a\n`TrustedHTML` object. As authors may create multiple policies with different rules, application may\nhand over certain policies to separate submodules of its codebase, guarding how those submodules can\ninteract with DOM.\n\nFor example: the application author trusts the Foo library not to cause DOM XSS (it's known\nto have a very robust HTML sanitizer, was already security reviewed and is well-maintained), so it\nmay initialize Foo with a no-op policy. At the same time, a 3rd party chat widget, or an Analytics\nscript should only be trusted to create `<div>` and `<img>` elements, so it's initialized with a\npolicy that only allows for that, and escapes (or removes) any other content.\n\nSuch API allows the authors to specify a set of policies that guard the typed objects creation.\nAs valid trusted type objects must originate from a policy, those policies alone form the **trusted codebase in regards to DOM XSS**, reducing the attack and security review surface considerably.\n\n#### Policies API\n\n```\ninterface TrustedTypePolicyFactory {\n    TrustedTypePolicy createPolicy(DOMString policyName, TrustedTypeInnerPolicy policy, optional boolean expose = false);\n    TrustedTypePolicy getExposedPolicy(DOMString policyName);\n    Array<DOMString> getPolicyNames();\n}\n```\nWe propose to provide a `TrustedTypePolicyFactory` implementation under `window.TrustedTypes`. The most important function available in a `TrustedTypePolicyFactory` is `createPolicy`.\n\nThe policy rules for creating individual types are configured via the properties of `TrustedTypeInnerPolicy` object. Note that the functions operate on strings. The actual type construction is provided by the private API, not exposed to the authors.\n\n```\ninterface TrustedTypeInnerPolicy {\n    string createHTML(string);\n    string createURL(string);\n    string createScriptURL(string);\n    string createScript(string);\n}\n```\n\nPolicy (with a unique name) can be created like this:\n\n```javascript\nconst myPolicy = TrustedTypes.createPolicy('https://example.com#mypolicy', {\n    createHTML: (s) => { return customSanitize(s) },\n    createURL: (s) => { /* parse and validate the url. throw if non-conformant */ },\n})\n```\n\nThe policy object is returned, and can be used as a capability to create typed objects i.e. code parts without a reference to the policy object cannot use it.\n\nOptionally, the policy may be exposed globally by calling `createPolicy` with `expose` argument set to `true`. Exposed policies can be retrieved via `TrustedTypes.getExposedPolicy`. This mode is recommended only for the strict, sanitizing, \"last resort\" type of policies.\n\nThe policy object can be used directly to create typed values that conform to its rules:\n\n```javascript\n const trustedHtml = myPolicy.createHTML('<p>ok<script>not ok</script></p>')\n document.body.innerHTML = trustedHtml // does not throw.\n trustedHtml.toString() // <p>ok</p>, as the customSanitize removed the script.\n```\n\nThis forms the core of the API, but there are additional features in development, it's best to see\nthe polyfill code.\n\n#### Limiting policies\n\nWe propose to allow for whitelisting policy names in a CSP, e.g. in a following fashion:\n```\nContent-Security-Policy: trusted-types foo bar\n```\n\nThat will assure that no additional policies are created at runtime. Creating a policy with a name\nthat was already created, or was not specified in the CSP throws, so introduction of non-reviewed\npolicies breaks the application functionally.\n\n#### Default policy\n\nThere is an experimental support for a default policy that allows applications\nto use strings with the injection sinks. These strings would be passed to a single\nuser-defined policy that sanitizes the value or rejects it. The intention is to\nallow for a gradual migration of the code from strings towards Trusted Types.\nPlease check the [specification draft](https://wicg.github.io/trusted-types/dist/spec/#default-policy-hdr) for details.\n\n### DOM Sinks\n\n*   **HTML Contexts**: Given something like `typedef (DOMString or TrustedHTML) HTMLString`, we'd\n    poke at a number of methods and attribute setters to accept the new type:\n\n    ```\n    partial interface Element {\n        attribute HTMLString innerHTML;\n        attribute HTMLString outerHTML;\n        void insertAdjacentHTML(DOMString position, HTMLString text);\n    };\n    ```\n\n    ```\n    partial interface Document {\n        void write(HTMLString text);\n        void writeln(HTMLString text);\n    };\n    ```\n\n    ```\n    partial interface DOMParser {\n        Document parseFromString(HTMLString str, SupportedType type);\n    };\n    ```\n\n    ```\n    partial interface Range {\n        DocumentFragment createContextualFragment(HTMLString fragment);\n    };\n    ```\n\n    ```\n    partial interface HTMLIFrameElement {\n         DOMString srcdoc;\n    };\n    ```\n\n*   **URL Contexts**: Given something like `typedef (USVString or TrustedURL) URLString`, we'd poke\n    at a number of methods and attribute setters to accept the new type:\n\n    ```\n    partial interface Location {\n        stringifier attribute URLString href;\n        void assign(URLString url);\n        void replace(URLString url);\n\n        // (These aren't `URLString`, but they should be something)\n        DOMString pathname;\n        DOMString search;\n    };\n    ```\n\n    ```\n    // A few element types go here. `HTMLBaseElement`, `HTMLLinkElement`\n    // `HTMLHyperlinkElementUtils` from a quick skim through HTML.\n    partial interface HTMLXXXElement : HTMLElement {\n        attribute URLString href;\n    };\n    ```\n\n    ```\n    // A few element types go here. `HTMLSourceElement`, `HTMLImageElement`,\n    // `HTMLIFrameElement`, `HTMLTrackElement`, `HTMLMediaElement`,\n    // `HTMLInputElement`,  `HTMLFrameElement`\n    // from a quick skim through HTML.\n    //\n    // The same applies to their SVG variants.\n    partial interface HTMLXXXElement : HTMLElement {\n        attribute URLString src;\n        attribute URLString srcset; // Only `HTMLSourceElement` and `HTMLImageElement`\n    };\n    ```\n\n    ```\n    partial interface HTMLObjectElement : HTMLElement {\n        attribute URLString data;\n        attribute URLString codebase;\n    };\n    ```\n    ```\n    partial interface Document {\n        attribute URLString location;\n    };\n    ```\n\n    ```\n    partial interface Window {\n        attribute URLString location;\n        void open(URLString location);\n    };\n    ```\n\n* **Script URL Context**: Given something like `typedef (USVString or TrustedScriptURL) ScriptURLString`,\n    we'd poke at a number of methods and attribute setters to accept the new type:\n\n    ```\n    partial interface WorkerGlobalScope {\n        void importScripts(ScriptURLString... urls);\n    };\n    ```\n\n    ```\n    // A few element types go here. `HTMLEmbedElement`, `HTMLScriptElement`\n    // from a quick skim through HTML.\n    //\n    // The same applies to their SVG variants.\n    partial interface HTMLXXXElement : HTMLElement {\n        attribute ScriptURLString src;\n    };\n    ```\n\n*   **JavaScript Contexts**: Replace `DOMString` in the following with something\n    reasonable.\n\n    ```\n    partial interface Window {\n        void eval(DOMString code);\n        void setTimeout(DOMString code, int timeout);\n        void setInterval(DOMString code, int timeout);\n    };\n    ```\n\n    ```\n    partial interface HTMLScriptElement : HTMLElement {\n        attribute DOMString innerText;\n        attribute DOMString text;\n        attribute DOMString textContent;\n    };\n    ```\n\n## Open Questions\n\nSome details have still not been sketched out - see [issues](https://github.com/WICG/trusted-types/issues).\n\n## Polyfill\n\nThis repository contains a polyfill implementation. The compiled versions are stored in [`dist` directory](dist/)\n\n### Browsers\nThe es5/es6 builds can be loaded directly in the browsers. There are two variants of the browser polyfill - **api_only** (light) and **full**. The *api_only* variant defines the API, so you can create policies and types. *Full* version also enables the type enforcement in the DOM, based on the CSP policy it infers from the current document (see [src/polyfill/full.js](src/polyfill/full.js)).\n\n```html\n<!-- API only -->\n<script src=\"https://wicg.github.io/trusted-types/dist/es5/trustedtypes.api_only.build.js\"></script>\n<script>\n     const p = TrustedTypes.createPolicy('foo', ...)\n     document.body.innerHTML = p.createHTML('foo'); // works\n     document.body.innerHTML = 'foo'; // but this one works too (no enforcement).\n</script>\n```\n\n```html\n<!-- Full -->\n<script src=\"https://wicg.github.io/trusted-types/dist/es5/trustedtypes.build.js\" data-csp=\"trusted-types foo bar\"></script>\n<script>\n    TrustedTypes.createPolicy('foo', ...);\n    TrustedTypes.createPolicy('unknown', ...); // throws\n    document.body.innerHTML = 'foo'; // throws\n</script>\n\n```\n\n### NodeJS\nCommonJS polyfill is published as an npm package [trusted-types](https://www.npmjs.com/package/trusted-types):\n\n```\n$ npm install trusted-types\n```\n\n```javascript\nconst tt = require('trusted-types');\ntt.createPolicy(...);\n```\n### Tinyfill\n\nDue to the way the API is designed, it's possible to polyfill the most important\nAPI surface (`TrustedTypes.createPolicy` function) with the following snippet:\n\n```\nif(typeof TrustedTypes == “undefined”)TrustedTypes={createPolicy:(n, rules) => rules};\n```\nIt does not enable the enforcement, but allows the creation of policies that\nreturn string values instead of Trusted Types in non-supporting browsers. Since\nthe injection sinks in those browsers accept strings, the values will be accepted\nunless the policy throws an error. This tinyfill code allows most applications\nto work in both Trusted-Type-enforcing and a legacy environment.\n\n## Building\n\nTo build the polyfill yourself (Java required):\n\n```\n$ git clone https://github.com/mikewest/trusted-types/\n$ cd trusted-types\n$ npm install\n$ npm run build\n```\n\n## Demo\nTo see the polyfill in action, visit the [demo page](https://wicg.github.io/trusted-types/demo/).\n\n## Testing\nIt can be tested by running:\n```\n$ npm test\n```\nThe polyfill can also be run against the [web platform test suite](https://github.com/w3c/web-platform-tests), but that requires small patches to the suite - see [tests/platform-tests/platform-tests-runner.sh](tests/platform-tests/platform-tests-runner.sh).\n\n# Contributing\n\nSee [CONTRIBUTING](CONTRIBUTING.md).\n\n# Questions?\n\nOur [wiki](https://github.com/WICG/trusted-types/wiki) or the [specification](https://wicg.github.io/trusted-types/dist/spec/) may already contain an answer\nto your question. If not, please [contact us](https://github.com/WICG/trusted-types/wiki/Contact)!\n"
+            "text": "# Web Share API\n\n**Written**: 2016-06-08, **Updated**: 2017-07-13\n\n**Web Share** is a Web platform API for sharing text, URLs and images to an\narbitrary destination of the user's choice:\n\n```js\nnavigator.share({title: 'Example Page', url: 'https://example.com'});\n```\n\n## Implementation status\n\n* The Level 1 API (images/files not supported) is shipping in:\n  * Google Chrome 61 on Android.\n  * [Safari 66](https://developer.apple.com/safari/technology-preview/release-notes/#r66).\n* The Level 2 API is a work in progress and should not be implemented.\n\n## Links\n\n* [Explainer document](docs/explainer.md), a high-level overview of the proposal.\n* [Specification - Level 1](https://wicg.github.io/web-share/).\n* [Specification - Level 2](https://wicg.github.io/web-share/level-2/).\n* [Native integration survey](docs/native.md), for platform-specific matters.\n* [Web platform\n  tests](https://github.com/web-platform-tests/wpt/tree/master/web-share), for\n  automatic and manual testing against an implementation.\n\nThis is a product of the [Ballista\nproject](https://github.com/chromium/ballista), which aims to explore\nwebsite-to-website and website-to-native interoperability.\n\n## Licensing and contributions\n\nSee [LICENSE](LICENSE.md) and [CONTRIBUTING](CONTRIBUTING.md).\n"
           },
-          "fullName": "WICG/trusted-types"
+          "fullName": "WICG/web-share"
         }
       ]
     },
@@ -45622,6 +46033,84 @@
             "text": "# W3C Verifiable Claims Working Group Test Suite\n\nThis repository contains the W3C\n[Verifiable Claims Working Group](https://www.w3.org/2017/vc/WG/) test suite.\nAny conforming implementation MUST pass all tests in the test suite.\n\nThere are multiple test suites, each of which is detailed below.\n\n## Verifiable Claims Data Model 1.0 Test Suite\n\nThis test suite will check any application that generates [Verifiable Credential\nData Model](https://www.w3.org/TR/verifiable-claims-data-model/) documents to\nensure conformance with the specification.\n\n### Running the Test Suite\n\n1. npm install\n2. Copy the `config.json.example` file to `config.json` and modify.\n3. npm test\n\n### Submit an Implementation Report\n\n1. npm install\n2. Copy the `config.json.example` file to `config.json` and modify.\n3. npm run report\n4. Rename implementation/results.json to\n   implementation/YOUR_IMPLEMENTATION-results.json.\n5. git add implementations/YOUR_IMPLEMENTATION-results.json and submit a\n   pull request for your implementation.\n\n## Contributing\n\nYou may contribute to this test suite by submitting pull requests here:\n\nhttps://github.com/w3c/vc-test-suite/\n"
           },
           "fullName": "w3c/vc-test-suite"
+        },
+        {
+          "id": "MDEwOlJlcG9zaXRvcnkxNTQ3NDQzOTc=",
+          "name": "vc-imp-guide",
+          "owner": {
+            "login": "w3c"
+          },
+          "isArchived": false,
+          "homepageUrl": "https://msporny.github.io/vc-imp-guide",
+          "description": "Verifiable Credentials Implementation Guidelines",
+          "labels": {
+            "edges": [
+              {
+                "node": {
+                  "name": "bug",
+                  "color": "d73a4a"
+                }
+              },
+              {
+                "node": {
+                  "name": "duplicate",
+                  "color": "cfd3d7"
+                }
+              },
+              {
+                "node": {
+                  "name": "enhancement",
+                  "color": "a2eeef"
+                }
+              },
+              {
+                "node": {
+                  "name": "help wanted",
+                  "color": "008672"
+                }
+              },
+              {
+                "node": {
+                  "name": "good first issue",
+                  "color": "7057ff"
+                }
+              },
+              {
+                "node": {
+                  "name": "invalid",
+                  "color": "e4e669"
+                }
+              },
+              {
+                "node": {
+                  "name": "question",
+                  "color": "d876e3"
+                }
+              },
+              {
+                "node": {
+                  "name": "wontfix",
+                  "color": "ffffff"
+                }
+              }
+            ],
+            "pageInfo": {
+              "endCursor": "Y3Vyc29yOnYyOpHOQdo63g==",
+              "hasNextPage": false
+            }
+          },
+          "w3cjson": {
+            "text": "{\n  \"group\": [\n    \"98922\"\n  ],\n  \"contacts\": [\n    \"ashimura\"\n  ],\n  \"shortName\": \"vc-imp-guide\",\n  \"repo-type\": \"note\"\n}\n"
+          },
+          "contributing": null,
+          "license": {
+            "text": "All documents in this Repository are licensed by contributors\nunder the \n[W3C Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software).\n\n"
+          },
+          "codeOfConduct": null,
+          "readme": {
+            "text": "# W3C Verifiable Claims Working Group - Verifiable Credentials Impleentation Guideline 1.0\n\n[HTML redered version](https://w3c.github.io/vc-imp-guide/)\n"
+          },
+          "fullName": "w3c/vc-imp-guide"
         }
       ]
     },
@@ -48569,7 +49058,9 @@
             "text": "# Contributing\n\nSee distributed tracing working group contributing\n[docs](https://github.com/w3c/distributed-tracing-wg/blob/master/CONTRIBUTING.md)\nfor a general guidance.\n\nSee [Registration Entry Requirements and Update\nProcess](https://w3c.github.io/trace-context-protocols-registry/#Registration_Entry_Requirements_and_Update_Process)\nsection of this specification for the protocol registration requirements.\n\n## Trying it out locally\n\nThis repository is using [ReSpec](https://w3c.github.io/respec/) to generate\nthe report. To see report locally, you can use any web server pointed to the\nroot of this directory.\n\nWith `python` you can use one of the following commands to see report at\n[localhost:8000](http://localhost:8000):\n\n``` sh\n# with python 3\npython -m http.server\n\n# with python 2\npython -m SimpleHTTPServer\n```\n"
           },
           "license": null,
-          "codeOfConduct": null,
+          "codeOfConduct": {
+            "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n"
+          },
           "readme": {
             "text": "# Trace Context: protocols mapping\n\n[Trace Context](https://w3c.github.io/trace-context/) Protocols Registry lists\nthe specifications defining the mapping of Trace Context fields to different\ncommunication protocols. These specifications identify formats of trace context\nserialization and de-serialization.\n\nSee [Protocols Registry](https://w3c.github.io/trace-context-protocols-registry/).\n\n## Team Communication\n\nSee [communication](https://github.com/w3c/distributed-tracing-wg#team-communication).\nWe appreciate feedback and contributions.\n\n## Contributing\n\nSee [CONTRIBUTING.md](CONTRIBUTING.md)."
           },
@@ -49701,6 +50192,115 @@
             "text": "# Notation 3 (N3) Community Group\n\nSee Issues list\n\nSee [W3C Community Page (join here)](https://www.w3.org/community/n3-dev/)\n\nSee [mailing list archives](https://lists.w3.org/Archives/Public/public-n3-dev/)"
           },
           "fullName": "w3c/N3"
+        }
+      ]
+    },
+    "112607": {
+      "id": 112607,
+      "name": "MathML Refresh Community Group",
+      "discr": "w3cgroup",
+      "is-closed": false,
+      "description": "MathML first became a W3C recommendation in 1998. It has wide support in the publishing industry and with assistive technology. MathML has had several updates, but is showing its age and needs to be updated. This group will focus on changes to the MathML 3 recommendation so that it better aligns with the current web environment, eases the burden on browser implementations, and increases support for assistive technology.\r\n\r\nThe group will propose a new revision for MathML, potentially with profiles for browsers, publishers, and other subgroups such as authors or online tests. The group will also develop tests so that authors/publishers can be confident that what they see as an author is what the user will see as a reader when the same font is used.\r\n\r\nParticipation is encouraged if you are in involved in publishing, authoring, or rendering math. The group strongly encourages the participation of those involved with browser implementations,  recommendations, and APIs that potentially affect the rendering of math.\r\n\r\n",
+      "staging": false,
+      "_links": {
+        "self": {
+          "href": "https://api.w3.org/groups/112607"
+        },
+        "homepage": {
+          "href": "http://www.w3.org/community/mathml4/"
+        },
+        "users": {
+          "href": "https://api.w3.org/groups/112607/users"
+        },
+        "services": {
+          "href": "https://api.w3.org/groups/112607/services"
+        },
+        "chairs": {
+          "href": "https://api.w3.org/groups/112607/chairs"
+        },
+        "join": {
+          "href": "https://www.w3.org/2004/01/pp-impl/112607/join"
+        },
+        "pp-status": {
+          "href": "https://www.w3.org/2004/01/pp-impl/112607/status"
+        },
+        "participations": {
+          "href": "https://api.w3.org/groups/112607/participations"
+        }
+      },
+      "type": "community group",
+      "repos": [
+        {
+          "id": "MDEwOlJlcG9zaXRvcnk0NzU3MjU0Mg==",
+          "name": "mathml",
+          "owner": {
+            "login": "w3c"
+          },
+          "isArchived": false,
+          "homepageUrl": null,
+          "description": "MathML editors' draft",
+          "labels": {
+            "edges": [
+              {
+                "node": {
+                  "name": "bug",
+                  "color": "fc2929"
+                }
+              },
+              {
+                "node": {
+                  "name": "duplicate",
+                  "color": "cccccc"
+                }
+              },
+              {
+                "node": {
+                  "name": "enhancement",
+                  "color": "84b6eb"
+                }
+              },
+              {
+                "node": {
+                  "name": "help wanted",
+                  "color": "159818"
+                }
+              },
+              {
+                "node": {
+                  "name": "invalid",
+                  "color": "e6e6e6"
+                }
+              },
+              {
+                "node": {
+                  "name": "question",
+                  "color": "cc317c"
+                }
+              },
+              {
+                "node": {
+                  "name": "wontfix",
+                  "color": "ffffff"
+                }
+              }
+            ],
+            "pageInfo": {
+              "endCursor": "Y3Vyc29yOnYyOpHOEa1deg==",
+              "hasNextPage": false
+            }
+          },
+          "w3cjson": {
+            "text": "{\n  \"group\": 112607,\n  \"contacts\": [\n    \"bert\"\n  ],\n  \"policy\": \"open\",\n  \"repo-type\": \"rec-track\"\n}"
+          },
+          "contributing": null,
+          "license": null,
+          "codeOfConduct": {
+            "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n"
+          },
+          "readme": {
+            "text": "# mathml\n[MathML editors' draft](https://w3c.github.io/mathml/)\n\nNote the build scripts are _not_ fully converted\nto the github layout at this time.\n\nUse\n\nhttp://www.w3.org/Math/draft-spec/mathml.html\n\nas a more reliable build of the draft until this\ngithub based build is announced.\n\n\nSee also\nhttps://mml-redux.github.io/mathml/\n\n\n"
+          },
+          "fullName": "w3c/mathml"
         }
       ]
     }
