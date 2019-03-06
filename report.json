@@ -62,7 +62,6 @@
       "w3c/cciv",
       "w3c/cred-claims",
       "w3c/credweb",
-      "w3c/css-validator",
       "w3c/csswg-apiclient",
       "w3c/csswg-www",
       "w3c/EasierRDF",
@@ -84,10 +83,7 @@
       "w3c/keyboard-lock",
       "w3c/kiss",
       "w3c/ldp-next",
-      "w3c/link-checker",
       "w3c/locadd",
-      "w3c/mailing-list-archives",
-      "w3c/markup-validator",
       "w3c/microdata-rdf",
       "w3c/mnx",
       "w3c/musicxml",
@@ -265,6 +261,7 @@
       "WICG/event-timing",
       "WICG/file-handling",
       "WICG/gesture-delegation",
+      "WICG/get-installed-related-apps",
       "WICG/hdcp-detection",
       "WICG/hsts-priming",
       "WICG/import-maps",
@@ -1507,6 +1504,11 @@
         "repo": "w3c/distributed-tracing-wg",
         "error": "doesn't match SW or DOC contributing",
         "contributing": "# Governance and Contribution to the Distributed Tracing working group\n\nThis document describes the contribution and governance rules for the [W3C Distributed Tracing Working Group](https://www.w3.org/2018/distributed-tracing/). This includes the following specifications\n\n- [Trace Context](https://github.com/w3c/trace-context)\n- [Correlation Context](https://github.com/w3c/correlation-context)\n\n## Interacting with the working group\n\nThe working group encourages all forms of contribution and questions. If you have a question, please open an issue on Github in the specification repository. \n\n## Collaboration under the W3C Process Model\n\nAs the working group is an W3C working group it operates under the [W3C Process Model](https://www.w3.org/2018/Process-20180201/). All further contribution guidelines only extend the W3C process model. If this document and the process model contradict each other, the W3C process model takes precedence.\n\n\n## Meetings\n\nMeetings follow the [W3C Process Model Guidelines for Meetings](https://www.w3.org/2018/Process-20180201/#GeneralMeetings). This section defines additional meeting guidelines extending these guidelines:\n\n- Official conference calls are held on a bi-weekly basis and are announced on a [shared calendar](https://calendar.google.com/calendar/embed?src=dynatrace.com_5a09qhua6fh7jb23h7vdjg6veg%40group.calendar.google.com)\n- Face-to-face topic-based work meetings will be announced at least 4 weeks in advance. Ideally, they are announce 8 weeks in advance as defined in the W3C process model. \n- Proposed changes to any document MUST be handled via a Pull Request (PR). If the change came up during a meeting the meeting owner is responsible for creating the PR.\n- PRs will be reviewed during official meetings, but off-line reviews (LGTMs, NOT LGTMs) and comments are strongly encouraged to gauge the group's opinion on the proposed change prior to the meeting.\n- If a topic is not defined specifically enough yet to justify a PR against the specification, contributors are encouraged to file an issue. \n- During meetings, priority will be given to PRs that appear to be ready for a vote over those that appear to require discussions.\n- Rebases, typo fixes, etc. do not count as substantial. Note, administrative PRs that do not materially modify output documents may be processed by admins as needed.\n- PR's can be marked for resolution during a meeting and will be merged when all issues have been addressed and the PR was open for comments for at least one business week. \n- If issues arise after a PR has been merged, the preferred approach is to file a new issue. In rare cases the group can decide to revert a PR.\n\n## Participation  \n\nThere are three categories of project participation:\n\n1. Non Working Group Member. This is anyone who  participates in the group's activities in any of our communication channels (email, github issues/PRs, meetings, etc.). In contrast to Working Group members they can file a PR but not vote on a PR. They can, however, create issues for specifications. \n2. Working Group Member. This is anyone who officially participates in the group's activities in any of our communication channels (email, github issues/PRs, meetings, etc.). Working group members can file PRs against documents and can participate in the PR voting procedure. Working Group members need to be employed by a W3C member organization or participate as invited experts. The [W3C process document](https://www.w3.org/2018/Process-20180201/#MemberBenefits) defines the rights of members. \n3. Chairs and Co-Chairs are members of the group but have the ability to perform administrative actions on behalf of the group. For example, manage the website, github repos and moderate the meetings. Their actions should be done with the knowledge and consent of the group. They also have the ability to merge/close PRs, but only per the group's approval. \n\n## PRs and Voting\n\nSpecificaiton changes are proposed via PRs which are expected to meet the following criteria prior to being merged:\n\n- The author of the PR indicates that it is ready setting a \"ready to review\" tag for review by asking for it to be discussed in an upcoming meeting - eg. by adding it to the agenda document.\n- All comments have been addressed.\n- PRs that have objections/concerns will be discussed in dedicated by interested parties. A resolution, updated PR, will be expected from those talks.\n\nEvery member of the working group is encouraged to vote with a statement of support and dissent on any PR. If a member has concerns regarding a PR they are encouraged to comment on the issue and join in discussions. If a member does reply to a comment within a reasonable timeframe - one business week - the comment is considered properly addressed. \n\nThe goal of the working group is to reach consensus by discussion. If consensus cannot be reached the [W3C Voting rules](https://www.w3.org/2018/Process-20180201/#Votes) apply. \n"
+      },
+      {
+        "repo": "w3c/dmpl",
+        "error": "doesn't match SW or DOC contributing",
+        "contributing": "# Conversational Interfaces Community Group\n\nThis repository is being used for work in the W3C Conversational Interfaces Community Group, governed by the [W3C Community License\nAgreement (CLA)](http://www.w3.org/community/about/agreements/cla/). To make substantive contributions,\nyou must join the CG.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n"
       },
       {
         "repo": "w3c/dnt",
@@ -3387,6 +3389,7 @@
       "w3c/devicesensors-wg",
       "w3c/display_errata",
       "w3c/distributed-tracing-wg",
+      "w3c/dmpl",
       "w3c/dnt",
       "w3c/dom",
       "w3c/DOM-Parsing",
@@ -4129,6 +4132,11 @@
         "license": "All Reports in this Repository are licensed by contributors\nunder the\n[W3C Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software).\n\nAll tests in this Repository are licensed by contributors to be distributed under the\n[W3C 3-clause BSD License](https://www.w3.org/Consortium/Legal/2008/03-bsd-license.html).\n\n"
       },
       {
+        "repo": "w3c/dmpl",
+        "error": "doesn't match SW or DOC license",
+        "license": "All Reports in this Repository are licensed by Contributors\nunder the\n[W3C Software and Document License](http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document).\n\nContributions to Specifications are made under the\n[W3C CLA](https://www.w3.org/community/about/agreements/cla/).\n\nContributions to Test Suites are made under the\n[W3C 3-clause BSD License](https://www.w3.org/Consortium/Legal/2008/03-bsd-license.html)\n\n"
+      },
+      {
         "repo": "w3c/epubcheck",
         "error": "doesn't match SW or DOC license",
         "license": "Copyright © 2007 Adobe Systems Incorporated\nCopyright © 2008 IDPF\nCopyright © 2017 W3C (MIT, ERCIM, Keio, Beihang)\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this\n   list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice,\n   this list of conditions and the following disclaimer in the documentation\n   and/or other materials provided with the distribution.\n\n3. Neither the name of the copyright holder nor the names of its\n   contributors may be used to endorse or promote products derived from\n   this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"\nAND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE\nFOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR\nSERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER\nCAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,\nOR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
@@ -4534,6 +4542,7 @@
       "w3c/css-houdini-drafts",
       "w3c/csswg-drafts",
       "w3c/dap-charter",
+      "w3c/dmpl",
       "w3c/earl",
       "w3c/fxtf-drafts",
       "w3c/github_sync",
@@ -4672,7 +4681,7 @@
       }
     ]
   },
-  "timestamp": "2019-03-06T09:32:04.190Z",
+  "timestamp": "2019-03-06T10:28:27.700Z",
   "groups": {
     "7756": {
       "id": 7756,
@@ -31004,6 +31013,80 @@
           "fullName": "WICG/media-playback-quality"
         },
         {
+          "id": "MDEwOlJlcG9zaXRvcnk2MDQ5Nzk1OA==",
+          "name": "get-installed-related-apps",
+          "owner": {
+            "login": "WICG"
+          },
+          "isArchived": false,
+          "homepageUrl": "",
+          "description": "get-installed-related-apps",
+          "labels": {
+            "edges": [
+              {
+                "node": {
+                  "name": "bug",
+                  "color": "ee0701"
+                }
+              },
+              {
+                "node": {
+                  "name": "duplicate",
+                  "color": "cccccc"
+                }
+              },
+              {
+                "node": {
+                  "name": "enhancement",
+                  "color": "84b6eb"
+                }
+              },
+              {
+                "node": {
+                  "name": "help wanted",
+                  "color": "128A0C"
+                }
+              },
+              {
+                "node": {
+                  "name": "invalid",
+                  "color": "e6e6e6"
+                }
+              },
+              {
+                "node": {
+                  "name": "question",
+                  "color": "cc317c"
+                }
+              },
+              {
+                "node": {
+                  "name": "wontfix",
+                  "color": "ffffff"
+                }
+              }
+            ],
+            "pageInfo": {
+              "endCursor": "Y3Vyc29yOnYyOpHOFyMRWQ==",
+              "hasNextPage": false
+            }
+          },
+          "w3cjson": {
+            "text": " {\n,   \"shortName\":  \"get-installed-related-apps\"\n}\n"
+          },
+          "contributing": {
+            "text": "# Web Platform Incubator Community Group\n\nThis repository is being used for work in the W3C Web Platform Incubator\nCommunity Group, governed by the [W3C Community License Agreement\n(CLA)](http://www.w3.org/community/about/agreements/cla/). To make substantive\ncontributions, you must join the CG.\n\nIf you are not the sole contributor to a contribution (pull request), please\nidentify all contributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per\nline as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part\nin designing the feature, you can remove yourself with the above syntax.\n"
+          },
+          "license": {
+            "text": "All Reports in this Repository are licensed by Contributors\nunder the\n[W3C Software and Document License](http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document).\n\nContributions to Specifications are made under the\n[W3C CLA](https://www.w3.org/community/about/agreements/cla/).\n"
+          },
+          "codeOfConduct": null,
+          "readme": {
+            "text": "# Get Installed Related Apps API\n\n**Date**: 2016-07-01\n\nThis site details a proposal to add an API to the web for determining if related\nnative apps are installed:\n\n```js\nlet listOfInstalledApps = await navigator.getInstalledRelatedApps();\n```\n\n* [Explainer document](EXPLAINER.md), a high-level overview of the proposal.\n\n## Licensing and contributions\n\nSee [LICENSE](LICENSE.md) and [CONTRIBUTING](CONTRIBUTING.md).\n"
+          },
+          "fullName": "WICG/get-installed-related-apps"
+        },
+        {
           "id": "MDEwOlJlcG9zaXRvcnk2MDY3MDkxMQ==",
           "name": "web-share-target",
           "owner": {
@@ -50301,6 +50384,121 @@
             "text": "# mathml\n[MathML editors' draft](https://w3c.github.io/mathml/)\n\nNote the build scripts are _not_ fully converted\nto the github layout at this time.\n\nUse\n\nhttp://www.w3.org/Math/draft-spec/mathml.html\n\nas a more reliable build of the draft until this\ngithub based build is announced.\n\n\nSee also\nhttps://mml-redux.github.io/mathml/\n\n\n"
           },
           "fullName": "w3c/mathml"
+        }
+      ]
+    },
+    "113314": {
+      "id": 113314,
+      "name": "Conversational Interfaces Community Group",
+      "discr": "w3cgroup",
+      "is-closed": false,
+      "description": "The mission of the Conversational Interfaces Community Group is to enable web developers to collaborate and share conversational experiences for a variety of domains. Most dialogue systems serve interactive experiences in their own domain specific language, causing a fragmented zoo of proprietary formats. For example, Google Home or Alexa do not share a common intermediate representation, which makes writing wide-spread content inaccessible to the mass audience. We study existing specs and design  standards to harness proven techniques into common agreement. See the <a href=\"https://conversational-interfaces.github.io/charter/\" rel=\"nofollow\">the Community Group's charter</a>.",
+      "staging": false,
+      "_links": {
+        "self": {
+          "href": "https://api.w3.org/groups/113314"
+        },
+        "homepage": {
+          "href": "http://www.w3.org/community/conv/"
+        },
+        "users": {
+          "href": "https://api.w3.org/groups/113314/users"
+        },
+        "services": {
+          "href": "https://api.w3.org/groups/113314/services"
+        },
+        "chairs": {
+          "href": "https://api.w3.org/groups/113314/chairs"
+        },
+        "join": {
+          "href": "https://www.w3.org/2004/01/pp-impl/113314/join"
+        },
+        "pp-status": {
+          "href": "https://www.w3.org/2004/01/pp-impl/113314/status"
+        },
+        "participations": {
+          "href": "https://api.w3.org/groups/113314/participations"
+        }
+      },
+      "type": "community group",
+      "repos": [
+        {
+          "id": "MDEwOlJlcG9zaXRvcnkxNzQxMjE2ODc=",
+          "name": "dmpl",
+          "owner": {
+            "login": "w3c"
+          },
+          "isArchived": false,
+          "homepageUrl": null,
+          "description": null,
+          "labels": {
+            "edges": [
+              {
+                "node": {
+                  "name": "bug",
+                  "color": "d73a4a"
+                }
+              },
+              {
+                "node": {
+                  "name": "duplicate",
+                  "color": "cfd3d7"
+                }
+              },
+              {
+                "node": {
+                  "name": "enhancement",
+                  "color": "a2eeef"
+                }
+              },
+              {
+                "node": {
+                  "name": "help wanted",
+                  "color": "008672"
+                }
+              },
+              {
+                "node": {
+                  "name": "good first issue",
+                  "color": "7057ff"
+                }
+              },
+              {
+                "node": {
+                  "name": "invalid",
+                  "color": "e4e669"
+                }
+              },
+              {
+                "node": {
+                  "name": "question",
+                  "color": "d876e3"
+                }
+              },
+              {
+                "node": {
+                  "name": "wontfix",
+                  "color": "ffffff"
+                }
+              }
+            ],
+            "pageInfo": {
+              "endCursor": "Y3Vyc29yOnYyOpHOSyaQLA==",
+              "hasNextPage": false
+            }
+          },
+          "w3cjson": {
+            "text": " {\n    \"group\":      [113314]\n,   \"contacts\":   [\"binroot\"]\n,   \"repo-type\":  \"cg-report\"\n}\n"
+          },
+          "contributing": {
+            "text": "# Conversational Interfaces Community Group\n\nThis repository is being used for work in the W3C Conversational Interfaces Community Group, governed by the [W3C Community License\nAgreement (CLA)](http://www.w3.org/community/about/agreements/cla/). To make substantive contributions,\nyou must join the CG.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n"
+          },
+          "license": {
+            "text": "All Reports in this Repository are licensed by Contributors\nunder the\n[W3C Software and Document License](http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document).\n\nContributions to Specifications are made under the\n[W3C CLA](https://www.w3.org/community/about/agreements/cla/).\n\nContributions to Test Suites are made under the\n[W3C 3-clause BSD License](https://www.w3.org/Consortium/Legal/2008/03-bsd-license.html)\n\n"
+          },
+          "codeOfConduct": null,
+          "readme": null,
+          "fullName": "w3c/dmpl"
         }
       ]
     }
