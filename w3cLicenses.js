@@ -29,9 +29,15 @@ async function licenses() {
         }
       }
     }
+  rateLimit {
+    limit
+    cost
+    remaining
+    resetAt
+  }
   }
   `);
-  if (res.repository === null) {
+  if (!res || res.repository === null) {
     throw new Error('w3c/licenses was not found');
   }
   res = res.repository;

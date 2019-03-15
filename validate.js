@@ -145,24 +145,28 @@ async function fetchRepoPage(org, acc = [], cursor = null) {
       return data;
       }
     });
+  } else {
+    console.error("Fetching results at cursor " + cursor + " failed, retrying");
+    return fetchRepoPage(org, acc, cursor);
   }
 }
 
-Promise.all(orgs.map(org => fetchRepoPage(org)))
-  .then(res => crawl = [].concat(...res))
-  .then(w3cLicenses)
+w3cLicenses()
   .then(lic => {
     contributing = lic.contributing;
     contributingSw = lic.contributingSw;
     license = lic.license;
     licenseSw = lic.licenseSw;
-  }).then(() => Promise.all([
+  }).then(() =>
+          Promise.all(orgs.map(org => fetchRepoPage(org)))
+          .then(res => crawl = [].concat(...res))
+         ).then(() => Promise.all([
     fetch("https://labs.w3.org/hatchery/repo-manager/api/repos").then(r => r.json()),
     fetch("https://w3c.github.io/cg-monitor/report.json").then(r => r.json()),
     fetch("https://w3c.github.io/spec-dashboard/repo-map.json").then(r => r.json())
   ]))
   .then(([repoData, cgData, repoMap]) => {
-    crawl.filter(r => !r.isArchived).forEach(r => {
+    crawl.filter(r => r && !r.isArchived).forEach(r => {
       if (!r.readme) {
         errors.noreadme.push(fullName(r));
       }
