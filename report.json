@@ -86,7 +86,7 @@
       "w3c/publ-cg",
       "w3c/rdf-tests",
       "w3c/respec",
-      "w3c/shacl",
+      "w3c/respec-hljs",
       "w3c/sparql-exists",
       "w3c/speech-api",
       "w3c/swig",
@@ -195,6 +195,7 @@
       "WICG/controls-list",
       "WICG/cookie-store",
       "WICG/CSS-Parser-API",
+      "WICG/datacue",
       "WICG/device-memory",
       "WICG/devtools-protocol",
       "WICG/display-locking",
@@ -842,6 +843,7 @@
       "w3c/PWETF",
       "w3c/qt3tests",
       "w3c/rdfvalidator-ng",
+      "w3c/respec-hljs",
       "w3c/sakura",
       "w3c/scholarly-html",
       "w3c/scribe",
@@ -1111,6 +1113,7 @@
       "WICG/background-fetch",
       "WICG/cookie-store",
       "WICG/CSS-Parser-API",
+      "WICG/datacue",
       "WICG/device-memory",
       "WICG/display-locking",
       "WICG/encrypted-media-encryption-scheme",
@@ -1195,6 +1198,11 @@
         "repo": "w3c/ambient-light",
         "error": "doesn't match SW or DOC contributing",
         "contributing": "Contributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy/) and\n[Software and Document License](https://www.w3.org/Consortium/Legal/copyright-\nsoftware). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n\n# Tests\n\nFor normative changes, a corresponding\n[web-platform-tests](https://github.com/web-platform-tests/wpt) PR is highly appreciated. Typically,\nboth PRs will be merged at the same time. Note that a test change that contradicts the spec should\nnot be merged before the corresponding spec change. If testing is not practical, please explain why\nand if appropriate [file a web-platform-tests issue](https://github.com/web-platform-tests/wpt/issues/new)\nto follow up later. Add the `type:untestable` or `type:missing-coverage` label as appropriate.\n"
+      },
+      {
+        "repo": "w3c/analytics-personalization-datalayer",
+        "error": "doesn't match SW or DOC contributing",
+        "contributing": "# ceddl html attribute-based markup and javascript api Community Group\n\nThis repository is being used for work in the W3C ceddl html attribute-based markup and javascript api Community Group, governed by the [W3C Community License\nAgreement (CLA)](http://www.w3.org/community/about/agreements/cla/). To make substantive contributions,\nyou must join the CG.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n"
       },
       {
         "repo": "w3c/annotation-aria",
@@ -2836,6 +2844,7 @@
       "w3c/PWETF",
       "w3c/qt3tests",
       "w3c/rdfvalidator-ng",
+      "w3c/respec-hljs",
       "w3c/sakura",
       "w3c/scholarly-html",
       "w3c/scribe",
@@ -3102,6 +3111,7 @@
       "WICG/container-queries",
       "WICG/cookie-store",
       "WICG/CSS-Parser-API",
+      "WICG/datacue",
       "WICG/device-memory",
       "WICG/display-locking",
       "WICG/encrypted-media-encryption-scheme",
@@ -3159,6 +3169,7 @@
       "w3c/alreq",
       "w3c/alt-techniques",
       "w3c/ambient-light",
+      "w3c/analytics-personalization-datalayer",
       "w3c/annotation-aria",
       "w3c/annotation-model",
       "w3c/apa",
@@ -3432,6 +3443,7 @@
       "w3c/resource-hints",
       "w3c/resource-timing",
       "w3c/respec",
+      "w3c/respec-hljs",
       "w3c/rqtf",
       "w3c/sakura",
       "w3c/scholarly-html",
@@ -3814,6 +3826,7 @@
       "WICG/cors-rfc1918",
       "WICG/cq-usecases",
       "WICG/CSS-Parser-API",
+      "WICG/datacue",
       "WICG/device-memory",
       "WICG/devtools-protocol",
       "WICG/display-locking",
@@ -3933,6 +3946,11 @@
       },
       {
         "repo": "w3c/adpt",
+        "error": "doesn't match SW or DOC license",
+        "license": "All Reports in this Repository are licensed by Contributors\nunder the\n[W3C Software and Document License](http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document).\n\nContributions to Specifications are made under the\n[W3C CLA](https://www.w3.org/community/about/agreements/cla/).\n\nContributions to Test Suites are made under the\n[W3C 3-clause BSD License](https://www.w3.org/Consortium/Legal/2008/03-bsd-license.html)\n\n"
+      },
+      {
+        "repo": "w3c/analytics-personalization-datalayer",
         "error": "doesn't match SW or DOC license",
         "license": "All Reports in this Repository are licensed by Contributors\nunder the\n[W3C Software and Document License](http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document).\n\nContributions to Specifications are made under the\n[W3C CLA](https://www.w3.org/community/about/agreements/cla/).\n\nContributions to Test Suites are made under the\n[W3C 3-clause BSD License](https://www.w3.org/Consortium/Legal/2008/03-bsd-license.html)\n\n"
       },
@@ -4380,6 +4398,7 @@
     "noreadme": [
       "immersive-web/webxr-samples",
       "w3c/activitypub",
+      "w3c/analytics-personalization-datalayer",
       "w3c/automotive-pay",
       "w3c/cciv",
       "w3c/charters-dashboard",
@@ -4454,6 +4473,7 @@
       "w3c/Micropub",
       "w3c/mnx",
       "w3c/musicxml",
+      "w3c/shacl",
       "w3c/smufl",
       "w3c/touch-events",
       "w3c/UAAG",
@@ -4531,7 +4551,7 @@
       }
     ]
   },
-  "timestamp": "2019-03-15T13:48:16.355Z",
+  "timestamp": "2019-03-19T08:12:47.361Z",
   "groups": {
     "7756": {
       "id": 7756,
@@ -8339,10 +8359,16 @@
                   "name": "pr open",
                   "color": "4f1baa"
                 }
+              },
+              {
+                "node": {
+                  "name": "agenda",
+                  "color": "093466"
+                }
               }
             ],
             "pageInfo": {
-              "endCursor": "Y3Vyc29yOnYyOpHOSsORKQ==",
+              "endCursor": "Y3Vyc29yOnYyOpHOTC35eA==",
               "hasNextPage": false
             }
           },
@@ -14233,6 +14259,92 @@
           },
           "fullName": "w3c/wake-lock",
           "hasRecTrack": true
+        },
+        {
+          "id": "MDEwOlJlcG9zaXRvcnkyMDUxODczNg==",
+          "name": "geolocation-api",
+          "owner": {
+            "login": "w3c"
+          },
+          "isArchived": false,
+          "homepageUrl": "https://w3c.github.io/geolocation-api/",
+          "description": "W3C Geolocation API",
+          "labels": {
+            "edges": [
+              {
+                "node": {
+                  "name": "bug",
+                  "color": "fc2929"
+                }
+              },
+              {
+                "node": {
+                  "name": "duplicate",
+                  "color": "cccccc"
+                }
+              },
+              {
+                "node": {
+                  "name": "enhancement",
+                  "color": "84b6eb"
+                }
+              },
+              {
+                "node": {
+                  "name": "help wanted",
+                  "color": "159818"
+                }
+              },
+              {
+                "node": {
+                  "name": "invalid",
+                  "color": "e6e6e6"
+                }
+              },
+              {
+                "node": {
+                  "name": "question",
+                  "color": "cc317c"
+                }
+              },
+              {
+                "node": {
+                  "name": "wontfix",
+                  "color": "ffffff"
+                }
+              },
+              {
+                "node": {
+                  "name": "security",
+                  "color": "fbca04"
+                }
+              },
+              {
+                "node": {
+                  "name": "privacy",
+                  "color": "d4c5f9"
+                }
+              }
+            ],
+            "pageInfo": {
+              "endCursor": "Y3Vyc29yOnYyOpHOLRU_Tg==",
+              "hasNextPage": false
+            }
+          },
+          "w3cjson": {
+            "text": "\n{\n  \"group\": 43696,\n  \"contacts\": [\n    \"xfq\"\n  ],\n  \"policy\": \"open\",\n  \"repo-type\": \"rec-track\"\n}\n"
+          },
+          "contributing": {
+            "text": "# Device and Sensors Working Group\n\n## Spec and API development\n\nSpec development happens via [issues in this repository](https://github.com/w3c/geolocation-api/issues). For general discussion, please use the [public-geolocation@w3.org mailing list](http://lists.w3.org/Archives/Public/public-geolocation/) with a `Subject:` prefix of `[geolocation]`.\n\nUpdates to the spec must reference [resolved issues marked `needs spec`](https://github.com/w3c/geolocation-api/issues?q=is%3Aclosed+label%3A%22needs+spec%22).\n\nTo make edits to the design, please send pull requests against the Nightly spec on the gh-pages branch.\n\nFor normative changes, a corresponding [web-platform-tests](https://github.com/web-platform-tests/wpt) PR is highly appreciated. Typically, both PRs will be merged at the same time. Note that a test change that contradicts the spec should not be merged before the corresponding spec change. If testing is not practical, please explain why and if appropriate [file an issue](https://github.com/web-platform-tests/wpt/issues/new) to follow up later.\n\nContributions to this repository are intended to become part of Recommendation-track documents\ngoverned by the [W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Software and Document License](http://www.w3.org/Consortium/Legal/copyright-software). To contribute, you must\neither participate in the relevant W3C Working Group or make a non-member patent licensing\ncommitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request's body or in subsequent comments.\n\n To add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n ```\n +@github_username\n ```\n\n If you added a contributor by mistake, you can remove them in a comment with:\n\n ```\n -@github_username\n ```\n\n If you are making a pull request on behalf of someone else but you had no part in designing the\n feature, you can remove yourself with the above syntax.\n"
+          },
+          "license": null,
+          "codeOfConduct": {
+            "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n"
+          },
+          "readme": {
+            "text": "# geolocation-api\n<p>This specification defines an API that provides scripted access to geographical location information associated with the hosting device.</p>\n<p>This document has been produced by the <a href=\"http://www.w3.org/2008/geolocation/\">W3C Geolocation Working Group</a>.</p>\n<p>The latest draft is available at: <a href=\"http://w3c.github.io/geolocation-api/\">http://w3c.github.io/geolocation-api/</a>.</p>\n\n<p>Future on Geolocation is happening in the <a href='https://w3c.github.io/geolocation-sensor/'>https://w3c.github.io/geolocation-sensor/</a> API.</p>\n"
+          },
+          "fullName": "w3c/geolocation-api"
         },
         {
           "id": "MDEwOlJlcG9zaXRvcnkyNDIyNDIyMA==",
@@ -26845,7 +26957,7 @@
           "license": null,
           "codeOfConduct": null,
           "readme": {
-            "text": "# WebAssembly C and C++ API \n\nWork in progress! No docs yet.\n\n\n### Design Goals\n\n* Provide a \"black box\" API for embedding a Wasm engine in other C/C++ applications.\n\n  * Be completely agnostic to VM specifics.\n\n  * Non-goal: \"white box\" interoperability with embedder (such as combined GC instead of mere finalisation) -- *much* more difficult to achieve.\n\n* Allow creation of bindings for other languages through typical C foreign function interfaces.\n\n  * Support a plain C API.\n\n  * Stick to mostly manual memory management of interface objects.\n\n* Avoid language features that raise barrier to use.\n\n  * E.g., no exceptions or post-C++11 features in C++ API.\n\n  * E.g., no passing of structs by-value or post-C99 features in C API.\n\n* Achieve link-time compatibility between different implementations.\n\n  * All implementation-dependent API classes are abstract and can be instantiated through factory methods only.\n\n\n### Interfaces\n\n* C++ API:\n\n  * See `include/wasm.hh` for interface.\n\n  * See `example/*.cc` for example usages.\n\n* C API:\n\n  * See `include/wasm.h` for interface.\n\n  * See `example/*.c` for example usages.\n\nSome random explanations:\n\n* The VM must be initialised by creating an instance of an *engine* (`wasm::Engine`/`wasm_engine_t`) and is shut down by deleting it. Such an instance may only be created once per process.\n\n* All runtime objects are tied to a specific *store* (`wasm::Store`/`wasm_store_t`). Multiple stores can be created, but their objects cannot interact. Every store and its objects must only be accessed in a single thread.\n\n* To exchange module objects between threads, create a *shared* module (`wasm::Shared<Module>`/`wasm_shared_module_t`). Other objects cannot be shared in current Wasm.\n\n* *Vector* structures (`wasm::vec<X>`/`wasm_x_vec_t`) are lightweight abstractions of a pair of a plain array and its length. The C++ API does not use `std::vector` because that does not support adopting pre-existing arrays.\n\n* *References* point to runtime objects, but may involve internal indirections, which may or may not be cached. Thus, pointer equality on `Ref*` or subclasses cannot be used to compare identity of the underlying objects (`Ref::eq` may be added later). However, `nullptr`/`NULL` uniquely represents null references.\n\n* The API already encompasses current proposals like [multiple return values](https://github.com/WebAssembly/multi-value/blob/master/proposals/multi-value/Overview.md) and [reference types](https://github.com/WebAssembly/reference-types/blob/master/proposals/reference-types/Overview.md), but not yet [threads](https://github.com/WebAssembly/threads/blob/master/proposals/threads/Overview.md).\n\n\n### Implementation\n\n* A prototype implementation based on V8 is in `src`.\n\n  * Note that this requires adding a module to V8, so it patches V8's build file.\n\n* The C API is implemented on top of the C++ API.\n\n* See `Makefile` for build recipe. Canonical steps to run examples:\n\n  1. `make v8-checkout`\n  2. `make v8`\n  3. `make all`\n\n\n#### Limitations\n\nV8 implementation:\n\n* Currently requires patching V8 by adding a module.\n\n* Host functions (`Func::make`) create a JavaScript function internally, since V8 cannot handle raw C imports yet.\n\n* As a consequence, does not support i64 in external calls or host functions.\n\n* Also cannot handle multiple values in external calls or host functions.\n\n* Host functions and host globals are created through auxiliary modules constructed on the fly, to work around limitations in JS API.\n\n* `Shared<Module>` is currently implemented via serialisation, since V8 does not currently have direct support for cross-isolate sharing.\n\n\n### TODO\n\nPossible API tweaks:\n\n  * Add `Ref::eq` (or better, a subclass `EqRef::eq`) for reference equality?\n\n  * Avoid allocation for `Result` objects by making them into out parameters?\n\n  * Use `restrict` in C API?\n\n  * Distinguish vec and own_vec in C++ API?\n\n  * Handle constness of vectors properly in C API?\n\n  * Find a way to perform C callbacks through C++ without extra wrapper?\n\n  * Add iterators to `vec` class?\n\nV8 implementation:\n\n  * Find a way to avoid external calls through JS?\n\n  * Use reference counting and caching for types?\n"
+            "text": "# WebAssembly C and C++ API \n\nWork in progress! No docs yet.\n\n\n### Design Goals\n\n* Provide a \"black box\" API for embedding a Wasm engine in other C/C++ applications.\n\n  * Be completely agnostic to VM specifics.\n\n  * Non-goal: \"white box\" interoperability with embedder (such as combined GC instead of mere finalisation) -- *much* more difficult to achieve.\n\n* Allow creation of bindings for other languages through typical C foreign function interfaces.\n\n  * Support a plain C API.\n\n  * Stick to mostly manual memory management of interface objects.\n\n* Avoid language features that raise barrier to use.\n\n  * E.g., no exceptions or post-C++11 features in C++ API.\n\n  * E.g., no passing of structs by-value or post-C99 features in C API.\n\n* Achieve link-time compatibility between different implementations.\n\n  * All implementation-dependent API classes are abstract and can be instantiated through factory methods only.\n\n\n### Interfaces\n\n* C++ API:\n\n  * See `include/wasm.hh` for interface.\n\n  * See `example/*.cc` for example usages.\n\n* C API:\n\n  * See `include/wasm.h` for interface.\n\n  * See `example/*.c` for example usages.\n\nSome random explanations:\n\n* The VM must be initialised by creating an instance of an *engine* (`wasm::Engine`/`wasm_engine_t`) and is shut down by deleting it. Such an instance may only be created once per process.\n\n* All runtime objects are tied to a specific *store* (`wasm::Store`/`wasm_store_t`). Multiple stores can be created, but their objects cannot interact. Every store and its objects must only be accessed in a single thread.\n\n* To exchange module objects between threads, create a *shared* module (`wasm::Shared<Module>`/`wasm_shared_module_t`). Other objects cannot be shared in current Wasm.\n\n* *Vector* structures (`wasm::vec<X>`/`wasm_x_vec_t`) are lightweight abstractions of a pair of a plain array and its length. The C++ API does not use `std::vector` because that does not support adopting pre-existing arrays.\n\n* *References* point to runtime objects, but may involve internal indirections, which may or may not be cached. Thus, pointer equality on `Ref*` or subclasses cannot be used to compare identity of the underlying objects (`Ref::eq` may be added later). However, `nullptr`/`NULL` uniquely represents null references.\n\n* The API already encompasses current proposals like [multiple return values](https://github.com/WebAssembly/multi-value/blob/master/proposals/multi-value/Overview.md) and [reference types](https://github.com/WebAssembly/reference-types/blob/master/proposals/reference-types/Overview.md), but not yet [threads](https://github.com/WebAssembly/threads/blob/master/proposals/threads/Overview.md).\n\n\n### Implementation\n\n* A prototype implementation based on V8 is in `src`.\n\n  * Note that this requires adding a module to V8, so it patches V8's build file.\n\n* The C API is implemented on top of the C++ API.\n\n* See `Makefile` for build recipe. Canonical steps to run examples:\n\n  1. `make v8-checkout`\n  2. `make v8`\n  3. `make all`\n\n\n#### Limitations\n\nV8 implementation:\n\n* Currently requires patching V8 by adding a module.\n\n* Host functions (`Func::make`) create a JavaScript function internally, since V8 cannot handle raw C imports yet.\n\n* As a consequence, does not support multiple results in external calls or host functions.\n\n* Host functions and host globals are created through auxiliary modules constructed on the fly, to work around limitations in JS API.\n\n* `Shared<Module>` is currently implemented via serialisation, since V8 does not currently have direct support for cross-isolate sharing.\n\n\n### TODO\n\nPossible API tweaks:\n\n  * Add `Ref::eq` (or better, a subclass `EqRef::eq`) for reference equality?\n\n  * Avoid allocation for `Result` objects by making them into out parameters?\n\n  * Use `restrict` in C API?\n\n  * Distinguish vec and own_vec in C++ API?\n\n  * Handle constness of vectors properly in C API?\n\n  * Find a way to perform C callbacks through C++ without extra wrapper?\n\n  * Add iterators to `vec` class?\n\nV8 implementation:\n\n  * Find a way to avoid external calls through JS?\n\n  * Use reference counting and caching for types?\n"
           },
           "fullName": "WebAssembly/wasm-c-api"
         },
@@ -31283,6 +31395,74 @@
           "fullName": "WICG/picture-in-picture"
         },
         {
+          "id": "MDEwOlJlcG9zaXRvcnk4OTQyNDc1MA==",
+          "name": "keyboard-lock",
+          "owner": {
+            "login": "WICG"
+          },
+          "isArchived": false,
+          "homepageUrl": "https://wicg.github.io/keyboard-lock/",
+          "description": "Keyboard Lock",
+          "labels": {
+            "edges": [
+              {
+                "node": {
+                  "name": "bug",
+                  "color": "ee0701"
+                }
+              },
+              {
+                "node": {
+                  "name": "duplicate",
+                  "color": "cccccc"
+                }
+              },
+              {
+                "node": {
+                  "name": "feature request",
+                  "color": "84b6eb"
+                }
+              },
+              {
+                "node": {
+                  "name": "help wanted",
+                  "color": "128A0C"
+                }
+              },
+              {
+                "node": {
+                  "name": "invalid",
+                  "color": "e6e6e6"
+                }
+              },
+              {
+                "node": {
+                  "name": "question",
+                  "color": "cc317c"
+                }
+              },
+              {
+                "node": {
+                  "name": "wontfix",
+                  "color": "ffffff"
+                }
+              }
+            ],
+            "pageInfo": {
+              "endCursor": "Y3Vyc29yOnYyOpHOI0k5BQ==",
+              "hasNextPage": false
+            }
+          },
+          "w3cjson": null,
+          "contributing": null,
+          "license": null,
+          "codeOfConduct": null,
+          "readme": {
+            "text": "# Keyboard Lock\n\nKeyboard Lock is an API that allows websites to capture and use\nreserved keys and keyboard shortcuts.\n\nNote, in early discussions, Keyboard Lock was known as System Keyboard Lock.\n\nFor background, see:\n\n* The [explainer](https://github.com/jondahlke/system-keyboard-lock/blob/master/EXPLAINER.md)\n* The [WICG incubation discussion](https://discourse.wicg.io/t/proposal-system-keyboard-lock-api/1594) for this feature\n\nLinks:\n\n* [Design Doc for Chrome](https://goo.gl/WjAhiZ)\n\n# Tests\n\nFor normative changes, a corresponding\n[web-platform-tests](https://github.com/web-platform-tests/wpt) PR is highly appreciated. Typically,\nboth PRs will be merged at the same time. Note that a test change that contradicts the spec should\nnot be merged before the corresponding spec change. If testing is not practical, please explain why\nand if appropriate [file an issue](https://github.com/web-platform-tests/wpt/issues/new) to follow\nup later. Add the `type:untestable` or `type:missing-coverage` label as appropriate.\n"
+          },
+          "fullName": "WICG/keyboard-lock"
+        },
+        {
           "id": "MDEwOlJlcG9zaXRvcnkxMDA3MjExOTU=",
           "name": "performance-entry",
           "owner": {
@@ -32262,7 +32442,7 @@
             "body": "# Code of Conduct\n\nAll documentation, code, and communication under this repository are covered by the [W3C Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n"
           },
           "readme": {
-            "text": "# KV Storage\n\nThis document is an explainer for a potential future web platform feature, \"KV storage\" (short for \"key/value storage\"). It's similar to [`localStorage`](https://html.spec.whatwg.org/multipage/webstorage.html#webstorage) in utility, but much more modern, and layered on top of IndexedDB.\n\n_This feature was formerly known as \"async local storage\", but in [#38](https://github.com/domenic/kv-storage/issues/38), folks pointed out that since we don't intend to access the `localStorage` database itself, that name was misleading._\n\nThis feature would be implemented as a [built-in module](https://github.com/tc39/proposal-javascript-standard-library/). It would also use IndexedDB as its backing store; see more on that below.\n\nA [full specification](https://domenic.github.io/kv-storage/) is also available.\n\nAt [TPAC 2018](https://www.w3.org/2018/10/TPAC/Overview.html), the Web Platform Working Group and the [IndexedDB](https://w3c.github.io/IndexedDB/) specification editors [agreed](https://www.w3.org/2018/10/22-WebPlat-minutes.html#item05) that after incubation in the WICG, KV storage should graduate to be part of the W3C IndexedDB specification.\n\n## Sample code\n\n```js\nimport { storage } from \"std:kv-storage\"; // specifier prefix not final\n\n(async () => {\n  await storage.set(\"mycat\", \"Tom\");\n  console.assert(await storage.get(\"mycat\") === \"Tom\");\n\n  for await (const [key, value] of storage.entries()) {\n    console.log(key, value);\n  }\n  // Logs \"mycat\", \"Tom\"\n\n  await storage.delete(\"mycat\");\n  console.assert(await storage.get(\"mycat\") === undefined);\n})();\n```\n\n## Motivation\n\nLocal storage is a well-known and well-loved API. It only has one problem: it's synchronous. This leads to [terrible performance](https://hacks.mozilla.org/2012/03/there-is-no-simple-solution-for-local-storage/) and cross-window synchronization issues.\n\nThe alternative is IndexedDB. IndexedDB is, however, quite hard to use. It has no simple key/value layer, instead requiring understanding concepts like database upgrades and transactions. Its API is also quite dated; it does not use promises, but instead `IDBRequest` objects with their `onsuccess` and `onerror` methods.\n\nIn the face of this, a cottage industry of solutions for \"async key/value storage\" have sprung up to wrap IndexedDB. Perhaps the most well-known of these is [localForage](https://localforage.github.io/localForage/), which copies the `localStorage` API directly.\n\nAfter many years of convergence in library-space on this sort of solution, it's time to bring a simple async key/value storage solution out of the cold and into the web platform.\n\n## API\n\n### `Map`-like key/value pair API\n\nNote that keys and values would be allowed to be any [structured-serializable type](https://html.spec.whatwg.org/multipage/structured-data.html#serializable-objects) (see [#2](https://github.com/domenic/kv-storage/issues/2) for more discussion).\n\n#### `set(key, value)`\n\nSets the value of the entry identified by `key` to `value`. Returns a promise that fulfills with `undefined` once this is complete.\n\n_Note: setting an entry to have the value `undefined` is equivalent to deleting it. See discussion in [#3](https://github.com/domenic/kv-storage/issues/3)._\n\n#### `get(key)`\n\nReturns a promise for the value of the entry identified by `key`, or `undefined` if no value is present.\n\n#### `delete(key)`\n\nRemoves the entry identified by `key`, if it exists. Once this completes, returns a promise for undefined.\n\n_Note: this is equivalent to `set(key, undefined)`. See discussion in [#3](https://github.com/domenic/kv-storage/issues/3)._\n\n#### `clear()`\n\nClears all entries. Returns a promise for `undefined`.\n\n#### `keys()`\n\nReturns an async iterator for all the stored keys, sorted in the underlying IndexedDB key order.\n\n#### `values()`\n\nReturns an async iterator for all the stored values, sorted to correspond with `keys()`.\n\n#### `entries()`\n\nReturns an async iterator of `[key, value]` pairs, sorted to correspond with `keys()`.\n\n### `new StorageArea()`: separate storage areas\n\nWe additionally expose a `StorageArea` constructor, which allows you to create an \"isolated\" storage area that is less likely to collide than using the default one:\n\n```js\nimport { storage, StorageArea } from \"std:kv-storage\";\n\n(async () => {\n  await storage.set(\"mycat\", \"Tom\");\n  console.assert(await storage.get(\"mycat\") === \"Tom\");\n\n  const otherStorage = new StorageArea(\"unique string\");\n  console.assert(await otherStorage.get(\"mycat\") === undefined);\n  await otherStorage.set(\"mycat\", \"Jerry\");\n  console.assert(await otherStorage.get(\"mycat\") === \"Jerry\");\n})();\n```\n\nThis sort of API has [precedent in localForage](https://www.npmjs.com/package/localforage#multiple-instances), which is notable since localForage otherwise sticks rather strictly to the `localStorage` API surface.\n\nThe scope of the default storage area would be per-realm. (Or more precisely, per module map, since it would be created whenever you imported the module.)\n\n### `backingStore`: falling back to IndexedDB\n\nOne of the great things about layering KV storage on top of IndexedDB is that, if the developer's code grows beyond the capabilities of a simple key/value store, they can easily transition to the full power of IndexedDB (such as using transactions, indices, or cursors), while reusing their database.\n\nTo facilitate this, we include an API that allows you to get a `{ database, store, version }` object identifying the IndexedDB database and store within that database where a given `StorageArea`'s data is being stored:\n\n```js\nimport { storage } from \"std:kv-storage\";\nimport { open as idbOpen } from \"https://www.npmjs.com/package/idb/pretend-this-was-a-native-JS-module\";\n\n(async () => {\n  await storage.set(\"mycat\", \"Tom\");\n  await storage.set(\"mydog\", \"Joey\");\n\n  const { database, store, version } = storage.backingStore;\n  const db = await idbOpen(database, version);\n  const tx = db.transaction(store, \"readwrite\");\n  tx.objectStore(store).add(\"mycat\", \"Jerry\");\n  tx.objectStore(store).add(\"mydog\", \"Kelby\");\n  await tx.complete;\n  await db.close();\n})();\n```\n\n## Impact\n\n- Developers would be steered away from the perils of `localStorage`, toward this modern, attractive alternative.\n- Applications would no longer need to ship complex IndexedDB logic, or the 9.5 KB localForage library.\n\nlocalForage is downloaded [~134K times per week](https://www.npmjs.com/package/localforage) via npm.\n\nAnother notable library in this vein is [idb-keyval](https://www.npmjs.com/package/idb-keyval), which is downloaded ~11K times per week via npm.\n\nFor comparison, Angular is downloaded [~313K times per week](https://www.npmjs.com/package/angular), React [~2.807 million times per week](https://www.npmjs.com/package/react), and Vue [~436K times per week](https://www.npmjs.com/package/vue).\n\n(All of the above statistics are as of 2018-10-10.)\n"
+            "text": "# KV Storage\n\nThis document is an explainer for a potential future web platform feature, \"KV storage\" (short for \"key/value storage\"). It's similar to [`localStorage`](https://html.spec.whatwg.org/multipage/webstorage.html#webstorage) in utility, but much more modern, and layered on top of IndexedDB.\n\n_This feature was formerly known as \"async local storage\", but in [#38](https://github.com/domenic/kv-storage/issues/38), folks pointed out that since we don't intend to access the `localStorage` database itself, that name was misleading._\n\nThis feature would be implemented as a [built-in module](https://github.com/tc39/proposal-javascript-standard-library/). It would also use IndexedDB as its backing store; see more on that below.\n\nA [full specification](https://domenic.github.io/kv-storage/) is also available.\n\nAt [TPAC 2018](https://www.w3.org/2018/10/TPAC/Overview.html), the Web Platform Working Group and the [IndexedDB](https://w3c.github.io/IndexedDB/) specification editors [agreed](https://www.w3.org/2018/10/22-WebPlat-minutes.html#item05) that after incubation in the WICG, KV storage should graduate to be part of the W3C IndexedDB specification.\n\n## Sample code\n\n```js\nimport { storage } from \"std:kv-storage\"; // specifier prefix not final\n\n(async () => {\n  await storage.set(\"mycat\", \"Tom\");\n  console.assert(await storage.get(\"mycat\") === \"Tom\");\n\n  for await (const [key, value] of storage.entries()) {\n    console.log(key, value);\n  }\n  // Logs \"mycat\", \"Tom\"\n\n  await storage.delete(\"mycat\");\n  console.assert(await storage.get(\"mycat\") === undefined);\n})();\n```\n\n## Motivation\n\nLocal storage is a well-known and well-loved API. It only has one problem: it's synchronous. This leads to [terrible performance](https://hacks.mozilla.org/2012/03/there-is-no-simple-solution-for-local-storage/) and cross-window synchronization issues.\n\nThe alternative is IndexedDB. IndexedDB is, however, quite hard to use. It has no simple key/value layer, instead requiring understanding concepts like database upgrades and transactions. Its API is also quite dated; it does not use promises, but instead `IDBRequest` objects with their `onsuccess` and `onerror` methods.\n\nIn the face of this, a cottage industry of solutions for \"async key/value storage\" have sprung up to wrap IndexedDB. Perhaps the most well-known of these is [localForage](https://localforage.github.io/localForage/), which copies the `localStorage` API directly.\n\nAfter many years of convergence in library-space on this sort of solution, it's time to bring a simple async key/value storage solution out of the cold and into the web platform.\n\n## API\n\n### `Map`-like key/value pair API\n\nNote that keys and values would be allowed to be any [structured-serializable type](https://html.spec.whatwg.org/multipage/structured-data.html#serializable-objects) (see [#2](https://github.com/domenic/kv-storage/issues/2) for more discussion).\n\n#### `set(key, value)`\n\nSets the value of the entry identified by `key` to `value`. Returns a promise that fulfills with `undefined` once this is complete.\n\n_Note: setting an entry to have the value `undefined` is equivalent to deleting it. See discussion in [#3](https://github.com/domenic/kv-storage/issues/3)._\n\n#### `get(key)`\n\nReturns a promise for the value of the entry identified by `key`, or `undefined` if no value is present.\n\n#### `delete(key)`\n\nRemoves the entry identified by `key`, if it exists. Once this completes, returns a promise for undefined.\n\n_Note: this is equivalent to `set(key, undefined)`. See discussion in [#3](https://github.com/domenic/kv-storage/issues/3)._\n\n#### `clear()`\n\nClears all entries. Returns a promise for `undefined`.\n\n#### `keys()`\n\nReturns an async iterator for all the stored keys, sorted in the underlying IndexedDB key order.\n\n#### `values()`\n\nReturns an async iterator for all the stored values, sorted to correspond with `keys()`.\n\n#### `entries()`\n\nReturns an async iterator of `[key, value]` pairs, sorted to correspond with `keys()`.\n\n### `new StorageArea()`: separate storage areas\n\nWe additionally expose a `StorageArea` constructor, which allows you to create an \"isolated\" storage area that is less likely to collide than using the default one:\n\n```js\nimport { storage, StorageArea } from \"std:kv-storage\";\n\n(async () => {\n  await storage.set(\"mycat\", \"Tom\");\n  console.assert(await storage.get(\"mycat\") === \"Tom\");\n\n  const otherStorage = new StorageArea(\"unique string\");\n  console.assert(await otherStorage.get(\"mycat\") === undefined);\n  await otherStorage.set(\"mycat\", \"Jerry\");\n  console.assert(await otherStorage.get(\"mycat\") === \"Jerry\");\n})();\n```\n\nThis sort of API has [precedent in localForage](https://www.npmjs.com/package/localforage#multiple-instances), which is notable since localForage otherwise sticks rather strictly to the `localStorage` API surface.\n\nThe scope of the default storage area would be per-realm. (Or more precisely, per module map, since it would be created whenever you imported the module.)\n\n### `backingStore`: falling back to IndexedDB\n\nOne of the great things about layering KV storage on top of IndexedDB is that, if the developer's code grows beyond the capabilities of a simple key/value store, they can easily transition to the full power of IndexedDB (such as using transactions, indices, or cursors), while reusing their database.\n\nTo facilitate this, we include an API that allows you to get a `{ database, store, version }` object identifying the IndexedDB database and store within that database where a given `StorageArea`'s data is being stored:\n\n```js\nimport { storage } from \"std:kv-storage\";\nimport { open as idbOpen } from \"https://www.npmjs.com/package/idb/pretend-this-was-a-native-JS-module\";\n\n(async () => {\n  await storage.set(\"mycat\", \"Tom\");\n  await storage.set(\"mydog\", \"Joey\");\n\n  const { database, store, version } = storage.backingStore;\n  const db = await idbOpen(database, version);\n  const tx = db.transaction(store, \"readwrite\");\n  tx.objectStore(store).add(\"mycat\", \"Jerry\");\n  tx.objectStore(store).add(\"mydog\", \"Kelby\");\n  await tx.complete;\n  await db.close();\n})();\n```\n\n## Impact\n\n- Developers would be steered away from the perils of `localStorage`, toward this modern, attractive alternative.\n- Applications would no longer need to ship complex IndexedDB logic, or the 9.5 KB localForage library.\n\nlocalForage is downloaded [~227K times per week](https://www.npmjs.com/package/localforage) via npm.\n\nAnother notable library in this vein is [idb-keyval](https://www.npmjs.com/package/idb-keyval), which is downloaded ~119K times per week via npm.\n\nFor comparison, Angular is downloaded [~2.314 million times per week](https://www.npmjs.com/package/@angular/core), React [~6.312 million times per week](https://www.npmjs.com/package/react), and Vue [~995K times per week](https://www.npmjs.com/package/vue).\n\n(All of the above statistics are as of 2019-03-14.)\n"
           },
           "fullName": "WICG/kv-storage"
         },
@@ -33961,6 +34141,80 @@
             "text": "# A Well-Known URL for Changing Passwords\n\nThis [specification](https://wicg.github.io/change-password-url/index.html) defines the <code>/.well-known/change-password</code>\n[well-known resource](https://tools.ietf.org/html/rfc5785).\n\nFor more context, please read the [explainer](explainer.md).\n\nAll [participation](CONTRIBUTING.md) is governed by the\n[W3C Community Group Participation Policies](https://www.w3.org/community/about/agreements/#policies), the\n[Web Platform Incubator Community Group Charter](https://wicg.github.io/admin/charter.html), and the\n[W3C Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n"
           },
           "fullName": "WICG/change-password-url"
+        },
+        {
+          "id": "MDEwOlJlcG9zaXRvcnkxNjE2MzA0NDM=",
+          "name": "datacue",
+          "owner": {
+            "login": "WICG"
+          },
+          "isArchived": false,
+          "homepageUrl": null,
+          "description": "WICG incubation of Data Cue Standard",
+          "labels": {
+            "edges": [
+              {
+                "node": {
+                  "name": "bug",
+                  "color": "d73a4a"
+                }
+              },
+              {
+                "node": {
+                  "name": "duplicate",
+                  "color": "cfd3d7"
+                }
+              },
+              {
+                "node": {
+                  "name": "enhancement",
+                  "color": "a2eeef"
+                }
+              },
+              {
+                "node": {
+                  "name": "help wanted",
+                  "color": "008672"
+                }
+              },
+              {
+                "node": {
+                  "name": "good first issue",
+                  "color": "7057ff"
+                }
+              },
+              {
+                "node": {
+                  "name": "invalid",
+                  "color": "e4e669"
+                }
+              },
+              {
+                "node": {
+                  "name": "question",
+                  "color": "d876e3"
+                }
+              },
+              {
+                "node": {
+                  "name": "wontfix",
+                  "color": "ffffff"
+                }
+              }
+            ],
+            "pageInfo": {
+              "endCursor": "Y3Vyc29yOnYyOpHORSgtmA==",
+              "hasNextPage": false
+            }
+          },
+          "w3cjson": null,
+          "contributing": null,
+          "license": null,
+          "codeOfConduct": null,
+          "readme": {
+            "text": "# Web Incubator CG For DataCue\n\nThis is the repository for the DataCue Web Incubator CG, a collaborative project hosted by the <a href=\"https://github.com/WICG\">WICG</a>.\n\nThe repo is used for developing documentation and code resources identified by the group.\n\n## References\n\n| Name | URL |\n| --- | --- |\n| Media Timed Events Task Force homepage | https://w3c.github.io/me-media-timed-events/ |\n| Video Metadata Cues TPAC breakout summary | https://github.com/w3c/strategy/issues/113#issuecomment-432971265 |\n"
+          },
+          "fullName": "WICG/datacue"
         },
         {
           "id": "MDEwOlJlcG9zaXRvcnkxNjM4NzI1NzI=",
@@ -44904,7 +45158,7 @@
             "body": "# Code of Conduct\n\nAll contributors to this project agree to follow the [W3C Code of Ethics and Professional Conduct](http://www.w3.org/Consortium/cepc/).\n\nIf you want to take action, you can contact W3C Staff as explained in [W3C Procedures](http://www.w3.org/Consortium/pwe/#Procedures)."
           },
           "readme": {
-            "text": "[![Current Release](https://img.shields.io/github/release/w3c/epubcheck.svg)](https://github.com/w3c/epubcheck/releases/latest) [![Github All Releases Downloads](https://img.shields.io/github/downloads/w3c/epubcheck/total.svg?colorB=A9A9A9)](https://github.com/w3c/epubcheck/releases/) [![Build Status](https://travis-ci.org/w3c/epubcheck.svg?branch=master)](https://travis-ci.org/w3c/epubcheck/)\n\n\nEPUBCheck\n=========\n\nEPUBCheck is a tool to validate the conformance of EPUB publications against the EPUB specifications.\nEPUBCheck can be run as a standalone command-line tool or used as a Java library.\n\nEPUBCheck is open source software, maintained by the [DAISY Consortium](http://www.daisy.org) on behalf of the [W3C](https://www.w3.org/publishing/epubcheck_fundraising).\n\n\n**We Need Your Support!!**  \nFinancial support is critical to the development of EPUBCheck, the tool we all use to validate EPUB files.\nWe need to make sure that the resources are adequate to both update the tool and provide for its continued maintenance over the next two years;\nplease [help us fund and support EPUBCheck](https://www.w3.org/publishing/epubcheck_fundraising), and join the [list of donators](#donators)!\n\n\n## Downloads\n\nCheck the [releases page](https://github.com/w3c/epubcheck/releases) to get the latest distribution.\n\n[EPUBCheck 4.1.1](https://github.com/w3c/epubcheck/releases/tag/v4.1.1) is the latest production-ready release, to be used to validate both EPUB 2 and 3 files. EPUB 3 publications are checked against the EPUB 3.0.1 family of specifications.\n\n[EPUBCheck 4.2.0-beta](https://github.com/w3c/epubcheck/releases/tag/v4.2.0-beta) is the latest public test release of the forthcoming 4.2.0 version, to be used for testing only. It features nearly-complete support for the EPUB 3.2 family of specifications.\n\n\n\n## Documentation\n\nDocumentation on how to **use** EPUBCheck, to **contribute** to the project or to **translate** messages is available on the [EPUBCheck wiki](https://github.com/w3c/epubcheck/wiki).\n\nTechnical discussions are held on our public [mailing list](https://lists.w3.org/Archives/Public/public-epubcheck/). To subscribe to the mailing list, send an email with subject `subscribe` to [public-epubcheck-request@w3.org](mailto:public-epubcheck-request@w3.org?subject=subscribe). To participate in the discussion, simply send an email to [public-epubcheck@w3.org](mailto:public-epubcheck-request@w3.org).\n\nHistorical archives of discussions prior to October 2017 are stored at the old [EPUBCheck Google Group](https://groups.google.com/forum/#!forum/epubcheck).\n\n## Building EPUBCheck\n\nTo build epubcheck from the sources you need Java Development Kit (JDK) 1.7 or above and [Apache Maven](http://maven.apache.org/) 3.0 or above installed.\n\nYou will also need Python to be able to run the BookReporter and related tools.\n\nBuild and run tests:\n\n```\n$ mvn install\n```\nWill copy `.*jar` files and packages to `target/` folder...\n\n## Credits\n\nMost of the EPUBCheck functionality comes from the schema validation tool [Jing](http://www.thaiopensource.com/relaxng/jing.html) and schemas that were developed by [IDPF](http://www.idpf.org/) and [DAISY](http://www.daisy.org/). Initial EPUBCheck development was largely done at [Adobe Systems](http://www.adobe.com/).\n\nInitial (pre 2012) authors and contributors to EPUBCheck include: Peter Sorotokin, Garth Conboy, Markus Gylling, Piotr Kula, Paul Norton, Jessica Hekman, Liza Daly, George Bina, Bogdan Iordache, Ionut-Maxim Margelatu\n\nEPUBCheck 4.0 was largely developed by\n* [DAISY](http://www.daisy.org/), namely: Romain Deltour, Markus Gylling\n* [Barnes & Noble](https://www.barnesandnoble.com), namely: Steve Antoch, Arwen Pond\n\nRegular contributors between 2012 and 2017 include: Romain Deltour, Tobias Fischer, Markus Gylling, Satoshi KOJIMA, Thomas Ledoux, Masayoshi Takahashi\n\nMany thanks are also extended to the numerous people who have contributed to the evolution of EPUBCheck through bug reports and patches!\n\n## Donators\n\nThe following organizations are supporting the development of EPUBCheck by their contribution to the [fundraising initiative](https://www.w3.org/publishing/epubcheck_fundraising):\n\n<p float=\"left\">\n  <a href=\"https://www.macmillanlearning.com\"><img alt=\"MacMillan Learning\" src=\"https://www.w3.org/publishing/donators_logos/MacLearn_logo_cmyk.png\" width=\"200\" hspace=\"20\" align=\"middle\"/></a>\n  <a href=\"https://www.google.com\"><img alt=\"Google\" src=\"https://www.w3.org/publishing/donators_logos/Google.png\" width=\"400\" hspace=\"20\" align=\"middle\"/></a>\n  <a href=\"http://daisy.org\"><img alt=\"DAISY\" src=\"https://www.w3.org/publishing/donators_logos/daisy_high.jpg\" width=\"100\" hspace=\"20\" align=\"middle\"/></a>\n  <a href=\"https://pubhub.dk\"><img alt=\"Publizon A/S\" src=\"https://www.w3.org/publishing/donators_logos/publizon-logo.jpg\" width=\"100\" hspace=\"20\" align=\"middle\"/></a>\n  <a href=\"https://www.wiley.com\"><img alt=\"Wiley\" src=\"https://www.w3.org/publishing/donators_logos/Wiley_Wordmark_black.png\" width=\"200\" hspace=\"20\" align=\"middle\"/></a>\n  <a href=\"https://www.hachette.com\"><img alt=\"Hachette Livre\" src=\"https://www.w3.org/publishing/donators_logos/Hachette%20Livre.jpg\" width=\"300\" hspace=\"20\" align=\"middle\"/></a>\n  <a href=\"https://www.learningmate.com\"><img alt=\"LearningMate Solutions Inc\" src=\"https://www.w3.org/publishing/donators_logos/LearningMate%20Logo.png\" width=\"100\" hspace=\"20\" align=\"middle\"/></a>\n  <a href=\"https://www.voyager.co.jp\"><img alt=\"Voyager Japan, Inc.\" src=\"https://www.w3.org/publishing/donators_logos/rectangle_VJstar_logo_512.jpg\" width=\"100\" hspace=\"20\" align=\"middle\"/></a>\n  <a href=\"https://qainfotech.com\"><img alt=\"QA Info Tech\" src=\"https://www.w3.org/publishing/donators_logos/QA%20InfoTech%20Logo%20PNG%20Format.png\" width=\"200\" hspace=\"20\" align=\"middle\"/></a>\n  <a href=\"https://wwnorton.com\"><img alt=\"W. W. Norton\" src=\"https://www.w3.org/publishing/donators_logos/NortonLogo_notagline.jpg\" width=\"100\" hspace=\"20\" align=\"middle\"/></a>\n  <a href=\"https://luminadatamatics.com\"><img alt=\"Lumina Datamatics, Inc.\" src=\"https://www.w3.org/publishing/donators_logos/Datamatics_logo.jpg\" width=\"100\" hspace=\"20\" align=\"middle\"/></a>\n  <a href=\"https://www.harpercollins.com\"><img alt=\"Harper Collins\" src=\"https://www.w3.org/publishing/donators_logos/HarperCollins.png\" width=\"200\" hspace=\"20\" align=\"middle\"/></a>\n  <a href=\"https://www.vitalsource.com\"><img alt=\"Vital Source\" src=\"https://www.w3.org/publishing/donators_logos/VS_Logo_HOR_Ingram_Tag(RGB).jpg\" width=\"300\" hspace=\"20\" align=\"middle\"/></a>\n  <a href=\"https://www.beck.de/\"><img alt=\"Verlag C.H. Beck oHG\" src=\"https://www.w3.org/publishing/donators_logos/Beck_LogoVektor_sw.jpg\" width=\"100\" hspace=\"20\" align=\"middle\"/></a>\n  <a href=\"https://info.libreka.de\"><img alt=\"Libreka\" src=\"https://www.w3.org/publishing/donators_logos/logo_libreka.png\" width=\"100\" hspace=\"20\" align=\"middle\"/></a>\n  <a href=\"https://zeilenwert.de\"><img alt=\"Zeilenwert\" src=\"https://www.w3.org/publishing/donators_logos/logo_zeilenwert.jpg\" width=\"100\" hspace=\"20\" align=\"middle\"/></a>\n  <a href=\"https://www.cenveopublisherservices.com\"><img alt=\"Cenveo Publisher Services\" src=\"https://www.w3.org/publishing/donators_logos/CVO%20Pub%20Serv_Logo.jpg\" width=\"100\" hspace=\"20\" align=\"middle\"/></a>\n  <a href=\"https://www.booknetcanada.ca\"><img alt=\"BookNet Canada\" src=\"https://www.w3.org/publishing/donators_logos/BNC_Logo_Horizontal_RGB_1000px.png\" width=\"100\" hspace=\"20\" align=\"middle\"/></a>\n</p>\n\n## License\n\nEPUBCheck is made available under the terms of the [3-Clause BSD License](http://opensource.org/licenses/BSD-3-Clause)\n"
+            "text": "[![Current Release](https://img.shields.io/github/release/w3c/epubcheck.svg)](https://github.com/w3c/epubcheck/releases/latest) [![Github All Releases Downloads](https://img.shields.io/github/downloads/w3c/epubcheck/total.svg?colorB=A9A9A9)](https://github.com/w3c/epubcheck/releases/) [![Build Status](https://travis-ci.org/w3c/epubcheck.svg?branch=master)](https://travis-ci.org/w3c/epubcheck/)\n\n\nEPUBCheck\n=========\n\nEPUBCheck is a tool to validate the conformance of EPUB publications against the EPUB specifications.\nEPUBCheck can be run as a standalone command-line tool or used as a Java library.\n\nEPUBCheck is open source software, maintained by the [DAISY Consortium](http://www.daisy.org) on behalf of the [W3C](https://www.w3.org/publishing/epubcheck_fundraising).\n\n\n**We Need Your Support!!**  \nFinancial support is critical to the development of EPUBCheck, the tool we all use to validate EPUB files.\nWe need to make sure that the resources are adequate to both update the tool and provide for its continued maintenance over the next two years;\nplease [help us fund and support EPUBCheck](https://www.w3.org/publishing/epubcheck_fundraising), and join the [list of donators](#donators)!\n\n\n## Downloads\n\nCheck the [releases page](https://github.com/w3c/epubcheck/releases) to get the latest distribution.\n\n[EPUBCheck 4.1.1](https://github.com/w3c/epubcheck/releases/tag/v4.1.1) is the latest production-ready release, to be used to validate both EPUB 2 and 3 files. EPUB 3 publications are checked against the EPUB 3.0.1 family of specifications.\n\n[EPUBCheck 4.2.0-rc](https://github.com/w3c/epubcheck/releases/tag/v4.2.0-rc) is the release candidate of the forthcoming 4.2.0 version, to be used for testing and preparing the update in production workflows. It features complete support for the EPUB 3.2 family of specifications.\n\n\n## Documentation\n\nDocumentation on how to **use** EPUBCheck, to **contribute** to the project or to **translate** messages is available on the [EPUBCheck wiki](https://github.com/w3c/epubcheck/wiki).\n\nTechnical discussions are held on our public [mailing list](https://lists.w3.org/Archives/Public/public-epubcheck/). To subscribe to the mailing list, send an email with subject `subscribe` to [public-epubcheck-request@w3.org](mailto:public-epubcheck-request@w3.org?subject=subscribe). To participate in the discussion, simply send an email to [public-epubcheck@w3.org](mailto:public-epubcheck-request@w3.org).\n\nHistorical archives of discussions prior to October 2017 are stored at the old [EPUBCheck Google Group](https://groups.google.com/forum/#!forum/epubcheck).\n\n## Building EPUBCheck\n\nTo build epubcheck from the sources you need Java Development Kit (JDK) 1.7 or above and [Apache Maven](http://maven.apache.org/) 3.0 or above installed.\n\nYou will also need Python to be able to run the BookReporter and related tools.\n\nBuild and run tests:\n\n```\n$ mvn install\n```\nWill copy `.*jar` files and packages to `target/` folder...\n\n## Credits\n\nMost of the EPUBCheck functionality comes from the schema validation tool [Jing](http://www.thaiopensource.com/relaxng/jing.html) and schemas that were developed by [IDPF](http://www.idpf.org/) and [DAISY](http://www.daisy.org/). Initial EPUBCheck development was largely done at [Adobe Systems](http://www.adobe.com/).\n\nInitial (pre 2012) authors and contributors to EPUBCheck include: Peter Sorotokin, Garth Conboy, Markus Gylling, Piotr Kula, Paul Norton, Jessica Hekman, Liza Daly, George Bina, Bogdan Iordache, Ionut-Maxim Margelatu\n\nEPUBCheck 4.0 was largely developed by\n* [DAISY](http://www.daisy.org/), namely: Romain Deltour, Markus Gylling\n* [Barnes & Noble](https://www.barnesandnoble.com), namely: Steve Antoch, Arwen Pond\n\nRegular contributors between 2012 and 2017 include: Romain Deltour, Tobias Fischer, Markus Gylling, Satoshi KOJIMA, Thomas Ledoux, Masayoshi Takahashi\n\nMany thanks are also extended to the numerous people who have contributed to the evolution of EPUBCheck through bug reports and patches!\n\n## Donators\n\nThe following organizations are supporting the development of EPUBCheck by their contribution to the [fundraising initiative](https://www.w3.org/publishing/epubcheck_fundraising):\n\n<p float=\"left\">\n  <a href=\"https://www.macmillanlearning.com\"><img alt=\"MacMillan Learning\" src=\"https://www.w3.org/publishing/donators_logos/MacLearn_logo_cmyk.png\" width=\"200\" hspace=\"20\" align=\"middle\"/></a>\n  <a href=\"https://www.google.com\"><img alt=\"Google\" src=\"https://www.w3.org/publishing/donators_logos/Google.png\" width=\"400\" hspace=\"20\" align=\"middle\"/></a>\n  <a href=\"http://daisy.org\"><img alt=\"DAISY\" src=\"https://www.w3.org/publishing/donators_logos/daisy_high.jpg\" width=\"100\" hspace=\"20\" align=\"middle\"/></a>\n  <a href=\"https://pubhub.dk\"><img alt=\"Publizon A/S\" src=\"https://www.w3.org/publishing/donators_logos/publizon-logo.jpg\" width=\"100\" hspace=\"20\" align=\"middle\"/></a>\n  <a href=\"https://www.wiley.com\"><img alt=\"Wiley\" src=\"https://www.w3.org/publishing/donators_logos/Wiley_Wordmark_black.png\" width=\"200\" hspace=\"20\" align=\"middle\"/></a>\n  <a href=\"https://www.hachette.com\"><img alt=\"Hachette Livre\" src=\"https://www.w3.org/publishing/donators_logos/Hachette%20Livre.jpg\" width=\"300\" hspace=\"20\" align=\"middle\"/></a>\n  <a href=\"https://www.learningmate.com\"><img alt=\"LearningMate Solutions Inc\" src=\"https://www.w3.org/publishing/donators_logos/LearningMate%20Logo.png\" width=\"100\" hspace=\"20\" align=\"middle\"/></a>\n  <a href=\"https://www.voyager.co.jp\"><img alt=\"Voyager Japan, Inc.\" src=\"https://www.w3.org/publishing/donators_logos/rectangle_VJstar_logo_512.jpg\" width=\"100\" hspace=\"20\" align=\"middle\"/></a>\n  <a href=\"https://qainfotech.com\"><img alt=\"QA Info Tech\" src=\"https://www.w3.org/publishing/donators_logos/QA%20InfoTech%20Logo%20PNG%20Format.png\" width=\"200\" hspace=\"20\" align=\"middle\"/></a>\n  <a href=\"https://wwnorton.com\"><img alt=\"W. W. Norton\" src=\"https://www.w3.org/publishing/donators_logos/NortonLogo_notagline.jpg\" width=\"100\" hspace=\"20\" align=\"middle\"/></a>\n  <a href=\"https://luminadatamatics.com\"><img alt=\"Lumina Datamatics, Inc.\" src=\"https://www.w3.org/publishing/donators_logos/Datamatics_logo.jpg\" width=\"100\" hspace=\"20\" align=\"middle\"/></a>\n  <a href=\"https://www.harpercollins.com\"><img alt=\"Harper Collins\" src=\"https://www.w3.org/publishing/donators_logos/HarperCollins.png\" width=\"200\" hspace=\"20\" align=\"middle\"/></a>\n  <a href=\"https://www.vitalsource.com\"><img alt=\"Vital Source\" src=\"https://www.w3.org/publishing/donators_logos/VS_Logo_HOR_Ingram_Tag(RGB).jpg\" width=\"300\" hspace=\"20\" align=\"middle\"/></a>\n  <a href=\"https://www.beck.de/\"><img alt=\"Verlag C.H. Beck oHG\" src=\"https://www.w3.org/publishing/donators_logos/Beck_LogoVektor_sw.jpg\" width=\"100\" hspace=\"20\" align=\"middle\"/></a>\n  <a href=\"https://info.libreka.de\"><img alt=\"Libreka\" src=\"https://www.w3.org/publishing/donators_logos/logo_libreka.png\" width=\"100\" hspace=\"20\" align=\"middle\"/></a>\n  <a href=\"https://zeilenwert.de\"><img alt=\"Zeilenwert\" src=\"https://www.w3.org/publishing/donators_logos/logo_zeilenwert.jpg\" width=\"100\" hspace=\"20\" align=\"middle\"/></a>\n  <a href=\"https://www.cenveopublisherservices.com\"><img alt=\"Cenveo Publisher Services\" src=\"https://www.w3.org/publishing/donators_logos/CVO%20Pub%20Serv_Logo.jpg\" width=\"100\" hspace=\"20\" align=\"middle\"/></a>\n  <a href=\"https://www.booknetcanada.ca\"><img alt=\"BookNet Canada\" src=\"https://www.w3.org/publishing/donators_logos/BNC_Logo_Horizontal_RGB_1000px.png\" width=\"100\" hspace=\"20\" align=\"middle\"/></a>\n</p>\n\n## License\n\nEPUBCheck is made available under the terms of the [3-Clause BSD License](http://opensource.org/licenses/BSD-3-Clause)\n"
           },
           "fullName": "w3c/epubcheck"
         },
@@ -47048,111 +47302,6 @@
           },
           "fullName": "w3c/audiobooks",
           "hasRecTrack": true
-        }
-      ]
-    },
-    "100368": {
-      "id": 100368,
-      "name": "SHACL Community Group",
-      "discr": "w3cgroup",
-      "is-closed": false,
-      "description": "The mission of the SHACL Community Group is to continue the development of SHACL-related specifications and to support the further adoption of SHACL after the <a rel=\"nofollow\" href=\"https://www.w3.org/2014/data-shapes/\">W3C Data Shapes Working Group</a> has ended. Desirable outcomes include the development of educational material (primers, best practices), the application of SHACL to frequently used RDF vocabularies, libraries of constraint components for common constraint types, improved integration with established technologies such as JavaScript, further work on theory and practice around SHACL rules, a compact SHACL syntax, and a SHACL internet protocol. Additional work may go into delivering \"de-facto standard\" fixes to some gaps left in the current SHACL specifications (e.g., handling recursion, and addressing more comprehensive syntax checks).\r\n",
-      "staging": false,
-      "_links": {
-        "self": {
-          "href": "https://api.w3.org/groups/100368"
-        },
-        "homepage": {
-          "href": "http://www.w3.org/community/shacl/"
-        },
-        "users": {
-          "href": "https://api.w3.org/groups/100368/users"
-        },
-        "services": {
-          "href": "https://api.w3.org/groups/100368/services"
-        },
-        "chairs": {
-          "href": "https://api.w3.org/groups/100368/chairs"
-        },
-        "join": {
-          "href": "https://www.w3.org/2004/01/pp-impl/100368/join"
-        },
-        "pp-status": {
-          "href": "https://www.w3.org/2004/01/pp-impl/100368/status"
-        },
-        "participations": {
-          "href": "https://api.w3.org/groups/100368/participations"
-        }
-      },
-      "type": "community group",
-      "repos": [
-        {
-          "id": "MDEwOlJlcG9zaXRvcnk5Nzc2NTExMg==",
-          "name": "shacl",
-          "owner": {
-            "login": "w3c"
-          },
-          "isArchived": false,
-          "homepageUrl": null,
-          "description": "SHACL Community Group (Post-REC activitities)",
-          "labels": {
-            "edges": [
-              {
-                "node": {
-                  "name": "bug",
-                  "color": "ee0701"
-                }
-              },
-              {
-                "node": {
-                  "name": "duplicate",
-                  "color": "cccccc"
-                }
-              },
-              {
-                "node": {
-                  "name": "enhancement",
-                  "color": "84b6eb"
-                }
-              },
-              {
-                "node": {
-                  "name": "help wanted",
-                  "color": "128A0C"
-                }
-              },
-              {
-                "node": {
-                  "name": "invalid",
-                  "color": "e6e6e6"
-                }
-              },
-              {
-                "node": {
-                  "name": "question",
-                  "color": "cc317c"
-                }
-              },
-              {
-                "node": {
-                  "name": "wontfix",
-                  "color": "ffffff"
-                }
-              }
-            ],
-            "pageInfo": {
-              "endCursor": "Y3Vyc29yOnYyOpHOJso-Jw==",
-              "hasNextPage": false
-            }
-          },
-          "w3cjson": null,
-          "contributing": null,
-          "license": null,
-          "codeOfConduct": null,
-          "readme": {
-            "text": "# shacl\nSHACL Community Group (Post-REC activitities)\n"
-          },
-          "fullName": "w3c/shacl"
         }
       ]
     },
@@ -50004,6 +50153,123 @@
             "text": "# Notation 3 (N3) Community Group\n\nSee Issues list\n\nSee [W3C Community Page (join here)](https://www.w3.org/community/n3-dev/)\n\nSee [mailing list archives](https://lists.w3.org/Archives/Public/public-n3-dev/)"
           },
           "fullName": "w3c/N3"
+        }
+      ]
+    },
+    "112122": {
+      "id": 112122,
+      "name": "ceddl html attribute-based markup and javascript api Community Group",
+      "discr": "w3cgroup",
+      "is-closed": false,
+      "description": "A lightweigt html attribute-based markup and javascript api you used for surfacing digital data on a web application intended for web analytics, website personalization and DMP implementations. Applying lessons learnt by many implementations of Customer Experience Digital Data Layer (CEDDL) and bringing this back into a specification for the browser.",
+      "staging": false,
+      "_links": {
+        "self": {
+          "href": "https://api.w3.org/groups/112122"
+        },
+        "homepage": {
+          "href": "http://www.w3.org/community/ceddl-webspec/"
+        },
+        "users": {
+          "href": "https://api.w3.org/groups/112122/users"
+        },
+        "services": {
+          "href": "https://api.w3.org/groups/112122/services"
+        },
+        "chairs": {
+          "href": "https://api.w3.org/groups/112122/chairs"
+        },
+        "join": {
+          "href": "https://www.w3.org/2004/01/pp-impl/112122/join"
+        },
+        "pp-status": {
+          "href": "https://www.w3.org/2004/01/pp-impl/112122/status"
+        },
+        "participations": {
+          "href": "https://api.w3.org/groups/112122/participations"
+        }
+      },
+      "type": "community group",
+      "repos": [
+        {
+          "id": "MDEwOlJlcG9zaXRvcnkxNzYzMzQzNDA=",
+          "name": "analytics-personalization-datalayer",
+          "owner": {
+            "login": "w3c"
+          },
+          "isArchived": false,
+          "homepageUrl": null,
+          "description": null,
+          "labels": {
+            "edges": [
+              {
+                "node": {
+                  "name": "bug",
+                  "color": "d73a4a"
+                }
+              },
+              {
+                "node": {
+                  "name": "duplicate",
+                  "color": "cfd3d7"
+                }
+              },
+              {
+                "node": {
+                  "name": "enhancement",
+                  "color": "a2eeef"
+                }
+              },
+              {
+                "node": {
+                  "name": "help wanted",
+                  "color": "008672"
+                }
+              },
+              {
+                "node": {
+                  "name": "good first issue",
+                  "color": "7057ff"
+                }
+              },
+              {
+                "node": {
+                  "name": "invalid",
+                  "color": "e4e669"
+                }
+              },
+              {
+                "node": {
+                  "name": "question",
+                  "color": "d876e3"
+                }
+              },
+              {
+                "node": {
+                  "name": "wontfix",
+                  "color": "ffffff"
+                }
+              }
+            ],
+            "pageInfo": {
+              "endCursor": "Y3Vyc29yOnYyOpHOTDZDUw==",
+              "hasNextPage": false
+            }
+          },
+          "w3cjson": {
+            "text": " {\n    \"group\":      [112122]\n,   \"contacts\":   [\"ianbjacobs\"]\n,   \"repo-type\":  \"cg-report\"\n}\n"
+          },
+          "contributing": {
+            "text": "# ceddl html attribute-based markup and javascript api Community Group\n\nThis repository is being used for work in the W3C ceddl html attribute-based markup and javascript api Community Group, governed by the [W3C Community License\nAgreement (CLA)](http://www.w3.org/community/about/agreements/cla/). To make substantive contributions,\nyou must join the CG.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n"
+          },
+          "license": {
+            "text": "All Reports in this Repository are licensed by Contributors\nunder the\n[W3C Software and Document License](http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document).\n\nContributions to Specifications are made under the\n[W3C CLA](https://www.w3.org/community/about/agreements/cla/).\n\nContributions to Test Suites are made under the\n[W3C 3-clause BSD License](https://www.w3.org/Consortium/Legal/2008/03-bsd-license.html)\n\n"
+          },
+          "codeOfConduct": {
+            "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n"
+          },
+          "readme": null,
+          "fullName": "w3c/analytics-personalization-datalayer"
         }
       ]
     },
