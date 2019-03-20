@@ -39,7 +39,7 @@ const hardcodedRepoData = {
 // extract from https://w3c.github.io/w3c.json.html with [...document.querySelectorAll('#repo-type + dd .value')].map(n => n.textContent)
 const validRepoTypes = ['rec-track', 'note', 'cg-report', 'process', 'homepage', 'article', 'tool', 'project', 'others', 'workshop', 'tests', 'translation'];
 
-
+let allrepos = [];
 let allgroups = new Set();
 let groupRepos = {};
 let crawl;
@@ -178,6 +178,7 @@ w3cLicenses()
     fetch("https://w3c.github.io/spec-dashboard/repo-map.json").then(r => r.json())
   ]))
   .then(([repoData, cgData, repoMap]) => {
+    allRepos = crawl;
     crawl.filter(r => r && !r.isArchived).forEach(r => {
       if (!r.readme) {
         errors.noreadme.push(fullName(r));
@@ -284,7 +285,7 @@ w3cLicenses()
       groups.forEach(gid => {
         if (!groupRepos[gid])
           groupRepos[gid] = [];
-        groupRepos[gid].push({ ...r, fullName: fullName(r), hasRecTrack: recTrackStatus });
+        groupRepos[gid].push({ name: r.name, fullName: fullName(r), hasRecTrack: recTrackStatus });
       });
     });
     Object.keys(errors).forEach(k => {
@@ -293,6 +294,7 @@ w3cLicenses()
     w3c.groups().fetch({embed: true}, (err, w3cgroups) => {
       const results = {errors};
       results.timestamp = new Date();
+      results.repos = allRepos;
       results.groups = w3cgroups.filter(g => allgroups.has(g.id)).reduce((acc, group) => {
         acc[group.id] = {...group, repos: groupRepos[group.id] };
         return acc;
