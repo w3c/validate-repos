@@ -67,7 +67,6 @@
       "w3c/i18n-issues",
       "w3c/i18n-tests",
       "w3c/idn-issues",
-      "w3c/kiss",
       "w3c/ldp-next",
       "w3c/locadd",
       "w3c/N3",
@@ -79,8 +78,6 @@
       "w3c/privacy-considerations",
       "w3c/publ-cg",
       "w3c/rdf-tests",
-      "w3c/respec",
-      "w3c/respec-hljs",
       "w3c/sparql-exists",
       "w3c/speech-api",
       "w3c/swig",
@@ -94,7 +91,6 @@
       "w3c/web-ledger",
       "w3c/web-nfc",
       "w3c/web-of-things-framework",
-      "w3c/webidl2.js",
       "w3c/webmediaapi",
       "w3c/webmediaguidelines",
       "w3c/webmediaporting",
@@ -4466,6 +4462,7 @@
       "w3c/hcls-ccda-rdf",
       "w3c/hcls-drug-drug-interaction",
       "w3c/hcls-fhir-rdf",
+      "w3c/kiss",
       "w3c/ldn",
       "w3c/low-vision-SC",
       "w3c/mathml",
@@ -4550,7 +4547,7 @@
       }
     ]
   },
-  "timestamp": "2019-03-20T08:28:10.026Z",
+  "timestamp": "2019-03-20T09:12:44.499Z",
   "groups": {
     "7756": {
       "id": 7756,
@@ -41135,6 +41132,113 @@
           },
           "fullName": "w3c/pronunciation",
           "hasRecTrack": true
+        }
+      ]
+    },
+    "84628": {
+      "id": 84628,
+      "name": "Open knowledge-driven service-oriented system architectures and APIs (KiSS) Community Group",
+      "discr": "w3cgroup",
+      "is-closed": false,
+      "description": "W3C provide a great variety of standards that can be used to build applications that use the Internet as a platform for communication and integration. The open Knowledge-driven Service-oriented System architectures and APIs (KiSS) community group is created for sharing, elaborating and evolving knowledge-driven approaches for system integration. The KiSS community group takes service-oriented architecture as a main paradigm for application creation. However, it is not enough to say that there is a set of some services that can be integrated according to the application needs. The integration is facilitated with semantic descriptions of the services. Furthermore, the special support components are required at system run time in order to allow dynamic composition of the services accordingly semantic representation of adjusted or new system goals.\r\n \r\nThus, the community aims to categorise different possible architectures to allow knowledge-driven approach for system integration; it provides reference architectures that also point out possible technologies for the solution implementation. The community targets different application domains and industries in order to benefit from cross-domain vision on development of knowledge-driven systems. \r\n\r\nThe abbreviation of the community group highlights the integrative nature of the group (small i among K (knowledge), S (service) and S (system)). \r\n\r\nThe group is managed by 6 re-electable chairs. The roles and responsibilities of the chairs go as follows:\r\n<ul>\r\n<li>General chair: Ideologist. Overall synchronization between different pillars of the KiSS. PR with other groups and external stakeholders. Member attraction, community group development. </li>\r\n<li>Chair for integration: Integration technologies, web service composition.</li>\r\n<li>Chair for knowledge: Knowledge representation and reasoning standards and methodologies.</li>\r\n<li>Chair for devices: Embedded devices, their adoption for KiSS.</li>\r\n<li>Chair for services: Web services, standards, methodologies for service definition.</li>\r\n<li>Chair for application domains: KiSS in different application domains. Cross-domain learning and development. Benchmarking.</li>\r\n</ul>",
+      "staging": false,
+      "_links": {
+        "self": {
+          "href": "https://api.w3.org/groups/84628"
+        },
+        "homepage": {
+          "href": "http://www.w3.org/community/kiss/"
+        },
+        "users": {
+          "href": "https://api.w3.org/groups/84628/users"
+        },
+        "services": {
+          "href": "https://api.w3.org/groups/84628/services"
+        },
+        "chairs": {
+          "href": "https://api.w3.org/groups/84628/chairs"
+        },
+        "join": {
+          "href": "https://www.w3.org/2004/01/pp-impl/84628/join"
+        },
+        "pp-status": {
+          "href": "https://www.w3.org/2004/01/pp-impl/84628/status"
+        },
+        "participations": {
+          "href": "https://api.w3.org/groups/84628/participations"
+        }
+      },
+      "type": "community group",
+      "repos": [
+        {
+          "id": "MDEwOlJlcG9zaXRvcnk2Mjg4NjY3OA==",
+          "name": "kiss",
+          "owner": {
+            "login": "w3c"
+          },
+          "isArchived": false,
+          "homepageUrl": null,
+          "description": "Open knowledge-driven service-oriented system architectures and APIs (KiSS) Community Group",
+          "labels": {
+            "edges": [
+              {
+                "node": {
+                  "name": "bug",
+                  "color": "ee0701"
+                }
+              },
+              {
+                "node": {
+                  "name": "duplicate",
+                  "color": "cccccc"
+                }
+              },
+              {
+                "node": {
+                  "name": "enhancement",
+                  "color": "84b6eb"
+                }
+              },
+              {
+                "node": {
+                  "name": "help wanted",
+                  "color": "128A0C"
+                }
+              },
+              {
+                "node": {
+                  "name": "invalid",
+                  "color": "e6e6e6"
+                }
+              },
+              {
+                "node": {
+                  "name": "question",
+                  "color": "cc317c"
+                }
+              },
+              {
+                "node": {
+                  "name": "wontfix",
+                  "color": "ffffff"
+                }
+              }
+            ],
+            "pageInfo": {
+              "endCursor": "Y3Vyc29yOnYyOpHOGCO7IQ==",
+              "hasNextPage": false
+            }
+          },
+          "w3cjson": {
+            "text": " {\n    \"group\":      84628\n,   \"contacts\":   [\"dontcallmedom\"]\n,   \"repo-type\":  \"cg-report\"\n}\n"
+          },
+          "contributing": null,
+          "license": null,
+          "codeOfConduct": null,
+          "readme": {
+            "text": "# kiss\nOpen knowledge-driven service-oriented system architectures and APIs (KiSS) Community Group\n"
+          },
+          "fullName": "w3c/kiss"
         }
       ]
     },
