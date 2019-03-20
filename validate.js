@@ -21,7 +21,7 @@ const hardcodedRepoData = {
   'w3c/css-validator': {
     'contacts': 'ylafon',
     'repo-type': 'tool'
-  }
+  },
   'w3c/respec': {
     'contacts': 'marcoscaceres',
     'repo-type': 'tool'
