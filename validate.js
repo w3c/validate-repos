@@ -110,6 +110,11 @@ async function fetchRepoPage(org, acc = [], cursor = null) {
               text
             }
           }
+          prpreviewjson: object(expression: "HEAD:.pr-preview.json") {
+            ... on Blob {
+              text
+            }
+          }
           contributing: object(expression: "HEAD:CONTRIBUTING.md") {
             ... on Blob {
               text
@@ -215,6 +220,14 @@ w3cLicenses()
       const ashRepo = repoData.find(x => x.owner.toLowerCase() === r.owner.login.toLowerCase() && x.name.toLowerCase() === r.name.toLowerCase());
       if (ashRepo)
         hasRecTrack.ashnazg = ashRepo.groups.some(g => g.groupType === "WG");
+
+      if (r.prpreviewjson) {
+        try {
+          r.prpreview = JSON.parse(r.prpreviewjson.text);
+        } catch (e) {
+          //errors.illformedprpreviewcjson.push(fullName(r));
+        }
+      }
 
       let conf = null;
       if (r.w3cjson) {
