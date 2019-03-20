@@ -57,7 +57,10 @@ const mdMatch = (md, ref) => nlToSpace(httpToHttps(md.toLowerCase())).indexOf(nl
 const fullName = r => r.owner.login + '/' + r.name;
 
 async function fetchLabelPage(org, repo, acc = [], cursor = null) {
-  let res = await graphql(`
+  console.warn("Fetching labels for " + repo);
+  let res;
+  try {
+    res = await graphql(`
  query {
     repository(owner:"${org}",name:"${repo}") {
         labels(first:10 after:"${cursor}") {
@@ -75,18 +78,27 @@ async function fetchLabelPage(org, repo, acc = [], cursor = null) {
     }
 
 }`);
+  } catch (err) {
+    console.error("query failed " + JSON.stringify(err));
+  }
   if (res && res.repository) {
     const data = acc.concat(res.repository.labels.edges);
     if (res.repository.labels.pageInfo.hasNextPage) {
       return fetchLabelPage(org, repo, data, res.repository.labels.pageInfo.endCursor);
     } else {
-      return data.map(e => e.node);
+      return {"repo": {"owner": org, "name": repo}, "labels": data.map(e => e.node)};
     }
+  } else {
+    console.error("Fetching label for " + repo + " at cursor " + cursor + " failed with " + JSON.stringify(res)+ ", not retrying");
+    return {"repo": {"owner": org, "name": repo}, "labels": acc.map(e => e.node) };
+    //return fetchLabelPage(org, repo, acc, cursor);
   }
 }
 
 async function fetchRepoPage(org, acc = [], cursor = null) {
-  let res = await graphql(`
+  let res;
+  try {
+    res = await graphql(`
  query {
   organization(login:"${org}") {
     repositories(first:10 after:"${cursor}") {
@@ -147,6 +159,9 @@ async function fetchRepoPage(org, acc = [], cursor = null) {
     resetAt
   }
  }`);
+  } catch (err) {
+    console.error(err);
+  }
   // Fetch labels if they are paginated
   if (res && res.organization) {
     console.error(JSON.stringify(res.rateLimit));
@@ -154,8 +169,11 @@ async function fetchRepoPage(org, acc = [], cursor = null) {
       res.organization.repositories.edges
         .filter(e => e.node.labels.pageInfo.hasNextPage)
         .map(e => fetchLabelPage(e.node.owner.login, e.node.name, e.node.labels.edges, e.node.labels.pageInfo.endCursor))
-    ).then(() => {
+    ).then((labelsPerRepos) => {
       const data = acc.concat(res.organization.repositories.edges.map(e => e.node));
+      labelsPerRepos.forEach(({repo, labels}) => {
+        data.find(r => r.owner.login == repo.owner && r.name == repo.name).labels = labels;
+      });
       if (res.organization.repositories.pageInfo.hasNextPage) {
         return fetchRepoPage(org, data, res.organization.repositories.pageInfo.endCursor);
       } else {
@@ -163,7 +181,7 @@ async function fetchRepoPage(org, acc = [], cursor = null) {
       }
     });
   } else {
-    console.error("Fetching results at cursor " + cursor + " failed, retrying");
+    console.error("Fetching repo results at cursor " + cursor + " failed, retrying");
     return fetchRepoPage(org, acc, cursor);
   }
 }
