@@ -203,10 +203,12 @@ w3cLicenses()
 
       let groups = [];
       // is the repo associated with a CG in the CG monitor?
-      const cgRepo = cgData.data.find(cg => cg.repositories.includes('https://github.com/' + fullName(r) || cg.repositories.includes('https://github.com/' + fullName(r) + '/')));
+      const cgRepo = cgData.data.find(cg => cg.repositories.includes('https://github.com/' + fullName(r) || cg.repositories.includes('https://github.com/' + fullName(r) + '/'))) ||
+            // is the repo in WICG space?
+            r.owner.login === 'WICG' ? {id: 80485} : null;
       // is the repo associated with a WG in the spec dashboard?
       const wgRepo = repoMap[fullName(r)];
-
+      const audioWgRepo = r.owner.login === 'WebAudio' ? {id: 46884} : null;
       if (wgRepo)
         hasRecTrack.tr = wgRepo.some(x => x.recTrack);
 
@@ -255,6 +257,9 @@ w3cLicenses()
         }
         if (wgRepo && wgRepo.length) {
           groups = groups.concat(wgRepo.map(x => x.group));
+        }
+        if (audioWgRepo) {
+          groups.push(audioWgRepo.id);
         }
         errors.now3cjson.push(fullName(r));
       }
