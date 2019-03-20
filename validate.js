@@ -22,6 +22,18 @@ const hardcodedRepoData = {
     'contacts': 'ylafon',
     'repo-type': 'tool'
   }
+  'w3c/respec': {
+    'contacts': 'marcoscaceres',
+    'repo-type': 'tool'
+  },
+  'w3c/respec-hljs': {
+    'contacts': 'marcoscaceres',
+    'repo-type': 'tool'
+  },
+  'w3c/webidl2.js': {
+    'contacts': 'marcoscaceres',
+    'repo-type': 'tool'
+  },
 }
 
 // extract from https://w3c.github.io/w3c.json.html with [...document.querySelectorAll('#repo-type + dd .value')].map(n => n.textContent)
