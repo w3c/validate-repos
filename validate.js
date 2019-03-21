@@ -244,7 +244,7 @@ w3cLicenses()
       // is the repo associated with a CG in the CG monitor?
       const cgRepo = cgData.data.find(cg => cg.repositories.includes('https://github.com/' + fullName(r) || cg.repositories.includes('https://github.com/' + fullName(r) + '/'))) ||
             // is the repo in WICG space?
-            r.owner.login === 'WICG' ? {id: 80485} : null;
+            (r.owner.login === 'WICG' ? {id: 80485} : null);
       // is the repo associated with a WG in the spec dashboard?
       const wgRepo = repoMap[fullName(r)];
       const audioWgRepo = r.owner.login === 'WebAudio' ? {id: 46884} : null;
