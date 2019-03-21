@@ -9,7 +9,7 @@ const config = require("./config.json");
 w3c.apiKey = config.w3capikey;
 
 const orgs = ["w3c", "WebAudio", "immersive-web", "webassembly", "w3ctag", "WICG"];
-const errors = {"inconsistentgroups": [], "now3cjson":[], "invalidw3cjson": [], "illformedw3cjson":[], "incompletew3cjson":[], "nocontributing":[], "invalidcontributing": [], "nolicense": [], "nocodeofconduct": [], "invalidlicense": [], "noreadme": [],  "noashnazg": [], "inconsistentstatus": []};
+const errors = {"inconsistentgroups": [], "now3cjson":[], "invalidw3cjson": [], "illformedw3cjson":[], "incompletew3cjson":[], "nocontributing":[], "invalidcontributing": [], "nolicense": [], "nocodeofconduct": [], "invalidlicense": [], "noreadme": [],  "noashnazg": [], "inconsistentstatus": [], "unprotectedbranch": []};
 
 // for some repos, having the w3c.json administrative file is felt as awkward
 // we hard-code their equivalent here
@@ -115,6 +115,17 @@ async function fetchRepoPage(org, acc = [], cursor = null) {
             pageInfo {
     	  	endCursor
       	        hasNextPage
+            }
+          }
+          defaultBranch: defaultBranchRef {
+            name
+          }
+          branchProtectionRules(first: 5) {
+            nodes {
+              pattern
+              requiredApprovingReviewCount
+              requiredStatusCheckContexts
+              isAdminEnforced
             }
           }
           w3cjson: object(expression: "HEAD:w3c.json") {
@@ -312,6 +323,9 @@ w3cLicenses()
           if (ashGroups.filter(x => groups.includes(x)).length !== ashGroups.length) {
             errors.inconsistentgroups.push({repo: fullName(r), ashnazgroups: ashGroups, error: JSON.stringify(groups) + ' vs ' + JSON.stringify(ashGroups)});
           }
+        }
+        if (!r.branchProtectionRules || r.branchProtectionRules.nodes.length < 1) {
+          errors.unprotectedbranch.push({repo: fullName(r), error: "No protected branch"});
         }
       }
       if (hasRecTrack.tr !== null && hasRecTrack.repotype !== null && hasRecTrack.tr !== hasRecTrack.repotype) {
