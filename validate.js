@@ -192,10 +192,15 @@ w3cLicenses()
     contributingSw = lic.contributingSw;
     license = lic.license;
     licenseSw = lic.licenseSw;
-  }).then(() =>
-          Promise.all(orgs.map(org => fetchRepoPage(org)))
-          .then(res => crawl = [].concat(...res))
-         ).then(() => Promise.all([
+  }).then(() => {
+    async function sequenced(index) {
+      if (index === orgs.length) return [];
+      let repos = await fetchRepoPage(orgs[index]);
+      let next = await sequenced(index+1);
+      return repos.concat(next);
+    }
+    return sequenced(0);
+  }).then(repos => crawl = repos).then(() => Promise.all([
     fetch("https://labs.w3.org/hatchery/repo-manager/api/repos").then(r => r.json()),
     fetch("https://w3c.github.io/cg-monitor/report.json").then(r => r.json()),
     fetch("https://w3c.github.io/spec-dashboard/repo-map.json").then(r => r.json())
