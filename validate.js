@@ -311,7 +311,8 @@ w3cLicenses()
         }
         errors.now3cjson.push(fullName(r));
       }
-      shouldBeRepoManaged = shouldBeRepoManaged || (wgRepo && wgRepo.some(x => x.recTrack));
+      const recTrackStatus = hasRecTrack.tr || hasRecTrack.ashnazg || hasRecTrack.repo;
+      shouldBeRepoManaged = shouldBeRepoManaged || recTrackStatus;
 
       allgroups = new Set([...allgroups, ...groups]);
 
@@ -324,6 +325,8 @@ w3cLicenses()
             errors.inconsistentgroups.push({repo: fullName(r), ashnazgroups: ashGroups, error: JSON.stringify(groups) + ' vs ' + JSON.stringify(ashGroups)});
           }
         }
+      }
+      if (recTrackStatus) {
         if (!r.branchProtectionRules || r.branchProtectionRules.nodes.length < 1) {
           errors.unprotectedbranch.push({repo: fullName(r), error: "No protected branch"});
         }
@@ -337,7 +340,7 @@ w3cLicenses()
       if (hasRecTrack.repotype !== null && hasRecTrack.ashnazg !== null && hasRecTrack.repotype !== hasRecTrack.ashnazg) {
         errors.inconsistentstatus.push({repo: fullName(r), error: "repo: " + hasRecTrack.repotype + ", vs repo manager: " + hasRecTrack.ashnazg});
       }
-      const recTrackStatus = hasRecTrack.tr || hasRecTrack.ashnazg || hasRecTrack.repo;
+
       groups.forEach(gid => {
         if (!groupRepos[gid])
           groupRepos[gid] = [];
