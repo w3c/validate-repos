@@ -8,7 +8,7 @@ const config = require("./config.json");
 
 w3c.apiKey = config.w3capikey;
 
-const orgs = ["w3c", "WebAudio", "immersive-web", "webassembly", "w3ctag", "WICG"];
+const orgs = ["w3c", "WebAudio", "immersive-web", "webassembly", "w3ctag", "WICG", "w3cping"];
 const errors = {"inconsistentgroups": [], "now3cjson":[], "invalidw3cjson": [], "illformedw3cjson":[], "incompletew3cjson":[], "nocontributing":[], "invalidcontributing": [], "nolicense": [], "nocodeofconduct": [], "invalidlicense": [], "noreadme": [],  "noashnazg": [], "inconsistentstatus": [], "unprotectedbranch": []};
 
 // for some repos, having the w3c.json administrative file is felt as awkward
