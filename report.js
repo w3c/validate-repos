@@ -8,13 +8,15 @@ const errortypes = {
   "inconsistentgroups": "Inconsistent groups info w3c.json / repo-manager",
   "unprotectedbranch": "Missing branch protection rule",
   "nocontributing": "No CONTRIBUTING.md file",
+  "missingashnazghook": "Configured with the Repo Manager, but missing the github webhook",
+  "duplicateashnazghooks": "Duplicate Repo Manager webhooks",
   //    "invalidcontributing": "Invalid CONTRIBUTING.MD file",
   "nolicense": "No LICENSE.md file",
   "nocodeofconduct": "No CODE_OF_CONDUCT.md file",
   "invalidlicense": "Invalid LICENSE.md file",
   "noreadme": "No README.md file"
 };
-const defaultReport = ["now3cjson", "inconsistengroups", "invalidw3cjson", "incompletew3cjson", "noashnazg", "inconsistentstatus", "unprotectedbranch"];
+const defaultReport = ["now3cjson", "inconsistengroups", "invalidw3cjson", "incompletew3cjson", "noashnazg", "inconsistentstatus", "unprotectedbranch","missingashnazghook"];
 
 // from https://stackoverflow.com/questions/10970078/modifying-a-query-string-without-reloading-the-page
 function insertUrlParam(key, value) {
