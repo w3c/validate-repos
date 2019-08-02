@@ -1,15 +1,19 @@
 const fetch = require("node-fetch");
 const w3c = require("node-w3capi");
 const graphql = require("./graphql.js");
-
+// github API v3 needed to check webhooks
+const Octokat = require("octokat");
 
 const w3cLicenses = require("./w3cLicenses.js");
 const config = require("./config.json");
 
+const ashnazgHookUrls = ["https://labs.w3.org/hatchery/repo-manager/api/hook", "https://labs.w3.org/repo-manager/api/hook"];
+
 w3c.apiKey = config.w3capikey;
+const octo = new Octokat({ token: config.ghToken });
 
 const orgs = ["w3c", "WebAudio", "immersive-web", "webassembly", "w3ctag", "WICG", "w3cping"];
-const errors = {"inconsistentgroups": [], "now3cjson":[], "invalidw3cjson": [], "illformedw3cjson":[], "incompletew3cjson":[], "nocontributing":[], "invalidcontributing": [], "nolicense": [], "nocodeofconduct": [], "invalidlicense": [], "noreadme": [],  "noashnazg": [], "inconsistentstatus": [], "unprotectedbranch": []};
+const errors = {"inconsistentgroups": [], "now3cjson":[], "invalidw3cjson": [], "illformedw3cjson":[], "incompletew3cjson":[], "nocontributing":[], "invalidcontributing": [], "nolicense": [], "nocodeofconduct": [], "invalidlicense": [], "noreadme": [],  "noashnazg": [], "inconsistentstatus": [], "unprotectedbranch": [], "missingashnazghook": [], "duplicateashnazghooks": []};
 
 // for some repos, having the w3c.json administrative file is felt as awkward
 // we hard-code their equivalent here
@@ -218,6 +222,7 @@ w3cLicenses()
   ]))
   .then(([repoData, cgData, repoMap]) => {
     allRepos = crawl;
+    ashRepos = [];
     crawl.filter(r => r && !r.isArchived).forEach(r => {
       if (!r.readme) {
         errors.noreadme.push(fullName(r));
@@ -252,9 +257,10 @@ w3cLicenses()
         hasRecTrack.tr = wgRepo.some(x => x.recTrack);
 
       const ashRepo = repoData.find(x => x.owner.toLowerCase() === r.owner.login.toLowerCase() && x.name.toLowerCase() === r.name.toLowerCase());
-      if (ashRepo)
+      if (ashRepo) {
         hasRecTrack.ashnazg = ashRepo.groups.some(g => g.groupType === "WG");
-
+        ashRepos.push(fullName(r));
+      }
       if (r.prpreviewjson) {
         try {
           r.prpreview = JSON.parse(r.prpreviewjson.text);
@@ -350,15 +356,35 @@ w3cLicenses()
     Object.keys(errors).forEach(k => {
       errors[k] = errors[k].sort(repoSort);
     });
-    w3c.groups().fetch({embed: true}, (err, w3cgroups) => {
-      const results = {errors};
-      results.timestamp = new Date();
-      results.repos = allRepos;
-      results.groups = w3cgroups.filter(g => allgroups.has(g.id)).reduce((acc, group) => {
-        acc[group.id] = {...group, repos: groupRepos[group.id] };
-        return acc;
-      }, {});
-      console.log(JSON.stringify(results, null, 2));
-    });
-
+    let promise = Promise.resolve();
+    // TODO: replace with a proper request queue
+    // à la https://github.com/w3c/spec-dashboard/blob/master/fetch-data/group-repos.js#L14
+    ashRepos.forEach(reponame =>
+                     promise = promise
+                     .then(() =>
+                           octo.repos(reponame).hooks.fetch().then(hooks => {
+                             if (!hooks || !hooks.items) return;
+                             const ashHooks = hooks.items.filter(h => ashnazgHookUrls.includes(h.config.url) && h.config.contentType === "json" && h.config.insecureSsl === "0" && h.config.secret !== "");
+                             if (ashHooks.length === 0)
+                               errors.missingashnazghook.push({repo: reponame});
+                             if (ashHooks.length > 1)
+                               errors.duplicateashnazghooks.push({repo: reponame});
+                           }).catch(err => console.error(err))
+                           .then(new Promise((res, rej) => {
+                             setTimeout(rej, 1000);
+                           }))
+                          )
+                    );
+      promise.then(() => {
+        w3c.groups().fetch({embed: true}, (err, w3cgroups) => {
+          const results = {errors};
+          results.timestamp = new Date();
+          results.repos = allRepos;
+          results.groups = w3cgroups.filter(g => allgroups.has(g.id)).reduce((acc, group) => {
+          acc[group.id] = {...group, repos: groupRepos[group.id] };
+            return acc;
+          }, {});
+          console.log(JSON.stringify(results, null, 2));
+        });
+      });
   });
