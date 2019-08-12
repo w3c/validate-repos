@@ -67,7 +67,7 @@ async function fetchLabelPage(org, repo, acc = [], cursor = null) {
     res = await graphql(`
  query {
     repository(owner:"${org}",name:"${repo}") {
-        labels(first:10 after:"${cursor}") {
+        labels(first:10 ${cursor ? 'after:"' + cursor + '"' : ''}) {
             edges {
               node {
                 name
@@ -105,7 +105,7 @@ async function fetchRepoPage(org, acc = [], cursor = null) {
     res = await graphql(`
  query {
   organization(login:"${org}") {
-    repositories(first:10 after:"${cursor}") {
+    repositories(first:10 ${cursor ? 'after:"' + cursor + '"' : ''}) {
       edges {
         node {
           id, name, owner { login } , isArchived, homepageUrl, description
