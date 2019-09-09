@@ -108,7 +108,7 @@ async function fetchRepoPage(org, acc = [], cursor = null) {
     repositories(first:10 ${cursor ? 'after:"' + cursor + '"' : ''}) {
       edges {
         node {
-          id, name, owner { login } , isArchived, homepageUrl, description
+          id, name, owner { login } , isArchived, homepageUrl, description, isPrivate
           labels(first:10) {
             edges {
               node {
@@ -223,7 +223,7 @@ w3cLicenses()
   .then(([repoData, cgData, repoMap]) => {
     allRepos = crawl;
     ashRepos = [];
-    crawl.filter(r => r && !r.isArchived).forEach(r => {
+    crawl.filter(r => r && !r.isArchived && && !r.isPrivate).forEach(r => {
       if (!r.readme) {
         errors.noreadme.push(fullName(r));
       }
