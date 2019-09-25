@@ -108,7 +108,7 @@ async function fetchRepoPage(org, acc = [], cursor = null) {
     repositories(first:10 ${cursor ? 'after:"' + cursor + '"' : ''}) {
       edges {
         node {
-          id, name, owner { login } , isArchived, homepageUrl, description, isPrivate
+          id, name, owner { login } , isArchived, homepageUrl, description, isPrivate, createdAt
           labels(first:10) {
             edges {
               node {
