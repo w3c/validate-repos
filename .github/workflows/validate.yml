@@ -1,0 +1,25 @@
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  push:
+    branches:
+    - master
+name: validate
+jobs:
+  validate:
+    runs-on: ubuntu-18.04
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+    - name: Setup Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12.x
+    - name: Setup dependencies
+      run: |
+        echo '{"w3capikey":"${{ secrets.W3C_API_KEY }}","ghToken":"${{ secrets.GITHUB_TOKEN }}"}' > config.json
+        npm ci
+    - name: Run validate.js
+      run: node validate.js > report.json
+    - name: Show diff
+      run: git diff
