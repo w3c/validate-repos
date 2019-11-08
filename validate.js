@@ -387,4 +387,8 @@ w3cLicenses()
           console.log(JSON.stringify(results, null, 2));
         });
       });
+  })
+  .catch((reason) => {
+    console.error(reason);
+    process.exit(1);
   });
