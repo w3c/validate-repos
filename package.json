@@ -1,4 +1,10 @@
 {
+  "name": "validate-repos",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/w3c/validate-repos.git"
+  },
+  "license": "MIT",
   "dependencies": {
     "node-fetch": "^1.6.3",
     "node-w3capi": "^1.4.0",
