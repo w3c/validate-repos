@@ -54,7 +54,7 @@ let contributing, contributingSw, license, licenseSw;
 const arrayify = x => Array.isArray(x) ? x : [x];
 const repoSort = (r1, r2) => typeof r1 === "string" ? r1.localeCompare(r2) : r1.repo.localeCompare(r2.repo);
 
-const nlToSpace = str => str.replace(/\n/g, " ").replace(/  /g, " ").trim();
+const nlToSpace = str => str.replace(/\n/g, " ").replace(/ {2}/g, " ").trim();
 const httpToHttps = str => str.replace(/http:\/\/www.w3.org\//g, "https://www.w3.org/");
 
 const mdMatch = (md, ref) => nlToSpace(httpToHttps(md.toLowerCase())).indexOf(nlToSpace(ref.toLowerCase())) !== -1;

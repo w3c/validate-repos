@@ -5,9 +5,28 @@
     "url": "git+https://github.com/w3c/validate-repos.git"
   },
   "license": "MIT",
+  "scripts": {
+    "lint": "eslint ."
+  },
   "dependencies": {
     "node-fetch": "^1.6.3",
     "node-w3capi": "^1.4.0",
     "octokat": "^0.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0"
+  },
+  "eslintConfig": {
+    "env": {
+      "es6": true,
+      "browser": true,
+      "node": true
+    },
+    "extends": [
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2019
+    }
   }
 }
