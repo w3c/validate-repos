@@ -179,7 +179,7 @@ async function fetchRepoPage(org, acc = [], cursor = null) {
   }
   // Fetch labels if they are paginated
   if (res && res.organization) {
-    console.error(JSON.stringify(res.rateLimit));
+    console.error("GitHub rate limit: " + JSON.stringify(res.rateLimit));
     return Promise.all(
       res.organization.repositories.edges
         .filter(e => e.node.labels.pageInfo.hasNextPage)
