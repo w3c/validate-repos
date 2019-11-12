@@ -1,3 +1,5 @@
+"use strict";
+
 const fetch = require("node-fetch");
 const w3c = require("node-w3capi");
 const graphql = require("./graphql.js");
@@ -46,7 +48,6 @@ const validRepoTypes = ['rec-track', 'note', 'cg-report', 'process', 'homepage',
 let allrepos = [];
 let allgroups = new Set();
 let groupRepos = {};
-let crawl;
 let contributing, contributingSw, license, licenseSw;
 
 
@@ -215,15 +216,14 @@ w3cLicenses()
       return repos.concat(next);
     }
     return sequenced(0);
-  }).then(repos => crawl = repos).then(() => Promise.all([
+  }).then(repos => allrepos = repos).then(() => Promise.all([
     fetch("https://labs.w3.org/hatchery/repo-manager/api/repos").then(r => r.json()),
     fetch("https://w3c.github.io/cg-monitor/report.json").then(r => r.json()),
     fetch("https://w3c.github.io/spec-dashboard/repo-map.json").then(r => r.json())
   ]))
   .then(([repoData, cgData, repoMap]) => {
-    allRepos = crawl;
-    ashRepos = [];
-    crawl.filter(r => r && !r.isArchived && !r.isPrivate).forEach(r => {
+    const ashRepos = [];
+    allrepos.filter(r => r && !r.isArchived && !r.isPrivate).forEach(r => {
       if (!r.readme) {
         errors.noreadme.push(fullName(r));
       }
@@ -375,16 +375,29 @@ w3cLicenses()
                            }))
                           )
                     );
-      promise.then(() => {
-        w3c.groups().fetch({embed: true}, (err, w3cgroups) => {
-          const results = {errors};
-          results.timestamp = new Date();
-          results.repos = allRepos;
-          results.groups = w3cgroups.filter(g => allgroups.has(g.id)).reduce((acc, group) => {
-          acc[group.id] = {...group, repos: groupRepos[group.id] };
-            return acc;
-          }, {});
-          console.log(JSON.stringify(results, null, 2));
-        });
-      });
+    return promise;
+  })
+  .then(() => new Promise((resolve, reject) => {
+    // https://github.com/w3c/node-w3capi/issues/41
+    w3c.groups().fetch({embed: true}, (err, w3cgroups) => {
+      if (err) {
+        reject(err);
+      } else {
+        resolve(w3cgroups);
+      }
+    });
+  }))
+  .then(w3cgroups => {
+    const results = {errors};
+    results.timestamp = new Date();
+    results.repos = allrepos;
+    results.groups = w3cgroups.filter(g => allgroups.has(g.id)).reduce((acc, group) => {
+    acc[group.id] = {...group, repos: groupRepos[group.id] };
+      return acc;
+    }, {});
+    console.log(JSON.stringify(results, null, 2));
+  })
+  .catch((reason) => {
+    console.error(reason);
+    process.exit(1);
   });
