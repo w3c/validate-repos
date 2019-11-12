@@ -17,7 +17,7 @@ jobs:
         node-version: 12.x
     - name: Setup dependencies
       run: |
-        echo '{"w3capikey":"${{ secrets.W3C_API_KEY }}","ghToken":"${{ secrets.GITHUB_TOKEN }}"}' > config.json
+        echo '{"w3capikey":"${{ secrets.W3C_API_KEY }}","ghToken":"${{ secrets.W3C_GITHUB_TOKEN }}"}' > config.json
         npm ci
     - name: Run validate.js
       run: node validate.js > report.json
