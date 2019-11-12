@@ -26,7 +26,6 @@ async function graphql(query, variables) {
 
   if (obj.errors) {
     let ghErr = obj.errors[0]; // just return the first error
-    let location = (ghErr.locations)? ghErr.locations[0].line : -1;
     let err = new Error(ghErr.message, "unknown", -1);
     if (ghErr.type) err.type = ghErr.type;
     err.all = obj.errors;
