@@ -21,5 +21,12 @@ jobs:
         npm ci
     - name: Run validate.js
       run: node validate.js > report.json
-    - name: Show diff
-      run: git diff
+    - name: Push report.json updates
+      run: |
+        git config user.name "w3c-validate-repos-bot"
+        git config user.email "<>"
+        git remote set-url --push origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+        git add report.json
+        git commit -m "Update report.json"
+        git show
+        git push origin HEAD:master
