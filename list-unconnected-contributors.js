@@ -19,7 +19,7 @@ octo.repos(selectedrepo).contributors.fetch().then(contributors => {
     Promise.all(contributors.items.map(contributor =>
                                  {
                                      return new Promise(function(res, rej) {
-                                         w3c.user({type: 'github', id: contributor.id}).fetch(function(err, w3cuser) {
+                                         w3c.user({type: 'github', id: contributor.id}).fetch(function(err, /* w3cuser */) {
                                              if (err) {
                                                  if (err.status === 404) {
                                                      // is the user known in ahsnazg local db?

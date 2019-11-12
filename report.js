@@ -36,7 +36,7 @@ function getUrlParam(name) {
 
 // Add filter UI
 const filterUI = document.getElementById("filter");
-const errorSelectorHtml = Object.keys(errortypes).map(t => `<label><input name='filter' type='checkbox' value='${t}'> ${errortypes[t]}</label>`).join(' ');
+const errorSelectorHtml = Object.keys(errortypes).map(t => `<label><input name='filter' type='checkbox' value='${t}'>${errortypes[t]}</label>`).join(' ');
 filterUI.innerHTML = `
  <fieldset><legend>Filter report</legend>
  <label for=grouptype>Group type:</label> <select id='grouptype' name='grouptype'><option value=''>All</option><option value=workinggroup>Working Group</option><option value=communitygroup>Community Group</option></select></label>
@@ -50,7 +50,7 @@ if (getUrlParam("grouptype")) {
   (groupSelector.querySelector(`option[value='${getUrlParam("grouptype")}']`) || {}).selected = true;
 }
 if (getUrlParam("filter")) {
-  errorTypes = getUrlParam("filter").split(',');
+  const errorTypes = getUrlParam("filter").split(',');
   [...errorSelector.querySelectorAll('input')].forEach(inp => inp.checked = errorTypes.includes(inp.value));
 } else {
   [...errorSelector.querySelectorAll('input')].forEach(inp => inp.checked = defaultReport.includes(inp.value));
