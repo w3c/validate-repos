@@ -61,7 +61,7 @@ groupSelector.addEventListener("change", () => {
   writeReport();
 });
 
-errorSelector.addEventListener("input", (e) => {
+errorSelector.addEventListener("input", () => {
   insertUrlParam("filter", [...errorSelector.querySelectorAll('input:checked')].map(inp => inp.value).join(','));
   writeReport();
 });

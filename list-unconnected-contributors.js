@@ -1,4 +1,3 @@
-const fetch = require("node-fetch");
 const Octokat = require("octokat");
 const config = require("./config.json");
 const w3c = require('node-w3capi');
