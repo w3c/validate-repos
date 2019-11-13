@@ -16,7 +16,7 @@ jobs:
     - name: Setup dependencies
       run: |
         echo '{"w3capikey":"${{ secrets.W3C_API_KEY }}","ghToken":"${{ secrets.W3C_GITHUB_TOKEN }}"}' > config.json
-        npm ci
+        npm ci --production
     - name: Run validate.js
       run: node validate.js > report.json
     - name: Commit changes

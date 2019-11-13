@@ -1,7 +1,7 @@
 on: [push, pull_request]
-name: lint
+name: test
 jobs:
-  lint:
+  test:
     runs-on: ubuntu-18.04
     steps:
     - name: Checkout
@@ -11,6 +11,8 @@ jobs:
       with:
         node-version: 12.x
     - name: Setup dependencies
-      run: npm ci
-    - name: Run lint
-      run: npm run lint
+      run: |
+        echo '{}' > config.json
+        npm ci
+    - name: Run tests
+      run: npm test
