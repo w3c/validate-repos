@@ -22,12 +22,12 @@ const defaultReport = ["now3cjson", "inconsistengroups", "invalidw3cjson", "inco
 
 // from https://stackoverflow.com/questions/10970078/modifying-a-query-string-without-reloading-the-page
 function insertUrlParam(key, value) {
-    if (history.pushState) {
-        let searchParams = new URLSearchParams(window.location.search);
-        searchParams.set(key, value);
-        let newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + '?' + searchParams.toString();
-        window.history.pushState({path: newurl}, '', newurl);
-    }
+  if (history.pushState) {
+    let searchParams = new URLSearchParams(window.location.search);
+    searchParams.set(key, value);
+    let newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + '?' + searchParams.toString();
+    window.history.pushState({path: newurl}, '', newurl);
+  }
 }
 
 // from https://stackoverflow.com/a/5158301
@@ -96,59 +96,59 @@ function writeReport() {
   const stats = document.createElement('p');
   stats.textContent = `${data.repos.filter(r => r.owner.login === 'w3c' && !r.isArchived).length} active repos in the w3c github organization; overall, ${Object.values(data.groups).filter(g => g.type === 'working group').reduce((acc, g) => acc + g.repos.length, 0)} known repos associated with Working Groups, ${Object.values(data.groups).filter(g => g.type === 'community group').reduce((acc, g) => acc + g.repos.length, 0)} associated with Community Groups`;
   report.appendChild(stats);
-    const groups = data.groups;
-    Object.keys(groups).sort((a,b) => groups[a].name.localeCompare(groups[b].name))
-      .forEach(groupId => {
-        const section = document.createElement('section');
-        const title = document.createElement('h2');
-        title.appendChild(document.createTextNode(groups[groupId].name));
-        if (groupFilter(groupId))
-          section.appendChild(title);
-        if (groups[groupId].type === "working group" && !groups[groupId].repos.some(r => r.hasRecTrack)) {
-          const p = document.createElement('p');
-          p.appendChild(document.createTextNode('No identified repo for rec-track spec.'));
-          section.appendChild(p);
-        }
-        if (groups[groupId].repos.length) {
-          Object.keys(errortypes).filter(t => errorFilter.size === 0 || errorFilter.has(t))
-            .forEach(err => {
-              const repos = data.errors[err].filter(r => groups[groupId].repos.find(x => x.fullName === r || x.fullName === r.repo));
-              if (repos.length) {
-                const errsection = document.createElement('section');
-                const errtitle = document.createElement('h3');
-                errtitle.appendChild(document.createTextNode(errortypes[err]));
-                errsection.appendChild(errtitle);
+  const groups = data.groups;
+  Object.keys(groups).sort((a,b) => groups[a].name.localeCompare(groups[b].name))
+    .forEach(groupId => {
+      const section = document.createElement('section');
+      const title = document.createElement('h2');
+      title.appendChild(document.createTextNode(groups[groupId].name));
+      if (groupFilter(groupId))
+        section.appendChild(title);
+      if (groups[groupId].type === "working group" && !groups[groupId].repos.some(r => r.hasRecTrack)) {
+        const p = document.createElement('p');
+        p.appendChild(document.createTextNode('No identified repo for rec-track spec.'));
+        section.appendChild(p);
+      }
+      if (groups[groupId].repos.length) {
+        Object.keys(errortypes).filter(t => errorFilter.size === 0 || errorFilter.has(t))
+          .forEach(err => {
+            const repos = data.errors[err].filter(r => groups[groupId].repos.find(x => x.fullName === r || x.fullName === r.repo));
+            if (repos.length) {
+              const errsection = document.createElement('section');
+              const errtitle = document.createElement('h3');
+              errtitle.appendChild(document.createTextNode(errortypes[err]));
+              errsection.appendChild(errtitle);
 
-                const list = document.createElement('ul');
-                repos.forEach(repo => {
-                  const repoName = typeof repo === "string" ? repo : repo.repo;
-                  mentionedRepos.add(repoName);
-                  writeErrorEntry(repoName, list, repo.error);
+              const list = document.createElement('ul');
+              repos.forEach(repo => {
+                const repoName = typeof repo === "string" ? repo : repo.repo;
+                mentionedRepos.add(repoName);
+                writeErrorEntry(repoName, list, repo.error);
 
-                });
-                errsection.appendChild(list);
-                if (groupFilter(groupId))
-                  section.appendChild(errsection);
-              }
-            });
-        }
-        report.appendChild(section);
-      });
-    const section = document.createElement('section');
-    const title = document.createElement('h2');
-    title.appendChild(document.createTextNode("No w3c.json"));
-    section.appendChild(title);
-    const ul = document.createElement('ul');
-    data.errors.incompletew3cjson
-      .filter(x => x.error === "group")
-      .forEach(x => writeErrorEntry(x.repo, ul, "missing group in w3c.json"));
-    data.errors.illformedw3cjson
-      .forEach(x => writeErrorEntry(x, ul, "ill-formed JSON"));
-    data.errors.now3cjson
-      .filter(x => x.startsWith('w3c/') || x.startsWith('WICG') || x.startsWith('WebAudio'))
-      .filter(x => !mentionedRepos.has(x))
-      .forEach(x => writeErrorEntry(x, ul, "no w3c.json"));
-    section.appendChild(ul);
-    report.appendChild(section);
+              });
+              errsection.appendChild(list);
+              if (groupFilter(groupId))
+                section.appendChild(errsection);
+            }
+          });
+      }
+      report.appendChild(section);
+    });
+  const section = document.createElement('section');
+  const title = document.createElement('h2');
+  title.appendChild(document.createTextNode("No w3c.json"));
+  section.appendChild(title);
+  const ul = document.createElement('ul');
+  data.errors.incompletew3cjson
+    .filter(x => x.error === "group")
+    .forEach(x => writeErrorEntry(x.repo, ul, "missing group in w3c.json"));
+  data.errors.illformedw3cjson
+    .forEach(x => writeErrorEntry(x, ul, "ill-formed JSON"));
+  data.errors.now3cjson
+    .filter(x => x.startsWith('w3c/') || x.startsWith('WICG') || x.startsWith('WebAudio'))
+    .filter(x => !mentionedRepos.has(x))
+    .forEach(x => writeErrorEntry(x, ul, "no w3c.json"));
+  section.appendChild(ul);
+  report.appendChild(section);
 }
 
