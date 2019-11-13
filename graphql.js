@@ -16,15 +16,14 @@ const GH_HEADERS =  {
   "Authorization": "bearer " + config.ghToken
 };
 
-async function graphql(query, variables) {
-  let options = { method: 'POST', headers: GH_HEADERS },
-    postObj = { query: query };
-  if (variables) {
-    postObj.variables = variables;
-  }
-  options.body = JSON.stringify(postObj);
+async function graphql(query) {
+  const options = {
+    method: 'POST',
+    headers: GH_HEADERS,
+    body: JSON.stringify({query})
+  };
 
-  let obj = await fetch(GH_API, options).then(res => res.json());
+  const obj = await fetch(GH_API, options).then(res => res.json());
 
   if (obj.errors) {
     let ghErr = obj.errors[0]; // just return the first error
