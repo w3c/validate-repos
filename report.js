@@ -1,3 +1,5 @@
+/* eslint-env browser */
+
 let data;
 const errortypes = {
   "now3cjson": "No w3c.json file",
