@@ -206,8 +206,8 @@ async function validate() {
 
   async function sequenced(index) {
     if (index === orgs.length) return [];
-    let repos = await fetchRepoPage(orgs[index]);
-    let next = await sequenced(index + 1);
+    const repos = await fetchRepoPage(orgs[index]);
+    const next = await sequenced(index + 1);
     return repos.concat(next);
   }
   const allrepos = await sequenced(0);
@@ -240,7 +240,7 @@ async function validate() {
         errors.invalidcontributing.push({repo: fullName(r), error: "doesn't match SW or DOC contributing", contributing: r.contributing.text});
     }
     let shouldBeRepoManaged = false;
-    let hasRecTrack = {ashnazg: null, repotype: null, tr: null}; // TODO detect conflicting information (repo-type vs ash-nazg vs TR doc)
+    const hasRecTrack = {ashnazg: null, repotype: null, tr: null}; // TODO detect conflicting information (repo-type vs ash-nazg vs TR doc)
 
     let groups = [];
     // is the repo associated with a CG in the CG monitor?

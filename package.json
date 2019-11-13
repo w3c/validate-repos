@@ -45,6 +45,7 @@
       "no-tabs": "error",
       "no-trailing-spaces": "error",
       "object-curly-spacing": "error",
+      "prefer-const": "error",
       "rest-spread-spacing": "error",
       "semi-spacing": "error",
       "space-before-blocks": "error",
