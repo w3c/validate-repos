@@ -8,7 +8,7 @@ const w3c = require('node-w3capi');
 const ashnazgusers = require('./ashnazg-users.json');
 
 w3c.apiKey = config.w3capikey;
-const octo = new Octokat({ token: config.ghToken });
+const octo = new Octokat({token: config.ghToken});
 
 if (!process.argv[2] || process.argv[2].indexOf('/') === -1) {
   console.error("Required: name of repo to check, e.g. w3c/webrtc-pc");

@@ -14,10 +14,10 @@ const config = require("./config.json");
 const ashnazgHookUrls = ["https://labs.w3.org/hatchery/repo-manager/api/hook", "https://labs.w3.org/repo-manager/api/hook"];
 
 w3c.apiKey = config.w3capikey;
-const octo = new Octokat({ token: config.ghToken });
+const octo = new Octokat({token: config.ghToken});
 
 const orgs = ["w3c", "WebAudio", "immersive-web", "webassembly", "w3ctag", "WICG", "w3cping"];
-const errors = {"inconsistentgroups": [], "now3cjson":[], "invalidw3cjson": [], "illformedw3cjson":[], "incompletew3cjson":[], "nocontributing":[], "invalidcontributing": [], "nolicense": [], "nocodeofconduct": [], "invalidlicense": [], "noreadme": [],  "noashnazg": [], "inconsistentstatus": [], "unprotectedbranch": [], "missingashnazghook": [], "duplicateashnazghooks": []};
+const errors = {"inconsistentgroups": [], "now3cjson": [], "invalidw3cjson": [], "illformedw3cjson": [], "incompletew3cjson": [], "nocontributing": [], "invalidcontributing": [], "nolicense": [], "nocodeofconduct": [], "invalidlicense": [], "noreadme": [], "noashnazg": [], "inconsistentstatus": [], "unprotectedbranch": [], "missingashnazghook": [], "duplicateashnazghooks": []};
 
 // for some repos, having the w3c.json administrative file is felt as awkward
 // we hard-code their equivalent here
@@ -90,8 +90,8 @@ async function fetchLabelPage(org, repo, acc = [], cursor = null) {
       return {"repo": {"owner": org, "name": repo}, "labels": data.map(e => e.node)};
     }
   } else {
-    console.error("Fetching label for " + repo + " at cursor " + cursor + " failed with " + JSON.stringify(res)+ ", not retrying");
-    return {"repo": {"owner": org, "name": repo}, "labels": acc.map(e => e.node) };
+    console.error("Fetching label for " + repo + " at cursor " + cursor + " failed with " + JSON.stringify(res) + ", not retrying");
+    return {"repo": {"owner": org, "name": repo}, "labels": acc.map(e => e.node)};
     //return fetchLabelPage(org, repo, acc, cursor);
   }
 }
@@ -207,7 +207,7 @@ async function validate() {
   async function sequenced(index) {
     if (index === orgs.length) return [];
     let repos = await fetchRepoPage(orgs[index]);
-    let next = await sequenced(index+1);
+    let next = await sequenced(index + 1);
     return repos.concat(next);
   }
   const allrepos = await sequenced(0);
@@ -231,16 +231,16 @@ async function validate() {
       errors.nolicense.push(fullName(r));
     } else {
       if (!mdMatch(r.license.text, license) && !mdMatch(r.license.text, licenseSw))
-        errors.invalidlicense.push({ repo: fullName(r), error: "doesn't match SW or DOC license", license: r.license.text });
+        errors.invalidlicense.push({repo: fullName(r), error: "doesn't match SW or DOC license", license: r.license.text});
     }
     if (!r.contributing || !r.contributing.text) {
       errors.nocontributing.push(fullName(r));
     } else {
       if (!mdMatch(r.contributing.text, contributing) && !mdMatch(r.contributing.text, contributingSw))
-        errors.invalidcontributing.push({ repo: fullName(r), error: "doesn't match SW or DOC contributing", contributing: r.contributing.text });
+        errors.invalidcontributing.push({repo: fullName(r), error: "doesn't match SW or DOC contributing", contributing: r.contributing.text});
     }
     let shouldBeRepoManaged = false;
-    let hasRecTrack = {ashnazg: null, repotype:null, tr: null}; // TODO detect conflicting information (repo-type vs ash-nazg vs TR doc)
+    let hasRecTrack = {ashnazg: null, repotype: null, tr: null}; // TODO detect conflicting information (repo-type vs ash-nazg vs TR doc)
 
     let groups = [];
     // is the repo associated with a CG in the CG monitor?
@@ -280,9 +280,9 @@ async function validate() {
       r.w3c = conf;
       // TODO: replace with JSON schema?
       if (!conf["repo-type"]) {
-        errors.incompletew3cjson.push({repo: fullName(r), error: "repo-type" + (Object.values(hasRecTrack).every(x => x === null) ? " (unknown)" : (hasRecTrack.tr || hasRecTrack.ashnazg ? " (rec-track)" : " (not rec-track)")) });
+        errors.incompletew3cjson.push({repo: fullName(r), error: "repo-type" + (Object.values(hasRecTrack).every(x => x === null) ? " (unknown)" : (hasRecTrack.tr || hasRecTrack.ashnazg ? " (rec-track)" : " (not rec-track)"))});
       } else {
-        hasRecTrack.repotype = arrayify(conf["repo-type"]).includes('rec-track') ;
+        hasRecTrack.repotype = arrayify(conf["repo-type"]).includes('rec-track');
 
         const unknownTypes = arrayify(conf['repo-type']).filter(t => !validRepoTypes.includes(t));
         if (unknownTypes.length) {
@@ -347,7 +347,7 @@ async function validate() {
     groups.forEach(gid => {
       if (!groupRepos[gid])
         groupRepos[gid] = [];
-      groupRepos[gid].push({ name: r.name, fullName: fullName(r), hasRecTrack: recTrackStatus });
+      groupRepos[gid].push({name: r.name, fullName: fullName(r), hasRecTrack: recTrackStatus});
     });
   });
 
@@ -390,7 +390,7 @@ async function validate() {
   results.timestamp = new Date();
   results.repos = allrepos;
   results.groups = w3cgroups.filter(g => allgroups.has(g.id)).reduce((acc, group) => {
-    acc[group.id] = {...group, repos: groupRepos[group.id] };
+    acc[group.id] = {...group, repos: groupRepos[group.id]};
     return acc;
   }, {});
   console.log(JSON.stringify(results, null, 2));

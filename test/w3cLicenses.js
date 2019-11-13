@@ -3,7 +3,7 @@
 'use strict';
 
 const assert = require('assert');
-const proxyquire =  require('proxyquire');
+const proxyquire = require('proxyquire');
 const sinon = require('sinon');
 
 describe('w3cLicenses', () => {

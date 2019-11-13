@@ -3,13 +3,13 @@
 'use strict';
 
 const assert = require('assert');
-const proxyquire =  require('proxyquire');
+const proxyquire = require('proxyquire');
 const sinon = require('sinon');
 
 const GH_API = 'https://api.github.com/graphql';
 
 describe('graphql', () => {
-  const mockConfig = { ghToken: 'mock-token' };
+  const mockConfig = {ghToken: 'mock-token'};
 
   it('happy path', async () => {
     const fakeFetch = sinon.fake.resolves({

@@ -18,7 +18,7 @@ const errortypes = {
   "invalidlicense": "Invalid LICENSE.md file",
   "noreadme": "No README.md file"
 };
-const defaultReport = ["now3cjson", "inconsistengroups", "invalidw3cjson", "incompletew3cjson", "noashnazg", "inconsistentstatus", "unprotectedbranch","missingashnazghook"];
+const defaultReport = ["now3cjson", "inconsistengroups", "invalidw3cjson", "incompletew3cjson", "noashnazg", "inconsistentstatus", "unprotectedbranch", "missingashnazghook"];
 
 // from https://stackoverflow.com/questions/10970078/modifying-a-query-string-without-reloading-the-page
 function insertUrlParam(key, value) {
@@ -82,14 +82,14 @@ const writeErrorEntry = (name, list, details) => {
 
 fetch("report.json")
   .then(r => r.json())
-  .then(fetcheddata => { data = fetcheddata; writeReport();} );
+  .then(fetcheddata => { data = fetcheddata; writeReport(); });
 
 
 function writeReport() {
   if (!data) return;
   let mentionedRepos = new Set();
   const groupFilter = gid => getUrlParam("grouptype") ? (groups[gid].type || '').replace(' ', '') === getUrlParam("grouptype") : true;
-  const errorFilter = new Set((getUrlParam("filter") || defaultReport.join(',')).split(",").filter(e => e !==''));
+  const errorFilter = new Set((getUrlParam("filter") || defaultReport.join(',')).split(",").filter(e => e !== ''));
 
   const report = document.getElementById('report');
   report.innerHTML = '';
@@ -97,7 +97,7 @@ function writeReport() {
   stats.textContent = `${data.repos.filter(r => r.owner.login === 'w3c' && !r.isArchived).length} active repos in the w3c github organization; overall, ${Object.values(data.groups).filter(g => g.type === 'working group').reduce((acc, g) => acc + g.repos.length, 0)} known repos associated with Working Groups, ${Object.values(data.groups).filter(g => g.type === 'community group').reduce((acc, g) => acc + g.repos.length, 0)} associated with Community Groups`;
   report.appendChild(stats);
   const groups = data.groups;
-  Object.keys(groups).sort((a,b) => groups[a].name.localeCompare(groups[b].name))
+  Object.keys(groups).sort((a, b) => groups[a].name.localeCompare(groups[b].name))
     .forEach(groupId => {
       const section = document.createElement('section');
       const title = document.createElement('h2');
