@@ -1,10 +1,8 @@
+name: validate
 on:
   schedule:
     - cron: '0 0 * * *'
   push:
-    branches:
-    - master
-name: validate
 jobs:
   validate:
     runs-on: ubuntu-18.04
@@ -21,12 +19,15 @@ jobs:
         npm ci
     - name: Run validate.js
       run: node validate.js > report.json
-    - name: Push report.json updates
+    - name: Commit changes
       run: |
         git config user.name "w3c-validate-repos-bot"
         git config user.email "<>"
-        git remote set-url --push origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
         git add report.json
         git commit -m "Update report.json"
         git show
+    - name: Push changes
+      if: github.ref == 'refs/heads/master'
+      run: |
+        git remote set-url --push origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
         git push origin HEAD:master
