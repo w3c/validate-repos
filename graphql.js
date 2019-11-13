@@ -18,7 +18,7 @@ const GH_HEADERS =  {
 
 async function graphql(query, variables) {
   let options = { method: 'POST', headers: GH_HEADERS },
-      postObj = { query: query };
+    postObj = { query: query };
   if (variables) {
     postObj.variables = variables;
   }

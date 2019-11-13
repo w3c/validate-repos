@@ -189,7 +189,7 @@ async function fetchRepoPage(org, acc = [], cursor = null) {
       if (res.organization.repositories.pageInfo.hasNextPage) {
         return fetchRepoPage(org, data, res.organization.repositories.pageInfo.endCursor);
       } else {
-      return data;
+        return data;
       }
     });
   } else {

@@ -23,6 +23,9 @@
     "extends": [
       "eslint:recommended"
     ],
+    "rules": {
+      "indent": ["error", 2]
+    },
     "parserOptions": {
       "ecmaVersion": 2019
     }
