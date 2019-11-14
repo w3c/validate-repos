@@ -33,7 +33,34 @@
         "error",
         2
       ],
-      "no-tabs": "error"
+      "array-bracket-spacing": "error",
+      "arrow-spacing": "error",
+      "block-spacing": "error",
+      "comma-spacing": "error",
+      "func-call-spacing": "error",
+      "generator-star-spacing": "error",
+      "key-spacing": "error",
+      "keyword-spacing": "error",
+      "no-multi-spaces": "error",
+      "no-tabs": "error",
+      "no-trailing-spaces": "error",
+      "object-curly-spacing": "error",
+      "rest-spread-spacing": "error",
+      "semi-spacing": "error",
+      "space-before-blocks": "error",
+      "space-before-function-paren": [
+        "error",
+        {
+          "anonymous": "never",
+          "named": "never",
+          "asyncArrow": "always"
+        }
+      ],
+      "space-in-parens": "error",
+      "space-infix-ops": "error",
+      "space-unary-ops": "error",
+      "template-curly-spacing": "error",
+      "yield-star-spacing": "error"
     },
     "parserOptions": {
       "ecmaVersion": 2019

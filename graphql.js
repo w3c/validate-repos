@@ -9,7 +9,7 @@ const GH_API = "https://api.github.com/graphql";
 
 // use https://developer.github.com/v4/explorer/ to debug queries
 
-const GH_HEADERS =  {
+const GH_HEADERS = {
   "Accept": "application/vnd.github.v4.idl",
   "User-Agent": "graphql-github/0.1",
   "Content-Type": "application/json",
