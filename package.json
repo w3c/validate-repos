@@ -32,7 +32,8 @@
       "indent": [
         "error",
         2
-      ]
+      ],
+      "no-tabs": "error"
     },
     "parserOptions": {
       "ecmaVersion": 2019

@@ -72,8 +72,8 @@ async function fetchLabelPage(org, repo, acc = [], cursor = null) {
               }
             }
             pageInfo {
-    	  	endCursor
-      	        hasNextPage
+              endCursor
+              hasNextPage
             }
          }
     }
@@ -114,8 +114,8 @@ async function fetchRepoPage(org, acc = [], cursor = null) {
               }
             }
             pageInfo {
-    	  	endCursor
-      	        hasNextPage
+              endCursor
+              hasNextPage
             }
           }
           defaultBranch: defaultBranchRef {
