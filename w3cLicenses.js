@@ -7,8 +7,7 @@ const graphql = require("./graphql.js");
 
 // Set up the config of this repository
 async function licenses() {
-  async function query() {
-    let res = graphql(`
+  let res = await graphql(`
   query {
     repository(owner:"w3c",name:"licenses") {
       contributing: object(expression: "HEAD:WG-CONTRIBUTING.md") {
@@ -40,11 +39,6 @@ async function licenses() {
   }
   }
   `);
-    if (res) return res;
-    console.error('Query for w3c/licenses failed, retrying');
-    return query();
-  }
-  let res = await query();
   res = res.repository;
 
   if (res.contributing) {
