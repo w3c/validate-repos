@@ -48,7 +48,6 @@ const hardcodedRepoData = {
 const validRepoTypes = ['rec-track', 'note', 'cg-report', 'process', 'homepage', 'article', 'tool', 'project', 'others', 'workshop', 'tests', 'translation'];
 
 const arrayify = x => Array.isArray(x) ? x : [x];
-const repoSort = (r1, r2) => typeof r1 === "string" ? r1.localeCompare(r2) : r1.repo.localeCompare(r2.repo);
 
 const nlToSpace = str => str.replace(/\n/g, " ").replace(/ {2}/g, " ").trim();
 const httpToHttps = str => str.replace(/http:\/\/www.w3.org\//g, "https://www.w3.org/");
@@ -211,6 +210,7 @@ async function validate() {
     return repos.concat(next);
   }
   const allrepos = await sequenced(0);
+  allrepos.sort((r1, r2) => fullName(r1).localeCompare(fullName(r2)));
 
   const [repoData, cgData, repoMap] = await Promise.all([
     fetch("https://labs.w3.org/hatchery/repo-manager/api/repos").then(r => r.json()),
@@ -351,9 +351,6 @@ async function validate() {
     });
   });
 
-  Object.keys(errors).forEach(k => {
-    errors[k] = errors[k].sort(repoSort);
-  });
   let promise = Promise.resolve();
   // TODO: replace with a proper request queue
   // à la https://github.com/w3c/spec-dashboard/blob/master/fetch-data/group-repos.js#L14
