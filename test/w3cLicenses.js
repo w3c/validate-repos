@@ -24,7 +24,7 @@ describe('w3cLicenses', () => {
         },
       }
     });
-    const licenses = proxyquire('../w3cLicenses.js', {
+    const licenses = proxyquire('../lib/w3cLicenses.js', {
       './graphql.js': graphql
     });
     const lic = await licenses();
@@ -39,7 +39,7 @@ describe('w3cLicenses', () => {
 
   it('no files found', async () => {
     const graphql = sinon.fake.resolves({repository: {}});
-    const licenses = proxyquire('../w3cLicenses.js', {
+    const licenses = proxyquire('../lib/w3cLicenses.js', {
       './graphql.js': graphql
     });
     const lic = await licenses();
@@ -49,7 +49,7 @@ describe('w3cLicenses', () => {
 
   it('graphql error', async () => {
     const graphql = sinon.fake.rejects(new Error('mock error'));
-    const licenses = proxyquire('../w3cLicenses.js', {
+    const licenses = proxyquire('../lib/w3cLicenses.js', {
       './graphql.js': graphql
     });
     // The retry logic is broken, rejection is not handled.

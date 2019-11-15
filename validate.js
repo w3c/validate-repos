@@ -4,11 +4,11 @@
 
 const fetch = require("node-fetch");
 const w3c = require("node-w3capi");
-const graphql = require("./graphql.js");
+const graphql = require("./lib/graphql.js");
 // github API v3 needed to check webhooks
 const Octokat = require("octokat");
 
-const w3cLicenses = require("./w3cLicenses.js");
+const w3cLicenses = require("./lib/w3cLicenses.js");
 const config = require("./config.json");
 
 const ashnazgHookUrls = ["https://labs.w3.org/hatchery/repo-manager/api/hook", "https://labs.w3.org/repo-manager/api/hook"];
