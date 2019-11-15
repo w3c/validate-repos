@@ -23,16 +23,16 @@ const defaultReport = ["now3cjson", "inconsistengroups", "invalidw3cjson", "inco
 // from https://stackoverflow.com/questions/10970078/modifying-a-query-string-without-reloading-the-page
 function insertUrlParam(key, value) {
   if (history.pushState) {
-    let searchParams = new URLSearchParams(window.location.search);
+    const searchParams = new URLSearchParams(window.location.search);
     searchParams.set(key, value);
-    let newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + '?' + searchParams.toString();
+    const newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + '?' + searchParams.toString();
     window.history.pushState({path: newurl}, '', newurl);
   }
 }
 
 // from https://stackoverflow.com/a/5158301
 function getUrlParam(name) {
-  let searchParams = new URLSearchParams(window.location.search);
+  const searchParams = new URLSearchParams(window.location.search);
   return searchParams.get(name);
 }
 
@@ -87,7 +87,7 @@ fetch("report.json")
 
 function writeReport() {
   if (!data) return;
-  let mentionedRepos = new Set();
+  const mentionedRepos = new Set();
   const groupFilter = gid => getUrlParam("grouptype") ? (groups[gid].type || '').replace(' ', '') === getUrlParam("grouptype") : true;
   const errorFilter = new Set((getUrlParam("filter") || defaultReport.join(',')).split(",").filter(e => e !== ''));
 
