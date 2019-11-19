@@ -1,6 +1,5 @@
 /* eslint-env browser */
 
-let data;
 const errortypes = {
   "now3cjson": "No w3c.json file",
   "invalidw3cjson": "Invalid data in w3c.json",
@@ -74,19 +73,13 @@ const writeErrorEntry = (name, list, details) => {
   link.href = 'https://github.com/' + name;
   link.appendChild(document.createTextNode(name));
   li.appendChild(link);
-  if (details)
+  if (details) {
     li.appendChild(document.createTextNode(': ' + details));
+  }
   list.appendChild(li);
 };
 
-
-fetch("report.json")
-  .then(r => r.json())
-  .then(fetcheddata => { data = fetcheddata; writeReport(); });
-
-
-function writeReport() {
-  if (!data) return;
+function writeReport(data) {
   const mentionedRepos = new Set();
   const groupFilter = gid => getUrlParam("grouptype") ? (groups[gid].type || '').replace(' ', '') === getUrlParam("grouptype") : true;
   const errorFilter = new Set((getUrlParam("filter") || defaultReport.join(',')).split(",").filter(e => e !== ''));
@@ -102,8 +95,9 @@ function writeReport() {
       const section = document.createElement('section');
       const title = document.createElement('h2');
       title.appendChild(document.createTextNode(groups[groupId].name));
-      if (groupFilter(groupId))
+      if (groupFilter(groupId)) {
         section.appendChild(title);
+      }
       if (groups[groupId].type === "working group" && !groups[groupId].repos.some(r => r.hasRecTrack)) {
         const p = document.createElement('p');
         p.appendChild(document.createTextNode('No identified repo for rec-track spec.'));
@@ -127,8 +121,9 @@ function writeReport() {
 
               });
               errsection.appendChild(list);
-              if (groupFilter(groupId))
+              if (groupFilter(groupId)) {
                 section.appendChild(errsection);
+              }
             }
           });
       }
@@ -152,3 +147,6 @@ function writeReport() {
   report.appendChild(section);
 }
 
+fetch("report.json")
+  .then(r => r.json())
+  .then(writeReport);

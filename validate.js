@@ -163,7 +163,9 @@ async function validate() {
   const licenses = await w3cLicenses();
 
   async function sequenced(index) {
-    if (index === orgs.length) return [];
+    if (index === orgs.length) {
+      return [];
+    }
     const repos = await fetchRepoPage(orgs[index]);
     const next = await sequenced(index + 1);
     return repos.concat(next);
@@ -206,8 +208,9 @@ async function validate() {
     pushErrors(r, errors);
     for (const gid of groups) {
       allgroups.add(gid);
-      if (!groupRepos[gid])
+      if (!groupRepos[gid]) {
         groupRepos[gid] = [];
+      }
       groupRepos[gid].push({
         name: r.name,
         fullName: fullName(r),
