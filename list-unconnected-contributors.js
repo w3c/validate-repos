@@ -24,10 +24,11 @@ octo.repos(selectedrepo).contributors.fetch().then(contributors => {
         if (err) {
           if (err.status === 404) {
             // is the user known in ahsnazg local db?
-            if (ashnazgusers.indexOf(contributor.id) !== -1)
+            if (ashnazgusers.indexOf(contributor.id) !== -1) {
               return res(null);
-            else
+            } else {
               return res({login: contributor.login, contributions: contributor.contributions});
+            }
           } else {
             return rej(err);
           }

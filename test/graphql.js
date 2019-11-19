@@ -13,7 +13,9 @@ describe('graphql', () => {
 
   it('happy path', async () => {
     const fakeFetch = sinon.fake.resolves({
-      async json() { return {data: 'mock response'} }
+      async json() {
+        return {data: 'mock response'}
+      }
     });
     const graphql = proxyquire('../lib/graphql.js', {
       '../config.json': mockConfig,
@@ -31,7 +33,9 @@ describe('graphql', () => {
 
   it('API error', async () => {
     const fakeFetch = sinon.fake.resolves({
-      async json() { return {errors: [{message: 'API error'}]} }
+      async json() {
+        return {errors: [{message: 'API error'}]}
+      }
     });
     const graphql = proxyquire('../lib/graphql.js', {
       '../config.json': mockConfig,
@@ -48,7 +52,9 @@ describe('graphql', () => {
       type: 'error',
       status: 500,
       ok: false,
-      async json() { return {data: 'valid response'} }
+      async json() {
+        return {data: 'valid response'}
+      }
     });
     const graphql = proxyquire('../lib/graphql.js', {
       '../config.json': mockConfig,
