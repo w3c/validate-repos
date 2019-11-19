@@ -47,6 +47,32 @@ describe('graphql', () => {
     });
   });
 
+  it('multiple API errors', async () => {
+    const mockErrors = [
+      {message: 'message 1', type: 'type 1'},
+      {message: 'message 2', type: 'type 2'},
+    ];
+    const fakeFetch = sinon.fake.resolves({
+      async json() {
+        return {errors: mockErrors}
+      }
+    });
+    const graphql = proxyquire('../lib/graphql.js', {
+      '../config.json': mockConfig,
+      'node-fetch': fakeFetch,
+    });
+    let err;
+    try {
+      await graphql('mock query');
+    } catch (e) {
+      err = e;
+    }
+    assert(err, 'no error thrown');
+    assert.strictEqual(err.message, 'message 1');
+    assert.strictEqual(err.type, 'type 1');
+    assert.deepStrictEqual(err.all, mockErrors);
+  });
+
   it('fetch error', async () => {
     const fakeFetch = sinon.fake.resolves({
       type: 'error',
