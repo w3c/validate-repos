@@ -204,11 +204,10 @@ describe('validateRepo', () => {
     const repoData = [];
     const cgData = {data: [{
       id: 45,
-      repositories: ['https://github.com/foo/bar'],
+      repositories: ['https://github.com/foo/bar/'],
     }]};
     const repoMap = {};
     const {groups} = validateRepo(repo, licenses, repoData, cgData, repoMap);
-    // Note: id from `cgData` clobbers id from `repoData`
     assert.deepStrictEqual(groups, [45]);
   });
 
@@ -222,7 +221,6 @@ describe('validateRepo', () => {
     const cgData = {data: []};
     const repoMap = {};
     const {groups} = validateRepo(repo, licenses, repoData, cgData, repoMap);
-    // Note: hardcoded WICG group id clobbers id from `repoData`
     assert.deepStrictEqual(groups, [80485]);
   });
 
