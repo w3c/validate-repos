@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint .",
-    "test": "nyc --all mocha"
+    "test": "nyc mocha"
   },
   "dependencies": {
     "node-fetch": "^1.6.3",
@@ -68,5 +68,12 @@
     "parserOptions": {
       "ecmaVersion": 2019
     }
+  },
+  "nyc": {
+    "all": true,
+    "include": ["lib/**"],
+    "check-coverage": true,
+    "per-file": true,
+    "lines": 100
   }
 }
