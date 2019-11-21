@@ -39,3 +39,7 @@ jobs:
       run: |
         git remote set-url --push origin https://x-access-token:${{ secrets.W3C_GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
         git push origin HEAD:master
+    # Run this script last to not interfere with any of the above. The output
+    # goes into the logs only for manual inspection when needed.
+    - name: Run list-unconnected-contributors.js
+      run: node list-unconnected-contributors.js w3c/webrtc-pc
