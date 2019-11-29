@@ -19,12 +19,14 @@ jobs:
         npm ci --production
     - name: Run validate.js
       run: node validate.js > report.json
+    - name: Run extract-rec-track.js
+      run: node extract-rec-track.js > rec-track-repos.json
     - name: Commit changes
       run: |
         git config user.name "w3c-validate-repos-bot"
         git config user.email "<>"
-        git add report.json
-        git commit -m "Update report.json"
+        git add report.json rec-track-repos.json
+        git commit -m "Update report.json and rec-track-repos.json"
         git show
     - name: Push changes
       if: github.ref == 'refs/heads/master'
