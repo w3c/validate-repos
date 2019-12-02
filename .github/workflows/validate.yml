@@ -31,5 +31,5 @@ jobs:
     - name: Push changes
       if: github.ref == 'refs/heads/master'
       run: |
-        git remote set-url --push origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+        git remote set-url --push origin https://x-access-token:${{ secrets.W3C_GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
         git push origin HEAD:master
