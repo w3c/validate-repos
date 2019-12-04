@@ -2,17 +2,15 @@
 
 "use strict";
 
-const fetch = require("node-fetch");
-const w3c = require("node-w3capi");
 const graphql = require("./lib/graphql.js");
 // github API v3 needed to check webhooks
 const Octokat = require("octokat");
 
 const validator = require("./lib/validator.js");
+const w3cData = require("./lib/w3cData.js");
 const w3cLicenses = require("./lib/w3cLicenses.js");
 const config = require("./config.json");
 
-w3c.apiKey = config.w3capikey;
 const octo = new Octokat({token: config.ghToken});
 
 const orgs = ["w3c", "WebAudio", "immersive-web", "webassembly", "w3ctag", "WICG", "w3cping"];
@@ -166,6 +164,7 @@ async function fetchRepoPage(org, acc = [], cursor = null) {
 }
 
 async function validate() {
+  const data = await w3cData();
   const licenses = await w3cLicenses();
 
   async function sequenced(index) {
@@ -179,12 +178,6 @@ async function validate() {
   const allrepos = await sequenced(0);
   const fullName = r => r.owner.login + '/' + r.name;
   allrepos.sort((r1, r2) => fullName(r1).localeCompare(fullName(r2)));
-
-  const [repoData, cgData, repoMap] = await Promise.all([
-    fetch("https://labs.w3.org/hatchery/repo-manager/api/repos").then(r => r.json()),
-    fetch("https://w3c.github.io/cg-monitor/report.json").then(r => r.json()),
-    fetch("https://w3c.github.io/spec-dashboard/repo-map.json").then(r => r.json())
-  ]);
 
   const allerrors = {};
   for (const type of errortypes) {
@@ -210,7 +203,10 @@ async function validate() {
     if (!r || r.isArchived || r.isPrivate) {
       continue;
     }
-    const {errors, groups, isAshRepo, hasRecTrack} = validator.validateRepo(r, licenses, repoData, cgData, repoMap);
+
+    const repoData = data.get(r.owner.login, r.name);
+
+    const {errors, groups, hasRecTrack} = validator.validateRepo(r, repoData, licenses);
     pushErrors(r, errors);
     for (const gid of groups) {
       allgroups.add(gid);
@@ -225,7 +221,7 @@ async function validate() {
         hasRecTrack: hasRecTrack ? true : undefined,
       });
     }
-    if (isAshRepo) {
+    if (repoData.ashRepo) {
       const hooks = await octo.repos(fullName(r)).hooks.fetch();
       if (hooks && hooks.items) {
         const errors = validator.validateAshHooks(hooks.items);
@@ -234,16 +230,7 @@ async function validate() {
     }
   }
 
-  const w3cgroups = await new Promise((resolve, reject) => {
-    // https://github.com/w3c/node-w3capi/issues/41
-    w3c.groups().fetch({embed: true}, (err, w3cgroups) => {
-      if (err) {
-        reject(err);
-      } else {
-        resolve(w3cgroups);
-      }
-    });
-  });
+  const {w3cgroups} = data;
 
   const results = {};
   results.errors = allerrors;
