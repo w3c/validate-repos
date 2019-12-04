@@ -8,6 +8,8 @@ const errortypes = {
   "inconsistentstatus": "Inconsistent rec-track status",
   "inconsistentgroups": "Inconsistent groups info w3c.json / repo-manager",
   "unprotectedbranch": "Missing branch protection rule",
+  "unprotectedbranchforadmin": "Missing admin enforced branch protection",
+  "norequiredreview": "Missing required review setting",
   "nocontributing": "No CONTRIBUTING.md file",
   "missingashnazghook": "Configured with the Repo Manager, but missing the github webhook",
   "duplicateashnazghooks": "Duplicate Repo Manager webhooks",

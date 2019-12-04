@@ -14,7 +14,26 @@ const config = require("./config.json");
 const octo = new Octokat({token: config.ghToken});
 
 const orgs = ["w3c", "WebAudio", "immersive-web", "webassembly", "w3ctag", "WICG", "w3cping"];
-const errortypes = ["inconsistentgroups", "now3cjson", "invalidw3cjson", "illformedw3cjson", "incompletew3cjson", "nocontributing", "invalidcontributing", "nolicense", "nocodeofconduct", "invalidlicense", "noreadme", "noashnazg", "inconsistentstatus", "unprotectedbranch", "missingashnazghook", "duplicateashnazghooks"];
+const errortypes = [
+  "inconsistentgroups",
+  "now3cjson",
+  "invalidw3cjson",
+  "illformedw3cjson",
+  "incompletew3cjson",
+  "nocontributing",
+  "invalidcontributing",
+  "nolicense",
+  "nocodeofconduct",
+  "invalidlicense",
+  "noreadme",
+  "noashnazg",
+  "inconsistentstatus",
+  "unprotectedbranch",
+  "unprotectedbranchforadmin",
+  "norequiredreview",
+  "missingashnazghook",
+  "duplicateashnazghooks"
+];
 
 async function fetchLabelPage(org, repo, acc = {edges: []}, cursor = null) {
   console.warn("Fetching labels for " + repo);

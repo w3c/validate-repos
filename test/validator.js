@@ -152,9 +152,12 @@ describe('validateRepo', () => {
         group: ['43'],
         'repo-type': 'rec-track',
       })},
+      defaultBranch: {name: 'master'},
       branchProtectionRules: {
         nodes: [{
-          config: {},
+          pattern: 'master',
+          requiredApprovingReviewCount: 1,
+          isAdminEnforced: true,
         }],
       },
     };
@@ -262,27 +265,100 @@ describe('validateRepo', () => {
     ]);
   });
 
-  it('missing ashnazg and branch protection', () => {
-    const repo = {
-      owner: {login: 'foo'},
-      name: 'bar',
-      w3cjson: {text: JSON.stringify({
-        'repo-type': 'rec-track',
-      })},
-    };
+  for (const repoType of ['rec-track', 'cg-report']) {
     const data = {
       ashRepo: null,
-      specs: [{recTrack: true}],
+      specs: repoType === 'rec-track' ? [{recTrack: true}] : [],
       groups: [],
     };
     const licenses = {};
-    const {errors} = validateRepo(repo, data, licenses);
-    const types = ['noashnazg', 'unprotectedbranch'];
-    assert.deepStrictEqual(filter(errors, types), [
-      ['noashnazg', null],
-      ['unprotectedbranch', {error: 'No protected branch'}],
-    ]);
-  });
+    const w3cjson = {
+      text: JSON.stringify({
+        group: ['999'],
+        'repo-type': repoType,
+      })
+    };
+
+    it(`missing ashnazg for ${repoType}`, () => {
+      const repo = {
+        owner: {login: 'foo'},
+        name: 'bar',
+        w3cjson,
+      };
+      const {errors} = validateRepo(repo, data, licenses);
+      assert.deepStrictEqual(filter(errors, ['noashnazg']), [
+        ['noashnazg', null],
+      ]);
+    });
+
+    it(`no default branch for ${repoType}`, () => {
+      const repo = {
+        owner: {login: 'foo'},
+        name: 'bar',
+        w3cjson,
+      };
+      const {errors} = validateRepo(repo, data, licenses);
+      assert.deepStrictEqual(filter(errors, ['nodefaultbranch']), [
+        ['nodefaultbranch', null],
+      ]);
+    });
+
+    it(`missing branch protection for ${repoType}`, () => {
+      const repo = {
+        owner: {login: 'foo'},
+        name: 'bar',
+        w3cjson,
+        defaultBranch: {name: 'master'},
+        branchProtectionRules: {
+          nodes: [],
+        },
+      };
+      const {errors} = validateRepo(repo, data, licenses);
+      assert.deepStrictEqual(filter(errors, ['unprotectedbranch']), [
+        ['unprotectedbranch', {error: 'master branch is not protected'}],
+      ]);
+    });
+
+    it(`missing required review for ${repoType}`, () => {
+      const repo = {
+        owner: {login: 'foo'},
+        name: 'bar',
+        w3cjson,
+        defaultBranch: {name: 'master'},
+        branchProtectionRules: {
+          nodes: [{
+            pattern: 'master',
+            requiredApprovingReviewCount: null,
+            isAdminEnforced: true,
+          }],
+        },
+      };
+      const {errors} = validateRepo(repo, data, licenses);
+      assert.deepStrictEqual(filter(errors, ['norequiredreview']), [
+        ['norequiredreview', {error: 'master branch review is not required'}],
+      ]);
+    });
+
+    it(`branch protection admin enforced for ${repoType}`, () => {
+      const repo = {
+        owner: {login: 'foo'},
+        name: 'bar',
+        w3cjson,
+        defaultBranch: {name: 'master'},
+        branchProtectionRules: {
+          nodes: [{
+            pattern: 'master',
+            requiredApprovingReviewCount: 1,
+            isAdminEnforced: false,
+          }],
+        },
+      };
+      const {errors} = validateRepo(repo, data, licenses);
+      assert.deepStrictEqual(filter(errors, ['unprotectedbranchforadmin']), [
+        ['unprotectedbranchforadmin', {error: 'master branch protection is not admin enforced'}],
+      ]);
+    });
+  }
 
   it('inconsistent status in repo manager', () => {
     const repo = {
