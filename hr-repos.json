@@ -1,6 +1,7 @@
 [
   "w3c/accelerometer",
   "w3c/accname",
+  "w3c/adpt",
   "w3c/ambient-light",
   "w3c/annotation-aria",
   "w3c/apa",
@@ -174,6 +175,7 @@
   "w3c/webappsec-cowl",
   "w3c/webappsec-credential-management",
   "w3c/webappsec-csp",
+  "w3c/webappsec-cspee",
   "w3c/webappsec-feature-policy",
   "w3c/webappsec-fetch-metadata",
   "w3c/webappsec-mixed-content",
