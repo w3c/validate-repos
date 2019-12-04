@@ -18,7 +18,7 @@ const octo = new Octokat({token: config.ghToken});
 const orgs = ["w3c", "WebAudio", "immersive-web", "webassembly", "w3ctag", "WICG", "w3cping"];
 const errortypes = ["inconsistentgroups", "now3cjson", "invalidw3cjson", "illformedw3cjson", "incompletew3cjson", "nocontributing", "invalidcontributing", "nolicense", "nocodeofconduct", "invalidlicense", "noreadme", "noashnazg", "inconsistentstatus", "unprotectedbranch", "missingashnazghook", "duplicateashnazghooks"];
 
-async function fetchLabelPage(org, repo, acc = [], cursor = null) {
+async function fetchLabelPage(org, repo, acc = {edges: []}, cursor = null) {
   console.warn("Fetching labels for " + repo);
   let res;
   try {
@@ -44,15 +44,15 @@ async function fetchLabelPage(org, repo, acc = [], cursor = null) {
     console.error("query failed " + JSON.stringify(err));
   }
   if (res && res.repository) {
-    const data = acc.concat(res.repository.labels.edges);
+    const labels = {edges: acc.edges.concat(res.repository.labels.edges)};
     if (res.repository.labels.pageInfo.hasNextPage) {
-      return fetchLabelPage(org, repo, data, res.repository.labels.pageInfo.endCursor);
+      return fetchLabelPage(org, repo, labels, res.repository.labels.pageInfo.endCursor);
     } else {
-      return {"repo": {"owner": org, "name": repo}, "labels": data.map(e => e.node)};
+      return {"repo": {"owner": org, "name": repo}, labels};
     }
   } else {
     console.error("Fetching label for " + repo + " at cursor " + cursor + " failed with " + JSON.stringify(res) + ", not retrying");
-    return {"repo": {"owner": org, "name": repo}, "labels": acc.map(e => e.node)};
+    return {"repo": {"owner": org, "name": repo}, "labels": acc};
     //return fetchLabelPage(org, repo, acc, cursor);
   }
 }
@@ -141,11 +141,17 @@ async function fetchRepoPage(org, acc = [], cursor = null) {
     return Promise.all(
       res.organization.repositories.edges
         .filter(e => e.node.labels.pageInfo.hasNextPage)
-        .map(e => fetchLabelPage(e.node.owner.login, e.node.name, e.node.labels.edges, e.node.labels.pageInfo.endCursor))
+        .map(e => fetchLabelPage(e.node.owner.login, e.node.name, e.node.labels, e.node.labels.pageInfo.endCursor))
     ).then((labelsPerRepos) => {
       const data = acc.concat(res.organization.repositories.edges.map(e => e.node));
       labelsPerRepos.forEach(({repo, labels}) => {
         data.find(r => r.owner.login == repo.owner && r.name == repo.name).labels = labels;
+      });
+      // Clean up labels data structure
+      data.forEach(r => {
+        if (r.labels && r.labels.edges) {
+          r.labels = r.labels.edges.map(e => e.node);
+        }
       });
       if (res.organization.repositories.pageInfo.hasNextPage) {
         return fetchRepoPage(org, data, res.organization.repositories.pageInfo.endCursor);
