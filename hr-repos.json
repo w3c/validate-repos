@@ -55,6 +55,7 @@
   "w3c/imsc-vnext-reqs",
   "w3c/IndexedDB",
   "w3c/input-events",
+  "w3c/IntersectionObserver",
   "w3c/json-ld-api",
   "w3c/json-ld-bp",
   "w3c/json-ld-cbor",
