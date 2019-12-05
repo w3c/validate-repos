@@ -220,6 +220,7 @@
   "w3c/webvtt",
   "w3c/woff",
   "w3c/wot-architecture",
+  "w3c/wot-binding-templates",
   "w3c/wot-scripting-api",
   "w3c/wot-security",
   "w3c/wot-security-best-practices",
