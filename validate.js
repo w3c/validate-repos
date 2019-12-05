@@ -173,7 +173,7 @@ async function validate() {
     }
     const repos = await fetchRepoPage(orgs[index]);
     const next = await sequenced(index + 1);
-    return repos.concat(next);
+    return repos.concat(next).filter(r => !r.isPrivate);
   }
   const allrepos = await sequenced(0);
   const fullName = r => r.owner.login + '/' + r.name;
@@ -200,7 +200,7 @@ async function validate() {
   const allgroups = new Set();
   const groupRepos = {};
   for (const r of allrepos) {
-    if (!r || r.isArchived || r.isPrivate) {
+    if (!r || r.isArchived) {
       continue;
     }
 
