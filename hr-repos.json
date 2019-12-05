@@ -1,5 +1,6 @@
 [
   "w3c/accelerometer",
+  "w3c/accname",
   "w3c/adpt",
   "w3c/ambient-light",
   "w3c/annotation-aria",
@@ -32,7 +33,6 @@
   "w3c/dpub-pwp-ucr",
   "w3c/dxwg",
   "w3c/encrypted-media",
-  "w3c/epub4",
   "w3c/FileAPI",
   "w3c/findtext",
   "w3c/fingerprinting-guidance",
@@ -116,9 +116,8 @@
   "w3c/proximity",
   "w3c/pub-manifest",
   "w3c/push-api",
-  "w3c/pwpub",
+  "w3c/remote-playback",
   "w3c/reporting",
-  "w3c/requestidlecallback",
   "w3c/resource-hints",
   "w3c/resource-timing",
   "w3c/rqtf",
@@ -207,7 +206,6 @@
   "w3c/wot-security-best-practices",
   "w3c/wot-security-testing-plan",
   "w3c/wot-thing-description",
-  "w3c/wpub",
   "w3c/wpub-ann",
   "w3c/writing-accessible-svg",
   "WICG/ScrollToTextFragment"
