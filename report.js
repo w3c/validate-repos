@@ -1,5 +1,6 @@
 /* eslint-env browser */
 
+let data;
 const errortypes = {
   "now3cjson": "No w3c.json file",
   "invalidw3cjson": "Invalid data in w3c.json",
@@ -81,7 +82,10 @@ const writeErrorEntry = (name, list, details) => {
   list.appendChild(li);
 };
 
-function writeReport(data) {
+function writeReport() {
+  if (!data) {
+    return;
+  }
   const mentionedRepos = new Set();
   const groupFilter = gid => getUrlParam("grouptype") ? (groups[gid].type || '').replace(' ', '') === getUrlParam("grouptype") : true;
   const errorFilter = new Set((getUrlParam("filter") || defaultReport.join(',')).split(",").filter(e => e !== ''));
@@ -151,4 +155,7 @@ function writeReport(data) {
 
 fetch("report.json")
   .then(r => r.json())
-  .then(writeReport);
+  .then(fetcheddata => {
+    data = fetcheddata;
+    writeReport();
+  });
