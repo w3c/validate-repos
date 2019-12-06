@@ -8,7 +8,26 @@ const w3cData = require("./lib/w3cData.js");
 const w3cLicenses = require("./lib/w3cLicenses.js");
 
 const orgs = ["w3c", "WebAudio", "immersive-web", "webassembly", "w3ctag", "WICG", "w3cping"];
-const errortypes = ["inconsistentgroups", "now3cjson", "invalidw3cjson", "illformedw3cjson", "incompletew3cjson", "nocontributing", "invalidcontributing", "nolicense", "nocodeofconduct", "invalidlicense", "noreadme", "noashnazg", "inconsistentstatus", "unprotectedbranch", "missingashnazghook", "duplicateashnazghooks"];
+const errortypes = [
+  "inconsistentgroups",
+  "now3cjson",
+  "invalidw3cjson",
+  "illformedw3cjson",
+  "incompletew3cjson",
+  "nocontributing",
+  "invalidcontributing",
+  "nolicense",
+  "nocodeofconduct",
+  "invalidlicense",
+  "noreadme",
+  "noashnazg",
+  "inconsistentstatus",
+  "unprotectedbranch",
+  "unprotectedbranchforadmin",
+  "norequiredreview",
+  "missingashnazghook",
+  "duplicateashnazghooks"
+];
 
 async function validate() {
   const data = await w3cData();
