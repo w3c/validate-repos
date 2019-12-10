@@ -31,7 +31,7 @@ jobs:
         git commit -m "Update report.json, rec-track-repos.json, hr-repos.json"
         git show
     - name: Push changes
-      if: github.ref == 'refs/heads/master'
+      if: github.ref == 'refs/heads/master' && github.actor != 'dontcallmedom-bot'
       run: |
         git remote set-url --push origin https://x-access-token:${{ secrets.W3C_GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
         git push origin HEAD:master
