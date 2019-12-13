@@ -74,6 +74,7 @@
   "w3c/mst-content-hint",
   "w3c/navigation-timing",
   "w3c/network-error-logging",
+  "w3c/openscreenprotocol",
   "w3c/orientation-sensor",
   "w3c/page-visibility",
   "w3c/paint-timing",
