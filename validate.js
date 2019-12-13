@@ -33,15 +33,14 @@ async function validate() {
   const data = await w3cData();
   const licenses = await w3cLicenses();
 
-  async function sequenced(index) {
-    if (index === orgs.length) {
-      return [];
+  const allrepos = [];
+  for (const org of orgs) {
+    for await (const repo of github.listRepos(org)) {
+      if (!repo.isPrivate) {
+        allrepos.push(repo);
+      }
     }
-    const repos = await github.fetchRepoPage(orgs[index]);
-    const next = await sequenced(index + 1);
-    return repos.concat(next).filter(r => !r.isPrivate);
   }
-  const allrepos = await sequenced(0);
   const fullName = r => r.owner.login + '/' + r.name;
   allrepos.sort((r1, r2) => fullName(r1).localeCompare(fullName(r2)));
 
@@ -88,7 +87,7 @@ async function validate() {
       });
     }
     if (repoData.ashRepo) {
-      const hooks = await github.fetchRepoHooks(r.owner.login, r.name);
+      const hooks = await github.listRepoHooks(r.owner.login, r.name);
       const errors = validator.validateAshHooks(hooks);
       pushErrors(r, errors);
     }
