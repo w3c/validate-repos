@@ -5,7 +5,6 @@
 const github = require("./lib/github.js");
 const validator = require("./lib/validator.js");
 const w3cData = require("./lib/w3cData.js");
-const w3cLicenses = require("./lib/w3cLicenses.js");
 
 const orgs = ["w3c", "WebAudio", "immersive-web", "webassembly", "w3ctag", "WICG", "w3cping"];
 const errortypes = [
@@ -31,7 +30,7 @@ const errortypes = [
 
 async function validate() {
   const data = await w3cData();
-  const licenses = await w3cLicenses();
+  const licenses = await github.w3cLicenses();
 
   const allrepos = [];
   for (const org of orgs) {
