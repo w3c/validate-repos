@@ -81,8 +81,7 @@ async function validate() {
       groupRepos[gid].push({
         name: r.name,
         fullName: fullName(r),
-        // Only include `hasRecTrack` in report.json if it's true. This is
-        // simply to match the original structure. TODO: include if false.
+        // Only include `hasRecTrack` in report.json if it's true.
         hasRecTrack: hasRecTrack ? true : undefined,
       });
     }
