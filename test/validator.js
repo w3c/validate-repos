@@ -418,8 +418,8 @@ describe('validateAshHooks', () => {
     const hooks = [{
       config: {
         url: 'https://labs.w3.org/repo-manager/api/hook',
-        contentType: 'json',
-        insecureSsl: '0',
+        content_type: 'json',
+        insecure_ssl: '0',
         secret: 'value',
       }
     }];
@@ -431,15 +431,15 @@ describe('validateAshHooks', () => {
     const hooks = [{
       config: {
         url: 'https://labs.w3.org/hatchery/repo-manager/api/hook',
-        contentType: 'json',
-        insecureSsl: '0',
+        content_type: 'json',
+        insecure_ssl: '0',
         secret: 'value',
       }
     }, {
       config: {
         url: 'https://labs.w3.org/repo-manager/api/hook',
-        contentType: 'json',
-        insecureSsl: '0',
+        content_type: 'json',
+        insecure_ssl: '0',
         secret: 'value',
       }
     }];

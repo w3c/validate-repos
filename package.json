@@ -13,8 +13,7 @@
     "@octokit/core": "2.1.2",
     "@octokit/plugin-throttling": "2.7.0",
     "node-fetch": "^1.6.3",
-    "node-w3capi": "^1.4.0",
-    "octokat": "^0.7.0"
+    "node-w3capi": "^1.4.0"
   },
   "devDependencies": {
     "eslint": "^6.6.0",
