@@ -134,7 +134,7 @@ describe('github', () => {
         }
       });
       const github = proxyquire('../lib/github.js', {
-        './graphql.js': graphql
+        './octokit.js': {graphql}
       });
       const repo = (await github.listRepos('WICG').next()).value;
       assert(graphql.calledOnce);
