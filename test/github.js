@@ -105,6 +105,51 @@ describe('github', () => {
       }]);
     });
 
+    it('labels are sorted', async () => {
+      const graphql = sinon.stub();
+      graphql.resolves({
+        organization: {
+          repositories: {
+            nodes: [
+              {
+                owner: {login: 'WICG'},
+                name: 'speech-api',
+                labels: {
+                  nodes: [{
+                    name: 'a',
+                    color: 'aaaaaa',
+                  }, {
+                    name: 'c',
+                    color: 'cccccc',
+                  }, {
+                    name: 'b',
+                    color: 'bbbbbb',
+                  }],
+                  pageInfo: {hasNextPage: false}
+                }
+              }
+            ],
+            pageInfo: {hasNextPage: false}
+          }
+        }
+      });
+      const github = proxyquire('../lib/github.js', {
+        './graphql.js': graphql
+      });
+      const repo = (await github.listRepos('WICG').next()).value;
+      assert(graphql.calledOnce);
+      assert.deepStrictEqual(repo.labels, [{
+        name: 'a',
+        color: 'aaaaaa',
+      }, {
+        name: 'b',
+        color: 'bbbbbb',
+      }, {
+        name: 'c',
+        color: 'cccccc',
+      }]);
+    });
+
     it('paginated repos', async () => {
       const graphql = sinon.stub();
       graphql.onCall(0).resolves({
