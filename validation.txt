@@ -1,0 +1,874 @@
+https://github.com/w3c/accessibility-intro/blob/master/w3c.json
+data.contacts should be array
+{
+  "contacts": "slhenry",
+  "repo-type": "article"
+}
+
+https://github.com/w3c/alt-techniques/blob/gh-pages/w3c.json
+data should have required property 'repo-type'
+{
+  "group": 40318,
+  "contacts": [
+    "plehegar",
+    "liamquin"
+  ],
+  "shortName": "html-alt-techniques",
+  "policy": "open"
+}
+
+https://github.com/w3c/automotive/blob/gh-pages/w3c.json
+data.contacts should be array
+{
+  "group": 76043,
+  "contacts": "tguild",
+  "policy": "open",
+  "repo-type": "rec-track"
+}
+
+https://github.com/w3c/automotive-bg/blob/gh-pages/w3c.json
+data.contacts should be array
+{
+  "group": 61259,
+  "contacts": "tguild",
+  "policy": "open",
+  "repo-type": "cg-report"
+}
+
+https://github.com/w3c/cg-charter/blob/gh-pages/w3c.json
+data.contacts should be array
+{
+  "contacts": "ianbjacobs",
+  "repo-type": "process"
+}
+
+https://github.com/w3c/cg-monitor/blob/master/w3c.json
+data.contacts should be array
+{
+  "contacts": "dontcallmedom",
+  "repo-type": "tool"
+}
+
+https://github.com/w3c/charmod-norm/blob/gh-pages/w3c.json
+data.contacts should be array
+{
+  "group": 32113,
+  "contacts": "r12a",
+  "policy": "open",
+  "repo-type": "note"
+}
+
+https://github.com/w3c/charters-dashboard/blob/gh-pages/w3c.json
+data.contacts should be array
+{
+  "repo-type": "tool",
+  "contacts": "dontcallmedom"
+}
+
+https://github.com/w3c/coga/blob/master/w3c.json
+data.contacts[0] should be string
+{
+  "group": 67703,
+  "contacts": [
+    {
+      "github": "michael-n-cooper",
+      "w3c": "cooper"
+    }
+  ],
+  "policy": "restricted",
+  "repo-type": "note"
+}
+
+https://github.com/w3c/ColorWeb-CG/blob/master/w3c.json
+data.contacts should be array
+{
+  "contacts": "svgeesus",
+  "repo-type": "cg-report",
+  "group": 96574
+}
+
+https://github.com/w3c/contentEditable/blob/gh-pages/w3c.json
+data should have required property 'repo-type'
+{
+  "group": 114929,
+  "contacts": [
+    "ylafon",
+    "siusin"
+  ],
+  "policy": "restricted"
+}
+
+https://github.com/w3c/css-aam/blob/master/w3c.json
+data.contacts[0] should be string
+{
+  "group": 94039,
+  "contacts": [
+    {
+      "github": "michael-n-cooper",
+      "w3c": "cooper"
+    },
+    {
+      "github": "svgeesus",
+      "w3c": "clilley"
+    }
+  ],
+  "policy": "restricted",
+  "repo-type": "rec-track"
+}
+
+https://github.com/w3c/csvw/blob/gh-pages/w3c.json
+data.contacts should be array
+{
+  "group": 68238,
+  "contacts": {
+    "github": "iherman",
+    "w3c": "ivan"
+  },
+  "policy": "open",
+  "repo-type": [
+    "rec-track",
+    "note"
+  ]
+}
+
+https://github.com/w3c/dap-charter/blob/gh-pages/w3c.json
+data.contacts should be array
+{
+  "group": 43696,
+  "contacts": "xfq",
+  "repo-type": "process"
+}
+
+https://github.com/w3c/devicesensors-wg/blob/master/w3c.json
+data.contacts should be array
+{
+  "group": 43696,
+  "contacts": "xfq",
+  "repo-type": "homepage"
+}
+
+https://github.com/w3c/dpub-accessibility/blob/gh-pages/w3c.json
+data.contacts should be array
+{
+  "group": 64149,
+  "contacts": {
+    "github": "iherman",
+    "w3c": "ivan"
+  },
+  "policy": "open"
+}
+
+https://github.com/w3c/dpub-annotation/blob/gh-pages/w3c.json
+data.contacts should be array
+{
+  "group": 64149,
+  "contacts": {
+    "github": "iherman",
+    "w3c": "ivan"
+  },
+  "policy": "open"
+}
+
+https://github.com/w3c/dpub-content-and-markup/blob/gh-pages/w3c.json
+data.contacts should be array
+{
+  "group": 64149,
+  "contacts": {
+    "github": "iherman",
+    "w3c": "ivan"
+  },
+  "policy": "open"
+}
+
+https://github.com/w3c/dpub-metadata/blob/gh-pages/w3c.json
+data.contacts should be array
+{
+  "group": 64149,
+  "contacts": {
+    "github": "iherman",
+    "w3c": "ivan"
+  },
+  "policy": "open"
+}
+
+https://github.com/w3c/dpub-pagination/blob/gh-pages/w3c.json
+data.contacts should be array
+{
+  "group": 64149,
+  "contacts": {
+    "github": "iherman",
+    "w3c": "ivan"
+  },
+  "policy": "open"
+}
+
+https://github.com/w3c/dpub-pwp-arch/blob/gh-pages/w3c.json
+data.contacts[0] should be string
+{
+  "group": "64149",
+  "contacts": [
+    {
+      "github": "tcole3"
+    }
+  ],
+  "shortName": "dpub-pwp-arch",
+  "policy": "open"
+}
+
+https://github.com/w3c/dpub-pwp-loc/blob/gh-pages/w3c.json
+data.contacts[0] should be string
+{
+  "group": "64149",
+  "contacts": [
+    {
+      "github": "bjdmeest"
+    }
+  ],
+  "shortName": "dpub-pwp-loc",
+  "policy": "open"
+}
+
+https://github.com/w3c/dpub-stem/blob/gh-pages/w3c.json
+data.contacts should be array
+{
+  "group": 64149,
+  "contacts": {
+    "github": "iherman",
+    "w3c": "ivan"
+  },
+  "policy": "open"
+}
+
+https://github.com/w3c/earl/blob/master/w3c.json
+data should have required property 'repo-type'
+{
+  "group": [
+    "35422"
+  ],
+  "contacts": [
+    "nitedog"
+  ]
+}
+
+https://github.com/w3c/github-notify-ml-config/blob/master/w3c.json
+data.contacts should be array
+{
+  "contacts": "dontcallmedom",
+  "repo-type": "tool"
+}
+
+https://github.com/w3c/htmldiff-nav/blob/master/w3c.json
+data.contacts should be array
+{
+  "repo-type": "tool",
+  "contacts": "dontcallmedom"
+}
+
+https://github.com/w3c/i18n-checker/blob/master/w3c.json
+data.contacts should be array
+{
+  "group": 32113,
+  "contacts": "rishida",
+  "repo-type": "tool",
+  "policy": "restricted"
+}
+
+https://github.com/w3c/i18n-discuss/blob/gh-pages/w3c.json
+data.contacts should be array
+{
+  "group": 32113,
+  "contacts": "rishida",
+  "repo-type": "article",
+  "policy": "restricted"
+}
+
+https://github.com/w3c/i18n-drafts/blob/gh-pages/w3c.json
+data.contacts should be array
+{
+  "group": 32113,
+  "contacts": "rishida",
+  "repo-type": "article",
+  "policy": "restricted"
+}
+
+https://github.com/w3c/i18n-issues/blob/gh-pages/w3c.json
+data.contacts should be array
+{
+  "group": 32113,
+  "contacts": "rishida",
+  "repo-type": "others",
+  "policy": "restricted"
+}
+
+https://github.com/w3c/i18n-tests/blob/gh-pages/w3c.json
+data.contacts should be array
+{
+  "group": [
+    32113
+  ],
+  "contacts": "rishida",
+  "repo-type": "tests",
+  "policy": "restricted"
+}
+
+https://github.com/w3c/iip/blob/gh-pages/w3c.json
+data.contacts should be array
+{
+  "group": [
+    96702,
+    72665,
+    32113
+  ],
+  "contacts": "rishida",
+  "repo-type": "note",
+  "policy": "restricted"
+}
+
+https://github.com/w3c/immersive-web-wg-charter/blob/master/w3c.json
+data.contacts should be array
+{
+  "repo-type": "process",
+  "contacts": "dontcallmedom"
+}
+
+https://github.com/w3c/inclusive-xr-workshop/blob/master/w3c.json
+data.contacts should be array
+{
+  "contacts": "dontcallmedom",
+  "repo-type": "workshop"
+}
+
+https://github.com/w3c/indie-ui/blob/master/w3c.json
+data.contacts[0] should be string
+{
+  "group": 54997,
+  "contacts": [
+    {
+      "github": "michael-n-cooper",
+      "w3c": "cooper"
+    }
+  ],
+  "policy": "restricted"
+}
+
+https://github.com/w3c/itsrdf/blob/master/w3c.json
+data.policy should be equal to one of the allowed values
+{
+  "group": 72668,
+  "contacts": [
+    "fsasaki",
+    "rishida"
+  ],
+  "repo-type": "tests",
+  "policy": "other"
+}
+
+https://github.com/w3c/jlreq/blob/gh-pages/w3c.json
+data.contacts should be array
+{
+  "group": [
+    109193,
+    72665,
+    32113
+  ],
+  "contacts": "rishida",
+  "repo-type": "note",
+  "policy": "restricted"
+}
+
+https://github.com/w3c/machine-learning-workshop/blob/master/w3c.json
+data.contacts should be array
+{
+  "contacts": "dontcallmedom",
+  "repo-type": "workshop"
+}
+
+https://github.com/w3c/me-cloud-browser/blob/gh-pages/w3c.json
+data.group should be integer, data.group should match pattern "^[0-9]+$", data.group should match some schema in anyOf, data.group should be array, data.group should match some schema in anyOf
+{
+  "group": "@@group-ID",
+  "contacts": [
+    "@@editor-1",
+    "@@editor-2",
+    "@@some-maintainer"
+  ],
+  "shortName": "@@shortname",
+  "policy": "@@open-or-restricted"
+}
+
+https://github.com/w3c/mixedreality/blob/master/w3c.json
+data should have required property 'repo-type'
+{
+  "group": [
+    "98377"
+  ],
+  "contacts": [
+    "tripu"
+  ],
+  "shortName": "mixedreality"
+}
+
+https://github.com/w3c/mlreq/blob/gh-pages/w3c.json
+data.contacts should be array
+{
+  "group": [
+    109474,
+    72665,
+    32113
+  ],
+  "contacts": "rishida",
+  "repo-type": "note",
+  "policy": "restricted"
+}
+
+https://github.com/w3c/motion-sensors/blob/gh-pages/w3c.json
+data.contacts should be array
+{
+  "group": 43696,
+  "contacts": "xfq",
+  "repo-type": "note"
+}
+
+https://github.com/w3c/note-respec-repo-template/blob/master/w3c.json
+data.contacts[0] should match format "github-user"
+{
+  "group": 53154,
+  "contacts": [
+    "yourGHusername"
+  ],
+  "policy": "open",
+  "repo-type": "note"
+}
+
+https://github.com/w3c/opentrack-cg/blob/master/w3c.json
+data should have required property 'repo-type'
+{
+  "group": 96642,
+  "contacts": [
+    "espinr"
+  ]
+}
+
+https://github.com/w3c/poe/blob/gh-pages/w3c.json
+data should have required property 'repo-type'
+{
+  "group": 87755,
+  "contacts": [
+    "iherman"
+  ],
+  "policy": "open"
+}
+
+https://github.com/w3c/predefined-counter-styles/blob/gh-pages/w3c.json
+data.contacts should be array
+{
+  "contacts": "r12a",
+  "repo-type": "note",
+  "group": 32113
+}
+
+https://github.com/w3c/scholarly-html/blob/gh-pages/w3c.json
+data should have required property 'repo-type'
+{
+  "group": "84855",
+  "contacts": [
+    "iherman",
+    "darobin"
+  ],
+  "policy": "open"
+}
+
+https://github.com/w3c/sealreq/blob/gh-pages/w3c.json
+data.contacts should be array
+{
+  "group": [
+    106744,
+    72665,
+    32113
+  ],
+  "contacts": "rishida",
+  "repo-type": "note",
+  "policy": "restricted"
+}
+
+https://github.com/w3c/socialwg/blob/master/w3c.json
+data should have required property 'repo-type'
+{
+  "group": [
+    "72531"
+  ],
+  "contacts": [
+    "sandhawke"
+  ]
+}
+
+https://github.com/w3c/spec-dashboard/blob/master/w3c.json
+data.contacts should be array
+{
+  "contacts": "dontcallmedom",
+  "repo-type": "tool"
+}
+
+https://github.com/w3c/string-meta/blob/gh-pages/w3c.json
+data.contacts should be array
+{
+  "group": 32113,
+  "contacts": "rishida",
+  "repo-type": "note",
+  "policy": "restricted"
+}
+
+https://github.com/w3c/string-search/blob/gh-pages/w3c.json
+data.contacts should be array
+{
+  "group": 32113,
+  "contacts": "rishida",
+  "repo-type": "note"
+}
+
+https://github.com/w3c/tools-repo-template/blob/master/w3c.json
+data.contacts[0] should match format "github-user"
+{
+  "group": 53154,
+  "contacts": [
+    "yourGHusername"
+  ],
+  "policy": "open",
+  "repo-type": "tool"
+}
+
+https://github.com/w3c/transition-issues-bot/blob/master/w3c.json
+data['repo-type'] should be equal to one of the allowed values, data['repo-type'] should be array, data['repo-type'] should match some schema in anyOf
+{
+  "group": 52794,
+  "contacts": [
+    "plehegar"
+  ],
+  "policy": "open",
+  "repo-type": "tools"
+}
+
+https://github.com/w3c/translation-glossaries/blob/master/w3c.json
+data.contacts should be array
+{
+  "contacts": "slhenry",
+  "repo-type": "document"
+}
+
+https://github.com/w3c/translation-management/blob/master/w3c.json
+data.contacts should be array
+{
+  "contacts": "dontcallmedom",
+  "repo-type": "document"
+}
+
+https://github.com/w3c/type-samples/blob/gh-pages/w3c.json
+data.contacts should be array
+{
+  "group": 32113,
+  "contacts": "rishida",
+  "repo-type": "others",
+  "policy": "restricted"
+}
+
+https://github.com/w3c/unicode-xml/blob/gh-pages/w3c.json
+data.contacts should be array
+{
+  "group": 32113,
+  "contacts": "rishida",
+  "repo-type": "note",
+  "policy": "restricted"
+}
+
+https://github.com/w3c/verifiable-claims/blob/master/w3c.json
+data.policy should be equal to one of the allowed values
+{
+  "group": 98922,
+  "contacts": [
+    "iherman"
+  ],
+  "policy": "close",
+  "repo-type": "homepage"
+}
+
+https://github.com/w3c/vibration/blob/gh-pages/w3c.json
+data.contacts should be array
+{
+  "group": 43696,
+  "contacts": "xfq",
+  "repo-type": "rec-track"
+}
+
+https://github.com/w3c/voiceinteraction/blob/master/w3c.json
+data should have required property 'repo-type'
+{
+  "group": [
+    "91376"
+  ],
+  "contacts": [
+    "ianbjacobs"
+  ],
+  "shortName": "voiceinteraction"
+}
+
+https://github.com/w3c/wai-aria-intro/blob/gh-pages/w3c.json
+data.contacts should be array
+{
+  "contacts": "slhenry",
+  "repo-type": "article"
+}
+
+https://github.com/w3c/wai-intro-accessibility/blob/gh-pages/w3c.json
+data.contacts should be array
+{
+  "group": 35532,
+  "contacts": "slhenry",
+  "shortName": "wai-intro-accessibility",
+  "repo-type": "article",
+  "policy": "open"
+}
+
+https://github.com/w3c/wai-intro-linking/blob/gh-pages/w3c.json
+data.contacts should be array
+{
+  "contacts": "slhenry",
+  "repo-type": "article"
+}
+
+https://github.com/w3c/wai-mobile/blob/master/w3c.json
+data.contacts should be array
+{
+  "contacts": "slhenry",
+  "repo-type": "others",
+  "shortName": "wai-eo-mobile"
+}
+
+https://github.com/w3c/wai-older-users/blob/master/w3c.json
+data.contacts should be array
+{
+  "contacts": "slhenry",
+  "repo-type": "article",
+  "policy": "open"
+}
+
+https://github.com/w3c/wai-planning-and-implementation/blob/gh-pages/w3c.json
+data.contacts should be array
+{
+  "group": 35532,
+  "contacts": "nitedog",
+  "repo-type": "article"
+}
+
+https://github.com/w3c/wai-resources/blob/gh-pages/w3c.json
+data.contacts should be array
+{
+  "contacts": "slhenry",
+  "repo-type": "article"
+}
+
+https://github.com/w3c/wai-translations/blob/master/w3c.json
+data.contacts should be array
+{
+  "contacts": "slhenry",
+  "repo-type": "article"
+}
+
+https://github.com/w3c/wai-website-components/blob/master/w3c.json
+data.contacts should be array
+{
+  "contacts": "yatil",
+  "repo-type": "project"
+}
+
+https://github.com/w3c/wai-website-data/blob/master/w3c.json
+data.contacts should be array
+{
+  "contacts": "yatil",
+  "repo-type": "project"
+}
+
+https://github.com/w3c/wai-website-jekyll-templates/blob/master/w3c.json
+data.contacts should be array
+{
+  "contacts": "yatil",
+  "repo-type": "project"
+}
+
+https://github.com/w3c/wai-website-personas/blob/gh-pages/w3c.json
+data.contacts should be array
+{
+  "contacts": "yatil",
+  "repo-type": "article"
+}
+
+https://github.com/w3c/wai-website-theme/blob/master/w3c.json
+data.contacts should be array
+{
+  "contacts": "yatil",
+  "repo-type": "project"
+}
+
+https://github.com/w3c/wbs-design/blob/gh-pages/w3c.json
+data.contacts should be array
+{
+  "repo-type": "tool",
+  "contacts": "lcarcone"
+}
+
+https://github.com/w3c/wcag/blob/master/w3c.json
+data.contacts should be array
+{
+  "group": 35422,
+  "contacts": "michael-n-cooper",
+  "policy": "restricted",
+  "repo-type": [
+    "note",
+    "rec-track",
+    "tool"
+  ]
+}
+
+https://github.com/w3c/wcag-eo/blob/master/w3c.json
+data.contacts should be array
+{
+  "group": 35422,
+  "contacts": "michael-n-cooper",
+  "policy": "restricted",
+  "repo-type": "note"
+}
+
+https://github.com/w3c/web-annotation/blob/gh-pages/w3c.json
+data should have required property 'repo-type'
+{
+  "group": 73180,
+  "contacts": [
+    "iherman"
+  ],
+  "policy": "open"
+}
+
+https://github.com/w3c/web-networks-charter/blob/master/w3c.json
+data.contacts should be array
+{
+  "contacts": "dontcallmedom",
+  "repo-type": "process"
+}
+
+https://github.com/w3c/webex/blob/master/w3c.json
+data.contacts should be array
+{
+  "contacts": "plehegar",
+  "repo-type": "tool"
+}
+
+https://github.com/w3c/webpayments-http-api/blob/gh-pages/w3c.json
+data.contacts should be array
+{
+  "group": 83744,
+  "contacts": "ianbjacobs",
+  "repo-type": "note"
+}
+
+https://github.com/w3c/webvr-content-workshop/blob/master/w3c.json
+data.contacts should be array
+{
+  "contacts": "dontcallmedom",
+  "repo-type": "workshop"
+}
+
+https://github.com/w3c/wg-effectiveness/blob/master/w3c.json
+data.contacts should be array
+{
+  "repo-type": "process",
+  "contacts": "plehegar"
+}
+
+https://github.com/w3c/xinclude/blob/master/w3c.json
+data should have required property 'repo-type'
+{
+  "group": [
+    "18796"
+  ],
+  "contacts": [
+    "liamquin",
+    "ndw"
+  ],
+  "shortName": "xml-core"
+}
+
+https://github.com/WebAudio/Audio-EQ-Cookbook/blob/master/w3c.json
+data.contacts should be array
+{
+  "group": 46884,
+  "contacts": "svgeesus",
+  "repo-type": "article"
+}
+
+https://github.com/WebAudio/demo-list/blob/gh-pages/w3c.json
+data.contacts should be array
+{
+  "group": 46884,
+  "contacts": "svgeesus",
+  "repo-type": "project"
+}
+
+https://github.com/WebAudio/web-audio-api/blob/master/w3c.json
+data.contacts should be array
+{
+  "group": 46884,
+  "contacts": "svgeesus",
+  "repo-type": "rec-track"
+}
+
+https://github.com/WebAudio/web-audio-api-v2/blob/master/w3c.json
+data.contacts should be array
+{
+  "group": 46884,
+  "contacts": "svgeesus",
+  "repo-type": "rec-track"
+}
+
+https://github.com/WebAudio/web-audio-cg/blob/master/w3c.json
+data.contacts should be array
+{
+  "contacts": "svgeesus",
+  "repo-type": "cg-report",
+  "group": 110716
+}
+
+https://github.com/WICG/encrypted-media/blob/master/w3c.json
+data should have required property 'repo-type'
+{
+  "group": 40318,
+  "contacts": [
+    "plehegar"
+  ],
+  "shortName": "encrypted-media",
+  "policy": "open"
+}
+
+https://github.com/WICG/overscroll-scrollend-events/blob/gh-pages/w3c.json
+data.contacts[0] should match format "github-user"
+{
+  "group": [
+    "80485"
+  ],
+  "contacts": [
+    "nzolghadr"
+  ],
+  "shortName": "overscroll-scrollend-events",
+  "repo-type": "cg-report"
+}
+
+https://github.com/WICG/visual-viewport/blob/gh-pages/w3c.json
+data.contacts[0] should match format "github-user"
+{
+  "group": [
+    80485
+  ],
+  "contacts": [
+    "web-locks"
+  ],
+  "repo-type": "cg-report"
+}
+

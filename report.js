@@ -3,6 +3,7 @@
 let data;
 const errortypes = {
   "now3cjson": "No w3c.json file",
+  "illformedw3cjson": "w3c.json is not valid JSON",
   "invalidw3cjson": "Invalid data in w3c.json",
   "incompletew3cjson": "Missing data in w3c.json",
   "noashnazg": "Not configured with the Repo Manager",
