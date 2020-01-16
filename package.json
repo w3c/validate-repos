@@ -10,13 +10,13 @@
     "test": "nyc mocha"
   },
   "dependencies": {
-    "@octokit/core": "2.1.2",
-    "@octokit/plugin-throttling": "2.7.0",
+    "@octokit/core": "^2.2.0",
+    "@octokit/plugin-throttling": "^2.7.1",
     "node-fetch": "^1.6.3",
-    "node-w3capi": "^1.4.0"
+    "node-w3capi": "^1.8.0"
   },
   "devDependencies": {
-    "eslint": "^6.6.0",
+    "eslint": "^6.8.0",
     "mocha": "^6.2.2",
     "nyc": "^14.1.1",
     "proxyquire": "^2.1.3",
