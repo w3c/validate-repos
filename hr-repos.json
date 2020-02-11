@@ -226,6 +226,7 @@
   "w3c/woff",
   "w3c/wot-architecture",
   "w3c/wot-binding-templates",
+  "w3c/wot-discovery",
   "w3c/wot-scripting-api",
   "w3c/wot-security",
   "w3c/wot-security-best-practices",
@@ -239,5 +240,10 @@
   "WebAudio/web-audio-api",
   "WebAudio/web-audio-api-v2",
   "WebAudio/web-midi-api",
-  "WICG/ScrollToTextFragment"
+  "WICG/crash-reporting",
+  "WICG/deprecation-reporting",
+  "WICG/intervention-reporting",
+  "WICG/ScrollToTextFragment",
+  "WICG/web-transport",
+  "WICG/webpackage"
 ]
