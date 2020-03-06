@@ -29,6 +29,8 @@
   "w3c/device-memory",
   "w3c/deviceorientation",
   "w3c/did-core",
+  "w3c/did-core-registry",
+  "w3c/did-imp-guide",
   "w3c/did-rubric",
   "w3c/did-test-suite",
   "w3c/did-use-cases",
