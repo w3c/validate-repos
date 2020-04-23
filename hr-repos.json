@@ -254,6 +254,7 @@
   "WICG/deprecation-reporting",
   "WICG/intervention-reporting",
   "WICG/ScrollToTextFragment",
+  "WICG/web-codecs",
   "WICG/web-transport",
   "WICG/webpackage"
 ]
