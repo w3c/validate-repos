@@ -220,6 +220,7 @@
   "w3c/webcomponents",
   "w3c/webcrypto",
   "w3c/webdriver",
+  "w3c/webdriver-bidi",
   "w3c/webex",
   "w3c/webmention",
   "w3c/webpayments-http-api",
