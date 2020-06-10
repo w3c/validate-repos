@@ -253,6 +253,7 @@
   "WebAudio/web-audio-api",
   "WebAudio/web-audio-api-v2",
   "WebAudio/web-midi-api",
+  "WICG/cookie-store",
   "WICG/crash-reporting",
   "WICG/deprecation-reporting",
   "WICG/intervention-reporting",
