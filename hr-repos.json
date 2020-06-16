@@ -1,5 +1,6 @@
 [
   "immersive-web/dom-overlays",
+  "immersive-web/hit-test",
   "immersive-web/layers",
   "immersive-web/webxr",
   "immersive-web/webxr-ar-module",
