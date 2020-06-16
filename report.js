@@ -20,7 +20,7 @@ const errortypes = {
   "invalidlicense": "Invalid LICENSE.md file",
   "noreadme": "No README.md file"
 };
-const defaultReport = ["now3cjson", "inconsistengroups", "invalidw3cjson", "incompletew3cjson", "noashnazg", "inconsistentstatus", "unprotectedbranch", "missingashnazghook"];
+const defaultReport = ["now3cjson", "inconsistentgroups", "invalidw3cjson", "incompletew3cjson", "noashnazg", "inconsistentstatus", "unprotectedbranch", "missingashnazghook"];
 
 // from https://stackoverflow.com/questions/10970078/modifying-a-query-string-without-reloading-the-page
 function insertUrlParam(key, value) {
