@@ -5,6 +5,7 @@
   "immersive-web/webxr",
   "immersive-web/webxr-ar-module",
   "immersive-web/webxr-gamepads-module",
+  "immersive-web/webxr-hands-input",
   "w3c/accelerometer",
   "w3c/accname",
   "w3c/activitypub",
