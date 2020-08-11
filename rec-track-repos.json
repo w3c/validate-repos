@@ -171,6 +171,7 @@
   "w3c/webrtc-extensions",
   "w3c/webrtc-ice",
   "w3c/webrtc-identity",
+  "w3c/webrtc-insertable-streams",
   "w3c/webrtc-pc",
   "w3c/webrtc-priority",
   "w3c/webrtc-provisional-stats",
