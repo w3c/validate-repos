@@ -1,4 +1,5 @@
 [
+  "gpuweb/gpuweb",
   "immersive-web/dom-overlays",
   "immersive-web/hit-test",
   "immersive-web/layers",
