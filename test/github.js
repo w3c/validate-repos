@@ -293,7 +293,7 @@ describe('github', () => {
 
   it('listRepoHooks', async () => {
     const request = sinon.stub();
-    request.resolves({data: ['mock-hook']});
+    request.resolves({status: 200, data: ['mock-hook']});
     const github = proxyquire('../lib/github.js', {'./octokit.js': {request}});
     const hooks = await github.listRepoHooks('foo', 'bar');
     assert(request.calledOnceWith('GET /repos/:owner/:repo/hooks', {
@@ -301,6 +301,18 @@ describe('github', () => {
       repo: 'bar',
     }));
     assert.deepEqual(hooks, ['mock-hook']);
+  });
+
+  it('handles 404 on hooks', async () => {
+    const request = sinon.stub();
+    request.throws(new Error("Not Found"));
+    const github = proxyquire('../lib/github.js', {'./octokit.js': {request}});
+    const hooks = await github.listRepoHooks('foo', 'bar');
+    assert(request.calledOnceWith('GET /repos/:owner/:repo/hooks', {
+      owner: 'foo',
+      repo: 'bar',
+    }));
+    assert.deepEqual(hooks, []);
   });
 
   afterEach(() => sinon.restore());
