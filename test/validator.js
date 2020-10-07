@@ -32,8 +32,6 @@ describe('validateRepo', () => {
     assert.deepStrictEqual(errors, [
       ['noreadme', null],
       ['nocodeofconduct', null],
-      ['nolicense', null],
-      ['nocontributing', null],
       ['now3cjson', null],
     ]);
     assert.strictEqual(hasRecTrack, false);
@@ -46,6 +44,9 @@ describe('validateRepo', () => {
       name: 'bar',
       contributing: {text: 'invalid CONTRIBUTING.md content'},
       license: {text: 'invalid LICENSE.md content'},
+      w3cjson: {text: JSON.stringify({
+        'repo-type': 'rec-track',
+      })},
     };
     const data = {
       ashRepo: null,
@@ -102,7 +103,7 @@ describe('validateRepo', () => {
     validateRepo(repo, data, licenses);
     assert.deepStrictEqual(repo.w3c, {
       contacts: 'sideshowbarker',
-      'repo-type': 'tool',
+      'repo-type': ['tool'],
     });
   });
 
@@ -174,7 +175,8 @@ describe('validateRepo', () => {
       groups: [],
     };
     const licenses = {
-      license: 'mock LICENSE.md content',
+      license: 'mock non SW LICENSE.md content',
+      licenseSw: 'mock LICENSE.md content',
       contributing: 'mock CONTRIBUTING.md content',
     };
     const {
