@@ -73,6 +73,36 @@ describe('validateRepo', () => {
     ]);
   });
 
+  it('invalid contributing and license', () => {
+    const repo = {
+      owner: {login: 'foo'},
+      name: 'bar',
+      contributing: {text: 'mock CONTRIBUTING.md content'},
+      license: {text: 'Doc LICENSE.md content'},
+      w3cjson: {text: JSON.stringify({
+        'repo-type': 'rec-track',
+      })},
+    };
+    const data = {
+      ashRepo: null,
+      specs: [],
+      groups: [],
+    };
+    const licenses = {
+      license: 'Doc LICENSE.md content',
+      licenseSw: 'mock LICENSE-SW.md content',
+      contributing: 'mock CONTRIBUTING.md content',
+    };
+    const {errors} = validateRepo(repo, data, licenses);
+    const types = ['invalidlicense']
+    assert.deepStrictEqual(filter(errors, types), [
+      ['invalidlicense', {
+        license: 'Doc LICENSE.md content',
+        error: "doesn't match chartered SW license",
+      }]
+    ]);
+  });
+
   it('pr-preview config is extracted', () => {
     const repo = {
       owner: {login: 'foo'},
