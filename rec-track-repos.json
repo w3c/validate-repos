@@ -75,6 +75,7 @@
   "w3c/mediacapture-extensions",
   "w3c/mediacapture-fromelement",
   "w3c/mediacapture-image",
+  "w3c/mediacapture-insertable-streams",
   "w3c/mediacapture-main",
   "w3c/mediacapture-output",
   "w3c/mediacapture-record",
