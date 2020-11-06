@@ -231,7 +231,6 @@
   "w3c/webappsec-uisecurity",
   "w3c/webappsec-upgrade-insecure-requests",
   "w3c/webauthn",
-  "w3c/webcomponents",
   "w3c/webcrypto",
   "w3c/webdriver",
   "w3c/webdriver-bidi",
@@ -277,5 +276,6 @@
   "WICG/scroll-to-text-fragment",
   "WICG/visual-viewport",
   "WICG/web-codecs",
+  "WICG/webcomponents",
   "WICG/webpackage"
 ]
