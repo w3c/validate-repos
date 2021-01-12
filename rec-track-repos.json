@@ -190,6 +190,7 @@
   "w3c/woff",
   "w3c/wot-architecture",
   "w3c/wot-discovery",
+  "w3c/wot-profile",
   "w3c/wot-scripting-api",
   "w3c/wot-thing-description",
   "w3c/wpub",
