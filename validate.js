@@ -21,6 +21,8 @@ const errortypes = [
   "noreadme",
   "noashnazg",
   "inconsistentstatus",
+  "defaultbranchismaster",
+  "nodefaultbranch",
   "unprotectedbranch",
   "unprotectedbranchforadmin",
   "norequiredreview",
