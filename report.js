@@ -44,7 +44,7 @@ const filterUI = document.getElementById("filter");
 const errorSelectorHtml = Object.keys(errortypes).map(t => `<label><input name='filter' type='checkbox' value='${t}'>${errortypes[t]}</label>`).join(' ');
 filterUI.innerHTML = `
  <fieldset><legend>Filter report</legend>
- <label for=grouptype>Group type:</label> <select id='grouptype' name='grouptype'><option value=''>All</option><option value=workinggroup>Working Group</option><option value=communitygroup>Community Group</option></select></label>
+ <label for=grouptype>Group type:</label> <select id='grouptype' name='grouptype'><option value=''>All</option><option value=workinggroup>Working Group</option><option value=interestgroup>Interest Group</option><option value=communitygroup>Community Group</option></select></label>
  <label for='errors'>Errors:</label> <span id='errors'>${errorSelectorHtml}</span></fieldset>`;
 
 const groupSelector = document.getElementById('grouptype');
