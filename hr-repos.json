@@ -276,6 +276,7 @@
   "WICG/cookie-store",
   "WICG/crash-reporting",
   "WICG/deprecation-reporting",
+  "WICG/handwriting-recognition",
   "WICG/intervention-reporting",
   "WICG/open-ui",
   "WICG/scroll-to-text-fragment",
