@@ -1,5 +1,6 @@
 [
   "gpuweb/gpuweb",
+  "immersive-web/depth-sensing",
   "immersive-web/dom-overlays",
   "immersive-web/hit-test",
   "immersive-web/layers",
