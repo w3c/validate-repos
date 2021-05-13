@@ -333,7 +333,6 @@
   "WICG/display-override",
   "WICG/document-policy",
   "WICG/element-timing",
-  "WICG/encrypted-media-encryption-scheme",
   "WICG/entries-api",
   "WICG/event-timing",
   "WICG/file-handling",
