@@ -313,6 +313,7 @@
   "WICG/canvas-color-space",
   "WICG/canvas-formatted-text",
   "WICG/capability-delegation",
+  "WICG/CHIPS",
   "WICG/client-hints-infrastructure",
   "WICG/compression",
   "WICG/construct-stylesheets",
