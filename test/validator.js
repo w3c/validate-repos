@@ -32,7 +32,6 @@ describe('validateRepo', () => {
     assert.deepStrictEqual(errors, [
       ['noreadme', null],
       ['nocodeofconduct', null],
-      ['noautopublish', null],
       ['now3cjson', null],
       ['nodefaultbranch', null],
     ]);
