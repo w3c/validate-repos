@@ -17,6 +17,7 @@ const errortypes = {
   "duplicateashnazghooks": "Duplicate Repo Manager webhooks",
   //    "invalidcontributing": "Invalid CONTRIBUTING.MD file",
   "nolicense": "No LICENSE.md file",
+  "noautopublish": "No .github/workflows/auto-publish.yml file",
   "nocodeofconduct": "No CODE_OF_CONDUCT.md file",
   "invalidlicense": "Invalid LICENSE.md file",
   "noreadme": "No README.md file"

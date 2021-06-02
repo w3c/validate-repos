@@ -16,6 +16,7 @@ const errortypes = [
   "nocontributing",
   "invalidcontributing",
   "nolicense",
+  "noautopublish",
   "nocodeofconduct",
   "invalidlicense",
   "noreadme",
