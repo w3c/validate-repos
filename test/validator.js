@@ -245,7 +245,7 @@ describe('validateRepo', () => {
     const repo = {
       owner: {login: 'foo'},
       name: 'bar',
-      usetravisci: {text: 'mock yml content'},
+      travis: {text: 'mock yml content'},
     };
     const data = {
       ashRepo: null,
