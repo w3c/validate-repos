@@ -147,7 +147,6 @@ describe('validateRepo', () => {
       contributing: {text: 'mock CONTRIBUTING.md content'},
       license: {text: 'mock LICENSE.md content'},
       autoPublish: {text: 'mock yml content'},
-      travis: {text: 'mock yml content'},
       w3cjson: {text: JSON.stringify({
         contacts: [],
         group: ['42'],
@@ -183,7 +182,6 @@ describe('validateRepo', () => {
       contributing: {text: 'mock CONTRIBUTING.md content'},
       license: {text: 'mock LICENSE.md content'},
       autoPublish: {text: 'mock yml content'},
-      travis: {text: 'mock yml content'},
       w3cjson: {text: JSON.stringify({
         contacts: [],
         group: ['43'],
