@@ -241,6 +241,24 @@ describe('validateRepo', () => {
     ]);
   });
 
+  it('use travis CI yml file', () => {
+    const repo = {
+      owner: {login: 'foo'},
+      name: 'bar',
+      usetravisci: {text: 'mock yml content'},
+    };
+    const data = {
+      ashRepo: null,
+      specs: [],
+      groups: [],
+    };
+    const licenses = {};
+    const {errors} = validateRepo(repo, data, licenses);
+    assert.deepStrictEqual(filter(errors, ['usetravisci']), [
+      ['usetravisci', null],
+    ]);
+  });
+
   it('empty w3c.json', () => {
     const repo = {
       owner: {login: 'foo'},
