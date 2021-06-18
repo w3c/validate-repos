@@ -70,6 +70,7 @@
   "w3c/magnetometer",
   "w3c/manifest",
   "w3c/mathml-aam",
+  "w3c/mathml-core",
   "w3c/media-capabilities",
   "w3c/media-playback-quality",
   "w3c/media-source",
