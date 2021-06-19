@@ -208,5 +208,6 @@
   "w3c/xml-entities",
   "WebAudio/web-audio-api",
   "WebAudio/web-audio-api-v2",
-  "WebAudio/web-midi-api"
+  "WebAudio/web-midi-api",
+  "webmachinelearning/webnn"
 ]
