@@ -1,5 +1,6 @@
 [
   "gpuweb/gpuweb",
+  "immersive-web/anchors",
   "immersive-web/depth-sensing",
   "immersive-web/dom-overlays",
   "immersive-web/hit-test",
@@ -163,6 +164,7 @@
   "w3c/user-timing",
   "w3c/vc-data-model",
   "w3c/vibration",
+  "w3c/virtual-keyboard",
   "w3c/wcag",
   "w3c/wcag-act",
   "w3c/web-share",
