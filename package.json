@@ -10,8 +10,8 @@
     "test": "nyc mocha"
   },
   "dependencies": {
-    "@octokit/core": "^2.2.0",
-    "@octokit/plugin-throttling": "^2.7.1",
+    "@octokit/core": "^3.5.1",
+    "@octokit/plugin-throttling": "^3.5.1",
     "node-fetch": "^2.6.1",
     "node-w3capi": "^1.8.0"
   },

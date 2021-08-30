@@ -44,8 +44,8 @@ describe('octokit', () => {
           }
         }
       }), {
-        name: 'GraphqlError',
-        message: 'mock error'
+        name: 'GraphqlResponseError',
+        message: 'Request failed due to following response errors:\n - mock error'
       });
     });
   });
