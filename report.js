@@ -95,6 +95,9 @@ function writeReport() {
 
   const report = document.getElementById('report');
   report.innerHTML = '';
+  const timestamp = document.createElement('p');
+  timestamp.textContent = `Report last updated on ${data.lastModified}`;
+  report.appendChild(timestamp);
   const stats = document.createElement('p');
   stats.textContent = `${data.repos.filter(r => r.owner.login === 'w3c' && !r.isArchived).length} active repos in the w3c github organization; overall, ${Object.values(data.groups).filter(g => g.type === 'working group').reduce((acc, g) => acc + g.repos.length, 0)} known repos associated with Working Groups, ${Object.values(data.groups).filter(g => g.type === 'community group').reduce((acc, g) => acc + g.repos.length, 0)} associated with Community Groups`;
   report.appendChild(stats);
@@ -157,8 +160,8 @@ function writeReport() {
 }
 
 fetch("report.json")
-  .then(r => r.json())
-  .then(fetcheddata => {
-    data = fetcheddata;
+  .then(async r => {
+    data = await r.json();
+    data.lastModified = r.headers.get('Last-Modified');
     writeReport();
   });
