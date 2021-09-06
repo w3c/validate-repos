@@ -5,6 +5,7 @@
   "immersive-web/dom-overlays",
   "immersive-web/hit-test",
   "immersive-web/layers",
+  "immersive-web/lighting-estimation",
   "immersive-web/webxr",
   "immersive-web/webxr-ar-module",
   "immersive-web/webxr-gamepads-module",
