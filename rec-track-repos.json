@@ -88,6 +88,7 @@
   "w3c/mediacapture-record",
   "w3c/mediacapture-screen-share",
   "w3c/mediacapture-transform",
+  "w3c/mediacapture-viewport",
   "w3c/mediasession",
   "w3c/merchant-validation",
   "w3c/Micropub",
@@ -212,7 +213,6 @@
   "w3c/wpub-ann",
   "w3c/xml-entities",
   "WebAudio/web-audio-api",
-  "WebAudio/web-audio-api-v2",
   "WebAudio/web-midi-api",
   "webmachinelearning/webnn"
 ]
