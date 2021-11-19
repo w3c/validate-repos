@@ -383,6 +383,7 @@
   "WICG/media-feeds",
   "WICG/media-latency-hint",
   "WICG/media-source",
+  "WICG/nav-speculation",
   "WICG/netinfo",
   "WICG/origin-policy",
   "WICG/overscroll-scrollend-events",
