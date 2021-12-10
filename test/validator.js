@@ -173,7 +173,7 @@ describe('validateRepo', () => {
     assert.deepStrictEqual(groups, [42]);
   });
 
-  it('minimal compliant WG repo', () => {
+  it('minimal compliant WG repo with group shortname', () => {
     const repo = {
       owner: {login: 'foo'},
       name: 'bar',
@@ -184,7 +184,7 @@ describe('validateRepo', () => {
       autoPublish: {text: 'mock yml content'},
       w3cjson: {text: JSON.stringify({
         contacts: [],
-        group: ['43'],
+        group: ['wg/foo'],
         'repo-type': 'rec-track',
       })},
       defaultBranch: {name: 'main'},
@@ -213,11 +213,15 @@ describe('validateRepo', () => {
       licenseSw: 'mock LICENSE.md content',
       contributing: 'mock CONTRIBUTING.md content',
     };
+    const w3cGroups = [{
+      fullshortname: 'wg/foo',
+      id: 43
+    }];
     const {
       errors,
       hasRecTrack,
       groups,
-    } = validateRepo(repo, data, licenses);
+    } = validateRepo(repo, data, licenses, w3cGroups);
     assert.deepStrictEqual(errors, []);
     assert.strictEqual(hasRecTrack, true);
     assert.deepStrictEqual(groups, [43]);
@@ -295,6 +299,55 @@ describe('validateRepo', () => {
     const licenses = {};
     const {groups} = validateRepo(repo, data, licenses);
     assert.deepStrictEqual(groups, [45]);
+  });
+
+  it('w3c.json with shortname groups', () => {
+    const repo = {
+      owner: {login: 'foo'},
+      name: 'bar',
+      w3cjson: {text: JSON.stringify({
+        contacts: [],
+        group: ['wg/foo'],
+      })},
+    };
+    const w3cGroups = [{
+      fullshortname: 'wg/foo',
+      id: 43
+    }];
+    const data = {
+      ashRepo: null,
+      specs: [{group: 43}],
+      groups: [45],
+    };
+    const licenses = {};
+    const {groups} = validateRepo(repo, data, licenses, w3cGroups);
+    assert.deepStrictEqual(groups, [43]);
+  });
+
+  it('w3c.json with invalid group shortname ', () => {
+    const repo = {
+      owner: {login: 'foo'},
+      name: 'bar',
+      w3cjson: {text: JSON.stringify({
+        contacts: [],
+        group: ['wg/bar'],
+      })},
+    };
+    const w3cGroups = [{
+      fullshortname: 'wg/foo',
+      id: 43
+    }];
+    const data = {
+      ashRepo: null,
+      specs: [{group: 43}],
+      groups: [45],
+    };
+    const licenses = {};
+    const {errors, groups} = validateRepo(repo, data, licenses, w3cGroups);
+    assert.deepStrictEqual(groups, []);
+    assert.deepStrictEqual(filter(errors, ['invalidw3cjson']), [
+      ['invalidw3cjson', {error: 'unknown group name: "wg/bar"'}]
+    ]);
   });
 
   it('w3c.json invalid type and contacts', () => {

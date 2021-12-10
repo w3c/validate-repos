@@ -74,7 +74,7 @@ async function validate() {
 
     const repoData = data.get(r.owner.login, r.name);
 
-    const {errors, groups, hasRecTrack} = validator.validateRepo(r, repoData, licenses);
+    const {errors, groups, hasRecTrack} = validator.validateRepo(r, repoData, licenses, data.w3cgroups);
     pushErrors(r, errors);
     for (const gid of groups) {
       allgroups.add(gid);
