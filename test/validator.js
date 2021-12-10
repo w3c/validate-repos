@@ -324,7 +324,7 @@ describe('validateRepo', () => {
     assert.deepStrictEqual(groups, [43]);
   });
 
-    it('w3c.json with invalid group shortname ', () => {
+  it('w3c.json with invalid group shortname ', () => {
     const repo = {
       owner: {login: 'foo'},
       name: 'bar',
@@ -350,7 +350,6 @@ describe('validateRepo', () => {
     ]);
   });
 
-  
   it('w3c.json invalid type and contacts', () => {
     const repo = {
       owner: {login: 'foo'},
