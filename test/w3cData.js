@@ -47,7 +47,7 @@ const w3cData = proxyquire('../lib/w3cData.js', {
     groups() {
       return {
         fetch(options, callback) {
-          callback(null, ['mock-w3cgroups']);
+          callback(null, [{id: 42, shortname: 'mock-w3cgroup', type: 'working group'}]);
         }
       }
     }
@@ -100,7 +100,7 @@ describe('w3cData', () => {
   });
 
   it('w3cgroups', () => {
-    assert.deepStrictEqual(data.w3cgroups, ['mock-w3cgroups']);
+    assert.deepStrictEqual(data.w3cgroups, [{id: 42, shortname: 'mock-w3cgroup', fullshortname: 'wg/mock-w3cgroup', type: 'working group'}]);
   });
 
   it('fetch error', async () => {
