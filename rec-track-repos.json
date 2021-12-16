@@ -89,6 +89,7 @@
   "w3c/mediacapture-output",
   "w3c/mediacapture-record",
   "w3c/mediacapture-screen-share",
+  "w3c/mediacapture-transform",
   "w3c/mediacapture-viewport",
   "w3c/mediasession",
   "w3c/merchant-validation",
