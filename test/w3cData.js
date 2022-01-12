@@ -46,10 +46,10 @@ const w3cData = proxyquire('../lib/w3cData.js', {
   'node-w3capi': {
     groups() {
       return {
-        fetch(options, callback) {
-          callback(null, [{id: 42, shortname: 'mock-w3cgroup', type: 'working group'}]);
+        async fetch() {
+          return new Promise(res => res([{id: 42, shortname: 'mock-w3cgroup', type: 'working group'}]));
         }
-      }
+      };
     }
   }
 });
@@ -115,8 +115,8 @@ describe('w3cData', () => {
       'node-w3capi': {
         groups() {
           return {
-            fetch(options, callback) {
-              callback(null, []);
+            async fetch() {
+              new Promise(res => res([]));
             }
           }
         }
@@ -134,15 +134,15 @@ describe('w3cData', () => {
           async json() {
             return null;
           }
-        }
+        };
       },
       'node-w3capi': {
         groups() {
           return {
-            fetch(options, callback) {
-              callback(new Error('mock w3c error'));
+            async fetch() {
+              return new Promise((res, rej) => rej(new Error('mock w3c error')));
             }
-          }
+          };
         }
       }
     });
