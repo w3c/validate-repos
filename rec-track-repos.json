@@ -89,6 +89,7 @@
   "w3c/mediacapture-main",
   "w3c/mediacapture-output",
   "w3c/mediacapture-record",
+  "w3c/mediacapture-region",
   "w3c/mediacapture-screen-share",
   "w3c/mediacapture-transform",
   "w3c/mediacapture-viewport",
