@@ -24,6 +24,7 @@
   "immersive-web/webxr-hand-input",
   "immersive-web/webxr-layers-polyfill",
   "immersive-web/WebXR-WebGPU-Binding",
+  "w3c/a11y-discov-vocab",
   "w3c/accelerometer",
   "w3c/accname",
   "w3c/activitypub",
