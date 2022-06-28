@@ -332,7 +332,7 @@
   "WebAssembly/spec",
   "WebAudio/web-audio-api",
   "WebAudio/web-midi-api",
-  "webmachinelearning/ethical-webmachinelearning",
+  "webmachinelearning/webmachinelearning-ethics",
   "webmachinelearning/webnn",
   "WICG/accessible-loading-and-searching-of-content",
   "WICG/aom",
