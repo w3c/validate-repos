@@ -22,7 +22,7 @@ jobs:
         node-version: 12.x
     - name: Setup dependencies
       run: |
-        echo '{"w3capikey":"${{ secrets.W3C_API_KEY }}","ghToken":"${{ secrets.GITHUB_TOKEN }}"}' > config.json
+        echo '{"w3capikey":"${{ secrets.W3C_API_KEY }}","ghToken":"${{ secrets.W3C_GH_TOKEN }}"}' > config.json
         npm ci --production
     - name: Run validate.js
       run: node validate.js > report.json
@@ -40,7 +40,7 @@ jobs:
     - name: Push changes
       if: github.ref == 'refs/heads/main' && github.event.commits[0].author.name != 'w3c-validate-repos-bot'
       run: |
-        git remote set-url --push origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+        git remote set-url --push origin https://x-access-token:${{ secrets.W3C_GH_TOKEN }}@github.com/$GITHUB_REPOSITORY
         git push origin HEAD:main
     # Run this script last to not interfere with any of the above. The output
     # goes into the logs only for manual inspection when needed.
