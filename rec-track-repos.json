@@ -202,6 +202,7 @@
   "w3c/user-timing",
   "w3c/vc-data-integrity",
   "w3c/vc-data-model",
+  "w3c/vc-di-ecdsa",
   "w3c/vc-di-eddsa",
   "w3c/vc-jws-2020",
   "w3c/vc-jwt",
