@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 jobs:
   validate:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
     - name: Dump GitHub context
       env:
