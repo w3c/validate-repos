@@ -16,10 +16,10 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v1
       with:
-        node-version: 12.x
+        node-version: 16.x
     - name: Setup dependencies
       run: |
-        echo '{"w3capikey":"${{ secrets.W3C_API_KEY }}","ghToken":"${{ secrets.W3C_GH_TOKEN }}"}' > config.json
+        echo '{"ghToken":"${{ secrets.W3C_GH_TOKEN }}"}' > config.json
         npm ci --production
     - name: Run validate.js
       run: node validate.js > report.json
