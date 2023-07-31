@@ -1,13 +1,10 @@
 /* eslint-env node */
 
-const config = require("./config.json");
 const github = require("./lib/github.js");
 const w3c = require('node-w3capi');
 
 // based on a downloaded a local copy from https://labs.w3.org/hatchery/repo-manager/api/users when logged in there, filtered to leave only list of ghID
 const ashnazgusers = require('./ashnazg-users.json');
-
-w3c.apiKey = config.w3capikey;
 
 if (!process.argv[2] || process.argv[2].indexOf('/') === -1) {
   console.error("Required: name of repo to check, e.g. w3c/webrtc-pc");
