@@ -1,7 +1,7 @@
 on:
   workflow_dispatch:
 
-name: Submit draft issue reports from Strudy analysis
+name: Submit draft issue reports
 jobs:
   update:
     runs-on: ubuntu-latest
