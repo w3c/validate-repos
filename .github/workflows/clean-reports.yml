@@ -1,0 +1,38 @@
+name: Clean reports when issues/PR are closed
+
+on:
+  schedule:
+    - cron: '30 3 * * 3'
+  workflow_dispatch:
+jobs:
+  clean:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout validate-repos
+      uses: actions/checkout@v3
+
+    - name: Setup node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: 18
+
+    - name: Install dependencies
+      run: |
+        npm ci
+
+    - name: Drop reports locally when related issues/PR are closed
+      run: node src/reporting/clean-reports.js
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Create PR to drop reports from repo if needed
+      uses: peter-evans/create-pull-request@v3
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        title: Drop reports whose related issues have been closed
+        commit-message: "Drop reports whose related issues have been closed"
+        body: ${{ env.dropped_reports }}
+        assignees: dontcallmedom
+        branch: clean-reports
+        branch-suffix: timestamp

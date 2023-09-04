@@ -12,6 +12,7 @@
   "dependencies": {
     "@octokit/core": "^3.6.0",
     "@octokit/plugin-throttling": "^3.5.2",
+    "gray-matter": "^4.0.3",
     "node-fetch": "^2.6.7",
     "node-w3capi": "^2.1.0"
   },
