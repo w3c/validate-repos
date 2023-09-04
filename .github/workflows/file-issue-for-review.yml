@@ -1,0 +1,27 @@
+on:
+  workflow_dispatch:
+
+name: Submit draft issue reports from Strudy analysis
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Setup node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: 18
+    - name: Checkout validate-repos
+      uses: actions/checkout@v3
+    - name: Install dependencies
+      run: npm ci
+    - name: Configure git
+      run: |
+        git config user.name "w3c-validate-bot"
+        git config user.email "<>"
+        git remote set-url --push origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+    - name: Run issue filer script
+      run: node reporting/file-issue-for-review.js
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+

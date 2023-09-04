@@ -3,46 +3,51 @@
 'use strict';
 
 const assert = require('assert');
+const {MockAgent, setGlobalDispatcher} = require('undici');
 const proxyquire = require('proxyquire');
+
+const agent = new MockAgent();
 
 // Most things can be tested well enough without varying what the w3cData
 // required modules, so set up constant mock data up front.
-const w3cData = proxyquire('../lib/w3cData.js', {
-  'node-fetch': async (url) => {
-    const data = ({
-      'https://labs.w3.org/hatchery/repo-manager/api/repos': [
-        {
-          owner: 'w3c',
-          name: 'IndexedDB',
-        },
-      ],
-      'https://w3c.github.io/cg-monitor/report.json': {
-        data: [
-          {
-            id: 54172,
-            repositories: ['https://github.com/w3c/speech-api/'],
-          }
-        ]
+function defaultW3CData() {
+  const data = {
+    'https://labs.w3.org/hatchery/repo-manager/api/repos': [
+      {
+        owner: 'w3c',
+        name: 'IndexedDB',
       },
-      'https://w3c.github.io/spec-dashboard/repo-map.json': {
-        'w3c/IndexedDB': [{
-          recTrack: true,
-          url: 'https://www.w3.org/TR/IndexedDB/',
-          group: 114929,
-        }],
-        'w3c/ServiceWorker': [{
-          recTrack: true,
-          url: 'https://www.w3.org/TR/service-workers-1/',
-          group: 101220,
-        }],
-      }
-    })[url];
-    return {
-      async json() {
-        return data;
-      }
+    ],
+    'https://w3c.github.io/cg-monitor/report.json': {
+      data: [
+        {
+          id: 54172,
+          repositories: ['https://github.com/w3c/speech-api/'],
+        }
+      ]
+    },
+    'https://w3c.github.io/spec-dashboard/repo-map.json': {
+      'w3c/IndexedDB': [{
+        recTrack: true,
+        url: 'https://www.w3.org/TR/IndexedDB/',
+        group: 114929,
+      }],
+      'w3c/ServiceWorker': [{
+        recTrack: true,
+        url: 'https://www.w3.org/TR/service-workers-1/',
+        group: 101220,
+      }],
     }
-  },
+  };
+  for (const u in data) {
+    const url = new URL(u);
+    const payload = data[u];
+    agent.get(url.origin)
+      .intercept({path: url.pathname})
+      .reply(200, payload, {headers: {'content-type': 'application/json'}});
+  }
+}
+const w3cData = proxyquire('../lib/w3cData.js', {
   'node-w3capi': {
     groups() {
       return {
@@ -58,6 +63,9 @@ describe('w3cData', () => {
   let data;
 
   before(async () => {
+    defaultW3CData();
+    setGlobalDispatcher(agent);
+    agent.disableNetConnect();
     data = await w3cData();
   });
 
@@ -105,13 +113,6 @@ describe('w3cData', () => {
 
   it('fetch error', async () => {
     const w3cData = proxyquire('../lib/w3cData.js', {
-      'node-fetch': async () => {
-        return {
-          async json() {
-            throw new Error('mock fetch error');
-          }
-        }
-      },
       'node-w3capi': {
         groups() {
           return {
@@ -123,19 +124,12 @@ describe('w3cData', () => {
       }
     });
     await assert.rejects(w3cData(), {
-      message: 'mock fetch error'
+      message: 'fetch failed'
     });
   });
 
   it('W3C API error', async () => {
     const w3cData = proxyquire('../lib/w3cData.js', {
-      'node-fetch': async () => {
-        return {
-          async json() {
-            return null;
-          }
-        };
-      },
       'node-w3capi': {
         groups() {
           return {
@@ -149,5 +143,13 @@ describe('w3cData', () => {
     await assert.rejects(w3cData(), {
       message: 'mock w3c error'
     });
+  });
+
+  afterEach(() => {
+    agent.assertNoPendingInterceptors();
+  });
+
+  after(async () => {
+    agent.close();
   });
 });

@@ -1,0 +1,27 @@
+on:
+  workflow_dispatch:
+
+name: Submit issue from validate-repos to relevant github repo
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Setup node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: 18
+    - name: Checkout validate-repos
+      uses: actions/checkout@v3
+    - name: Install dependencies
+      run: npm ci
+    - name: Configure git
+      run: |
+        git config user.name "w3c-validate-bot"
+        git config user.email "<>"
+        git remote set-url --push origin https://x-access-token:${{ secrets.ISSUE_REPORT_GH_TOKEN }}@github.com/$GITHUB_REPOSITORY
+    - name: Run issue submitter script
+      run: node src/reporting/submit-issue.js
+      env:
+        GH_TOKEN: ${{ secrets.ISSUE_REPORT_GH_TOKEN }}
+
+
