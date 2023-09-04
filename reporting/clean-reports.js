@@ -1,3 +1,5 @@
+/* eslint-env node */
+
 /**
  * Check GitHub issues and pull requests referenced by reports and create
  * a pull request to drop reports that have been addressed.
@@ -20,8 +22,8 @@ const issueReportDir = "issue-reports";
  *   patches got dropped and why. To be used in a possible PR. Returns an
  *   empty string when there are no patches to drop.
  */
-async function dropReportsWhenPossible () {
-  const rootDir = path.join(__dirname, '../../issues');
+async function dropReportsWhenPossible() {
+  const rootDir = path.join(__dirname, '../' + issueReportDir);
 
   console.log('Gather reports files');
   let reports = [];
@@ -30,7 +32,7 @@ async function dropReportsWhenPossible () {
     if (file.endsWith('.md')) {
       const report = path.join(rootDir, file);
       console.log(`- add "${report}"`);
-      reports.push({ name: report });
+      reports.push({name: report});
     }
   }
 
@@ -63,7 +65,7 @@ async function dropReportsWhenPossible () {
 
   console.log();
   console.log('Check status of GitHub issues/PR');
-  for (const { issue } of reports) {
+  for (const {issue} of reports) {
     const response = await octokit.issues.get({
       owner: issue.owner,
       repo: issue.repo,

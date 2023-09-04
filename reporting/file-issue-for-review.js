@@ -1,3 +1,5 @@
+/* eslint-env node */
+
 /* Takes a report of anomalies produced by Strudy,
    creates a draft of an issue per spec and per anomaly type
    and submits as a pull request in this repo if no existing one matches
@@ -5,7 +7,7 @@
 const report = require('../report.json');
 const path = require('path');
 const fs = require('fs').promises;
-const { execSync } = require('child_process');
+const {execSync} = require('child_process');
 const octokit = require('../lib/octokit');
 const matter = require('gray-matter');
 
@@ -17,17 +19,17 @@ const repoOwner = 'w3c';
 const repoName = 'validate-repos';
 
 
-function issueWrapper (anomalies, anomalyType) {
+function issueWrapper(anomalies, anomalyType) {
   let anomalyReport = ''; let title = '';
   switch (anomalyType) {
-    case 'illformedw3cjson':
-      title = `Ill-formed w3c.json file`;
-      anomalyReport = 'The w3c.json file in this repo is not valid JSON';
-      break;
-    case 'invalidw3cjson':
-      title = `Invalid w3c.json data`;
-      anomalyReport = 'The w3c.json file in this repo does not follow the [expected data model](https://w3c.github.io/w3c.json.html). The following errors were detected';
-      break;
+  case 'illformedw3cjson':
+    title = `Ill-formed w3c.json file`;
+    anomalyReport = 'The w3c.json file in this repo is not valid JSON';
+    break;
+  case 'invalidw3cjson':
+    title = `Invalid w3c.json data`;
+    anomalyReport = 'The w3c.json file in this repo does not follow the [expected data model](https://w3c.github.io/w3c.json.html). The following errors were detected';
+    break;
   }
   return {
     title,
@@ -39,7 +41,7 @@ ${anomalies.map(anomaly => `* [ ] ${anomaly}`).join('\n')}` : "."}
   };
 }
 
-function prWrapper (repo, issueReport) {
+function prWrapper(repo, issueReport) {
   return `This pull request was automatically created by validate-repos upon detecting errors in ${repo}.
 
 Please check that these errors were correctly detected, and that they have not already been reported in ${repo}.
@@ -57,12 +59,7 @@ if (require.main === module) {
   const dryRun = process.argv.includes('--dry-run');
   const noGit = dryRun || updateMode || process.argv.includes('--no-git');
 
-  if (!noGit && !GH_TOKEN) {
-    console.error('GH_TOKEN must be set to some personal access token as an env variable or in a config.json file');
-    process.exit(1);
-  }
-
-  (async function () {
+  (async function() {
     let existingReports = [];
     if (updateMode) {
       console.log('Compiling list of relevant existing issue reports…');
@@ -81,14 +78,14 @@ if (require.main === module) {
     console.log('Loading errors from validate-repos results…');
     const results = report.errors;
     console.log('- done');
-    const currentBranch = noGit || execSync('git branch --show-current', { encoding: 'utf8' }).trim();
+    const currentBranch = noGit || execSync('git branch --show-current', {encoding: 'utf8'}).trim();
     const needsPush = {};
     for (const anomalyType of anomalyTypes) {
       const anomalies = results[anomalyType];
       const repos = anomalies.map(a => a.repo ?? a);
       for (const repo of repos) {
-	const repoAnomalies = anomalies.filter(a => a.repo === repo);
-	const repoMoniker = repo.replace('/', '___');
+        const repoAnomalies = anomalies.filter(a => a.repo === repo);
+        const repoMoniker = repo.replace('/', '___');
         const issueMoniker = `${repoMoniker}-${anomalyType.toLowerCase()}`;
         // is there already a file with that moniker?
         const issueFilename = path.join(issueReportDir + '/', issueMoniker + '.md');
@@ -120,11 +117,11 @@ if (require.main === module) {
             }
           }
         } catch (err) {
-          // Intentionally blank 
-       }
+          // Intentionally blank
+        }
         // if not, we create the file, add it in a branch
         // and submit it as a pull request to the repo
-        const { title, content: issueReportContent } = issueWrapper(repoAnomalies.map(a => a.error).filter(x => x), anomalyType);
+        const {title, content: issueReportContent} = issueWrapper(repoAnomalies.map(a => a.error).filter(x => x), anomalyType);
         if (updateMode) {
           if (existingReportContent) {
             const existingAnomalies = existingReportContent.split('\n').filter(l => l.startsWith('* [ ] ')).map(l => l.slice(6));
@@ -163,7 +160,7 @@ if (require.main === module) {
               execSync(`git checkout -b ${issueMoniker}`);
               execSync(`git add ${issueFilename}`);
               execSync(`git commit -m "File report on ${issueReportData.data.Title}"`);
-              needsPush[issueMoniker] = { title: issueReportData.data.Title, report: issueReport, repo };
+              needsPush[issueMoniker] = {title: issueReportData.data.Title, report: issueReport, repo};
               console.log('- done');
               execSync(`git checkout ${currentBranch}`);
             }
@@ -190,7 +187,7 @@ if (require.main === module) {
         }
 
         // is there already a pull request targetting that branch?
-        const { data: pullrequests } = (await octokit.rest.pulls.list({
+        const {data: pullrequests} = (await octokit.rest.pulls.list({
           owner: repoOwner,
           repo: repoName,
           head: `${repoOwner}:${branch}`
@@ -207,7 +204,7 @@ if (require.main === module) {
       execSync(`git push origin ${Object.keys(needsPush).join(' ')}`);
       console.log('- done');
       for (const branch in needsPush) {
-        const { title, specTitle, uri, repo, report } = needsPush[branch];
+        const {title, specTitle, uri, repo, report} = needsPush[branch];
         console.log(`Creating pull request from branch ${branch}…`);
         await octokit.rest.pulls.create({
           owner: repoOwner,

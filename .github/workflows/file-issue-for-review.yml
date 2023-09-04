@@ -11,7 +11,7 @@ jobs:
       with:
         node-version: 18
     - name: Checkout validate-repos
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
     - name: Install dependencies
       run: npm ci
     - name: Configure git

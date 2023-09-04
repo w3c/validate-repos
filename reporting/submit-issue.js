@@ -1,3 +1,5 @@
+/* eslint-env node */
+
 /* Submits issue reports merged in the repository as issue on the relevant repo
    and documents the said GitHub issue in the issue report.
    Can also be called on a specific issue report (typicall when it gets merged in)
@@ -5,7 +7,7 @@
 
 const fs = require('fs').promises;
 const matter = require('gray-matter');
-const { execSync } = require('child_process');
+const {execSync} = require('child_process');
 const octokit = require('../lib/octokit');
 
 const issueReportDir = "issue-reports";
@@ -13,7 +15,7 @@ const issueReportDir = "issue-reports";
 if (require.main === module) {
   const targetIssueReport = process.argv[2];
   let issuesToSubmit = [];
-  (async function () {
+  (async function() {
     execSync('git pull origin main');
     if (targetIssueReport) {
       try {
@@ -34,7 +36,7 @@ if (require.main === module) {
     for (const filename of issuesToSubmit) {
       const issueReport = await fs.readFile(filename, 'utf-8');
       const issueData = matter(issueReport);
-      const { data: metadata, content: body } = issueData;
+      const {data: metadata, content: body} = issueData;
       if (!(metadata?.Repo && metadata?.Tracked && metadata?.Title && body)) {
         console.error(`Could not parse expected data from ${filename}.`, JSON.stringify(issueData, null, 2));
         continue;
