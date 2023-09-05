@@ -209,8 +209,8 @@ if (require.main === module) {
         await octokit.rest.pulls.create({
           owner: repoOwner,
           repo: repoName,
-          title,
-          body: prWrapper(specTitle, uri, repo, report),
+          title: `[${repo}] ${title}`,
+          body: prWrapper(repo, report),
           head: `${repoOwner}:${branch}`,
           base: 'main'
         });
