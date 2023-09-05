@@ -137,7 +137,7 @@ if (require.main === module) {
         }
         const issueReportData = matter(issueReportContent);
         issueReportData.data = {
-          Repo: repo,
+          Repo: "https://github.com/" + repo,
           Tracked: tracked,
           Title: title
         };
