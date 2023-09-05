@@ -1,5 +1,8 @@
 on:
-  [push, pull_request]:
+  push:
+    paths-ignore:
+      - 'issue-reports/**'
+  pull_request:
     paths-ignore:
       - 'issue-reports/**'
 name: test

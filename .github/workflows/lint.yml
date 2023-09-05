@@ -1,7 +1,10 @@
 on:
-  [push, pull_request]
-  paths-ignore:
-    - 'issue-reports/**'
+  push:
+    paths-ignore:
+      - 'issue-reports/**'
+  pull_request:
+    paths-ignore:
+      - 'issue-reports/**'
 name: lint
 jobs:
   lint:
