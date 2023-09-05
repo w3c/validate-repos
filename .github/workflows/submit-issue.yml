@@ -20,7 +20,7 @@ jobs:
         git config user.email "<>"
         git remote set-url --push origin https://x-access-token:${{ secrets.ISSUE_REPORT_GH_TOKEN }}@github.com/$GITHUB_REPOSITORY
     - name: Run issue submitter script
-      run: node src/reporting/submit-issue.js
+      run: node reporting/submit-issue.js
       env:
         GH_TOKEN: ${{ secrets.ISSUE_REPORT_GH_TOKEN }}
 

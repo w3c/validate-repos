@@ -21,7 +21,7 @@ jobs:
         npm ci
 
     - name: Drop reports locally when related issues/PR are closed
-      run: node src/reporting/clean-reports.js
+      run: node reporting/clean-reports.js
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
