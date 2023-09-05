@@ -1,5 +1,12 @@
 on:
+  push:
+    paths:
+      - 'issue-reports/**'
   workflow_dispatch:
+
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
 
 name: Submit issue from validate-repos to relevant github repo
 jobs:
