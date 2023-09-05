@@ -1,6 +1,6 @@
 ---
-Repo: https://github.com/w3c/epub-fxl-a11y
-Tracked: N/A
+Repo: 'https://github.com/w3c/epub-fxl-a11y'
+Tracked: 'https://github.com/w3c/epub-fxl-a11y/issues/1'
 Title: Ill-formed w3c.json file
 ---
 
