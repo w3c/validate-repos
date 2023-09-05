@@ -1,4 +1,7 @@
-on: [push, pull_request]
+on:
+  [push, pull_request]:
+    paths-ignore:
+      - 'issue-reports/**'
 name: test
 jobs:
   test:
