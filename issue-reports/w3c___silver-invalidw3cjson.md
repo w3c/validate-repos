@@ -1,6 +1,6 @@
 ---
 Repo: 'https://github.com/w3c/silver'
-Tracked: N/A
+Tracked: 'https://github.com/w3c/silver/issues/722'
 Title: Invalid w3c.json data
 ---
 

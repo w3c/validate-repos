@@ -1,6 +1,6 @@
 ---
 Repo: 'https://github.com/w3c/csvw'
-Tracked: N/A
+Tracked: 'https://github.com/w3c/csvw/issues/893'
 Title: Invalid w3c.json data
 ---
 

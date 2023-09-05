@@ -1,6 +1,6 @@
 ---
 Repo: 'https://github.com/w3c/css-aam'
-Tracked: N/A
+Tracked: 'https://github.com/w3c/css-aam/issues/8'
 Title: Invalid w3c.json data
 ---
 
