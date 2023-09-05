@@ -1,6 +1,6 @@
 ---
 Repo: 'https://github.com/w3c/wai-course-list'
-Tracked: N/A
+Tracked: 'https://github.com/w3c/wai-course-list/issues/461'
 Title: Ill-formed w3c.json file
 ---
 
