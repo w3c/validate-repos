@@ -204,7 +204,7 @@ if (require.main === module) {
       execSync(`git push origin ${Object.keys(needsPush).join(' ')}`);
       console.log('- done');
       for (const branch in needsPush) {
-        const {title, specTitle, uri, repo, report} = needsPush[branch];
+        const {title, repo, report} = needsPush[branch];
         console.log(`Creating pull request from branch ${branch}…`);
         await octokit.rest.pulls.create({
           owner: repoOwner,
