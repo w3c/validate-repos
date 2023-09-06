@@ -57,8 +57,10 @@ describe('validateRepo', () => {
     const licenses = {
       license: 'mock LICENSE.md content',
       licenseSw: 'mock LICENSE-SW.md content',
+      licenseCg: 'mock CG-LICENSE.md content',
       contributing: 'mock CONTRIBUTING.md content',
       contributingSw: 'mock CONTRIBUTING-SW.md content',
+      contributingCg: 'mock CG-CONTRIBUTING.md content'
     };
     const {errors} = validateRepo(repo, data, licenses);
     const types = ['invalidcontributing', 'invalidlicense']
@@ -100,6 +102,43 @@ describe('validateRepo', () => {
       ['invalidlicense', {
         license: 'Doc LICENSE.md content',
         error: "doesn't match chartered SW license",
+      }]
+    ]);
+  });
+
+  it('invalid contributing and license for CGs', () => {
+    const repo = {
+      owner: {login: 'foo'},
+      name: 'bar',
+      contributing: {text: 'mock CONTRIBUTING.md content'},
+      license: {text: 'Doc LICENSE.md content'},
+      w3cjson: {text: JSON.stringify({
+        'repo-type': 'cg-report',
+      })},
+    };
+    const data = {
+      ashRepo: null,
+      specs: [],
+      groups: [],
+    };
+    const licenses = {
+      license: 'mock LICENSE.md content',
+      licenseSw: 'mock LICENSE-SW.md content',
+      licenseCg: 'mock CG-LICENSE.md content',
+      contributing: 'mock CONTRIBUTING.md content',
+      contributingSw: 'mock CONTRIBUTING-SW.md content',
+      contributingCg: 'mock CG-CONTRIBUTING.md content'
+    };
+    const {errors} = validateRepo(repo, data, licenses);
+    const types = ['invalidlicense', 'invalidcontributing']
+    assert.deepStrictEqual(filter(errors, types), [
+      ['invalidlicense', {
+        license: 'Doc LICENSE.md content',
+        error: "doesn't match CG license",
+      }],
+      ['invalidcontributing', {
+        contributing: 'mock CONTRIBUTING.md content',
+        error: "doesn't match CG contributing",
       }]
     ]);
   });

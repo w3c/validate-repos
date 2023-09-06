@@ -17,11 +17,17 @@ describe('github', () => {
           contributingSw: {
             text: 'mock WG-CONTRIBUTING-SW.md content'
           },
+          contributingCg: {
+            text: 'mock CG-CONTRIBUTING.md content'
+          },
           license: {
             text: 'mock WG-LICENSE.md content'
           },
           licenseSw: {
             text: 'mock WG-LICENSE-SW.md content'
+          },
+          licenseCg: {
+            text: 'mock CG-LICENSE.md content'
           },
         }
       });
@@ -32,8 +38,10 @@ describe('github', () => {
       assert.deepStrictEqual(lic, {
         contributing: 'mock WG-CONTRIBUTING.md content',
         contributingSw: 'mock WG-CONTRIBUTING-SW.md content',
+        contributingCg: 'mock CG-CONTRIBUTING.md content',
         license: 'mock WG-LICENSE.md content',
         licenseSw: 'mock WG-LICENSE-SW.md content',
+        licenseCg: 'mock CG-LICENSE.md content',
       });
       assert(graphql.calledOnce);
     });
