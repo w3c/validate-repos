@@ -1,6 +1,6 @@
 ---
 Repo: 'https://github.com/w3c/wcag-act'
-Tracked: N/A
+Tracked: 'https://github.com/w3c/wcag-act/issues/544'
 Title: Invalid w3c.json data
 ---
 
