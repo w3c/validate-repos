@@ -1,6 +1,6 @@
 ---
 Repo: 'https://github.com/w3c/translation-glossaries'
-Tracked: N/A
+Tracked: https://github.com/w3c/translation-glossaries/pull/30
 Title: Invalid w3c.json data
 ---
 
