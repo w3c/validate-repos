@@ -30,6 +30,11 @@ function issueWrapper(anomalies, anomalyType) {
     title = `Invalid w3c.json data`;
     anomalyReport = 'The w3c.json file in this repo does not follow the [expected data model](https://w3c.github.io/w3c.json.html). The following errors were detected';
     break;
+  case 'inconsistentgroups':
+    title = `Inconsistent repo information on IPR`;
+    anomalyReport = 'The w3c.json file in this repo indicates a different W3C group from the one associated to it in the [IPR checker](https://labs.w3.org/repo-manager/);
+    break;
+
   }
   return {
     title,
@@ -53,7 +58,7 @@ ${issueReport}
 }
 
 if (require.main === module) {
-  const anomalyTypes = ['illformedw3cjson', 'invalidw3cjson'];
+  const anomalyTypes = ['illformedw3cjson', 'invalidw3cjson', 'inconsistentgroups'];
 
   const updateMode = process.argv.includes('--update') ? 'update-untracked' : (process.argv.includes('--update-tracked') ? 'update-tracked' : false);
   const dryRun = process.argv.includes('--dry-run');
