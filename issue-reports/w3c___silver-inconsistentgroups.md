@@ -1,6 +1,6 @@
 ---
 Repo: 'https://github.com/w3c/silver'
-Tracked: N/A
+Tracked: https://github.com/w3c/silver/pull/723
 Title: Inconsistent repo information on IPR
 ---
 
