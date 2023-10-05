@@ -239,6 +239,7 @@
   "w3c/webrtc-pc",
   "w3c/webrtc-priority",
   "w3c/webrtc-provisional-stats",
+  "w3c/webrtc-rtptransport",
   "w3c/webrtc-stats",
   "w3c/webrtc-svc",
   "w3c/websub",
