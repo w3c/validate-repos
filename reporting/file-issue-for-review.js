@@ -13,7 +13,7 @@ const matter = require('gray-matter');
 
 const issueReportDir = "issue-reports";
 
-const MAX_PR_BY_RUN = 10;
+const MAX_PR_BY_RUN = 20;
 
 const repoOwner = 'w3c';
 const repoName = 'validate-repos';
