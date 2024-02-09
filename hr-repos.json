@@ -151,6 +151,7 @@
   "w3c/mediacapture-record",
   "w3c/mediacapture-region",
   "w3c/mediacapture-screen-share",
+  "w3c/mediacapture-screen-share-extensions",
   "w3c/mediacapture-transform",
   "w3c/mediacapture-viewport",
   "w3c/mediasession",
