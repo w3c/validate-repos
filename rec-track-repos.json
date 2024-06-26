@@ -108,6 +108,7 @@
   "w3c/mediasession",
   "w3c/merchant-validation",
   "w3c/Micropub",
+  "w3c/miniapp-addressing",
   "w3c/miniapp-lifecycle",
   "w3c/miniapp-manifest",
   "w3c/miniapp-packaging",
