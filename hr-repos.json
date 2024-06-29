@@ -68,6 +68,7 @@
   "w3c/deviceorientation",
   "w3c/did-core",
   "w3c/did-imp-guide",
+  "w3c/did-resolution",
   "w3c/did-rubric",
   "w3c/did-spec-registries",
   "w3c/did-test-suite",
