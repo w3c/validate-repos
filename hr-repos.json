@@ -25,6 +25,7 @@
   "immersive-web/webxr-layers-polyfill",
   "immersive-web/WebXR-WebGPU-Binding",
   "privacycg/CHIPS",
+  "w3c-fedid/FedCM",
   "w3c/a11y-discov-vocab",
   "w3c/accelerometer",
   "w3c/accname",

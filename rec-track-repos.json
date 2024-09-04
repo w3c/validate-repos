@@ -10,6 +10,7 @@
   "immersive-web/webxr-ar-module",
   "immersive-web/webxr-gamepads-module",
   "immersive-web/webxr-hand-input",
+  "w3c-fedid/FedCM",
   "w3c/accelerometer",
   "w3c/accname",
   "w3c/activitypub",
