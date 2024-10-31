@@ -192,6 +192,7 @@
   "w3c/payment-method-id",
   "w3c/payment-method-manifest",
   "w3c/payment-request",
+  "w3c/pdf-aam",
   "w3c/perf-security-privacy",
   "w3c/perf-timing-primer",
   "w3c/performance-timeline",
