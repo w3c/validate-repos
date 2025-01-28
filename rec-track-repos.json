@@ -45,7 +45,7 @@
   "w3c/device-memory",
   "w3c/device-posture",
   "w3c/deviceorientation",
-  "w3c/did-core",
+  "w3c/did",
   "w3c/did-resolution",
   "w3c/dpub-aam",
   "w3c/dpub-aria",
