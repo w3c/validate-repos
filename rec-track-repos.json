@@ -233,6 +233,7 @@
   "w3c/webappsec-credential-management",
   "w3c/webappsec-csp",
   "w3c/webappsec-cspee",
+  "w3c/webappsec-dbsc",
   "w3c/webappsec-fetch-metadata",
   "w3c/webappsec-mixed-content",
   "w3c/webappsec-passkey-endpoints",
