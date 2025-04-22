@@ -1,6 +1,6 @@
 ---
 Repo: 'https://github.com/w3c/wcag'
-Tracked: N/A
+Tracked: https://github.com/w3c/wcag/pull/4314
 Title: Ill-formed w3c.json file
 ---
 
