@@ -15,7 +15,7 @@
     "@octokit/plugin-throttling": "^3.5.2",
     "@octokit/rest": "^20.1.2",
     "gray-matter": "^4.0.3",
-    "node-w3capi": "^2.1.0",
+    "node-w3capi": "^2.2.0",
     "undici": "^5.28.5"
   },
   "devDependencies": {
