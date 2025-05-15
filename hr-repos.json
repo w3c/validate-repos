@@ -484,6 +484,7 @@
   "WICG/video-rvfc",
   "WICG/view-transitions",
   "WICG/visual-viewport",
+  "WICG/web_audio_playout",
   "WICG/web-app-launch",
   "WICG/web-otp",
   "WICG/WebApiDevice",
