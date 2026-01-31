@@ -406,6 +406,7 @@
   "WebAudio/web-audio-api",
   "WebAudio/web-midi-api",
   "WebAudio/web-speech-api",
+  "webmachinelearning/prompt-api",
   "webmachinelearning/translation-api",
   "webmachinelearning/webmachinelearning-ethics",
   "webmachinelearning/webnn",
