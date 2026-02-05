@@ -33,6 +33,7 @@
   "w3c/baggage",
   "w3c/battery",
   "w3c/beacon",
+  "w3c/cbor-ld",
   "w3c/cid",
   "w3c/clipboard-apis",
   "w3c/compute-pressure",
@@ -276,6 +277,7 @@
   "w3c/xaur",
   "w3c/xinclude",
   "w3c/xml-entities",
+  "w3c/yaml-ld",
   "WebAudio/web-audio-api",
   "WebAudio/web-midi-api",
   "webmachinelearning/webnn"
