@@ -99,7 +99,7 @@ function writeReport() {
   timestamp.textContent = `Report last updated on ${data.lastModified}`;
   report.appendChild(timestamp);
   const stats = document.createElement('p');
-  stats.textContent = `${data.repos.filter(r => r.owner.login === 'w3c' && !r.isArchived).length} active repos in the w3c github organization; overall, ${Object.values(data.groups).filter(g => g.type === 'working group').reduce((acc, g) => acc + g.repos.length, 0)} known repos associated with Working Groups, ${Object.values(data.groups).filter(g => g.type === 'community group').reduce((acc, g) => acc + g.repos.length, 0)} associated with Community Groups`;
+  stats.textContent = `${data.repos.filter(r => r.owner.login === 'w3c' && !r.isArchived).length} active repos in relevant github organizations; overall, ${Object.values(data.groups).filter(g => g.type === 'working group').reduce((acc, g) => acc + g.repos.length, 0)} known repos associated with Working Groups, ${Object.values(data.groups).filter(g => g.type === 'community group').reduce((acc, g) => acc + g.repos.length, 0)} associated with Community Groups`;
   report.appendChild(stats);
   const groups = data.groups;
   Object.keys(groups).sort((a, b) => groups[a].name.localeCompare(groups[b].name))
