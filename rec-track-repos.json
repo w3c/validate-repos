@@ -218,6 +218,7 @@
   "w3c/vc-di-bbs",
   "w3c/vc-di-ecdsa",
   "w3c/vc-di-eddsa",
+  "w3c/vc-dpp-bw",
   "w3c/vc-jose-cose",
   "w3c/vc-json-schema",
   "w3c/vc-jws-2020",
