@@ -411,6 +411,7 @@
   "webmachinelearning/prompt-api",
   "webmachinelearning/translation-api",
   "webmachinelearning/webmachinelearning-ethics",
+  "webmachinelearning/webmcp",
   "webmachinelearning/webnn",
   "WICG/aom",
   "WICG/attribution-reporting-api",
