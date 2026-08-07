@@ -569,7 +569,7 @@ describe('validateAshHooks', () => {
   it('no hooks', () => {
     const hooks = [];
     const errors = validateAshHooks(hooks);
-    assert.deepStrictEqual(errors, [['missingashnazghook', {}]]);
+    assert.deepStrictEqual(errors, [['missingashnazghook', null]]);
   });
 
   it('one hook', () => {
@@ -602,6 +602,6 @@ describe('validateAshHooks', () => {
       }
     }];
     const errors = validateAshHooks(hooks);
-    assert.deepStrictEqual(errors, [['duplicateashnazghooks', {}]]);
+    assert.deepStrictEqual(errors, [['duplicateashnazghooks', null]]);
   });
 });
