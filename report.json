@@ -9439,7 +9439,7 @@
       }
     ]
   },
-  "timestamp": "2026-08-22T00:28:54.162Z",
+  "timestamp": "2026-08-23T00:27:28.956Z",
   "repos": [
     {
       "id": "MDEwOlJlcG9zaXRvcnk4MTAyMTg2MA==",
@@ -215939,6 +215939,10 @@
       "type": "community group",
       "fullshortname": "cg/webmachinelearning",
       "repos": [
+        {
+          "name": "awesome-built-in-ai",
+          "fullName": "webmachinelearning/awesome-built-in-ai"
+        },
         {
           "name": "awesome-webmcp",
           "fullName": "webmachinelearning/awesome-webmcp"
