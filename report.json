@@ -3315,7 +3315,6 @@
       "w3c/pub-manifest",
       "w3c/pub-vocab",
       "w3c/publ_ack",
-      "w3c/publ-a11y-display-guide-localizations",
       "w3c/publ-a11y-extended-desc",
       "w3c/publ-bg",
       "w3c/publ-maintenance-wg-charter",
@@ -9439,7 +9438,7 @@
       }
     ]
   },
-  "timestamp": "2026-08-24T00:25:42.497Z",
+  "timestamp": "2026-08-25T00:26:20.178Z",
   "repos": [
     {
       "id": "MDEwOlJlcG9zaXRvcnk4MTAyMTg2MA==",
@@ -20993,6 +20992,10 @@
           "color": "6bc5c6"
         },
         {
+          "name": "s:dx-prof-1.0",
+          "color": "6bc5c6"
+        },
+        {
           "name": "s:epub-anno-10",
           "color": "6bc5c6"
         },
@@ -30292,6 +30295,10 @@
           "color": "a2eeef"
         },
         {
+          "name": "github_actions",
+          "color": "000000"
+        },
+        {
           "name": "ignore",
           "color": "6E06A0"
         },
@@ -38685,7 +38692,7 @@
         "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n"
       },
       "readme": {
-        "text": "![](w3c-no-bars.svg)\n\n# Data Shapes WG Repository\n\nThis repository is the working space of the [W3C's Data Shapes Working Group](https://www.w3.org/groups/wg/data-shapes/). \n\nThe WG is currently working on updated and new [SHACL](https://www.w3.org/TR/shacl/) recommendations, as per the [WG's Charter](https://www.w3.org/2024/12/data-shapes.html).\n\n## Deliverables:\n\n#### Phase 1, prioritised until July 2025.\n\n##### Public Working Drafts\n\n* [SHACL 1.2 Core](https://w3c.github.io/data-shapes/shacl12-core/)\n* [SHACL 1.2 SPARQL Extensions](https://w3c.github.io/data-shapes/shacl12-sparql/)\n\n##### Editor's draft\n\n* [SHACL 1.2 Node Expressions](https://w3c.github.io/data-shapes/shacl12-node-expr/)\n\n#### Phase 2, now in progress since July 2025:\n\n##### Editor's drafts\n\n* [SHACL 1.2 Overview](https://w3c.github.io/data-shapes/shacl12-overview/)\n* [SHACL 1.2 Rules](https://w3c.github.io/data-shapes/shacl12-rules/)\n* [SHACL 1.2 UI](https://w3c.github.io/data-shapes/shacl12-ui/)\n* [SHACL 1.2 Compact Syntax](https://w3c.github.io/data-shapes/shacl12-cs/)\n* [SHACL 1.2 Profiling](https://w3c.github.io/data-shapes/shacl12-profiling/)\n\nAll of the above specifications are drafts that are automatically rebuilt on pushes to this repository.\n\n#### Previous WG & Community Group Deliverables\n\n##### Recommendations\n\n* [SHACL](https://www.w3.org/TR/shacl/)\n\n##### WG Notes\n\n* [SHACL Use Cases and Requirements](https://www.w3.org/TR/shacl-ucr/)\n* [SHACL Advanced Features](https://www.w3.org/TR/shacl-af/)\n* [SHACL JavaScript Extensions](https://www.w3.org/TR/shacl-js/)\n\n##### Test Suites\n\n* [SHACL Test Suite and Implementation Report](https://w3c.github.io/data-shapes/data-shapes-test-suite/)\n\n##### Community Drafts\n\n* [SHACL Compact Syntax](https://w3c.github.io/shacl/shacl-compact-syntax/)\n\n## Agendas and other admin\n\nPlease look to the [admin directory in the agenda fork](https://github.com/w3c/data-shapes/tree/agenda/admin).\n\n## Contact & Involvement\n\nTo contact the working group, you can either:\n\n**Contact the WG directly**  \nVia the  [W3C's Data Shapes WG page](https://www.w3.org/groups/wg/data-shapes/).\n\n**Lodge Issues against WG documents**    \nUsing [this repository's Issue Tracker](https://github.com/w3c/data-shapes/issues)."
+        "text": "![](w3c-no-bars.svg)\n\n# Data Shapes WG Repository\n\nThis repository is the working space of the [W3C's Data Shapes Working Group](https://www.w3.org/groups/wg/data-shapes/). \n\nThe WG is currently working on updated and new [SHACL](https://www.w3.org/TR/shacl/) recommendations, as per the [WG's Charter](https://www.w3.org/2024/12/data-shapes.html).\n\n## Deliverables:\n\n#### Phase 1, prioritised until July 2025.\n\n##### Public Working Drafts\n\n* [SHACL 1.2 Core](https://w3c.github.io/data-shapes/shacl12-core/)\n* [SHACL 1.2 SPARQL Extensions](https://w3c.github.io/data-shapes/shacl12-sparql/)\n\n##### Editor's draft\n\n* [SHACL 1.2 Node Expressions](https://w3c.github.io/data-shapes/shacl12-node-expr/)\n\n#### Phase 2, now in progress since July 2025:\n\n##### Editor's drafts\n\n* [SHACL 1.2 Overview](https://w3c.github.io/data-shapes/shacl12-overview/)\n* [SHACL 1.2 UI](https://w3c.github.io/data-shapes/shacl12-ui/)\n* [SHACL 1.2 Compact Syntax](https://w3c.github.io/data-shapes/shacl12-cs/)\n* [SHACL 1.2 Profiling](https://w3c.github.io/data-shapes/shacl12-profiling/)\n* [SPARQL 1.2 RL](https://w3c.github.io/data-shapes/sparql12-rl/)\n\nAll of the above specifications are drafts that are automatically rebuilt on pushes to this repository.\n\n#### Previous WG & Community Group Deliverables\n\n##### Recommendations\n\n* [SHACL](https://www.w3.org/TR/shacl/)\n\n##### WG Notes\n\n* [SHACL Use Cases and Requirements](https://www.w3.org/TR/shacl-ucr/)\n* [SHACL Advanced Features](https://www.w3.org/TR/shacl-af/)\n* [SHACL JavaScript Extensions](https://www.w3.org/TR/shacl-js/)\n\n##### Test Suites\n\n* [SHACL Test Suite and Implementation Report](https://w3c.github.io/data-shapes/data-shapes-test-suite/)\n\n##### Community Drafts\n\n* [SHACL Compact Syntax](https://w3c.github.io/shacl/shacl-compact-syntax/)\n\n## Agendas and other admin\n\nPlease look to the [admin directory in the agenda fork](https://github.com/w3c/data-shapes/tree/agenda/admin).\n\n## Contact & Involvement\n\nTo contact the working group, you can either:\n\n**Contact the WG directly**  \nVia the  [W3C's Data Shapes WG page](https://www.w3.org/groups/wg/data-shapes/).\n\n**Lodge Issues against WG documents**    \nUsing [this repository's Issue Tracker](https://github.com/w3c/data-shapes/issues)."
       },
       "w3c": {
         "group": 73865,
@@ -58167,6 +58174,10 @@
         },
         {
           "name": "s:css-font",
+          "color": "6bc5c6"
+        },
+        {
+          "name": "s:css-font-loading",
           "color": "6bc5c6"
         },
         {
@@ -91298,96 +91309,6 @@
       }
     },
     {
-      "id": "R_kgDOOQX_Mg",
-      "name": "publ-a11y-display-guide-localizations",
-      "owner": {
-        "login": "w3c"
-      },
-      "isArchived": false,
-      "homepageUrl": "",
-      "description": "Localizations of the Accessibility Metadata Display Guide for Digital Publications",
-      "isPrivate": false,
-      "createdAt": "2025-03-28T17:37:26Z",
-      "labels": [
-        {
-          "name": "bug",
-          "color": "d73a4a"
-        },
-        {
-          "name": "documentation",
-          "color": "0075ca"
-        },
-        {
-          "name": "duplicate",
-          "color": "cfd3d7"
-        },
-        {
-          "name": "enhancement",
-          "color": "a2eeef"
-        },
-        {
-          "name": "good first issue",
-          "color": "7057ff"
-        },
-        {
-          "name": "help wanted",
-          "color": "008672"
-        },
-        {
-          "name": "invalid",
-          "color": "e4e669"
-        },
-        {
-          "name": "question",
-          "color": "d876e3"
-        },
-        {
-          "name": "wontfix",
-          "color": "ffffff"
-        }
-      ],
-      "defaultBranch": {
-        "name": "main"
-      },
-      "environments": {
-        "nodes": [
-          {
-            "name": "github-pages"
-          }
-        ]
-      },
-      "branchProtectionRules": {
-        "nodes": []
-      },
-      "w3cjson": {
-        "text": " {\n    \"group\":      100074\n,   \"contacts\":   [\"iherman\"]\n,   \"repo-type\" : \"article\"\n}\n"
-      },
-      "prpreviewjson": null,
-      "autoPublish": null,
-      "travis": null,
-      "contributing": {
-        "text": "# Publishing Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Software and Document License](http://www.w3.org/Consortium/Legal/copyright-software). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n"
-      },
-      "license": {
-        "text": "All documents in this Repository are licensed by contributors under the\n[W3C Software and Document License](http://www.w3.org/Consortium/Legal/copyright-software).\n"
-      },
-      "codeOfConduct": {
-        "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Conduct](https://www.w3.org/policies/code-of-conduct/).\n"
-      },
-      "readme": {
-        "text": "\n![W3C Logo](https://www.w3.org/Icons/w3c_home)\n\n# Localizations of the Accessibility Metadata Display Guide for Digital Publications\n\nThis repository hosts the localizations of the compact and descriptive display statements defined in the [Accessibility Metadata Display Guide for Digital Publications](https://w3c.github.io/cg-reports/publishingcg/CG-FINAL-epub-techniques-20250422/).\n\nA [localisation visualizer](https://w3c.github.io/publ-a11y-display-guide-localizations/visualizer/index.html) allow human browsing of the different translation packages. A dropdown menu allows to choose the localisation to be displayed.\n\n## Contributing to the Repository\n\nUse the standard fork, branch, and pull request workflow to propose changes to the specification. Please make branch names informative—by including the issue or bug number for example.\n\nEditorial changes that improve the readability of the spec or correct spelling or grammatical mistakes are welcome.\n\nPlease read [CONTRIBUTING.md](CONTRIBUTING.md), about licensing contributions.\n\nBecause\npersons and organizations with different levels of\ntechnicality must be able to contribute, we accept both\nraw files via Pull requests or proposals submitted through email.\n\n\n## Why are there different translations?\n\nAn ebook can be purchased in any country without limited\navailability or additional delivery costs.\nReaders want consistent display of accessibility\ninformation, and that’s the primary role of the display\nguide.\n\nThe wording proposed in this guide has been widely discussed\nby a large group representing different\nactors of the English-speaking geographies. It has been\nimproved after proof-of-concept implementations\nand reviewed by panels of testers. \n            \nDifferent countries or different target\naudience services may want to use specific language, and we\nhave provided flexibility in the guide to accommodate this\nwhile maintaining a high level of understanding and similar\nquality to help users in a country find comparable information\nbetween two bookstores or libraries in the same language\narea.\n\nSimply translating the strings is not enough; the subtle\nmeaning of the words and phrases of accessibility concepts\nmust be localized for maximum understanding. Therefore, we\nintend to provide a mechanism for the publishing community\nto provide translations that localizes the strings for\nequally effective communication in many languages.\n\n\nWith the rapidly evolving landscape of accessible ebooks\navailable, most concerned persons are discovering a new\nworld. To ensure the information is widely spread and\nunderstood, the implementation by local actors like\nlibraries serving persons with disabilities and other\nlocal actors in the fight to end the book famine for\nreaders with print disabilities is crucial and should be\nhighlighted.\n\nThe localization of the display guide is a good\nopportunity to make known the rich accessibility\nfeatures offered by modern formats like EPUB. In\naddition, having a local project scale to write an\nunderstandable vocabulary to describe such features is a\nprecious qualitative approach that will benefit every\nplayer in the value chain.\n\n## How to choose between localization files?\n\nThe first keys of each JSON files contains descriptive\ninformation, including:\n\n<ul>\n<li>Author, name of the organisation responsible for the\nestablishment and maintenance of this localization\n</li>\n<li>Language, a 4-letter identifier where the first two letters specify the language according to ISO 639-1, and the last two letters define a region or script as per ISO 3166-1 alpha-2.\n</li>\n<li>Variant, a one word free name to identify your work\n</li>\n<li>Audience describes the public. We recommend to use\nany vocabulary from the <a href=\"https://ns.editeur.org/onix/en/28/\">ONIX\nlist 28</a>. More than one audience can be\ninformed with a comma separating each.</li>\n<li>Description, a free field including a short\ndescription of how this localization was obtained\n</li>\n"
-      },
-      "w3c": {
-        "group": 100074,
-        "contacts": [
-          "iherman"
-        ],
-        "repo-type": [
-          "article"
-        ]
-      }
-    },
-    {
       "id": "R_kgDOQeg17g",
       "name": "publ-a11y-extended-desc",
       "owner": {
@@ -98936,6 +98857,10 @@
         {
           "name": "enhancement",
           "color": "84b6eb"
+        },
+        {
+          "name": "github_actions",
+          "color": "000000"
         },
         {
           "name": "help wanted",
@@ -112039,6 +111964,10 @@
         {
           "name": "event checks",
           "color": "a36e2f"
+        },
+        {
+          "name": "github_actions",
+          "color": "000000"
         },
         {
           "name": "good first issue",
@@ -125185,7 +125114,7 @@
         "text": "{\n    \"src_file\": \"index.html\",\n    \"type\": \"respec\"\n    }\n"
       },
       "autoPublish": {
-        "text": "# .github/workflows/auto-publish.yml\nname: CI\non:\n  pull_request: {}\n  push:\n    branches: [main]\njobs:\n  main:\n    name: Build, Validate and Deploy\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v3\n      - uses: w3c/spec-prod@v2\n        with:\n          TOOLCHAIN: respec\n          W3C_ECHIDNA_TOKEN: ${{ secrets.W3C_TR_TOKEN }}\n          W3C_WG_DECISION_URL: https://www.w3.org/2017/vc/WG/Meetings/Minutes/2023-04-12-vcwg#resolution1\n          W3C_BUILD_OVERRIDE: |\n             shortName: vc-di-ecdsa\n             specStatus: CRD\n"
+        "text": "# .github/workflows/auto-publish.yml\nname: CI\non:\n  pull_request: {}\n  push:\n    branches: [main]\njobs:\n  main:\n    name: Build, Validate and Deploy\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v3\n      - uses: w3c/spec-prod@v2\n        with:\n          TOOLCHAIN: respec\n          W3C_ECHIDNA_TOKEN: ${{ secrets.W3C_TR_TOKEN }}\n          W3C_WG_DECISION_URL: https://www.w3.org/2017/vc/WG/Meetings/Minutes/2023-04-12-vcwg#resolution1\n          W3C_BUILD_OVERRIDE: |\n             shortName: vc-di-ecdsa-1.1\n             specStatus: WD\n"
       },
       "travis": null,
       "contributing": {
@@ -125582,7 +125511,7 @@
         "text": "{\n    \"src_file\": \"index.html\",\n    \"type\": \"respec\"\n    }\n"
       },
       "autoPublish": {
-        "text": "# .github/workflows/auto-publish.yml\nname: CI\non:\n  pull_request: {}\n  push:\n    branches: [main]\njobs:\n  main:\n    name: Build, Validate and Deploy\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v3\n      - uses: w3c/spec-prod@v2\n        with:\n          TOOLCHAIN: respec\n          W3C_ECHIDNA_TOKEN: ${{ secrets.W3C_TR_TOKEN }}\n          W3C_WG_DECISION_URL: https://www.w3.org/2017/vc/WG/Meetings/Minutes/2023-04-12-vcwg#resolution1\n          W3C_BUILD_OVERRIDE: |\n             shortName: vc-di-eddsa\n             specStatus: CRD\n"
+        "text": "# .github/workflows/auto-publish.yml\nname: CI\non:\n  pull_request: {}\n  push:\n    branches: [main]\njobs:\n  main:\n    name: Build, Validate and Deploy\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v3\n      - uses: w3c/spec-prod@v2\n        with:\n          TOOLCHAIN: respec\n          W3C_ECHIDNA_TOKEN: ${{ secrets.W3C_TR_TOKEN }}\n          W3C_WG_DECISION_URL: https://www.w3.org/2017/vc/WG/Meetings/Minutes/2023-04-12-vcwg#resolution1\n          W3C_BUILD_OVERRIDE: |\n             shortName: vc-di-eddsa-1.1\n             specStatus: WD\n"
       },
       "travis": null,
       "contributing": {
@@ -185208,7 +185137,7 @@
         "text": "{\n    \"src_file\": \"index.bs\",\n    \"type\": \"bikeshed\",\n    \"params\": {\n        \"force\": 1\n    }\n}"
       },
       "autoPublish": {
-        "text": "name: Auto-publish\non:\n  pull_request: {}\n  push:\n    paths:\n      - index.bs\n    branches: [main]\n\njobs:\n  main:\n    name: Build, Validate and Deploy\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v7\n      - uses: w3c/spec-prod@v2\n        with:\n          GH_PAGES_BRANCH: gh-pages\n          TOOLCHAIN: bikeshed\n          VALIDATE_LINKS: false\n          BUILD_FAIL_ON: warning\n          W3C_WG_DECISION_URL: https://lists.w3.org/Archives/Public/public-webmachinelearning-wg/2021Jun/0011.html\n          W3C_ECHIDNA_TOKEN: ${{ secrets.ECHIDNA_TOKEN }}\n          W3C_BUILD_OVERRIDE: |\n            TR: https://www.w3.org/TR/webnn/\n            status: CRD\n      - name: WebNN - Lint Bikeshed Source and Generated HTML\n        id: webnn-lint\n        shell: bash\n        env:\n          BIKESHED_SOURCE: \"index.bs\"\n          GENERATED_HTML: \"index.bs.built.html\"\n        run: |\n          echo \"::group::Install Lint Tool Dependencies\"\n          cd tools\n          npm install\n          cd ..\n          echo \"::endgroup::\"\n          echo \"::group::Generate Static HTML\"\n          bikeshed --die-on=warning spec $BIKESHED_SOURCE $GENERATED_HTML\n          echo \"::endgroup::\"\n          echo \"::group::Run Lint Tool\"\n          node tools/lint.mjs --verbose --bikeshed $BIKESHED_SOURCE --html $GENERATED_HTML\n          echo \"::endgroup::\"\n"
+        "text": "name: Auto-publish\non:\n  pull_request: {}\n  push:\n    paths:\n      - index.bs\n    branches: [main]\n\njobs:\n  main:\n    name: Build, Validate and Deploy\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v7\n      - uses: w3c/spec-prod@v2.13.2\n        with:\n          GH_PAGES_BRANCH: gh-pages\n          TOOLCHAIN: bikeshed\n          VALIDATE_LINKS: false\n          BUILD_FAIL_ON: warning\n          W3C_WG_DECISION_URL: https://lists.w3.org/Archives/Public/public-webmachinelearning-wg/2021Jun/0011.html\n          W3C_ECHIDNA_TOKEN: ${{ secrets.ECHIDNA_TOKEN }}\n          W3C_BUILD_OVERRIDE: |\n            TR: https://www.w3.org/TR/webnn/\n            status: CRD\n      - name: WebNN - Lint Bikeshed Source and Generated HTML\n        id: webnn-lint\n        shell: bash\n        env:\n          BIKESHED_SOURCE: \"index.bs\"\n          GENERATED_HTML: \"index.bs.built.html\"\n        run: |\n          echo \"::group::Install Lint Tool Dependencies\"\n          cd tools\n          npm install\n          cd ..\n          echo \"::endgroup::\"\n          echo \"::group::Generate Static HTML\"\n          bikeshed --die-on=warning spec $BIKESHED_SOURCE $GENERATED_HTML\n          echo \"::endgroup::\"\n          echo \"::group::Run Lint Tool\"\n          node tools/lint.mjs --verbose --bikeshed $BIKESHED_SOURCE --html $GENERATED_HTML\n          echo \"::endgroup::\"\n"
       },
       "travis": null,
       "contributing": {
