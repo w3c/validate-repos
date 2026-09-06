@@ -9318,7 +9318,7 @@
       }
     ]
   },
-  "timestamp": "2026-09-05T00:32:45.476Z",
+  "timestamp": "2026-09-06T00:35:21.756Z",
   "repos": [
     {
       "id": "MDEwOlJlcG9zaXRvcnk4MTAyMTg2MA==",
@@ -124181,6 +124181,10 @@
           "color": "F9C9FF"
         },
         {
+          "name": "infrastructure",
+          "color": "d93f0b"
+        },
+        {
           "name": "maintenance",
           "color": "4D7410"
         },
@@ -124198,7 +124202,7 @@
         },
         {
           "name": "pending close",
-          "color": "95f4a8"
+          "color": "fbca04"
         },
         {
           "name": "PossibleErratum",
@@ -124206,7 +124210,7 @@
         },
         {
           "name": "pr exists",
-          "color": "11e0a2"
+          "color": "0e8a16"
         },
         {
           "name": "privacy-needs-resolution",
@@ -124222,7 +124226,7 @@
         },
         {
           "name": "ready for PR",
-          "color": "88CD1F"
+          "color": "0e8a16"
         },
         {
           "name": "review-blocker",
@@ -127015,6 +127019,10 @@
         {
           "name": "discuss",
           "color": "5319e7"
+        },
+        {
+          "name": "DO NOT MERGE",
+          "color": "B60205"
         },
         {
           "name": "documentation",
