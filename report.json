@@ -330,10 +330,6 @@
         "error": "repo-type (not rec-track)"
       },
       {
-        "repo": "w3c/voiceinteraction",
-        "error": "repo-type (not rec-track)"
-      },
-      {
         "repo": "w3c/web-annotation",
         "error": "repo-type (rec-track)"
       }
@@ -3475,7 +3471,6 @@
       "w3c/vcalm-test-suite",
       "w3c/vibration",
       "w3c/virtual-keyboard",
-      "w3c/voiceinteraction",
       "w3c/vsso",
       "w3c/w3c-api",
       "w3c/w3c-china-web-forum-202306",
@@ -3524,7 +3519,6 @@
       "w3c/WCAG21-zh",
       "w3c/wcag2ict",
       "w3c/wcag3",
-      "w3c/web-advertising",
       "w3c/web-annotation",
       "w3c/web-annotation-tests",
       "w3c/web-based-payment-handler",
@@ -6359,7 +6353,6 @@
       "w3c/transition-issues-bot",
       "w3c/tv-ggie",
       "w3c/tweetie",
-      "w3c/voiceinteraction",
       "w3c/w3c-track-2019",
       "w3c/w3c-website-redesign-html",
       "w3c/wai-authoring-tools-list",
@@ -9318,7 +9311,7 @@
       }
     ]
   },
-  "timestamp": "2026-09-07T00:33:45.170Z",
+  "timestamp": "2026-09-08T00:33:26.090Z",
   "repos": [
     {
       "id": "MDEwOlJlcG9zaXRvcnk4MTAyMTg2MA==",
@@ -89669,6 +89662,10 @@
           "color": "d73a4a"
         },
         {
+          "name": "CfC",
+          "color": "eccf78"
+        },
+        {
           "name": "documentation",
           "color": "0075ca"
         },
@@ -91047,6 +91044,10 @@
       "isPrivate": false,
       "createdAt": "2025-11-28T04:50:16Z",
       "labels": [
+        {
+          "name": "APA Feedback",
+          "color": "aaaaaa"
+        },
         {
           "name": "bug",
           "color": "d73a4a"
@@ -105892,6 +105893,10 @@
         {
           "name": "bug",
           "color": "d73a4a"
+        },
+        {
+          "name": "charter",
+          "color": "ffd61a"
         },
         {
           "name": "documentation",
@@ -128642,100 +128647,6 @@
       }
     },
     {
-      "id": "MDEwOlJlcG9zaXRvcnk4OTk2MDkxOQ==",
-      "name": "voiceinteraction",
-      "owner": {
-        "login": "w3c"
-      },
-      "isArchived": false,
-      "homepageUrl": "https://www.w3.org/community/voiceinteraction/",
-      "description": "publications of the W3C Voice Interaction Community Group",
-      "isPrivate": false,
-      "createdAt": "2017-05-01T20:37:40Z",
-      "labels": [
-        {
-          "name": "architecture document",
-          "color": "B3322D"
-        },
-        {
-          "name": "comment",
-          "color": "1d76db"
-        },
-        {
-          "name": "duplicate",
-          "color": "cccccc"
-        },
-        {
-          "name": "interfaces document",
-          "color": "fbca04"
-        },
-        {
-          "name": "invalid",
-          "color": "e6e6e6"
-        },
-        {
-          "name": "JROSI",
-          "color": "5319e7"
-        },
-        {
-          "name": "postpone",
-          "color": "c5def5"
-        },
-        {
-          "name": "question",
-          "color": "cc317c"
-        },
-        {
-          "name": "reference implementation",
-          "color": "fef2c0"
-        },
-        {
-          "name": "wontfix",
-          "color": "ffffff"
-        }
-      ],
-      "defaultBranch": {
-        "name": "master"
-      },
-      "environments": {
-        "nodes": [
-          {
-            "name": "github-pages"
-          }
-        ]
-      },
-      "branchProtectionRules": {
-        "nodes": []
-      },
-      "w3cjson": {
-        "text": " {\n    \"group\":      [\"91376\"]\n,   \"contacts\":   [\"ianbjacobs\"]\n,   \"shortName\":  \"voiceinteraction\"\n}"
-      },
-      "prpreviewjson": null,
-      "autoPublish": null,
-      "travis": null,
-      "contributing": {
-        "text": "# Voice Interaction Community Group\n\nThis repository is being used for work in the W3C Voice Interaction Community Group, governed by the [W3C Community License\nAgreement (CLA)](http://www.w3.org/community/about/agreements/cla/). To make substantive contributions,\nyou must join the CG.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n"
-      },
-      "license": {
-        "text": "All Reports in this Repository are licensed by Contributors\nunder the\n[W3C Software and Document License](http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document).\n\nContributions to Specifications are made under the\n[W3C CLA](https://www.w3.org/community/about/agreements/cla/).\n\nContributions to Test Suites are made under the\n[W3C 3-clause BSD License](https://www.w3.org/Consortium/Legal/2008/03-bsd-license.html)\n\n"
-      },
-      "codeOfConduct": {
-        "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Conduct](https://www.w3.org/policies/code-of-conduct/).\n"
-      },
-      "readme": {
-        "text": "\r\n# VOICE INTERACTION COMMUNITY GROUP\r\n\r\nThis is the repository of the [Voice Interaction Community Group](https://www.w3.org/community/voiceinteraction/).\r\n\r\nThis repository contains the reports published by the group\r\n\r\n## JSON Representation of Semantic Information\r\n\r\n- Version 1.0: <https://w3c.github.io/voiceinteraction/voice%20interaction%20drafts/emmaJSON/emmaJSON.htm>\r\n\r\n## Intelligent Personal Assistant Architecture\r\n\r\n### Architecture Requirements for Intelligent Personal Assistants\r\n\r\n- Version 1.0: <https://w3c.github.io/voiceinteraction/voice%20interaction%20drafts/paRequirements/paRequirements.htm>\r\n\r\n### Architecture and Potential for Standardization Version\r\n\r\n- Version 1.3 (the one we’re actively working on): <https://w3c.github.io/voiceinteraction/voice%20interaction%20drafts/paArchitecture/paArchitecture-1-3.htm>\r\n- Version 1.2: <https://w3c.github.io/voiceinteraction/voice%20interaction%20drafts/paArchitecture/paArchitecture-1-2.htm>\r\n- Version 1.1: <https://w3c.github.io/voiceinteraction/voice%20interaction%20drafts/paArchitecture/paArchitecture-1-1.htm>\r\n- Version 1.0: <https://w3c.github.io/voiceinteraction/voice%20interaction%20drafts/paArchitecture/paArchitecture.htm>\r\n\r\n### Intelligent Personal Assistant Interfaces\r\n\r\n- Version 1.0 (the one we’re actively working on): <https://w3c.github.io/voiceinteraction/voice%20interaction%20drafts/paInterfaces/paInterfaces.htm>\r\n\r\n# Contributing to the Repository\r\n\r\nUse the standard fork, branch, and pull request workflow to propose changes to the specifications. Please make branch names informative — by including the issue or bug number for example.\r\n\r\nEditorial changes that improve the readability of the spec or correct spelling or grammatical mistakes are welcome.\r\n\r\n\r\n# Code of Conduct\r\n\r\nW3C functions under a [code of conduct](https://www.w3.org/Consortium/cepc/).\r\n\r\n# Source Code\r\nReference implementation of an [IPA framework](source/SOURCE.md)\r\n"
-      },
-      "w3c": {
-        "group": [
-          "91376"
-        ],
-        "contacts": [
-          "ianbjacobs"
-        ],
-        "shortName": "voiceinteraction"
-      }
-    },
-    {
       "id": "MDEwOlJlcG9zaXRvcnk2MDA4OTg2Nw==",
       "name": "vr-workshop",
       "owner": {
@@ -145421,108 +145332,6 @@
       },
       "readme": {
         "text": "# Repository Moved #\nThis repository has moved; its new home is\nunder\n[web-platform-tests](https://github.com/w3c/web-platform-tests/tree/master/tools/webdriver). Please\nuse that repository for future pull requests and issues.\n"
-      }
-    },
-    {
-      "id": "MDEwOlJlcG9zaXRvcnkxMzQ3NzE5OTU=",
-      "name": "web-advertising",
-      "owner": {
-        "login": "w3c"
-      },
-      "isArchived": false,
-      "homepageUrl": "https://w3c.github.io/web-advertising/dashboard/",
-      "description": "Web Advertising CG - https://www.w3.org/community/web-adv/",
-      "isPrivate": false,
-      "createdAt": "2018-05-24T21:45:49Z",
-      "labels": [
-        {
-          "name": "agenda+",
-          "color": "219b00"
-        },
-        {
-          "name": "agenda+F2F",
-          "color": "c2e0c6"
-        },
-        {
-          "name": "bug",
-          "color": "d73a4a"
-        },
-        {
-          "name": "duplicate",
-          "color": "cfd3d7"
-        },
-        {
-          "name": "enhancement",
-          "color": "a2eeef"
-        },
-        {
-          "name": "good first issue",
-          "color": "7057ff"
-        },
-        {
-          "name": "help wanted",
-          "color": "008672"
-        },
-        {
-          "name": "info",
-          "color": "f9c5c0"
-        },
-        {
-          "name": "invalid",
-          "color": "e4e669"
-        },
-        {
-          "name": "question",
-          "color": "d876e3"
-        },
-        {
-          "name": "use cases",
-          "color": "d87c0a"
-        },
-        {
-          "name": "wontfix",
-          "color": "ffffff"
-        }
-      ],
-      "defaultBranch": {
-        "name": "main"
-      },
-      "environments": {
-        "nodes": [
-          {
-            "name": "github-pages"
-          }
-        ]
-      },
-      "branchProtectionRules": {
-        "nodes": []
-      },
-      "w3cjson": {
-        "text": " {\n    \"group\":      103226\n,   \"contacts\":   [\"wseltzer\"]\n,   \"repo-type\":  \"others\"\n}\n\n"
-      },
-      "prpreviewjson": null,
-      "autoPublish": null,
-      "travis": null,
-      "contributing": {
-        "text": "# Improving Web Advertising Business Group\n\nThis repository is being used for work in the W3C Improving Web Advertising Business Group, governed by the [W3C Community License Agreement (CLA)](https://www.w3.org/community/about/agreements/cla/). To make substantive contributions, you must join the CG. \n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
-      },
-      "license": {
-        "text": "All Reports in this Repository are licensed by Contributors\nunder the \n[W3C Software and Document License](https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document).  \n\nContributions to Specifications are made under the\n[W3C CLA](https://www.w3.org/community/about/agreements/cla/).\n\nContributions to Test Suites are made under the\n[W3C 3-clause BSD License](https://www.w3.org/Consortium/Legal/2008/03-bsd-license.html)\n\n"
-      },
-      "codeOfConduct": {
-        "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Conduct](https://www.w3.org/policies/code-of-conduct/).\n"
-      },
-      "readme": {
-        "text": "# [Web Advertising Community Group](https://www.w3.org/community/web-adv) repository\n\nRaise issues, add drafts. As you add a document, feel free to add a PR for its description to the README.\n\n[Dashboard](https://w3c.github.io/web-advertising/dashboard/)\n\n# Introductory and Summary Material\n\n* [Advertising Technology Use Cases](support_for_advertising_use_cases.md): \"Use Cases\" Tabulation of common AdTech use cases and the proposals or browsers supporting them\n* [Overview of Online Advertising & Marketing](advertising101.md), an overview of common business use cases for digital advertising.\n* [Participants in Online Advertising](OnlineAdvertisingParticipants.md) \"Hello Ads,\" an introduction to the online advertising ecosystem.\n* [Common User Flows](common-user-flows-in-web-advertising.md): Example user experiences and the parties involved.\n* [Understanding Privacy Advocates](understanding-privacy-advocates.md): a set of readings to help understand the position of privacy and user advocates to help address them in our proposals.\n\n# Testing Opportunities\n\n* [FLoC Origin Trial](https://developer.chrome.com/origintrials/#/view_trial/213920982300098561)\n* [Eyeo FLoC-style Browser Extension](https://crumbs.org/)\n* [FLoC Simulator](https://github.com/shigeki/floc_simulator)\n* [Magnite FLEDGE Polyfill](https://github.com/MagniteEngineering/fledge.polyfill)\n* [Criteo Privacy Preserving ML with Data](https://competitions.codalab.org/competitions/31485)\n* [Google Ads Privacy Tests](https://github.com/google/ads-privacy/tree/master/experiments)\n\n# Ideas and Proposals\n\n* [Transparency via a Machine-readable Server Identity and Purpose Descriptor](serverdeclaration.md)\n* [Privacy protecting metrics for web audience measurement](admetrics.md)\n* [Cross-Browser Anonymous Conversion Reporting](cross-browser-anonymous-conversion-reporting.md)\n* [Enabling browsers that belong to the same person to discover one another](enabling-browsers-that-belong-to-the-same-person-to-discover-one-another.md)\n* [Browser API for Private Lift Measurement - Conceptual Overview](private-lift-measurement-conceptual-overview.md)\n  * [Browser API for Private Lift Measurement - First Party](private-lift-measurement-first-party.md)\n  * [Browser API for Private Lift Measurement - Third Party](private-lift-measurement-third-party.md)\n* [Real-Time Bidding Use Case](rtb-use-case.md)\n* [Threat modeling for Cross-Browser Anonymous Conversion Reporting](threat-modeling-for-cross-browser-anonymous-conversion-reporting.md)\n* [PETREL](PETREL.md)\n* [Conversion Filters](conversion-filters.md)\n* [Privacy Preserving Lookalike Targeting](privacy_preserving_lookalike_audience_targeting.md)\n* [Self-Review Questionnaire: Interoperability, Choice, Accessibility and Accountability](interoperability-choice-accessibility-accountability-questionairre.md)\n* [Frequency Capping and Frequency Optimization](frequency-capping-and-optimization.md)\n* [Privacy Preserving Multi-Channel Attribution](privacy-preserving-multi-channel-attribution.md)\n* [Proposed Success Criteria](success-criteria.md), this document defines success criteria to consider when evaluating proposals which impact web advertising.\n\n# Ideas and Proposals (links outside this repo)\n* [Private fraud prevention](https://github.com/siyengar/private-fraud-prevention)\n* [Conversion measurement API](https://github.com/WICG/conversion-measurement-api)\n* [Ad click attribution](https://github.com/WICG/ad-click-attribution)\n* [Trust token API](https://github.com/WICG/trust-token-api)\n* [Tracking prevention policy](https://webkit.org/tracking-prevention-policy/)\n* [Privacy budget](https://github.com/bslassey/privacy-budget)\n* [First party sets](https://github.com/privacycg/first-party-sets)\n* [Privacy considerations](https://w3c.github.io/privacy-considerations/)\n* [Aggregate reporting API](https://github.com/csharrison/aggregate-reporting-api)\n* [IP Blindness](https://github.com/bslassey/ip-blindness/)\n* [FLoC: Federated Learning of Cohorts](https://github.com/jkarlin/floc)\n* [PIGIN: Private Interest Groups, Including Noise](https://github.com/michaelkleber/pigin) (deprecated in favor of TURTLEDOVE)\n* [TURTLEDOVE](https://github.com/WICG/turtledove)\n* [Product-level TURTLEDOVE](https://github.com/WICG/turtledove/blob/master/PRODUCT_LEVEL.md) (extension feasible for TURTLEDOVE & SPARROW)\n* [Outcome-based TURTLEDOVE](https://github.com/WICG/turtledove/blob/master/OUTCOME_BASED.md) (extension introducing in Turtledove outcome-based approach - monitor and validate bidding outcomes, not inputs)\n* [TURTLEDOVE-js demo](https://github.com/dervan/turtledove-js) (demo implementation of TURTLEDOVE - based on available technologies)\n* [isLoggedIn](https://github.com/WebKit/explainers/tree/main/IsLoggedIn)\n* [SPARROW](https://github.com/WICG/sparrow)\n* [Gatekeeper](https://github.com/MagniteEngineering/Gatekeeper)\n* [Proprietary Cohorts](https://github.com/MagniteEngineering/ProprietaryCohorts)\n* [Fenced Frame](https://github.com/shivanigithub/fenced-frame/)\n* [TERN](https://github.com/WICG/turtledove/blob/master/TERN.md) (TURTLEDOVE Enhancements with Reduced Networking)\n* [PARRROT](https://github.com/prebid/identity-gatekeeper/blob/master/proposals/PARRROT.md) (PARRROT: The Publisher Auction Responsibility Retention Revision of TurtleDove)\n* [PELICAN](https://github.com/neustar/pelican) (Private Learning and Inference for Causal Attribution)\n* [PUFFIN](https://github.com/dmarti/PUFFIN) (Personal User Floors For Impression Negotiations)\n* [SPURFOWL](https://github.com/AdRoll/privacy/blob/main/SPURFOWL.md) (Sandboxed Private User Reporting Functions Operating Within Limits) and other [NextRoll proposals](https://github.com/AdRoll/privacy) including MURRE.\n* [TEETAR](https://github.com/criteo/privacy/blob/main/TEETAR/README.md)(TEETAR: Testing Environment Enabling Truthful and Actionable Results)\n* [FLEDGE](https://github.com/WICG/turtledove/blob/master/FLEDGE.md), the collection of proposals in the greater TURTLEDOVE idea space that Chrome plans to implement in 2021.\n* [SWAN](https://github.com/1plusX/swan) Storage With Access Negotiation (SWAN)\n* [SPECTACLE](https://gitlab.com/eyeo/lab/spectacle/-/blob/master/README.md) Sensible Privacy Enablement by Clustering Targeting Attributes in CLiEnt  and [Crumbs](https://crumbs.org/)\n* [PARAKEET](https://github.com/microsoft/privacy-preserving-ads/blob/main/Parakeet.md) \"Private and Anonymized Requests for Ads that Keep Efficacy and Enhance Transparency\"\n* [SandPiper](https://github.com/carbondmp/sandpiper) \"a privacy preserving method to define a secure context that allows data storage amongst a network of certified partners\"\n* [Kitten Cluster](https://github.com/carbondmp/Kitten_Cluster) \"Knitting Interconnected Technical Tenants Enumerating Nonconformities Coincidedly Labeling Unrelated Standards Towards Effective Remediation\"\n* [GARUDA](https://darobin.github.io/garuda/) \"Governance of Ad Requests by a Union of Diverse Actors\" — This is a proposed governance model to make the trusted server (as found in other proposals)\n  trusted without relying on technical mechanisms that may not exist at this time.\n* [Shared Storage](https://github.com/pythagoraskitty/shared-storage) Shared Storage API\n* [SUSHI](https://github.com/privacycg/proposals/issues/27) Suggested and User-Specified Hierarchical Interests\n* [TAG Privacy Principles Working Document](https://w3ctag.github.io/privacy-principles/) The TAG working document on stating privacy principles (this is not yet a finalized document) \n* [Self-Review Questionnaire: Security and Privacy](https://www.w3.org/TR/security-privacy-questionnaire/) This document contains a set of questions to be used when evaluating the security and privacy implications of web platform technologies.\n\n"
-      },
-      "w3c": {
-        "group": 103226,
-        "contacts": [
-          "wseltzer"
-        ],
-        "repo-type": [
-          "others"
-        ]
       }
     },
     {
@@ -210876,7 +210685,7 @@
       },
       "type": "working group",
       "start-date": "1997-10-06",
-      "end-date": "2026-08-28",
+      "end-date": "2026-10-28",
       "fullshortname": "wg/ag",
       "repos": [
         {
@@ -214416,47 +214225,6 @@
         }
       ]
     },
-    "91376": {
-      "id": 91376,
-      "name": "Voice Interaction Community Group",
-      "is_closed": false,
-      "creation-date": "2016-06-07",
-      "description": "Existing W3C voice interaction standards such as VoiceXML are based on use cases centered around telephony-based voice systems. The typical interaction style that these standards support is system-initiated directed dialog using grammars to constrain the speech recognizer. In recent years, interaction with voice applications has become much more flexible, with a user-initiated dialog style and significantly fewer constraints on spoken input. \r\n\r\nMany of these new applications take the form of \"virtual assistants\". These include general-purpose assistants (for example, Siri, Cortana, Google Now and Alexa) as well as virtual assistants with specialized domain expertise. The proposed Community Group will collect new use cases for voice interaction, develop requirements for applications such as virtual assistants and explore areas for possible standardization, possibly producing specifications if appropriate. Depending on interest, this exploration could include such topics as (1) discovery of virtual assistants with specific expertise, for example a way to find a virtual assistant that can supply weather information (2) standard formats for statistical language models for speech recognizers (3) standard representations for references to common concepts such as time (4) interoperability for conversational interfaces and (5) work on dialogue management or  ‘workflow' languages . New functionality for existing voice standards can also be a topic of discussion.\r\nSpeech application developers and voice user interface designers should be particularly interested in this group.",
-      "shortname": "voiceinteraction",
-      "spec-publisher": true,
-      "discr": "w3cgroup",
-      "_links": {
-        "homepage": {
-          "href": "https://www.w3.org/community/voiceinteraction/"
-        },
-        "users": {
-          "href": "https://api.w3.org/groups/cg/voiceinteraction/users"
-        },
-        "services": {
-          "href": "https://api.w3.org/groups/cg/voiceinteraction/services"
-        },
-        "chairs": {
-          "href": "https://api.w3.org/groups/cg/voiceinteraction/chairs"
-        },
-        "join": {
-          "href": "https://www.w3.org/community/voiceinteraction/join"
-        },
-        "participations": {
-          "href": "https://api.w3.org/groups/cg/voiceinteraction/participations"
-        },
-        "self": {
-          "href": "https://api.w3.org/groups/cg/voiceinteraction"
-        }
-      },
-      "type": "community group",
-      "fullshortname": "cg/voiceinteraction",
-      "repos": [
-        {
-          "name": "voiceinteraction",
-          "fullName": "w3c/voiceinteraction"
-        }
-      ]
-    },
     "95969": {
       "id": 95969,
       "name": "Web of Things Working Group",
@@ -215112,47 +214880,6 @@
         {
           "name": "wasm-wg",
           "fullName": "w3c/wasm-wg"
-        }
-      ]
-    },
-    "103226": {
-      "id": 103226,
-      "name": "Improving Web Advertising Community Group",
-      "is_closed": false,
-      "creation-date": "2017-11-07",
-      "description": "The mission of the Improving Web Advertising Community Group is to identify areas where standards and changes in the Web itself can improve the ecosystem and experience for users, advertisers, publishers, distributors, ad networks, agencies and others, and to oversee liaison with existing Working Groups and to create new Working Groups as needed",
-      "shortname": "web-adv",
-      "spec-publisher": true,
-      "discr": "w3cgroup",
-      "_links": {
-        "homepage": {
-          "href": "https://www.w3.org/community/web-adv/"
-        },
-        "users": {
-          "href": "https://api.w3.org/groups/cg/web-adv/users"
-        },
-        "services": {
-          "href": "https://api.w3.org/groups/cg/web-adv/services"
-        },
-        "chairs": {
-          "href": "https://api.w3.org/groups/cg/web-adv/chairs"
-        },
-        "join": {
-          "href": "https://www.w3.org/community/web-adv/join"
-        },
-        "participations": {
-          "href": "https://api.w3.org/groups/cg/web-adv/participations"
-        },
-        "self": {
-          "href": "https://api.w3.org/groups/cg/web-adv"
-        }
-      },
-      "type": "community group",
-      "fullshortname": "cg/web-adv",
-      "repos": [
-        {
-          "name": "web-advertising",
-          "fullName": "w3c/web-advertising"
         }
       ]
     },
@@ -217557,7 +217284,7 @@
       },
       "type": "working group",
       "start-date": "2024-09-09",
-      "end-date": "2026-09-08",
+      "end-date": "2027-01-08",
       "fullshortname": "wg/lws",
       "repos": [
         {
