@@ -3260,7 +3260,6 @@
       "w3c/publishing",
       "w3c/pulse-snapshots",
       "w3c/push-api",
-      "w3c/PWETF",
       "w3c/pwpub",
       "w3c/py-http-handler",
       "w3c/qt3tests",
@@ -9311,7 +9310,7 @@
       }
     ]
   },
-  "timestamp": "2026-09-08T00:33:26.090Z",
+  "timestamp": "2026-09-09T00:32:57.004Z",
   "repos": [
     {
       "id": "MDEwOlJlcG9zaXRvcnk4MTAyMTg2MA==",
@@ -30791,6 +30790,10 @@
           "color": "ea7472"
         },
         {
+          "name": "assigned",
+          "color": "c5490b"
+        },
+        {
           "name": "bug",
           "color": "d73a4a"
         },
@@ -30817,6 +30820,10 @@
         {
           "name": "enhancement",
           "color": "a2eeef"
+        },
+        {
+          "name": "external",
+          "color": "aaaaaa"
         },
         {
           "name": "good first issue",
@@ -30865,6 +30872,10 @@
         {
           "name": "question",
           "color": "d876e3"
+        },
+        {
+          "name": "ready for PR",
+          "color": "aaaaaa"
         },
         {
           "name": "security-needs-resolution",
@@ -48098,7 +48109,7 @@
         "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n"
       },
       "readme": {
-        "text": "![W3C Logo](https://www.w3.org/Icons/w3c_home)\n\n# Test repository for the EPUB 3 specifications\n\nThis repository contains tests to validate the implementability of the W3C's EPUB 3 specifications, specifically core\n[EPUB 3](https://www.w3.org/TR/epub/) (the spec for the EPUB format itself) and\n[EPUB Reading Systems 3](https://www.w3.org/TR/epub-rs/) (the spec for applications that read EPUB files). Our\nobjective is to test every normative statement (that is, every\n[`MUST` or `SHOULD` or `MAY`](https://datatracker.ietf.org/doc/html/bcp14), etc.).\n\nThe [test reports](https://w3c.github.io/epub-tests/) describe all the tests, including\n[implementation results](https://w3c.github.io/epub-tests/results) and\n[how to contribute](https://w3c.github.io/epub-tests/contributing).\n\nThe current, tested EPUB 3 version is [EPUB 3.4](https://www.w3.org/TR/epub-overview-34). Because this version is backward compatible with earlier versions, most of these tests are also valid for earlier versions. Each test is assigned a `version` value, denoting the EPUB revision where the test has been added in as shown on the [test table](https://w3c.github.io/epub-tests/)\n\nNote that the current setup is based on release 3.4 of the EPUB 3 specification. See the separate [NewVersion.md](generate/NewVersion.md) file for the steps to follow when updating the repository for a new version of the EPUB 3 specification.\n\n## How to run tests for EPUB \n\nRunning tests mean loading each test as a separate EPUB Publication, and checking whether the reading systems fulfills the requirement of that specific test. Each test outlines the pass or fail criteria for the test. The results are collected in an implementation report file and uploaded to the test repository.\n\nTo make the running of the tests easier, a [test catalogue file](https://w3c.github.io/epub-tests/opds/opds.json) is generated using the [OPDS](https://drafts.opds.io/opds-2.0.html) format. Several reading systems understand this catalogue format, and can upload the full test suite easily.\n\nAlternatively, the test repository can be forked, and downloaded to the tester's machine. To make the testing step easier, there is a `generateEpubs.sh` script in the `tests` folder of repository that will generate an epub version of each test. To fork this repository, go to the \"Fork\" menu at the top of this screen. To create a local copy of the files, download the ZIP file for this repository from the \"Code\" menu at the top of this page.\n\n### Generating the tests\n\nAll of the test files are located in the `tests/` folder. Using Terminal/your preferred command line tool, go to your local version of the repository, or the ZIP file location, and open that folder: \n\n`cd [FOLDER]/epub-tests/tests/`\n\nTo generate the tests, run the `generateEpubs.sh` script file:\n\n`sh generateEpubs.sh`\n\nThe script will run and the `.epub` files will be added to the `tests/` folder. You can then take those files and load them to your reading application or servers.\n\n### The test report\n\nSave a copy of the template file: [xx-template.json](https://w3c.github.io/epub-tests/reports/xx-template.json), change the file name to reflect the reading system and platform being tested (if multiple are being tested). \n\n`acme-ios.json`\n\nOpen the file in any text editor application and fill in the reporting fields: \n\n- `name`: The name of the reading system.\n- `variant` (optional): The name or properties of the reading system variant. Typical values may be Android, iOS, or Web, if one implementation (i.e., sharing the same name value) has specific versions running in those environments. In addition to the properties of the reading system, testers may also include information on how the tests were run, for example, if a screen reader was used with the reading system.\n- `ref` (optional): A URL that creates a link on the name of the reading system in the implementation report.\n- `tested_by` (optional): Can be `\"implementer\"` or `\"third-party\"`, this field is to help track whether the test results were provided by the platform or a third-party tester.\n- `tests`: An object with the list of the test results. Each key is a test's unique identifier (its `dc:identifier`) with a value of `true`, `false`, `\"n/a\"`, or `null`. Use `true` for a test that passes, `false` for a test that fails, `\"n/a\"` for a test is not applicable. A test would have a result of `null` if it is not yet performed. If a test is not listed its value is considered to be null. The implementation report will show a value of \"?\" for null, indicating that the implementation has not run the test.\n\nHere is an example:\n\n```json\n{\n    \"name\"  : \"ACME Books\",\n    \"ref\"   : \"https://www.example.org/acme\",\n    \"variant\" : \"iOS, v1.0\",\n    \"tests\" : {\n        \"pub-cmt-gif\": true,\n        \"pub-cmt-jpeg\": true,\n        \"pkg-dir_rtl-root-ltr\": false,\n        \"pkg-dir_rtl-root-unset\": true,\n        \"pkg-dir_unset-root-rtl\": false,\n        \"pkg-dir_unset-root-unset\": true,\n        \"pkg-dir-auto_root-rtl\": null,\n        \"pkg-dir-auto_root-unset\": false,\n        \"pkg-linked-records\": \"n/a\"\n    }\n}\n```\n\nThe test report template will list all of the available tests, with the default value set to `null`.\n\n### Running the tests and completing the report\n\nOnce the test files are loaded on your reading system, running the tests is simple. Open each file, where the test scenario will be on the first or second page, explaining the condition in which the test passes. In most cases, the test is within the EPUB itself, however there are some tests related to the presentation of metadata such as the title or author, the test will inform you of what to look for.\n\nFor each test, there are four possible values to give in the JSON:\n\n- `null`: the test has not been run\n- `true`: the test passes according to the criteria of the test \n- `false`: the test fails according to the criteria of the test\n- `\"n/a\"`: the test does not apply to your reading system (the feature is not implemented or cannot be supported by the reading system, such as audio playback for reading systems without audio support) [NOTE: the quotes around \"n/a\" are required formatting]\n\nComplete as many tests for as many platforms as you can!\n\n### Submitting the test results\n\nIf you are not familiar with GitHub or creating PRs (pull requests), you are welcome to submit your test reports by [opening a Test Results Submission issue](https://github.com/w3c/epub-tests/issues/new/choose) on the repository and attaching the reports, or emailing the `.json` files to [group-pm-wg-chairs@w3.org](mailto:group-pm-wg-chairs@w3.org).\n\nIf you have forked this repository, you can create a PR with the test results. All test results files should be added to the `results/` folder and follow the naming conventions outlined in [The test report](#the-test-report) section of this document.\n\n## Frequently Asked Questions (FAQs)\n\n- **What if I have more than one reading application?**\n  - Many platforms have multiple reading applications and we understand running tests on all of them might be challenging. The preference would be to have a complete test suite for all platforms, but if that is not possible, we'd request testing either your most used platforms, or if your applications share a common rendering engine or several engines, focus on testing the most representative platforms for those engines.\n- **I submitted test results for EPUB 3.3 and many of these tests seem the same, do I need to do them again?**\n  - Many of the tests are similar or unchanged from EPUB 3.3, however it has been 3 years since we tested EPUB 3.3 and it's very likely your platforms or the underlying systems have changed, so testing again is recommended to ensure the most accurate results. These results are used not only by W3C to confirm the standard's implementation, but by industry to understand the support levels for different EPUB features.\n- **We are a reading platform that also distributes content, how do we test the files?**\n  - For reading platforms that also ingest and distribute content, such as ebookstores, we recommend uploading the test books to your platforms through the same channels as other content, to ensure the most accurate experience. This is especially true for any platforms that pre-process content to optimize features for their reading systems."
+        "text": "![W3C Logo](https://www.w3.org/Icons/w3c_home)\n\n# Test repository for the EPUB 3 specifications\n\nThis repository contains tests to validate the implementability of the W3C's EPUB 3 specifications, specifically core\n[EPUB 3](https://www.w3.org/TR/epub/) (the spec for the EPUB format itself) and\n[EPUB Reading Systems 3](https://www.w3.org/TR/epub-rs/) (the spec for applications that read EPUB files). Our\nobjective is to test every normative statement (that is, every\n[`MUST` or `SHOULD` or `MAY`](https://datatracker.ietf.org/doc/html/bcp14), etc.).\n\nThe [test reports](https://w3c.github.io/epub-tests/) describe all the tests, including\n[implementation results](https://w3c.github.io/epub-tests/results) and\n[how to contribute](https://w3c.github.io/epub-tests/contributing).\n\nThe current, tested EPUB 3 version is [EPUB 3.4](https://www.w3.org/TR/epub-overview-34). Because this version is backward compatible with earlier versions, most of these tests are also valid for earlier versions. Each test is assigned a `version` value, denoting the EPUB revision where the test has been added in as shown on the [test table](https://w3c.github.io/epub-tests/)\n\nNote that the current setup is based on release 3.4 of the EPUB 3 specification. See the separate [NewVersion.md](generate/NewVersion.md) file for the steps to follow when updating the repository for a new version of the EPUB 3 specification.\n\n## How to run tests for EPUB \n\nRunning tests mean loading each test as a separate EPUB Publication, and checking whether the reading systems fulfills the requirement of that specific test. Each test outlines the pass or fail criteria for the test. The results are collected in an implementation report file and uploaded to the test repository.\n\nTo make the running of the tests easier, a [test catalogue file](https://w3c.github.io/epub-tests/opds/opds.json) is generated using the [OPDS](https://drafts.opds.io/opds-2.0.html) format. Several reading systems understand this catalogue format, and can upload the full test suite easily.\n\nAlternatively, the test repository can be forked, and downloaded to the tester's machine. To make the testing step easier, there is a `generateEpubs.sh` script in the `tests` folder of repository that will generate an epub version of each test. To fork this repository, go to the \"Fork\" menu at the top of this screen. To create a local copy of the files, download the ZIP file for this repository from the \"Code\" menu at the top of this page.\n\n### Generating the tests\n\nAll of the test files are located in the `tests/` folder. Using Terminal/your preferred command line tool, go to your local version of the repository, or the ZIP file location, and open that folder: \n\n`cd [FOLDER]/epub-tests/tests/`\n\nTo generate the tests, run the `generateEpubs.sh` script file:\n\n`sh generateEpubs.sh`\n\nThe script will run and the `.epub` files will be added to the `tests/` folder. You can then take those files and load them to your reading application or servers.\n\n### The test report\n\nSave a copy of the template file: [xx-template.json](https://w3c.github.io/epub-tests/reports/xx-template.json), change the file name to reflect the reading system and platform being tested (if multiple are being tested). \n\n`acme-ios.json`\n\nOpen the file in any text editor application and fill in the reporting fields: \n\n- `name`: The name of the reading system.\n- `variant` (optional): The name or properties of the reading system variant. Typical values may be Android, iOS, or Web, if one implementation (i.e., sharing the same name value) has specific versions running in those environments. In addition to the properties of the reading system, testers may also include information on how the tests were run, for example, if a screen reader was used with the reading system.\n- `ref` (optional): A URL that creates a link on the name of the reading system in the implementation report.\n- `tested_by` (optional): Can be `\"implementer\"` or `\"third-party\"`, this field is to help track whether the test results were provided by the platform or a third-party tester.\n- `tests`: An object with the list of the test results. Each key is a test's unique identifier (its `dc:identifier`) with a value of `true`, `false`, `\"n/a\"`, or `null`. Use `true` for a test that passes, `false` for a test that fails, `\"n/a\"` for a test is not applicable. A test would have a result of `null` if it is not yet performed. If a test is not listed its value is considered to be null. The implementation report will show a value of \"?\" for null, indicating that the implementation has not run the test.\n\nHere is an example:\n\n```json\n{\n    \"name\"  : \"ACME Books\",\n    \"ref\"   : \"https://www.example.org/acme\",\n    \"variant\" : \"iOS, v1.0\",\n    \"tested-by\": \"implementer\",\n    \"tests\" : {\n        \"pub-cmt-gif\": true,\n        \"pub-cmt-jpeg\": true,\n        \"pkg-dir_rtl-root-ltr\": false,\n        \"pkg-dir_rtl-root-unset\": true,\n        \"pkg-dir_unset-root-rtl\": false,\n        \"pkg-dir_unset-root-unset\": true,\n        \"pkg-dir-auto_root-rtl\": null,\n        \"pkg-dir-auto_root-unset\": false,\n        \"pkg-linked-records\": \"n/a\"\n    }\n}\n```\n\nThe test report template will list all of the available tests, with the default value set to `null`.\n\n### Running the tests and completing the report\n\nOnce the test files are loaded on your reading system, running the tests is simple. Open each file, where the test scenario will be on the first or second page, explaining the condition in which the test passes. In most cases, the test is within the EPUB itself, however there are some tests related to the presentation of metadata such as the title or author, the test will inform you of what to look for.\n\nFor each test, there are four possible values to give in the JSON:\n\n- `null`: the test has not been run\n- `true`: the test passes according to the criteria of the test \n- `false`: the test fails according to the criteria of the test\n- `\"n/a\"`: the test does not apply to your reading system (the feature is not implemented or cannot be supported by the reading system, such as audio playback for reading systems without audio support) [NOTE: the quotes around \"n/a\" are required formatting]\n\nComplete as many tests for as many platforms as you can!\n\n### Submitting the test results\n\nIf you are not familiar with GitHub or creating PRs (pull requests), you are welcome to submit your test reports by [opening a Test Results Submission issue](https://github.com/w3c/epub-tests/issues/new/choose) on the repository and attaching the reports, or emailing the `.json` files to [group-pm-wg-chairs@w3.org](mailto:group-pm-wg-chairs@w3.org).\n\nIf you have forked this repository, you can create a PR with the test results. All test results files should be added to the `results/` folder and follow the naming conventions outlined in [The test report](#the-test-report) section of this document.\n\n## Frequently Asked Questions (FAQs)\n\n- **What if I have more than one reading application?**\n  - Many platforms have multiple reading applications and we understand running tests on all of them might be challenging. The preference would be to have a complete test suite for all platforms, but if that is not possible, we'd request testing either your most used platforms, or if your applications share a common rendering engine or several engines, focus on testing the most representative platforms for those engines.\n- **I submitted test results for EPUB 3.3 and many of these tests seem the same, do I need to do them again?**\n  - Many of the tests are similar or unchanged from EPUB 3.3, however it has been 3 years since we tested EPUB 3.3 and it's very likely your platforms or the underlying systems have changed, so testing again is recommended to ensure the most accurate results. These results are used not only by W3C to confirm the standard's implementation, but by industry to understand the support levels for different EPUB features.\n- **We are a reading platform that also distributes content, how do we test the files?**\n  - For reading platforms that also ingest and distribute content, such as ebookstores, we recommend uploading the test books to your platforms through the same channels as other content, to ensure the most accurate experience. This is especially true for any platforms that pre-process content to optimize features for their reading systems.\n"
       },
       "w3c": {
         "group": [
@@ -92143,193 +92154,6 @@
       }
     },
     {
-      "id": "MDEwOlJlcG9zaXRvcnkxNDE3MjM3Njc=",
-      "name": "PWETF",
-      "owner": {
-        "login": "w3c"
-      },
-      "isArchived": false,
-      "homepageUrl": "https://www.w3.org/community/pwe/",
-      "description": "Positive Work Environment Community Group",
-      "isPrivate": false,
-      "createdAt": "2018-07-20T14:43:50Z",
-      "labels": [
-        {
-          "name": "a11y",
-          "color": "013aa3"
-        },
-        {
-          "name": "agenda+",
-          "color": "d93f0b"
-        },
-        {
-          "name": "bug",
-          "color": "d73a4a"
-        },
-        {
-          "name": "CEPC",
-          "color": "fbca04"
-        },
-        {
-          "name": "CEPC 2023",
-          "color": "bfd4f2"
-        },
-        {
-          "name": "CEPC-legal",
-          "color": "c0d65e"
-        },
-        {
-          "name": "CEPC2020",
-          "color": "fbca04"
-        },
-        {
-          "name": "CoC 2024",
-          "color": "AE46D0"
-        },
-        {
-          "name": "CoC-editorial",
-          "color": "f72ce3"
-        },
-        {
-          "name": "Decision Needed",
-          "color": "061568"
-        },
-        {
-          "name": "defer",
-          "color": "c2e0c6"
-        },
-        {
-          "name": "defer-with-priority",
-          "color": "a9e84c"
-        },
-        {
-          "name": "Dispute Resolution",
-          "color": "c2e0c6"
-        },
-        {
-          "name": "duplicate",
-          "color": "cfd3d7"
-        },
-        {
-          "name": "enhancement",
-          "color": "a2eeef"
-        },
-        {
-          "name": "globalization",
-          "color": "6269e0"
-        },
-        {
-          "name": "good first issue",
-          "color": "7057ff"
-        },
-        {
-          "name": "help wanted",
-          "color": "008672"
-        },
-        {
-          "name": "invalid",
-          "color": "e4e669"
-        },
-        {
-          "name": "ombuddy",
-          "color": "92e587"
-        },
-        {
-          "name": "policy",
-          "color": "fcc2dd"
-        },
-        {
-          "name": "project",
-          "color": "bfd4f2"
-        },
-        {
-          "name": "propose-closing",
-          "color": "d35452"
-        },
-        {
-          "name": "PWE-homepage",
-          "color": "e89b7a"
-        },
-        {
-          "name": "question",
-          "color": "d876e3"
-        },
-        {
-          "name": "resources",
-          "color": "53e0db"
-        },
-        {
-          "name": "TPAC",
-          "color": "d4c5f9"
-        },
-        {
-          "name": "training",
-          "color": "d4c5f9"
-        },
-        {
-          "name": "translation",
-          "color": "006b75"
-        },
-        {
-          "name": "wontfix",
-          "color": "ffffff"
-        }
-      ],
-      "defaultBranch": {
-        "name": "main"
-      },
-      "environments": {
-        "nodes": [
-          {
-            "name": "github-pages"
-          }
-        ]
-      },
-      "branchProtectionRules": {
-        "nodes": [
-          {
-            "pattern": "main",
-            "requiredApprovingReviewCount": 1,
-            "requiredStatusCheckContexts": [],
-            "isAdminEnforced": false
-          }
-        ]
-      },
-      "w3cjson": {
-        "text": "{\n  \"group\": [\n    7756, 109278\n  ],\n  \"contacts\": [\n    \"iherman\", \"TzviyaSiegman\"\n  ],\n  \"repo-type\": \"process\"\n}\n"
-      },
-      "prpreviewjson": {
-        "text": "{\n    \"src_file\": \"index.html\",\n    \"type\": \"respec\"\n}\n"
-      },
-      "autoPublish": null,
-      "travis": null,
-      "contributing": null,
-      "license": null,
-      "codeOfConduct": {
-        "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Conduct](https://www.w3.org/policies/code-of-conduct/).\n"
-      },
-      "readme": {
-        "text": "# Positive Work Environment Community Group\n\nW3C is a global community where participants choose to work together. In that community, we experience differences in language, location, nationality, and experience. In such a diverse environment, misunderstandings and disagreements happen, and in most cases can be resolved informally.\n\nThis is the GitHub repository for the [Positive Work Environment Community Group](https://www.w3.org/community/pwe/).\n\nThe CG picks up the work of the former [PWE Task Force](https://www.w3.org/Consortium/pwe/). \n\nChairs: Tzviya Siegman, Wendy Reid\n\nThis group maintains the W3C Code of Conduct; the draft version of the document can be read directly at [https://w3c.github.io/PWETF/](https://w3c.github.io/PWETF/).\n\nThis group functions under the [W3C Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n\nIf you are interested in contributing to the COC or our other projects, please see our [contributing guide](https://github.com/w3c/PWETF/blob/main/contributing.md).\n"
-      },
-      "prpreview": {
-        "src_file": "index.html",
-        "type": "respec"
-      },
-      "w3c": {
-        "group": [
-          7756,
-          109278
-        ],
-        "contacts": [
-          "iherman",
-          "TzviyaSiegman"
-        ],
-        "repo-type": [
-          "process"
-        ]
-      }
-    },
-    {
       "id": "MDEwOlJlcG9zaXRvcnk5NTU2NDI1Mg==",
       "name": "pwpub",
       "owner": {
@@ -96850,7 +96674,7 @@
         "login": "w3c"
       },
       "isArchived": false,
-      "homepageUrl": "w3c.github.io/rdf-tests",
+      "homepageUrl": "https://w3c.github.io/rdf-tests/",
       "description": "Repository for the RDF Tests Community Group",
       "isPrivate": false,
       "createdAt": "2015-09-09T01:43:27Z",
@@ -105948,7 +105772,7 @@
         "text": "{\n    \"group\": 158420\n  , \"contacts\":   [\"ashimura\"]\n  , \"policy\": \"open\"\n  , \"repo-type\": [ \"note\", \"homepage\" ]\n}\n"
       },
       "prpreviewjson": {
-        "text": "{\n    \"src_file\": \"index.html\",\n    \"type\": \"respec\"\n    }\n"
+        "text": "{\n    \"src_file\": \"ig-note/index.html\",\n    \"type\": \"respec\"\n    }\n"
       },
       "autoPublish": null,
       "travis": null,
@@ -105963,7 +105787,7 @@
         "text": "# smart-cities\n\nWork area for the Web-based Digital Twins for Smart Cities IG\n\n## Regular Meeting\nThe IG's monthly call is held on the fourth Monday at 9am Eastern to\navoid the conflict with the Working Group Standards & Platforms.\n\nPlease see also the [W3C calendar entry](https://www.w3.org/events/meetings/d557717b-e6a8-4f04-b9cb-bc2172643465/20250324T090000/).\n\nWe use the [W3C IRC channel](https://irc.w3.org/?channels=smart-cities) as well to take notes during the monthly calls.\n\n### Scribe list (recent at top)\n* Koster\n* Bert\n* Kaz\n\n### Agenda\n\n#### 29 June 2026\n1. Logistics (Guests, Meeting schedule, etc.)\n2. Minutes review: [13 April 2026](https://www.w3.org/2026/04/13-smart-cities-minutes.html)\n3. Status check for [Plan 2026](https://github.com/w3c/smart-cities/blob/main/schedule.md) - [Template for the draft IG Note](https://w3c.github.io/smart-cities/ig-note/) available on [GitHub](https://github.com/w3c/smart-cities/tree/main/ig-note)\n4. TPAC2026 Group Meeting - [Announcement from the W3C Events Team (Member-only)](https://lists.w3.org/Archives/Member/chairs/2026AprJun/0053.html) => hold a TPAC breakout on Wednesday, Oct. 28 as usual\n5. Collaboration with Working Group Standards & Platforms => postponed till August since Torbjorn is not available\n6. Re-Charter discussion - Basic process, current Charter and proposed new Charter\n7. AOB (Your input is welcome!)\n\n#### 25 May 2026\nCancelled due to lack of participation\n\n#### 13 April 2026\n1. Logistics (Guests, Meeting schedule, etc.)\n2. Minutes review: [2 March 2026](https://www.w3.org/2026/03/02-smart-cities-minutes.html)\n3. Status check for [Plan 2026](https://github.com/w3c/smart-cities/blob/main/schedule.md) - [Template for the draft IG Note](https://w3c.github.io/smart-cities/ig-note/) available on [GitHub](https://github.com/w3c/smart-cities/tree/main/ig-note)\n4. Collaboration with OGC\n5. AOB (Your input is welcome!)\n\n#### 2 March 2026\n1. Logistics (Guests, Meeting schedule, etc.)\n2. Minutes review: [25 Jan 2026](https://www.w3.org/2026/01/26-smart-cities-minutes.html)\n3. Basic Plan for 2026\n4. Collaboration with ETSI on NGSI-LD\n5. AOB (Your input is welcome!)\n\n#### 26 Jan 2026\n1. Logistics (Guests, Meeting schedule, etc.)\n2. Minutes review: [8 Sep 2025](https://www.w3.org/2025/09/08-smart-cities-minutes.html)\n3. Wrap-up from theTPAC 2025 breakout: [Breakout minutes](https://w3c.github.io/smart-cities/minutes/2025/11/12-smart-cities-minutes.html)\n4. Basic Plan for 2026 (Possible collaboration with ETSI, OGC, JTC, etc.)\n5. AOB (Your input is welcome!)\n\n#### 12 Jan 2026\nCancelled\n\n#### 12 Nov 2025\n(as a breakout session during TPAC 2025)\n1. Review the discussion so far\n2. Get input from stakeholders about their pain points and current practices\n3. Discuss what's still missing and what/how Web standards could help\n\nSee also:\n* [GitHub Issue for the TPAC breakout session](https://github.com/w3c/tpac2025-breakouts/issues/23)\n* [Slides](https://github.com/w3c/smart-cities/blob/main/slides/20251112-tpac2025/20251112-smartcities-tpac2025-ka.pdf)\n\n#### 8 Sep 2025\n1. Logistics (Guests, Meeting schedule, etc.)\n2. Minutes review: [Jul-7](https://www.w3.org/2025/07/07-smart-cities-minutes.html)\n3. Possible F2F meeting during TPAC 2025 breakouts: [Breakout repo](https://github.com/w3c/tpac2025-breakouts)\n4. NGSI-LD Collaboration (Juanjo Hierro, Frederic LE)\n5. Review: [GitHub PRs](https://github.com/w3c/smart-cities/pulls) for the [resources.md file](resources.md) - add resources and discuss priority, etc.\n6. AOB (Your input is welcome!)\n\n#### 7 Jul 2025\n1. Logistics (Guests, Meeting schedule, etc.)\n2. Minutes review: [May-26](https://www.w3.org/2025/05/26-smart-cities-minutes.html)\n3. Review: [GitHub PRs](https://github.com/w3c/smart-cities/pulls) for the [resources.md file](resources.md) - add resources and discuss priority, etc.\n4. Discussion about existing resources around Smart Cities (Torbjorn Lahrin, Mark Fox, and all)\n5. AOB (Your input is welcome!)\n\n#### 26 May 2025\n1. Logistics (Guests, Meeting schedule, etc.)\n2. Minutes review: [April-28](https://www.w3.org/2025/04/28-smart-cities-minutes.html)\n3. Review: [GitHub PRs](https://github.com/w3c/smart-cities/pulls) for the [resources.md file](resources.md) - add resources and discuss priority, etc.\n4. Discussion with external SDOs (Torbjorn Lahrin, Mark Fox)\n5. AOB (Your input is welcome!)\n\n#### 28 April 2025\n1. Logistics (Guests, Meeting schedule, etc.)\n2. Minutes review: [Mar-24](https://www.w3.org/2025/03/24-smart-cities-minutes.html)\n3. Review: [GitHub PRs](https://github.com/w3c/smart-cities/pulls) for the [resources.md file](resources.md) - add resources and discuss priority, etc.\n4. [Basic schedule](schedule.md) around the group's activity\n5. AOB (Your input is welcome!)\n\n#### 24 March 2025\n1. Logistics (Guests, Meeting schedule, etc.)\n2. Minutes review: [Feb-17](https://www.w3.org/2025/02/17-smart-cities-minutes.html), [Feb-18](https://www.w3.org/2025/02/18-smart-cities-minutes.html)\n3. Review: GitHub updates about the [liaison targets and existing resouces](resources.md) - add resources and discuss priority, etc.\n4. AOB (Your input is welcome!)\n\n#### 17-18 February 2025\n1. Logistics (Meeting schedule, GitHub repo, etc.)\n2. Quickly skim the [IG Charter](https://www.w3.org/2024/06/smart-cities/)\n3. Discussion on the next steps (Liaison targets, Existing resouces, etc.)\n4. AOB (Your input is welcome!)\n\n## Liaison targets and existing resources\nPlease see the list of the [liaison targets and existing resources](resources.md).\n"
       },
       "prpreview": {
-        "src_file": "index.html",
+        "src_file": "ig-note/index.html",
         "type": "respec"
       },
       "w3c": {
@@ -144112,6 +143936,10 @@
         {
           "name": "Conformance",
           "color": "772114"
+        },
+        {
+          "name": "Guidance: Testing",
+          "color": "aaaaaa"
         },
         {
           "name": "i18n",
@@ -184614,6 +184442,14 @@
           "color": "000000"
         },
         {
+          "name": "autorelease: pending",
+          "color": "ededed"
+        },
+        {
+          "name": "autorelease: tagged",
+          "color": "ededed"
+        },
+        {
           "name": "bug",
           "color": "d73a4a"
         },
@@ -208990,6 +208826,10 @@
           "color": "F9C9FF"
         },
         {
+          "name": "implementation-chromium",
+          "color": "aecbfa"
+        },
+        {
           "name": "invalid",
           "color": "e4e669"
         },
@@ -209853,10 +209693,6 @@
         {
           "name": "process",
           "fullName": "w3c/process"
-        },
-        {
-          "name": "PWETF",
-          "fullName": "w3c/PWETF"
         },
         {
           "name": "standards-track",
@@ -215141,47 +214977,6 @@
         {
           "name": "simple-ruby",
           "fullName": "w3c/simple-ruby"
-        }
-      ]
-    },
-    "109278": {
-      "id": 109278,
-      "name": "Positive Work Environment Community Group",
-      "is_closed": false,
-      "creation-date": "2018-08-25",
-      "description": "W3C is a global community where participants choose to work together. In that community, we experience differences in language, location, nationality, and experience. In such a diverse environment, misunderstandings and disagreements happen, and in most cases can be resolved informally. This CG will pick up the work of the PWE Task Force (https://www.w3.org/Consortium/pwe/) focusing on the Code of Ethics and Professional Conduct.",
-      "shortname": "pwe",
-      "spec-publisher": false,
-      "discr": "w3cgroup",
-      "_links": {
-        "homepage": {
-          "href": "https://www.w3.org/community/pwe/"
-        },
-        "users": {
-          "href": "https://api.w3.org/groups/cg/pwe/users"
-        },
-        "services": {
-          "href": "https://api.w3.org/groups/cg/pwe/services"
-        },
-        "chairs": {
-          "href": "https://api.w3.org/groups/cg/pwe/chairs"
-        },
-        "join": {
-          "href": "https://www.w3.org/community/pwe/join"
-        },
-        "participations": {
-          "href": "https://api.w3.org/groups/cg/pwe/participations"
-        },
-        "self": {
-          "href": "https://api.w3.org/groups/cg/pwe"
-        }
-      },
-      "type": "community group",
-      "fullshortname": "cg/pwe",
-      "repos": [
-        {
-          "name": "PWETF",
-          "fullName": "w3c/PWETF"
         }
       ]
     },
