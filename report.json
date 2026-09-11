@@ -88,6 +88,7 @@
       "w3c/wai-conformance-model-test",
       "w3c/web-ledger",
       "w3c/webai-roadmap",
+      "w3c/webextension-types",
       "w3c/wot-resources",
       "w3c/wot-thing-description-toolchain-tmp",
       "w3c/wot-tools",
@@ -124,6 +125,7 @@
       "w3ctag/tag.w3.org",
       "w3ctag/tagdocs",
       "w3ctag/tools",
+      "w3ctag/tpac2026-meetings",
       "w3ctag/tracking-issues",
       "w3ctag/unsanctioned-tracking",
       "w3ctag/url",
@@ -3561,6 +3563,7 @@
       "w3c/webdriver-bidi",
       "w3c/webevolve-series",
       "w3c/webex",
+      "w3c/webextension-types",
       "w3c/webextensions",
       "w3c/webidl2.js",
       "w3c/webmention",
@@ -3676,6 +3679,7 @@
       "w3ctag/tagdocs",
       "w3ctag/the-web-is-not-versioned",
       "w3ctag/tools",
+      "w3ctag/tpac2026-meetings",
       "w3ctag/tracking-issues",
       "w3ctag/unsanctioned-tracking",
       "w3ctag/url",
@@ -5962,6 +5966,7 @@
       "w3c/webappsec-subresource-integrity",
       "w3c/webauthn-pay",
       "w3c/webevolve-series",
+      "w3c/webextension-types",
       "w3c/webpayments-overview",
       "w3c/webrtc-charter",
       "w3c/xinclude",
@@ -6392,6 +6397,7 @@
     ],
     "nodefaultbranch": [
       "w3c/tmp-xfer202607",
+      "w3c/webextension-types",
       "w3ctag/placeholder",
       "webmachinelearning/webmcp-polyfill"
     ],
@@ -9310,7 +9316,7 @@
       }
     ]
   },
-  "timestamp": "2026-09-10T00:30:47.351Z",
+  "timestamp": "2026-09-11T00:34:04.247Z",
   "repos": [
     {
       "id": "MDEwOlJlcG9zaXRvcnk4MTAyMTg2MA==",
@@ -15379,13 +15385,13 @@
         ]
       },
       "w3cjson": {
-        "text": " {\n    \"group\":      109735\n,   \"contacts\":   [\"dontcallmedom\", \"himorin\"]\n,   \"shortName\":  \"webxr\"\n,   \"repo-type\":  \"rec-track\"\n}\n"
+        "text": " {\n    \"group\":      109735\n,   \"contacts\":   [\"himorin\"]\n,   \"repo-type\":  \"rec-track\"\n}\n"
       },
       "prpreviewjson": {
         "text": "{\n    \"src_file\": \"index.bs\",\n    \"type\": \"bikeshed\",\n    \"params\": {\n        \"force\": 1\n    }\n}\n"
       },
       "autoPublish": {
-        "text": "name: Build, and publish spec to GitHub Pages and /TR/\n\non:\n  pull_request: {}\n  push:\n    branches: [main]\n    paths:\n      - 'images/**'\n      - 'index.bs'\n\njobs:\n  main:\n    name: Build, Validate and Deploy\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v2\n      - uses: w3c/spec-prod@v2\n        with:\n          TOOLCHAIN: bikeshed\n          SOURCE: index.bs\n          DESTINATION: index.html\n          GH_PAGES_BRANCH: gh-pages\n          W3C_ECHIDNA_TOKEN: ${{ secrets.W3C_TR_TOKEN }}\n          W3C_WG_DECISION_URL: https://lists.w3.org/Archives/Public/public-immersive-web-wg/2021Sep/0004.html\n          W3C_BUILD_OVERRIDE: |\n            status: CRD\n\n# not set 'warning' to BUILD_FAIL_ON (not to cause error by bikeshed warning?)\n\n"
+        "text": "name: Build, and publish spec to GitHub Pages and /TR/\n\non:\n  pull_request: {}\n  push:\n    branches: [main]\n    paths:\n      - 'images/**'\n      - 'index.bs'\n\njobs:\n  main:\n    name: Build, Validate and Deploy\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v7\n      - uses: w3c/spec-prod@v2\n        with:\n          TOOLCHAIN: bikeshed\n          SOURCE: index.bs\n          DESTINATION: index.html\n          GH_PAGES_BRANCH: gh-pages\n          W3C_ECHIDNA_TOKEN: ${{ secrets.W3C_TR_TOKEN }}\n          W3C_WG_DECISION_URL: https://lists.w3.org/Archives/Public/public-immersive-web-wg/2021Sep/0004.html\n          W3C_BUILD_OVERRIDE: |\n            status: CRD\n\n# not set 'warning' to BUILD_FAIL_ON (not to cause error by bikeshed warning?)\n\n"
       },
       "travis": null,
       "contributing": {
@@ -15410,10 +15416,8 @@
       "w3c": {
         "group": 109735,
         "contacts": [
-          "dontcallmedom",
           "himorin"
         ],
-        "shortName": "webxr",
         "repo-type": [
           "rec-track"
         ]
@@ -44151,7 +44155,7 @@
           "color": "ea7472"
         },
         {
-          "name": "a11y-tracker",
+          "name": "accessibility",
           "color": "ea7472"
         },
         {
@@ -44199,7 +44203,7 @@
           "color": "fbca04"
         },
         {
-          "name": "dcat:accessURL",
+          "name": "dcat-vocabulary",
           "color": "e99695"
         },
         {
@@ -44239,12 +44243,12 @@
           "color": "f4b5e1"
         },
         {
-          "name": "dct:accessRights",
-          "color": "6491ea"
+          "name": "dct-vocabulary",
+          "color": "97d666"
         },
         {
-          "name": "dct:license",
-          "color": "97d666"
+          "name": "dct:accessRights",
+          "color": "6491ea"
         },
         {
           "name": "dct:rights",
@@ -44287,7 +44291,7 @@
           "color": "a2eeef"
         },
         {
-          "name": "Errata",
+          "name": "errata",
           "color": "0052cc"
         },
         {
@@ -44323,10 +44327,6 @@
           "color": "008672"
         },
         {
-          "name": "i18n-needs-resolution",
-          "color": "F9C9FF"
-        },
-        {
           "name": "i18n-tracker",
           "color": "F9C9FF"
         },
@@ -44339,8 +44339,16 @@
           "color": "37e5b6"
         },
         {
+          "name": "Internationalization",
+          "color": "F9C9FF"
+        },
+        {
           "name": "invalid",
           "color": "e4e669"
+        },
+        {
+          "name": "New feature",
+          "color": "AA2222"
         },
         {
           "name": "out of scope",
@@ -44355,7 +44363,7 @@
           "color": "7a7ce2"
         },
         {
-          "name": "privacy-needs-resolution",
+          "name": "privacy",
           "color": "d4af37"
         },
         {
@@ -44419,7 +44427,7 @@
           "color": "59d6d2"
         },
         {
-          "name": "security-needs-resolution",
+          "name": "security",
           "color": "ffff00"
         },
         {
@@ -44443,15 +44451,11 @@
           "color": "AAAA22"
         },
         {
-          "name": "substantive:class 4",
-          "color": "AA2222"
-        },
-        {
-          "name": "tag-needs-resolution",
+          "name": "tag-tracker",
           "color": "7fff00"
         },
         {
-          "name": "tag-tracker",
+          "name": "Technical Architecture Group",
           "color": "7fff00"
         },
         {
@@ -44464,10 +44468,6 @@
         },
         {
           "name": "usage control",
-          "color": "ededed"
-        },
-        {
-          "name": "usage_control",
           "color": "ededed"
         },
         {
@@ -58720,6 +58720,10 @@
         },
         {
           "name": "s:vc-render-method",
+          "color": "6bc5c6"
+        },
+        {
+          "name": "s:vcalm",
           "color": "6bc5c6"
         },
         {
@@ -144606,7 +144610,7 @@
           "color": "BFDADC"
         },
         {
-          "name": "P - No repetitive links",
+          "name": "P - No repetitive adjacent interactive elements",
           "color": "BFDADC"
         },
         {
@@ -144638,15 +144642,15 @@
           "color": "BFDADC"
         },
         {
-          "name": "P - Non-verbal cues identified",
-          "color": "BFDADC"
-        },
-        {
           "name": "P - Non-verbal cues identified in audio desc",
           "color": "BFDADC"
         },
         {
           "name": "P - Non-verbal cues identified in captions",
+          "color": "BFDADC"
+        },
+        {
+          "name": "P - Non-verbal cues identified in transcripts",
           "color": "BFDADC"
         },
         {
@@ -144786,15 +144790,15 @@
           "color": "BFDADC"
         },
         {
-          "name": "P - Sign language available (live)",
-          "color": "BFDADC"
-        },
-        {
           "name": "P - Sign language available (prerecorded)",
           "color": "BFDADC"
         },
         {
           "name": "P - Sign language controllable",
+          "color": "BFDADC"
+        },
+        {
+          "name": "P - Sign language policy (live)",
           "color": "BFDADC"
         },
         {
@@ -144810,10 +144814,6 @@
           "color": "BFDADC"
         },
         {
-          "name": "P - Sounds identified",
-          "color": "BFDADC"
-        },
-        {
           "name": "P - Sounds identified in audio descriptions",
           "color": "BFDADC"
         },
@@ -144822,11 +144822,11 @@
           "color": "BFDADC"
         },
         {
-          "name": "P - Spatial audio not relied on",
+          "name": "P - Sounds identified in transcripts",
           "color": "BFDADC"
         },
         {
-          "name": "P - Speaker language identified",
+          "name": "P - Spatial audio not relied on",
           "color": "BFDADC"
         },
         {
@@ -144838,7 +144838,7 @@
           "color": "BFDADC"
         },
         {
-          "name": "P - Speakers identified",
+          "name": "P - Speaker language identified in transcripts",
           "color": "BFDADC"
         },
         {
@@ -144847,6 +144847,10 @@
         },
         {
           "name": "P - Speakers identified in captions",
+          "color": "BFDADC"
+        },
+        {
+          "name": "P - Speakers identified in transcripts",
           "color": "BFDADC"
         },
         {
@@ -144966,11 +144970,11 @@
           "color": "BFDADC"
         },
         {
-          "name": "P - Visual information identified",
+          "name": "P - Visual information identified in audio desc",
           "color": "BFDADC"
         },
         {
-          "name": "P - Visual information identified in audio desc",
+          "name": "P - Visual information identified in transcripts",
           "color": "BFDADC"
         },
         {
@@ -150973,7 +150977,7 @@
         "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n"
       },
       "readme": {
-        "text": "\n# Web Authentication Specification\n\nThis is the repository for the W3C WebAuthn Working Group, producing the draft **\"Web Authentication\"** specification.\n\n* [The editor's copy is available at https://w3c.github.io/webauthn/](https://w3c.github.io/webauthn/), or in the [`gh-pages` branch of this repository](https://github.com/w3c/webauthn/blob/gh-pages/index.html).\n  - The current *offically published working-draft snapshot* [is here: https://www.w3.org/TR/webauthn/](https://www.w3.org/TR/webauthn/).\n* [The build history is available from the repo Actions tab](https://github.com/w3c/webauthn/actions)\n* [W3C WebAuthn Blog](https://www.w3.org/blog/webauthn/)\n* [Web platform tests repository](https://github.com/web-platform-tests/wpt/tree/master/webauthn)\n\n# Contributing\n\nTo materially contribute to this specification, you must meet the requirements outlined in [CONTRIBUTING.md](/CONTRIBUTING.md). Also, before submitting feedback, please familiarize yourself with [our current issues list](https://github.com/w3c/webauthn/issues) and review the [mailing list discussion](https://lists.w3.org/Archives/Public/public-webauthn/).\n\n# Building the Draft\n\nThe following are required before continuing:\n\n- [mise](https://mise.jdx.dev/getting-started.html#installing-mise-cli)\n\nRun the following commands to set up your local development environment to work on these specifications:\n\n```\nmise setup\n```\n\nFormatted HTML for the draft can then be built with the following command:\n\n```\nmise build\n```\n\nYou can use the following command to automatically regenerate the rendered document as you make changes locally, and view the rendered document at http://localhost:8000:\n\n```\nmise serve\n```\n\n# Continuous Integration & Branches\n\nhttps://w3c.github.io/webauthn/ is autopublished from the `gh-pages` branch on every push to the `main` branch, using https://github.com/w3c/webauthn/blob/main/.github/workflows/build-validate-publish.yml to configure the autopublishing behavior.\n"
+        "text": "\n# Web Authentication Specification\n\nThis is the repository for the W3C WebAuthn Working Group, producing the draft **\"Web Authentication\"** specification.\n\n* [The editor's copy is available at https://w3c.github.io/webauthn/](https://w3c.github.io/webauthn/), or in the [`gh-pages` branch of this repository](https://github.com/w3c/webauthn/blob/gh-pages/index.html).\n  - The current *offically published working-draft snapshot* [is here: https://www.w3.org/TR/webauthn/](https://www.w3.org/TR/webauthn/).\n* [The build history is available from the repo Actions tab](https://github.com/w3c/webauthn/actions)\n* [W3C WebAuthn Blog](https://www.w3.org/blog/webauthn/)\n* [Web platform tests repository](https://github.com/web-platform-tests/wpt/tree/master/webauthn)\n\n# Contributing\n\nTo materially contribute to this specification, you must meet the requirements outlined in [CONTRIBUTING.md](/CONTRIBUTING.md). Also, before submitting feedback, please familiarize yourself with [our current issues list](https://github.com/w3c/webauthn/issues) and review the [mailing list discussion](https://lists.w3.org/Archives/Public/public-webauthn/).\n\n# Building the Draft\n\nThe following are required before continuing:\n\n- [mise](https://mise.jdx.dev/getting-started.html#installing-mise-cli)\n\nRun the following commands to set up your local development environment to work on these specifications:\n\n```\nmise setup\n```\n\nFormatted HTML for the draft can then be built with the following command:\n\n```\nmise build\n```\n\nYou can use the following command to automatically regenerate the rendered document as you make changes locally, and view the rendered document at http://localhost:8000:\n\n```\nmise serve\n```\n\n\n# Continuous Integration & Branches\n\nhttps://w3c.github.io/webauthn/ is autopublished from the `gh-pages` branch on every push to the `main` branch, using https://github.com/w3c/webauthn/blob/main/.github/workflows/build-validate-publish.yml to configure the autopublishing behavior.\n"
       },
       "prpreview": {
         "src_file": "index.bs",
@@ -152340,6 +152344,73 @@
           "tool"
         ]
       }
+    },
+    {
+      "id": "R_kgDOUVch-Q",
+      "name": "webextension-types",
+      "owner": {
+        "login": "w3c"
+      },
+      "isArchived": false,
+      "homepageUrl": null,
+      "description": "Cross-browser TypeScript types for WebExtension APIs that actually tell you what runs where",
+      "isPrivate": false,
+      "createdAt": "2026-09-10T17:43:16Z",
+      "labels": [
+        {
+          "name": "bug",
+          "color": "d73a4a"
+        },
+        {
+          "name": "documentation",
+          "color": "0075ca"
+        },
+        {
+          "name": "duplicate",
+          "color": "cfd3d7"
+        },
+        {
+          "name": "enhancement",
+          "color": "a2eeef"
+        },
+        {
+          "name": "good first issue",
+          "color": "7057ff"
+        },
+        {
+          "name": "help wanted",
+          "color": "008672"
+        },
+        {
+          "name": "invalid",
+          "color": "e4e669"
+        },
+        {
+          "name": "question",
+          "color": "d876e3"
+        },
+        {
+          "name": "wontfix",
+          "color": "ffffff"
+        }
+      ],
+      "defaultBranch": null,
+      "environments": {
+        "nodes": []
+      },
+      "branchProtectionRules": {
+        "nodes": []
+      },
+      "w3cjson": null,
+      "prpreviewjson": null,
+      "autoPublish": null,
+      "travis": null,
+      "contributing": null,
+      "license": null,
+      "codeOfConduct": {
+        "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Conduct](https://www.w3.org/policies/code-of-conduct/).\n"
+      },
+      "readme": null
     },
     {
       "id": "MDEwOlJlcG9zaXRvcnkzNzI4ODI1NjA=",
@@ -170896,6 +170967,85 @@
       }
     },
     {
+      "id": "R_kgDOUVrsgA",
+      "name": "tpac2026-meetings",
+      "owner": {
+        "login": "w3ctag"
+      },
+      "isArchived": false,
+      "homepageUrl": "https://w3ctag.github.io/tpac2026-meetings/",
+      "description": "Repo for planning our TPAC 2026 meeting and breakout attendance",
+      "isPrivate": false,
+      "createdAt": "2026-09-10T20:54:12Z",
+      "labels": [
+        {
+          "name": "bug",
+          "color": "d73a4a"
+        },
+        {
+          "name": "documentation",
+          "color": "0075ca"
+        },
+        {
+          "name": "duplicate",
+          "color": "cfd3d7"
+        },
+        {
+          "name": "enhancement",
+          "color": "a2eeef"
+        },
+        {
+          "name": "good first issue",
+          "color": "7057ff"
+        },
+        {
+          "name": "help wanted",
+          "color": "008672"
+        },
+        {
+          "name": "invalid",
+          "color": "e4e669"
+        },
+        {
+          "name": "personal capacity",
+          "color": "b9025c"
+        },
+        {
+          "name": "question",
+          "color": "d876e3"
+        },
+        {
+          "name": "wontfix",
+          "color": "ffffff"
+        }
+      ],
+      "defaultBranch": {
+        "name": "main"
+      },
+      "environments": {
+        "nodes": [
+          {
+            "name": "github-pages"
+          }
+        ]
+      },
+      "branchProtectionRules": {
+        "nodes": []
+      },
+      "w3cjson": null,
+      "prpreviewjson": null,
+      "autoPublish": null,
+      "travis": null,
+      "contributing": null,
+      "license": null,
+      "codeOfConduct": {
+        "body": "# Code of Conduct\n\nAll documentation, code, communication and discussion in this repository are covered by the [W3C Code of Conduct](https://www.w3.org/policies/code-of-conduct/).\n"
+      },
+      "readme": {
+        "text": "# TAG TPAC 2026 Meeting (and Breakout) planning\n\nThis repo is being used to plan TAG's attendance of TPAC meetings and breakouts.\n\nThe planning is done via issues created in a specific format to be used with [tpac-scheduling-helper](https://github.com/matatk/tpac-scheduling-helper).\n"
+      }
+    },
+    {
       "id": "MDEwOlJlcG9zaXRvcnkyNTY1MDY5MjE=",
       "name": "tracking-issues",
       "owner": {
@@ -180294,7 +180444,7 @@
         "body": "# Contributor Covenant Code of Conduct\n\n## Our Pledge\n\nIn the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.\n\n## Our Standards\n\nExamples of behavior that contributes to creating a positive environment include:\n\n* Using welcoming and inclusive language\n* Being respectful of differing viewpoints and experiences\n* Gracefully accepting constructive criticism\n* Focusing on what is best for the community\n* Showing empathy towards other community members\n\nExamples of unacceptable behavior by participants include:\n\n* The use of sexualized language or imagery and unwelcome sexual attention or advances\n* Trolling, insulting/derogatory comments, and personal or political attacks\n* Public or private harassment\n* Publishing others' private information, such as a physical or electronic address, without explicit permission\n* Other conduct which could reasonably be considered inappropriate in a professional setting\n\n## Our Responsibilities\n\nProject maintainers are responsible for clarifying the standards of acceptable behavior and are expected to take appropriate and fair corrective action in response to any instances of unacceptable behavior.\n\nProject maintainers have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, or to ban temporarily or permanently any contributor for other behaviors that they deem inappropriate, threatening, offensive, or harmful.\n\n## Scope\n\nThis Code of Conduct applies both within project spaces and in public spaces when an individual is representing the project or its community. Examples of representing a project or community include using an official project e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event. Representation of a project may be further defined and clarified by project maintainers.\n\n## Enforcement\n\nInstances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team at either sunfish@mozilla.com or tyler@fastly.com. The project team will review and investigate all complaints, and will respond in a way that it deems appropriate to the circumstances. The project team is obligated to maintain confidentiality with regard to the reporter of an incident. Further details of specific enforcement policies may be posted separately.\n\nProject maintainers who do not follow or enforce the Code of Conduct in good faith may face temporary or permanent repercussions as determined by other members of the project's leadership.\n\n## Attribution\n\nThis Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4, available at [http://contributor-covenant.org/version/1/4][version]\n\n[homepage]: http://contributor-covenant.org\n[version]: http://contributor-covenant.org/version/1/4/\n"
       },
       "readme": {
-        "text": "# WASI SDK\n\n## Quick Start\n\n[Download SDK packages here.][releases]\n\n[releases]: https://github.com/WebAssembly/wasi-sdk/releases\n\n## About this repository\n\nThis repository contains no compiler or library code itself; it uses\ngit submodules to pull in the upstream Clang and LLVM tree, as well as the\nwasi-libc tree.\n\nThe libc portion of this SDK is maintained in [wasi-libc].\n\n[wasi-libc]: https://github.com/WebAssembly/wasi-libc\n\nUpstream Clang and LLVM (from 9.0 onwards) can compile for WASI out of the box,\nand WebAssembly support is included in them by default. So, all that's done here\nis to provide builds configured to set the default target and sysroot for\nconvenience.\n\nOne could also use a standard Clang installation, build a sysroot from the\nsources mentioned above, and compile with `--target=wasm32-wasip1\n--sysroot=/path/to/sysroot`. In this scenario, one would also need the\n`libclang_rt.*.a` objects available separately in the [release\ndownloads][releases] which must be extracted into\n`$CLANG_INSTALL_DIR/$CLANG_VERSION/lib/`.\n\n## Clone\n\nThis repository uses git submodule, to clone it you need use the command below :\n\n```shell script\ngit clone --recursive https://github.com/WebAssembly/wasi-sdk.git\n```\n\n## Requirements\n\nThe Wasm-sdk's build process needs some packages :\n\n* `cmake`\n* `clang`\n* `ninja`\n* `python3`\n* `cargo`\n\nPlease refer to your OS documentation to install those packages.\n\n## Build\n\nBuilding `wasi-sdk` uses CMake and is split into two halves. First you can build\nthe toolchain itself:\n\n```shell script\ncmake -G Ninja -B build/toolchain -S . -DWASI_SDK_BUILD_TOOLCHAIN=ON -DCMAKE_INSTALL_PREFIX=build/install\ncmake --build build/toolchain --target install\n```\n\nWhen you're developing locally you may also wish to pass\n`-DCMAKE_CXX_COMPILER_LAUNCHER=ccache` to assist with rebuilds. Other supported\nCMake flags are:\n\n* `-DLLVM_CMAKE_FLAGS` - extra flags to pass to `cmake` when building\n  LLVM/Clang.\n* `-DRUST_TARGET` - the specific Rust target triple to build `wasm-component-ld`\n  for, useful for cross-compiles.\n\nThe `clang` compiler should now be located at `build/install/bin/clang` but it's\njust a compiler, the sysroot isn't built yet. Next the second step of the build\nis to build the sysroot:\n\n```shell script\ncmake -G Ninja -B build/sysroot -S . \\\n    -DCMAKE_INSTALL_PREFIX=build/install \\\n    -DCMAKE_TOOLCHAIN_FILE=build/install/share/cmake/wasi-sdk-p2.cmake \\\n    -DCMAKE_C_COMPILER_WORKS=ON \\\n    -DCMAKE_CXX_COMPILER_WORKS=ON\ncmake --build build/sysroot --target install\n```\n\nA full toolchain should now be present at `build/install` and is ready for use\nin compiling WebAssembly code. Supported CMake flags are:\n\n* `-DWASI_SDK_DEBUG_PREFIX_MAKE=OFF` - disable `-fdebug-prefix-map` when\n  building C/C++ code to use full host paths instead.\n* `-DWASI_SDK_INCLUDE_TESTS=ON` - used for building tests.\n* `-DWASI_SDK_CPU_CFLAGS=..` - used to specify CFLAGS to tweak wasm features\n  to enable/disable. The default is `-mcpu=lime1`.\n* `-DWASI_SDK_LTO=ON` - whether to enable/disable builds of LTO-capable\n  libraries as part of the build.\n* `-DWASI_SDK_BUILD_SHARED=ON` - whether to build shared libraries (`libc.so`,\n  `libc++.so`, etc.) for targets that support them. Set to `OFF` to produce a\n  static-only sysroot.\n* `-DWASI_SDK_EXCEPTIONS=ON` - whether to enable/disable support for C++\n  exceptions, see [CppExceptions.md](./CppExceptions.md) for more information.\n* `-DWASI_SDK_TEST_HOST_TOOLCHAIN=ON` - test the host toolchain's wasi-libc and\n  sysroot libraries, don't build or use fresh libraries for tests.\n* `-DWASI_SDK_TARGETS=..` - a list of targets to build, by default all WASI\n  targets are compiled. The default set is listed in\n  [Supported Targets](#supported-targets).\n* `-DWASI_SDK_INSTALL_TO_CLANG_RESOURCE_DIR=ON` - install compiler-rt\n  to the compiler's resource directory. might be convenient if you want to\n  use the toolchain (eg. `./build/install/bin/clang`) in-place.\n\nIf you'd like to build distribution artifacts you can use the `dist` target like\nso:\n\n```shell script\ncmake --build build/toolchain --target dist\ncmake --build build/sysroot --target dist\n```\n\nTarballs will be created under `build/toolchain/dist` and `build/sysroot/dist`.\nNote that these are separate tarballs for the toolchain and sysroot. To create a\nsingle tarball for the entire SDK you'll first want to copy all tarballs into a\nnew folder and then run the `./ci/merge-artifacts.sh` script:\n\n```shell script\nmkdir dist-my-platform\ncp build/toolchain/dist/* build/sysroot/dist/* dist-my-platform\n./ci/merge-artifacts.sh\n```\n\nThis will produce `dist/wasi-sdk-*.tar.gz` which is the same as the release\nartifacts for this repository.\n\nFinally you can additionally bundle many of the above steps, minus\n`merge-artifact.sh` by using the CI script to perform both the toolchain and\nsysroot build:\n\n```shell script\n./ci/build.sh\n```\n\nThe built package can be found into `build/dist` directory.\nFor releasing a new version of the package on GitHub,\nsee [RELEASING.md](RELEASING.md).\n\n## Install\n\nA typical installation from the release binaries might look like the following:\n\n```shell script\nWASI_OS=linux\nWASI_ARCH=x86_64 # or 'arm64' if running on arm64 host\nWASI_VERSION=27\nWASI_VERSION_FULL=${WASI_VERSION}.0\nwget https://github.com/WebAssembly/wasi-sdk/releases/download/wasi-sdk-${WASI_VERSION}/wasi-sdk-${WASI_VERSION_FULL}-${WASI_ARCH}-${WASI_OS}.tar.gz\ntar xvf wasi-sdk-${WASI_VERSION_FULL}-${WASI_ARCH}-${WASI_OS}.tar.gz\n```\n\n## Use\n\nUse the clang installed in the `wasi-sdk` directory:\n\n```shell script\nWASI_SDK_PATH=`pwd`/wasi-sdk-${WASI_VERSION_FULL}-${WASI_ARCH}-${WASI_OS}\nCC=\"${WASI_SDK_PATH}/bin/clang --sysroot=${WASI_SDK_PATH}/share/wasi-sysroot\"\n$CC foo.c -o foo.wasm\n```\n\nNote: `${WASI_SDK_PATH}/share/wasi-sysroot` contains the WASI-specific\nincludes/libraries/etc. The `--sysroot=...` option is not necessary if\n`WASI_SDK_PATH` is `/opt/wasi-sdk`. For troubleshooting, one can replace the\n`--sysroot` path with a manual build of [wasi-libc].\n\n## Supported Targets\n\nThe default target for the SDK's `clang` is `wasm32-wasip1`. The default\n`WASI_SDK_TARGETS` build setting includes these targets:\n\n| Target | Description |\n|---|---|\n| `wasm32-wasip1` | WASI Preview 1, and the default target. |\n| `wasm32-wasip2` | WASI Preview 2 and the component model. |\n| `wasm32-wasip3` | WASI Preview 3 and async component model support. |\n| `wasm32-wasip1-threads` | WASI Preview 1 with experimental support for spawning threads. |\n\nAs of wasi-sdk 34, the previously supported `wasm32-wasi` and\n`wasm32-wasi-threads` aliases have been removed. Use `wasm32-wasip1` and\n`wasm32-wasip1-threads` instead.\n\nTo build only a subset of targets, pass a semicolon-separated\n`WASI_SDK_TARGETS` value when configuring the sysroot:\n\n```shell script\ncmake -G Ninja -B build/sysroot -S . \\\n    -DCMAKE_INSTALL_PREFIX=build/install \\\n    -DCMAKE_TOOLCHAIN_FILE=build/install/share/cmake/wasi-sdk-p1.cmake \\\n    -DWASI_SDK_TARGETS=\"wasm32-wasip1;wasm32-wasip2\" \\\n    -DCMAKE_C_COMPILER_WORKS=ON \\\n    -DCMAKE_CXX_COMPILER_WORKS=ON\n```\n\n### Integrating with a CMake build system\n\nUse a toolchain file to setup the *wasi-sdk* platform.\n\n```\n$ cmake -DCMAKE_TOOLCHAIN_FILE=${WASI_SDK_PATH}/share/cmake/wasi-sdk.cmake ...\n```\n\nFor WASI Preview 2 or Preview 3, use the corresponding toolchain file:\n\n```\n$ cmake -DCMAKE_TOOLCHAIN_FILE=${WASI_SDK_PATH}/share/cmake/wasi-sdk-p2.cmake ...\n$ cmake -DCMAKE_TOOLCHAIN_FILE=${WASI_SDK_PATH}/share/cmake/wasi-sdk-p3.cmake ...\n```\n\nFor the threaded Preview 1 target, use the *wasi-sdk-thread* platform:\n\n```\n$ cmake -DCMAKE_TOOLCHAIN_FILE=${WASI_SDK_PATH}/share/cmake/wasi-sdk-pthread.cmake ...\n```\n\n## Notes for Autoconf\n\n[Autoconf] 2.70 now [recognizes WASI].\n\n[Autoconf]: https://www.gnu.org/software/autoconf/autoconf.html\n[recognizes WASI]: https://git.savannah.gnu.org/gitweb/?p=autoconf.git;a=blob;f=build-aux/config.sub;h=19c9553b1825cafb182115513bc628e0ee801bd0;hb=97fbc5c184acc6fa591ad094eae86917f03459fa#l1723\n\nFor convenience when building packages that aren't yet updated, updated\nconfig.sub and config.guess files are installed at `share/misc/config.*`\nin the install directory.\n\n## Docker Image\n\nWe provide a [docker image] including WASI SDK that can be used for building\nprojects without a separate installation of the SDK. Autotools, CMake, and Ninja\nare included in this image, and standard environment variables are set to use\nWASI SDK for building.\n\n[docker image]: https://github.com/WebAssembly/wasi-sdk/pkgs/container/wasi-sdk\n\nFor example, this command can build a make-based project with the Docker\nimage.\n\n```\ndocker run -v `pwd`:/src -w /src ghcr.io/webassembly/wasi-sdk make\n```\n\nTake note of the [notable limitations](#notable-limitations) below when\nbuilding projects, for example many projects will need threads support\ndisabled in a configure step before building with WASI SDK.\n\n## Notable Limitations\n\n* C++ exceptions are disabled by default and require extra configuration to get\n  working, see [CppExceptions.md].\n* C `setjmp`/`longjmp` require some extra configuration to get working, see\n  [SetjmpLongjmp.md].\n* Most targets do not support spawning a thread. Experimental support for\n  spawning threads is available with the `wasm32-wasip1-threads` target which\n  uses [wasi-threads]. Note that the `pthread_*` family of functions, as well as\n  C++ threading primitives such as `<atomic>`, `<mutex>`, and `<thread>` are\n  available on all targets. Defining a macro `_WASI_STRICT_PTHREAD` will make\n  `pthread_create`, `pthread_detach`, `pthread_join`, `pthread_tryjoin_np`, and\n  `pthread_timedjoin_np` fail with a compile time error when building for\n  single-threaded targets.\n* Dynamic linking [is supported][dylink] but not as fully baked as static\n  linking. There might be obscure bugs in some situations related to dynamic\n  linking.\n* The WASIp1 targets do not support networking, but WASIp2/WASIp3 support\n  networking.\n* 64-bit linear memories (a \"wasm64\" target) are not supported at this time.\n  Supporting this will require resolving [WebAssembly/component-model#22] first\n  at which point it will be possible to add a `wasm64-wasip2` target. There are\n  no plans to add support for `wasm64-wasi{,-threads,p1,p1-threads}` at this\n  time.\n\n[threads]: https://github.com/WebAssembly/threads\n[wasi-threads]: https://github.com/WebAssembly/wasi-threads\n[dylink]: https://github.com/WebAssembly/tool-conventions/blob/master/DynamicLinking.md\n[WebAssembly/component-model#22]: https://github.com/WebAssembly/component-model/issues/22\n"
+        "text": "# WASI SDK\n\n## Quick Start\n\n[Download SDK packages here.][releases]\n\n[releases]: https://github.com/WebAssembly/wasi-sdk/releases\n\n## About this repository\n\nThis repository contains no compiler or library code itself; it uses\ngit submodules to pull in the upstream Clang and LLVM tree, as well as the\nwasi-libc tree.\n\nThe libc portion of this SDK is maintained in [wasi-libc].\n\n[wasi-libc]: https://github.com/WebAssembly/wasi-libc\n\nUpstream Clang and LLVM (from 9.0 onwards) can compile for WASI out of the box,\nand WebAssembly support is included in them by default. So, all that's done here\nis to provide builds configured to set the default target and sysroot for\nconvenience.\n\nOne could also use a standard Clang installation, build a sysroot from the\nsources mentioned above, and compile with `--target=wasm32-wasip1\n--sysroot=/path/to/sysroot`. In this scenario, one would also need the\n`libclang_rt.*.a` objects available separately in the [release\ndownloads][releases] which must be extracted into\n`$CLANG_INSTALL_DIR/$CLANG_VERSION/lib/`.\n\n## Clone\n\nThis repository uses git submodule, to clone it you need use the command below :\n\n```shell script\ngit clone --recursive https://github.com/WebAssembly/wasi-sdk.git\n```\n\n## Requirements\n\nThe Wasm-sdk's build process needs some packages :\n\n* `cmake`\n* `clang`\n* `ninja`\n* `python3`\n* `cargo`\n\nPlease refer to your OS documentation to install those packages.\n\n## Build\n\nBuilding `wasi-sdk` uses CMake and is split into two halves. First you can build\nthe toolchain itself:\n\n```shell script\ncmake -G Ninja -B build/toolchain -S . -DWASI_SDK_BUILD_TOOLCHAIN=ON -DCMAKE_INSTALL_PREFIX=build/install\ncmake --build build/toolchain --target install\n```\n\nWhen you're developing locally you may also wish to pass\n`-DCMAKE_CXX_COMPILER_LAUNCHER=ccache` to assist with rebuilds. Other supported\nCMake flags are:\n\n* `-DLLVM_CMAKE_FLAGS` - extra flags to pass to `cmake` when building\n  LLVM/Clang.\n* `-DRUST_TARGET` - the specific Rust target triple to build `wasm-component-ld`\n  for, useful for cross-compiles.\n\nThe `clang` compiler should now be located at `build/install/bin/clang` but it's\njust a compiler, the sysroot isn't built yet. Next the second step of the build\nis to build the sysroot:\n\n```shell script\ncmake -G Ninja -B build/sysroot -S . \\\n    -DCMAKE_INSTALL_PREFIX=build/install \\\n    -DCMAKE_TOOLCHAIN_FILE=build/install/share/cmake/wasi-sdk-p2.cmake \\\n    -DCMAKE_C_COMPILER_WORKS=ON \\\n    -DCMAKE_CXX_COMPILER_WORKS=ON \\\n    -DWASI_SDK_INSTALL_TO_CLANG_RESOURCE_DIR=ON\ncmake --build build/sysroot --target install\n```\n\nA full toolchain should now be present at `build/install` and is ready for use\nin compiling WebAssembly code. Supported CMake flags are:\n\n* `-DWASI_SDK_DEBUG_PREFIX_MAKE=OFF` - disable `-fdebug-prefix-map` when\n  building C/C++ code to use full host paths instead.\n* `-DWASI_SDK_INCLUDE_TESTS=ON` - used for building tests.\n* `-DWASI_SDK_CPU_CFLAGS=..` - used to specify CFLAGS to tweak wasm features\n  to enable/disable. The default is `-mcpu=lime1`.\n* `-DWASI_SDK_LTO=ON` - whether to enable/disable builds of LTO-capable\n  libraries as part of the build.\n* `-DWASI_SDK_BUILD_SHARED=ON` - whether to build shared libraries (`libc.so`,\n  `libc++.so`, etc.) for targets that support them. Set to `OFF` to produce a\n  static-only sysroot.\n* `-DWASI_SDK_EXCEPTIONS=ON` - whether to enable/disable support for C++\n  exceptions, see [CppExceptions.md](./CppExceptions.md) for more information.\n* `-DWASI_SDK_TEST_HOST_TOOLCHAIN=ON` - test the host toolchain's wasi-libc and\n  sysroot libraries, don't build or use fresh libraries for tests.\n* `-DWASI_SDK_TARGETS=..` - a list of targets to build, by default all WASI\n  targets are compiled. The default set is listed in\n  [Supported Targets](#supported-targets).\n* `-DWASI_SDK_INSTALL_TO_CLANG_RESOURCE_DIR=ON` - install compiler-rt\n  to the compiler's resource directory. might be convenient if you want to\n  use the toolchain (eg. `./build/install/bin/clang`) in-place.\n\nIf you'd like to build distribution artifacts you can use the `dist` target like\nso:\n\n```shell script\ncmake --build build/toolchain --target dist\ncmake --build build/sysroot --target dist\n```\n\nTarballs will be created under `build/toolchain/dist` and `build/sysroot/dist`.\nNote that these are separate tarballs for the toolchain and sysroot. To create a\nsingle tarball for the entire SDK you'll first want to copy all tarballs into a\nnew folder and then run the `./ci/merge-artifacts.sh` script:\n\n```shell script\nmkdir dist-my-platform\ncp build/toolchain/dist/* build/sysroot/dist/* dist-my-platform\n./ci/merge-artifacts.sh\n```\n\nThis will produce `dist/wasi-sdk-*.tar.gz` which is the same as the release\nartifacts for this repository.\n\nFinally you can additionally bundle many of the above steps, minus\n`merge-artifact.sh` by using the CI script to perform both the toolchain and\nsysroot build:\n\n```shell script\n./ci/build.sh\n```\n\nThe built package can be found into `build/dist` directory.\nFor releasing a new version of the package on GitHub,\nsee [RELEASING.md](RELEASING.md).\n\n## Install\n\nA typical installation from the release binaries might look like the following:\n\n```shell script\nWASI_OS=linux\nWASI_ARCH=x86_64 # or 'arm64' if running on arm64 host\nWASI_VERSION=27\nWASI_VERSION_FULL=${WASI_VERSION}.0\nwget https://github.com/WebAssembly/wasi-sdk/releases/download/wasi-sdk-${WASI_VERSION}/wasi-sdk-${WASI_VERSION_FULL}-${WASI_ARCH}-${WASI_OS}.tar.gz\ntar xvf wasi-sdk-${WASI_VERSION_FULL}-${WASI_ARCH}-${WASI_OS}.tar.gz\n```\n\n## Use\n\nUse the clang installed in the `wasi-sdk` directory:\n\n```shell script\nWASI_SDK_PATH=`pwd`/wasi-sdk-${WASI_VERSION_FULL}-${WASI_ARCH}-${WASI_OS}\nCC=\"${WASI_SDK_PATH}/bin/clang --sysroot=${WASI_SDK_PATH}/share/wasi-sysroot\"\n$CC foo.c -o foo.wasm\n```\n\nNote: `${WASI_SDK_PATH}/share/wasi-sysroot` contains the WASI-specific\nincludes/libraries/etc. The `--sysroot=...` option is not necessary if\n`WASI_SDK_PATH` is `/opt/wasi-sdk`. For troubleshooting, one can replace the\n`--sysroot` path with a manual build of [wasi-libc].\n\n## Supported Targets\n\nThe default target for the SDK's `clang` is `wasm32-wasip1`. The default\n`WASI_SDK_TARGETS` build setting includes these targets:\n\n| Target | Description |\n|---|---|\n| `wasm32-wasip1` | WASI Preview 1, and the default target. |\n| `wasm32-wasip2` | WASI Preview 2 and the component model. |\n| `wasm32-wasip3` | WASI Preview 3 and async component model support. |\n| `wasm32-wasip1-threads` | WASI Preview 1 with experimental support for spawning threads. |\n\nAs of wasi-sdk 34, the previously supported `wasm32-wasi` and\n`wasm32-wasi-threads` aliases have been removed. Use `wasm32-wasip1` and\n`wasm32-wasip1-threads` instead.\n\nTo build only a subset of targets, pass a semicolon-separated\n`WASI_SDK_TARGETS` value when configuring the sysroot:\n\n```shell script\ncmake -G Ninja -B build/sysroot -S . \\\n    -DCMAKE_INSTALL_PREFIX=build/install \\\n    -DCMAKE_TOOLCHAIN_FILE=build/install/share/cmake/wasi-sdk-p1.cmake \\\n    -DWASI_SDK_TARGETS=\"wasm32-wasip1;wasm32-wasip2\" \\\n    -DCMAKE_C_COMPILER_WORKS=ON \\\n    -DCMAKE_CXX_COMPILER_WORKS=ON\n```\n\n### Integrating with a CMake build system\n\nUse a toolchain file to setup the *wasi-sdk* platform.\n\n```\n$ cmake -DCMAKE_TOOLCHAIN_FILE=${WASI_SDK_PATH}/share/cmake/wasi-sdk.cmake ...\n```\n\nFor WASI Preview 2 or Preview 3, use the corresponding toolchain file:\n\n```\n$ cmake -DCMAKE_TOOLCHAIN_FILE=${WASI_SDK_PATH}/share/cmake/wasi-sdk-p2.cmake ...\n$ cmake -DCMAKE_TOOLCHAIN_FILE=${WASI_SDK_PATH}/share/cmake/wasi-sdk-p3.cmake ...\n```\n\nFor the threaded Preview 1 target, use the *wasi-sdk-thread* platform:\n\n```\n$ cmake -DCMAKE_TOOLCHAIN_FILE=${WASI_SDK_PATH}/share/cmake/wasi-sdk-pthread.cmake ...\n```\n\n## Notes for Autoconf\n\n[Autoconf] 2.70 now [recognizes WASI].\n\n[Autoconf]: https://www.gnu.org/software/autoconf/autoconf.html\n[recognizes WASI]: https://git.savannah.gnu.org/gitweb/?p=autoconf.git;a=blob;f=build-aux/config.sub;h=19c9553b1825cafb182115513bc628e0ee801bd0;hb=97fbc5c184acc6fa591ad094eae86917f03459fa#l1723\n\nFor convenience when building packages that aren't yet updated, updated\nconfig.sub and config.guess files are installed at `share/misc/config.*`\nin the install directory.\n\n## Docker Image\n\nWe provide a [docker image] including WASI SDK that can be used for building\nprojects without a separate installation of the SDK. Autotools, CMake, and Ninja\nare included in this image, and standard environment variables are set to use\nWASI SDK for building.\n\n[docker image]: https://github.com/WebAssembly/wasi-sdk/pkgs/container/wasi-sdk\n\nFor example, this command can build a make-based project with the Docker\nimage.\n\n```\ndocker run -v `pwd`:/src -w /src ghcr.io/webassembly/wasi-sdk make\n```\n\nTake note of the [notable limitations](#notable-limitations) below when\nbuilding projects, for example many projects will need threads support\ndisabled in a configure step before building with WASI SDK.\n\n## Notable Limitations\n\n* C++ exceptions are disabled by default and require extra configuration to get\n  working, see [CppExceptions.md].\n* C `setjmp`/`longjmp` require some extra configuration to get working, see\n  [SetjmpLongjmp.md].\n* Most targets do not support spawning a thread. Experimental support for\n  spawning threads is available with the `wasm32-wasip1-threads` target which\n  uses [wasi-threads]. Note that the `pthread_*` family of functions, as well as\n  C++ threading primitives such as `<atomic>`, `<mutex>`, and `<thread>` are\n  available on all targets. Defining a macro `_WASI_STRICT_PTHREAD` will make\n  `pthread_create`, `pthread_detach`, `pthread_join`, `pthread_tryjoin_np`, and\n  `pthread_timedjoin_np` fail with a compile time error when building for\n  single-threaded targets.\n* Dynamic linking [is supported][dylink] but not as fully baked as static\n  linking. There might be obscure bugs in some situations related to dynamic\n  linking.\n* The WASIp1 targets do not support networking, but WASIp2/WASIp3 support\n  networking.\n* 64-bit linear memories (a \"wasm64\" target) are not supported at this time.\n  Supporting this will require resolving [WebAssembly/component-model#22] first\n  at which point it will be possible to add a `wasm64-wasip2` target. There are\n  no plans to add support for `wasm64-wasi{,-threads,p1,p1-threads}` at this\n  time.\n\n[threads]: https://github.com/WebAssembly/threads\n[wasi-threads]: https://github.com/WebAssembly/wasi-threads\n[dylink]: https://github.com/WebAssembly/tool-conventions/blob/master/DynamicLinking.md\n[WebAssembly/component-model#22]: https://github.com/WebAssembly/component-model/issues/22\n"
       }
     },
     {
@@ -210330,6 +210480,10 @@
         {
           "name": "tools",
           "fullName": "w3ctag/tools"
+        },
+        {
+          "name": "tpac2026-meetings",
+          "fullName": "w3ctag/tpac2026-meetings"
         },
         {
           "name": "tracking-issues",
