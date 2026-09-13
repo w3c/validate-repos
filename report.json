@@ -9315,7 +9315,7 @@
       }
     ]
   },
-  "timestamp": "2026-09-12T00:32:28.698Z",
+  "timestamp": "2026-09-13T00:32:23.617Z",
   "repos": [
     {
       "id": "MDEwOlJlcG9zaXRvcnk4MTAyMTg2MA==",
@@ -94368,7 +94368,7 @@
         "text": "{\n    \"src_file\": \"spec/index.html\",\n    \"type\": \"respec\"\n}\n"
       },
       "autoPublish": {
-        "text": "# Example: Override respecConfig for W3C deployment and validators.\nname: Echidna Auto-publish\non:\n  pull_request:\n    paths: [\"spec/**\"]\n  push:\n    branches: [main]\n    paths: [\"spec/**\"]\njobs:\n  main:\n    name: Echidna Auto-publish WD\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v3\n      - uses: w3c/spec-prod@v2\n        with:\n          TOOLCHAIN: respec\n          SOURCE: spec/index.html\n          VALIDATE_LINKS: false\n          VALIDATE_MARKUP: true\n          ACTIONS_STEP_DEBUG: true\n          #W3C_ECHIDNA_TOKEN: ${{ secrets.ECHIDNA_TOKEN }}\n          W3C_WG_DECISION_URL: https://www.w3.org/2023/04/20-rdf-star-minutes.html#r03\n          W3C_BUILD_OVERRIDE: |\n            specStatus: WD\n            shortName: rdf12-concepts\n"
+        "text": "# Example: Override respecConfig for W3C deployment and validators.\nname: Echidna Auto-publish\non:\n  pull_request:\n    paths: [\"spec/**\"]\n  push:\n    branches: [main]\n    paths: [\"spec/**\"]\njobs:\n  main:\n    name: Echidna Auto-publish WD\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v3\n      - uses: w3c/spec-prod@v2\n        with:\n          TOOLCHAIN: respec\n          SOURCE: spec/index.html\n          VALIDATE_LINKS: false\n          VALIDATE_MARKUP: true\n          ACTIONS_STEP_DEBUG: true\n          W3C_ECHIDNA_TOKEN: ${{ secrets.ECHIDNA_TOKEN }}\n          W3C_WG_DECISION_URL: https://www.w3.org/2023/04/20-rdf-star-minutes.html#r03\n          W3C_BUILD_OVERRIDE: |\n            specStatus: CRD\n            shortName: rdf12-concepts\n"
       },
       "travis": null,
       "contributing": {
@@ -96353,7 +96353,7 @@
         "text": "{\n    \"src_file\": \"spec/index.html\",\n    \"type\": \"respec\"\n}\n"
       },
       "autoPublish": {
-        "text": "# Example: Override respecConfig for W3C deployment and validators.\nname: Echidna Auto-publish\non:\n  pull_request:\n    paths: [\"spec/**\"]\n  push:\n    branches: [main]\n    paths: [\"spec/**\"]\njobs:\n  main:\n    name: Echidna Auto-publish WD\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v3\n      - uses: w3c/spec-prod@v2\n        with:\n          TOOLCHAIN: respec\n          SOURCE: spec/index.html\n          VALIDATE_LINKS: false\n          VALIDATE_MARKUP: true\n          ACTIONS_STEP_DEBUG: true\n          #W3C_ECHIDNA_TOKEN: ${{ secrets.ECHIDNA_TOKEN }}\n          W3C_WG_DECISION_URL: https://www.w3.org/2023/04/20-rdf-star-minutes.html#r03\n          W3C_BUILD_OVERRIDE: |\n            specStatus: WD\n            shortName: rdf12-semantics\n\n"
+        "text": "# Example: Override respecConfig for W3C deployment and validators.\nname: Echidna Auto-publish\non:\n  pull_request:\n    paths: [\"spec/**\"]\n  push:\n    branches: [main]\n    paths: [\"spec/**\"]\njobs:\n  main:\n    name: Echidna Auto-publish WD\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v3\n      - uses: w3c/spec-prod@v2\n        with:\n          TOOLCHAIN: respec\n          SOURCE: spec/index.html\n          VALIDATE_LINKS: false\n          VALIDATE_MARKUP: true\n          ACTIONS_STEP_DEBUG: true\n          W3C_ECHIDNA_TOKEN: ${{ secrets.ECHIDNA_TOKEN }}\n          W3C_WG_DECISION_URL: https://www.w3.org/2023/04/20-rdf-star-minutes.html#r03\n          W3C_BUILD_OVERRIDE: |\n            specStatus: CRD\n            shortName: rdf12-semantics\n\n"
       },
       "travis": null,
       "contributing": {
