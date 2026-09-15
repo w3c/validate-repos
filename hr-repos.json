@@ -470,7 +470,6 @@
   "WICG/savedata",
   "WICG/scheduling-apis",
   "WICG/scroll-to-text-fragment",
-  "WICG/serial",
   "WICG/shape-detection-api",
   "WICG/sms-one-time-codes",
   "WICG/sparrow",
@@ -484,9 +483,7 @@
   "WICG/web-otp",
   "WICG/WebApiDevice",
   "WICG/webcomponents",
-  "WICG/webhid",
   "WICG/webmonetization",
   "WICG/webpackage",
-  "WICG/webusb",
   "WICG/window-controls-overlay"
 ]

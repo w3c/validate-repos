@@ -2237,11 +2237,6 @@
         "contributing": "# Web Platform Incubator Community Group\n\nThis repository is being used for work in the W3C Web Platform Incubator Community Group, governed by the [W3C Community License\nAgreement (CLA)](http://www.w3.org/community/about/agreements/cla/). To make substantive contributions,\nyou must join the CG.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n"
       },
       {
-        "repo": "WICG/serial",
-        "error": "doesn't match CG contributing",
-        "contributing": "For significant contributions (i.e., non-editorial changes to the API), \nwe require you to become a member of the \n[Web Platform Incubator CG](http://www.w3.org/community/wicg/). This helps \nkeep the spec royalty free and gives us some patent protection! \n\nThis spec is written using [ReSpec](http://w3.org/respec/). For\nconfiguration options, etc. please see the [ReSpec\nrefeference](www.w3.org/respec/ref.html).\n\nPlease make sure you run [HTML5 Tidy](http://w3c.github.io/tidy-html5/) \nbefore sending a Pull Request:\n\n```Bash \ntidy -config tidyconfig.txt -o index.html index.html \n```\n"
-      },
-      {
         "repo": "WICG/service-worker-auto-preload",
         "error": "doesn't match CG contributing",
         "contributing": "# Web Platform Incubator Community Group\n\nThis repository is being used for work in the W3C Web Platform Incubator Community Group, governed by the [W3C Community License\nAgreement (CLA)](http://www.w3.org/community/about/process/cla/). To make substantive contributions,\nyou must join the CG.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n"
@@ -2347,11 +2342,6 @@
         "contributing": "# Web Platform Incubator Community Group\n\nThis repository is being used for work in the W3C Web Platform Incubator Community Group, governed by the [W3C Community License\nAgreement (CLA)](http://www.w3.org/community/about/process/cla/). To make substantive contributions,\nyou must join the CG.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n"
       },
       {
-        "repo": "WICG/webhid",
-        "error": "doesn't match CG contributing",
-        "contributing": "# Web Platform Incubator Community Group\n\nThis repository is being used for work in the W3C Web Platform Incubator Community Group, governed by the [W3C Community License\nAgreement (CLA)](http://www.w3.org/community/about/agreements/cla/). To make substantive contributions,\nyou must join the CG.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n"
-      },
-      {
         "repo": "WICG/webmonetization",
         "error": "doesn't match CG contributing",
         "contributing": "# Contributing to this repository\n\nThank you for contributing to the Web Monetization specification. Your contributions help shape emerging web standards.\n\n## Before you begin\n\n- Have you read the [Code of Conduct](https://www.w3.org/policies/code-of-conduct/)?\n- Check out the [existing issues](https://github.com/WICG/webmonetization/issues) and see if we [accept contributions](#types-of-contributions) for your type of issue\n- (Optional) Join the Community Group and agree to the [W3C Community Contributor License Agreement (CLA)](http://www.w3.org/community/about/agreements/cla/)\n\n## Types of contributions\n\nYou can contribute to the Web Monetization specification in several ways.\n\n### Discussions\n\nDiscussions are where we have conversations about the specification and the broader ecosystem.\n\nIf you have questions, new ideas, or want to explore something before opening an issue — [join the discussion](https://github.com/WICG/webmonetization/discussions).\n\n### Proposals & feature requests\n\nIf you have an idea for improving the specification or introducing new functionality, open an issue describing your proposal. Please search existing issues first to avoid duplicates, and be clear about the problem you're solving and why it matters.\n\nEarly feedback is encouraged before jumping into implementation.\n\n### Issues\n\nWe use GitHub issues to track bugs, inconsistencies, or gaps in the specification. If you've found something that needs fixing, search open issues to see if someone else has reported the same thing. If it's new, open an issue — we'll use it to discuss the problem before any work begins.\n\nWhen reporting an issue, please include:\n\n- A clear and descriptive title\n- A detailed description of the problem\n- Links to relevant sections of the specification\n- Context or examples where possible\n\n### Pull requests\n\nFeel free to fork the repository and create a pull request for changes you think you can contribute — whether small fixes or larger spec changes.\n\nThe team will review your pull request as soon as possible.\n\n## Working in this repository\n\n### Specification development\n\nThe main specification source lives at [`specification/index.html`](./specification/index.html). This file uses [ReSpec](https://respec.org/docs/), the standard tool for authoring W3C specifications.\n\nYou don't need a full development setup to contribute to the spec.\n\n#### Previewing changes\n\nPreview changes with `npx serve ./specification/` (or [any other static HTTP file server](https://gist.github.com/willurd/5720255)) and opening http://localhost:3000/index.html.\n\n#### Related specifications\n\nThis repository also includes:\n\n- Web Monetization flows → [`specification/flows/`](./specification/flows/)\n- Browser extension API → [`specification/extensions-api/`](./specification/extensions-api/)\n\n#### Formatting\n\nPrettier is disabled for files under `specification/*`. W3C specifications follow a formatting style that conflicts with Prettier (for example, void elements without trailing slashes), and there is currently no clean way to align the two.\n\nWe are using [tidy](https://www.html-tidy.org/) for the specification instead. Make sure to install an up to date version, as for example macOS ships with an old version. Also make sure that the newly installed version is added to your `$PATH` before `/usr/bin`.\n\n#### Versioning\n\nThis is a Community Group Draft, so iteration is expected. We only snapshot major versions of the specification — for example, the [2021-03-17 draft](./specification/versions/CG-DRAFT-web-monetization-20210317.html) currently lives in `specification/versions/`.\n\n### Website development\n\nFor website development, [see here](https://github.com/WICG/webmonetization#get-set-up)\n\n## Submitting Pull Requests\n\n1. [Fork](https://github.com/WICG/webmonetization) the repository\n2. Create a new branch from `main`\n3. Make your changes and commit them\n4. Open a pull request to `main` with a clear title and description\n   - **Consider using [conventional commit](https://www.conventionalcommits.org/en/v1.0.0/) format** (e.g., `feat: add new API endpoint`, `fix: resolve validation error`)\n5. If your PR addresses an existing issue, reference it using `Closes #123`\n6. Be prepared to address feedback and make changes if needed\n\n**Contributor attribution (W3C requirement)**\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are submitting on behalf of someone else and didn't contribute directly, you can remove yourself using the same syntax.\n\n### Review Process\n\n- Maintainers will review your PR for clarity, correctness, and alignment with the specification\n- Please respond to feedback promptly and make any necessary changes\n- Once approved, your changes will be merged into the main branch\n\nThank you for contributing to Web Monetization! Join the conversation on [Slack](https://join.slack.com/t/interledger/shared_invite/zt-44g089zrn-XdSIiHF~cs8Oo_MBmSfECA) to connect with other contributors and stay up to date on developments.\n"
@@ -2365,11 +2355,6 @@
         "repo": "WICG/webrtc-diagnostic-logging",
         "error": "doesn't match CG contributing",
         "contributing": "# Web Platform Incubator Community Group\n\nThis repository is being used for work in the W3C Web Platform Incubator Community Group, governed by the [W3C Community License\nAgreement (CLA)](http://www.w3.org/community/about/process/cla/). To make substantive contributions,\nyou must join the CG.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n"
-      },
-      {
-        "repo": "WICG/webusb",
-        "error": "doesn't match CG contributing",
-        "contributing": "# Web Platform Incubator Community Group\n\nThis repository is being used for work in the Web Platform Incubator Community Group, governed by the [W3C Community License \nAgreement (CLA)](http://www.w3.org/community/about/agreements/cla/). To contribute, you must join \nthe CG. \n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request's body or in subsequent comments.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n\n# Tests\n\nFor normative changes, a corresponding\n[web-platform-tests](https://github.com/web-platform-tests/wpt) PR is highly appreciated. Typically,\nboth PRs will be merged at the same time. Note that a test change that contradicts the spec should\nnot be merged before the corresponding spec change. If testing is not practical, please explain why\nand if appropriate [file an issue](https://github.com/web-platform-tests/wpt/issues/new) to follow\nup later. Add the `type:untestable` or `type:missing-coverage` label as appropriate.\n"
       },
       {
         "repo": "WICG/window-controls-overlay",
@@ -3908,7 +3893,6 @@
       "WICG/scheduling-apis",
       "WICG/screen-brightness",
       "WICG/scroll-to-text-fragment",
-      "WICG/serial",
       "WICG/service-worker-auto-preload",
       "WICG/service-worker-static-routing-api",
       "WICG/shape-detection-api",
@@ -3932,11 +3916,9 @@
       "WICG/WebApiDevice",
       "WICG/webcomponents",
       "WICG/webcrypto-modern-algos",
-      "WICG/webhid",
       "WICG/webmonetization",
       "WICG/webpackage",
       "WICG/webrtc-diagnostic-logging",
-      "WICG/webusb",
       "WICG/wicg.github.io",
       "WICG/wicg.io",
       "WICG/window-controls-overlay"
@@ -5773,11 +5755,6 @@
         "license": "All Reports in this Repository are licensed by Contributors\nunder the\n[W3C Software and Document License](http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document).\n\nContributions to Specifications are made under the\n[W3C CLA](https://www.w3.org/community/about/agreements/cla/).\n\nContributions to Test Suites are made under the\n[W3C 3-clause BSD License](https://www.w3.org/Consortium/Legal/2008/03-bsd-license.html)\n\n"
       },
       {
-        "repo": "WICG/serial",
-        "error": "doesn't match CG license",
-        "license": "All Reports in this Repository are licensed by Contributors\nunder the\n[W3C Software and Document License](http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document).\n\nContributions to Specifications are made under the\n[W3C CLA](https://www.w3.org/community/about/agreements/cla/).\n\nContributions to Test Suites are made under the\n[W3C 3-clause BSD License](https://www.w3.org/Consortium/Legal/2008/03-bsd-license.html)\n\n"
-      },
-      {
         "repo": "WICG/service-worker-auto-preload",
         "error": "doesn't match CG license",
         "license": "All Reports in this Repository are licensed by Contributors\nunder the\n[W3C Software and Document License](https://www.w3.org/copyright/software-license/).\n\nContributions to Specifications are made under the\n[W3C CLA](https://www.w3.org/community/about/process/cla/).\n\nContributions to Test Suites are made under the\n[W3C 3-clause BSD License](https://www.w3.org/copyright/3-clause-bsd-license-2008/)\n\n"
@@ -5878,11 +5855,6 @@
         "license": "All Reports in this Repository are licensed by Contributors\nunder the\n[W3C Software and Document License](https://www.w3.org/copyright/software-license/).\n\nContributions to Specifications are made under the\n[W3C CLA](https://www.w3.org/community/about/process/cla/).\n\nContributions to Test Suites are made under the\n[W3C 3-clause BSD License](https://www.w3.org/copyright/3-clause-bsd-license-2008/)\n\n"
       },
       {
-        "repo": "WICG/webhid",
-        "error": "doesn't match CG license",
-        "license": "All Reports in this Repository are licensed by Contributors\nunder the\n[W3C Software and Document License](http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document).\n\nContributions to Specifications are made under the\n[W3C CLA](https://www.w3.org/community/about/agreements/cla/).\n\nContributions to Test Suites are made under the\n[W3C 3-clause BSD License](https://www.w3.org/Consortium/Legal/2008/03-bsd-license.html)\n\n"
-      },
-      {
         "repo": "WICG/webmonetization",
         "error": "doesn't match CG license",
         "license": "All Reports in this Repository are licensed by Contributors\nunder the\n[W3C Software and Document License](http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document).\n\nContributions to Specifications are made under the\n[W3C CLA](https://www.w3.org/community/about/agreements/cla/).\n\nContributions to Test Suites are made under the\n[W3C 3-clause BSD License](https://www.w3.org/Consortium/Legal/2008/03-bsd-license.html)\n"
@@ -5896,11 +5868,6 @@
         "repo": "WICG/webrtc-diagnostic-logging",
         "error": "doesn't match CG license",
         "license": "All Reports in this Repository are licensed by Contributors\nunder the\n[W3C Software and Document License](https://www.w3.org/copyright/software-license/).\n\nContributions to Specifications are made under the\n[W3C CLA](https://www.w3.org/community/about/process/cla/).\n\nContributions to Test Suites are made under the\n[W3C 3-clause BSD License](https://www.w3.org/copyright/3-clause-bsd-license-2008/)\n\n"
-      },
-      {
-        "repo": "WICG/webusb",
-        "error": "doesn't match CG license",
-        "license": "All Reports in this Repository are licensed by Contributors under the \n[W3C Software and Document\nLicense](http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document). Contributions to\nSpecifications are made under the [W3C CLA](https://www.w3.org/community/about/agreements/cla/).\n\n"
       },
       {
         "repo": "WICG/window-controls-overlay",
@@ -8313,10 +8280,6 @@
         "error": "main branch protection is not admin enforced"
       },
       {
-        "repo": "WICG/serial",
-        "error": "main branch protection is not admin enforced"
-      },
-      {
         "repo": "WICG/shape-detection-api",
         "error": "main branch protection is not admin enforced"
       },
@@ -8337,19 +8300,11 @@
         "error": "main branch protection is not admin enforced"
       },
       {
-        "repo": "WICG/webhid",
-        "error": "main branch protection is not admin enforced"
-      },
-      {
         "repo": "WICG/webmonetization",
         "error": "main branch protection is not admin enforced"
       },
       {
         "repo": "WICG/webpackage",
-        "error": "main branch protection is not admin enforced"
-      },
-      {
-        "repo": "WICG/webusb",
         "error": "main branch protection is not admin enforced"
       }
     ],
@@ -9265,10 +9220,6 @@
       {
         "repo": "WICG/web-smart-card",
         "error": "main branch review is not required"
-      },
-      {
-        "repo": "WICG/webhid",
-        "error": "main branch review is not required"
       }
     ],
     "missingashnazghook": [
@@ -9312,7 +9263,7 @@
       }
     ]
   },
-  "timestamp": "2026-09-14T00:32:11.800Z",
+  "timestamp": "2026-09-15T00:33:49.829Z",
   "repos": [
     {
       "id": "MDEwOlJlcG9zaXRvcnk4MTAyMTg2MA==",
@@ -13091,8 +13042,12 @@
       "w3cjson": {
         "text": "{\n    \"group\":      [87846]\n,   \"contacts\":   [ \"himorin\" ]\n,   \"repo-type\":  \"cg-report\"\n}\n"
       },
-      "prpreviewjson": null,
-      "autoPublish": null,
+      "prpreviewjson": {
+        "text": "{\n    \"src_file\": \"index.bs\",\n    \"type\": \"bikeshed\",\n    \"params\": {\n        \"force\": 1\n    }\n}\n"
+      },
+      "autoPublish": {
+        "text": "name: Build, and publish spec to GitHub Pages and /TR/\n\non:\n  pull_request: {}\n  push:\n    branches: [main]\n    paths:\n      - 'images/**'\n      - 'index.bs'\n\njobs:\n  main:\n    name: Build, Validate and Deploy\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v7\n      - uses: w3c/spec-prod@v2\n        with:\n          TOOLCHAIN: bikeshed\n          SOURCE: index.bs\n          DESTINATION: index.html\n          GH_PAGES_BRANCH: gh-pages\n#          W3C_ECHIDNA_TOKEN: ${{ secrets.W3C_TR_TOKEN }}\n#          W3C_WG_DECISION_URL: https://lists.w3.org/Archives/Public/public-immersive-web-wg/2021Sep/0004.html\n#          W3C_BUILD_OVERRIDE: |\n#            status: WD\n"
+      },
       "travis": null,
       "contributing": null,
       "license": {
@@ -13103,6 +13058,13 @@
       },
       "readme": {
         "text": "# marker-tracking\nThis feature is for adding the capability of tracking markers like QRCodes to WebXR\n"
+      },
+      "prpreview": {
+        "src_file": "index.bs",
+        "type": "bikeshed",
+        "params": {
+          "force": 1
+        }
       },
       "w3c": {
         "group": [
@@ -30824,6 +30786,10 @@
         {
           "name": "external",
           "color": "aaaaaa"
+        },
+        {
+          "name": "future work",
+          "color": "ff0673"
         },
         {
           "name": "good first issue",
@@ -61149,7 +61115,7 @@
         "body": "# Code of Conduct\n\nAll documentation, data, code and communication under this repository is covered by the [W3C Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n"
       },
       "readme": {
-        "text": "# Unicode code point frequency data\n\nData Version: 1.0\n\n## Overview\n\nThis is a collection of Unicode code point frequency data gathered from across the web. Frequencies\nare provided for individual code points and code point pairs, where each frequency count is the number\nof web pages that particular code point or pair is found on.\n\nNote: the code points do not need to occur next to each other in the source page to be counted.\nSee the collection methodology section for more information.\n\nThese data files are licensed under the\n[W3C Software and Document License](https://www.w3.org/copyright/software-license-2023/).\nSee [LICENSE.md](LICENSE.md)\n\n## Schema\n\nThe frequency data files are encoded with [Riegeli](https://github.com/google/riegeli). Each record\nis a serialized protobuf with the following schema: [unicode_count.proto](https://www.gstatic.com/fonts/unicode_frequency/v1/unicode_count.proto)\n\nThis data set contains the frequencies for pairs of code points. Each record will have exactly two\n`codepoints` fields. Records that list the same code point twice give the frequency of that code point\nindividually.\n\nFrequency data is collected by both language and script. The file name will be either:\n\n* `Language_<language code>.riegeli`, where `<language code>` is a bcp 47 tag, or\n* `Script_<script name>.csv`.\n\nSome of the larger files are split into multiple shards, these will have a suffix of the form:\n`filename.riegeli-*-of-*`.\n\n## Metadata\n\nThe `data/metadata.binpb` file contains a binary protobuf with metadata about the frequency data files. This includes:\n- A list of all available data files.\n- For each file, a list of code points covered by that file.\n\nThe schema for this metadata is defined in `metadata.proto`.\n\nYou can regenerate this metadata file using the `generate_metadata` utility:\n\n`bazel run -c opt //:generate_metadata -- --input_dir=$(pwd)/data --output_file=$(pwd)/data/metadata.binpb`\n\n## Tools\n\nThe [ift-encoder](https://github.com/w3c/ift-encoder) library provides tools and libraries for interacting\nwith these data files:\n\n* [freq_data_to_sorted_code points](https://github.com/w3c/ift-encoder/blob/main/util/freq_data_to_sorted_codepoints.cc):\n  can pull out single code point frequencies and output them in a text format. Example usage:\n\n  `bazel run util:freq_data_to_sorted_codepoints -- \"Language_ja.riegeli@*\" --add_character > japanese-freqs.txt`\n\n* [ift-encoder util::LoadFrequenciesFromRiegeli](https://github.com/w3c/ift-encoder/blob/main/util/load_codepoints.h):\n  provides a C++ API for loading these files.\n\nThese also provide a demonstration for how to use the Riegeli library to parse the files. Both of these are capable of\nhandling sharded data files. When loading a file that is sharded append `@*` to the file name. For example\n`Language_ja.riegeli@*`.\n\n## Alternate Copy\n\nYou can also find a copy of the data files in this repo hosted under `https://www.gstatic.com/fonts/unicode_frequency/v1/`.\nThe list of data files that are present is given by [DATA_FILE_LIST](https://www.gstatic.com/fonts/unicode_frequency/v1/DATA_FILE_LIST).\n\n## Collection Methodology\n\n* Pages from a web search index are first randomly sampled.\n  * Note: this means that reported counts are not absolute and should be interpreted relatively\n    within a particular file.\n* Each selected page is analyzed to determine the language that it is written in. Pages with a low\n  confidence language detection are discarded.\n* Based on the detected language an associated writing script is selected.\n  * Note: this means for some scripts counts are influenced by page samples from multiple languages,\n    the most prominent example of this is latin which includes many languages.\n* For each unique code point pair on a page the associated count for that script and language is incremented by 1.\n  * Here a code point pair just means that both code points are present somewhere on the page, it\n    does not require they occur next to each other in the text.\n  * Each unique pair is counted only once per page.\n* Within a script code points are filtered to those used in that script, using the definitions in\n  [googlefonts/nam-files](https://github.com/googlefonts/nam-files/tree/main/Lib/gfsubsets/data)\n* In addition to the individual CJK scripts an overall CJK code point frequency count is collected by\n  combining all of the Chinese, Japanese, and Korean counts. This can be found in `Script_CJK.riegeli`.\n* `Script_emoji.csv` and `Script_symbols.csv` are based on counts across all scripts.\n* `fallback.csv` collects up counts across all scripts of any code points which are not\n  associated with any other script.\n"
+        "text": "# Unicode code point frequency data\n\nData Version: 1.0\n\n## Overview\n\nThis is a collection of Unicode code point frequency data gathered from across the web. Frequencies\nare provided for individual code points and code point pairs, where each frequency count is the number\nof web pages that particular code point or pair is found on.\n\nNote: the code points do not need to occur next to each other in the source page to be counted.\nSee the collection methodology section for more information.\n\nThese data files are licensed under the\n[W3C Software and Document License](https://www.w3.org/copyright/software-license-2023/).\nSee [LICENSE.md](LICENSE.md)\n\n## Schema\n\nThe frequency data files are encoded with [Riegeli](https://github.com/google/riegeli). Each record\nis a serialized protobuf with the following schema: [unicode_count.proto](https://www.gstatic.com/fonts/unicode_frequency/v1/unicode_count.proto)\n\nThis data set contains the frequencies for pairs of code points. Each record will have exactly two\n`codepoints` fields. Records that list the same code point twice give the frequency of that code point\nindividually.\n\nFrequency data is collected by both language and script. The file name will be either:\n\n* `Language_<language code>.riegeli`, where `<language code>` is a bcp 47 tag, or\n* `Script_<script name>.csv`.\n\nSome of the larger files are split into multiple shards, these will have a suffix of the form:\n`filename.riegeli-*-of-*`.\n\n## Metadata\n\nThe `data/metadata.binpb` file contains a binary protobuf with metadata about the frequency data files. This includes:\n- A list of all available data files.\n- For each file, a list of code points covered by that file.\n\nThe schema for this metadata is defined in `metadata.proto`.\n\nYou can regenerate this metadata file using the `generate_metadata` utility:\n\n`bazel run -c opt //:generate_metadata -- --input_dir=$(pwd)/data --output_file=$(pwd)/data/metadata.binpb`\n\n## Unigram only data\n\nConsumers that only need individual code point frequencies (and not the code point pair frequencies)\ncan use the filtered copy of the data set under `data/unigram/`. It contains the same set of files,\nwith the same schema, but only the records giving the frequency of an individual code point (that is,\nrecords which list the same code point twice) are retained. As in the full data set, records are\nordered by descending count. Files there are never sharded, since the unigram data is much smaller.\n\nYou can regenerate this directory using the `generate_unigrams` utility:\n\n`bazel run -c opt //:generate_unigrams -- --input_dir=$(pwd)/data --output_dir=$(pwd)/data/unigram`\n\n## Tools\n\nThe [ift-encoder](https://github.com/w3c/ift-encoder) library provides tools and libraries for interacting\nwith these data files:\n\n* [freq_data_to_sorted_code points](https://github.com/w3c/ift-encoder/blob/main/util/freq_data_to_sorted_codepoints.cc):\n  can pull out single code point frequencies and output them in a text format. Example usage:\n\n  `bazel run util:freq_data_to_sorted_codepoints -- \"Language_ja.riegeli@*\" --add_character > japanese-freqs.txt`\n\n* [ift-encoder util::LoadFrequenciesFromRiegeli](https://github.com/w3c/ift-encoder/blob/main/util/load_codepoints.h):\n  provides a C++ API for loading these files.\n\nThese also provide a demonstration for how to use the Riegeli library to parse the files. Both of these are capable of\nhandling sharded data files. When loading a file that is sharded append `@*` to the file name. For example\n`Language_ja.riegeli@*`.\n\n## Alternate Copy\n\nYou can also find a copy of the data files in this repo hosted under `https://www.gstatic.com/fonts/unicode_frequency/v1/`.\nThe list of data files that are present is given by [DATA_FILE_LIST](https://www.gstatic.com/fonts/unicode_frequency/v1/DATA_FILE_LIST).\n\n## Collection Methodology\n\n* Pages from a web search index are first randomly sampled.\n  * Note: this means that reported counts are not absolute and should be interpreted relatively\n    within a particular file.\n* Each selected page is analyzed to determine the language that it is written in. Pages with a low\n  confidence language detection are discarded.\n* Based on the detected language an associated writing script is selected.\n  * Note: this means for some scripts counts are influenced by page samples from multiple languages,\n    the most prominent example of this is latin which includes many languages.\n* For each unique code point pair on a page the associated count for that script and language is incremented by 1.\n  * Here a code point pair just means that both code points are present somewhere on the page, it\n    does not require they occur next to each other in the text.\n  * Each unique pair is counted only once per page.\n* Within a script code points are filtered to those used in that script, using the definitions in\n  [googlefonts/nam-files](https://github.com/googlefonts/nam-files/tree/main/Lib/gfsubsets/data)\n* In addition to the individual CJK scripts an overall CJK code point frequency count is collected by\n  combining all of the Chinese, Japanese, and Korean counts. This can be found in `Script_CJK.riegeli`.\n* `Script_emoji.csv` and `Script_symbols.csv` are based on counts across all scripts.\n* `fallback.csv` collects up counts across all scripts of any code points which are not\n  associated with any other script.\n"
       },
       "w3c": {
         "group": [
@@ -167799,7 +167765,7 @@
         "body": "# Code of Conduct\n\nAll documentation, code, communication and discussion in this repository are covered by the [W3C Code of Conduct](https://www.w3.org/policies/code-of-conduct/).\n"
       },
       "readme": {
-        "text": "# Web Platform Design Principles\n\nA set of design principles to be used when designing web platform technologies. These principles have been collected by the [Technical Architecture Group](https://www.w3.org/2001/tag/) and developed along with the [Ethical Web principles](https://github.com/w3ctag/ethical-web-principles/).\n\n\n## Building\n\nYou will need [GNU Make](https://www.gnu.org/software/make/) and Python 3.\n\nWith those dependencies, simply invoke `make` to build the document.\n\n\n## Contributing\n\nContributions are welcome to anyone who follows [our code of conduct](https://www.w3.org/Consortium/cepc/).\n\nWhen proposing new principles or updating existing ones, please take the [criteria](#criteria) into consideration.\nThe editors will merge PRs after they have TAG consensus and will attempt to document that consensus\nby linking to the meeting minutes. If you notice a change that seems to have been merged without\nconsensus, please comment on its PR or file an issue, and we'll either quickly find better evidence\nor back out the change until we can discuss it more fully.\n\n\n## Criteria\n\nThese criteria support consistent evaluation of proposed principles.\nThey are not strict rules and may not all apply in every case.\nPrinciples should be:\n\n* Grounded in patterns from specs, implementations, or real-world web use.\n* Evidence-based.\n* Generalisable across multiple technologies and use cases, persistent over time.\n* Informed by community practices, standards, or observed usage.\n* Guided by a clear value or priority, e.g., prefer simplicity, preserve individual/user agency.\n* Compatible with established principles and guidelines, \n    e.g., [Privacy Principles](https://www.w3.org/TR/privacy-principles/) or [Ethical Web Principles](https://www.w3.org/TR/ethical-web-principles/).\n"
+        "text": "# Web Platform Design Principles\n\nA [set of design principles](https://www.w3.org/TR/design-principles/) to be used when designing web platform technologies. These principles have been collected by the [Technical Architecture Group](https://www.w3.org/2001/tag/) and developed along with the [Ethical Web principles](https://github.com/w3ctag/ethical-web-principles/).\n\n\n## Building\n\nYou will need [GNU Make](https://www.gnu.org/software/make/) and Python 3.\n\nWith those dependencies, simply invoke `make` to build the document.\n\n\n## Contributing\n\nContributions are welcome to anyone who follows [our code of conduct](https://www.w3.org/Consortium/cepc/).\n\nWhen proposing new principles or updating existing ones, please take the [criteria](#criteria) into consideration.\nThe editors will merge PRs after they have TAG consensus and will attempt to document that consensus\nby linking to the meeting minutes. If you notice a change that seems to have been merged without\nconsensus, please comment on its PR or file an issue, and we'll either quickly find better evidence\nor back out the change until we can discuss it more fully.\n\n\n## Criteria\n\nThese criteria support consistent evaluation of proposed principles.\nThey are not strict rules and may not all apply in every case.\nPrinciples should be:\n\n* Grounded in patterns from specs, implementations, or real-world web use.\n* Evidence-based.\n* Generalisable across multiple technologies and use cases, persistent over time.\n* Informed by community practices, standards, or observed usage.\n* Guided by a clear value or priority, e.g., prefer simplicity, preserve individual/user agency.\n* Compatible with established principles and guidelines, \n    e.g., [Privacy Principles](https://www.w3.org/TR/privacy-principles/) or [Ethical Web Principles](https://www.w3.org/TR/ethical-web-principles/).\n"
       },
       "prpreview": {
         "src_file": "index.bs",
@@ -170221,6 +170187,10 @@
         {
           "name": "Agenda+ F2F",
           "color": "000000"
+        },
+        {
+          "name": "agenda+ plenary",
+          "color": "aaaaaa"
         },
         {
           "name": "agendas",
@@ -184676,7 +184646,7 @@
       "license": null,
       "codeOfConduct": null,
       "readme": {
-        "text": "# WebMCP polyfill\n\nA document-local registration and discovery implementation of the [WebMCP draft](https://webmachinelearning.github.io/webmcp/), using the official [webmcp-types](https://github.com/webmachinelearning/webmcp-types). This is an initial implementation for review, not a complete implementation of the proposal.\n\n## Use\n\nServe the page over HTTPS with the `Origin-Agent-Cluster: ?1` response header. This is required for the origin-keyed agent cluster expected by the draft; Firefox and WebKit need the explicit header in our browser tests. The runtime rejects operations with `SecurityError` when the browser reports `originAgentCluster === false` (except `file:` documents).\n\nImport the auto-install entry before registering tools:\n\n```ts\nimport \"webmcp-polyfill/auto\";\n\nconst context = document.modelContext;\nif (!context) throw new Error(\"WebMCP requires a secure browser context\");\n\nconst registration = new AbortController();\nawait context.registerTool(\n  {\n    name: \"greet\",\n    description: \"Greet someone by name\",\n    inputSchema: {\n      type: \"object\",\n      properties: { name: { type: \"string\" } },\n      required: [\"name\"],\n    },\n    execute({ name }, { signal }) {\n      signal.throwIfAborted();\n      return { greeting: `Hello, ${name}` };\n    },\n  },\n  { signal: registration.signal },\n);\n\nconsole.log(await context.getTools());\n\nregistration.abort();\n```\n\nFor explicit installation, import `installWebMCP` from `webmcp-polyfill` and call it. Importing that entry alone does not install anything. The installer does nothing outside a secure browser context or when `document.modelContext` already exists. It does not patch a partial native implementation.\n\nFor a classic script, use the bundled `dist/auto.js`. It installs automatically, without imports or runtime dependencies. The package name and initial version are provisional; develop from this checkout until it is published.\n\n## Supported scope\n\n| Behavior                                                         | This implementation                                                                                           |\n| ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |\n| Imperative registration, discovery, `toolchange`                 | Supported within one document                                                                                 |\n| JSON metadata and schema-based input inference                   | Uses `webmcp-types`; inference does not validate runtime inputs                                               |\n| Execution                                                        | Deferred to a separate PR, following [types PR #3](https://github.com/webmachinelearning/webmcp-types/pull/3) |\n| Registration lifetime                                            | Aborting registration removes the tool and emits `toolchange`                                                 |\n| Browser API shape                                                | `Document.prototype.modelContext`, `ModelContext`, `EventTarget`                                              |\n| Cross-document discovery                                         | Not supported, including same-origin frames                                                                   |\n| `exposedTo` / `fromOrigins`                                      | Empty sequences supported; nonempty sequences reject                                                          |\n| Declarative forms, CSS tool states, tool lifecycle window events | Not included in this first implementation                                                                     |\n| Navigation, BFCache and browser agent integration                | Require further work / native support                                                                         |\n\nThe runtime checks tool descriptors and JSON serialization. Application callbacks remain responsible for validating their inputs. It does not install a schema validator, MCP server, transport, navigator alias, or removed testing API.\n\nWhere exposed by the browser, the `tools` Permissions Policy is checked. Without that policy surface, cross-origin frames fail closed. Page JavaScript cannot reproduce browser permissions or authenticate messages from other page scripts.\n\n### Draft alignment\n\nThe initial implementation was compared with [draft source `97da8f5`](https://github.com/webmachinelearning/webmcp/blob/97da8f515427594c856307e3476c0a0db9698fbb/index.bs). Timing uses tasks rather than microtasks, but a JavaScript timer cannot reproduce the browser's dedicated WebMCP task source.\n\nThis initial change matches the registration/discovery surface in `webmcp-types@0.1.7` directly, without augmenting its declarations. `executeTool()` and its execution tests are deferred to a follow-up alongside [types PR #3](https://github.com/webmachinelearning/webmcp-types/pull/3). Registered callbacks are retained, but this version does not provide an invocation API.\n\nThis package tracks the evolving draft. Breaking API changes will use a major release and migration notes.\n\n## Develop\n\nUse Node.js 22 or newer and pnpm:\n\n```sh\npnpm install\npnpm exec playwright install chromium firefox webkit\npnpm typecheck\npnpm test\npnpm test:package\n```\n\nSee [testing and upstream tracking](TESTING.md) for the browser matrix, WPT selection, artifacts, and excluded coverage. `pnpm test` runs real pages in Chromium, Firefox, and WebKit, including native API preservation in Chromium. `pnpm test:package` checks a packed consumer. `pnpm test:wpt` runs 13 upstream registration/discovery files with 27 passing assertions and no expected failures. Execution and full IDL coverage belong to the follow-up.\n\nKeep `webmcp-types` and `webmcp-polyfill` as sibling checkouts for local iteration. To try a types change, run `pnpm link ../webmcp-types` here, then `pnpm typecheck`. Restore the published dependency with `pnpm install --force` before the final package check, and do not commit a local dependency override.\n\nBefore proposing a release: review the draft diff, run applicable upstream WPT and IDL checks, and record unsupported assertions separately from regressions. The focused browser suite is not a claim of full WPT conformance. Declarative support can be brought over from MCP-B as a separate entry once its execution behavior is aligned.\n\n## License\n\nMIT. The implementation builds on the document-local runtime in [MCP-B](https://github.com/WebMCP-org/npm-packages/tree/main/packages/webmcp-polyfill); see [LICENSE](LICENSE).\n"
+        "text": "# WebMCP polyfill\n\nA polyfill for [WebMCP](https://webmachinelearning.github.io/webmcp/), with types from [webmcp-types](https://github.com/webmachinelearning/webmcp-types) and no runtime JavaScript dependencies.\n\n## Build\n\nThis package is under review. To try it locally, build this checkout with Node.js 22+ and pnpm:\n\n```sh\npnpm install\npnpm build\n```\n\nThen install the checkout in your app with `pnpm add /path/to/webmcp-polyfill`. For a classic script, serve the built `dist/auto.js`.\n\n## Usage\n\nServe your page over HTTPS with the `Origin-Agent-Cluster: ?1` response header. Localhost HTTP also works for development.\n\nLoad the polyfill before registering tools:\n\n```ts\nimport \"webmcp-polyfill/auto\";\n\nconst context = document.modelContext;\nif (!context) throw new Error(\"WebMCP requires a secure browser context\");\n\nconst registration = new AbortController();\nawait context.registerTool(\n  {\n    name: \"page-title\",\n    description: \"Get the title of this page\",\n    execute() {\n      return { title: document.title };\n    },\n  },\n  { signal: registration.signal },\n);\n\nconsole.log(await context.getTools());\n\n// Remove the tool when it is no longer needed.\nregistration.abort();\n```\n\nTo install explicitly, import and call `installWebMCP` from `webmcp-polyfill`. Installation requires a secure browser context and leaves an existing `document.modelContext` unchanged, including partial native implementations.\n\n## Scope\n\nTools stay in the current document. Cross-document tools, declarative forms, lifecycle window events, and browser agent integration aren't implemented. Nonempty `exposedTo` and `fromOrigins` options reject.\n\nThis version supports registration, discovery, and `toolchange`. It does not invoke registered callbacks; `executeTool()` follows alongside [the types update](https://github.com/webmachinelearning/webmcp-types/pull/3).\n\nThe API tracks the evolving draft. Breaking changes will use major releases and migration notes.\n\n## Development\n\nSee [TESTING.md](TESTING.md) for browser setup, test commands, draft alignment, and known limitations.\n\n## License\n\n[MIT](LICENSE).\n"
       }
     },
     {
@@ -204260,117 +204230,6 @@
       }
     },
     {
-      "id": "MDEwOlJlcG9zaXRvcnkxMzk2MDI2Mw==",
-      "name": "serial",
-      "owner": {
-        "login": "WICG"
-      },
-      "isArchived": false,
-      "homepageUrl": "https://wicg.github.io/serial/",
-      "description": "Serial ports API for the platform. ",
-      "isPrivate": false,
-      "createdAt": "2013-10-29T15:44:42Z",
-      "labels": [
-        {
-          "name": "a11y-needs-resolution",
-          "color": "ea7472"
-        },
-        {
-          "name": "a11y-tracker",
-          "color": "ea7472"
-        },
-        {
-          "name": "good first issue",
-          "color": "bfe5bf"
-        },
-        {
-          "name": "i18n-needs-resolution",
-          "color": "F9C9FF"
-        },
-        {
-          "name": "i18n-tracker",
-          "color": "F9C9FF"
-        },
-        {
-          "name": "privacy-needs-resolution",
-          "color": "d4af37"
-        },
-        {
-          "name": "privacy-tracker",
-          "color": "d4af37"
-        },
-        {
-          "name": "security-needs-resolution",
-          "color": "ffff00"
-        },
-        {
-          "name": "security-tracker",
-          "color": "ffff00"
-        },
-        {
-          "name": "tag-needs-resolution",
-          "color": "7fff00"
-        },
-        {
-          "name": "tag-tracker",
-          "color": "7fff00"
-        }
-      ],
-      "defaultBranch": {
-        "name": "main"
-      },
-      "environments": {
-        "nodes": [
-          {
-            "name": "github-pages"
-          }
-        ]
-      },
-      "branchProtectionRules": {
-        "nodes": [
-          {
-            "pattern": "main",
-            "requiredApprovingReviewCount": 1,
-            "requiredStatusCheckContexts": [
-              "ipr",
-              "Build, Validate and Deploy"
-            ],
-            "isAdminEnforced": false
-          }
-        ]
-      },
-      "w3cjson": {
-        "text": " {\n    \"group\":      [\"80485\"]\n,   \"contacts\":   [\"marcoscaceres\",\"reillyeon\"],\n    \"repo-type\": \"cg-report\"\n}\n"
-      },
-      "prpreviewjson": null,
-      "autoPublish": null,
-      "travis": null,
-      "contributing": {
-        "text": "For significant contributions (i.e., non-editorial changes to the API), \nwe require you to become a member of the \n[Web Platform Incubator CG](http://www.w3.org/community/wicg/). This helps \nkeep the spec royalty free and gives us some patent protection! \n\nThis spec is written using [ReSpec](http://w3.org/respec/). For\nconfiguration options, etc. please see the [ReSpec\nrefeference](www.w3.org/respec/ref.html).\n\nPlease make sure you run [HTML5 Tidy](http://w3c.github.io/tidy-html5/) \nbefore sending a Pull Request:\n\n```Bash \ntidy -config tidyconfig.txt -o index.html index.html \n```\n"
-      },
-      "license": {
-        "text": "All Reports in this Repository are licensed by Contributors\nunder the\n[W3C Software and Document License](http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document).\n\nContributions to Specifications are made under the\n[W3C CLA](https://www.w3.org/community/about/agreements/cla/).\n\nContributions to Test Suites are made under the\n[W3C 3-clause BSD License](https://www.w3.org/Consortium/Legal/2008/03-bsd-license.html)\n\n"
-      },
-      "codeOfConduct": {
-        "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n"
-      },
-      "readme": {
-        "text": "# Serial API\n\n[Serial ports API](http://wicg.github.io/serial/) for the platform. \n\n### Explainer\n\nDetails about the API including example usage code snippets and its motivation, privacy, and security considerations are described in [EXPLAINER.md](./EXPLAINER.md). Extensions to this API to support connections to Bluetooth RFCOMM services are described in [EXPLAINER_BLUETOOTH.md](./EXPLAINER_BLUETOOTH.md).\n\n### Code of conduct\n\nWe are committed to providing a friendly, safe and welcoming environment for all. Please read and respect the [W3C Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n\n### Implementation status\n\nThis API has two implementations: [Blink](https://source.chromium.org/chromium/chromium/src/+/main:third_party/blink/renderer/modules/serial/) and [a polyfill](https://github.com/google/web-serial-polyfill/)\n\nThe Blink implementation is available in browsers based on Chromium 89 and later, such as Google Chrome and Microsoft Edge. Individual Chromium-based browsers may choose to enable or disable this API. Chromium-based Android browsers do not support this API because Android itself does not provide a direct API for accessing serial ports. For the same reason this API is not available in Android WebView ([Chromium issue 1164036](https://crbug.com/1164036)).\n\nThe polyfill implementation is based on the WebUSB API and currently only supports standard USB communications class devices but could be expanded to support other proprietary USB to serial adapters. It could also be expanded to support Bluetooth Low Energy UARTs via the Web Bluetooth API. Because both WebUSB and Web Bluetooth are available in Chromium-based browsers on Android the polyfill is an option for sites to support Android while using the native browser implementation on desktop platforms.\n"
-      },
-      "w3c": {
-        "group": [
-          "80485"
-        ],
-        "contacts": [
-          "marcoscaceres",
-          "reillyeon"
-        ],
-        "repo-type": [
-          "cg-report"
-        ]
-      }
-    },
-    {
       "id": "MDEwOlJlcG9zaXRvcnk4NjEwODU0MA==",
       "name": "server-timing",
       "owner": {
@@ -208863,143 +208722,6 @@
       }
     },
     {
-      "id": "MDEwOlJlcG9zaXRvcnkxNTAxODQ2ODA=",
-      "name": "webhid",
-      "owner": {
-        "login": "WICG"
-      },
-      "isArchived": false,
-      "homepageUrl": "",
-      "description": "Web API for accessing Human Interface Devices (HID)",
-      "isPrivate": false,
-      "createdAt": "2018-09-25T00:20:48Z",
-      "labels": [
-        {
-          "name": "a11y-needs-resolution",
-          "color": "ea7472"
-        },
-        {
-          "name": "a11y-tracker",
-          "color": "ea7472"
-        },
-        {
-          "name": "bug",
-          "color": "d73a4a"
-        },
-        {
-          "name": "duplicate",
-          "color": "cfd3d7"
-        },
-        {
-          "name": "enhancement",
-          "color": "a2eeef"
-        },
-        {
-          "name": "good first issue",
-          "color": "7057ff"
-        },
-        {
-          "name": "help wanted",
-          "color": "008672"
-        },
-        {
-          "name": "i18n-needs-resolution",
-          "color": "F9C9FF"
-        },
-        {
-          "name": "i18n-tracker",
-          "color": "F9C9FF"
-        },
-        {
-          "name": "invalid",
-          "color": "e4e669"
-        },
-        {
-          "name": "privacy-needs-resolution",
-          "color": "d4af37"
-        },
-        {
-          "name": "privacy-tracker",
-          "color": "d4af37"
-        },
-        {
-          "name": "question",
-          "color": "d876e3"
-        },
-        {
-          "name": "security-needs-resolution",
-          "color": "ffff00"
-        },
-        {
-          "name": "security-tracker",
-          "color": "ffff00"
-        },
-        {
-          "name": "tag-needs-resolution",
-          "color": "7fff00"
-        },
-        {
-          "name": "tag-tracker",
-          "color": "7fff00"
-        },
-        {
-          "name": "wontfix",
-          "color": "ffffff"
-        }
-      ],
-      "defaultBranch": {
-        "name": "main"
-      },
-      "environments": {
-        "nodes": [
-          {
-            "name": "github-pages"
-          }
-        ]
-      },
-      "branchProtectionRules": {
-        "nodes": [
-          {
-            "pattern": "main",
-            "requiredApprovingReviewCount": null,
-            "requiredStatusCheckContexts": [],
-            "isAdminEnforced": false
-          }
-        ]
-      },
-      "w3cjson": {
-        "text": " {\n    \"group\":      [80485]\n,   \"contacts\":   [\"marcoscaceres\"]\n,   \"repo-type\":  \"cg-report\"\n}\n"
-      },
-      "prpreviewjson": null,
-      "autoPublish": {
-        "text": "name: CI\non:\n  pull_request: {}\n  push:\n    branches: [main]\njobs:\n  main:\n    name: Build, Validate and Deploy\n    runs-on: ubuntu-20.04\n    steps:\n      - uses: actions/checkout@v3\n      - uses: w3c/spec-prod@v2\n        with:\n          SOURCE: index.html\n          TOOLCHAIN: respec\n          GH_PAGES_BRANCH: gh-pages\n"
-      },
-      "travis": null,
-      "contributing": {
-        "text": "# Web Platform Incubator Community Group\n\nThis repository is being used for work in the W3C Web Platform Incubator Community Group, governed by the [W3C Community License\nAgreement (CLA)](http://www.w3.org/community/about/agreements/cla/). To make substantive contributions,\nyou must join the CG.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n"
-      },
-      "license": {
-        "text": "All Reports in this Repository are licensed by Contributors\nunder the\n[W3C Software and Document License](http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document).\n\nContributions to Specifications are made under the\n[W3C CLA](https://www.w3.org/community/about/agreements/cla/).\n\nContributions to Test Suites are made under the\n[W3C 3-clause BSD License](https://www.w3.org/Consortium/Legal/2008/03-bsd-license.html)\n\n"
-      },
-      "codeOfConduct": {
-        "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n"
-      },
-      "readme": {
-        "text": "# WebHID API\n\n[HID API](http://wicg.github.io/webhid/) for the web platform. \n\n### Explainer\n\nDetails about the API including example usage code snippets and its motivation, privacy, and security considerations are described in the [Explainer](./EXPLAINER.md).\n\n### Code of conduct\n\nWe are committed to providing a friendly, safe and welcoming environment for all. Please read and respect the [W3C Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n\n### Implementation status\n\nThis API is implemented in [Blink](https://source.chromium.org/chromium/chromium/src/+/main:third_party/blink/renderer/modules/hid/). It is available in browsers based on Chromium 89 and later, such as Google Chrome and Microsoft Edge. Individual Chromium-based browsers may choose to enable or disable this API. Chromium-based Android browsers do not support this API because Android itself does not provide a direct API for accessing HID devices ([Chromium issue 964441](https://crbug.com/964441)). For the same reason this API is not available in Android WebView ([Chromium issue 1164125](https://crbug.com/1164125))."
-      },
-      "w3c": {
-        "group": [
-          80485
-        ],
-        "contacts": [
-          "marcoscaceres"
-        ],
-        "repo-type": [
-          "cg-report"
-        ]
-      }
-    },
-    {
       "id": "MDEwOlJlcG9zaXRvcnkxNDc4ODMzMDg=",
       "name": "webmonetization",
       "owner": {
@@ -209455,148 +209177,6 @@
         "contacts": [
           "cwilso"
         ],
-        "repo-type": [
-          "cg-report"
-        ]
-      }
-    },
-    {
-      "id": "MDEwOlJlcG9zaXRvcnkzNTMwNTc3Mw==",
-      "name": "webusb",
-      "owner": {
-        "login": "WICG"
-      },
-      "isArchived": false,
-      "homepageUrl": "https://wicg.github.io/webusb/",
-      "description": "Connecting hardware to the web.",
-      "isPrivate": false,
-      "createdAt": "2015-05-08T22:53:16Z",
-      "labels": [
-        {
-          "name": "a11y-needs-resolution",
-          "color": "ea7472"
-        },
-        {
-          "name": "a11y-tracker",
-          "color": "ea7472"
-        },
-        {
-          "name": "bug",
-          "color": "fc2929"
-        },
-        {
-          "name": "duplicate",
-          "color": "cccccc"
-        },
-        {
-          "name": "enhancement",
-          "color": "84b6eb"
-        },
-        {
-          "name": "help wanted",
-          "color": "159818"
-        },
-        {
-          "name": "i18n-needs-resolution",
-          "color": "F9C9FF"
-        },
-        {
-          "name": "i18n-tracker",
-          "color": "F9C9FF"
-        },
-        {
-          "name": "invalid",
-          "color": "e6e6e6"
-        },
-        {
-          "name": "privacy-needs-resolution",
-          "color": "d4af37"
-        },
-        {
-          "name": "privacy-tracker",
-          "color": "d4af37"
-        },
-        {
-          "name": "question",
-          "color": "cc317c"
-        },
-        {
-          "name": "security-needs-resolution",
-          "color": "ffff00"
-        },
-        {
-          "name": "security-tracker",
-          "color": "ffff00"
-        },
-        {
-          "name": "tag-needs-resolution",
-          "color": "7fff00"
-        },
-        {
-          "name": "tag-tracker",
-          "color": "7fff00"
-        },
-        {
-          "name": "wontfix",
-          "color": "ffffff"
-        }
-      ],
-      "defaultBranch": {
-        "name": "main"
-      },
-      "environments": {
-        "nodes": [
-          {
-            "name": "github-pages"
-          }
-        ]
-      },
-      "branchProtectionRules": {
-        "nodes": [
-          {
-            "pattern": "main",
-            "requiredApprovingReviewCount": 1,
-            "requiredStatusCheckContexts": [
-              "Build, Validate and Deploy",
-              "ipr"
-            ],
-            "isAdminEnforced": false
-          }
-        ]
-      },
-      "w3cjson": {
-        "text": " {\n    \"group\":      [\"80485\"]\n,   \"contacts\":   [\"yoavweiss\"]\n,   \"shortName\":  \"webusb\",\n    \"repo-type\":  \"cg-report\"\n}\n"
-      },
-      "prpreviewjson": {
-        "text": "{\n    \"src_file\": \"index.bs\",\n    \"type\": \"bikeshed\",\n    \"params\": {\n        \"force\": 1\n    }\n}\n"
-      },
-      "autoPublish": null,
-      "travis": null,
-      "contributing": {
-        "text": "# Web Platform Incubator Community Group\n\nThis repository is being used for work in the Web Platform Incubator Community Group, governed by the [W3C Community License \nAgreement (CLA)](http://www.w3.org/community/about/agreements/cla/). To contribute, you must join \nthe CG. \n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request's body or in subsequent comments.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n\n# Tests\n\nFor normative changes, a corresponding\n[web-platform-tests](https://github.com/web-platform-tests/wpt) PR is highly appreciated. Typically,\nboth PRs will be merged at the same time. Note that a test change that contradicts the spec should\nnot be merged before the corresponding spec change. If testing is not practical, please explain why\nand if appropriate [file an issue](https://github.com/web-platform-tests/wpt/issues/new) to follow\nup later. Add the `type:untestable` or `type:missing-coverage` label as appropriate.\n"
-      },
-      "license": {
-        "text": "All Reports in this Repository are licensed by Contributors under the \n[W3C Software and Document\nLicense](http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document). Contributions to\nSpecifications are made under the [W3C CLA](https://www.w3.org/community/about/agreements/cla/).\n\n"
-      },
-      "codeOfConduct": null,
-      "readme": {
-        "text": "WebUSB\n======\n\nConnecting hardware to the web.\n\n![Build status](https://github.com/WICG/webusb/actions/workflows/pr-push.yml/badge.svg)\n\nDocuments\n---------\n\n* [Specification](https://wicg.github.io/webusb/) (Editor's Draft)\n* [Test API Specification](https://wicg.github.io/webusb/test/) (Editor's Draft)\n\nCommunication\n-------------\n\n* [Stack Overflow](https://stackoverflow.com/questions/tagged/webusb) for questions & answers about **using** WebUSB.\n* [Issue Tracker](https://github.com/wicg/webusb/issues) for **specification** issues.\n* [Chromium Issue Tracker](https://bugs.chromium.org/p/chromium/issues/list?q=component%3ABlink>USB) for Chrome **implementation** issues.\n\nImplementation Status\n---------------------\n\n* Available in Chromium-based browsers for Android, ChromeOS, Linux, macOS and Windows (released in Chrome 61).\n* The Node.js [usb](https://github.com/node-usb/node-usb) package exports a `WebUSB` object.  \n\nDemos\n-----\n\n* [Arduino Integration](https://github.com/webusb/arduino/)\n* [WebLight](https://github.com/sowbug/weblight)\n* [USB Device Firmware Upgrade (DFU)](https://github.com/devanlai/webdfu)\n* [WebADB](https://github.com/webadb/webadb.js)\n* [Zephyr JS IDE](https://github.com/01org/zephyrjs-ide), [hosted IDE](https://01org.github.io/zephyrjs-ide/)\n* [DSLR camera control](https://web-gphoto2.rreverser.com/)\n\nArticles\n--------\n\n* [Access USB Devices on the Web](https://developers.google.com/web/updates/2016/03/access-usb-devices-on-the-web)\n* [The WebUSB Security Model](https://medium.com/dev-channel/the-webusb-security-model-f48ee04de0ab) (outdated)\n* [WebUSB and JavaScript Robotics](http://iceddev.com/blog/webusb-and-javascript-robotics/) (PageNodes)\n* [Program a smart device directly, no install needed](https://medium.com/@kennethrohde/program-a-smart-device-directly-no-install-needed-cd8b29320d76) (Arduino running Zephyr)\n* [Web enabling legacy devices](https://medium.com/@larsgk/web-enabling-legacy-devices-dc3ecb9400ed) Discusses USB CDC (USB Serial devices)\n"
-      },
-      "prpreview": {
-        "src_file": "index.bs",
-        "type": "bikeshed",
-        "params": {
-          "force": 1
-        }
-      },
-      "w3c": {
-        "group": [
-          "80485"
-        ],
-        "contacts": [
-          "yoavweiss"
-        ],
-        "shortName": "webusb",
         "repo-type": [
           "cg-report"
         ]
@@ -213459,10 +213039,6 @@
           "fullName": "WICG/scroll-to-text-fragment"
         },
         {
-          "name": "serial",
-          "fullName": "WICG/serial"
-        },
-        {
           "name": "service-worker-auto-preload",
           "fullName": "WICG/service-worker-auto-preload"
         },
@@ -213552,10 +213128,6 @@
           "fullName": "WICG/webcrypto-modern-algos"
         },
         {
-          "name": "webhid",
-          "fullName": "WICG/webhid"
-        },
-        {
           "name": "webmonetization",
           "fullName": "WICG/webmonetization"
         },
@@ -213566,10 +213138,6 @@
         {
           "name": "webrtc-diagnostic-logging",
           "fullName": "WICG/webrtc-diagnostic-logging"
-        },
-        {
-          "name": "webusb",
-          "fullName": "WICG/webusb"
         },
         {
           "name": "window-controls-overlay",
@@ -214346,7 +213914,7 @@
           "href": "https://api.w3.org/groups/wg/wot/charters"
         },
         "active-charter": {
-          "href": "https://api.w3.org/groups/wg/wot/charters/487"
+          "href": "https://api.w3.org/groups/wg/wot/charters/562"
         },
         "join": {
           "href": "https://www.w3.org/groups/wg/wot/join"
@@ -214363,7 +213931,7 @@
       },
       "type": "working group",
       "start-date": "2016-12-27",
-      "end-date": "2026-10-16",
+      "end-date": "2028-09-08",
       "fullshortname": "wg/wot",
       "repos": [
         {
@@ -215558,6 +215126,10 @@
         {
           "name": "webmcp",
           "fullName": "webmachinelearning/webmcp"
+        },
+        {
+          "name": "webmcp-polyfill",
+          "fullName": "webmachinelearning/webmcp-polyfill"
         },
         {
           "name": "webmcp-types",
