@@ -54,6 +54,7 @@
       "w3c/did-methods-wg-charter",
       "w3c/did-resolution-test-suite",
       "w3c/differential-privacy-guidance",
+      "w3c/dx-dcat",
       "w3c/EasierRDF",
       "w3c/elements-of-html",
       "w3c/epub-fxl-a11y",
@@ -216,10 +217,6 @@
       {
         "repo": "w3c/dx-connegp",
         "error": "unknown group name: \"tf/dx-tf-prof\""
-      },
-      {
-        "repo": "w3c/dx-dcat",
-        "error": "unknown group name: \"tf/dx-dcat\""
       },
       {
         "repo": "w3c/dx-prof",
@@ -768,11 +765,6 @@
         "repo": "w3c/dx-connegp",
         "error": "doesn't match SW or DOC contributing",
         "contributing": "# Contributing\n\nContributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy/) and\n[Document License](https://www.w3.org/Consortium/Legal/copyright-documents). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n"
-      },
-      {
-        "repo": "w3c/dx-dcat",
-        "error": "doesn't match SW or DOC contributing",
-        "contributing": "# Dataset Exchange Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/policies/patent-policy/) and\n[Document License](https://www.w3.org/copyright/document-license/). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
       },
       {
         "repo": "w3c/dx-prof",
@@ -2558,7 +2550,6 @@
       "w3c/dpub-aria",
       "w3c/dpub-pwp-ucr",
       "w3c/dwbp",
-      "w3c/dx-dcat",
       "w3c/dx-qb",
       "w3c/dx-vvd",
       "w3c/dxwg",
@@ -3255,7 +3246,6 @@
       "w3c/publ-maintenance-wg-charter",
       "w3c/publ-tests",
       "w3c/publ-webinar",
-      "w3c/publishing",
       "w3c/pulse-snapshots",
       "w3c/push-api",
       "w3c/pwpub",
@@ -3658,6 +3648,7 @@
       "w3ctag/extending-html-responsibly",
       "w3ctag/extensible-web-report-card",
       "w3ctag/gaps",
+      "w3ctag/install-finding",
       "w3ctag/meetings",
       "w3ctag/obsoletion",
       "w3ctag/placeholder",
@@ -4240,11 +4231,6 @@
         "repo": "w3c/dx-connegp",
         "error": "doesn't match SW or DOC license",
         "license": "All documents in this Repository are licensed by contributors\nunder the \n[W3C Document License](https://www.w3.org/Consortium/Legal/copyright-documents).\n\n"
-      },
-      {
-        "repo": "w3c/dx-dcat",
-        "error": "doesn't match chartered SW license",
-        "license": "All documents in this Repository are licensed by contributors\nunder the \n[W3C Document License](https://www.w3.org/copyright/document-license/).\n\n"
       },
       {
         "repo": "w3c/dx-prof",
@@ -5902,7 +5888,6 @@
       "w3c/csswg-drafts",
       "w3c/das-charter",
       "w3c/differential-privacy-guidance",
-      "w3c/dx-dcat",
       "w3c/dx-qb",
       "w3c/earl",
       "w3c/ecommerce-for-humans-and-AI-Agents-workshop",
@@ -6532,7 +6517,7 @@
       },
       {
         "repo": "w3c/dx-dcat",
-        "error": "main branch is not protected"
+        "error": "gh-pages branch is not protected"
       },
       {
         "repo": "w3c/dx-qb",
@@ -9284,7 +9269,7 @@
       }
     ]
   },
-  "timestamp": "2026-09-18T00:33:18.917Z",
+  "timestamp": "2026-09-19T00:32:29.647Z",
   "repos": [
     {
       "id": "MDEwOlJlcG9zaXRvcnk4MTAyMTg2MA==",
@@ -31563,7 +31548,7 @@
         "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Conduct](https://www.w3.org/policies/code-of-conduct/).\n"
       },
       "readme": {
-        "text": "![Weekly data update](https://github.com/deniak/cg-spec-metadata/actions/workflows/update-data.yml/badge.svg)\n\n# cg-spec-metadata\n\nA metadata collector for CG (Community Group) specifications — this tool gathers a variety of metadata (from GitHub, Mozilla, WebKit, Chromium, web-features, WPT) for a list of specs defined in a JSON file.\n\n## Installation\n\nThis project uses Node.js and expects at least Node 18+ (for fetch support).\n\nClone the repo and install the dependencies:\n\n```shell\ngit clone https://github.com/w3c/cg-spec-metadata.git\ncd cg-spec-metadata\nnpm install\n```\n\n## Usage\n\n### Collect data\n\nTo collect metadata for all specs defined in `specs.json` (pass a github token in the environment variable `GITHUB_TOKEN` to increase the GitHub API rate limit from 60 to 5000 requests per hour):\n\n```shell\nGITHUB_TOKEN=\"@@@\" node index.js\n```\n\nThe script will:\n* Loop through each spec in specs.json\n* Fetch various metadata points from multiple sources\n* Output all findings into a single JSON file `data.json`\n\nIt is possible to process a given list of specifications by passing their shortnames as parameters:\n\n```shell\nGITHUB_TOKEN=\"@@@\" node index.js shortname1 shortname2\n```\n\n### Manual overrides\n\nIf you need to correct data for a given specification, the `override.json` file allows you to override automated data. It is an array of objects where the shortname acts as the unique identifier and the properties will be merged into `data.json`\n```json\n[\n  {\n    \"shortname\": \"file-system-access\",\n    \"mozilla\": {\n      \"position\": \"positive\"\n    }\n  }\n]\n```\n\n### Automatic pull requests\n\nA [GitHub action](https://github.com/w3c/cg-spec-metadata/blob/main/.github/workflows/update-data.yml) is configured to run every week and submit a pull request to ensure data.json is up-to-date.\n\n"
+        "text": "![Weekly data update](https://github.com/w3c/cg-spec-metadata/actions/workflows/update-data.yml/badge.svg)\n\n# cg-spec-metadata\n\nA metadata collector for CG (Community Group) specifications — this tool gathers a variety of metadata (from GitHub, Mozilla, WebKit, Chromium, web-features, WPT, the W3C API and the W3C Repo Manager) for a list of specs defined in a JSON file.\n\nEvery field is documented in [`metadata.md`](metadata.md).\n\n## Installation\n\nThis project uses Node.js and expects at least Node 18+ (for fetch support).\n\nClone the repo and install the dependencies:\n\n```shell\ngit clone https://github.com/w3c/cg-spec-metadata.git\ncd cg-spec-metadata\nnpm install\n```\n\n## Usage\n\n### Collect data\n\nTo collect metadata for all specs defined in `specs.json` (pass a github token in the environment variable `GITHUB_TOKEN` to increase the GitHub API rate limit from 60 to 5000 requests per hour):\n\n```shell\nGITHUB_TOKEN=\"@@@\" node index.js\n```\n\nThe script will:\n* Loop through each spec in specs.json\n* Fetch various metadata points from multiple sources\n* Apply any manual overrides\n* Write everything it collected to `data.json`\n* Write one file per spec to `specs/`\n\nThe two outputs serve different readers. `data.json` is the raw archive: one array entry per spec, everything every collector returned. `specs/<shortname>.json` is a small, format-versioned *projection* of one spec — one field per value a specification document renders, with every derivation already applied — which is what published CG specifications fetch at load time (see [w3c/cg-assets](https://github.com/w3c/cg-assets)). Files in `specs/` are rewritten on every run, and one is removed when its spec leaves `specs.json`.\n\nIt is possible to process a given list of specifications by passing their shortnames as parameters:\n\n```shell\nGITHUB_TOKEN=\"@@@\" node index.js shortname1 shortname2\n```\n\n### Manual overrides\n\nIf you need to correct data for a given specification, add `overrides/<shortname>.json` holding only the fields to correct. A spec with no file has no overrides, and an empty object (`{}`) is the same as no file.\n\n```json\n{\n  \"mozilla\": { \"position\": \"positive\" }\n}\n```\n\nEach file is deep-merged over the collected result, so it can correct any nested value and can also **add** fields that no collector produces — that is where the editorial ones live, such as `standardizationPlan` and a `progress` of `3`. Only the keys you name are touched.\n\nTwo things to know: **arrays are replaced wholesale, never merged**, and a key cannot be deleted, only set to `null` or `\"\"`. A malformed file is reported and skipped rather than failing the run, and every applied override is logged, so a run says which values did not come from a collector.\n\nSee [`overrides/README.md`](overrides/README.md).\n\n### Automatic pull requests\n\nA [GitHub action](https://github.com/w3c/cg-spec-metadata/blob/main/.github/workflows/update-data.yml) is configured to run every week and submit a pull request to keep `data.json` and `specs/` up-to-date.\n\n"
       }
     },
     {
@@ -44197,16 +44182,156 @@
           "color": "ea7472"
         },
         {
+          "name": "agents",
+          "color": "0f12db"
+        },
+        {
+          "name": "alignment",
+          "color": "fb5f2d"
+        },
+        {
+          "name": "at-risk",
+          "color": "b8e81e"
+        },
+        {
           "name": "bug",
           "color": "d73a4a"
+        },
+        {
+          "name": "catalog",
+          "color": "ededed"
+        },
+        {
+          "name": "change-proposal",
+          "color": "f7bcbb"
+        },
+        {
+          "name": "ClassOfChange3",
+          "color": "bcbae0"
+        },
+        {
+          "name": "ClassOfChange4",
+          "color": "6d4698"
+        },
+        {
+          "name": "CoherenceBetweenHTMLandRDF",
+          "color": "aaaaaa"
+        },
+        {
+          "name": "critical",
+          "color": "5319e7"
+        },
+        {
+          "name": "data-citation",
+          "color": "f7c0bb"
+        },
+        {
+          "name": "dataset-series",
+          "color": "b4abe8"
+        },
+        {
+          "name": "dcat",
+          "color": "fbca04"
+        },
+        {
+          "name": "dcat-primer",
+          "color": "fbca04"
+        },
+        {
+          "name": "dcat:accessURL",
+          "color": "e99695"
+        },
+        {
+          "name": "dcat:Catalog",
+          "color": "c2e0c6"
+        },
+        {
+          "name": "dcat:CatalogRecord",
+          "color": "ffc6c9"
+        },
+        {
+          "name": "dcat:contactPoint",
+          "color": "213e87"
+        },
+        {
+          "name": "dcat:DataService",
+          "color": "e5e520"
+        },
+        {
+          "name": "dcat:Dataset",
+          "color": "d015ed"
+        },
+        {
+          "name": "dcat:Distribution",
+          "color": "b5c0fc"
+        },
+        {
+          "name": "dcat:landingPage",
+          "color": "e091d5"
+        },
+        {
+          "name": "dcat:Resource",
+          "color": "75ef89"
+        },
+        {
+          "name": "dcat:theme",
+          "color": "f4b5e1"
+        },
+        {
+          "name": "dct:accessRights",
+          "color": "6491ea"
+        },
+        {
+          "name": "dct:conformsTo",
+          "color": "bfb6f9"
+        },
+        {
+          "name": "dct:hasPart",
+          "color": "0ddb63"
+        },
+        {
+          "name": "dct:license",
+          "color": "97d666"
+        },
+        {
+          "name": "dct:rights",
+          "color": "afffcc"
+        },
+        {
+          "name": "dct:spatial",
+          "color": "f9deb6"
+        },
+        {
+          "name": "dct:temporal",
+          "color": "ffe4bc"
+        },
+        {
+          "name": "dct:type",
+          "color": "f9bc9d"
+        },
+        {
+          "name": "DesignPrinciples",
+          "color": "f9d0c4"
         },
         {
           "name": "documentation",
           "color": "0075ca"
         },
         {
+          "name": "due for closing",
+          "color": "e547ae"
+        },
+        {
           "name": "duplicate",
           "color": "cfd3d7"
+        },
+        {
+          "name": "Editorial",
+          "color": "7c0ef2"
+        },
+        {
+          "name": "editorial-RDF",
+          "color": "aaaaaa"
         },
         {
           "name": "editorial:class 1",
@@ -44221,8 +44346,28 @@
           "color": "a2eeef"
         },
         {
-          "name": "good first issue",
-          "color": "7057ff"
+          "name": "Errata",
+          "color": "0052cc"
+        },
+        {
+          "name": "ErratumRaised",
+          "color": "2a4d99"
+        },
+        {
+          "name": "ExternalDependency",
+          "color": "aaaaaa"
+        },
+        {
+          "name": "f2f3",
+          "color": "25849e"
+        },
+        {
+          "name": "feedback",
+          "color": "e28ec9"
+        },
+        {
+          "name": "future-work",
+          "color": "126d02"
         },
         {
           "name": "help wanted",
@@ -44237,8 +44382,40 @@
           "color": "F9C9FF"
         },
         {
+          "name": "identification",
+          "color": "fb5f2d"
+        },
+        {
+          "name": "implementation-evidence",
+          "color": "37e5b6"
+        },
+        {
           "name": "invalid",
           "color": "e4e669"
+        },
+        {
+          "name": "inverse-properties",
+          "color": "CE10AE"
+        },
+        {
+          "name": "locn:geometry",
+          "color": "1C2CEB"
+        },
+        {
+          "name": "odrl:hasPolicy",
+          "color": "FA208C"
+        },
+        {
+          "name": "out of scope",
+          "color": "1707af"
+        },
+        {
+          "name": "packaging",
+          "color": "ededed"
+        },
+        {
+          "name": "plenary-approved",
+          "color": "7a7ce2"
         },
         {
           "name": "privacy-needs-resolution",
@@ -44249,8 +44426,40 @@
           "color": "d4af37"
         },
         {
+          "name": "provenance",
+          "color": "ededed"
+        },
+        {
+          "name": "qualified relations",
+          "color": "e99695"
+        },
+        {
+          "name": "quality",
+          "color": "ededed"
+        },
+        {
           "name": "question",
           "color": "d876e3"
+        },
+        {
+          "name": "referencing",
+          "color": "ededed"
+        },
+        {
+          "name": "requirement",
+          "color": "c81d09"
+        },
+        {
+          "name": "requires discussion",
+          "color": "d93f0b"
+        },
+        {
+          "name": "roles",
+          "color": "ededed"
+        },
+        {
+          "name": "schema.org",
+          "color": "59d6d2"
         },
         {
           "name": "security-needs-resolution",
@@ -44259,6 +44468,30 @@
         {
           "name": "security-tracker",
           "color": "ffff00"
+        },
+        {
+          "name": "service",
+          "color": "ededed"
+        },
+        {
+          "name": "spam",
+          "color": "fea02c"
+        },
+        {
+          "name": "spatial-resolution",
+          "color": "e0b079"
+        },
+        {
+          "name": "specref",
+          "color": "b60205"
+        },
+        {
+          "name": "statistics",
+          "color": "3b8ca0"
+        },
+        {
+          "name": "status",
+          "color": "ededed"
         },
         {
           "name": "substantive:class 3",
@@ -44277,22 +44510,56 @@
           "color": "7fff00"
         },
         {
+          "name": "temporal-resolution",
+          "color": "ab9eef"
+        },
+        {
+          "name": "translation",
+          "color": "b0e072"
+        },
+        {
+          "name": "ucr",
+          "color": "1d76db"
+        },
+        {
+          "name": "usage control",
+          "color": "ededed"
+        },
+        {
+          "name": "usage_control",
+          "color": "ededed"
+        },
+        {
+          "name": "use case",
+          "color": "5319e7"
+        },
+        {
+          "name": "versioning",
+          "color": "fb5f2d"
+        },
+        {
+          "name": "void",
+          "color": "ededed"
+        },
+        {
           "name": "wontfix",
           "color": "ffffff"
         }
       ],
       "defaultBranch": {
-        "name": "main"
+        "name": "gh-pages"
       },
       "environments": {
-        "nodes": []
+        "nodes": [
+          {
+            "name": "github-pages"
+          }
+        ]
       },
       "branchProtectionRules": {
         "nodes": []
       },
-      "w3cjson": {
-        "text": " {\n    \"group\": [\"wg/dx\", \"tf/dx-dcat\"],\n    \"contacts\": [\n      \"pchampin\"\n    ],\n    \"repo-type\":  \"rec-track\"\n}\n"
-      },
+      "w3cjson": null,
       "prpreviewjson": null,
       "autoPublish": null,
       "travis": null,
@@ -44305,18 +44572,8 @@
       "codeOfConduct": {
         "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Conduct](https://www.w3.org/policies/code-of-conduct/).\n"
       },
-      "readme": null,
-      "w3c": {
-        "group": [
-          "wg/dx",
-          "tf/dx-dcat"
-        ],
-        "contacts": [
-          "pchampin"
-        ],
-        "repo-type": [
-          "rec-track"
-        ]
+      "readme": {
+        "text": "# W3C Dataset Catalogue Vocabulary (DCAT)\n\nThis repository contains the *Dataset Catalogue Vocabulary* (DCAT) work of the *Dataset Exchange Working Group* (DXWG).\n\n- [DXWG's home page](https://www.w3.org/groups/wg/dx/)\n- [Charter](https://www.w3.org/2026/04/dx-wg-charter.html)\n- [Contribution Guidelines](CONTRIBUTING.md) cover the W3C legal aspects of contributing to this Github repository \n\n## DCAT Working Documents\n\n- [Editors' Draft](https://w3c.github.io/dx-dcat/TR/)  \n  - [Latest published version](https://www.w3.org/TR/vocab-dcat-3/)\n  - [Fourth Public Working Draft (4PWD)](https://www.w3.org/TR/2022/WD-vocab-dcat-3-20220510/)\n  - [Third Public Working Draft (3PWD)](https://www.w3.org/TR/2022/WD-vocab-dcat-3-20220111/)\n  - [Second Public Working Draft (2PWD)](https://www.w3.org/TR/2021/WD-vocab-dcat-3-20210504/)\n  - [First Public Working Draft (FPWD)](https://www.w3.org/TR/2020/WD-vocab-dcat-3-20201217/)\n"
       }
     },
     {
@@ -70409,7 +70666,7 @@
         "body": "# Code of Conduct\r\n\r\nAll documentation, code and communication under this repository are covered by the [W3C Code of Conduct](https://www.w3.org/policies/code-of-conduct/).\r\n"
       },
       "readme": {
-        "text": "# Specification 'lws-protocol'\n\nThis is the repository for lws-protocol. You're welcome to contribute! Let's make the Web rock our socks\noff!\nTo see the most recent HTML rendered version of the specification from this repository can be found at the following:\n * [LWS Protocol](https://w3c.github.io/lws-protocol/lws10-core/)\n\n\n## (1.0) Specs:\n\n- [`core`](lws10-core/): Core protocol\n- [`vocab`](lws10-vocab/): Vocabulary\n- [`authn-openid`](lws10-authn-openid/): OpenID Connect Authentication Suite\n- [`authn-saml`](lws10-authn-saml/): SAML 2.0 Authentication Suite\n- [`authn-ssi-cid`](lws10-authn-ssi-cid): Self-signed Controlled Identifier Authentication Suite\n- [`authn-ssi-did-key`](lws10-authn-ssi-did-key): Self-signed `did:key` Authentication Suite\n- [`notifications-webhook`](lws10-notifications-webhook/): Notification Suite: Webhooks\n- [`searchindex`](lws10-searchindex/): Search and Type Index Services\n\n\n## Contribution Guidelines:\n\nThe following etiquette is followed for managing PRs submitted to this repository. In the below table we refer to the official [W3C Correction Classes](https://www.w3.org/policies/process/#correction-classes).\n\n| Class | No. Editor Approval | Time PR must be open | Requires WG Call Discussion     |\n| ----- | ------------------- | -------------------- | ---------------------------     |\n| 1     | 1                   | 0 business days      | No                              |\n| 2     | 2                   | 3 business days      | No                              |\n| 3     | 2                   | 5 business days      | Yes - formal vote not required  |\n| 4     | 2                   | 5 business days      | Yes - formal vote required[^1]     |   \n\n[^1]: Vote will be a resolution of the group made during the meeting. The vote will be announced in the agenda.\n"
+        "text": "# Specification 'lws-protocol'\n\nThis is the repository for lws-protocol. You're welcome to contribute! Let's make the Web rock our socks\noff!\nTo see the most recent HTML rendered version of the specification from this repository can be found at the following:\n * [LWS Protocol](https://w3c.github.io/lws-protocol/lws10-core/)\n\n\n## (1.0) Specs:\n\n- [`core`](lws10-core/): Core protocol\n- [`vocab`](lws10-vocab/): Vocabulary\n- [`authn-openid`](lws10-authn-openid/): OpenID Connect Authentication Suite\n- [`authn-saml`](lws10-authn-saml/): SAML 2.0 Authentication Suite\n- [`authn-ssi-cid`](lws10-authn-ssi-cid): Self-signed Controlled Identifier Authentication Suite\n- [`notifications-webhook`](lws10-notifications-webhook/): Notification Suite: Webhooks\n- [`searchindex`](lws10-searchindex/): Search and Type Index Services\n\n## (1.0) Implementations:\n\n[Implementations.md](Implementations.md) <- please signal interest and progress via PR\n\n\n## Contribution Guidelines:\n\nThe following etiquette is followed for managing PRs submitted to this repository. In the below table we refer to the official [W3C Correction Classes](https://www.w3.org/policies/process/#correction-classes).\n\n| Class | No. Editor Approval | Time PR must be open | Requires WG Call Discussion     |\n| ----- | ------------------- | -------------------- | ---------------------------     |\n| 1     | 1                   | 0 business days      | No                              |\n| 2     | 2                   | 3 business days      | No                              |\n| 3     | 2                   | 5 business days      | Yes - formal vote not required  |\n| 4     | 2                   | 5 business days      | Yes - formal vote required[^1]     |   \n\n[^1]: Vote will be a resolution of the group made during the meeting. The vote will be announced in the agenda.\n"
       },
       "prpreview": {
         "src_file": "lws10-core/index.html",
@@ -92022,7 +92279,7 @@
       "owner": {
         "login": "w3c"
       },
-      "isArchived": false,
+      "isArchived": true,
       "homepageUrl": "https://www.w3.org/publishing/",
       "description": "Home page of Publishing@W3C",
       "isPrivate": false,
@@ -92091,20 +92348,6 @@
       },
       "readme": {
         "text": "# Home page of Publishing@W3C\nThis is the repository for the home page of the W3C Publishing@W3C activities:\n\nhttps://www.w3.org/publishing/\n\n(That URL is redirected to the `w3c.github.io` view of this repository, i.e., https://w3c.github.io/publishing/ .)\n\n---\nThe repository is maintained by Ivan Herman, [ivan@w3.org](mailto:ivan@w3.org); the content of the page is a joint responsibility of the Publishing@W3C staff.\n"
-      },
-      "prpreview": {
-        "src_file": "index.html",
-        "type": "html"
-      },
-      "w3c": {
-        "contacts": [
-          "iherman",
-          "swickr"
-        ],
-        "repo-type": [
-          "homepage"
-        ],
-        "policy": "restricted"
       }
     },
     {
@@ -169649,6 +169892,99 @@
       }
     },
     {
+      "id": "R_kgDOUgLj-Q",
+      "name": "install-finding",
+      "owner": {
+        "login": "w3ctag"
+      },
+      "isArchived": false,
+      "homepageUrl": null,
+      "description": "Draft Finding on Installable Web Applications",
+      "isPrivate": false,
+      "createdAt": "2026-09-18T13:36:21Z",
+      "labels": [
+        {
+          "name": "bug",
+          "color": "d73a4a"
+        },
+        {
+          "name": "documentation",
+          "color": "0075ca"
+        },
+        {
+          "name": "duplicate",
+          "color": "cfd3d7"
+        },
+        {
+          "name": "enhancement",
+          "color": "a2eeef"
+        },
+        {
+          "name": "good first issue",
+          "color": "7057ff"
+        },
+        {
+          "name": "help wanted",
+          "color": "008672"
+        },
+        {
+          "name": "invalid",
+          "color": "e4e669"
+        },
+        {
+          "name": "question",
+          "color": "d876e3"
+        },
+        {
+          "name": "wontfix",
+          "color": "ffffff"
+        }
+      ],
+      "defaultBranch": {
+        "name": "main"
+      },
+      "environments": {
+        "nodes": []
+      },
+      "branchProtectionRules": {
+        "nodes": []
+      },
+      "w3cjson": {
+        "text": "{\n  \"group\": \"other/tag\",\n  \"contacts\": [],\n  \"policy\": \"open\",\n  \"repo-type\": \"note\"\n}\n"
+      },
+      "prpreviewjson": {
+        "text": "{\n    \"src_file\": \"index.html\",\n    \"type\": \"respec\"\n}\n"
+      },
+      "autoPublish": {
+        "text": "name: CI\non:\n  pull_request: {}\n  push:\n    branches: [main]\njobs:\n  main:\n    name: Build, Validate and Deploy\n    runs-on: ubuntu-latest\n    permissions:\n      contents: write\n    steps:\n      - uses: actions/checkout@v6\n      - uses: w3c/spec-prod@v2\n        with:\n          GH_PAGES_BRANCH: gh-pages\n"
+      },
+      "travis": null,
+      "contributing": {
+        "text": "Contributions to this repository are intended to become part of software or documents licensed under the [Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software). By committing here, you agree to that licensing of your contributions.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all contributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the feature, you can remove yourself with the above syntax.\n"
+      },
+      "license": {
+        "text": "All documents in this Repository are licensed by contributors\nunder the\n[W3C Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software).\n\n"
+      },
+      "codeOfConduct": {
+        "body": "# Code of Conduct\n\nAll documentation, code, communication and discussion in this repository are covered by the [W3C Code of Conduct](https://www.w3.org/policies/code-of-conduct/).\n"
+      },
+      "readme": {
+        "text": "# Finding Name\n\nThis repository contains a draft finding about [finding topic].\n"
+      },
+      "prpreview": {
+        "src_file": "index.html",
+        "type": "respec"
+      },
+      "w3c": {
+        "group": "other/tag",
+        "contacts": [],
+        "policy": "open",
+        "repo-type": [
+          "note"
+        ]
+      }
+    },
+    {
       "id": "MDEwOlJlcG9zaXRvcnk5MzEzNzU4",
       "name": "jsidl",
       "owner": {
@@ -210336,6 +210672,10 @@
         {
           "name": "gaps",
           "fullName": "w3ctag/gaps"
+        },
+        {
+          "name": "install-finding",
+          "fullName": "w3ctag/install-finding"
         },
         {
           "name": "meetings",
