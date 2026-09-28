@@ -9302,7 +9302,7 @@
       }
     ]
   },
-  "timestamp": "2026-09-27T00:35:07.163Z",
+  "timestamp": "2026-09-28T00:33:57.078Z",
   "repos": [
     {
       "id": "MDEwOlJlcG9zaXRvcnk4MTAyMTg2MA==",
@@ -20959,6 +20959,10 @@
         },
         {
           "name": "s:ttml-imsc1.3",
+          "color": "6bc5c6"
+        },
+        {
+          "name": "s:vc-bitstring-status-list-1.1",
           "color": "6bc5c6"
         },
         {
@@ -112201,7 +112205,7 @@
       },
       "isArchived": false,
       "homepageUrl": "https://w3c.github.io/string-search/",
-      "description": "Parking lot for advice on internationalization related string searching in general content",
+      "description": "Advice on internationalization related string searching in general content",
       "isPrivate": false,
       "createdAt": "2016-09-28T13:15:21Z",
       "labels": [
@@ -112255,7 +112259,7 @@
         ]
       },
       "w3cjson": {
-        "text": "{\n    \"group\":     32113\n,   \"contacts\":  \"rishida\"\n,   \"repo-type\":  \"note\"\n}"
+        "text": "{\n    \"group\":     32113\n,   \"contacts\":  \"xfq\"\n,   \"repo-type\":  \"note\"\n}"
       },
       "prpreviewjson": null,
       "autoPublish": null,
@@ -112266,11 +112270,11 @@
         "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n"
       },
       "readme": {
-        "text": "# string-search\nParking lot for advice on internationalization related string searching in general content.\n\nRead the document at https://w3c.github.io/string-search/\n"
+        "text": "# string-search\n\nParking lot for advice on internationalization related string searching in general content.\n\n### Documents\n- [Editor's copy](https://w3c.github.io/string-search/)\n- [Draft Note](https://www.w3.org/TR/string-search/)\n\n### Feedback\nPlease use the [GitHub issue list](https://github.com/w3c/string-search/issues) to send feedback about this document.\n\nTo make it easier to track comments, please raise separate issues or emails for each comment, and point to the section you are commenting on  using a URL for the dated version of the document.\n\n### Following\nTo follow the work, you can 'Watch' this repository using the control above, or subscribe to the [www-international](https://lists.w3.org/Archives/Public/www-international/) mailing list, which is notified once a day about changes to the repo. Please use github issues rather than the mailing list to send feedback.\n\n### Contributing\n\nAll contributors should read and agree with [CODE_OF_CONDUCT.md](https://github.com/w3c/string-search/blob/gh-pages/CODE_OF_CONDUCT.md).\n\nEditors should be familiar with and use the following:\n\n- [Github guidelines for working with i18n documents](https://www.w3.org/International/i18n-activity/guidelines/github)\n- [Editorial guidelines for working with i18n documents](https://www.w3.org/International/i18n-activity/guidelines/editing)\n\n### Links\n\n- [Working Group Home Page](https://www.w3.org/International/i18n-activity/i18n-wg/)\n"
       },
       "w3c": {
         "group": 32113,
-        "contacts": "rishida",
+        "contacts": "xfq",
         "repo-type": [
           "note"
         ]
@@ -167770,6 +167774,10 @@
         {
           "name": "wg:miniapps",
           "color": "005a9c"
+        },
+        {
+          "name": "wg:pat",
+          "color": "ededed"
         },
         {
           "name": "wg:payments",
