@@ -9306,7 +9306,7 @@
       }
     ]
   },
-  "timestamp": "2026-10-02T00:34:19.856Z",
+  "timestamp": "2026-10-03T00:34:09.729Z",
   "repos": [
     {
       "id": "MDEwOlJlcG9zaXRvcnk4MTAyMTg2MA==",
@@ -19262,6 +19262,10 @@
         {
           "name": "test suite",
           "color": "a32674"
+        },
+        {
+          "name": "tpac-2026",
+          "color": "17ddc4"
         },
         {
           "name": "v2",
@@ -45730,8 +45734,8 @@
         "login": "w3c"
       },
       "isArchived": false,
-      "homepageUrl": "https://w3c.github.io/dxwg/dcat/",
-      "description": "Data Catalog Vocabulary (DCAT)",
+      "homepageUrl": "https://www.w3.org/groups/wg/dx/",
+      "description": "Dataset Exchange Working Group",
       "isPrivate": false,
       "createdAt": "2017-02-14T16:20:26Z",
       "labels": [
@@ -45742,6 +45746,10 @@
         {
           "name": "a11y-tracker",
           "color": "ea7472"
+        },
+        {
+          "name": "action",
+          "color": "c4124d"
         },
         {
           "name": "agents",
@@ -71033,6 +71041,10 @@
         {
           "name": "awaiting-implementer-feedback",
           "color": "9e4f96"
+        },
+        {
+          "name": "blocked",
+          "color": "cb3863"
         },
         {
           "name": "bug",
@@ -186033,7 +186045,7 @@
       "license": null,
       "codeOfConduct": null,
       "readme": {
-        "text": "# WebMCP polyfill\n\nA polyfill for [WebMCP](https://webmachinelearning.github.io/webmcp/), with types from [webmcp-types](https://github.com/webmachinelearning/webmcp-types) and no runtime JavaScript dependencies.\n\n## Build\n\nThis package is in development. Build this checkout with Node.js 24 and pnpm:\n\n```sh\npnpm install\npnpm build\n```\n\nThen install the checkout in your app with `pnpm add /path/to/webmcp-polyfill`.\n\n## Usage\n\nUse HTTPS or localhost. Some browsers need an `Origin-Agent-Cluster: ?1` header; current Chrome enables origin keying by default.\n\nLoad the polyfill before registering tools:\n\n```ts\nimport \"webmcp-polyfill/auto\";\n\nconst context = document.modelContext;\nif (!context) {\n  throw new Error(\"WebMCP requires a secure browser context\");\n}\n\nconst registration = new AbortController();\nawait context.registerTool(\n  {\n    name: \"page-title\",\n    description: \"Get the title of this page\",\n    execute() {\n      return { title: document.title };\n    },\n  },\n  { signal: registration.signal },\n);\n\nconst tools = await context.getTools();\nconst pageTitleTool = tools.find((tool) => tool.name === \"page-title\");\nif (!pageTitleTool) {\n  throw new Error(\"The page-title tool is unavailable\");\n}\n\nconst result = await context.executeTool(pageTitleTool);\nconsole.log(result);\n\n// Remove the tool when it is no longer needed.\nregistration.abort();\n```\n\nFor explicit installation, call `installWebMCP()` from `webmcp-polyfill`. Repeated calls are safe. Both entry points preserve existing native contexts, including partial implementations.\n\n### Script tag\n\nServe the built `dist/polyfill.js` before your app:\n\n```html\n<script src=\"/assets/polyfill.js\"></script>\n<script src=\"/assets/app.js\"></script>\n```\n\nThis standalone IIFE installs `document.modelContext` automatically.\n\n### Next.js\n\nIn Next.js 15.3+, add this to `instrumentation-client.ts` beside `app` (or `src/instrumentation-client.ts` beside `src/app`):\n\n```ts\nimport \"webmcp-polyfill/auto\";\n```\n\nNext.js runs [client instrumentation](https://nextjs.org/docs/app/api-reference/file-conventions/instrumentation-client) before hydration. A Server Component import alone won't install the polyfill in the browser.\n\nConfigure `Origin-Agent-Cluster` through Next.js [`headers()`](https://nextjs.org/docs/app/api-reference/config/next-config-js/headers) if your browser needs it.\n\nBoth entry points are SSR-safe: installation does nothing without a document. Your pages can stay server-rendered; WebMCP runs in the browser.\n\nThe package needs no `\"use client\"` directive. Use it on your [Client Components](https://nextjs.org/docs/app/api-reference/directives/use-client) and access `document.modelContext` in effects or event handlers. Pass an `AbortSignal` when registering in an effect, then abort it during cleanup.\n\n## Frames\n\nLoad the polyfill in each frame. Same-origin tools are visible by default, including those in parents and siblings. Pass the discovered descriptor to `executeTool()` so names shared by different frames reach the correct owner.\n\nFor cross-origin tools, delegate the `tools` permission on the iframe, register the tool with `exposedTo: [callerOrigin]`, and discover it with `getTools({ fromOrigins: [toolOrigin] })`. Same-origin tools are still included in that result.\n\n```html\n<iframe src=\"https://tools.example/app\" allow=\"tools https://tools.example\"></iframe>\n```\n\nInitial discovery waits up to 500 ms for existing frames. Requests use `MessageChannel` after checking the peer's source and origin; callbacks run in their owning frame. Cancellation preserves the caller's reason and sends the callback a default `AbortError`.\n\n## Implementation status\n\nThe target is `webmcp-types@0.1.9`: registration, discovery, execution, cancellation, and `toolchange`, including frame exposure and origin filtering. Declarative forms and `toolactivated`/`toolcancel` are not implemented. Browser agent integration requires browser support.\n\nNative contexts do not join the polyfill's channels. See [TESTING.md](https://github.com/webmachinelearning/webmcp-polyfill/blob/main/TESTING.md) for policy and frame limitations, results, commands, and tracked revisions.\n\n`executeTool()` accepts an object and returns a JSON-serialized result. Omitted or `undefined` input defaults to a fresh empty object. Callbacks must validate their inputs; schema inference provides TypeScript checks only.\n\nBreaking API changes ship with notes: in minor releases while the version is 0.x, in majors after 1.0.\n\n## Development\n\n`src/` holds the polyfill, `tests/` the browser and package checks, and `wpt/` the upstream runner, pin, and expectations.\n\n## License\n\n[MIT](LICENSE).\n"
+        "text": "# WebMCP polyfill\n\nA polyfill for [WebMCP](https://webmachinelearning.github.io/webmcp/), with types from [webmcp-types](https://github.com/webmachinelearning/webmcp-types) and no runtime JavaScript dependencies.\n\n## Build\n\nThis package is in development. Build this checkout with Node.js 24 and pnpm:\n\n```sh\npnpm install\npnpm build\n```\n\nThen install the checkout in your app with `pnpm add /path/to/webmcp-polyfill`.\n\n## Usage\n\nUse HTTPS or localhost.\n\nLoad the polyfill before registering tools:\n\n```ts\nimport \"webmcp-polyfill/auto\";\n\nconst context = document.modelContext;\nif (!context) {\n  throw new Error(\"WebMCP requires a secure browser context\");\n}\n\nconst registration = new AbortController();\nawait context.registerTool(\n  {\n    name: \"page-title\",\n    description: \"Get the title of this page\",\n    execute() {\n      return { title: document.title };\n    },\n  },\n  { signal: registration.signal },\n);\n\nconst tools = await context.getTools();\nconst pageTitleTool = tools.find((tool) => tool.name === \"page-title\");\nif (!pageTitleTool) {\n  throw new Error(\"The page-title tool is unavailable\");\n}\n\nconst result = await context.executeTool(pageTitleTool);\nconsole.log(result);\n\n// Remove the tool when it is no longer needed.\nregistration.abort();\n```\n\nFor explicit installation, call `installWebMCP()` from `webmcp-polyfill`. Repeated calls are safe. Both entry points preserve existing native contexts, including partial implementations.\n\n### Script tag\n\nServe the built `dist/polyfill.js` before your app:\n\n```html\n<script src=\"/assets/polyfill.js\"></script>\n<script src=\"/assets/app.js\"></script>\n```\n\nThis standalone IIFE installs `document.modelContext` automatically.\n\n### Next.js\n\nIn Next.js 15.3+, add this to `instrumentation-client.ts` beside `app` (or `src/instrumentation-client.ts` beside `src/app`):\n\n```ts\nimport \"webmcp-polyfill/auto\";\n```\n\nNext.js runs [client instrumentation](https://nextjs.org/docs/app/api-reference/file-conventions/instrumentation-client) before hydration. A Server Component import alone won't install the polyfill in the browser.\n\nBoth entry points are SSR-safe: installation does nothing without a document. Your pages can stay server-rendered; WebMCP runs in the browser.\n\nThe package needs no `\"use client\"` directive. Use it on your [Client Components](https://nextjs.org/docs/app/api-reference/directives/use-client) and access `document.modelContext` in effects or event handlers. Pass an `AbortSignal` when registering in an effect, then abort it during cleanup.\n\n## Frames\n\nLoad the polyfill in each frame. Same-origin tools are visible by default, including those in parents and siblings. Pass the discovered descriptor to `executeTool()` so names shared by different frames reach the correct owner.\n\nFor cross-origin tools, delegate the `tools` permission on the iframe, register the tool with `exposedTo: [callerOrigin]`, and discover it with `getTools({ fromOrigins: [toolOrigin] })`. Same-origin tools are still included in that result.\n\n```html\n<iframe src=\"https://tools.example/app\" allow=\"tools https://tools.example\"></iframe>\n```\n\nInitial discovery waits up to 500 ms for existing frames. Requests use `MessageChannel` after checking the peer's source and origin; callbacks run in their owning frame. Cancellation preserves the caller's reason and sends the callback a default `AbortError`.\n\n## Implementation status\n\nThe target is `webmcp-types@0.1.9`: registration, discovery, execution, cancellation, and `toolchange`, including frame exposure and origin filtering. Declarative forms and `toolactivated`/`toolcancel` are not implemented. Browser agent integration requires browser support.\n\nNative contexts do not join the polyfill's channels. See [TESTING.md](https://github.com/webmachinelearning/webmcp-polyfill/blob/main/TESTING.md) for policy and frame limitations, results, commands, and tracked revisions.\n\n`executeTool()` accepts an object and returns a JSON-serialized result. Omitted or `undefined` input defaults to a fresh empty object. Callbacks must validate their inputs; schema inference provides TypeScript checks only.\n\nBreaking API changes ship with notes: in minor releases while the version is 0.x, in majors after 1.0.\n\n## Development\n\n`src/` holds the polyfill, `tests/` the browser and package checks, and `wpt/` the upstream runner, pin, and expectations.\n\n## License\n\n[MIT](LICENSE).\n"
       }
     },
     {
@@ -211903,7 +211915,7 @@
           "href": "https://api.w3.org/groups/wg/das/charters"
         },
         "active-charter": {
-          "href": "https://api.w3.org/groups/wg/das/charters/498"
+          "href": "https://api.w3.org/groups/wg/das/charters/563"
         },
         "join": {
           "href": "https://www.w3.org/groups/wg/das/join"
@@ -211920,7 +211932,7 @@
       },
       "type": "working group",
       "start-date": "2009-07-03",
-      "end-date": "2026-08-31",
+      "end-date": "2028-09-30",
       "fullshortname": "wg/das",
       "repos": [
         {
