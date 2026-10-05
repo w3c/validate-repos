@@ -9306,7 +9306,7 @@
       }
     ]
   },
-  "timestamp": "2026-10-04T01:16:11.100Z",
+  "timestamp": "2026-10-05T00:35:20.750Z",
   "repos": [
     {
       "id": "MDEwOlJlcG9zaXRvcnk4MTAyMTg2MA==",
@@ -30515,6 +30515,10 @@
           "color": "d73a4a"
         },
         {
+          "name": "chore",
+          "color": "2fac9c"
+        },
+        {
           "name": "dependencies",
           "color": "0366d6"
         },
@@ -30551,12 +30555,24 @@
           "color": "168700"
         },
         {
+          "name": "needs consumer",
+          "color": "454d52"
+        },
+        {
+          "name": "needs decision",
+          "color": "371d22"
+        },
+        {
           "name": "new spec",
           "color": "f9d0c4"
         },
         {
           "name": "review",
           "color": "94290C"
+        },
+        {
+          "name": "scope",
+          "color": "fdaf59"
         },
         {
           "name": "wontfix",
@@ -99406,12 +99422,28 @@
           "color": "ee0701"
         },
         {
+          "name": "chore",
+          "color": "3bb28a"
+        },
+        {
+          "name": "css extracts",
+          "color": "eb9019"
+        },
+        {
           "name": "dependencies",
           "color": "0366d6"
         },
         {
+          "name": "dfns extracts",
+          "color": "eb9019"
+        },
+        {
           "name": "duplicate",
           "color": "cccccc"
+        },
+        {
+          "name": "elements extracts",
+          "color": "eb9019"
         },
         {
           "name": "enhancement",
@@ -99422,6 +99454,10 @@
           "color": "000000"
         },
         {
+          "name": "headings extracts",
+          "color": "eb9019"
+        },
+        {
           "name": "help wanted",
           "color": "128A0C"
         },
@@ -99430,12 +99466,20 @@
           "color": "a700ba"
         },
         {
+          "name": "idl extracts",
+          "color": "eb9019"
+        },
+        {
           "name": "invalid",
           "color": "e6e6e6"
         },
         {
           "name": "javascript",
           "color": "168700"
+        },
+        {
+          "name": "links extracts",
+          "color": "eb9019"
         },
         {
           "name": "question",
@@ -112317,7 +112361,7 @@
         "login": "w3c"
       },
       "isArchived": false,
-      "homepageUrl": "https://w3c.github.io/string-search/",
+      "homepageUrl": "https://www.w3.org/International/string-search/",
       "description": "Advice on internationalization related string searching in general content",
       "isPrivate": false,
       "createdAt": "2016-09-28T13:15:21Z",
@@ -112383,7 +112427,7 @@
         "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n"
       },
       "readme": {
-        "text": "# string-search\n\nParking lot for advice on internationalization related string searching in general content.\n\n### Documents\n- [Editor's copy](https://w3c.github.io/string-search/)\n- [Draft Note](https://www.w3.org/TR/string-search/)\n\n### Feedback\nPlease use the [GitHub issue list](https://github.com/w3c/string-search/issues) to send feedback about this document.\n\nTo make it easier to track comments, please raise separate issues or emails for each comment, and point to the section you are commenting on  using a URL for the dated version of the document.\n\n### Following\nTo follow the work, you can 'Watch' this repository using the control above, or subscribe to the [www-international](https://lists.w3.org/Archives/Public/www-international/) mailing list, which is notified once a day about changes to the repo. Please use github issues rather than the mailing list to send feedback.\n\n### Contributing\n\nAll contributors should read and agree with [CODE_OF_CONDUCT.md](https://github.com/w3c/string-search/blob/gh-pages/CODE_OF_CONDUCT.md).\n\nEditors should be familiar with and use the following:\n\n- [Github guidelines for working with i18n documents](https://www.w3.org/International/i18n-activity/guidelines/github)\n- [Editorial guidelines for working with i18n documents](https://www.w3.org/International/i18n-activity/guidelines/editing)\n\n### Links\n\n- [Working Group Home Page](https://www.w3.org/International/i18n-activity/i18n-wg/)\n"
+        "text": "# string-search\n\nParking lot for advice on internationalization related string searching in general content.\n\n### Documents\n- [Editor's copy](https://www.w3.org/International/string-search/)\n- [Draft Note](https://www.w3.org/TR/string-search/)\n\n### Feedback\nPlease use the [GitHub issue list](https://github.com/w3c/string-search/issues) to send feedback about this document.\n\nTo make it easier to track comments, please raise separate issues or emails for each comment, and point to the section you are commenting on  using a URL for the dated version of the document.\n\n### Following\nTo follow the work, you can 'Watch' this repository using the control above, or subscribe to the [www-international](https://lists.w3.org/Archives/Public/www-international/) mailing list, which is notified once a day about changes to the repo. Please use github issues rather than the mailing list to send feedback.\n\n### Contributing\n\nAll contributors should read and agree with [CODE_OF_CONDUCT.md](https://github.com/w3c/string-search/blob/gh-pages/CODE_OF_CONDUCT.md).\n\nEditors should be familiar with and use the following:\n\n- [Github guidelines for working with i18n documents](https://www.w3.org/International/i18n-activity/guidelines/github)\n- [Editorial guidelines for working with i18n documents](https://www.w3.org/International/i18n-activity/guidelines/editing)\n\n### Links\n\n- [Working Group Home Page](https://www.w3.org/International/i18n-activity/i18n-wg/)\n"
       },
       "w3c": {
         "group": 32113,
@@ -155217,6 +155261,10 @@
           "color": "ee0701"
         },
         {
+          "name": "chore",
+          "color": "fad1fb"
+        },
+        {
           "name": "css extracts",
           "color": "453755"
         },
@@ -155227,6 +155275,10 @@
         {
           "name": "dfns extracts",
           "color": "F22D24"
+        },
+        {
+          "name": "documentation",
+          "color": "226093"
         },
         {
           "name": "duplicate",
