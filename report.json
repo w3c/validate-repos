@@ -67,6 +67,7 @@
       "w3c/lws-wg-charter",
       "w3c/mdn-content",
       "w3c/meeting-template",
+      "w3c/message-resources",
       "w3c/ns-iana",
       "w3c/odrl",
       "w3c/personalXR",
@@ -3190,6 +3191,7 @@
       "w3c/mediasession",
       "w3c/meeting-template",
       "w3c/merchant-validation",
+      "w3c/message-resources",
       "w3c/microdata-rdf",
       "w3c/Micropub",
       "w3c/midgard",
@@ -9307,7 +9309,7 @@
       }
     ]
   },
-  "timestamp": "2026-10-09T00:35:24.839Z",
+  "timestamp": "2026-10-10T00:35:31.475Z",
   "repos": [
     {
       "id": "MDEwOlJlcG9zaXRvcnk4MTAyMTg2MA==",
@@ -21156,6 +21158,10 @@
         },
         {
           "name": "s:css-anchor-position-1",
+          "color": "6bc5c6"
+        },
+        {
+          "name": "s:css-color-4",
           "color": "6bc5c6"
         },
         {
@@ -72268,7 +72274,7 @@
         "text": "{\n    \"src_file\": \"index.html\",\n    \"type\": \"respec\"\n}\n"
       },
       "autoPublish": {
-        "text": "name: Node CI\n\non:\n  push:\n    branches:\n      - main\n  pull_request: {}\n\njobs:\n  validate-and-publish:\n    name: Validate and Publish\n    runs-on: ubuntu-latest # only linux supported at present\n    steps:\n      - uses: actions/checkout@v2\n      - uses: w3c/spec-prod@v2\n        with:\n          TOOLCHAIN: respec\n          VALIDATE_LINKS: false\n          VALIDATE_PUBRULES: false\n          GH_PAGES_BRANCH: gh-pages\n          W3C_API_KEY: ${{ secrets.W3C_API_KEY }}\n          W3C_ECHIDNA_TOKEN: ${{ secrets.ECHIDNA_TOKEN }}\n          W3C_WG_DECISION_URL: \"https://lists.w3.org/Archives/Public/public-webapps/2014JulSep/0627.html\"\n          W3C_NOTIFICATIONS_CC: \"${{ secrets.CC }}\"\n          W3C_BUILD_OVERRIDE: |\n            specStatus: WD\n"
+        "text": "name: Node CI\n\non:\n  push:\n    branches:\n      - main\n    paths:\n      - index.html\n      - images/**\n  pull_request: {}\n\njobs:\n  validate-and-publish:\n    name: Validate and Publish\n    runs-on: ubuntu-latest # only linux supported at present\n    steps:\n      - uses: actions/checkout@v2\n      - uses: w3c/spec-prod@v2\n        with:\n          TOOLCHAIN: respec\n          VALIDATE_LINKS: false\n          VALIDATE_PUBRULES: false\n          GH_PAGES_BRANCH: gh-pages\n          W3C_API_KEY: ${{ secrets.W3C_API_KEY }}\n          W3C_ECHIDNA_TOKEN: ${{ secrets.ECHIDNA_TOKEN }}\n          W3C_WG_DECISION_URL: \"https://lists.w3.org/Archives/Public/public-webapps/2014JulSep/0627.html\"\n          W3C_NOTIFICATIONS_CC: \"${{ secrets.CC }}\"\n          W3C_BUILD_OVERRIDE: |\n            specStatus: WD\n"
       },
       "travis": null,
       "contributing": null,
@@ -72279,7 +72285,7 @@
         "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n"
       },
       "readme": {
-        "text": "This repository is the home of the :star: **[Web Application Manifest](https://www.w3.org/TR/appmanifest/)** :star: specification being worked on by\nthe [Web Applications Working Group](https://www.w3.org/2019/webapps/).\n\n## Useful links\n* [Explainer](https://github.com/w3c/manifest/blob/gh-pages/explainer.md)\n* [The Web Application Manifest specification](https://www.w3.org/TR/appmanifest/)\n* [Manifest incubations](https://github.com/WICG/manifest-incubations)\n* [App Information supplement](https://github.com/w3c/manifest-app-info)\n* [Use cases and requirements](https://w3c-webmob.github.io/installable-webapps/)\n* [The Web Applications WG homepage](https://www.w3.org/2019/webapps/)\n"
+        "text": "This repository is the home of the :star: **[Web Application Manifest](https://www.w3.org/TR/appmanifest/)** :star: specification being worked on by\nthe [Web Applications Working Group](https://www.w3.org/2019/webapps/).\n\n## Useful links\n* [The Web Application Manifest specification](https://www.w3.org/TR/appmanifest/)\n* [Manifest incubations](https://github.com/WICG/manifest-incubations)\n* [App Information supplement](https://github.com/w3c/manifest-app-info)\n* [Use cases and requirements](https://w3c-webmob.github.io/installable-webapps/)\n* [The Web Applications WG homepage](https://www.w3.org/2019/webapps/)\n"
       },
       "prpreview": {
         "src_file": "index.html",
@@ -79443,6 +79449,81 @@
           "rec-track"
         ],
         "exposed": false
+      }
+    },
+    {
+      "id": "R_kgDOVB36dQ",
+      "name": "message-resources",
+      "owner": {
+        "login": "w3c"
+      },
+      "isArchived": false,
+      "homepageUrl": "https://w3c.github.io/message-resources/",
+      "description": null,
+      "isPrivate": false,
+      "createdAt": "2026-10-09T03:52:00Z",
+      "labels": [
+        {
+          "name": "bug",
+          "color": "d73a4a"
+        },
+        {
+          "name": "documentation",
+          "color": "0075ca"
+        },
+        {
+          "name": "duplicate",
+          "color": "cfd3d7"
+        },
+        {
+          "name": "enhancement",
+          "color": "a2eeef"
+        },
+        {
+          "name": "good first issue",
+          "color": "7057ff"
+        },
+        {
+          "name": "help wanted",
+          "color": "008672"
+        },
+        {
+          "name": "invalid",
+          "color": "e4e669"
+        },
+        {
+          "name": "question",
+          "color": "d876e3"
+        },
+        {
+          "name": "wontfix",
+          "color": "ffffff"
+        }
+      ],
+      "defaultBranch": {
+        "name": "main"
+      },
+      "environments": {
+        "nodes": [
+          {
+            "name": "github-pages"
+          }
+        ]
+      },
+      "branchProtectionRules": {
+        "nodes": []
+      },
+      "w3cjson": null,
+      "prpreviewjson": null,
+      "autoPublish": null,
+      "travis": null,
+      "contributing": null,
+      "license": null,
+      "codeOfConduct": {
+        "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Conduct](https://www.w3.org/policies/code-of-conduct/).\n"
+      },
+      "readme": {
+        "text": "# message-resources\n"
       }
     },
     {
@@ -127377,7 +127458,7 @@
         "text": "{\n    \"src_file\": \"index.html\",\n    \"type\": \"respec\"\n}\n"
       },
       "autoPublish": {
-        "text": "# .github/workflows/auto-publish.yml\nname: CI\non:\n  pull_request: {}\n  push:\n    branches: [main]\njobs:\n  main:\n    name: Build, Validate and Deploy\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v3\n      - uses: w3c/spec-prod@v2\n        with:\n          TOOLCHAIN: respec\n          W3C_ECHIDNA_TOKEN: ${{ secrets.W3C_TR_TOKEN }}\n          W3C_WG_DECISION_URL: https://www.w3.org/2017/vc/WG/Meetings/Minutes/2023-04-12-vcwg#resolution1\n          W3C_BUILD_OVERRIDE: |\n             shortName: vc-jose-cose\n             specStatus: CRD\n"
+        "text": "# .github/workflows/auto-publish.yml\nname: CI\non:\n  pull_request: {}\n  push:\n    branches: [main]\njobs:\n  main:\n    name: Build, Validate and Deploy\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v3\n      - uses: w3c/spec-prod@v2\n        with:\n          TOOLCHAIN: respec\n          W3C_ECHIDNA_TOKEN: ${{ secrets.W3C_TR_TOKEN }}\n          W3C_WG_DECISION_URL: https://w3c.github.io/vc-wg/minutes/2026-10-07.html#a858\n          W3C_BUILD_OVERRIDE: |\n             shortName: vc-jose-cose\n             specStatus: REC\n"
       },
       "travis": null,
       "contributing": {
@@ -170753,6 +170834,10 @@
       "createdAt": "2026-09-18T13:36:21Z",
       "labels": [
         {
+          "name": "Agenda+",
+          "color": "42C35B"
+        },
+        {
           "name": "bug",
           "color": "d73a4a"
         },
@@ -170779,6 +170864,22 @@
         {
           "name": "invalid",
           "color": "e4e669"
+        },
+        {
+          "name": "Meeting: Atlantic",
+          "color": "BC67A3"
+        },
+        {
+          "name": "Meeting: Eurasia",
+          "color": "abbfa3"
+        },
+        {
+          "name": "Meeting: Pacific",
+          "color": "757A73"
+        },
+        {
+          "name": "Meeting: Plenary",
+          "color": "24AD9B"
         },
         {
           "name": "question",
