@@ -82,6 +82,7 @@
       "w3c/spec-maintenance",
       "w3c/spec-prod",
       "w3c/sphinx-to-tr",
+      "w3c/style-guide",
       "w3c/threat-model-webmcp",
       "w3c/tmp-xfer202607",
       "w3c/tpac2026-miniworkshops",
@@ -3377,6 +3378,7 @@
       "w3c/string-search",
       "w3c/strong-authentication-and-identity-workshop",
       "w3c/strudy",
+      "w3c/style-guide",
       "w3c/subline",
       "w3c/sustainableweb-ig",
       "w3c/sustainableweb-impact",
@@ -9314,7 +9316,7 @@
       }
     ]
   },
-  "timestamp": "2026-10-19T00:33:16.203Z",
+  "timestamp": "2026-10-20T00:33:54.790Z",
   "repos": [
     {
       "id": "MDEwOlJlcG9zaXRvcnk4MTAyMTg2MA==",
@@ -31248,6 +31250,10 @@
         {
           "name": "needs discussion",
           "color": "08afd7"
+        },
+        {
+          "name": "pending close",
+          "color": "d8e06f"
         },
         {
           "name": "Priority 1",
@@ -61346,7 +61352,7 @@
         "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Conduct](https://www.w3.org/policies/code-of-conduct/).\n"
       },
       "readme": {
-        "text": "# i18n-tests\nThis repository contains most of the tests created for use with the W3C Internationalization test suite and others that are more interactive in nature.  The majority test international features of W3C specifications, but there are others that just explore browser and font support for certain international features.\n\nThere are two main types of test:\n1. standard tests written in HTML files that are accessed via the i18n test suite, and\n2. interactive tests, which are accessed via test script pages in the wiki of this repository.\n\nTo find tests, go to the [Test Index page](https://www.w3.org/International/i18n-tests/).\n\n## Interactive tests\n\nInteractive tests allow you to quickly set up test scenarios with minimal formality. They are particularly useful for tests that have many permutations on a language-by-language basis, and can be easier to manage for people creating gap-analysis documents.\n\nThe test pages themselves allow you to set various CSS properties or other aspects of the page, including the text to be tested, by interacting with form controls on the test page. This allows for a great deal of flexibility in exploring features, and changes can be rapidly made to explore a range of scenarios.\n\nYou can then take a snapshot of the settings and add that as a URL to a wiki page in this repo as part of a test script. There are test scripts for each of the sections in the Language Enablement Index. Having created a test, it is very quick and simple to point back to it from the test script and report findings.\n\nFor more information, see [Working with interactive tests](https://www.w3.org/International/i18n-drafts/pages/interactive_tests).\n\nTests in a test script could be converted to standard tests at some point if resources become available to do the work.\n\n## Standard tests\n\nThese tests and the test framework have been moved here from the W3C server, so that they are more easily accessible. The test framework was converted from PHP to run using JavaScript. Tests that require server-side settings, however, remain on the W3C server (these include character encoding and language tests that rely on HTTP headers).\n\nLinks on the [main test page](https://www.w3.org/International/i18n-tests/) take you to pages that show results for a group of related tests. Click on the links in the left column of those pages to view a test in the test runner.\n\nThe tests follow the pattern of the [Web Platform Tests](https://github.com/w3c/web-platform-tests), since it is our aim to copy all appropriate tests to that repository. The i18n test suite is maintained separately because:\n- It contains exploratory tests that don't belong in the WPT repo\n- Tests and their results are arranged so they can be linked to from educational materials created by the Internationalization activity\n- Many i18n tests include visible \"workings\" for education, not just pass/fail indicators\n\nWe have some [guidelines for writing i18n tests](https://github.com/w3c/i18n-tests/wiki/Writing-i18n-tests) that complement the guidelines in the WPT documentation.\n\n## Notes on structure of the repo\n\nWe group tests into batches. There is typically one results page per batch, but sometimes one batch equates to more than one results page. The results page is an HTML page that groups tests in some useful manner, using headings, provides a link to the individual test, the assertion, and a set of results for major browsers for that test.\n\n**Key components:**\n\n- **Batch file** (`batches/*-batch.txt`): A list of test filenames that make up a batch, one per line\n- **Base**: The path from the root of the repo to the location of the tests listed in the batch file (e.g., `css-text/text-transform`)\n- **JSON file** (`batches/*.json`): Contains metadata such as assertion, title, etc. for each test in the batch (extracted from test `<meta>` tags)\n- **Data file** (`batches/*-data.js`): Stores results for major browsers. There's a tool available for quickly merging new results with existing ones\n\n## Moving tests to the test framework\n\nThe process of adding new tests to the test framework is explained at https://w3c.github.io/i18n-tests/tools/PROCESS.html. A local version of that page is used to actually run the process. **You'll need PHP to run the various scripts** called by that page (and therefore you'll need to run the page under localhost).\n\nThat page helps you with the following steps. In most cases it is just a question of ensuring you give the name and path for the batch and then press a button to generate files or data.\n\n1. Setting up a batch file and associated data and json files once you have a set of test files to add to the test framework\n2. Running the tests to check that they work\n3. Creating a partially filled-out results file for the batch from a template\n4. Adding test results to the data file\n\nThe first 3 steps are typically run together when adding a set of files to the repository and framework. Step 4 can be run any time you have results to add to the results page for a batch.\n\n## Porting tests to WPT\n\nThe WPT folks prefer script-based tests or ref tests, but will also accept manual tests when it's not possible to automate the test. This is fairly common for i18n tests.\n\nWe should try to ensure that tests we create are scripted or ref tests wherever possible, but we may also add 'workings' to the displayed file, rather than just show a green/red blob. This is because our tests are also used for education, not only for nightly testing of browsers.\n\nIn some cases, we may need to change the way a test works before porting to WPT. For example, overlaying test text over red ref text often provides a very effective way for humans to spot differences (especially for tests with multiple components, such as text-transform tests), however there is some concern that the subpixel bleeding of the red color may interfere with the automated ref test mechanism. In such cases we need to adapt the test before porting to WPT. Hopefully, this will typically involve only removing some CSS statements (however, we need to check that).\n\n**Syncing changes:** Once a set of tests has been ported to WPT, we should track any changes to those tests, and if they are substantive we should retrofit the changes to the tests in our own repo.\n"
+        "text": "# i18n-tests\nThis repository contains most of the tests created for use with the W3C Internationalization test suite and others that are more interactive in nature.  The majority test international features of W3C specifications, but there are others that just explore browser and font support for certain international features.\n\nThere are two main types of test:\n1. standard tests written in HTML files that are accessed via the i18n test suite, and\n2. interactive tests, which are accessed via test script pages in the wiki of this repository.\n\nTo find tests, go to the [Test Index page](https://www.w3.org/International/i18n-tests/).\n\n## Interactive tests\n\nInteractive tests allow you to quickly set up test scenarios with minimal formality. They are particularly useful for tests that have many permutations on a language-by-language basis, and can be easier to manage for people creating gap-analysis documents.\n\nThe test pages themselves allow you to set various CSS properties or other aspects of the page, including the text to be tested, by interacting with form controls on the test page. This allows for a great deal of flexibility in exploring features, and changes can be rapidly made to explore a range of scenarios.\n\nYou can then take a snapshot of the settings and add that as a URL to a wiki page in this repo as part of a test script. There are test scripts for each of the sections in the Language Enablement Index. Having created a test, it is very quick and simple to point back to it from the test script and report findings.\n\nFor more information, see [Working with interactive tests](https://www.w3.org/International/i18n-drafts/pages/interactive_tests).\n\nTests in a test script could be converted to standard tests at some point if resources become available to do the work.\n\n## Standard tests\n\nThese tests and the test framework have been moved here from the W3C server, so that they are more easily accessible. The test framework was converted from PHP to run using JavaScript. Tests that require server-side settings, however, remain on the W3C server (these include character encoding and language tests that rely on HTTP headers).\n\nLinks on the [main test page](https://www.w3.org/International/i18n-tests/) take you to pages that show results for a group of related tests. Click on the links in the left column of those pages to view a test in the test runner.\n\nThe tests follow the pattern of the [Web Platform Tests](https://github.com/w3c/web-platform-tests), since it is our aim to copy all appropriate tests to that repository. The i18n test suite is maintained separately because:\n- It contains exploratory tests that don't belong in the WPT repo\n- Tests and their results are arranged so they can be linked to from educational materials created by the Internationalization activity\n- Many i18n tests include visible \"workings\" for education, not just pass/fail indicators\n\nWe have some [guidelines for writing i18n tests](https://github.com/w3c/i18n-tests/wiki/Writing-i18n-tests) that complement the guidelines in the WPT documentation.\n\n## Notes on structure of the repo\n\nWe group tests into batches. There is typically one results page per batch, but sometimes one batch equates to more than one results page. The results page is an HTML page that groups tests in some useful manner, using headings, provides a link to the individual test, the assertion, and a set of results for major browsers for that test.\n\n**Key components:**\n\n- **Batch file** (`batches/*-batch.txt`): A list of test filenames that make up a batch, one per line\n- **Base**: The path from the root of the repo to the location of the tests listed in the batch file (e.g., `css-text/text-transform`)\n- **Batch metadata file** (`batches/<batch>.js`): A JavaScript file containing metadata such as assertion, title, etc. for each test in the batch (extracted from test `<meta>` tags)\n- **Data file** (`batches/*-data.js`): Stores results for major browsers. There's a tool available for quickly merging new results with existing ones\n\n## Moving tests to the test framework\n\nThe process of adding new tests to the test framework is explained at https://w3c.github.io/i18n-tests/tools/PROCESS.html. A local version of that page is used to actually run the process. **You'll need PHP to run the various scripts** called by that page (and therefore you'll need to run the page under localhost).\n\nThat page helps you with the following steps. In most cases it is just a question of ensuring you give the name and path for the batch and then press a button to generate files or data.\n\n1. Setting up a batch file and associated data and metadata files once you have a set of test files to add to the test framework\n2. Running the tests to check that they work\n3. Creating a partially filled-out results file for the batch from a template\n4. Adding test results to the data file\n\nThe first 3 steps are typically run together when adding a set of files to the repository and framework. Step 4 can be run any time you have results to add to the results page for a batch.\n\n## Porting tests to WPT\n\nThe WPT folks prefer script-based tests or ref tests, but will also accept manual tests when it's not possible to automate the test. This is fairly common for i18n tests.\n\nWe should try to ensure that tests we create are scripted or ref tests wherever possible, but we may also add 'workings' to the displayed file, rather than just show a green/red blob. This is because our tests are also used for education, not only for nightly testing of browsers.\n\nIn some cases, we may need to change the way a test works before porting to WPT. For example, overlaying test text over red ref text often provides a very effective way for humans to spot differences (especially for tests with multiple components, such as text-transform tests), however there is some concern that the subpixel bleeding of the red color may interfere with the automated ref test mechanism. In such cases we need to adapt the test before porting to WPT. Hopefully, this will typically involve only removing some CSS statements (however, we need to check that).\n\n**Syncing changes:** Once a set of tests has been ported to WPT, we should track any changes to those tests, and if they are substantive we should retrofit the changes to the tests in our own repo.\n"
       },
       "w3c": {
         "group": [
@@ -112884,6 +112890,85 @@
       }
     },
     {
+      "id": "R_kgDOThgmFw",
+      "name": "style-guide",
+      "owner": {
+        "login": "w3c"
+      },
+      "isArchived": false,
+      "homepageUrl": "https://w3c.github.io/style-guide/",
+      "description": null,
+      "isPrivate": false,
+      "createdAt": "2026-07-23T17:31:04Z",
+      "labels": [
+        {
+          "name": "bug",
+          "color": "d73a4a"
+        },
+        {
+          "name": "documentation",
+          "color": "0075ca"
+        },
+        {
+          "name": "duplicate",
+          "color": "cfd3d7"
+        },
+        {
+          "name": "enhancement",
+          "color": "a2eeef"
+        },
+        {
+          "name": "feedback",
+          "color": "9d6970"
+        },
+        {
+          "name": "good first issue",
+          "color": "7057ff"
+        },
+        {
+          "name": "help wanted",
+          "color": "008672"
+        },
+        {
+          "name": "invalid",
+          "color": "e4e669"
+        },
+        {
+          "name": "question",
+          "color": "d876e3"
+        },
+        {
+          "name": "wontfix",
+          "color": "ffffff"
+        }
+      ],
+      "defaultBranch": {
+        "name": "main"
+      },
+      "environments": {
+        "nodes": [
+          {
+            "name": "github-pages"
+          }
+        ]
+      },
+      "branchProtectionRules": {
+        "nodes": []
+      },
+      "w3cjson": null,
+      "prpreviewjson": null,
+      "autoPublish": null,
+      "travis": null,
+      "contributing": null,
+      "license": null,
+      "codeOfConduct": {
+        "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Conduct](https://www.w3.org/policies/code-of-conduct/).\n"
+      },
+      "readme": {
+        "text": "# W3C Style Guide\n\nThis is the README file for the W3C Style Guide during the external review (beta), lasting from Monday, 19 October 2026 to Friday, 29 January 2027.\n\n## Introduction and purpose\n\nThe W3C Style Guide unifies guidance previously spread across multiple internal style guides and editorial resources, as well as guidance adapted from established conventions used in major US style manuals, such as Modern Language Association (MLA) style and The Chicago Manual of Style. It also documents W3C-specific conventions, including terminology, tone, voice, and editorial preferences. \n\nThe guide aims to promote readability, consistency, and easier translation across W3C content, which spans standards-related materials, educational resources, organizational communications, and website content.\n\nIt empowers W3C writers, editors, and contributors across W3C to write content serving a global audience.\n\n## Motivations and benefits\n\n* Improved consistency across W3C publications and websites  \n* Reduced ambiguity when making editorial decisions  \n* Fewer recurring discussions about style and terminology  \n* More efficient onboarding of contributors and editors  \n* A clearer path for maintaining and evolving editorial guidance over time\n\n## Maintenance\n\nThe maintenance of the W3C Style Guide will continue to be collaborative and follow the living document approach using GitHub issues and pull requests.\n\n## Phased review\n\nThe W3C Team expects a phased review period lasting between August 2026 and March 2027.\n\n### Project scope and approach\n\nThe draft W3C Style Guide was created in July 2026 as a single, consistent editorial reference for W3C authors, with the aim of reducing duplication across W3C guidance documents. \n\nThis was done by comparing the [WAI Style Guide](https://wai-website-theme.netlify.app/style-guide/one-page/), the [W3C Manual of Style](https://www.w3.org/guide/manual-of-style/) that’s currently in effect for W3C authors, and older W3C editorial guidance. \n\nThe goal was to identify guidance applicable to all W3C authors and to move specialized guidance into companion documents that can be linked to from the new W3C Style Guide. \n\nWe deliberately chose wording that is easier to apply, reduces ambiguity, follows authoritative US style guidance, and aligns with W3C’s evolving editorial practices, which increasingly prioritize user experience.\n\nThis work has resulted in the separation of the W3C Manual of Style into two documents:\n\n* (unified) W3C Style Guide (this document)   \n* (draft) [W3C Specification Editor Handbook](https://pr-preview.s3.amazonaws.com/w3c/guide/pull/445.html)\n\n### Review rounds\n\nThe new style guide is now open for wide review and feedback. See the timeline below for our phased approach. \n\n### Review timelines\n\n1. \\[**Phase complete**\\] Internal review (Alpha)  \n   Tuesday, 28 July to Monday, 14 September 2026  \n* We invite the Team to review the style guide and identify any gaps, errors, or inconsistencies.  \n* Please provide feedback by commenting on [GitHub](https://github.com/w3c/style-guide/issues).  \n* Questions and discussion are also welcome.  \n* We will resolve issues as they are identified.\n\n2. \\[**Phase complete**\\] Consideration of internal feedback  \n   Monday, 14 September to Friday, 16 October 2026  \n* Complete due diligence on the internal review  \n* Consider and incorporate Team feedback  \n* Prepare a stable version for wider use\n\n3. External review (Beta) and internal adoption  \n   Monday, 19 October to **Friday, 29 January 2027**  \n* Internal adoption  \n  * Soft-launch the style guide  \n  * Invite W3C staff to begin using the guide to identify practical issues through real-world use  \n  * Resolve issues as they are identified  \n* External review:  \n  * Invite W3C editors to review the guide, focussing on identifying gaps, ambiguities, and inconsistencies  \n  * Resolve issues as they are identified\n\n4. Consideration of external feedback  \n   Monday, 1 February to Friday, 26 February 2027  \n* Complete due diligence on external review  \n* Incorporate agreed changes\n\n5. Version 1.0  \n   **Monday, 1 March 2027**  \n* Declare the W3C Style Guide stable  \n* Shift Team attention on the style guide back to maintenance mode\n\n### Exiting final review (March 2027\\)\n\nActions to take before exiting the review period and shifting to regular maintenance mode:\n\n* Obsolete existing information in the old style guides   \n* Ask the Internationalization team to update “Editorial guidelines for i18n docs” (that is, to leave only guidance specific to i18n docs, and to point to the W3C Style Guide): [https\\://www\\.w3.org/International/i18n-activity/guidelines/editing](https://www.w3.org/International/i18n-activity/guidelines/editing)   \n* Apply W3C Style Guide guidance to the [W3C Process Document](https://www.w3.org/policies/process/) (and other major published documents)\n\n### Areas for future improvement\n\nWe considered the following items to be out of scope for the initial work but identified them as worthwhile future improvements to the style guide:\n\n* Add a section to the Guide that provides an orientation to W3C guides and companion documents  \n* Provide a full table of contents, ideally sticky in the sidebar, that highlights the current heading as the reader moves through the document\n"
+      }
+    },
+    {
       "id": "MDEwOlJlcG9zaXRvcnkxMDM1NzU5MQ==",
       "name": "subline",
       "owner": {
@@ -117038,7 +117123,7 @@
         "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Conduct](https://www.w3.org/policies/code-of-conduct/).\n"
       },
       "readme": {
-        "text": "# TPAC 2026 - Breakout sessions\nThis repo is for the W3C community to propose and organize breakout sessions for [TPAC 2026](https://www.w3.org/news-events/tpac/2026/), which takes place 26-30 October 2026 in Dublin, Ireland. \n\nAround 19 October we will add the [schedule of breakout sessions](https://www.w3.org/calendar/tpac2026/breakout-sessions/) for Monday, Tuesday, and Wednesday to the [TPAC calendar](https://www.w3.org/calendar/tpac2026/). Starting 29 October we will add breakout sessions proposed during TPAC to Thursday and Friday slots.\n\n## Breakout sessions\n\n* [List of proposed sessions](../../issues). We welcome expressions of support (through emojis), questions, and other comments.\n* [Propose a session](https://github.com/w3c/tpac2026-breakouts/issues/new?assignees=&labels=session&projects=&template=session.yml); **see deadlines below**.\n* [Time slot schedule](https://github.com/w3c/tpac2026-breakouts/wiki/Breakout%E2%80%90time%E2%80%90slots).\n\nNote: Issue labels are for internal use by the W3C staff.\n\n## Regarding instructions for meeting planners and scheduling:\n\nPlease note that:\n\n* Breakout sessions are **never** scheduled in parallel with Working Group, Interest Group, or Community Group meetings.\n* When the same person is chairing or co-chairing multiple sessions, those sessions are not scheduled at the same time.\n\nThere is no need to leave instructions for meeting planners on those points.\n\n## Preparation\n\n* [Good Practices for Session Chairs](https://github.com/w3c/tpac-breakouts/wiki/Good-Practices-for-Session-Chairs), including instructions for proposing a breakout session, training for your session, and a [checklist for chairs](https://github.com/w3c/tpac-breakouts/wiki/Chair-checklist-during-a-breakout-session) for running a session.\n* [Breakout policies](https://github.com/w3c/tpac-breakouts/wiki/Policies) regarding session scope, participation, and how the meeting planners optimize scheduling and room assignments.\n* In case you are making slides, consider using the [TPAC 2026 slide template in HTML](https://www.w3.org/2026/Talks/TPAC/Templates/).\n\n## Deadlines\n\n* **8 October**, for sessions that will be scheduled in advance of TPAC. Session proposals received on or before 8&nbsp;October will, in general, be allocated to the breakout slots on Monday, Tuesday, and Wednesday. We urge participants to propose breakout sessions by 8&nbsp;October so that the meeting planners can work to resolve scheduling conflicts. On 13&nbsp;October we expect to announce the breakout schedule for the first three days of the week.\n* **29 October** noon local time, for sessions proposed once TPAC is underway.  We will, in general, allocate those sessions to the Thursday and Friday breakout slots. We will allocate the sessions to that slot as we receive them. We do not expect to send a separate announcement of the Thursday and Friday breakout sessions.\n"
+        "text": "# TPAC 2026 - Breakout sessions\nThis repo is for the W3C community to propose and organize breakout sessions for [TPAC 2026](https://www.w3.org/news-events/tpac/2026/), which takes place 26-30 October 2026 in Dublin, Ireland. \n\nAround 19 October we will add the [schedule of breakout sessions](https://www.w3.org/calendar/tpac2026/breakout-sessions/) based on proposals received by 8 October to the [TPAC calendar](https://www.w3.org/calendar/tpac2026/). Starting 29 October we will add breakout sessions proposed during TPAC to the calendar.\n\n## Breakout sessions\n\n* [List of proposed sessions](../../issues). We welcome expressions of support (through emojis), questions, and other comments.\n* [Propose a session](https://github.com/w3c/tpac2026-breakouts/issues/new?assignees=&labels=session&projects=&template=session.yml); **see deadlines below**.\n* [Time slot schedule](https://github.com/w3c/tpac2026-breakouts/wiki/Breakout%E2%80%90time%E2%80%90slots).\n\nNote: Issue labels are for internal use by the W3C staff.\n\n## Regarding instructions for meeting planners and scheduling:\n\nPlease note that:\n\n* Breakout sessions are **never** scheduled in parallel with Working Group, Interest Group, or Community Group meetings.\n* When the same person is chairing or co-chairing multiple sessions, those sessions are not scheduled at the same time.\n\nThere is no need to leave instructions for meeting planners on those points.\n\n## Preparation\n\n* [Good Practices for Session Chairs](https://github.com/w3c/tpac-breakouts/wiki/Good-Practices-for-Session-Chairs), including instructions for proposing a breakout session, training for your session, and a [checklist for chairs](https://github.com/w3c/tpac-breakouts/wiki/Chair-checklist-during-a-breakout-session) for running a session.\n* [Breakout policies](https://github.com/w3c/tpac-breakouts/wiki/Policies) regarding session scope, participation, and how the meeting planners optimize scheduling and room assignments.\n* In case you are making slides, consider using the [TPAC 2026 slide template in HTML](https://www.w3.org/2026/Talks/TPAC/Templates/).\n\n## Deadlines\n\n* **8 October**, for sessions that will be scheduled in advance of TPAC. Session proposals received on or before 8&nbsp;October will, in general, be allocated to the breakout slots on Monday, Tuesday, and Wednesday. We urge participants to propose breakout sessions by 8&nbsp;October so that the meeting planners can work to resolve scheduling conflicts. On 13&nbsp;October we expect to announce a draft schedule for meeting proponents. On 19&nbsp; we expect to announce the breakout schedule to registrants.\n* **29 October** noon local time, for sessions proposed once TPAC is underway.  We will, in general, allocate those sessions to the Thursday and Friday breakout slots. We will allocate the sessions to that slot as we receive them. We do not expect to send a separate announcement of the Thursday and Friday breakout sessions.\n"
       },
       "w3c": {
         "groups": [
@@ -168658,6 +168743,10 @@
       "createdAt": "2026-10-06T15:30:32Z",
       "labels": [
         {
+          "name": "Agenda+",
+          "color": "aaaaaa"
+        },
+        {
           "name": "bug",
           "color": "d73a4a"
         },
@@ -168711,7 +168800,7 @@
         "text": "{\n  \"group\": \"other/tag\",\n  \"contacts\": [],\n  \"policy\": \"open\",\n  \"repo-type\": \"note\"\n}\n"
       },
       "prpreviewjson": {
-        "text": "{\n    \"src_file\": \"index.html\",\n    \"type\": \"respec\"\n}\n"
+        "text": "{\n    \"src_file\": \"index.bs\",\n    \"type\": \"bikeshed\"\n}\n"
       },
       "autoPublish": {
         "text": "name: CI\non:\n  pull_request: {}\n  push:\n    branches: [main]\njobs:\n  main:\n    name: Build, Validate and Deploy\n    runs-on: ubuntu-latest\n    permissions:\n      contents: write\n    steps:\n      - uses: actions/checkout@v6\n      - uses: w3c/spec-prod@v2\n        with:\n          GH_PAGES_BRANCH: gh-pages\n"
@@ -168730,8 +168819,8 @@
         "text": "# Agentic Browsing and Web Architecture\n\nThis repository contains a draft finding about Agentic Browsing and Web Architecture.\n"
       },
       "prpreview": {
-        "src_file": "index.html",
-        "type": "respec"
+        "src_file": "index.bs",
+        "type": "bikeshed"
       },
       "w3c": {
         "group": "other/tag",
@@ -170940,7 +171029,7 @@
         "text": "{\n  \"group\": \"other/tag\",\n  \"contacts\": [],\n  \"policy\": \"open\",\n  \"repo-type\": \"note\"\n}\n"
       },
       "prpreviewjson": {
-        "text": "{\n    \"src_file\": \"index.html\",\n    \"type\": \"respec\"\n}\n"
+        "text": "{\n    \"src_file\": \"index.bs\",\n    \"type\": \"bikeshed\"\n}\n"
       },
       "autoPublish": {
         "text": "name: CI\non:\n  pull_request: {}\n  push:\n    branches: [main]\njobs:\n  main:\n    name: Build, Validate and Deploy\n    runs-on: ubuntu-latest\n    permissions:\n      contents: write\n    steps:\n      - uses: actions/checkout@v6\n      - uses: w3c/spec-prod@v2\n        with:\n          GH_PAGES_BRANCH: gh-pages\n"
@@ -170959,8 +171048,8 @@
         "text": "# Installing Websites Must Be Easy\n\nThis repository contains a draft finding about installable websites.\n"
       },
       "prpreview": {
-        "src_file": "index.html",
-        "type": "respec"
+        "src_file": "index.bs",
+        "type": "bikeshed"
       },
       "w3c": {
         "group": "other/tag",
@@ -186475,7 +186564,7 @@
       "license": null,
       "codeOfConduct": null,
       "readme": {
-        "text": "# WebMCP polyfill\n\nA polyfill for [WebMCP](https://webmachinelearning.github.io/webmcp/), with types from [webmcp-types](https://github.com/webmachinelearning/webmcp-types) and no runtime JavaScript dependencies.\n\n## Build\n\nThis package is in development. Build this checkout with Node.js 24 and pnpm:\n\n```sh\npnpm install\npnpm build\n```\n\nThen install the checkout in your app with `pnpm add /path/to/webmcp-polyfill`.\n\n## Usage\n\nUse HTTPS or localhost.\n\nLoad the polyfill before registering tools:\n\n```ts\nimport \"webmcp-polyfill/auto\";\n\nconst context = document.modelContext;\nif (!context) {\n  throw new Error(\"WebMCP requires a secure browser context\");\n}\n\nconst registration = new AbortController();\nawait context.registerTool(\n  {\n    name: \"page-title\",\n    description: \"Get the title of this page\",\n    execute() {\n      return { title: document.title };\n    },\n  },\n  { signal: registration.signal },\n);\n\nconst tools = await context.getTools();\nconst pageTitleTool = tools.find((tool) => tool.name === \"page-title\");\nif (!pageTitleTool) {\n  throw new Error(\"The page-title tool is unavailable\");\n}\n\nconst result = await context.executeTool(pageTitleTool);\nconsole.log(result);\n\n// Remove the tool when it is no longer needed.\nregistration.abort();\n```\n\nFor explicit installation, call `installWebMCP()` from `webmcp-polyfill`. Repeated calls are safe. Both entry points preserve existing native contexts, including partial implementations.\n\n### Script tag\n\nServe the built `dist/polyfill.js` before your app:\n\n```html\n<script src=\"/assets/polyfill.js\"></script>\n<script src=\"/assets/app.js\"></script>\n```\n\nThis standalone IIFE installs `document.modelContext` automatically.\n\n### Next.js\n\nIn Next.js 15.3+, add this to `instrumentation-client.ts` beside `app` (or `src/instrumentation-client.ts` beside `src/app`):\n\n```ts\nimport \"webmcp-polyfill/auto\";\n```\n\nNext.js runs [client instrumentation](https://nextjs.org/docs/app/api-reference/file-conventions/instrumentation-client) before hydration. A Server Component import alone won't install the polyfill in the browser.\n\nBoth entry points are SSR-safe: installation does nothing without a document. Your pages can stay server-rendered; WebMCP runs in the browser.\n\nThe package needs no `\"use client\"` directive. Use it on your [Client Components](https://nextjs.org/docs/app/api-reference/directives/use-client) and access `document.modelContext` in effects or event handlers. Pass an `AbortSignal` when registering in an effect, then abort it during cleanup.\n\n## Frames\n\nLoad the polyfill in each frame. Same-origin tools are visible by default, including those in parents and siblings. Pass the discovered descriptor to `executeTool()` so names shared by different frames reach the correct owner.\n\nFor cross-origin tools, delegate the `tools` permission on the iframe, register the tool with `exposedTo: [callerOrigin]`, and discover it with `getTools({ fromOrigins: [toolOrigin] })`. Same-origin tools are still included in that result.\n\n```html\n<iframe src=\"https://tools.example/app\" allow=\"tools https://tools.example\"></iframe>\n```\n\nInitial discovery waits up to 500 ms for existing frames. Requests use `MessageChannel` after checking the peer's source and origin; callbacks run in their owning frame. Cancellation preserves the caller's reason and sends the callback a default `AbortError`.\n\n## Implementation status\n\nThe target is `webmcp-types@0.1.9`: registration, discovery, execution, cancellation, and `toolchange`, including frame exposure and origin filtering. Declarative forms and `toolactivated`/`toolcancel` are not implemented. Browser agent integration requires browser support.\n\nNative contexts do not join the polyfill's channels. See [TESTING.md](https://github.com/webmachinelearning/webmcp-polyfill/blob/main/TESTING.md) for policy and frame limitations, results, commands, and tracked revisions.\n\n`executeTool()` accepts an object and returns a JSON-serialized result. Omitted or `undefined` input defaults to a fresh empty object. Callbacks must validate their inputs; schema inference provides TypeScript checks only.\n\nBreaking API changes ship with notes: in minor releases while the version is 0.x, in majors after 1.0.\n\n## Development\n\n`src/` holds the polyfill, `tests/` the browser and package checks, and `wpt/` the upstream runner, pin, and expectations.\n\n## License\n\n[MIT](LICENSE).\n"
+        "text": "# WebMCP polyfill\n\nA polyfill for [WebMCP](https://webmachinelearning.github.io/webmcp/), with types from [webmcp-types](https://github.com/webmachinelearning/webmcp-types) and no runtime JavaScript dependencies.\n\n## Build\n\nThis package is in development. Build this checkout with Node.js 24 and pnpm:\n\n```sh\npnpm install\npnpm build\n```\n\nThen install the checkout in your app with `pnpm add /path/to/webmcp-polyfill`.\n\n## Usage\n\nUse HTTPS or localhost.\n\nLoad the polyfill before registering tools:\n\n```ts\nimport \"webmcp-polyfill/auto\";\n\nconst context = document.modelContext;\nif (!context) {\n  throw new Error(\"WebMCP requires a secure browser context\");\n}\n\nconst registration = new AbortController();\nawait context.registerTool(\n  {\n    name: \"page-title\",\n    description: \"Get the title of this page\",\n    execute() {\n      return { title: document.title };\n    },\n  },\n  { signal: registration.signal },\n);\n\nconst tools = await context.getTools();\nconst pageTitleTool = tools.find((tool) => tool.name === \"page-title\");\nif (!pageTitleTool) {\n  throw new Error(\"The page-title tool is unavailable\");\n}\n\nconst result = await context.executeTool(pageTitleTool);\nconsole.log(result);\n\n// Remove the tool when it is no longer needed.\nregistration.abort();\n```\n\nFor explicit installation, call `installWebMCP()` from `webmcp-polyfill`. Repeated calls are safe. Both entry points preserve existing native contexts, including partial implementations.\n\n### Script tag\n\nServe the built `dist/polyfill.js` before your app:\n\n```html\n<script src=\"/assets/polyfill.js\"></script>\n<script src=\"/assets/app.js\"></script>\n```\n\nThis standalone IIFE installs `document.modelContext` automatically.\n\n### Next.js\n\nIn Next.js 15.3+, add this to `instrumentation-client.ts` beside `app` (or `src/instrumentation-client.ts` beside `src/app`):\n\n```ts\nimport \"webmcp-polyfill/auto\";\n```\n\nNext.js runs [client instrumentation](https://nextjs.org/docs/app/api-reference/file-conventions/instrumentation-client) before hydration. A Server Component import alone won't install the polyfill in the browser.\n\nBoth entry points are SSR-safe: installation does nothing without a document. Your pages can stay server-rendered; WebMCP runs in the browser.\n\nThe package needs no `\"use client\"` directive. Use it on your [Client Components](https://nextjs.org/docs/app/api-reference/directives/use-client) and access `document.modelContext` in effects or event handlers. Pass an `AbortSignal` when registering in an effect, then abort it during cleanup.\n\n## Frames\n\nLoad the polyfill in each frame. Same-origin tools are visible by default, including those in parents and siblings. Pass the discovered descriptor to `executeTool()` so names shared by different frames reach the correct owner.\n\nFor cross-origin tools, delegate the `tools` permission on the iframe, register the tool with `exposedTo: [callerOrigin]`, and discover it with `getTools({ fromOrigins: [toolOrigin] })`. Same-origin tools are still included in that result.\n\n```html\n<iframe src=\"https://tools.example/app\" allow=\"tools https://tools.example\"></iframe>\n```\n\nInitial discovery waits up to 500 ms for existing frames. Requests use `MessageChannel` after checking the peer's source and origin; callbacks run in their owning frame. Cancellation preserves the caller's reason and sends the callback a default `AbortError`.\n\n## Implementation status\n\nThe target is `webmcp-types@0.1.9`: registration, discovery, execution, cancellation, and `toolchange`, including frame exposure and origin filtering. Declarative forms and `toolactivated`/`toolcancel` are not implemented. Browser agent integration requires browser support.\n\nNative contexts do not join the polyfill's channels. See [TESTING.md](https://github.com/webmachinelearning/webmcp-polyfill/blob/main/TESTING.md) for policy and frame limitations, commands, and tracked revisions.\n\n`executeTool()` accepts an object and returns a JSON-serialized result. Omitted or `undefined` input defaults to a fresh empty object. Callbacks must validate their inputs; schema inference provides TypeScript checks only.\n\nBreaking API changes ship with notes: in minor releases while the version is 0.x, in majors after 1.0.\n\n## Development\n\n`src/` holds the polyfill, `tests/` the browser and package checks, and `wpt/` the upstream runner, pin, and expectations.\n\n## License\n\n[Apache-2.0](LICENSE).\n"
       }
     },
     {
