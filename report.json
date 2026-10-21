@@ -462,9 +462,9 @@
       "WebAssembly/esm-integration",
       "WebAssembly/extended-name-section",
       "WebAssembly/flexible-vectors",
+      "WebAssembly/fp16",
       "WebAssembly/frozen-values",
       "WebAssembly/gc-js-customization",
-      "WebAssembly/half-precision",
       "WebAssembly/instrument-tracing",
       "WebAssembly/jit-interface",
       "WebAssembly/js-primitive-builtins",
@@ -2493,9 +2493,9 @@
       "WebAssembly/esm-integration",
       "WebAssembly/extended-name-section",
       "WebAssembly/flexible-vectors",
+      "WebAssembly/fp16",
       "WebAssembly/frozen-values",
       "WebAssembly/gc-js-customization",
-      "WebAssembly/half-precision",
       "WebAssembly/instrument-tracing",
       "WebAssembly/jit-interface",
       "WebAssembly/js-primitive-builtins",
@@ -3511,7 +3511,6 @@
       "w3c/wai-coga",
       "w3c/wai-conformance-model-test",
       "w3c/wai-course-list",
-      "w3c/wai-eval-tools",
       "w3c/wai-evaluation-tools-list",
       "w3c/wai-interactive-lists",
       "w3c/wai-mission",
@@ -3692,7 +3691,6 @@
       "w3ctag/promises-guide",
       "w3ctag/secure-the-web",
       "w3ctag/societal-impact-questionnaire",
-      "w3ctag/state-of-3pc",
       "w3ctag/tag.w3.org",
       "w3ctag/tagdocs",
       "w3ctag/the-web-is-not-versioned",
@@ -3731,9 +3729,9 @@
       "WebAssembly/esm-integration",
       "WebAssembly/extended-name-section",
       "WebAssembly/flexible-vectors",
+      "WebAssembly/fp16",
       "WebAssembly/frozen-values",
       "WebAssembly/gc-js-customization",
-      "WebAssembly/half-precision",
       "WebAssembly/instrument-tracing",
       "WebAssembly/jit-interface",
       "WebAssembly/js-primitive-builtins",
@@ -6045,9 +6043,9 @@
       "WebAssembly/esm-integration",
       "WebAssembly/extended-name-section",
       "WebAssembly/flexible-vectors",
+      "WebAssembly/fp16",
       "WebAssembly/frozen-values",
       "WebAssembly/gc-js-customization",
-      "WebAssembly/half-precision",
       "WebAssembly/instrument-tracing",
       "WebAssembly/jit-interface",
       "WebAssembly/js-primitive-builtins",
@@ -6779,15 +6777,15 @@
         "error": "main branch is not protected"
       },
       {
+        "repo": "WebAssembly/fp16",
+        "error": "main branch is not protected"
+      },
+      {
         "repo": "WebAssembly/frozen-values",
         "error": "main branch is not protected"
       },
       {
         "repo": "WebAssembly/gc-js-customization",
-        "error": "main branch is not protected"
-      },
-      {
-        "repo": "WebAssembly/half-precision",
         "error": "main branch is not protected"
       },
       {
@@ -9316,7 +9314,7 @@
       }
     ]
   },
-  "timestamp": "2026-10-20T00:33:54.790Z",
+  "timestamp": "2026-10-21T00:32:05.266Z",
   "repos": [
     {
       "id": "MDEwOlJlcG9zaXRvcnk4MTAyMTg2MA==",
@@ -21168,6 +21166,10 @@
           "color": "6bc5c6"
         },
         {
+          "name": "s:css-color-5",
+          "color": "6bc5c6"
+        },
+        {
           "name": "s:css-color-adjust-1",
           "color": "aaaaaa"
         },
@@ -31447,7 +31449,7 @@
         "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Conduct](https://www.w3.org/policies/code-of-conduct/).\n"
       },
       "readme": {
-        "text": "# cg-assets\n\nStyle sheets and scripts for W3C **Community Group specifications**.\n\nThis is the CG counterpart to [w3c/tr-design](https://github.com/w3c/tr-design),\nwhich holds the assets for W3C Technical Reports. The design implemented here was\ndeveloped and agreed in [w3c/cg-program](https://github.com/w3c/cg-program) — see\n[`proposals/spec-lifecycle.md`](https://github.com/w3c/cg-program/blob/main/proposals/spec-lifecycle.md)\nand [`beta-2026/cg-redesign-overview.md`](https://github.com/w3c/cg-program/blob/main/beta-2026/cg-redesign-overview.md)\n— and prototyped as the `spec-mockups/v12` mockups.\n\n## Files\n\n| File | What it is |\n| ---- | ---------- |\n| `css/base.css` | The W3C TR base style sheet, with the CG design bits. |\n| `css/cg-spec.css` | The CG component layer: the header box, status notices, progress bar, usage-guidance tables, buttons and icons. |\n| `css/dark.css` | The W3C TR dark overlay. |\n| `js/cg-fixup.js` | Table of contents (sidebar toggle, jump link), amendment diff toggling, wide-table wrapping. |\n| `js/dark.js` | The light / dark / auto theme toggle, and the code that drives the dark style sheet. |\n| `js/cg-metadata.js` | Fills the status metadata — browser support, the progress bar, the usage-guidance tables — from [cg-spec-metadata](https://github.com/w3c/cg-spec-metadata). |\n| `demo/` | Sample specifications using these assets, wired to the live metadata endpoint and deployed through GitHub Pages. See [`demo/README.md`](demo/README.md). |\n\n## How a specification uses these\n\n**The order matters.** `base.css`, `cg-spec.css` and `dark.css` all set the same\n`:root` custom properties at equal specificity, so a document that loads them out\nof order gets the wrong colours.\n\n```html\n<link rel=\"stylesheet\" href=\"BASE/css/base.css\">\n<link rel=\"stylesheet\" href=\"BASE/css/cg-spec.css\">\n<link rel=\"stylesheet\" class=\"dark-mode\" media=\"(prefers-color-scheme: dark)\"\n      href=\"BASE/css/dark.css\">\n<script src=\"BASE/js/cg-fixup.js\"></script>\n<script src=\"BASE/js/dark.js\"></script>\n<script src=\"BASE/js/cg-metadata.js\" defer></script>\n```\n\nNotes on that markup:\n\n- The dark sheet **must** carry `media=\"(prefers-color-scheme: dark)\"`, so that a\n  reader without JavaScript gets a palette that matches their system. `dark.js`\n  takes over the media list once it runs.\n- `class=\"dark-mode\"` is how `dark.js` finds the sheet to drive from the theme\n  toggle. A URL ending in `dark.css` is also recognised, but the class is\n  explicit and survives renaming.\n- Load `cg-fixup.js` before `dark.js`.\n- `cg-metadata.js` **must** be `defer`: that scripts fills the  *Usage guidance*\n  section at the foot. See [Status metadata](#status-metadata).\n\n`BASE` is not fixed yet. CG specifications are to be published on\n`incubation.w3.org` (see the redesign overview).\n\n## What the design covers\n\nTwo document kinds and three maturity stages, per the\n[CG specification lifecycle](https://github.com/w3c/cg-program/blob/main/proposals/spec-lifecycle.md):\n\n- **Living specifications** — updated in place. Header box with the maturity tag,\n  a four-state progress bar towards standardization (`.progress-list`), a browser\n  support summary, and a usage-guidance section at the foot of the document.\n- **Snapshots** — archival. Same header box, no progress bar, and a notice\n  pointing at the living specification.\n- Maturity stages **Draft**, **Transferred** and **Unmaintained**, the last of\n  which uses the red `.box--warning` variant.\n\n\n## Status metadata\n\n`js/cg-metadata.js` fills the collected status metadata from\n[cg-spec-metadata](https://github.com/w3c/cg-spec-metadata), reading\n`https://w3c.github.io/cg-spec-metadata/specs/<shortname>.json`. A living specification and a\nsnapshot both load it, and it behaves differently according to what the document says it is.\n\n### What the document has to declare\n\n```html\n<meta name=\"cg-spec-type\" content=\"living\">          <!-- or \"snapshot\" -->\n<meta name=\"cg-spec-shortname\" content=\"scheduling-apis\">\n<meta name=\"cg-spec-maturity\" content=\"draft\">       <!-- or transferred | unmaintained -->\n```\n\nThese come from native config properties in bikeshed and ReSpec; nothing here is meant to be\nhand-written. `cg-spec-maturity` is a **build input** — the script never reads it. The maturity\nstage changes the markup rather than a value (a different notice box, a different number of list\nitems, no progress bar at all), so it has to be chosen when the document is generated.\n\nIf `cg-spec-type` is missing, unrecognised, or given twice with different values, the script builds\n**nothing**, records `data-cg-metadata=\"unknown-type\"`, and says so in every region. Failing closed\nis deliberate: showing live status on an archival document is a correctness problem, while a living\nspecification that cannot load its status says as much where the status would have been.\n\nA snapshot is allowed only the `living-spec` region — the address and last-edited date of the\n*living* document it points at. Everything the generator already knows stays in the markup: the\nsnapshot's own publication date and address, and the link to the snapshots index. Any other region\nis refused even if the container is present, and says why, so a copy-paste or a generator bug\ncannot put live status on a snapshot.\n\nOne consequence worth writing down: **a browser \"Save as HTML\" is not a way to make a snapshot.**\nReSpec's exporter clones the live DOM and keeps both the `<meta>` and the script, so the saved file\nwould keep calling itself a living specification and would keep refreshing. Build a snapshot with\n`cg-spec-type: snapshot` in its source metadata.\n\n### What the script builds\n\nThe script does not fill values into markup the generator wrote — it **builds the blocks**. Nothing\nthat claims to be current status is ever in the document, so it can never be stale. The generator\nleaves an empty container where each block goes:\n\n| `data-cg-region` | what the script puts there | living | snapshot |\n| --- | --- | :---: | :---: |\n| `last-edited` | \"It was last edited on `<date>`.\" | ✓ | — |\n| `progress` | the four-step progress bar | ✓ | — |\n| `browser-support` | the browser-support summary in the header box | ✓ | — |\n| `usage-guidance` | the \"This data last refreshed on\" line and the four usage-guidance tables | ✓ | — |\n| `living-spec` | \"This living specification: `<url>` (last edited: `<date>`)\" | ✓ | ✓ |\n\nPut a `<noscript>` inside a container for the no-JavaScript case — the script leaves it alone.\nNothing else may go in one; anything else is removed when the region is built.\n\nThe section around a region stays in the document, because it is structure rather than status: the\n`<h2 id=\"usage-guidance\">` (which the table of contents and the header box both link to), the\n*Get involved* section, and the closing copyright disclaimer.\n\n**A region is never silently empty.** If the fetch fails, the spec is absent from the endpoint, or\nthe document does not say what it is, every region says so. A value the collectors do not have is\nrendered as *Not available* in place rather than dropped, so a reader can tell \"nobody knows\" from\n\"nothing to report\". Both use `.cg-metadata-unavailable` / `.cg-metadata-missing` in\n`css/cg-spec.css`.\n\n### Staleness\n\nThe generator marks the root element `data-cg-metadata=\"static\"`; the script sets `fresh`, `stale`\nor `unknown-type`. There is no static fallback to reveal or hide, so these are for CSS and\ndebugging rather than for the reader — what the reader sees is the message in the region itself.\n"
+        "text": "# cg-assets\n\nStyle sheets and scripts for W3C **Community Group specifications**.\n\nThis is the CG counterpart to [w3c/tr-design](https://github.com/w3c/tr-design),\nwhich holds the assets for W3C Technical Reports. The design implemented here was\ndeveloped and agreed in [w3c/cg-program](https://github.com/w3c/cg-program) — see\n[`proposals/spec-lifecycle.md`](https://github.com/w3c/cg-program/blob/main/proposals/spec-lifecycle.md)\nand [`beta-2026/cg-redesign-overview.md`](https://github.com/w3c/cg-program/blob/main/beta-2026/cg-redesign-overview.md)\n— and prototyped as the `spec-mockups/v13` mockups.\n\n## Files\n\n| File | What it is |\n| ---- | ---------- |\n| `css/base.css` | The W3C TR base style sheet, with the CG design bits. |\n| `css/cg-spec.css` | The CG component layer: the header box, status notices, progress bar, usage-guidance tables, buttons and icons. |\n| `css/dark.css` | The W3C TR dark overlay. |\n| `js/cg-fixup.js` | Table of contents (sidebar toggle, jump link), amendment diff toggling, wide-table wrapping, the \"W3C Community Group incubation\" warning. |\n| `js/dark.js` | The light / dark / auto theme toggle, and the code that drives the dark style sheet. |\n| `js/cg-metadata.js` | Fills the status metadata — browser support, the progress bar, the usage-guidance tables — from [cg-spec-metadata](https://github.com/w3c/cg-spec-metadata). |\n| `demo/` | Sample specifications using these assets, wired to the live metadata endpoint and deployed through GitHub Pages. See [`demo/README.md`](demo/README.md). |\n\n## How a specification uses these\n\n**The order matters.** `base.css`, `cg-spec.css` and `dark.css` all set the same\n`:root` custom properties at equal specificity, so a document that loads them out\nof order gets the wrong colours.\n\n```html\n<link rel=\"stylesheet\" href=\"BASE/css/base.css\">\n<link rel=\"stylesheet\" href=\"BASE/css/cg-spec.css\">\n<link rel=\"stylesheet\" class=\"dark-mode\" media=\"(prefers-color-scheme: dark)\"\n      href=\"BASE/css/dark.css\">\n<script src=\"BASE/js/cg-fixup.js\"></script>\n<script src=\"BASE/js/dark.js\"></script>\n<script src=\"BASE/js/cg-metadata.js\" defer></script>\n```\n\nNotes on that markup:\n\n- The dark sheet **must** carry `media=\"(prefers-color-scheme: dark)\"`, so that a\n  reader without JavaScript gets a palette that matches their system. `dark.js`\n  takes over the media list once it runs.\n- `class=\"dark-mode\"` is how `dark.js` finds the sheet to drive from the theme\n  toggle. A URL ending in `dark.css` is also recognised, but the class is\n  explicit and survives renaming.\n- Load `cg-fixup.js` before `dark.js`.\n- `cg-metadata.js` **must** be `defer`: that scripts fills the  *Usage guidance*\n  section at the foot. See [Status metadata](#status-metadata).\n\n`BASE` is not fixed yet. CG specifications are to be published on\n`incubation.w3.org` (see the redesign overview).\n\n## What the design covers\n\nTwo document kinds and three maturity stages, per the\n[CG specification lifecycle](https://github.com/w3c/cg-program/blob/main/proposals/spec-lifecycle.md):\n\n- **Living specifications** — updated in place. Header box with the maturity tag,\n  a four-state progress bar towards standardization (`.progress-list`), a browser\n  support summary, and a usage-guidance section at the foot of the document.\n- **Snapshots** — archival. Same header box, no progress bar, and a notice\n  pointing at the living specification.\n- Maturity stages **Draft**, **Transferred** and **Unmaintained**, the last of\n  which uses the red `.box--warning` variant.\n\n\n## Status metadata\n\n`js/cg-metadata.js` fills the collected status metadata from\n[cg-spec-metadata](https://github.com/w3c/cg-spec-metadata), reading\n`https://w3c.github.io/cg-spec-metadata/specs/<shortname>.json`. A living specification and a\nsnapshot both load it, and it behaves differently according to what the document says it is.\n\n### What the document has to declare\n\n```html\n<meta name=\"cg-spec-type\" content=\"living\">          <!-- or \"snapshot\" -->\n<meta name=\"cg-spec-shortname\" content=\"scheduling-apis\">\n<meta name=\"cg-spec-maturity\" content=\"draft\">       <!-- or transferred | unmaintained -->\n```\n\nThese come from native config properties in bikeshed and ReSpec; nothing here is meant to be\nhand-written. `cg-spec-maturity` is a **build input** — the script never reads it. The maturity\nstage changes the markup rather than a value (a different notice box, a different number of list\nitems, no progress bar at all), so it has to be chosen when the document is generated.\n\nIf `cg-spec-type` is missing, unrecognised, or given twice with different values, the script builds\n**nothing**, records `data-cg-metadata=\"unknown-type\"`, and says so in every region. Failing closed\nis deliberate: showing live status on an archival document is a correctness problem, while a living\nspecification that cannot load its status says as much where the status would have been.\n\nA snapshot is allowed only the `living-spec` region — the address and last-edited date of the\n*living* document it points at. Everything the generator already knows stays in the markup: the\nsnapshot's own publication date and address, and the link to the snapshots index. Any other region\nis refused even if the container is present, and says why, so a copy-paste or a generator bug\ncannot put live status on a snapshot.\n\nOne consequence worth writing down: **a browser \"Save as HTML\" is not a way to make a snapshot.**\nReSpec's exporter clones the live DOM and keeps both the `<meta>` and the script, so the saved file\nwould keep calling itself a living specification and would keep refreshing. Build a snapshot with\n`cg-spec-type: snapshot` in its source metadata.\n\n### What the script builds\n\nThe script does not fill values into markup the generator wrote — it **builds the blocks**. Nothing\nthat claims to be current status is ever in the document, so it can never be stale. The generator\nleaves an empty container where each block goes:\n\n| `data-cg-region` | what the script puts there | living | snapshot |\n| --- | --- | :---: | :---: |\n| `last-edited` | \"It was last edited on `<date>`.\" | ✓ | — |\n| `progress` | the four-step progress bar | ✓ | — |\n| `browser-support` | the browser-support summary in the header box | ✓ | — |\n| `usage-guidance` | the \"This data last refreshed on\" line and the four usage-guidance tables | ✓ | — |\n| `living-spec` | \"This living specification: `<url>` (last edited: `<date>`)\" | ✓ | ✓ |\n\nPut a `<noscript>` inside a container for the no-JavaScript case — the script leaves it alone.\nNothing else may go in one; anything else is removed when the region is built.\n\nThe section around a region stays in the document, because it is structure rather than status: the\n`<h2 id=\"usage-guidance\">` (which the table of contents and the header box both link to), the\n*Get involved* section, and the closing copyright disclaimer.\n\n**A region is never silently empty.** If the fetch fails, the spec is absent from the endpoint, or\nthe document does not say what it is, every region says so. A value the collectors do not have is\nrendered as *Not available* in place rather than dropped, so a reader can tell \"nobody knows\" from\n\"nothing to report\". Both use `.cg-metadata-unavailable` / `.cg-metadata-missing` in\n`css/cg-spec.css`.\n\n### Staleness\n\nThe generator marks the root element `data-cg-metadata=\"static\"`; the script sets `fresh`, `stale`\nor `unknown-type`. There is no static fallback to reveal or hide, so these are for CSS and\ndebugging rather than for the reader — what the reader sees is the message in the region itself.\n"
       },
       "w3c": {
         "group": [
@@ -61352,7 +61354,7 @@
         "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Conduct](https://www.w3.org/policies/code-of-conduct/).\n"
       },
       "readme": {
-        "text": "# i18n-tests\nThis repository contains most of the tests created for use with the W3C Internationalization test suite and others that are more interactive in nature.  The majority test international features of W3C specifications, but there are others that just explore browser and font support for certain international features.\n\nThere are two main types of test:\n1. standard tests written in HTML files that are accessed via the i18n test suite, and\n2. interactive tests, which are accessed via test script pages in the wiki of this repository.\n\nTo find tests, go to the [Test Index page](https://www.w3.org/International/i18n-tests/).\n\n## Interactive tests\n\nInteractive tests allow you to quickly set up test scenarios with minimal formality. They are particularly useful for tests that have many permutations on a language-by-language basis, and can be easier to manage for people creating gap-analysis documents.\n\nThe test pages themselves allow you to set various CSS properties or other aspects of the page, including the text to be tested, by interacting with form controls on the test page. This allows for a great deal of flexibility in exploring features, and changes can be rapidly made to explore a range of scenarios.\n\nYou can then take a snapshot of the settings and add that as a URL to a wiki page in this repo as part of a test script. There are test scripts for each of the sections in the Language Enablement Index. Having created a test, it is very quick and simple to point back to it from the test script and report findings.\n\nFor more information, see [Working with interactive tests](https://www.w3.org/International/i18n-drafts/pages/interactive_tests).\n\nTests in a test script could be converted to standard tests at some point if resources become available to do the work.\n\n## Standard tests\n\nThese tests and the test framework have been moved here from the W3C server, so that they are more easily accessible. The test framework was converted from PHP to run using JavaScript. Tests that require server-side settings, however, remain on the W3C server (these include character encoding and language tests that rely on HTTP headers).\n\nLinks on the [main test page](https://www.w3.org/International/i18n-tests/) take you to pages that show results for a group of related tests. Click on the links in the left column of those pages to view a test in the test runner.\n\nThe tests follow the pattern of the [Web Platform Tests](https://github.com/w3c/web-platform-tests), since it is our aim to copy all appropriate tests to that repository. The i18n test suite is maintained separately because:\n- It contains exploratory tests that don't belong in the WPT repo\n- Tests and their results are arranged so they can be linked to from educational materials created by the Internationalization activity\n- Many i18n tests include visible \"workings\" for education, not just pass/fail indicators\n\nWe have some [guidelines for writing i18n tests](https://github.com/w3c/i18n-tests/wiki/Writing-i18n-tests) that complement the guidelines in the WPT documentation.\n\n## Notes on structure of the repo\n\nWe group tests into batches. There is typically one results page per batch, but sometimes one batch equates to more than one results page. The results page is an HTML page that groups tests in some useful manner, using headings, provides a link to the individual test, the assertion, and a set of results for major browsers for that test.\n\n**Key components:**\n\n- **Batch file** (`batches/*-batch.txt`): A list of test filenames that make up a batch, one per line\n- **Base**: The path from the root of the repo to the location of the tests listed in the batch file (e.g., `css-text/text-transform`)\n- **Batch metadata file** (`batches/<batch>.js`): A JavaScript file containing metadata such as assertion, title, etc. for each test in the batch (extracted from test `<meta>` tags)\n- **Data file** (`batches/*-data.js`): Stores results for major browsers. There's a tool available for quickly merging new results with existing ones\n\n## Moving tests to the test framework\n\nThe process of adding new tests to the test framework is explained at https://w3c.github.io/i18n-tests/tools/PROCESS.html. A local version of that page is used to actually run the process. **You'll need PHP to run the various scripts** called by that page (and therefore you'll need to run the page under localhost).\n\nThat page helps you with the following steps. In most cases it is just a question of ensuring you give the name and path for the batch and then press a button to generate files or data.\n\n1. Setting up a batch file and associated data and metadata files once you have a set of test files to add to the test framework\n2. Running the tests to check that they work\n3. Creating a partially filled-out results file for the batch from a template\n4. Adding test results to the data file\n\nThe first 3 steps are typically run together when adding a set of files to the repository and framework. Step 4 can be run any time you have results to add to the results page for a batch.\n\n## Porting tests to WPT\n\nThe WPT folks prefer script-based tests or ref tests, but will also accept manual tests when it's not possible to automate the test. This is fairly common for i18n tests.\n\nWe should try to ensure that tests we create are scripted or ref tests wherever possible, but we may also add 'workings' to the displayed file, rather than just show a green/red blob. This is because our tests are also used for education, not only for nightly testing of browsers.\n\nIn some cases, we may need to change the way a test works before porting to WPT. For example, overlaying test text over red ref text often provides a very effective way for humans to spot differences (especially for tests with multiple components, such as text-transform tests), however there is some concern that the subpixel bleeding of the red color may interfere with the automated ref test mechanism. In such cases we need to adapt the test before porting to WPT. Hopefully, this will typically involve only removing some CSS statements (however, we need to check that).\n\n**Syncing changes:** Once a set of tests has been ported to WPT, we should track any changes to those tests, and if they are substantive we should retrofit the changes to the tests in our own repo.\n"
+        "text": "# i18n-tests\nThis repository contains most of the tests created for use with the W3C Internationalization test suite and others that are more interactive in nature.  The majority test international features of W3C specifications, but there are others that just explore browser and font support for certain international features.\n\nThere are three main types of test:\n1. standard tests written in HTML files that are accessed via the i18n test suite,\n2. interactive tests, which are accessed via test script pages in the wiki of this repository, and\n3. EPUB reading-system tests, which are single EPUB books under `readers/`.\n\nTo find tests, go to the [Test Index page](https://www.w3.org/International/i18n-tests/).\n\n## Interactive tests\n\nInteractive tests allow you to quickly set up test scenarios with minimal formality. They are particularly useful for tests that have many permutations on a language-by-language basis, and can be easier to manage for people creating gap-analysis documents.\n\nThe test pages themselves allow you to set various CSS properties or other aspects of the page, including the text to be tested, by interacting with form controls on the test page. This allows for a great deal of flexibility in exploring features, and changes can be rapidly made to explore a range of scenarios.\n\nYou can then take a snapshot of the settings and add that as a URL to a wiki page in this repo as part of a test script. There are test scripts for each of the sections in the Language Enablement Index. Having created a test, it is very quick and simple to point back to it from the test script and report findings.\n\nFor more information, see [Working with interactive tests](https://www.w3.org/International/i18n-drafts/pages/interactive_tests).\n\nTests in a test script could be converted to standard tests at some point if resources become available to do the work.\n\n## EPUB reading system tests\n\nThe sources live in `readers/<test-id>/EPUB/`; the built books (`readers/<test-id>.epub`) and the generated registry (`readers/tests.js`) are committed so that GitHub Pages can serve them. Build with `node tools/make-epubs.mjs` (Node.js 18+ and `zip` are required), record results in `readers/readers-data.js`, and see `readers/README.md` for the full workflow. The [results page](https://w3c.github.io/i18n-tests/results/readers.html) lists every test.\n\n## Standard tests\n\nThese tests and the test framework have been moved here from the W3C server, so that they are more easily accessible. The test framework was converted from PHP to run using JavaScript. Tests that require server-side settings, however, remain on the W3C server (these include character encoding and language tests that rely on HTTP headers).\n\nLinks on the [main test page](https://www.w3.org/International/i18n-tests/) take you to pages that show results for a group of related tests. Click on the links in the left column of those pages to view a test in the test runner.\n\nThe tests follow the pattern of the [Web Platform Tests](https://github.com/w3c/web-platform-tests), since it is our aim to copy all appropriate tests to that repository. The i18n test suite is maintained separately because:\n- It contains exploratory tests that don't belong in the WPT repo\n- Tests and their results are arranged so they can be linked to from educational materials created by the Internationalization activity\n- Many i18n tests include visible \"workings\" for education, not just pass/fail indicators\n\nWe have some [guidelines for writing i18n tests](https://github.com/w3c/i18n-tests/wiki/Writing-i18n-tests) that complement the guidelines in the WPT documentation.\n\n## Notes on structure of the repo\n\nWe group tests into batches. There is typically one results page per batch, but sometimes one batch equates to more than one results page. The results page is an HTML page that groups tests in some useful manner, using headings, provides a link to the individual test, the assertion, and a set of results for major browsers for that test.\n\n**Key components:**\n\n- **Batch file** (`batches/*-batch.txt`): A list of test filenames that make up a batch, one per line\n- **Base**: The path from the root of the repo to the location of the tests listed in the batch file (e.g., `css-text/text-transform`)\n- **Batch metadata file** (`batches/<batch>.js`): A JavaScript file containing metadata such as assertion, title, etc. for each test in the batch (extracted from test `<meta>` tags)\n- **Data file** (`batches/*-data.js`): Stores results for major browsers. There's a tool available for quickly merging new results with existing ones\n- **Reading-system tests** (`readers/`): One EPUB book per feature, its sources, a generated test registry (`tests.js`), and the recorded results in `readers-data.js`\n\n## Moving tests to the test framework\n\nThe process of adding new tests to the test framework is explained at https://w3c.github.io/i18n-tests/tools/PROCESS.html. A local version of that page is used to actually run the process. **You'll need PHP to run the various scripts** called by that page (and therefore you'll need to run the page under localhost).\n\nThat page helps you with the following steps. In most cases it is just a question of ensuring you give the name and path for the batch and then press a button to generate files or data.\n\n1. Setting up a batch file and associated data and metadata files once you have a set of test files to add to the test framework\n2. Running the tests to check that they work\n3. Creating a partially filled-out results file for the batch from a template\n4. Adding test results to the data file\n\nThe first 3 steps are typically run together when adding a set of files to the repository and framework. Step 4 can be run any time you have results to add to the results page for a batch.\n\n## Porting tests to WPT\n\nThe WPT folks prefer script-based tests or ref tests, but will also accept manual tests when it's not possible to automate the test. This is fairly common for i18n tests.\n\nWe should try to ensure that tests we create are scripted or ref tests wherever possible, but we may also add 'workings' to the displayed file, rather than just show a green/red blob. This is because our tests are also used for education, not only for nightly testing of browsers.\n\nIn some cases, we may need to change the way a test works before porting to WPT. For example, overlaying test text over red ref text often provides a very effective way for humans to spot differences (especially for tests with multiple components, such as text-transform tests), however there is some concern that the subpixel bleeding of the red color may interfere with the automated ref test mechanism. In such cases we need to adapt the test before porting to WPT. Hopefully, this will typically involve only removing some CSS statements (however, we need to check that).\n\n**Syncing changes:** Once a set of tests has been ported to WPT, we should track any changes to those tests, and if they are substantive we should retrofit the changes to the tests in our own repo.\n"
       },
       "w3c": {
         "group": [
@@ -128527,6 +128529,10 @@
           "color": "c2e0c6"
         },
         {
+          "name": "reference",
+          "color": "309a3b"
+        },
+        {
           "name": "security-needs-resolution",
           "color": "ffff00"
         },
@@ -134660,7 +134666,7 @@
       "owner": {
         "login": "w3c"
       },
-      "isArchived": false,
+      "isArchived": true,
       "homepageUrl": "",
       "description": "WAI Accessibility Evaluation Tools",
       "isPrivate": false,
@@ -134736,19 +134742,7 @@
         "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n"
       },
       "readme": {
-        "text": "# WAI Accessibility Evaluation Tools\n\n> [!IMPORTANT]\n> This repository was used for the old list, and has been archived 17 July 2025.\n>\n> The current [Web Accessibility Evaluation Tools List](https://www.w3.org/WAI/test-evaluate/tools/list/) is edited in the [wai-evaluation-tools-list](https://github.com/w3c/wai-evaluation-tools-list) repository.\n\n## Setup and Addition of Data\n\nData is collected in the `data` directory. There are two possibilities to use it.\n\n### (A) Local setup & GitHub Pages \n\nClone the repository to your hard disk and run\n\n~~~bash\n$ npm install\n~~~\n\nto initialize the repository and install all dependencies, like grunt. To use the data files with github pages, the files need to be compiled to one `data.js` files using the gulp script. Run\n\n~~~bash\n$ gulp watch\n~~~\n\nand add/edit the data files. The `data.json` file is automatically created.\n\n### (B) Server setup & PHP\n\nIf you want the script to pick up files on the (PHP enabled) server automatically once they are saved into the data directory, do all steps in (A) but after running `gulp watch` edit the `javascript/script.js` file. Search for `data.json` and replace it with `data.json.php`. After you save that file a new `js/master.min.js` is created that is using this path. Now you can upload the files to the server, **whenever you upload a new file to the `data` directory it will be picked up by the tool automagically**.\n\n### Appendix: Data format\n\nUsually data should be entered and edited using the submission form to ensure valid JSON. The data is collected in JSON files with each entry in the following format:\n\n~~~json\n{\n  \"title\": \"<string>\",\n  \"creator\": \"<string>\",\n  \"location\": \"<url>\",\n  \"release\": \"<date format='YYYY-MM-DD'>\",\n  \"version\": \"<string>\",\n  \"description\": \"<string>\",\n  \"language\": [\"<array of strings>\"],\n  \"guideline\": [\"<array of strings>\"],\n  \"assists\": [\"<array of strings>\"],\n  \"automated\": [\"<array of strings>\"],\n  \"repairs\": [\"<array of strings>\"],\n  \"technology\": [\"<array of strings>\"],\n  \"onlineservice\": [\"<array of strings>\"],\n  \"desktopapp\": [\"<array of strings>\"],\n  \"authoringtools\": [\"<array of strings>\"],\n  \"browsers\": [\"<array of strings>\"],\n  \"reports\": [\"<array of strings>\"],\n  \"license\": [\"<array of strings>\"],\n  \"update\": [\"<array of strings>\"],\n  \"type\": [\"<array of strings>\"]\n}\n~~~\n\n`title`, `creator`, `url`, `release`, `version` and `desc` can have only one (string) value. All other fields can either be one or multiple values. If a tool has multiple values, like different languages, enclose them with square brackets and separate them with a comma. If only one value is used, the brackets are optional. (a value of \"English\" is equivalent to [\"English\"]).\n\n Due to limitations of the tool, the values have to be the same throughout the whole data set, for example “Freeware” and “FreeWare” would be considered two different strings to filter by. This is really important for the more complex things like “WCAG 2: Web Content Accessibility Guidelines 2” or similar.\n \n## Listing Form Configuration\n \nThe form content can easily be edited using the `config.php` file in root. It looks like this:\n \n~~~php\n<?php\ndate_default_timezone_set('UTC'); // Sets time zone, allows us to format dates from strings.\n$demo = false; // If demo mode is true, data isn’t sent to the list.\n\n$assists = array(\n\ttitle => \"Assists evaluations by:\", // Fieldset heading\n\tdata => array( // Options, format: \"shortname_no_spaces\" => \"longname\"\n\t\t\"report\" => 'Generating reports of evaluation results', \n\t\t\"wizard\" => 'Providing step-by-step evaluation guidance',\n\t\t\"inpage\" => 'Displaying information within web pages',\n\t\t\"transformation\" => 'Modifying the presentation of web pages'\n\t),\n\tother => false, // If true, a other field is displayed\n\tvariable => 'assists', // An identifier, usually the same as the variable name\n\ttype => 'checkbox', // or 'radio'\n\texplanation => array( // If items need explanations, provide it in the format \"shortname\" => \"URI\"\n\t\t\"report\" => 'http://www.w3.org/WAI/eval/selectingtools.html#reports',\n\t\t\"wizard\" => 'http://www.w3.org/WAI/eval/selectingtools.html#wizards',\n\t\t\"inpage\" => 'http://www.w3.org/WAI/eval/selectingtools.html#in-page',\n\t\t\"transformation\" => 'http://www.w3.org/WAI/eval/selectingtools.html#transformation'\n\t)\n);\n\n/* multiple other of those blocks for configuration */\n~~~\n\n### Adding a new block\n\n1. Enter block data as noted above.\n\n2. In `submission.php`: \n\nAround line `100`, enter a line like the following: \n\n~~~php\n$data->assists = iter($_POST['assists'], $assists);\n~~~\n \nAround line `370`, enter a line like the following:\n  \n~~~php\n<?php create_form_cb_section($assists); ?>\n~~~\n\n### Exposing as filters\n\nTo expose a new category as filters, set the repository up for local editing and run `grunt watch` as described in (A) above. Then edit the `javascript/script.js` file. Under `var settings = {` you can find a few configuration options which are taken from the `facetedsearch.js` javascript library (see [bottom of this page for an example](https://eikes.github.io/facetedsearch/)). But there have been some changes to the configuration for facets:\n\n~~~js\nfacets: {\n\t'guideline' : {\n\t\t'title': 'Guidelines', \n\t\t'promoted': [\n\t\t\t\"<strong><abbr title=\\\"Web Content Accessibility Guidelines\\\">WCAG<\\/abbr> 2.0 — <abbr title=\\\"World Wide Web Consortium\\\">W3C<\\/abbr> Web Content Accessibility Guidelines 2.0<\\/strong>\", \n\t\t\t\"<abbr title=\\\"Web Content Accessibility Guidelines\\\">WCAG<\\/abbr> 1.0 — <abbr title=\\\"World Wide Web Consortium\\\">W3C<\\/abbr> Web Content Accessibility Guidelines 1.0\"\n\t\t]\n\t},\n\t'language'  : {\n\t\t'title': 'Languages', \n\t\t'collapsed': true\n\t},\n\t'a11yinfo' : {\n\t\t'title': 'Accessibility Statement', \n\t\t'plain': true \n\t}\n\t[…more facets…]\n},\n~~~\n\nEvery facet has a `title`, which is mandatory. It is the `<summary>` of the `<details>` element. If the facet should be collapsed by default, set `'collapsed': true`. If there should be no `<details>` & `<summary>` around that item, set `'plain': true`.\n\n"
-      },
-      "w3c": {
-        "group": 35532,
-        "contacts": [
-          "nitedog",
-          "yatil",
-          "slhenry"
-        ],
-        "policy": "open",
-        "repo-type": [
-          "article"
-        ]
+        "text": "# WAI Accessibility Evaluation Tools\n\n> [!IMPORTANT]\n> This repository was used for the old list, and has been archived 20 October 2026.\n>\n> The current [Web Accessibility Evaluation Tools List](https://www.w3.org/WAI/test-evaluate/tools/list/) is edited in the [wai-evaluation-tools-list](https://github.com/w3c/wai-evaluation-tools-list) repository.\n\n## Setup and Addition of Data\n\nData is collected in the `data` directory. There are two possibilities to use it.\n\n### (A) Local setup & GitHub Pages \n\nClone the repository to your hard disk and run\n\n~~~bash\n$ npm install\n~~~\n\nto initialize the repository and install all dependencies, like grunt. To use the data files with github pages, the files need to be compiled to one `data.js` files using the gulp script. Run\n\n~~~bash\n$ gulp watch\n~~~\n\nand add/edit the data files. The `data.json` file is automatically created.\n\n### (B) Server setup & PHP\n\nIf you want the script to pick up files on the (PHP enabled) server automatically once they are saved into the data directory, do all steps in (A) but after running `gulp watch` edit the `javascript/script.js` file. Search for `data.json` and replace it with `data.json.php`. After you save that file a new `js/master.min.js` is created that is using this path. Now you can upload the files to the server, **whenever you upload a new file to the `data` directory it will be picked up by the tool automagically**.\n\n### Appendix: Data format\n\nUsually data should be entered and edited using the submission form to ensure valid JSON. The data is collected in JSON files with each entry in the following format:\n\n~~~json\n{\n  \"title\": \"<string>\",\n  \"creator\": \"<string>\",\n  \"location\": \"<url>\",\n  \"release\": \"<date format='YYYY-MM-DD'>\",\n  \"version\": \"<string>\",\n  \"description\": \"<string>\",\n  \"language\": [\"<array of strings>\"],\n  \"guideline\": [\"<array of strings>\"],\n  \"assists\": [\"<array of strings>\"],\n  \"automated\": [\"<array of strings>\"],\n  \"repairs\": [\"<array of strings>\"],\n  \"technology\": [\"<array of strings>\"],\n  \"onlineservice\": [\"<array of strings>\"],\n  \"desktopapp\": [\"<array of strings>\"],\n  \"authoringtools\": [\"<array of strings>\"],\n  \"browsers\": [\"<array of strings>\"],\n  \"reports\": [\"<array of strings>\"],\n  \"license\": [\"<array of strings>\"],\n  \"update\": [\"<array of strings>\"],\n  \"type\": [\"<array of strings>\"]\n}\n~~~\n\n`title`, `creator`, `url`, `release`, `version` and `desc` can have only one (string) value. All other fields can either be one or multiple values. If a tool has multiple values, like different languages, enclose them with square brackets and separate them with a comma. If only one value is used, the brackets are optional. (a value of \"English\" is equivalent to [\"English\"]).\n\n Due to limitations of the tool, the values have to be the same throughout the whole data set, for example “Freeware” and “FreeWare” would be considered two different strings to filter by. This is really important for the more complex things like “WCAG 2: Web Content Accessibility Guidelines 2” or similar.\n \n## Listing Form Configuration\n \nThe form content can easily be edited using the `config.php` file in root. It looks like this:\n \n~~~php\n<?php\ndate_default_timezone_set('UTC'); // Sets time zone, allows us to format dates from strings.\n$demo = false; // If demo mode is true, data isn’t sent to the list.\n\n$assists = array(\n\ttitle => \"Assists evaluations by:\", // Fieldset heading\n\tdata => array( // Options, format: \"shortname_no_spaces\" => \"longname\"\n\t\t\"report\" => 'Generating reports of evaluation results', \n\t\t\"wizard\" => 'Providing step-by-step evaluation guidance',\n\t\t\"inpage\" => 'Displaying information within web pages',\n\t\t\"transformation\" => 'Modifying the presentation of web pages'\n\t),\n\tother => false, // If true, a other field is displayed\n\tvariable => 'assists', // An identifier, usually the same as the variable name\n\ttype => 'checkbox', // or 'radio'\n\texplanation => array( // If items need explanations, provide it in the format \"shortname\" => \"URI\"\n\t\t\"report\" => 'http://www.w3.org/WAI/eval/selectingtools.html#reports',\n\t\t\"wizard\" => 'http://www.w3.org/WAI/eval/selectingtools.html#wizards',\n\t\t\"inpage\" => 'http://www.w3.org/WAI/eval/selectingtools.html#in-page',\n\t\t\"transformation\" => 'http://www.w3.org/WAI/eval/selectingtools.html#transformation'\n\t)\n);\n\n/* multiple other of those blocks for configuration */\n~~~\n\n### Adding a new block\n\n1. Enter block data as noted above.\n\n2. In `submission.php`: \n\nAround line `100`, enter a line like the following: \n\n~~~php\n$data->assists = iter($_POST['assists'], $assists);\n~~~\n \nAround line `370`, enter a line like the following:\n  \n~~~php\n<?php create_form_cb_section($assists); ?>\n~~~\n\n### Exposing as filters\n\nTo expose a new category as filters, set the repository up for local editing and run `grunt watch` as described in (A) above. Then edit the `javascript/script.js` file. Under `var settings = {` you can find a few configuration options which are taken from the `facetedsearch.js` javascript library (see [bottom of this page for an example](https://eikes.github.io/facetedsearch/)). But there have been some changes to the configuration for facets:\n\n~~~js\nfacets: {\n\t'guideline' : {\n\t\t'title': 'Guidelines', \n\t\t'promoted': [\n\t\t\t\"<strong><abbr title=\\\"Web Content Accessibility Guidelines\\\">WCAG<\\/abbr> 2.0 — <abbr title=\\\"World Wide Web Consortium\\\">W3C<\\/abbr> Web Content Accessibility Guidelines 2.0<\\/strong>\", \n\t\t\t\"<abbr title=\\\"Web Content Accessibility Guidelines\\\">WCAG<\\/abbr> 1.0 — <abbr title=\\\"World Wide Web Consortium\\\">W3C<\\/abbr> Web Content Accessibility Guidelines 1.0\"\n\t\t]\n\t},\n\t'language'  : {\n\t\t'title': 'Languages', \n\t\t'collapsed': true\n\t},\n\t'a11yinfo' : {\n\t\t'title': 'Accessibility Statement', \n\t\t'plain': true \n\t}\n\t[…more facets…]\n},\n~~~\n\nEvery facet has a `title`, which is mandatory. It is the `<summary>` of the `<details>` element. If the facet should be collapsed by default, set `'collapsed': true`. If there should be no `<details>` & `<summary>` around that item, set `'plain': true`.\n\n"
       }
     },
     {
@@ -172221,107 +172215,6 @@
       }
     },
     {
-      "id": "R_kgDOSqsQjw",
-      "name": "state-of-3pc",
-      "owner": {
-        "login": "w3ctag"
-      },
-      "isArchived": false,
-      "homepageUrl": null,
-      "description": null,
-      "isPrivate": false,
-      "createdAt": "2026-05-28T20:04:43Z",
-      "labels": [
-        {
-          "name": "agenda+",
-          "color": "aaaaaa"
-        },
-        {
-          "name": "bug",
-          "color": "d73a4a"
-        },
-        {
-          "name": "documentation",
-          "color": "0075ca"
-        },
-        {
-          "name": "duplicate",
-          "color": "cfd3d7"
-        },
-        {
-          "name": "enhancement",
-          "color": "a2eeef"
-        },
-        {
-          "name": "good first issue",
-          "color": "7057ff"
-        },
-        {
-          "name": "help wanted",
-          "color": "008672"
-        },
-        {
-          "name": "invalid",
-          "color": "e4e669"
-        },
-        {
-          "name": "question",
-          "color": "d876e3"
-        },
-        {
-          "name": "wontfix",
-          "color": "ffffff"
-        }
-      ],
-      "defaultBranch": {
-        "name": "main"
-      },
-      "environments": {
-        "nodes": [
-          {
-            "name": "github-pages"
-          }
-        ]
-      },
-      "branchProtectionRules": {
-        "nodes": []
-      },
-      "w3cjson": {
-        "text": "{\n  \"group\": \"other/tag\",\n  \"contacts\": [],\n  \"policy\": \"open\",\n  \"repo-type\": \"note\"\n}\n"
-      },
-      "prpreviewjson": {
-        "text": "{\n    \"src_file\": \"index.html\",\n    \"type\": \"respec\"\n}\n"
-      },
-      "autoPublish": {
-        "text": "name: CI\non:\n  pull_request: {}\n  push:\n    branches: [main]\njobs:\n  main:\n    name: Build, Validate and Deploy\n    runs-on: ubuntu-latest\n    permissions:\n      contents: write\n    steps:\n      - uses: actions/checkout@v6\n      - uses: w3c/spec-prod@v2\n        with:\n          GH_PAGES_BRANCH: gh-pages\n"
-      },
-      "travis": null,
-      "contributing": {
-        "text": "Contributions to this repository are intended to become part of software or documents licensed under the [Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software). By committing here, you agree to that licensing of your contributions.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all contributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the feature, you can remove yourself with the above syntax.\n"
-      },
-      "license": {
-        "text": "All documents in this Repository are licensed by contributors\nunder the\n[W3C Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software).\n\n"
-      },
-      "codeOfConduct": {
-        "body": "# Code of Conduct\n\nAll documentation, code, communication and discussion in this repository are covered by the [W3C Code of Conduct](https://www.w3.org/policies/code-of-conduct/).\n"
-      },
-      "readme": {
-        "text": "# Finding Name\n\nThis repository contains a draft finding about [finding topic].\n"
-      },
-      "prpreview": {
-        "src_file": "index.html",
-        "type": "respec"
-      },
-      "w3c": {
-        "group": "other/tag",
-        "contacts": [],
-        "policy": "open",
-        "repo-type": [
-          "note"
-        ]
-      }
-    },
-    {
       "id": "MDEwOlJlcG9zaXRvcnkxODg4Njg4MA==",
       "name": "subclassable-apis-guide",
       "owner": {
@@ -173295,7 +173188,7 @@
       },
       "isArchived": false,
       "homepageUrl": "https://w3ctag.github.io/user-agents/",
-      "description": "A Draft Finding on User Agents",
+      "description": "A Note on User Agents",
       "isPrivate": false,
       "createdAt": "2024-12-16T18:57:44Z",
       "labels": [
@@ -176274,6 +176167,94 @@
       }
     },
     {
+      "id": "R_kgDOLZ-n6A",
+      "name": "fp16",
+      "owner": {
+        "login": "WebAssembly"
+      },
+      "isArchived": false,
+      "homepageUrl": "https://webassembly.github.io/fp16/",
+      "description": "Proposal to introduce half precision operations",
+      "isPrivate": false,
+      "createdAt": "2024-02-29T23:11:59Z",
+      "labels": [
+        {
+          "name": "bug",
+          "color": "d73a4a"
+        },
+        {
+          "name": "documentation",
+          "color": "0075ca"
+        },
+        {
+          "name": "duplicate",
+          "color": "cfd3d7"
+        },
+        {
+          "name": "enhancement",
+          "color": "a2eeef"
+        },
+        {
+          "name": "good first issue",
+          "color": "7057ff"
+        },
+        {
+          "name": "help wanted",
+          "color": "008672"
+        },
+        {
+          "name": "invalid",
+          "color": "e4e669"
+        },
+        {
+          "name": "question",
+          "color": "d876e3"
+        },
+        {
+          "name": "wontfix",
+          "color": "ffffff"
+        }
+      ],
+      "defaultBranch": {
+        "name": "main"
+      },
+      "environments": {
+        "nodes": [
+          {
+            "name": "github-pages"
+          }
+        ]
+      },
+      "branchProtectionRules": {
+        "nodes": []
+      },
+      "w3cjson": {
+        "text": " {\n    \"group\":      [78073]\n,   \"contacts\":   [\"ericprud\"]\n,   \"repo-type\":  \"cg-report\"\n}\n"
+      },
+      "prpreviewjson": null,
+      "autoPublish": null,
+      "travis": null,
+      "contributing": null,
+      "license": null,
+      "codeOfConduct": {
+        "body": "Please find the code of conduct at https://github.com/WebAssembly/meetings/blob/main/CODE_OF_CONDUCT.md.\n"
+      },
+      "readme": {
+        "text": "[![CI for specs](https://github.com/WebAssembly/spec/actions/workflows/ci-spec.yml/badge.svg)](https://github.com/WebAssembly/spec/actions/workflows/ci-spec.yml)\n[![CI for interpreter & tests](https://github.com/WebAssembly/spec/actions/workflows/ci-interpreter.yml/badge.svg)](https://github.com/WebAssembly/spec/actions/workflows/ci-interpreter.yml)\n\n\n# FP16 Proposal for WebAssembly\n\nThis repository is a clone of [github.com/WebAssembly/spec/](https://github.com/WebAssembly/spec/).\nIt is meant for discussion, prototype specification and implementation of a proposal to\nadd support for <<FP16>> to WebAssembly.\n\n* See the [overview](proposals/half-precision/Overview.md) for a summary of the proposal.\n\n* See the [modified spec](https://webassembly.github.io/half-precision/) for details.\n\n# spec\n\nThis repository holds the sources for the WebAssembly draft specification\n(to seed a future\n[WebAssembly Working Group](https://lists.w3.org/Archives/Public/public-new-work/2017Jun/0005.html)),\na reference implementation, and the official testsuite.\n\nA formatted version of the spec is available here:\n[webassembly.github.io/spec](https://webassembly.github.io/spec/),\n\nParticipation is welcome. Discussions about new features, significant semantic\nchanges, or any specification change likely to generate substantial discussion\nshould take place in\n[the WebAssembly design repository](https://github.com/WebAssembly/design)\nfirst, so that this spec repository can remain focused. And please follow the\n[guidelines for contributing](Contributing.md).\n\n# citing\n\nFor citing WebAssembly in LaTeX, use [this bibtex file](wasm-specs.bib).\n"
+      },
+      "w3c": {
+        "group": [
+          78073
+        ],
+        "contacts": [
+          "ericprud"
+        ],
+        "repo-type": [
+          "cg-report"
+        ]
+      }
+    },
+    {
       "id": "R_kgDOLQAbdw",
       "name": "frozen-values",
       "owner": {
@@ -176671,90 +176652,6 @@
       },
       "readme": {
         "text": "![Build Status](https://github.com/WebAssembly/gc-js-customization/actions/workflows/main.yml/badge.svg)\n\n# JS Customization for WebAssembly GC Objects\n\nThis repository is a clone of\n[github.com/WebAssembly/gc/](https://github.com/WebAssembly/gc/). It is meant\nfor discussion, prototype specification and implementation of a proposal to add\na JS API to increase the ergonomics of accessing WebAssembly GC objects by\nattaching custom accessors and prototypes to them.\n\n* See the [overview](proposals/gc-js-customization/Overview.md) for a summary and rationale of the proposal.\n* See the [modified spec](https://webassembly.github.io/gc-js-customization/) for details.\n\nThis repository is based on the [GC proposal](https://github.com/WebAssembly/gc) as a baseline.\n\nOriginal `README` from the upstream spec repository follows...\n\n# spec\n\nThis repository holds a prototypical reference implementation for WebAssembly,\nwhich is currently serving as the official specification. Eventually, we expect\nto produce a specification either written in human-readable prose or in a formal\nspecification language.\n\nIt also holds the WebAssembly testsuite, which tests numerous aspects of\nconformance to the spec.\n\nView the work-in-progress spec at [webassembly.github.io/spec](https://webassembly.github.io/spec/).\n\nAt this time, the contents of this repository are under development and known\nto be \"incomplet and inkorrect\".\n\nParticipation is welcome. Discussions about new features, significant semantic\nchanges, or any specification change likely to generate substantial discussion\nshould take place in\n[the WebAssembly design repository](https://github.com/WebAssembly/design)\nfirst, so that this spec repository can remain focused. And please follow the\n[guidelines for contributing](Contributing.md).\n\n# citing\n\nFor citing WebAssembly in LaTeX, use [this bibtex file](wasm-specs.bib).\n"
-      },
-      "w3c": {
-        "group": [
-          78073
-        ],
-        "contacts": [
-          "ericprud"
-        ],
-        "repo-type": [
-          "cg-report"
-        ]
-      }
-    },
-    {
-      "id": "R_kgDOLZ-n6A",
-      "name": "half-precision",
-      "owner": {
-        "login": "WebAssembly"
-      },
-      "isArchived": false,
-      "homepageUrl": null,
-      "description": "Proposal to introduce half precision operations",
-      "isPrivate": false,
-      "createdAt": "2024-02-29T23:11:59Z",
-      "labels": [
-        {
-          "name": "bug",
-          "color": "d73a4a"
-        },
-        {
-          "name": "documentation",
-          "color": "0075ca"
-        },
-        {
-          "name": "duplicate",
-          "color": "cfd3d7"
-        },
-        {
-          "name": "enhancement",
-          "color": "a2eeef"
-        },
-        {
-          "name": "good first issue",
-          "color": "7057ff"
-        },
-        {
-          "name": "help wanted",
-          "color": "008672"
-        },
-        {
-          "name": "invalid",
-          "color": "e4e669"
-        },
-        {
-          "name": "question",
-          "color": "d876e3"
-        },
-        {
-          "name": "wontfix",
-          "color": "ffffff"
-        }
-      ],
-      "defaultBranch": {
-        "name": "main"
-      },
-      "environments": {
-        "nodes": []
-      },
-      "branchProtectionRules": {
-        "nodes": []
-      },
-      "w3cjson": {
-        "text": " {\n    \"group\":      [78073]\n,   \"contacts\":   [\"ericprud\"]\n,   \"repo-type\":  \"cg-report\"\n}\n"
-      },
-      "prpreviewjson": null,
-      "autoPublish": null,
-      "travis": null,
-      "contributing": null,
-      "license": null,
-      "codeOfConduct": {
-        "body": "Please find the code of conduct at https://github.com/WebAssembly/meetings/blob/main/CODE_OF_CONDUCT.md.\n"
-      },
-      "readme": {
-        "text": "[![CI for specs](https://github.com/WebAssembly/spec/actions/workflows/ci-spec.yml/badge.svg)](https://github.com/WebAssembly/spec/actions/workflows/ci-spec.yml)\n[![CI for interpreter & tests](https://github.com/WebAssembly/spec/actions/workflows/ci-interpreter.yml/badge.svg)](https://github.com/WebAssembly/spec/actions/workflows/ci-interpreter.yml)\n\n\n# FP16 Proposal for WebAssembly\n\nThis repository is a clone of [github.com/WebAssembly/spec/](https://github.com/WebAssembly/spec/).\nIt is meant for discussion, prototype specification and implementation of a proposal to\nadd support for <<FP16>> to WebAssembly.\n\n* See the [overview](proposals/half-precision/Overview.md) for a summary of the proposal.\n\n* See the [modified spec](https://webassembly.github.io/half-precision/) for details.\n\n# spec\n\nThis repository holds the sources for the WebAssembly draft specification\n(to seed a future\n[WebAssembly Working Group](https://lists.w3.org/Archives/Public/public-new-work/2017Jun/0005.html)),\na reference implementation, and the official testsuite.\n\nA formatted version of the spec is available here:\n[webassembly.github.io/spec](https://webassembly.github.io/spec/),\n\nParticipation is welcome. Discussions about new features, significant semantic\nchanges, or any specification change likely to generate substantial discussion\nshould take place in\n[the WebAssembly design repository](https://github.com/WebAssembly/design)\nfirst, so that this spec repository can remain focused. And please follow the\n[guidelines for contributing](Contributing.md).\n\n# citing\n\nFor citing WebAssembly in LaTeX, use [this bibtex file](wasm-specs.bib).\n"
       },
       "w3c": {
         "group": [
@@ -184740,7 +184637,7 @@
         "text": "{\n    \"src_file\": \"index.html\",\n    \"type\": \"respec\"\n}\n"
       },
       "autoPublish": {
-        "text": "name: CI\non:\n  pull_request: {}\n  push:\n    branches: [gh-pages]\njobs:\n  main:\n    name: Build, Validate and Deploy\n    runs-on: ubuntu-20.04\n    steps:\n      - uses: actions/checkout@v4\n      - uses: w3c/spec-prod@v2\n        with:\n          BUILD_FAIL_ON: \"link-error\"\n          W3C_ECHIDNA_TOKEN: ${{ secrets.WEB_MIDI_ECHIDNA }}\n          W3C_WG_DECISION_URL: https://lists.w3.org/Archives/Public/public-audio/2024AprJun/0011.html\n          W3C_BUILD_OVERRIDE: |\n            specStatus: WD\n"
+        "text": "name: CI\non:\n  pull_request: {}\n  push:\n    branches: [gh-pages]\njobs:\n  main:\n    name: Build, Validate and Deploy\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v7\n      - uses: w3c/spec-prod@v2\n        with:\n          BUILD_FAIL_ON: \"link-error\"\n          W3C_ECHIDNA_TOKEN: ${{ secrets.WEB_MIDI_ECHIDNA }}\n          W3C_WG_DECISION_URL: https://lists.w3.org/Archives/Public/public-audio/2024AprJun/0011.html\n          W3C_BUILD_OVERRIDE: |\n            specStatus: WD\n"
       },
       "travis": null,
       "contributing": {
@@ -211874,10 +211771,6 @@
           "fullName": "w3ctag/societal-impact-questionnaire"
         },
         {
-          "name": "state-of-3pc",
-          "fullName": "w3ctag/state-of-3pc"
-        },
-        {
           "name": "tag.w3.org",
           "fullName": "w3ctag/tag.w3.org"
         },
@@ -214174,16 +214067,16 @@
           "fullName": "WebAssembly/flexible-vectors"
         },
         {
+          "name": "fp16",
+          "fullName": "WebAssembly/fp16"
+        },
+        {
           "name": "frozen-values",
           "fullName": "WebAssembly/frozen-values"
         },
         {
           "name": "gc-js-customization",
           "fullName": "WebAssembly/gc-js-customization"
-        },
-        {
-          "name": "half-precision",
-          "fullName": "WebAssembly/half-precision"
         },
         {
           "name": "instrument-tracing",
@@ -218912,7 +218805,7 @@
       },
       "type": "interest group",
       "start-date": "2024-10-29",
-      "end-date": "2026-10-31",
+      "end-date": "2027-04-30",
       "fullshortname": "ig/sustainableweb",
       "repos": [
         {
