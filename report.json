@@ -70,6 +70,7 @@
       "w3c/message-resources",
       "w3c/ns-iana",
       "w3c/odrl",
+      "w3c/ossref",
       "w3c/personalXR",
       "w3c/publ-webinar",
       "w3c/rdf-struct-patterns",
@@ -3224,6 +3225,7 @@
       "w3c/onboarding",
       "w3c/openscreenprotocol",
       "w3c/orientation-sensor",
+      "w3c/ossref",
       "w3c/paint-timing",
       "w3c/password-credentials",
       "w3c/patwg",
@@ -9312,7 +9314,7 @@
       }
     ]
   },
-  "timestamp": "2026-10-26T00:32:00.572Z",
+  "timestamp": "2026-10-27T00:33:34.465Z",
   "repos": [
     {
       "id": "MDEwOlJlcG9zaXRvcnk4MTAyMTg2MA==",
@@ -19809,7 +19811,7 @@
       "license": null,
       "codeOfConduct": null,
       "readme": {
-        "text": "# IdP Registration API\n\nA proposal to extend [FedCM](https://w3c-fedid.github.io/FedCM/) to support open federations, in which a relying party accepts any identity provider that implements a given protocol.\n\n**Spec:** https://w3c-fedid.github.io/idp-registration/\n\n<img width=\"784\" height=\"745\" alt=\"IdP-3\" src=\"https://github.com/user-attachments/assets/2aa4f45e-ea27-44df-a435-94ca092fce66\" />\n\n## Stage\n\nThis is a [Stage 1](https://github.com/w3c-fedid/Administration/blob/main/proposals-CG-WG.md) proposal.\n\n## Champions\n\n- @samuelgoto\n- @aaronpk\n- @anderspitman\n- @ThisIsMissEm\n\n## Participate\n\n- https://github.com/w3c-fedid/idp-registration\n\n# The problem\n\nWeb applications, or relying parties (RPs), use federated sign-in to authenticate users with an account they already have at an identity provider (IdP). FedCM lets the browser mediate this exchange: the RP lists the IdPs it accepts by their config URLs, and the browser shows the user's accounts at those IdPs.\n\nThis model assumes a **closed federation**: the RP knows in advance every IdP it accepts, and has a relationship with each of them.\n\nIn an **open federation**, any server that implements the federation's protocol can act as an IdP, and RPs accept all of them without a prior relationship. Examples:\n\n- [IndieAuth](https://www.w3.org/TR/indieauth/): users are identified by a URL, e.g. `https://alice.example`.\n- [AT Protocol](https://atproto.com/specs/handle): users are identified by a handle, e.g. `@alice.example`.\n- [ActivityPub](https://www.w3.org/TR/activitypub/) servers: users are identified by an address, e.g. `alice@social.example`.\n- [Solid](https://solid.github.io/webid-profile/): users are identified by a WebID.\n\nEmail works as an open federation in the same sense: an RP accepts an address at any mail domain.\n\nOpen-federation protocols typically ask the user to type an identifier (a URL, handle or address), so that the RP can discover the user's IdP from it. This requires users to know their identifier and to understand what the prompt is asking for.\n\nOpenID 2.0 used this approach, which, according to one of its authors, [deployments declined by about half after their peak, as it became clear that average users did not know what to do with the OpenID prompt](https://x.com/DickHardt/status/1735056737844220279).\n\nThis proposal extends FedCM so that:\n\n- an RP can request any IdP in an open federation, identified by a URL, without listing IdPs;\n- the user can select an existing account without typing an identifier.\n\n\n# The proposal\n\nThe browser keeps a list of the user's **handles**, such as `@alice.example`. An RP can then request any IdP that is the issuer of one of those handles and belongs to a federation the RP accepts. Handles, their resolution, and the proof that the RP receives are defined by the [Handle Verification Protocol](https://samuelgoto.github.io/handle-verification/draft-goto-handle-verification.html) (HVP).\n\n**1. The IdP registers the user's handle** after the user signs in, with the user's permission:\n\n```js\nawait navigator.login.setStatus(\"logged-in\", {\n  accounts: [{ id: \"1234\", name: \"Alice\", handle: \"@alice.example\" }]\n});\nawait IdentityProvider.register(\"@alice.example\");\n```\n\nThe browser asks the user whether to save the handle:\n\n<img width=\"784\" height=\"745\" alt=\"Registration prompt\" src=\"https://github.com/user-attachments/assets/18dc0958-65f6-4222-bf77-c9d10eb1e9b8\" />\n\n**2. The RP requests a federation** (a protocol or profile, identified by a URL) instead of specific IdPs:\n\n```js\nconst credential = await navigator.credentials.get({\n  identity: {\n    providers: [{ federation: \"https://atproto.com\", nonce: \"...\" }]\n  }\n});\n```\n\nThe browser shows the accounts for the registered handles whose issuer lists that federation in its HVP issuer metadata:\n\n<img width=\"784\" height=\"745\" alt=\"Account chooser\" src=\"https://github.com/user-attachments/assets/c4b9050d-95cd-439e-a7a5-013d0621d1a1\" />\n\n**3. The user can type a handle** that isn't registered yet. The browser resolves it to its IdP and adds it to the registered handles:\n\n<img width=\"784\" height=\"745\" alt=\"Add another account\" src=\"https://github.com/user-attachments/assets/99260e89-4e32-417d-96a7-45cb60b6dd8a\" />\n\n<img width=\"784\" height=\"745\" alt=\"IdP-2\" src=\"https://github.com/user-attachments/assets/6ad59a1d-5b7b-497b-bc38-3100daa515b3\" />\n\nA handle's IdP is its issuer, as resolved by HVP: through the handle's DID document, which names it with a `HandleIssuer` service. The browser does not need protocol-specific logic. See [Handles](https://w3c-fedid.github.io/idp-registration/#handles) in the spec.\n\n**4. The RP receives an HVT+KB.** When the user selects an account, the browser obtains a Handle Verification Token from the issuer, binds it to the RP's origin and nonce, and returns it to the RP, which verifies it as defined by HVP. Unlike FedCM's identity assertion endpoint, this doesn't reveal the RP to the issuer.\n\n**Privacy.** A registered IdP receives no credentialed request before the user selects an account or chooses to sign in. This avoids the timing attack and the mismatch UI associated with FedCM's accounts endpoint. See [Privacy considerations](https://w3c-fedid.github.io/idp-registration/#privacy).\n\n# Alternatives considered\n\n- **Registering through `navigator.login.setStatus()`.** A registered handle has to outlive the user's session, while login status changes every time the user signs in or out. Registration can also show a prompt, which wouldn't work for the `Set-Login` header. See [The Handle Registry](https://w3c-fedid.github.io/idp-registration/#registry).\n- **Registering a config URL instead of a handle.** With handles, registration by an IdP and entry by the user follow the same path, and a handle can move to another IdP without being registered again.\n- **Passing the supported federations in `register()`.** Listing them in the issuer metadata means an IdP doesn't need to register again when the list changes.\n\n# Where things are\n\n- Chrome and Firefox have expressed support ([example](https://github.com/fedidcg/FedCM/issues/240#issuecomment-1335421460)), and Chrome has [a prototype behind a flag](https://github.com/fedidcg/FedCM/issues/240#issuecomment-2004650817).\n- Members of the IndieWeb and Solid communities have built prototype IdPs, RPs and protocol profiles, for example [FedCM for IndieAuth](https://indieweb.org/FedCM_for_IndieAuth).\n\n# Open questions\n\nThe main open question is whether RPs will adopt it. When the user has no registered IdPs in the requested federation, the call shows nothing, so the cost to an RP of trying it is low. The spec tracks other open questions as inline issues.\n"
+        "text": "# IdP Registration API\n\nA proposal to extend [FedCM](https://w3c-fedid.github.io/FedCM/) to support open federations, in which a relying party accepts any identity provider that implements a given protocol.\n\n**Spec:** https://w3c-fedid.github.io/idp-registration/\n\n<img width=\"784\" height=\"745\" alt=\"IdP-3\" src=\"https://github.com/user-attachments/assets/2aa4f45e-ea27-44df-a435-94ca092fce66\" />\n\n## Stage\n\nThis is a [Stage 1](https://github.com/w3c-fedid/Administration/blob/main/proposals-CG-WG.md) proposal.\n\n## Champions\n\n- @samuelgoto\n- @aaronpk\n- @anderspitman\n- @ThisIsMissEm\n\n## Participate\n\n- https://github.com/w3c-fedid/idp-registration\n\n# The problem\n\nWeb applications, or relying parties (RPs), use federated sign-in to authenticate users with an account they already have at an identity provider (IdP). FedCM lets the browser mediate this exchange: the RP lists the IdPs it accepts by their config URLs, and the browser shows the user's accounts at those IdPs.\n\nThis model assumes a **closed federation**: the RP knows in advance every IdP it accepts, and has a relationship with each of them.\n\nIn an **open federation**, any server that implements the federation's protocol can act as an IdP, and RPs accept all of them without a prior relationship. Examples:\n\n- [IndieAuth](https://www.w3.org/TR/indieauth/): users are identified by a URL, e.g. `https://alice.example`.\n- [AT Protocol](https://atproto.com/specs/handle): users are identified by a handle, e.g. `@alice.example`.\n- [ActivityPub](https://www.w3.org/TR/activitypub/) servers: users are identified by an address, e.g. `alice@social.example`.\n- [Solid](https://solid.github.io/webid-profile/): users are identified by a WebID.\n\nEmail works as an open federation in the same sense: an RP accepts an address at any mail domain.\n\nOpen-federation protocols typically ask the user to type an identifier (a URL, handle or address), so that the RP can discover the user's IdP from it. This requires users to know their identifier and to understand what the prompt is asking for.\n\nOpenID 2.0 used this approach, which, according to one of its authors, [deployments declined by about half after their peak, as it became clear that average users did not know what to do with the OpenID prompt](https://x.com/DickHardt/status/1735056737844220279).\n\nThis proposal extends FedCM so that:\n\n- an RP can request any IdP in an open federation, identified by a URL, without listing IdPs;\n- the user can select an existing account without typing an identifier.\n\n\n# The proposal\n\nThe browser keeps a list of the user's **handles**, such as `@alice.example`. An RP can then request any IdP that is the issuer of one of those handles and belongs to a federation the RP accepts. Handles, their resolution, and the proof that the RP receives are defined by the [Handle Verification Protocol](https://samuelgoto.github.io/handle-verification/draft-goto-handle-verification.html) (HVP).\n\n**1. The IdP registers the user's handle** after the user signs in, with the user's permission:\n\n```js\nawait navigator.login.setStatus(\"logged-in\", {\n  accounts: [{ id: \"1234\", name: \"Alice\", handle: \"@alice.example\" }]\n});\nawait IdentityProvider.register(\"@alice.example\");\n```\n\nThe browser asks the user whether to save the handle:\n\n<img width=\"784\" height=\"745\" alt=\"Registration prompt\" src=\"https://github.com/user-attachments/assets/18dc0958-65f6-4222-bf77-c9d10eb1e9b8\" />\n\n**2. The RP requests a federation** (a protocol or profile, identified by a URL) instead of specific IdPs:\n\n```js\nconst credential = await navigator.credentials.get({\n  identity: {\n    providers: [{ federation: \"https://atproto.com\", nonce: \"...\" }]\n  }\n});\n```\n\nThe browser shows the accounts for the registered handles whose issuer lists that federation in its HVP issuer metadata:\n\n<img width=\"784\" height=\"745\" alt=\"Account chooser\" src=\"https://github.com/user-attachments/assets/c4b9050d-95cd-439e-a7a5-013d0621d1a1\" />\n\n**3. The user can type a handle** that isn't registered yet. The browser resolves it to its IdP and adds it to the registered handles:\n\n<img width=\"784\" height=\"745\" alt=\"Add another account\" src=\"https://github.com/user-attachments/assets/99260e89-4e32-417d-96a7-45cb60b6dd8a\" />\n\n<img width=\"784\" height=\"745\" alt=\"IdP-2\" src=\"https://github.com/user-attachments/assets/6ad59a1d-5b7b-497b-bc38-3100daa515b3\" />\n\nA handle's IdP is its issuer, as resolved by HVP: through the handle's DID document, which names it with a `HandleVerification` service. The browser does not need protocol-specific logic. See [Handles](https://w3c-fedid.github.io/idp-registration/#handles) in the spec.\n\n**4. The RP receives an HVT+KB.** When the user selects an account, the browser obtains a Handle Verification Token from the issuer, binds it to the RP's origin and nonce, and returns it to the RP, which verifies it as defined by HVP. Unlike FedCM's identity assertion endpoint, this doesn't reveal the RP to the issuer.\n\n**Privacy.** A registered IdP receives no credentialed request before the user selects an account or chooses to sign in. This avoids the timing attack and the mismatch UI associated with FedCM's accounts endpoint. See [Privacy considerations](https://w3c-fedid.github.io/idp-registration/#privacy).\n\n# Alternatives considered\n\n- **Registering through `navigator.login.setStatus()`.** A registered handle has to outlive the user's session, while login status changes every time the user signs in or out. Registration can also show a prompt, which wouldn't work for the `Set-Login` header. See [The Handle Registry](https://w3c-fedid.github.io/idp-registration/#registry).\n- **Registering a config URL instead of a handle.** With handles, registration by an IdP and entry by the user follow the same path, and a handle can move to another IdP without being registered again.\n- **Passing the supported federations in `register()`.** Listing them in the issuer metadata means an IdP doesn't need to register again when the list changes.\n\n# Where things are\n\n- Chrome and Firefox have expressed support ([example](https://github.com/fedidcg/FedCM/issues/240#issuecomment-1335421460)), and Chrome has [a prototype behind a flag](https://github.com/fedidcg/FedCM/issues/240#issuecomment-2004650817).\n- Members of the IndieWeb and Solid communities have built prototype IdPs, RPs and protocol profiles, for example [FedCM for IndieAuth](https://indieweb.org/FedCM_for_IndieAuth).\n\n# Open questions\n\nThe main open question is whether RPs will adopt it. When the user has no registered IdPs in the requested federation, the call shows nothing, so the cost to an RP of trying it is low. The spec tracks other open questions as inline issues.\n"
       },
       "w3c": {
         "group": "cg/fed-id",
@@ -20812,6 +20814,10 @@
           "color": "6ff265"
         },
         {
+          "name": "s:animation-triggers-1",
+          "color": "6bc5c6"
+        },
+        {
           "name": "s:audio-session",
           "color": "6bc5c6"
         },
@@ -21241,6 +21247,30 @@
         },
         {
           "name": "s:shacl12-core",
+          "color": "6bc5c6"
+        },
+        {
+          "name": "s:shacl12-inference-rules",
+          "color": "6bc5c6"
+        },
+        {
+          "name": "s:shacl12-profiling",
+          "color": "6bc5c6"
+        },
+        {
+          "name": "s:shacl12-sparql",
+          "color": "6bc5c6"
+        },
+        {
+          "name": "s:shacl12-ui",
+          "color": "6bc5c6"
+        },
+        {
+          "name": "s:shcal12-node-expr",
+          "color": "6bc5c6"
+        },
+        {
+          "name": "s:sparql12-rl",
           "color": "6bc5c6"
         },
         {
@@ -85447,6 +85477,113 @@
       }
     },
     {
+      "id": "R_kgDOSXnXfw",
+      "name": "ossref",
+      "owner": {
+        "login": "w3c"
+      },
+      "isArchived": false,
+      "homepageUrl": null,
+      "description": "List of open-source software developed by W3C or used for progressing specifications at W3C",
+      "isPrivate": false,
+      "createdAt": "2026-05-08T07:49:39Z",
+      "labels": [
+        {
+          "name": "archive?",
+          "color": "b6e92e"
+        },
+        {
+          "name": "bug",
+          "color": "d73a4a"
+        },
+        {
+          "name": "change?",
+          "color": "f3b94f"
+        },
+        {
+          "name": "dependencies",
+          "color": "0366d6"
+        },
+        {
+          "name": "documentation",
+          "color": "0075ca"
+        },
+        {
+          "name": "duplicate",
+          "color": "cfd3d7"
+        },
+        {
+          "name": "enhancement",
+          "color": "a2eeef"
+        },
+        {
+          "name": "github_actions",
+          "color": "000000"
+        },
+        {
+          "name": "ignore",
+          "color": "aaaaaa"
+        },
+        {
+          "name": "invalid",
+          "color": "e4e669"
+        },
+        {
+          "name": "javascript",
+          "color": "168700"
+        },
+        {
+          "name": "missing info",
+          "color": "ee2d71"
+        },
+        {
+          "name": "new project",
+          "color": "1652cf"
+        },
+        {
+          "name": "question",
+          "color": "d876e3"
+        },
+        {
+          "name": "review",
+          "color": "e0341a"
+        },
+        {
+          "name": "wontfix",
+          "color": "ffffff"
+        },
+        {
+          "name": "wrong info?",
+          "color": "3fabb2"
+        }
+      ],
+      "defaultBranch": {
+        "name": "main"
+      },
+      "environments": {
+        "nodes": [
+          {
+            "name": "github-pages"
+          }
+        ]
+      },
+      "branchProtectionRules": {
+        "nodes": []
+      },
+      "w3cjson": null,
+      "prpreviewjson": null,
+      "autoPublish": null,
+      "travis": null,
+      "contributing": null,
+      "license": null,
+      "codeOfConduct": {
+        "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Conduct](https://www.w3.org/policies/code-of-conduct/).\n"
+      },
+      "readme": {
+        "text": "# Open source software at W3C\n\nThis repository contains a machine-readable list of open-source software (OSS) developed at W3C, or commonly used by the W3C community to progress incubation and standardization work.\n\n*Note: This is work in progress and still unstable. The list is incomplete and the data structure will likely change in non backwards compatible ways.*\n\nThe list is an object with a `projects` key that contains an index of projects. Index keys are project IDs and values are [OSS objects](#oss-object).\n\n## OSS object\n\nEach open-source software entry in the list comes with the following properties. Unless otherwise specified below, these properties are always set.\n\n<!-- SCHEMA: start -->\n\n### `name`\n\nThe project's name, as a plain text string. The name should remain short. It is intended for use as a heading, or in a sentence in prose.\n\n### `description`\n\nA short description of the project, as a plain text string.\n\n### `description_html`\n\nA short description of the project, as an HTML string. The text should match the plain text version.\n\n### `logo`\n\nURL of the project's logo, when one exists. Whenever possible, the logo should be a square image, minimum 512x512 in size, using a common image format (SVG, JPEG, PNG, GIF).\n\nThe property may not be set.\n\n### `owner`\n\nName of the organization that hosts the project when there is one (e.g., \\\"W3C\\\"), the username of the owner for projects that are hosted on GitHub or other source forges (e.g., \\\"tobie\\\"), or the name of the copyright owner.\n\n### `homepage`\n\nAbsolute URL of the project's home page. The URL may match the [repository URL](#repository) in the absence of a more dedicated home page.\n\n### `repository`\n\nAbsolute URL of the repository that contains the source code of the project. For many projects, this is the URL of the hosted version of a Git repository, e.g., a GitHub URL. A project may not be any version control system though. In the more general case, the repository provides a public entry point into the source code.\n\n### `licenses`\n\nOpen-source licenses for the project, using an [SPDX license ID](https://spdx.org/licenses/). Use `\"other\"` if the project uses a custom license.\n\nCommon SPDX License IDs used in W3C projects include:\n\n- `\"Apache-2.0\"` for the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).\n- `\"BSD-3-Clause\"` for the [BSD 3-Clause \"New\" or \"Revised\" License](https://opensource.org/license/BSD-3-Clause).\n- `\"CC0-1.0\"` for the [Creative Commons Zero v1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/legalcode).\n- `\"MIT\"` for the [MIT License](https://mit-license.org/).\n- `\"W3C-20150513\"` for the [W3C Software Notice and Document License](https://www.w3.org/copyright/software-license-2023/). Despite the date, this SPDX license ID also targets the 1 January 2023 version.\n- `\"W3C-Test-Suite\"` for the [W3C test suite license](https://www.w3.org/copyright/test-suite-license-2023/). Note that this is not an official SPDX license ID (this license is not an open-source license since it purposedly does not grant rights to create modifications or derivatives. It may appear in the list because test suites at W3C are usually also licensed under the terms of a BSD 3-Clause license).\n\n### `purposes`\n\nMain purposes that the project addresses. Possible individual values are:\n\n- `\"authoring\"`: An authoring tool. For example, a spec authoring tool or a slides authoring tool.\n- `\"dashboard\"`: A dashboard. Often used in combination with `\"data\"` when the project also exports the data in a machine-readable way.\n- `\"data\"`: Machine-readable data. For example, the OSSref project exposes a list of open-source projects in a JSON file.\n- `\"library\"`: Library that other projects may depend on.\n- `\"group tool\"`: Tooling for W3C groups. For example, a meeting helper tool, an IRC bot that eases tracking of group discussions.\n- `\"backend\"`: Tool intended for use as a backend component in a server.\n- `\"frontend\"`: Tool intended for use as a frontend component in a Web or native application.\n- `\"samples\"`: Code samples. For example, samples that illustrate usage of technologies that a W3C group develops.\n- `\"tests\"`: Test suites.\n- `\"validation\"`: A checker or validation tool.\n\nProjects may have different purposes. Only main purposes should be listed. For example, while it is common for an OSS project to include code tests, these tests are not the main purpose of the project and `\"tests\"` should not appear in the list of purposes.\n\n### `categories`\n\nMain categories for the project within W3C. Possible individual values are:\n\n- `\"adoption\"`: An adoption enabler. For example, projects targeted at CMS, IDE, framework, quality assurance, documentation integrations to favor adoption of web technologies.\n- `\"implementation`: A reference implementation of some specification (or part of a specification) being standardized, including polyfills.\n- `\"incubation\"`: OSS projects that precede or inspire specifications.\n- `\"tool\"`: Internal standardization tools, e.g., to support planning, publication, and operations within W3C, but in some cases used by other organizations or useful for broader purposes.\n\n### `status`\n\nProject status. Value may be one of:\n\n- `\"active\"`: The project is actively being developed.\n- `\"maintained\"`: The project is stable or no longer actively being developed, but the code is maintained.\n- `\"dormant\"`: The project is no longer being developed and the code is not maintained.\n\nA project may transition between statuses at any time. For example, a dormant project may become active again.\n\n<!-- SCHEMA: end -->\n\n## License\n\nThis software, associated documentation, and the list (the `index.json` file) are licensed under the terms of the [CC0 License](LICENSE.txt).\n\n## Guarantees\n\n- The list follows the [JSON schema](schemas/data.schema.json)\n- A major release will be made if a project ID disappears from the list, e.g., because a new ID gets minted for a project, or because two projects merge into one.\n"
+      }
+    },
+    {
       "id": "MDEwOlJlcG9zaXRvcnkxMTE3ODQ3NDU=",
       "name": "p2p-webtransport",
       "owner": {
@@ -113346,6 +113483,10 @@
         {
           "name": "agenda+",
           "color": "FFEA00"
+        },
+        {
+          "name": "blocker",
+          "color": "fb490d"
         },
         {
           "name": "defer",
@@ -189578,7 +189719,9 @@
       "w3cjson": {
         "text": " {\n    \"group\":      [80485]\n,   \"contacts\":   [\"yoavweiss\"]\n,   \"repo-type\":  \"cg-report\"\n}\n"
       },
-      "prpreviewjson": null,
+      "prpreviewjson": {
+        "text": "{\n  \"src_file\": \"spec.bs\",\n  \"type\": \"bikeshed\",\n  \"params\": {\n    \"force\": 1\n  }\n}\n"
+      },
       "autoPublish": null,
       "travis": null,
       "contributing": {
@@ -189592,6 +189735,13 @@
       },
       "readme": {
         "text": "# Capability Delegation\n\nTransferring the ability to use restricted APIs to another `window`.\n\n([Draft specification](https://wicg.github.io/capability-delegation/spec.html))\n\n\n## Author\n\nMustaq Ahmed (mustaq@chromium.org,\n[github.com/mustaqahmed](https://github.com/mustaqahmed))\n\n\n## Participate\n\n* Github repository:\n  [WICG/capability-delegation](https://github.com/WICG/capability-delegation)\n* Issue tracker:\n  [WICG/capability-delegation/issues](https://github.com/WICG/capability-delegation/issues/)\n\n\n## Introduction\n\n\"Capability delegation\" means allowing a frame to relinquish its ability to call\na restricted API and transfer the ability to another (sub)frame it trusts. The\nfocus here is a dynamic delegation mechanism which exposes the capability to the\ntarget frame in a time-constrained manner (unlike `<iframe allow=...>` attribute\nwhich is not time-constrained).\n\nThe API proposed here is based on `postMessage()`, where the sender frame uses a\nnew\n[PostMessageOptions](https://html.spec.whatwg.org/multipage/window-object.html#windowpostmessageoptions)\nmember to specify the capability it wants to delegate.\n\n\n## Motivating use-cases\n\nHere are some practical scenarios that are enabled by the Capability Delegation\nAPI.\n\n\n### Secure PaymentRequest processing in a subframe\n\nMany merchant websites perform payment processing through a Payment Service\nProvider (PSP) site (e.g. [Stripe](https://stripe.com)) to comply with security\nand regulatory complexities around card payments.  When the end-user clicks on\nthe \"Pay\" button on the merchant website, the merchant website sends a message\nto a cross-origin `iframe` from the PSP website to initiate payment processing,\nand then the `iframe` uses the [Payment Request\nAPI](https://w3c.github.io/payment-request) to complete the task.\n\nBut sites are only allowed to call the [Payment Request\nAPI](https://w3c.github.io/payment-request) after [transient user\nactivation](https://html.spec.whatwg.org/multipage/interaction.html#transient-activation)\n(a recent click or other interaction) to prevent malicious attempts like\nunattended or repeated payment requests.  Since the user probably clicked on the\nmain site, and not the PSP `iframe`, this would prevent the PSP from using the\nPayment Request API at all.  Browsers today support such payment processing by\nignoring the user activation requirement altogether (see\n[crbug.com/1114218](https://crbug.com/1114218))!\n\nCapability Delegation API provides a way to support this use-case while letting\nthe browser enforce the user activation requirement, as follows:\n\n```javascript\n// Top-frame (merchant website) code\ncheckout_button.onclick = () => {\n    targetWindow.postMessage(\"process_payment\", {targetOrigin: \"https://example.com\",\n                                                 delegate: \"payment\"\n                                                });\n};\n\n// Sub-frame (PSP website) code\nwindow.onmessage = () => {\n    const payment_request = new PaymentRequest(...);\n    const payment_response = await payment_request.show();\n    ...\n}\n```\n\n\n### Allowing fullscreen from opener Window click\n\nThis is a\n[work-in-progress](https://groups.google.com/a/chromium.org/g/blink-dev/c/7YkubntWi3Y/m/gwK7fMiEAwAJ)\nin Chrome.\n\nConsider a presentation/slide website where the main \"control panel\" window has\nspawned a few presentation windows, and the user wants to selectively make one\npresentation window fullscreen by clicking on the appropriate button on the main\nwindow (a [feature request\n](https://bugs.chromium.org/p/chromium/issues/detail?id=931966#c5)from a\ndeveloper).  Clicking on the \"control panel\" button does not make the user\nactivation available to the presentation window, so this does not work today.\n\nThe Web does not support this use-case today but Capability Delegation API\nprovides a solution:\n\n```javascript\n// Main window (\"control panel\") code\nlet win1 = open(\"presentation1.html\");\nlet win2 = open(\"presentation2.html\");\n\nbutton1.onclick = () => win1.postMessage(\"msg\", {targetOrigin: \"https://example.com\",\n                                                 delegate: \"fullscreen\"});\nbutton2.onclick = () => win2.postMessage(\"msg\", {targetOrigin: \"https://example.com\",\n                                                 delegate: \"fullscreen\"});\n\n// Sub-frame (\"presentation window\") code\nwindow.onmessage = () => document.body.requestFullscreen();\n```\n\n### Allowing display capture from cross-origin iframe click\n\nConsider a web app in which you want to add video-conferencing capabilities.\nYou turn to a third party solution that can be embedded in a cross-origin\n`iframe`. There's a lot of logic behind the scenes, but UX-wise, maybe you\nwork out a scheme where it's mostly the video which is user-facing in the\nvideo-conferencing `iframe`, and the user-facing controls - mute, leave,\nshare-screen - are all part of the web app, and receive its specific UX\nstyling. When those buttons are pressed, some messages are exchanged between\nthe web app and the embedded video-conferencing solution.\n\nTo let the third-party `iframe` to prompt the user to share a tab, a window,\nor a screen, the top frame would delegate the `mediaDevices.getDisplayMedia()`\npermission to the `iframe` as follows:\n\n```js\n// In the top frame, user clicks the \"Share My Screen\" button.\nbutton.onclick = () =>\n  frames[0].postMessage(\"msg\", { delegate: \"display-capture\" });\n```\n\n```js\n// In the cross-origin video-conferencing iframe, prompt the user\n// to share a tab, a window, or a screen.\nwindow.onmessage = () => navigator.mediaDevices.getDisplayMedia();\n```\n\n\n### Other similar scenarios\n\n* A web service that does not care about user location except for a \"branch\n  locator\" functionality provided by a third-party map-provider app can delegate\n  its own location access capability to the map `iframe` in a temporary manner\n  right after the \"branch locator\" button is clicked.\n\n* An authentication provider may wish to show a popup to complete the\n  authentication flow before returning a token to the host site.\n\n* A website may want a third-party chat app in an `iframe` to be able to vibrate\n  the phone on message receipt, even when the user is not active in the\n  `iframe`.\n\n\n## Non-goals\n\n* This explainer is not about delegation of [user\n  activation](https://html.spec.whatwg.org/multipage/interaction.html#tracking-user-activation)\n  (i.e., allowing the `iframe` to choose from all of the things the top frame\n  could do after a user click or other interaction).  See [Considered\n  Alternatives](#considered-alternatives) below for more details.\n\n* This explainer does not determine which APIs could possibly support capability\n  delegation.  If any API needs the support, the designers of the API would\n  decide details of delegated behavior.  The PaymentRequest API case presented\n  here (in collaboration with the owners of that API) serves as a guide for\n  similar changes in other API specifications.\n\n\n## Using capability delegation\n\nDevelopers would use Capability Delegation by just initiating the delegation\nappropriately, as shown in the example code snippets above.  In short, when a\n[browsing\ncontext](https://html.spec.whatwg.org/multipage/browsers.html#browsing-context)\nwants to delegate a capability to another browsing context, it sends a\n`postMessage()` to the second browsing context with an extra\n[`WindowPostMessageOptions`](https://html.spec.whatwg.org/multipage/window-object.html#windowpostmessageoptions)\nmember called `delegate` specifying the capability.\n\nAfter a successful delegation, the \"user API\" (the restricted API being\ndelegated) just works when called at the right moment.  The general idea is\ncalling the restricted API in a `MessageEvent` handler or soon afterwards.  In\nthe examples above, the restricted APIs are `payment_request.show()`,\n`element.requestFullscreen()`, and `mediaDevices.getDisplayMedia()` respectively.\n\n\n### Demo\n\n- Payment Request API: To see how this API works with Payment Request, run\nChrome with the command-line flag: `--enable-blink-features=PaymentRequestRequiresUserActivation`, then open\n[this\ndemo](https://wicg.github.io/capability-delegation/example/payment-request/).\n\n- Fullscreen API: Work in progress.\n\n- Screen Capture API: Work in progress.\n\n## Related links\n\n* [Design\n  discussion](https://docs.google.com/document/d/1IYN0mVy7yi4Afnm2Y0uda0JH8L2KwLgaBqsMVLMYXtk).\n\n\n## Considered alternatives\n\n### Delegating user activation instead of a specific capability\n\nIt may appear that we can delegate user activation to solve the same use-cases\nand thus avoid specifying a feature in the `postMessage()` call.  We attempted\nthis direction in the past from a few different perspectives, and decided not to\npursue this.  In particular, user activation controls many Web APIs, so\ndelegating user activation for any of the mentioned use-cases is impossible\nwithout causing problems with unrelated APIs.  See the [TAG\ndiscussion](https://github.com/w3ctag/design-reviews/issues/347) with one past\nattempt.\n\n\n### Using a delegation-specific method instead of postMessage()\n\nInstead of piggy-backing the delegation request as a `PostMessageOptions` entry,\nwe considered adding a new delegation-specific interface on the `Window` object.\nWhile the latter may look cleaner from a developer’s perspective, to support\ncross-origin communication this solution would require adding the new method on\nthe\n[`WindowProxy`](https://developer.mozilla.org/en-US/docs/Glossary/WindowProxy)\nwrapper, which HTML's editor [strongly\ndisliked](https://github.com/whatwg/html/pull/4369#issuecomment-470580082).\n\n\n## Stakeholder feedback/opposition\n\nWe will track the overall status through this [Chrome Status\nentry](https://www.chromestatus.com/feature/5708770829139968).\n\n\n## Acknowledgements\n\nMany thanks for valuable feedback and advice from:\n\n* Anne van Kesteren ([github.com/annevk](https://github.com/annevk))\n* Jeffrey Yasskin ([github.com/jyasskin](https://github.com/jyasskin))\n* Robert Flack ([github.com/flackr](https://github.com/flackr))\n"
+      },
+      "prpreview": {
+        "src_file": "spec.bs",
+        "type": "bikeshed",
+        "params": {
+          "force": 1
+        }
       },
       "w3c": {
         "group": [
