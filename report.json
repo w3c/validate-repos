@@ -730,6 +730,11 @@
         "contributing": "# Compute Pressure API\n\nThis repository is being used for work in the W3C WICG, governed\nby the [W3C Community License Agreement\n(CLA)](http://www.w3.org/community/about/agreements/cla/). To make\nsubstantive contributions, you must join the CG.\n\nIf you are not the sole contributor to a contribution (pull request), please\nidentify all contributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one\nper line as follows:\n\n``` +@github_username ```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n``` -@github_username ```\n\nIf you are making a pull request on behalf of someone else but you had no\npart in designing the feature, you can remove yourself with the above syntax.\n"
       },
       {
+        "repo": "w3c/connection-allowlists",
+        "error": "doesn't match CG contributing",
+        "contributing": "# Web Platform Incubator Community Group\n\nThis repository is being used for work in the W3C Web Platform Incubator Community Group, governed by the [W3C Community License\nAgreement (CLA)](http://www.w3.org/community/about/process/cla/). To make substantive contributions,\nyou must join the CG.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n"
+      },
+      {
         "repo": "w3c/contact-picker",
         "error": "doesn't match SW or DOC contributing",
         "contributing": "# Web Platform Incubator Community Group\n\nThis repository is being used for work in the W3C Web Platform Incubator Community Group, governed by the [W3C Community License\nAgreement (CLA)](http://www.w3.org/community/about/agreements/cla/). To make substantive contributions,\nyou must join the CG.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n"
@@ -1787,7 +1792,7 @@
       {
         "repo": "WebAudio/web-audio-api",
         "error": "doesn't match SW or DOC contributing",
-        "contributing": "# How to contribute\n\nThis repository containes the current Web Audio API _standard document_, developed by the Audio Working Group at the W3C. There are _multiple implementations_ of the Web Audio API standard.\n\nIf you're about to open an issue about a bug in a particular implementation, please file a ticket in the corresponding implementation bug tracker instead:\n\n- WebKit (Safari): https://bugs.webkit.org/enter_bug.cgi?product=WebKit&component=Web%20Audio (WebKit bugzilla account needed).\n- Blink (Chrome, Chromium, Electron apps, etc.): https://new.crbug.com/ (Google account needed).\n- Gecko (Firefox): https://bugzilla.mozilla.org/enter_bug.cgi?product=Core&component=Web%20Audio (GitHub or Mozilla Bugzilla account needed).\n\nTesting the same Web Audio API code in multiple implementations can be a quick way to check if an implementation has a bug. However, it has happened that different implementation have the same bug, so it's best to read the [standard document](https://webaudio.github.io/web-audio-api/), and to check what _should_ happen.\n\nFeature requests are welcome, but a quick search in the [opened and closed issues](https://github.com/WebAudio/web-audio-api/issues) is welcome to avoid duplicates.\n\nPull requests are also welcome, but any change to the standard (barring things like typos and the like) will have to be discussed in an issue (and possibly during a call, accessible only to W3C Audio Working Group members).\n\n[Bikeshed](https://github.com/tabatkins/bikeshed) is the tool used to write this\nspecification. It can either be used via an HTTP API, or by running it locally.\n\nTo use it via the HTTP API, run:\n\n```\ncurl https://api.csswg.org/bikeshed/ -F file=@index.bs -F output=err\n```\n\nand preview your changes by doing: \n```\ncurl https://api.csswg.org/bikeshed/ -F file=@index.bs -F force=1 > index.html\n```\n\nand opening `index.html` in your favorite browser.\n\nTo run it locally, follow the [installation\ninstructions](https://tabatkins.github.io/bikeshed/#installing).\n\nThen, `bikeshed serve` will run a web server [locally on port\n8000](http://localhost:8000).\n\n"
+        "contributing": "# How to contribute\n\nThis repository contains the current Web Audio API _standard document_, developed by the Audio Working Group at the W3C. There are _multiple implementations_ of the Web Audio API standard.\n\nIf you're about to open an issue about a bug in a particular implementation, please file a ticket in the corresponding implementation bug tracker instead:\n\n- WebKit (Safari): https://bugs.webkit.org/enter_bug.cgi?product=WebKit&component=Web%20Audio (WebKit bugzilla account needed).\n- Blink (Chrome, Chromium, Electron apps, etc.): https://new.crbug.com/ (Google account needed).\n- Gecko (Firefox): https://bugzilla.mozilla.org/enter_bug.cgi?product=Core&component=Web%20Audio (GitHub or Mozilla Bugzilla account needed).\n\nTesting the same Web Audio API code in multiple implementations can be a quick way to check if an implementation has a bug. However, it has happened that different implementations have the same bug, so it's best to read the [standard document](https://webaudio.github.io/web-audio-api/), and to check what _should_ happen.\n\nFeature requests are welcome, but a quick search in the [opened and closed issues](https://github.com/WebAudio/web-audio-api/issues) is welcome to avoid duplicates.\n\nPull requests are also welcome, but any change to the standard (barring things like typos and the like) will have to be discussed in an issue (and possibly during a call, accessible only to W3C Audio Working Group members).\n\n[Bikeshed](https://github.com/tabatkins/bikeshed) is the tool used to write this\nspecification. It can either be used via an HTTP API, or by running it locally.\n\nTo use it via the HTTP API, run:\n\n```\ncurl https://api.csswg.org/bikeshed/ -F file=@index.bs -F output=err\n```\n\nand preview your changes by doing:\n```\ncurl https://api.csswg.org/bikeshed/ -F file=@index.bs -F force=1 > index.html\n```\n\nand opening `index.html` in your favorite browser.\n\nTo run it locally, follow the [installation\ninstructions](https://tabatkins.github.io/bikeshed/#installing).\n\nThen, `bikeshed serve` will run a web server [locally on port\n8000](http://localhost:8000).\n\n"
       },
       {
         "repo": "WebAudio/web-midi-api",
@@ -1878,11 +1883,6 @@
         "repo": "WICG/color-api",
         "error": "doesn't match CG contributing",
         "contributing": "# Web Platform Incubator Community Group\n\nThis repository is being used for work in the W3C Web Platform Incubator Community Group, governed by the [W3C Community License\nAgreement (CLA)](http://www.w3.org/community/about/agreements/cla/). To make substantive contributions,\nyou must join the CG.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n"
-      },
-      {
-        "repo": "WICG/connection-allowlists",
-        "error": "doesn't match CG contributing",
-        "contributing": "# Web Platform Incubator Community Group\n\nThis repository is being used for work in the W3C Web Platform Incubator Community Group, governed by the [W3C Community License\nAgreement (CLA)](http://www.w3.org/community/about/process/cla/). To make substantive contributions,\nyou must join the CG.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n"
       },
       {
         "repo": "WICG/construct-stylesheets",
@@ -2951,6 +2951,7 @@
       "w3c/clreq",
       "w3c/coga",
       "w3c/compute-pressure",
+      "w3c/connection-allowlists",
       "w3c/contact-picker",
       "w3c/container-timing",
       "w3c/contentEditable",
@@ -3843,7 +3844,6 @@
       "WICG/capability-delegation",
       "WICG/client-hints-infrastructure",
       "WICG/color-api",
-      "WICG/connection-allowlists",
       "WICG/construct-stylesheets",
       "WICG/content-index",
       "WICG/controlled-frame",
@@ -4205,6 +4205,11 @@
         "repo": "w3c/compute-pressure",
         "error": "doesn't match SW or DOC license",
         "license": "All Reports in this Repository are licensed by Contributors under the \n[W3C Software and Document License](http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document).\nContributions to Specifications are made under the [W3C CLA](https://www.w3.org/community/about/agreements/cla/).\n"
+      },
+      {
+        "repo": "w3c/connection-allowlists",
+        "error": "doesn't match CG license",
+        "license": "All Reports in this Repository are licensed by Contributors\nunder the\n[W3C Software and Document License](https://www.w3.org/copyright/software-license/).\n\nContributions to Specifications are made under the\n[W3C CLA](https://www.w3.org/community/about/process/cla/).\n\nContributions to Test Suites are made under the\n[W3C 3-clause BSD License](https://www.w3.org/copyright/3-clause-bsd-license-2008/)\n\n"
       },
       {
         "repo": "w3c/contact-picker",
@@ -5412,11 +5417,6 @@
         "license": "All Reports in this Repository are licensed by Contributors\nunder the\n[W3C Software and Document License](http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document).\n\nContributions to Specifications are made under the\n[W3C CLA](https://www.w3.org/community/about/agreements/cla/).\n\nContributions to Test Suites are made under the\n[W3C 3-clause BSD License](https://www.w3.org/Consortium/Legal/2008/03-bsd-license.html)\n\n"
       },
       {
-        "repo": "WICG/connection-allowlists",
-        "error": "doesn't match CG license",
-        "license": "All Reports in this Repository are licensed by Contributors\nunder the\n[W3C Software and Document License](https://www.w3.org/copyright/software-license/).\n\nContributions to Specifications are made under the\n[W3C CLA](https://www.w3.org/community/about/process/cla/).\n\nContributions to Test Suites are made under the\n[W3C 3-clause BSD License](https://www.w3.org/copyright/3-clause-bsd-license-2008/)\n\n"
-      },
-      {
         "repo": "WICG/construct-stylesheets",
         "error": "doesn't match CG license",
         "license": "All documents in this Repository are licensed by contributors under the [W3C Document\nLicense](http://www.w3.org/Consortium/Legal/copyright-documents).\n"
@@ -6549,6 +6549,10 @@
         "error": "gh-pages branch is not protected"
       },
       {
+        "repo": "w3c/connection-allowlists",
+        "error": "main branch is not protected"
+      },
+      {
         "repo": "w3c/container-timing",
         "error": "main branch is not protected"
       },
@@ -6930,10 +6934,6 @@
       },
       {
         "repo": "WICG/color-api",
-        "error": "main branch is not protected"
-      },
-      {
-        "repo": "WICG/connection-allowlists",
         "error": "main branch is not protected"
       },
       {
@@ -9121,14 +9121,6 @@
         "error": "gh-pages branch review is not required"
       },
       {
-        "repo": "WebAudio/web-audio-api",
-        "error": "main branch review is not required"
-      },
-      {
-        "repo": "WebAudio/web-midi-api",
-        "error": "gh-pages branch review is not required"
-      },
-      {
         "repo": "webmachinelearning/webnn",
         "error": "main branch review is not required"
       },
@@ -9314,7 +9306,7 @@
       }
     ]
   },
-  "timestamp": "2026-10-29T00:29:10.596Z",
+  "timestamp": "2026-10-30T00:31:06.624Z",
   "repos": [
     {
       "id": "MDEwOlJlcG9zaXRvcnk4MTAyMTg2MA==",
@@ -22997,6 +22989,10 @@
           "color": "5319e7"
         },
         {
+          "name": "Needs tests",
+          "color": "3d3b8b"
+        },
+        {
           "name": "Needs Volunteer",
           "color": "009800"
         },
@@ -23195,6 +23191,10 @@
         {
           "name": "Needs Process Help",
           "color": "5319E7"
+        },
+        {
+          "name": "Needs tests",
+          "color": "3d3b8b"
         },
         {
           "name": "Needs Volunteer",
@@ -27862,7 +27862,7 @@
         "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Conduct](https://www.w3.org/policies/code-of-conduct/).\n"
       },
       "readme": {
-        "text": "[简体中文](README.zh-Hans.md)\n\n# Ask W3C i18n\n\nAsk W3C i18n answers questions about W3C Internationalization guidance with source-grounded citations and source status.\n\n<p align=\"center\">\n  <a href=\"https://labs.w3.org/ask-i18n/\"><strong>Try it online</strong></a>\n</p>\n\n<!-- Staging server: <https://ask-i18n.onrender.com/> -->\n\n> **Experimental tool:** This is an experimental tool from the [W3C Internationalization Activity](https://www.w3.org/International/). Its answers are not W3C standards or official W3C positions.\n\n## Example Questions\n\n- How should I declare UTF-8 character encoding in HTML?\n- How should I set the language of the content in my HTML page?\n- What are character sets?\n- What is the byte-order mark?\n- What is i18n?\n- What is ruby?\n- What does the i18n WG do?\n- When HTTP Content-Type, BOM, and `<meta charset>` disagree, which encoding wins?\n- Why does my Arabic text render in the wrong order next to punctuation?\n\n## Run Locally\n\nUse the local source:\n\n```sh\ncp .env.example .env\n# edit .env and set SOURCE_MODE=local plus SOURCE_REPO_PATH\n\nnpm run index\nnpm run start\n```\n\nUse the default remote source:\n\n```sh\nSOURCE_MODE=git npm run index\nnpm run start\n```\n\nOpen http://127.0.0.1:3000 .\n\n## Configuration\n\nThe app loads `.env` automatically from the project root. Copy `.env.example` to `.env` for local development, then edit values there.\n\nDo not commit real `.env` files or secrets.\n\nImportant defaults:\n\n- `SOURCE_MODE=git`\n- `SOURCE_REPO_URL=https://github.com/w3c/i18n-drafts.git`\n- `SOURCE_REF=gh-pages`\n- `SOURCE_CACHE_DIR=.cache/source/i18n-drafts`\n- `PUBLIC_BASE_URL=https://www.w3.org/International`\n- `MODEL_PROVIDER=local`\n- `TRUSTED_PROXIES=` (empty by default; forwarded client IP headers are ignored)\n- `BASE_PATH=` (empty by default; set a subpath such as `/ask-i18n` to serve the app below the site root)\n\nThe example `SOURCES` configuration enables multi-source indexing for `i18n-drafts`, `bp-i18n-specdev`, and `i18n-activity`. The `i18n-activity` source is limited to the `i18n-wg` and `i18n-ig` folders.\n\n`SOURCES` overrides the single-source `SOURCE_*` settings. To use only a local `i18n-drafts` checkout, remove or comment out `SOURCES` before setting `SOURCE_MODE=local` and `SOURCE_REPO_PATH`.\n\n`MODEL_PROVIDER=local` uses a deterministic extractive answerer over retrieved chunks. To use an external server-side model, set:\n\n```sh\nMODEL_PROVIDER=openai-compatible\nMODEL_API_KEY=...\nMODEL_BASE_URL=https://api.openai.com/v1\nGENERATION_MODEL=...\nMODEL_TIMEOUT_MS=30000\n```\n\nAPI keys are read only by the Node server and are never sent to the browser.\n\nFor deployments behind a reverse proxy or CDN, set `TRUSTED_PROXIES` to the proxy IPs or CIDR ranges that are allowed to set `Forwarded` or `X-Forwarded-For` headers:\n\n```sh\nTRUSTED_PROXIES=127.0.0.1/32,::1\n```\n\nWhen this is unset, rate limiting deliberately uses the direct socket address only so public clients cannot spoof forwarded IP headers to bypass limits.\n\n## Serving under a subpath\n\nSet `BASE_PATH` when the app is mounted below the site root, for example behind the labs proxy at `https://labs.w3.org/ask-i18n/`:\n\n```sh\nBASE_PATH=/ask-i18n\n```\n\nThe UI and API then answer under that prefix (`/ask-i18n/`, `/ask-i18n/api/v1/search`), and a request for the bare prefix redirects to `/ask-i18n/` so the page's relative asset URLs resolve. A path that only shares a prefix, such as `/ask-i18n-drafts/`, is not affected.\n\nBoth proxy styles work. If the proxy strips the prefix before forwarding, leave `BASE_PATH` empty and the app keeps serving at the root. If the proxy forwards the full path, set `BASE_PATH` to the mounted prefix. Unprefixed paths keep working in either case, so the same build runs on a local port and behind a subpath.\n\n## Commands\n\n```sh\nnpm test\nnpm run test:e2e\nnpm run index\nnpm run rag:index\nnpm run eval\nnpm run start\n```\n\nFor fixture development:\n\n```sh\nnpm run index -- --source-mode=local --source-repo-path=tests/fixtures/i18n-mini\nnpm run eval\n```\n\nPlaywright E2E tests use the same fixture corpus and start the real server. Install browsers once with `npx playwright install chromium firefox webkit`, then run `npm run test:e2e`.\n\n## Community API\n\nThe stable community API is versioned under `/api/v1`. It uses the latest loaded index.\n\nOpenAPI documentation is available at:\n\n```sh\ncurl https://labs.w3.org/ask-i18n/api/openapi.json\n```\n\nSearch indexed source sections:\n\n```sh\ncurl \"https://labs.w3.org/ask-i18n/api/v1/search?q=declare%20UTF-8&language=en&status=published&limit=5\"\n```\n\nSearch returns ranked snippets, not full debug chunks:\n\n```json\n{\n  \"query\": \"declare UTF-8\",\n  \"results\": [\n    {\n      \"id\": \"articles/http-charset/index.en.html#charset\",\n      \"rank\": 1,\n      \"score\": 1.23,\n      \"title\": \"Declaring character encodings in HTML\",\n      \"url\": \"https://www.w3.org/International/articles/http-charset/#charset\",\n      \"language\": \"en\",\n      \"status\": \"published\",\n      \"translation_state\": \"current\",\n      \"snippet\": \"For HTML pages, use UTF-8...\"\n    }\n  ],\n  \"index\": {\n    \"source_ref\": \"gh-pages\",\n    \"source_commit\": \"...\"\n  }\n}\n```\n\nAnswer a question with citations:\n\n```sh\ncurl -X POST https://labs.w3.org/ask-i18n/api/v1/answer \\\n  -H \"content-type: application/json\" \\\n  -d '{\"question\":\"How should I declare UTF-8 character encoding?\",\"language\":\"en\",\"statuses\":[\"published\"]}'\n```\n\nAnswer responses have this shape:\n\n```json\n{\n  \"question\": \"How should I declare UTF-8 character encoding?\",\n  \"language\": \"en\",\n  \"evidence_status\": \"supported\",\n  \"answer\": \"... [1]\",\n  \"citations\": [\n    {\n      \"id\": \"articles/http-charset/index.en.html#charset\",\n      \"label\": \"Declaring character encodings in HTML: The charset parameter\",\n      \"url\": \"https://www.w3.org/International/articles/http-charset/#charset\",\n      \"language\": \"en\",\n      \"status\": \"published\",\n      \"translation_state\": \"current\",\n      \"source_path\": \"articles/http-charset/index.en.html\",\n      \"rank\": 1\n    }\n  ],\n  \"warnings\": [],\n  \"index\": {\n    \"source_ref\": \"gh-pages\",\n    \"source_commit\": \"...\"\n  }\n}\n```\n\nSupported filters:\n\n- `language`: preferred BCP 47 language tag, default `en`.\n- `status` or `statuses`: one or more of `published`, `review`, `draft`, `notreviewed`, `obsolete`.\n- `include_obsolete`: set to `true` to allow obsolete sources.\n- `limit`: maximum retrieval results, capped at `20`.\n\nErrors use a stable object:\n\n```json\n{\n  \"error\": {\n    \"code\": \"index_unavailable\",\n    \"message\": \"No search index is available. Run npm run index first.\",\n    \"language\": \"en\",\n    \"direction\": \"ltr\"\n  },\n  \"index\": {\n    \"source_ref\": \"gh-pages\",\n    \"source_commit\": \"...\"\n  }\n}\n```\n\n`error.language` is the BCP 47 language tag for `error.message`; `error.direction` is the message text direction (`ltr` or `rtl`), so messages such as Arabic can be rendered correctly.\n\nCORS is enabled for the community API. The same in-memory rate limiter applies to all `/api/` routes.\n\n## Internal API\n\n- `GET /api/health` returns source mode, ref, commit, and index counts.\n- `POST /api/retrieve` returns ranked source chunks for debug and development.\n- `POST /api/ask` returns `{ answer, citations, warnings, evidence_status, debug }`.\n- `POST /api/admin/reindex` is hidden unless `ADMIN_TOKEN` is set and must be called with `x-admin-token`.\n\n## Logs\n\nQuery logs are JSONL at `.data/query-log.jsonl` and store question text, selected language, filters, retrieved source ids, evidence status, latency, and error type. They do not store API keys or account identifiers. The log rotates by size: once the file exceeds `QUERY_LOG_MAX_BYTES` (default 10 MiB), it is renamed to `query-log.jsonl.1` and older backups shift down, with `QUERY_LOG_BACKUPS` (default 3) bounding how many rotated files are kept.\n\n## License\n\nThis project is licensed under the W3C Software and Document License - 2023 version. See `LICENSE`.\n"
+        "text": "[简体中文](README.zh-Hans.md)\n\n# Ask W3C i18n\n\nAsk W3C i18n answers questions about W3C Internationalization guidance with source-grounded citations and source status.\n\n<p align=\"center\">\n  <a href=\"https://labs.w3.org/ask-i18n/\"><strong>Try it online</strong></a>\n</p>\n\n<!-- Staging server: <https://ask-i18n.onrender.com/> -->\n\n> **Experimental tool:** This is an experimental tool from the [W3C Internationalization Activity](https://www.w3.org/International/). Its answers are not W3C standards or official W3C positions.\n\n## Example Questions\n\n<details>\n<summary>Show example questions</summary>\n\n- How should I declare UTF-8 character encoding in HTML?\n- How should I set the language of the content in my HTML page?\n- What are character sets?\n- What is the byte-order mark?\n- What is i18n?\n- What is ruby?\n- What does the i18n WG do?\n- When HTTP Content-Type, BOM, and `<meta charset>` disagree, which encoding wins?\n- Why does my Arabic text render in the wrong order next to punctuation?\n- What's the minimum line-height setting for Arabic and Urdu?\n- users from Egypt are reporting problems with my site layout, how do I fix it?\n- How should a human-readable string be represented in WebIDL?\n\n</details>\n\n## Run Locally\n\nUse the local source:\n\n```sh\ncp .env.example .env\n# edit .env and set SOURCE_MODE=local plus SOURCE_REPO_PATH\n\nnpm run index\nnpm run start\n```\n\nUse the default remote source:\n\n```sh\nSOURCE_MODE=git npm run index\nnpm run start\n```\n\nOpen http://127.0.0.1:3000 .\n\n## Configuration\n\nThe app loads `.env` automatically from the project root. Copy `.env.example` to `.env` for local development, then edit values there.\n\nDo not commit real `.env` files or secrets.\n\nImportant defaults:\n\n- `SOURCE_MODE=git`\n- `SOURCE_REPO_URL=https://github.com/w3c/i18n-drafts.git`\n- `SOURCE_REF=gh-pages`\n- `SOURCE_CACHE_DIR=.cache/source/i18n-drafts`\n- `PUBLIC_BASE_URL=https://www.w3.org/International`\n- `MODEL_PROVIDER=local`\n- `TRUSTED_PROXIES=` (empty by default; forwarded client IP headers are ignored)\n- `BASE_PATH=` (empty by default; set a subpath such as `/ask-i18n` to serve the app below the site root)\n\nThe example `SOURCES` configuration enables multi-source indexing for `i18n-drafts`, `bp-i18n-specdev`, `i18n-activity`, and `string-meta`. The `i18n-activity` source is limited to the `i18n-wg` and `i18n-ig` folders.\n\n`SOURCES` overrides the single-source `SOURCE_*` settings. To use only a local `i18n-drafts` checkout, remove or comment out `SOURCES` before setting `SOURCE_MODE=local` and `SOURCE_REPO_PATH`.\n\n`MODEL_PROVIDER=local` uses a deterministic extractive answerer over retrieved chunks. To use an external server-side model, set:\n\n```sh\nMODEL_PROVIDER=openai-compatible\nMODEL_API_KEY=...\nMODEL_BASE_URL=https://api.openai.com/v1\nGENERATION_MODEL=...\nMODEL_TIMEOUT_MS=30000\n```\n\nAPI keys are read only by the Node server and are never sent to the browser.\n\nFor deployments behind a reverse proxy or CDN, set `TRUSTED_PROXIES` to the proxy IPs or CIDR ranges that are allowed to set `Forwarded` or `X-Forwarded-For` headers:\n\n```sh\nTRUSTED_PROXIES=127.0.0.1/32,::1\n```\n\nWhen this is unset, rate limiting deliberately uses the direct socket address only so public clients cannot spoof forwarded IP headers to bypass limits.\n\n## Serving under a subpath\n\nSet `BASE_PATH` when the app is mounted below the site root, for example behind the labs proxy at `https://labs.w3.org/ask-i18n/`:\n\n```sh\nBASE_PATH=/ask-i18n\n```\n\nThe UI and API then answer under that prefix (`/ask-i18n/`, `/ask-i18n/api/v1/search`), and a request for the bare prefix redirects to `/ask-i18n/` so the page's relative asset URLs resolve. A path that only shares a prefix, such as `/ask-i18n-drafts/`, is not affected.\n\nBoth proxy styles work. If the proxy strips the prefix before forwarding, leave `BASE_PATH` empty and the app keeps serving at the root. If the proxy forwards the full path, set `BASE_PATH` to the mounted prefix. Unprefixed paths keep working in either case, so the same build runs on a local port and behind a subpath.\n\n## Commands\n\n```sh\nnpm test\nnpm run test:e2e\nnpm run index\nnpm run rag:index\nnpm run eval\nnpm run start\n```\n\nFor fixture development:\n\n```sh\nnpm run index -- --source-mode=local --source-repo-path=tests/fixtures/i18n-mini\nnpm run eval\n```\n\nPlaywright E2E tests use the same fixture corpus and start the real server. Install browsers once with `npx playwright install chromium firefox webkit`, then run `npm run test:e2e`.\n\n## Community API\n\nThe stable community API is versioned under `/api/v1`. It uses the latest loaded index.\n\nOpenAPI documentation is available at:\n\n```sh\ncurl https://labs.w3.org/ask-i18n/api/openapi.json\n```\n\nSearch indexed source sections:\n\n```sh\ncurl \"https://labs.w3.org/ask-i18n/api/v1/search?q=declare%20UTF-8&language=en&status=published&limit=5\"\n```\n\nSearch returns ranked snippets, not full debug chunks:\n\n```json\n{\n  \"query\": \"declare UTF-8\",\n  \"results\": [\n    {\n      \"id\": \"articles/http-charset/index.en.html#charset\",\n      \"rank\": 1,\n      \"score\": 1.23,\n      \"title\": \"Declaring character encodings in HTML\",\n      \"url\": \"https://www.w3.org/International/articles/http-charset/#charset\",\n      \"language\": \"en\",\n      \"status\": \"published\",\n      \"translation_state\": \"current\",\n      \"snippet\": \"For HTML pages, use UTF-8...\"\n    }\n  ],\n  \"index\": {\n    \"source_ref\": \"gh-pages\",\n    \"source_commit\": \"...\"\n  }\n}\n```\n\nAnswer a question with citations:\n\n```sh\ncurl -X POST https://labs.w3.org/ask-i18n/api/v1/answer \\\n  -H \"content-type: application/json\" \\\n  -d '{\"question\":\"How should I declare UTF-8 character encoding?\",\"language\":\"en\",\"statuses\":[\"published\"]}'\n```\n\nAnswer responses have this shape:\n\n```json\n{\n  \"question\": \"How should I declare UTF-8 character encoding?\",\n  \"language\": \"en\",\n  \"evidence_status\": \"supported\",\n  \"answer\": \"... [1]\",\n  \"citations\": [\n    {\n      \"id\": \"articles/http-charset/index.en.html#charset\",\n      \"label\": \"Declaring character encodings in HTML: The charset parameter\",\n      \"url\": \"https://www.w3.org/International/articles/http-charset/#charset\",\n      \"language\": \"en\",\n      \"status\": \"published\",\n      \"translation_state\": \"current\",\n      \"source_path\": \"articles/http-charset/index.en.html\",\n      \"rank\": 1\n    }\n  ],\n  \"warnings\": [],\n  \"index\": {\n    \"source_ref\": \"gh-pages\",\n    \"source_commit\": \"...\"\n  }\n}\n```\n\nCitations for `draft` and `review` pages point at the GitHub Pages copy of the source file (`https://w3c.github.io/i18n-drafts/<source path>`) instead of the w3.org layout, because those pages are not published on w3.org yet. The GitHub Pages base URL is derived from each source's `repoUrl` and can be overridden per source with `githubPagesBaseUrl` in `SOURCES`.\n\nSupported filters:\n\n- `language`: preferred BCP 47 language tag, default `en`.\n- `status` or `statuses`: one or more of `published`, `review`, `draft`, `notreviewed`, `obsolete`.\n- `include_obsolete`: set to `true` to allow obsolete sources.\n- `limit`: maximum retrieval results, capped at `20`.\n\nErrors use a stable object:\n\n```json\n{\n  \"error\": {\n    \"code\": \"index_unavailable\",\n    \"message\": \"No search index is available. Run npm run index first.\",\n    \"language\": \"en\",\n    \"direction\": \"ltr\"\n  },\n  \"index\": {\n    \"source_ref\": \"gh-pages\",\n    \"source_commit\": \"...\"\n  }\n}\n```\n\n`error.language` is the BCP 47 language tag for `error.message`; `error.direction` is the message text direction (`ltr` or `rtl`), so messages such as Arabic can be rendered correctly.\n\nCORS is enabled for the community API. The same in-memory rate limiter applies to all `/api/` routes.\n\n## Internal API\n\n- `GET /api/health` returns source mode, ref, commit, and index counts.\n- `POST /api/retrieve` returns ranked source chunks for debug and development.\n- `POST /api/ask` returns `{ answer, citations, warnings, evidence_status, debug }`.\n- `POST /api/admin/reindex` is hidden unless `ADMIN_TOKEN` is set and must be called with `x-admin-token`.\n\n## Logs\n\nQuery logs are JSONL at `.data/query-log.jsonl` and store question text, selected language, filters, retrieved source ids, evidence status, latency, and error type. They do not store API keys or account identifiers. The log rotates by size: once the file exceeds `QUERY_LOG_MAX_BYTES` (default 10 MiB), it is renamed to `query-log.jsonl.1` and older backups shift down, with `QUERY_LOG_BACKUPS` (default 3) bounding how many rotated files are kept.\n\n## License\n\nThis project is licensed under the W3C Software and Document License - 2023 version. See `LICENSE`.\n"
       },
       "w3c": {
         "group": 32113,
@@ -34742,6 +34742,100 @@
         ],
         "repo-type": [
           "rec-track"
+        ]
+      }
+    },
+    {
+      "id": "R_kgDOPs5Shg",
+      "name": "connection-allowlists",
+      "owner": {
+        "login": "w3c"
+      },
+      "isArchived": false,
+      "homepageUrl": "https://w3c.github.io/connection-allowlists/",
+      "description": null,
+      "isPrivate": false,
+      "createdAt": "2025-09-09T20:18:00Z",
+      "labels": [
+        {
+          "name": "bug",
+          "color": "d73a4a"
+        },
+        {
+          "name": "documentation",
+          "color": "0075ca"
+        },
+        {
+          "name": "duplicate",
+          "color": "cfd3d7"
+        },
+        {
+          "name": "enhancement",
+          "color": "a2eeef"
+        },
+        {
+          "name": "good first issue",
+          "color": "7057ff"
+        },
+        {
+          "name": "help wanted",
+          "color": "008672"
+        },
+        {
+          "name": "invalid",
+          "color": "e4e669"
+        },
+        {
+          "name": "question",
+          "color": "d876e3"
+        },
+        {
+          "name": "wontfix",
+          "color": "ffffff"
+        }
+      ],
+      "defaultBranch": {
+        "name": "main"
+      },
+      "environments": {
+        "nodes": [
+          {
+            "name": "github-pages"
+          }
+        ]
+      },
+      "branchProtectionRules": {
+        "nodes": []
+      },
+      "w3cjson": {
+        "text": " {\n    \"group\":      [80485]\n,   \"contacts\":   [\"yoavweiss\"]\n,   \"repo-type\":  \"cg-report\"\n}\n"
+      },
+      "prpreviewjson": null,
+      "autoPublish": {
+        "text": "# Blindly copy/pasted from https://w3c.github.io/spec-prod/#deploy-to-github-pages\n# and https://github.com/w3c-fedid/FedCM/blob/main/.github/workflows/build-validate-publish.yaml\nname: CI\non:\n  pull_request: {}\n  push:\n    branches: [main]\n\njobs:\n  main:\n    name: Build, Validate and Deploy\n    runs-on: ubuntu-latest\n    permissions:\n      contents: write\n    steps:\n      - uses: actions/checkout@v4\n      - uses: w3c/spec-prod@v2\n        with:\n          GH_PAGES_BRANCH: gh-pages\n          BUILD_FAIL_ON: nothing\n          VALIDATE_MARKUP: false\n"
+      },
+      "travis": null,
+      "contributing": {
+        "text": "# Web Platform Incubator Community Group\n\nThis repository is being used for work in the W3C Web Platform Incubator Community Group, governed by the [W3C Community License\nAgreement (CLA)](http://www.w3.org/community/about/process/cla/). To make substantive contributions,\nyou must join the CG.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n"
+      },
+      "license": {
+        "text": "All Reports in this Repository are licensed by Contributors\nunder the\n[W3C Software and Document License](https://www.w3.org/copyright/software-license/).\n\nContributions to Specifications are made under the\n[W3C CLA](https://www.w3.org/community/about/process/cla/).\n\nContributions to Test Suites are made under the\n[W3C 3-clause BSD License](https://www.w3.org/copyright/3-clause-bsd-license-2008/)\n\n"
+      },
+      "codeOfConduct": {
+        "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Conduct](https://www.w3.org/policies/code-of-conduct/).\n"
+      },
+      "readme": {
+        "text": "Connection Allowlists\n=====================\n\nDevelopers wish to have control over the resources loaded into their pages'\ncontexts and the endpoints to which their pages can make requests. This control\nis necessary for several purposes, ranging from architectural insight into and\nconstraints upon a site's dependencies to the mitigation of exfiltration attacks\nwhich might otherwise put users' data at risk.\n\nContent Security Policy addresses some of this need, but does so in a way that\nis more granular than is necessary for the most critical use cases, and with a\nsyntax and grammar that's complicated by the other protections CSP is used to\ndeploy.\n\nIf we focus on the single use case of controlling the explicit requests a page\nmay initiate through Fetch and other web platform APIs (WebRTC, Web Transport,\nFedCM, Web Payments, DNS Prefetch, etc), we can likely provide a tool whose\npurpose is clear and that's straightforward to use.\n\nProposal\n--------\n\nIn short, a server will distribute a list of acceptable endpoints as an HTTP\nresponse header, along with some configuration metadata. Before establishing\na connection on behalf of a page, the user agent will consult this list of\nendpoints, and block the connection before it's made if there's a mismatch.\n\nOne syntax which seems sufficient would be a Structured Field parsed as a\nList with one element: an Inner List whose elements are either the Token\n`response-origin`, or Strings matching the `URLPattern` syntax for\nabsolute URLs. This Inner List could be annotated with a small number of\nparameters as we discover required extension points. Reporting, for example.\nThat is:\n\n```http\nConnection-Allowlist: (response-origin \"https://*.site.example\" \"https://cdn.example\" \"https://*.site.([a-z\\\\-]+)\"); report-to=ReportingAPIEndpointNameGoesHere\n```\n\nThis policy would allow requests and connections to the origin of the server\nwhich delivered the response, the specific CDN listed, any subdomain of\n`site.example`, and any subdomain of any host whose penultimate DNS label is\n`site`. URLPattern allows quite a bit of flexibility that we can reuse\nhere rather than inventing a new approach (or reusing a more limited grammar\nfrom something like CSP).\n\nTo effectuate blocking connections, we'd add a check against this list to\nFetch, and to the more esoteric specifications partially listed above. If the\nconnection endpoint doesn't match the list, we'll block it, and report metadata\nabout the violation to the Reporting API endpoint named\n`ReportingAPIEndpointNameGoesHere`.\n\nThat's it.\n\nThreat Model\n------------\n\nThis proposal is intentionally small, targeting a specific but useful niche of\nclient-side attacks and/or misconfigurations:\n\n*   Policies for documents and workers will be asserted by servers as HTTP\n    response headers. This means that attackers who can manipulate response\n    headers will remain out of scope.\n\n*   A document's (or worker's) asserted policy governs only requests initiated\n    by _that_ context. If a framed document asserts a distinct policy, so be\n    it (with the caveat that we'll likely inherit this policy into contexts\n    created via local schemes (`data:`, `about:`, etc.), similar to other\n    components of a context's\n    [policy container](https://html.spec.whatwg.org/multipage/browsers.html#policy-containers))\n    which are handled by HTML when creating new document/worker contexts.\n    Likewise, a page's policy doesn't constrain navigations initiated by\n    other documents, or by the user's interaction with the browser.\n    \n*   The connection and/or request are the threat the proposal aims to defend\n    against. To be effective as an exfiltration defense, we must block\n    connections before they're made.\n\n*   There are a plethora of side-channels available as unintended effects of\n    otherwise-excellent web platform APIs. This proposal does not attempt to\n    address them, focusing instead soley on those requests or connections\n    explicitly initiated by the user agent on a page's behalf. This certainly\n    includes the clear cases of Fetch and XMLHttpRequest, along with resource\n    requests generally. It also includes network connections established\n    through channels that are less explicitly \"requests\": manifests fetched\n    through the Web Install API, connections to TURN/STUN servers via WebRTC,\n    Web Transport channels, navigations, and so on. These are all in scope,\n    while more esoteric channels like memory or CPU consumption, socket\n    exhaustion, and XSLeaks in general are not.\n\n*   This proposal addresses only communication channels. It does not aim to\n    prevent (or even substantially mitigate) threats like content injection\n    or cross-site scripting. It only can constrain the impact of such an\n    attack _on those specific pages_ where the policy is in place, and should\n    be considered only as one layer in a page's defenses; it won't be\n    sufficient in itself.\n\n*   It's tempting to attempt to defend against a subset of server-side threats,\n    like open redirects. It's possible that we could do so in a proposal like\n    this one, similar conceptually to what CSP does today. That said, CSP's\n    behavior around redirects is both a leak in itself, and has garnered\n    inconsistently favorable feedback from developers and researchers alike.\n    For simplicity's sake, this proposal will generally treat redirect\n    responses as match failures. That is, we'll start with a draconian policy\n    which will block any redirect response. It's quite possible we'll shift\n    this one way or another as use cases crystalize (see the section entitled\n    \"[You're going to have to rethink a ban on redirects.](#youre-going-to-have-to-rethink-a-ban-on-redirects)\"\n    below).\n\nQuestions\n---------\n\n### Why build this when we already have Content Security Policy? ###\n\nThree reasons:\n\n1.  CSP's model is too granular: Developers who wish to mitigate the risk that data flows out\n    of a sensitive context require a protection that exhaustively covers the possible\n    ways in which requests can be made or connections established. CSP's categorization\n    of requests into types which can be controlled in isolation is the wrong way to\n    approach this problem, as data leaking through a request for a web font is just as\n    bad as data leaking through a request for an image or a script. Distinguishing these\n    request types complicates the process of designing a reasonable defense with questions\n    that are simply irrelevant.\n\n2.  CSP's syntax is not granular enough: The `host-source` grammar CSP supports leads to truly\n    verbose headers being delivered with responses. A distinct policy provides the opportunity\n    to shift to the URLPattern syntax which will resolve some complaints folks have raised about\n    CSP's approach by providing a more modern, malleable, and standardized matching syntax.\n\n3.  CSP's coverage is incomplete: While CSP does a good job covering HTTP requests which run\n    through Fetch, it does not exhaustively cover the myriad ways in which web platform APIs\n    allow connections to be established. DNS prefetch, navigation, and WebRTC are good examples\n    to start with, but there are many others which have struggled with exactly how they fit into CSP's\n    threat model. By creating a new policy with a narrow focus and explicit promise to developers,\n    these discussions will have a defensible answer and a clear mandate to specification authors.\n\n\n### How does this policy interact with other mechanisms of controlling outgoing requests? ###\n\nIn short, we should follow CSP's model for resolving multiple policies: each should take effect,\nand connections will only be established if they pass all of the applicable policies. That is, a\nresponse containing the following headers:\n\n```http\nContent-Security-Policy: default-src https://good.example/ https://sketchy.example/\nConnection-Allowlist: (\"https://good.example/\")\n```\n\nrequests to `https://good.example/` would pass both policies, while requests to\n`https://sketchy.example/` would be blocked, as they wouldn't match the `Connection-Allowlist`.\n\n\n### We probably need a report-only variant of this policy, don't we? ###\n\nOf course. That's been a critical part of real-world policy deployments, and we'll need it here too:\n\n```http\nConnection-Allowlist-Report-Only: (response-origin \"https://*.site.example\" \"https://cdn.example\" \"https://*.site.([a-z\\\\-]+)\"); report-to=ReportingAPIEndpointNameGoesHere\n```\n\n\n### What about navigation? ###\n\nNavigation (of the current context or any other to which a handle can be obtained) is clearly in-scope\nfor exfiltration mitigation. In certain contexts, it will be straightforward to list all the possible\nplaces to which navigation is expected, and the current proposal will handle those situations well.\nIn other situations, endpoints might be harder to determine. OAuth flows, payment flows, etc. might hop\naround in ways which are difficult to predict.\n\nIt's potentially necessary for us to split navigation requests out from the rest, possibly by allowing\ndevelopers to set broad expectations for them via a property on the list\n(e.g. `(...);allow-navigation={same-origin,same-site,cross-origin}`)? Feedback on use cases here would\nbe quite helpful.\n\n\n### You're going to have to rethink a ban on redirects. ###\n\nProbably, yes. I want to simplify the initial proposal so we can start talking about it, but I do\nanticipate redirects being required one way or the other for real-world deployments. I think we have\na few realistic options:\n\n1.  Apply the allowlist to every hop of a redirect chain. This has the advantage of matching CSP's\n    behavior that developers are already familiar with. It _is_ a cross-origin data leak insofar as it\n    provides insight about another origin's decisions, which is unfortunate but perhaps unavoidable.\n\n2.  Allow _a specific rule_'s redirect chain to arbitrarily redirect. This narrows the concerns\n    above by forcing developers to annotate the allowlist with their expectations. It might be perfectly\n    acceptable for `https://trusted.example/` to redirect users to arbitrary locations, while other\n    endpoints are expected to remain put. Annotating list items should make this kind of distinction\n    possible if necessary (e.g. `(\"https://trusted.example/\";redirection-allowed \"https://less-so.example/\")`).\n\n3.  Narrow the above by allowing _a specific rule_ to redirect so long as the targets match the allowlist.\n    This creates less opportunity for unexpected connection than 1 or 2 by requiring developers to annotate\n    the specific rules which can redirect, but would do so in a way that's less broad (e.g.\n    `(\"https://semi-trusted.example/\";redirection-allowed=within-allowlist ...)).\n\nWe could add more options as well. CSP's earlier `navigate-to` proposal distinguished between intermediate\nredirects and the final, non-redirect response. You could imagine adding those kinds of options either to\nthe entire allowlist or individual rules. Feedback here as well would be much appreciated.\n\n\n### Could we spell this differently? ###\n\nOf course! It could be a dictionary (`allowlist=(\"a\" \"b\" \"c\"), report-to=ReportingAPIEndpointGoesHere`)!\nIt could be multiple headers! It could be a new CSP directive! The spelling above seems reasonable to me,\nbut feedback on different approaches is welcome!\n"
+      },
+      "w3c": {
+        "group": [
+          80485
+        ],
+        "contacts": [
+          "yoavweiss"
+        ],
+        "repo-type": [
+          "cg-report"
         ]
       }
     },
@@ -59852,6 +59946,10 @@
           "color": "6bc5c6"
         },
         {
+          "name": "s:web-speech",
+          "color": "6bc5c6"
+        },
+        {
           "name": "s:web-sustainability-guidelines",
           "color": "6bc5c6"
         },
@@ -68935,6 +69033,10 @@
         {
           "name": "Needs Process Help",
           "color": "5319e7"
+        },
+        {
+          "name": "Needs tests",
+          "color": "3d3b8b"
         },
         {
           "name": "Needs Volunteer",
@@ -79903,6 +80005,10 @@
         {
           "name": "Needs Process Help",
           "color": "5319e7"
+        },
+        {
+          "name": "Needs tests",
+          "color": "3d3b8b"
         },
         {
           "name": "Needs Volunteer",
@@ -92392,7 +92498,7 @@
         "login": "w3c"
       },
       "isArchived": false,
-      "homepageUrl": "",
+      "homepageUrl": "https://w3c.github.io/publ-a11y-extended-desc/",
       "description": "Documenting a11y extended descriptions, with an emphasis on digital publishing",
       "isPrivate": false,
       "createdAt": "2025-11-28T04:50:16Z",
@@ -128033,7 +128139,7 @@
         "text": "{\n    \"src_file\": \"index.html\",\n    \"type\": \"respec\"\n}"
       },
       "autoPublish": {
-        "text": "name: CI\non:\n  pull_request: {}\n  push:\n    branches: [main]\njobs:\n  main:\n    name: Build, Validate, and Deploy\n    runs-on: ubuntu-20.04\n    steps:\n      - uses: actions/checkout@v3\n      - uses: w3c/spec-prod@v2\n        with:\n          TOOLCHAIN: respec\n          W3C_ECHIDNA_TOKEN: ${{ secrets.W3C_TR_TOKEN }}\n          W3C_WG_DECISION_URL: https://www.w3.org/2017/vc/WG/Meetings/Minutes/2023-04-12-vcwg#resolution1\n          W3C_BUILD_OVERRIDE: |\n             shortName: vc-json-schema\n             specStatus: CRD\n"
+        "text": "name: CI\non:\n  pull_request: {}\n  push:\n    branches: [main]\njobs:\n  main:\n    name: Build, Validate, and Deploy\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v3\n      - uses: w3c/spec-prod@v2\n        with:\n          TOOLCHAIN: respec\n          W3C_ECHIDNA_TOKEN: ${{ secrets.W3C_TR_TOKEN }}\n          W3C_WG_DECISION_URL: https://www.w3.org/2017/vc/WG/Meetings/Minutes/2023-04-12-vcwg#resolution1\n          W3C_BUILD_OVERRIDE: |\n             shortName: vc-json-schema\n             specStatus: CRD\n"
       },
       "travis": null,
       "contributing": {
@@ -154590,6 +154696,10 @@
           "color": "5319e7"
         },
         {
+          "name": "Needs tests",
+          "color": "3d3b8b"
+        },
+        {
           "name": "Needs Volunteer",
           "color": "009800"
         },
@@ -158619,6 +158729,10 @@
         {
           "name": "Needs Process Help",
           "color": "5319e7"
+        },
+        {
+          "name": "Needs tests",
+          "color": "3d3b8b"
         },
         {
           "name": "Needs Volunteer",
@@ -171025,7 +171139,7 @@
       },
       "isArchived": false,
       "homepageUrl": "https://w3ctag.github.io/install-finding/",
-      "description": "Draft Finding on Installable Web Applications",
+      "description": "Finding on Installable Web Applications",
       "isPrivate": false,
       "createdAt": "2026-09-18T13:36:21Z",
       "labels": [
@@ -174350,6 +174464,10 @@
         {
           "name": "enhancement",
           "color": "84b6eb"
+        },
+        {
+          "name": "fuzz bug",
+          "color": "c36fc0"
         },
         {
           "name": "fuzzing",
@@ -184387,7 +184505,7 @@
         "nodes": [
           {
             "pattern": "main",
-            "requiredApprovingReviewCount": null,
+            "requiredApprovingReviewCount": 1,
             "requiredStatusCheckContexts": [],
             "isAdminEnforced": false
           }
@@ -184404,7 +184522,7 @@
       },
       "travis": null,
       "contributing": {
-        "text": "# How to contribute\n\nThis repository containes the current Web Audio API _standard document_, developed by the Audio Working Group at the W3C. There are _multiple implementations_ of the Web Audio API standard.\n\nIf you're about to open an issue about a bug in a particular implementation, please file a ticket in the corresponding implementation bug tracker instead:\n\n- WebKit (Safari): https://bugs.webkit.org/enter_bug.cgi?product=WebKit&component=Web%20Audio (WebKit bugzilla account needed).\n- Blink (Chrome, Chromium, Electron apps, etc.): https://new.crbug.com/ (Google account needed).\n- Gecko (Firefox): https://bugzilla.mozilla.org/enter_bug.cgi?product=Core&component=Web%20Audio (GitHub or Mozilla Bugzilla account needed).\n\nTesting the same Web Audio API code in multiple implementations can be a quick way to check if an implementation has a bug. However, it has happened that different implementation have the same bug, so it's best to read the [standard document](https://webaudio.github.io/web-audio-api/), and to check what _should_ happen.\n\nFeature requests are welcome, but a quick search in the [opened and closed issues](https://github.com/WebAudio/web-audio-api/issues) is welcome to avoid duplicates.\n\nPull requests are also welcome, but any change to the standard (barring things like typos and the like) will have to be discussed in an issue (and possibly during a call, accessible only to W3C Audio Working Group members).\n\n[Bikeshed](https://github.com/tabatkins/bikeshed) is the tool used to write this\nspecification. It can either be used via an HTTP API, or by running it locally.\n\nTo use it via the HTTP API, run:\n\n```\ncurl https://api.csswg.org/bikeshed/ -F file=@index.bs -F output=err\n```\n\nand preview your changes by doing: \n```\ncurl https://api.csswg.org/bikeshed/ -F file=@index.bs -F force=1 > index.html\n```\n\nand opening `index.html` in your favorite browser.\n\nTo run it locally, follow the [installation\ninstructions](https://tabatkins.github.io/bikeshed/#installing).\n\nThen, `bikeshed serve` will run a web server [locally on port\n8000](http://localhost:8000).\n\n"
+        "text": "# How to contribute\n\nThis repository contains the current Web Audio API _standard document_, developed by the Audio Working Group at the W3C. There are _multiple implementations_ of the Web Audio API standard.\n\nIf you're about to open an issue about a bug in a particular implementation, please file a ticket in the corresponding implementation bug tracker instead:\n\n- WebKit (Safari): https://bugs.webkit.org/enter_bug.cgi?product=WebKit&component=Web%20Audio (WebKit bugzilla account needed).\n- Blink (Chrome, Chromium, Electron apps, etc.): https://new.crbug.com/ (Google account needed).\n- Gecko (Firefox): https://bugzilla.mozilla.org/enter_bug.cgi?product=Core&component=Web%20Audio (GitHub or Mozilla Bugzilla account needed).\n\nTesting the same Web Audio API code in multiple implementations can be a quick way to check if an implementation has a bug. However, it has happened that different implementations have the same bug, so it's best to read the [standard document](https://webaudio.github.io/web-audio-api/), and to check what _should_ happen.\n\nFeature requests are welcome, but a quick search in the [opened and closed issues](https://github.com/WebAudio/web-audio-api/issues) is welcome to avoid duplicates.\n\nPull requests are also welcome, but any change to the standard (barring things like typos and the like) will have to be discussed in an issue (and possibly during a call, accessible only to W3C Audio Working Group members).\n\n[Bikeshed](https://github.com/tabatkins/bikeshed) is the tool used to write this\nspecification. It can either be used via an HTTP API, or by running it locally.\n\nTo use it via the HTTP API, run:\n\n```\ncurl https://api.csswg.org/bikeshed/ -F file=@index.bs -F output=err\n```\n\nand preview your changes by doing:\n```\ncurl https://api.csswg.org/bikeshed/ -F file=@index.bs -F force=1 > index.html\n```\n\nand opening `index.html` in your favorite browser.\n\nTo run it locally, follow the [installation\ninstructions](https://tabatkins.github.io/bikeshed/#installing).\n\nThen, `bikeshed serve` will run a web server [locally on port\n8000](http://localhost:8000).\n\n"
       },
       "license": {
         "text": "All documents in this Repository are licensed by contributors\nunder the \n[W3C Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software).\n"
@@ -184795,7 +184913,7 @@
         "nodes": [
           {
             "pattern": "gh-pages",
-            "requiredApprovingReviewCount": null,
+            "requiredApprovingReviewCount": 1,
             "requiredStatusCheckContexts": [],
             "isAdminEnforced": false
           }
@@ -190356,100 +190474,6 @@
       },
       "readme": {
         "text": "# Status of this specification\n\nThe functionality added by this specification was added to the [Screen Capture specification](https://www.w3.org/TR/screen-capture/).\n\n# Conditional Focus\n\n## Problem\nWhen an application starts capturing a display-surface, the user agent faces a decision - should the captured display-surface be brought to the forefront, or should the capturing application retain focus.\n\nThe user agent is mostly agnostic of the nature of the capturing and captured applications, and is therefore ill-positioned to make an informed decision.\n\nIn contrast, the capturing application is familiar with its own properties, and is therefore better suited to make this decision. Moreover, by reading [displaySurface](https://www.w3.org/TR/screen-capture/#dom-mediatrackconstraintset-displaysurface) and/or using [Capture Handle](https://wicg.github.io/capture-handle/), the capturing application can learn about the captured display-surface, driving an even more informed decision.\n\n## Sample Use Case\nFor **example**, a video conferencing application **may** wish to:\n* Focus a captured application that users typically interact with during the call, like a text editor.\n* Retain for itself focus when the captured display-surface is non-interactive content, like a video.\n  * (Using [Capture Handle](https://wicg.github.io/capture-handle/), the capturing application may even allow the user to remotely start/pause the video.)\n\n## Solution\nBefore calling `getDisplayMedia()`, apps can now produce a `CaptureController` object, and pass it in as an additional dictionary key-value pair.\n\nBy calling `setFocusBehavior()` on the controller, apps can now control whether the captured display surface will be focused or not.\n\nIt is possible to call `setFocusBehavior()` arbitrarily many times before calling `getDisplayMedia()`. Only the last invocation will have an effect.\n\n```js\n// Example #1 - unconditional decision.\n\nconst controller = new CaptureController();\ncontroller.setFocusBehavior(\"focus-captured-surface\");\nconst stream = await navigator.mediaDevices.getDisplayMedia({\n  video: true,\n  controller: controller\n});\n```\n\nIt is also possible to call `setFocusBehavior()` immediately after `getDisplayMedia()`'s promise resolves. This can be done at most once, immediately, or not at all. Naturally, this last invocation also overrides any previous invocations.\n\n```js\n// Example #2 - conditional decision.\n\nconst controller = new CaptureController();\nconst stream = await navigator.mediaDevices.getDisplayMedia({\n  video: true,\n  controller: controller\n});\n\n// Focus tabs; avoid focusing windows.\nconst [track] = stream.getVideoTracks();\nconst surfaceType = track.getSettings().displaySurface;\nif (surfaceType == \"browser\") {\n  controller.setFocusBehavior(\"focus-captured-surface\");\n} else if (surfaceType == \"window\") {\n  controller.setFocusBehavior(\"focus-capturing-application\");\n}\n```\n\nIt is possible to make interesting decisions based on the captured content's Capture Handle.\n\n```js\n// Example #3 - conditional decision using Capture Handle.\n\nconst controller = new CaptureController();\nconst stream = await navigator.mediaDevices.getDisplayMedia({\n  video: true,\n  controller: controller\n});\n\n// Focus anything other than tabs dialed in to some specific URL.\nconst [track] = stream.getVideoTracks();\nif (track.getSettings().displaySurface == \"browser\" &&\n    track.getCaptureHandle().origin == \"https://some.specific.url\") {\n  controller.setFocusBehavior(\"focus-capturing-application\");\n} else {\n  controller.setFocusBehavior(\"focus-captured-surface\");\n}\n```\n\n## Limitations\n\nIf the API were not limited, capturing applications could have used it to focus the captured application at an arbitrary moment. That would have presented severe security problems; for example, a malicious application could have tricked the user into double-clicking at an arbitrary point, then focused the captured tab/window in between the two clicks, and thereby produced a click in the captured app in a point of its choosing.\n\nTo prevent such issues, there is a limited window of opportunity to call `setFocusBehavior()` once capture starts. This window closes with the earlier of the following:\n1. After a second.\n2. One task after the `getDisplayMedia()` promise resolves. (More accurately, a task is queued before resolving the promise, and once it executes, the window closes.)\n\nThe following two examples would therefore not work:\n\n```js\n// INCORRECT USAGE #1.\n\nconst controller = new CaptureController();\nconst stream = await navigator.mediaDevices.getDisplayMedia({\n  video: true,\n  controller: controller\n});\n\nconst start = new Date();\nwhile (new Date() - start <= 1000) {\n  ;  // Idle for 1s + epsilon.\n}\n\n// Because too much time has elapsed,\n// the browser will have already made a decision\n// as to whether to focus or not, and the window\n// of opportunity is now closed.\ncontroller.setFocusBehavior(\"focus-captured-surface\");\n```\n\n```js\n// INCORRECT USAGE #2.\n\nconst controller = new CaptureController();\nconst stream = await navigator.mediaDevices.getDisplayMedia({\n  video: true,\n  controller: controller\n});\n\n// This task will be queued behind the the task\n// that closes the window of opportunity to\n// call setFocusBehavior().\nsetTimeout(() => {\n  controller.setFocusBehavior(\"focus-captured-surface\");\n});\n```\n"
-      }
-    },
-    {
-      "id": "R_kgDOPs5Shg",
-      "name": "connection-allowlists",
-      "owner": {
-        "login": "WICG"
-      },
-      "isArchived": false,
-      "homepageUrl": "https://wicg.github.io/connection-allowlists/",
-      "description": null,
-      "isPrivate": false,
-      "createdAt": "2025-09-09T20:18:00Z",
-      "labels": [
-        {
-          "name": "bug",
-          "color": "d73a4a"
-        },
-        {
-          "name": "documentation",
-          "color": "0075ca"
-        },
-        {
-          "name": "duplicate",
-          "color": "cfd3d7"
-        },
-        {
-          "name": "enhancement",
-          "color": "a2eeef"
-        },
-        {
-          "name": "good first issue",
-          "color": "7057ff"
-        },
-        {
-          "name": "help wanted",
-          "color": "008672"
-        },
-        {
-          "name": "invalid",
-          "color": "e4e669"
-        },
-        {
-          "name": "question",
-          "color": "d876e3"
-        },
-        {
-          "name": "wontfix",
-          "color": "ffffff"
-        }
-      ],
-      "defaultBranch": {
-        "name": "main"
-      },
-      "environments": {
-        "nodes": [
-          {
-            "name": "github-pages"
-          }
-        ]
-      },
-      "branchProtectionRules": {
-        "nodes": []
-      },
-      "w3cjson": {
-        "text": " {\n    \"group\":      [80485]\n,   \"contacts\":   [\"yoavweiss\"]\n,   \"repo-type\":  \"cg-report\"\n}\n"
-      },
-      "prpreviewjson": null,
-      "autoPublish": {
-        "text": "# Blindly copy/pasted from https://w3c.github.io/spec-prod/#deploy-to-github-pages\n# and https://github.com/w3c-fedid/FedCM/blob/main/.github/workflows/build-validate-publish.yaml\nname: CI\non:\n  pull_request: {}\n  push:\n    branches: [main]\n\njobs:\n  main:\n    name: Build, Validate and Deploy\n    runs-on: ubuntu-latest\n    permissions:\n      contents: write\n    steps:\n      - uses: actions/checkout@v4\n      - uses: w3c/spec-prod@v2\n        with:\n          GH_PAGES_BRANCH: gh-pages\n          BUILD_FAIL_ON: nothing\n          VALIDATE_MARKUP: false\n"
-      },
-      "travis": null,
-      "contributing": {
-        "text": "# Web Platform Incubator Community Group\n\nThis repository is being used for work in the W3C Web Platform Incubator Community Group, governed by the [W3C Community License\nAgreement (CLA)](http://www.w3.org/community/about/process/cla/). To make substantive contributions,\nyou must join the CG.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n"
-      },
-      "license": {
-        "text": "All Reports in this Repository are licensed by Contributors\nunder the\n[W3C Software and Document License](https://www.w3.org/copyright/software-license/).\n\nContributions to Specifications are made under the\n[W3C CLA](https://www.w3.org/community/about/process/cla/).\n\nContributions to Test Suites are made under the\n[W3C 3-clause BSD License](https://www.w3.org/copyright/3-clause-bsd-license-2008/)\n\n"
-      },
-      "codeOfConduct": {
-        "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Conduct](https://www.w3.org/policies/code-of-conduct/).\n"
-      },
-      "readme": {
-        "text": "Connection Allowlists\n=====================\n\nDevelopers wish to have control over the resources loaded into their pages'\ncontexts and the endpoints to which their pages can make requests. This control\nis necessary for several purposes, ranging from architectural insight into and\nconstraints upon a site's dependencies to the mitigation of exfiltration attacks\nwhich might otherwise put users' data at risk.\n\nContent Security Policy addresses some of this need, but does so in a way that\nis more granular than is necessary for the most critical use cases, and with a\nsyntax and grammar that's complicated by the other protections CSP is used to\ndeploy.\n\nIf we focus on the single use case of controlling the explicit requests a page\nmay initiate through Fetch and other web platform APIs (WebRTC, Web Transport,\nFedCM, Web Payments, DNS Prefetch, etc), we can likely provide a tool whose\npurpose is clear and that's straightforward to use.\n\nProposal\n--------\n\nIn short, a server will distribute a list of acceptable endpoints as an HTTP\nresponse header, along with some configuration metadata. Before establishing\na connection on behalf of a page, the user agent will consult this list of\nendpoints, and block the connection before it's made if there's a mismatch.\n\nOne syntax which seems sufficient would be a Structured Field parsed as a\nList with one element: an Inner List whose elements are either the Token\n`response-origin`, or Strings matching the `URLPattern` syntax for\nabsolute URLs. This Inner List could be annotated with a small number of\nparameters as we discover required extension points. Reporting, for example.\nThat is:\n\n```http\nConnection-Allowlist: (response-origin \"https://*.site.example\" \"https://cdn.example\" \"https://*.site.([a-z\\\\-]+)\"); report-to=ReportingAPIEndpointNameGoesHere\n```\n\nThis policy would allow requests and connections to the origin of the server\nwhich delivered the response, the specific CDN listed, any subdomain of\n`site.example`, and any subdomain of any host whose penultimate DNS label is\n`site`. URLPattern allows quite a bit of flexibility that we can reuse\nhere rather than inventing a new approach (or reusing a more limited grammar\nfrom something like CSP).\n\nTo effectuate blocking connections, we'd add a check against this list to\nFetch, and to the more esoteric specifications partially listed above. If the\nconnection endpoint doesn't match the list, we'll block it, and report metadata\nabout the violation to the Reporting API endpoint named\n`ReportingAPIEndpointNameGoesHere`.\n\nThat's it.\n\nThreat Model\n------------\n\nThis proposal is intentionally small, targeting a specific but useful niche of\nclient-side attacks and/or misconfigurations:\n\n*   Policies for documents and workers will be asserted by servers as HTTP\n    response headers. This means that attackers who can manipulate response\n    headers will remain out of scope.\n\n*   A document's (or worker's) asserted policy governs only requests initiated\n    by _that_ context. If a framed document asserts a distinct policy, so be\n    it (with the caveat that we'll likely inherit this policy into contexts\n    created via local schemes (`data:`, `about:`, etc.), similar to other\n    components of a context's\n    [policy container](https://html.spec.whatwg.org/multipage/browsers.html#policy-containers))\n    which are handled by HTML when creating new document/worker contexts.\n    Likewise, a page's policy doesn't constrain navigations initiated by\n    other documents, or by the user's interaction with the browser.\n    \n*   The connection and/or request are the threat the proposal aims to defend\n    against. To be effective as an exfiltration defense, we must block\n    connections before they're made.\n\n*   There are a plethora of side-channels available as unintended effects of\n    otherwise-excellent web platform APIs. This proposal does not attempt to\n    address them, focusing instead soley on those requests or connections\n    explicitly initiated by the user agent on a page's behalf. This certainly\n    includes the clear cases of Fetch and XMLHttpRequest, along with resource\n    requests generally. It also includes network connections established\n    through channels that are less explicitly \"requests\": manifests fetched\n    through the Web Install API, connections to TURN/STUN servers via WebRTC,\n    Web Transport channels, navigations, and so on. These are all in scope,\n    while more esoteric channels like memory or CPU consumption, socket\n    exhaustion, and XSLeaks in general are not.\n\n*   This proposal addresses only communication channels. It does not aim to\n    prevent (or even substantially mitigate) threats like content injection\n    or cross-site scripting. It only can constrain the impact of such an\n    attack _on those specific pages_ where the policy is in place, and should\n    be considered only as one layer in a page's defenses; it won't be\n    sufficient in itself.\n\n*   It's tempting to attempt to defend against a subset of server-side threats,\n    like open redirects. It's possible that we could do so in a proposal like\n    this one, similar conceptually to what CSP does today. That said, CSP's\n    behavior around redirects is both a leak in itself, and has garnered\n    inconsistently favorable feedback from developers and researchers alike.\n    For simplicity's sake, this proposal will generally treat redirect\n    responses as match failures. That is, we'll start with a draconian policy\n    which will block any redirect response. It's quite possible we'll shift\n    this one way or another as use cases crystalize (see the section entitled\n    \"[You're going to have to rethink a ban on redirects.](#youre-going-to-have-to-rethink-a-ban-on-redirects)\"\n    below).\n\nQuestions\n---------\n\n### Why build this when we already have Content Security Policy? ###\n\nThree reasons:\n\n1.  CSP's model is too granular: Developers who wish to mitigate the risk that data flows out\n    of a sensitive context require a protection that exhaustively covers the possible\n    ways in which requests can be made or connections established. CSP's categorization\n    of requests into types which can be controlled in isolation is the wrong way to\n    approach this problem, as data leaking through a request for a web font is just as\n    bad as data leaking through a request for an image or a script. Distinguishing these\n    request types complicates the process of designing a reasonable defense with questions\n    that are simply irrelevant.\n\n2.  CSP's syntax is not granular enough: The `host-source` grammar CSP supports leads to truly\n    verbose headers being delivered with responses. A distinct policy provides the opportunity\n    to shift to the URLPattern syntax which will resolve some complaints folks have raised about\n    CSP's approach by providing a more modern, malleable, and standardized matching syntax.\n\n3.  CSP's coverage is incomplete: While CSP does a good job covering HTTP requests which run\n    through Fetch, it does not exhaustively cover the myriad ways in which web platform APIs\n    allow connections to be established. DNS prefetch, navigation, and WebRTC are good examples\n    to start with, but there are many others which have struggled with exactly how they fit into CSP's\n    threat model. By creating a new policy with a narrow focus and explicit promise to developers,\n    these discussions will have a defensible answer and a clear mandate to specification authors.\n\n\n### How does this policy interact with other mechanisms of controlling outgoing requests? ###\n\nIn short, we should follow CSP's model for resolving multiple policies: each should take effect,\nand connections will only be established if they pass all of the applicable policies. That is, a\nresponse containing the following headers:\n\n```http\nContent-Security-Policy: default-src https://good.example/ https://sketchy.example/\nConnection-Allowlist: (\"https://good.example/\")\n```\n\nrequests to `https://good.example/` would pass both policies, while requests to\n`https://sketchy.example/` would be blocked, as they wouldn't match the `Connection-Allowlist`.\n\n\n### We probably need a report-only variant of this policy, don't we? ###\n\nOf course. That's been a critical part of real-world policy deployments, and we'll need it here too:\n\n```http\nConnection-Allowlist-Report-Only: (response-origin \"https://*.site.example\" \"https://cdn.example\" \"https://*.site.([a-z\\\\-]+)\"); report-to=ReportingAPIEndpointNameGoesHere\n```\n\n\n### What about navigation? ###\n\nNavigation (of the current context or any other to which a handle can be obtained) is clearly in-scope\nfor exfiltration mitigation. In certain contexts, it will be straightforward to list all the possible\nplaces to which navigation is expected, and the current proposal will handle those situations well.\nIn other situations, endpoints might be harder to determine. OAuth flows, payment flows, etc. might hop\naround in ways which are difficult to predict.\n\nIt's potentially necessary for us to split navigation requests out from the rest, possibly by allowing\ndevelopers to set broad expectations for them via a property on the list\n(e.g. `(...);allow-navigation={same-origin,same-site,cross-origin}`)? Feedback on use cases here would\nbe quite helpful.\n\n\n### You're going to have to rethink a ban on redirects. ###\n\nProbably, yes. I want to simplify the initial proposal so we can start talking about it, but I do\nanticipate redirects being required one way or the other for real-world deployments. I think we have\na few realistic options:\n\n1.  Apply the allowlist to every hop of a redirect chain. This has the advantage of matching CSP's\n    behavior that developers are already familiar with. It _is_ a cross-origin data leak insofar as it\n    provides insight about another origin's decisions, which is unfortunate but perhaps unavoidable.\n\n2.  Allow _a specific rule_'s redirect chain to arbitrarily redirect. This narrows the concerns\n    above by forcing developers to annotate the allowlist with their expectations. It might be perfectly\n    acceptable for `https://trusted.example/` to redirect users to arbitrary locations, while other\n    endpoints are expected to remain put. Annotating list items should make this kind of distinction\n    possible if necessary (e.g. `(\"https://trusted.example/\";redirection-allowed \"https://less-so.example/\")`).\n\n3.  Narrow the above by allowing _a specific rule_ to redirect so long as the targets match the allowlist.\n    This creates less opportunity for unexpected connection than 1 or 2 by requiring developers to annotate\n    the specific rules which can redirect, but would do so in a way that's less broad (e.g.\n    `(\"https://semi-trusted.example/\";redirection-allowed=within-allowlist ...)).\n\nWe could add more options as well. CSP's earlier `navigate-to` proposal distinguished between intermediate\nredirects and the final, non-redirect response. You could imagine adding those kinds of options either to\nthe entire allowlist or individual rules. Feedback here as well would be much appreciated.\n\n\n### Could we spell this differently? ###\n\nOf course! It could be a dictionary (`allowlist=(\"a\" \"b\" \"c\"), report-to=ReportingAPIEndpointGoesHere`)!\nIt could be multiple headers! It could be a new CSP directive! The spelling above seems reasonable to me,\nbut feedback on different approaches is welcome!\n"
-      },
-      "w3c": {
-        "group": [
-          80485
-        ],
-        "contacts": [
-          "yoavweiss"
-        ],
-        "repo-type": [
-          "cg-report"
-        ]
       }
     },
     {
@@ -199850,7 +199874,7 @@
         "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n"
       },
       "readme": {
-        "text": "# Local Peer-to-Peer API\n\n[Local Peer-to-Peer](https://WICG.github.io/local-peer-to-peer/) is a Web platform API proposal for secure, offline communication between nearby browsers and devices, without a server.\n\nIt has three building blocks.\n\n### Trust between devices\n\nThe user pairs two devices once, for example with a PIN or a QR code, and the browser keeps that trust. A site only gets the peers the user grants it; pages never see the network, keys or discovery results.\n\n```js\n// Shows the browser's picker; resolves once the user picked a peer and it accepted.\nconst conn = await new LP2PRequest().start();\n```\n\n### Local data pipes\n\nData channels, aligned with `RTCDataChannel`. This API isn't fully specified yet and depends on LP2P issue 29.\n\n```js\nconst channel = conn.createDataChannel(\"chat\");\nchannel.onopen = () => channel.send(\"Hi you!\");\n```\n\nWebTransport, aligned with the `WebTransport` API.\n\n```js\nconst transport = await lp2p.connect({ ...options });\n```\n\n### Local HTTPS (separate draft)\n\n[Local HTTPS](https://WICG.github.io/local-peer-to-peer/local-https.html) lets the browser talk securely to HTTPS servers on the local network without public certificate authorities, using the same trust. The browser is a client, not a server.\n\nFor a more in-depth overview, see the [Explainer](EXPLAINER.md).\n\n## Status\n\nThis specification is a work in progress.\n\n## Links\n\n- [Explainer](EXPLAINER.md)\n- [Specification](https://WICG.github.io/local-peer-to-peer/)\n- [Local HTTPS](https://WICG.github.io/local-peer-to-peer/local-https.html) (separate draft)\n- [One-Pager](./images/onepager.svg) ([PDF](./images/Local%20Peer-to-Peer%20API%20-%20One-Pager.pdf))\n\n## Feedback\n\nWe welcome feedback via the [issue tracker](https://github.com/WICG/local-peer-to-peer/issues) of this GitHub repo. [Contributions](CONTRIBUTING.md) are welcome via pull requests too.\n"
+        "text": "# Local Peer-to-Peer API\n\n<picture>\n  <source media=\"(prefers-color-scheme: dark)\" srcset=\"images/banner-dark.svg\">\n  <img alt=\"The browser talks to the device next to it. Securely. Offline.\" src=\"images/banner-light.svg\" width=\"100%\">\n</picture>\n\n[Local Peer-to-Peer](https://WICG.github.io/local-peer-to-peer/) is a Web platform API proposal for secure, offline communication between nearby browsers and devices, without a server.\n\nIt has three building blocks.\n\n### Trust between devices\n\nThe user pairs two devices once, for example with a PIN or a QR code, and the browser keeps that trust. A site only gets the peers the user grants it; pages never see the network, keys or discovery results.\n\n```js\n// Shows the browser's picker; resolves once the user picked a peer and it accepted.\nconst conn = await new LP2PRequest().start();\n```\n\n### Local data pipes\n\nData channels, aligned with `RTCDataChannel`. This API isn't fully specified yet and depends on LP2P issue 29.\n\n```js\nconst channel = conn.createDataChannel(\"chat\");\nchannel.onopen = () => channel.send(\"Hi you!\");\n```\n\nWebTransport, aligned with the `WebTransport` API.\n\n```js\nconst transport = await lp2p.connect({ ...options });\n```\n\n### Local HTTPS (separate draft)\n\n[Local HTTPS](https://WICG.github.io/local-peer-to-peer/local-https.html) lets the browser talk securely to HTTPS servers on the local network without public certificate authorities, using the same trust. The browser is a client, not a server.\n\nFor a more in-depth overview, see the [Explainer](EXPLAINER.md).\n\n## Status\n\nThis specification is a work in progress.\n\n## Links\n\n- [Explainer](EXPLAINER.md)\n- [Specification](https://WICG.github.io/local-peer-to-peer/)\n- [Local HTTPS](https://WICG.github.io/local-peer-to-peer/local-https.html) (separate draft)\n- [One-Pager](./images/onepager.svg) ([PDF](./images/Local%20Peer-to-Peer%20API%20-%20One-Pager.pdf))\n\n## Feedback\n\nWe welcome feedback via the [issue tracker](https://github.com/WICG/local-peer-to-peer/issues) of this GitHub repo. [Contributions](CONTRIBUTING.md) are welcome via pull requests too.\n"
       },
       "prpreview": {
         "src_file": "index.bs",
@@ -214479,6 +214503,10 @@
       "fullshortname": "cg/wicg",
       "repos": [
         {
+          "name": "connection-allowlists",
+          "fullName": "w3c/connection-allowlists"
+        },
+        {
           "name": "container-timing",
           "fullName": "w3c/container-timing"
         },
@@ -214541,10 +214569,6 @@
         {
           "name": "color-api",
           "fullName": "WICG/color-api"
-        },
-        {
-          "name": "connection-allowlists",
-          "fullName": "WICG/connection-allowlists"
         },
         {
           "name": "construct-stylesheets",
