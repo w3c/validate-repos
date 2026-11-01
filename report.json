@@ -1792,12 +1792,12 @@
       {
         "repo": "WebAudio/web-audio-api",
         "error": "doesn't match SW or DOC contributing",
-        "contributing": "# How to contribute\n\nThis repository contains the current Web Audio API _standard document_, developed by the Audio Working Group at the W3C. There are _multiple implementations_ of the Web Audio API standard.\n\nIf you're about to open an issue about a bug in a particular implementation, please file a ticket in the corresponding implementation bug tracker instead:\n\n- WebKit (Safari): https://bugs.webkit.org/enter_bug.cgi?product=WebKit&component=Web%20Audio (WebKit bugzilla account needed).\n- Blink (Chrome, Chromium, Electron apps, etc.): https://new.crbug.com/ (Google account needed).\n- Gecko (Firefox): https://bugzilla.mozilla.org/enter_bug.cgi?product=Core&component=Web%20Audio (GitHub or Mozilla Bugzilla account needed).\n\nTesting the same Web Audio API code in multiple implementations can be a quick way to check if an implementation has a bug. However, it has happened that different implementations have the same bug, so it's best to read the [standard document](https://webaudio.github.io/web-audio-api/), and to check what _should_ happen.\n\nFeature requests are welcome, but a quick search in the [opened and closed issues](https://github.com/WebAudio/web-audio-api/issues) is welcome to avoid duplicates.\n\nPull requests are also welcome, but any change to the standard (barring things like typos and the like) will have to be discussed in an issue (and possibly during a call, accessible only to W3C Audio Working Group members).\n\n[Bikeshed](https://github.com/tabatkins/bikeshed) is the tool used to write this\nspecification. It can either be used via an HTTP API, or by running it locally.\n\nTo use it via the HTTP API, run:\n\n```\ncurl https://api.csswg.org/bikeshed/ -F file=@index.bs -F output=err\n```\n\nand preview your changes by doing:\n```\ncurl https://api.csswg.org/bikeshed/ -F file=@index.bs -F force=1 > index.html\n```\n\nand opening `index.html` in your favorite browser.\n\nTo run it locally, follow the [installation\ninstructions](https://tabatkins.github.io/bikeshed/#installing).\n\nThen, `bikeshed serve` will run a web server [locally on port\n8000](http://localhost:8000).\n\n"
+        "contributing": "# How to contribute\n\nThis repository contains the current Web Audio API _standard document_, developed by the Audio Working Group at the W3C. There are _multiple implementations_ of the Web Audio API standard.\n\nIf you're about to open an issue about a bug in a particular implementation, please file a ticket in the corresponding implementation bug tracker instead:\n\n- WebKit (Safari): https://bugs.webkit.org/enter_bug.cgi?product=WebKit&component=Web%20Audio (GitHub or WebKit Bugzilla account needed).\n- Blink (Chrome, Chromium, Electron apps, etc.): https://new.crbug.com/ (Google account needed).\n- Gecko (Firefox): https://bugzilla.mozilla.org/enter_bug.cgi?product=Core&component=Web%20Audio (GitHub or Mozilla Bugzilla account needed).\n\nTesting the same Web Audio API code in multiple implementations can be a quick way to check if an implementation has a bug. However, it has happened that different implementations have the same bug, so it's best to read the [standard document](https://webaudio.github.io/web-audio-api/), and to check what _should_ happen.\n\nFeature requests are welcome, but a quick search in the [opened and closed issues](https://github.com/WebAudio/web-audio-api/issues) is welcome to avoid duplicates.\n\nPull requests are also welcome, but any change to the standard (barring things like typos and the like) will have to be discussed in an issue (and possibly during a call, accessible only to W3C Audio Working Group members).\n\n[Bikeshed](https://github.com/tabatkins/bikeshed) is the tool used to write this\nspecification. It can either be used via an HTTP API, or by running it locally.\n\nTo use it via the HTTP API, run:\n\n```\ncurl https://api.csswg.org/bikeshed/ -F file=@index.bs -F output=err\n```\n\nand preview your changes by doing:\n```\ncurl https://api.csswg.org/bikeshed/ -F file=@index.bs -F force=1 > index.html\n```\n\nand opening `index.html` in your favorite browser.\n\nTo run it locally, follow the [installation\ninstructions](https://tabatkins.github.io/bikeshed/#installing).\n\nThen, `bikeshed serve` will run a web server [locally on port\n8000](http://localhost:8000).\n\n"
       },
       {
         "repo": "WebAudio/web-midi-api",
         "error": "doesn't match SW or DOC contributing",
-        "contributing": "# How to contribute\n\nThis repository containes the current Web MIDI API _standard document_, developed by the Audio Working Group at the W3C. \nThere are _multiple implementations_ of the Web MIDI API standard.\n\nFeature requests are welcome, but a quick search in the [opened and closed issues](https://github.com/WebAudio/web-midi-api/issues) \nis welcome to avoid duplicates.\n\nPull requests are also welcome, but any change to the standard (barring things like typos and the like) will have \nto be discussed in an issue (and possibly during a call, accessible only to W3C Audio Working Group members).\n"
+        "contributing": "# How to contribute\n\nThis repository contains the current Web MIDI API _standard document_, developed by the Audio Working Group at the W3C.\nThere are _multiple implementations_ of the Web MIDI API standard.\n\nFeature requests are welcome, but a quick search in the [opened and closed issues](https://github.com/WebAudio/web-midi-api/issues)\nis welcome to avoid duplicates.\n\nPull requests are also welcome, but any change to the standard (barring things like typos and the like) will have\nto be discussed in an issue (and possibly during a call, accessible only to W3C Audio Working Group members).\n"
       },
       {
         "repo": "webmachinelearning/prompt-api",
@@ -5316,16 +5316,6 @@
         "repo": "w3c/yaml-ld",
         "error": "doesn't match SW or DOC license",
         "license": "All documents in this Repository are licensed by contributors\nunder the \n[W3C Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software).\n\n"
-      },
-      {
-        "repo": "WebAudio/web-audio-api",
-        "error": "doesn't match SW or DOC license",
-        "license": "All documents in this Repository are licensed by contributors\nunder the \n[W3C Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software).\n"
-      },
-      {
-        "repo": "WebAudio/web-midi-api",
-        "error": "doesn't match SW or DOC license",
-        "license": "All documents in this Repository are licensed by contributors\nunder the \n[W3C Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software).\n"
       },
       {
         "repo": "webmachinelearning/prompt-api",
@@ -9308,7 +9298,7 @@
       }
     ]
   },
-  "timestamp": "2026-10-31T00:29:24.096Z",
+  "timestamp": "2026-11-01T00:29:39.080Z",
   "repos": [
     {
       "id": "MDEwOlJlcG9zaXRvcnk4MTAyMTg2MA==",
@@ -55563,7 +55553,7 @@
         "login": "w3c"
       },
       "isArchived": false,
-      "homepageUrl": null,
+      "homepageUrl": "https://www.w3.org/2026/10/TPAC/hackathon/",
       "description": "W3C Hackathon TPAC 2026: Dublin Edition",
       "isPrivate": false,
       "createdAt": "2026-09-30T07:44:20Z",
@@ -55628,7 +55618,7 @@
         "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Conduct](https://www.w3.org/policies/code-of-conduct/).\n"
       },
       "readme": {
-        "text": "# W3C TPAC hackathon 2026\n\nA minimal event page for the Dublin hackathon on Monday 26 October 2026,\n19:00–22:30 GMT, at Clayton Hotel Burlington Road, Leinster Suite, ground floor.\n\n## Local preview\n\nRun `bundle exec jekyll serve --host 127.0.0.1 --port 4010`, then open\n<http://127.0.0.1:4010/2026/10/TPAC/hackathon/>.\n\n## Content\n\nEvent details, challenges, the schedule, rules, projects, sponsors, and navigation\nare in `_data/`. Set a challenge's `lit` field to `true` when its description is\nready. Registration appears only when `register_url` is filled in.\n\nSponsor names, website links, and local logo paths are in `_data/sponsors.yml`.\nLogo files are kept in `assets/images/` and displayed without recoloring.\n\nKeep the schedule, calendar file, and structured event metadata consistent when\nchanging the event time.\n\nThe sharing image is `assets/images/social-card.png` (1200 × 630), with an editable\nSVG source alongside it. When event details change, update the SVG and image alt\ntext in `_includes/head.html`, then export the SVG as a 1200 × 630 PNG using an\nSVG renderer such as Inkscape or Sharp (librsvg).\n\n## Design and accessibility\n\nThe page uses one geometric three-leaf shamrock as its Irish identity, repeated\nbeside the title, in a small schedule divider, and in the footer. Forest-green\nsurfaces, cream rectangular panels, restrained orange accents, serif headlines,\nand monospace event labels form the rest of the design.\n\nThe location panel names Dublin in English and Irish; the Irish label uses\n`lang=\"ga\"` for screen-reader pronunciation. Shamrocks are decorative and hidden\nfrom assistive technology. No generated images, external fonts, or background\nimages are used.\n\nNavigation and FAQ disclosures work without JavaScript. A small script closes the\nmobile menu on selection or Escape. The page includes a skip link, visible focus\nindicators, reduced-motion support, responsive layouts, and native HTML controls.\n\nCheck changes with `bundle exec jekyll build`.\n"
+        "text": "# W3C TPAC hackathon 2026\n\nA minimal event page for the Dublin hackathon on Monday 26 October 2026,\n19:00–22:30 GMT, at Clayton Hotel Burlington Road, Leinster Suite, ground floor.\n\n## Local preview\n\nRun `bundle exec jekyll serve --host 127.0.0.1 --port 4010`, then open\n<http://127.0.0.1:4010/2026/10/TPAC/hackathon/>.\n\n## Content\n\nEvent details, challenges, the schedule, rules, projects, sponsors, and navigation\nare in `_data/`. Set a challenge's `lit` field to `true` when its description is\nready. Registration appears only when `register_url` is filled in.\n\nSponsor names, website links, and local logo paths are in `_data/sponsors.yml`.\nLogo files are kept in `assets/images/` and displayed without recoloring.\n\nProjects are in `_data/submissions.yml`, grouped by challenge in the order they\nwere posted to the GitHub submission issues. Set `award` on a project to show a\nlabel on its card. Screenshots are kept in `assets/projects/` as 960 × 600 WebP files.\n\nKeep the schedule, calendar file, and structured event metadata consistent when\nchanging the event time.\n\nThe sharing image is `assets/images/social-card.png` (1200 × 630), with an editable\nSVG source alongside it. When event details change, update the SVG and image alt\ntext in `_includes/head.html`, then export the SVG as a 1200 × 630 PNG using an\nSVG renderer such as Inkscape or Sharp (librsvg).\n\n## Design and accessibility\n\nThe page uses one geometric three-leaf shamrock as its Irish identity, repeated\nbeside the title, in a small schedule divider, and in the footer. Forest-green\nsurfaces, cream rectangular panels, restrained orange accents, serif headlines,\nand monospace event labels form the rest of the design.\n\nThe location panel names Dublin in English and Irish; the Irish label uses\n`lang=\"ga\"` for screen-reader pronunciation. Shamrocks are decorative and hidden\nfrom assistive technology. No generated images, external fonts, or background\nimages are used.\n\nNavigation and FAQ disclosures work without JavaScript. A small script closes the\nmobile menu on selection or Escape. The page includes a skip link, visible focus\nindicators, reduced-motion support, responsive layouts, and native HTML controls.\n\nCheck changes with `bundle exec jekyll build`.\n"
       }
     },
     {
@@ -119290,6 +119280,10 @@
           "color": "fc2929"
         },
         {
+          "name": "dependencies",
+          "color": "0366d6"
+        },
+        {
           "name": "duplicate",
           "color": "cccccc"
         },
@@ -119304,6 +119298,10 @@
         {
           "name": "invalid",
           "color": "e6e6e6"
+        },
+        {
+          "name": "javascript",
+          "color": "168700"
         },
         {
           "name": "question",
@@ -184486,7 +184484,7 @@
       },
       "isArchived": false,
       "homepageUrl": "https://webaudio.github.io/web-audio-api/",
-      "description": "The Web Audio API v1.0, developed by the W3C Audio WG",
+      "description": "The Web Audio API v1.1, developed by the W3C Audio WG",
       "isPrivate": false,
       "createdAt": "2013-08-30T11:29:49Z",
       "labels": [
@@ -184622,16 +184620,16 @@
       },
       "travis": null,
       "contributing": {
-        "text": "# How to contribute\n\nThis repository contains the current Web Audio API _standard document_, developed by the Audio Working Group at the W3C. There are _multiple implementations_ of the Web Audio API standard.\n\nIf you're about to open an issue about a bug in a particular implementation, please file a ticket in the corresponding implementation bug tracker instead:\n\n- WebKit (Safari): https://bugs.webkit.org/enter_bug.cgi?product=WebKit&component=Web%20Audio (WebKit bugzilla account needed).\n- Blink (Chrome, Chromium, Electron apps, etc.): https://new.crbug.com/ (Google account needed).\n- Gecko (Firefox): https://bugzilla.mozilla.org/enter_bug.cgi?product=Core&component=Web%20Audio (GitHub or Mozilla Bugzilla account needed).\n\nTesting the same Web Audio API code in multiple implementations can be a quick way to check if an implementation has a bug. However, it has happened that different implementations have the same bug, so it's best to read the [standard document](https://webaudio.github.io/web-audio-api/), and to check what _should_ happen.\n\nFeature requests are welcome, but a quick search in the [opened and closed issues](https://github.com/WebAudio/web-audio-api/issues) is welcome to avoid duplicates.\n\nPull requests are also welcome, but any change to the standard (barring things like typos and the like) will have to be discussed in an issue (and possibly during a call, accessible only to W3C Audio Working Group members).\n\n[Bikeshed](https://github.com/tabatkins/bikeshed) is the tool used to write this\nspecification. It can either be used via an HTTP API, or by running it locally.\n\nTo use it via the HTTP API, run:\n\n```\ncurl https://api.csswg.org/bikeshed/ -F file=@index.bs -F output=err\n```\n\nand preview your changes by doing:\n```\ncurl https://api.csswg.org/bikeshed/ -F file=@index.bs -F force=1 > index.html\n```\n\nand opening `index.html` in your favorite browser.\n\nTo run it locally, follow the [installation\ninstructions](https://tabatkins.github.io/bikeshed/#installing).\n\nThen, `bikeshed serve` will run a web server [locally on port\n8000](http://localhost:8000).\n\n"
+        "text": "# How to contribute\n\nThis repository contains the current Web Audio API _standard document_, developed by the Audio Working Group at the W3C. There are _multiple implementations_ of the Web Audio API standard.\n\nIf you're about to open an issue about a bug in a particular implementation, please file a ticket in the corresponding implementation bug tracker instead:\n\n- WebKit (Safari): https://bugs.webkit.org/enter_bug.cgi?product=WebKit&component=Web%20Audio (GitHub or WebKit Bugzilla account needed).\n- Blink (Chrome, Chromium, Electron apps, etc.): https://new.crbug.com/ (Google account needed).\n- Gecko (Firefox): https://bugzilla.mozilla.org/enter_bug.cgi?product=Core&component=Web%20Audio (GitHub or Mozilla Bugzilla account needed).\n\nTesting the same Web Audio API code in multiple implementations can be a quick way to check if an implementation has a bug. However, it has happened that different implementations have the same bug, so it's best to read the [standard document](https://webaudio.github.io/web-audio-api/), and to check what _should_ happen.\n\nFeature requests are welcome, but a quick search in the [opened and closed issues](https://github.com/WebAudio/web-audio-api/issues) is welcome to avoid duplicates.\n\nPull requests are also welcome, but any change to the standard (barring things like typos and the like) will have to be discussed in an issue (and possibly during a call, accessible only to W3C Audio Working Group members).\n\n[Bikeshed](https://github.com/tabatkins/bikeshed) is the tool used to write this\nspecification. It can either be used via an HTTP API, or by running it locally.\n\nTo use it via the HTTP API, run:\n\n```\ncurl https://api.csswg.org/bikeshed/ -F file=@index.bs -F output=err\n```\n\nand preview your changes by doing:\n```\ncurl https://api.csswg.org/bikeshed/ -F file=@index.bs -F force=1 > index.html\n```\n\nand opening `index.html` in your favorite browser.\n\nTo run it locally, follow the [installation\ninstructions](https://tabatkins.github.io/bikeshed/#installing).\n\nThen, `bikeshed serve` will run a web server [locally on port\n8000](http://localhost:8000).\n\n"
       },
       "license": {
-        "text": "All documents in this Repository are licensed by contributors\nunder the \n[W3C Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software).\n"
+        "text": "All documents in this Repository are licensed by contributors\nunder the \n[W3C Software and Document License](https://www.w3.org/copyright/software-license/).\n\n"
       },
       "codeOfConduct": {
-        "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n"
+        "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Conduct](https://www.w3.org/policies/code-of-conduct/).\n"
       },
       "readme": {
-        "text": "# Web Audio API 1.0 Spec\n\n[![Build Status](https://github.com/WebAudio/web-audio-api/actions/workflows/auto-publish.yml/badge.svg?branch=main&event=push)](https://github.com/WebAudio/web-audio-api/actions/workflows/auto-publish.yml)\n\n<img src=\"images/webaudio-js.png\" width=\"200px\" alt=\"WebAudio\">\n\nThis repository contains the latest editor's draft of the [W3C AudioWG](https://www.w3.org/2011/audio/)'s Web Audio API v1.0.\n\nYou can preview the current version of the `main` branch [here](https://webaudio.github.io/web-audio-api/).\n\n# Tests\n\nFor normative changes, a corresponding\n[web-platform-tests](https://github.com/web-platform-tests/wpt) PR is highly appreciated. Typically,\nboth PRs will be merged at the same time. Note that a test change that contradicts the spec should\nnot be merged before the corresponding spec change. If testing is not practical, please explain why\nand if appropriate [file an issue](https://github.com/web-platform-tests/wpt/issues/new) to follow\nup later. Add the `type:untestable` or `type:missing-coverage` label as appropriate.\n\nWe also have an [implementation report](https://webaudio.github.io/web-audio-api/implementation-report.html).\n"
+        "text": "# Web Audio API 1.1 Spec\n\n[![Build Status](https://github.com/WebAudio/web-audio-api/actions/workflows/auto-publish.yml/badge.svg?branch=main&event=push)](https://github.com/WebAudio/web-audio-api/actions/workflows/auto-publish.yml)\n\n<img src=\"images/webaudio-js.png\" width=\"200px\" alt=\"WebAudio\">\n\nThis repository contains the latest editor's draft of the [W3C AudioWG](https://www.w3.org/groups/wg/audio/)'s Web Audio API v1.1.\n\nYou can preview the current version of the `main` branch [here](https://webaudio.github.io/web-audio-api/).\n\n# Tests\n\nFor normative changes, a corresponding\n[web-platform-tests](https://github.com/web-platform-tests/wpt) PR is highly appreciated. Typically,\nboth PRs will be merged at the same time. Note that a test change that contradicts the spec should\nnot be merged before the corresponding spec change. If testing is not practical, please explain why\nand if appropriate [file an issue](https://github.com/web-platform-tests/wpt/issues/new) to follow\nup later. Add the `type:untestable` or `type:missing-coverage` label as appropriate.\n\nCross-browser test results are available on [wpt.fyi](https://wpt.fyi/results/webaudio).\n"
       },
       "prpreview": {
         "src_file": "index.bs",
@@ -185020,7 +185018,7 @@
         ]
       },
       "w3cjson": {
-        "text": " {\n    \"group\":      [\"46884\"]\n,   \"contacts\":   [\"svgeesus\"]\n,   \"repo-type\":  \"rec-track\"\n}\n"
+        "text": "{\n    \"group\":     \"wg/audio\"\n,   \"contacts\":  [\"svgeesus\"]\n,   \"repo-type\": \"rec-track\"\n}\n"
       },
       "prpreviewjson": {
         "text": "{\n    \"src_file\": \"index.html\",\n    \"type\": \"respec\"\n}\n"
@@ -185030,25 +185028,23 @@
       },
       "travis": null,
       "contributing": {
-        "text": "# How to contribute\n\nThis repository containes the current Web MIDI API _standard document_, developed by the Audio Working Group at the W3C. \nThere are _multiple implementations_ of the Web MIDI API standard.\n\nFeature requests are welcome, but a quick search in the [opened and closed issues](https://github.com/WebAudio/web-midi-api/issues) \nis welcome to avoid duplicates.\n\nPull requests are also welcome, but any change to the standard (barring things like typos and the like) will have \nto be discussed in an issue (and possibly during a call, accessible only to W3C Audio Working Group members).\n"
+        "text": "# How to contribute\n\nThis repository contains the current Web MIDI API _standard document_, developed by the Audio Working Group at the W3C.\nThere are _multiple implementations_ of the Web MIDI API standard.\n\nFeature requests are welcome, but a quick search in the [opened and closed issues](https://github.com/WebAudio/web-midi-api/issues)\nis welcome to avoid duplicates.\n\nPull requests are also welcome, but any change to the standard (barring things like typos and the like) will have\nto be discussed in an issue (and possibly during a call, accessible only to W3C Audio Working Group members).\n"
       },
       "license": {
-        "text": "All documents in this Repository are licensed by contributors\nunder the \n[W3C Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software).\n"
+        "text": "All documents in this Repository are licensed by contributors\nunder the \n[W3C Software and Document License](https://www.w3.org/copyright/software-license/).\n\n"
       },
       "codeOfConduct": {
-        "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n"
+        "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Conduct](https://www.w3.org/policies/code-of-conduct/).\n"
       },
       "readme": {
-        "text": "# Web MIDI API Spec\n\nThis repository contains the latest editor's draft of the [W3C AudioWG](https://www.w3.org/2011/audio/)'s Web MIDI API.\n\nYou can preview the current version of the gh-pages branch [here](https://webaudio.github.io/web-midi-api/).\n\n# Tests\n\nFor normative changes, a corresponding\n[web-platform-tests](https://github.com/web-platform-tests/wpt) PR is highly appreciated. Typically,\nboth PRs will be merged at the same time. Note that a test change that contradicts the spec should\nnot be merged before the corresponding spec change. If testing is not practical, please explain why\nand if appropriate [file an issue](https://github.com/web-platform-tests/wpt/issues/new) to follow\nup later. Add the `type:untestable` or `type:missing-coverage` label as appropriate.\n"
+        "text": "# Web MIDI API Spec\n\nThis repository contains the latest editor's draft of the [W3C AudioWG](https://www.w3.org/groups/wg/audio/)'s Web MIDI API.\n\nYou can preview the current version of the gh-pages branch [here](https://webaudio.github.io/web-midi-api/).\n\n# Tests\n\nFor normative changes, a corresponding\n[web-platform-tests](https://github.com/web-platform-tests/wpt) PR is highly appreciated. Typically,\nboth PRs will be merged at the same time. Note that a test change that contradicts the spec should\nnot be merged before the corresponding spec change. If testing is not practical, please explain why\nand if appropriate [file an issue](https://github.com/web-platform-tests/wpt/issues/new) to follow\nup later. Add the `type:untestable` or `type:missing-coverage` label as appropriate.\n"
       },
       "prpreview": {
         "src_file": "index.html",
         "type": "respec"
       },
       "w3c": {
-        "group": [
-          "46884"
-        ],
+        "group": "wg/audio",
         "contacts": [
           "svgeesus"
         ],
