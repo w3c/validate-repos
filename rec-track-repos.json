@@ -47,7 +47,6 @@
   "w3c/csswg-drafts",
   "w3c/dapt",
   "w3c/data-shapes",
-  "w3c/device-memory",
   "w3c/device-posture",
   "w3c/deviceorientation",
   "w3c/did",
@@ -97,7 +96,6 @@
   "w3c/largest-contentful-paint",
   "w3c/ldn",
   "w3c/long-animation-frames",
-  "w3c/longtasks",
   "w3c/low-vision-SC",
   "w3c/lws-protocol",
   "w3c/magnetometer",
@@ -291,5 +289,7 @@
   "WebAudio/web-audio-api",
   "WebAudio/web-midi-api",
   "webmachinelearning/webnn",
+  "WICG/device-memory",
+  "WICG/longtasks",
   "WICG/sub-apps"
 ]

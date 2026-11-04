@@ -760,11 +760,6 @@
         "contributing": "# Timed Text Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](https://www.w3.org/Consortium/Legal/copyright-documents). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
       },
       {
-        "repo": "w3c/device-memory",
-        "error": "doesn't match SW or DOC contributing",
-        "contributing": "Contributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy/) and\n[Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nFor our editing test-driven process, see [CONTRIBUTING.md](https://github.com/w3c/web-performance/blob/gh-pages/CONTRIBUTING.md).\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n"
-      },
-      {
         "repo": "w3c/deviceorientation",
         "error": "doesn't match SW or DOC contributing",
         "contributing": "Contributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy/) and\n[Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software). \nTo make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n\n# Tests\n\nFor normative changes, a corresponding\n[web-platform-tests](https://github.com/web-platform-tests/wpt) PR is highly appreciated. Typically,\nboth PRs will be merged at the same time. Note that a test change that contradicts the spec should\nnot be merged before the corresponding spec change. If testing is not practical, please explain why\nand if appropriate [file a web-platform-tests issue](https://github.com/web-platform-tests/wpt/issues/new)\nto follow up later. Add the `type:untestable` or `type:missing-coverage` label as appropriate.\n"
@@ -946,11 +941,6 @@
       },
       {
         "repo": "w3c/largest-contentful-paint",
-        "error": "doesn't match SW or DOC contributing",
-        "contributing": "Contributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nFor our editing test-driven process, see [CONTRIBUTING.md](https://github.com/w3c/web-performance/blob/gh-pages/CONTRIBUTING.md).\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
-      },
-      {
-        "repo": "w3c/longtasks",
         "error": "doesn't match SW or DOC contributing",
         "contributing": "Contributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nFor our editing test-driven process, see [CONTRIBUTING.md](https://github.com/w3c/web-performance/blob/gh-pages/CONTRIBUTING.md).\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
       },
@@ -1955,6 +1945,11 @@
         "contributing": "# deprecation-reporting\n\nContributions to this repository are intended to become part of Recommendation-track documents\ngoverned by the [W3C Patent Policy](http://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](http://www.w3.org/Consortium/Legal/copyright-documents). To contribute, you must\neither participate in the relevant W3C Working Group or make a non-member patent licensing\n commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request's body or in subsequent comments.\n\n To add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n ```\n +@github_username\n ```\n\n If you added a contributor by mistake, you can remove them in a comment with:\n\n ```\n -@github_username\n ```\n\n If you are making a pull request on behalf of someone else but you had no part in designing the\n feature, you can remove yourself with the above syntax.\n"
       },
       {
+        "repo": "WICG/device-memory",
+        "error": "doesn't match SW or DOC contributing",
+        "contributing": "Contributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy/) and\n[Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nFor our editing test-driven process, see [CONTRIBUTING.md](https://github.com/w3c/web-performance/blob/gh-pages/CONTRIBUTING.md).\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n"
+      },
+      {
         "repo": "WICG/digital-goods",
         "error": "doesn't match CG contributing",
         "contributing": "# Web Platform Incubator Community Group\n\nThis repository is being used for work in the W3C Web Platform Incubator Community Group, governed by the [W3C Community License\nAgreement (CLA)](http://www.w3.org/community/about/agreements/cla/). To make substantive contributions,\nyou must join the CG.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n"
@@ -2103,6 +2098,11 @@
         "repo": "WICG/local-peer-to-peer",
         "error": "doesn't match CG contributing",
         "contributing": "# Web Platform Incubator Community Group\n\nThis repository is being used for work in the W3C Web Platform Incubator Community Group, governed by the [W3C Community License\nAgreement (CLA)](http://www.w3.org/community/about/agreements/cla/). To make substantive contributions,\nyou must join the CG.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n"
+      },
+      {
+        "repo": "WICG/longtasks",
+        "error": "doesn't match SW or DOC contributing",
+        "contributing": "Contributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nFor our editing test-driven process, see [CONTRIBUTING.md](https://github.com/w3c/web-performance/blob/gh-pages/CONTRIBUTING.md).\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
       },
       {
         "repo": "WICG/manifest-incubations",
@@ -2559,7 +2559,6 @@
       "w3c/csswg-drafts",
       "w3c/danmaku",
       "w3c/data-shapes",
-      "w3c/device-memory",
       "w3c/did",
       "w3c/did-test-suite",
       "w3c/did-threat-model",
@@ -2610,7 +2609,6 @@
       "w3c/klreq",
       "w3c/ldn",
       "w3c/localizable-manifests",
-      "w3c/longtasks",
       "w3c/low-vision-SC",
       "w3c/lpf",
       "w3c/ltli",
@@ -2747,7 +2745,9 @@
       "w3c/xml-entities",
       "w3c/yaml-ld",
       "w3ctag/prevent-credential-abuse",
-      "w3ctag/the-web-is-not-versioned"
+      "w3ctag/the-web-is-not-versioned",
+      "WICG/device-memory",
+      "WICG/longtasks"
     ],
     "usetravisci": [
       "immersive-web/gamepad-haptics",
@@ -2978,7 +2978,6 @@
       "w3c/data-shapes",
       "w3c/design",
       "w3c/dev-support",
-      "w3c/device-memory",
       "w3c/device-posture",
       "w3c/deviceorientation",
       "w3c/did",
@@ -3140,7 +3139,6 @@
       "w3c/localizable-manifests",
       "w3c/logos",
       "w3c/long-animation-frames",
-      "w3c/longtasks",
       "w3c/low-vision-a11y-tf",
       "w3c/low-vision-SC",
       "w3c/lpf",
@@ -3860,6 +3858,7 @@
       "WICG/declarative-partial-updates",
       "WICG/delayed-message-timing",
       "WICG/deprecation-reporting",
+      "WICG/device-memory",
       "WICG/digital-goods",
       "WICG/direct-sockets",
       "WICG/discourse-archive",
@@ -3895,6 +3894,7 @@
       "WICG/local-font-access",
       "WICG/local-network-access",
       "WICG/local-peer-to-peer",
+      "WICG/longtasks",
       "WICG/manifest-incubations",
       "WICG/media-feeds",
       "WICG/media-latency-hint",
@@ -4244,11 +4244,6 @@
         "license": "All documents in this Repository are licensed by contributors\nunder the \n[W3C Software and Document License](http://www.w3.org/Consortium/Legal/copyright-software).\n"
       },
       {
-        "repo": "w3c/device-memory",
-        "error": "doesn't match SW or DOC license",
-        "license": "All documents in this Repository are licensed by contributors\nunder the \n[W3C Software and Document License](http://www.w3.org/Consortium/Legal/copyright-software).\n\n"
-      },
-      {
         "repo": "w3c/device-posture",
         "error": "doesn't match SW or DOC license",
         "license": "All documents in this Repository are licensed by contributors\nunder the\n[W3C Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software).\n\n"
@@ -4440,11 +4435,6 @@
       },
       {
         "repo": "w3c/long-animation-frames",
-        "error": "doesn't match SW or DOC license",
-        "license": "All documents in this Repository are licensed by contributors\nunder the \n[W3C Software and Document License](http://www.w3.org/Consortium/Legal/copyright-software).\n\n"
-      },
-      {
-        "repo": "w3c/longtasks",
         "error": "doesn't match SW or DOC license",
         "license": "All documents in this Repository are licensed by contributors\nunder the \n[W3C Software and Document License](http://www.w3.org/Consortium/Legal/copyright-software).\n\n"
       },
@@ -5479,6 +5469,11 @@
         "license": "All documents in this Repository are licensed by contributors under the [W3C Document\nLicense](http://www.w3.org/Consortium/Legal/copyright-documents).\n"
       },
       {
+        "repo": "WICG/device-memory",
+        "error": "doesn't match SW or DOC license",
+        "license": "All documents in this Repository are licensed by contributors\nunder the \n[W3C Software and Document License](http://www.w3.org/Consortium/Legal/copyright-software).\n\n"
+      },
+      {
         "repo": "WICG/digital-goods",
         "error": "doesn't match CG license",
         "license": "All Reports in this Repository are licensed by Contributors\nunder the\n[W3C Software and Document License](http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document).\n\nContributions to Specifications are made under the\n[W3C CLA](https://www.w3.org/community/about/agreements/cla/).\n\nContributions to Test Suites are made under the\n[W3C 3-clause BSD License](https://www.w3.org/Consortium/Legal/2008/03-bsd-license.html)\n\n"
@@ -5627,6 +5622,11 @@
         "repo": "WICG/local-peer-to-peer",
         "error": "doesn't match CG license",
         "license": "All Reports in this Repository are licensed by Contributors\nunder the\n[W3C Software and Document License](http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document).\n\nContributions to Specifications are made under the\n[W3C CLA](https://www.w3.org/community/about/agreements/cla/).\n\nContributions to Test Suites are made under the\n[W3C 3-clause BSD License](https://www.w3.org/Consortium/Legal/2008/03-bsd-license.html)\n\n"
+      },
+      {
+        "repo": "WICG/longtasks",
+        "error": "doesn't match SW or DOC license",
+        "license": "All documents in this Repository are licensed by contributors\nunder the \n[W3C Software and Document License](http://www.w3.org/Consortium/Legal/copyright-software).\n\n"
       },
       {
         "repo": "WICG/manifest-incubations",
@@ -9299,7 +9299,7 @@
       }
     ]
   },
-  "timestamp": "2026-11-03T00:31:04.927Z",
+  "timestamp": "2026-11-04T00:32:07.711Z",
   "repos": [
     {
       "id": "MDEwOlJlcG9zaXRvcnk4MTAyMTg2MA==",
@@ -39715,144 +39715,6 @@
       },
       "readme": {
         "text": "# W3C Developers\n\n<img height=\"60\" src=\"img/developers-icon.png\" alt=\"Developers by W3C\" />\n\nW3C Developers is a new platform created by the w3c. This landing page aims to group all Open Source tools of W3C developed by the W3C community for developers.\nThe main goal of this page is to create a developer community around W3C tools (as validators, checkers and more...).\n\n## Other Resources\n\nW3C developers joined the W3C Modern Tooling Task Force: [join the Modern Tooling discussion](http://w3c.github.io/modern-tooling/).\n"
-      }
-    },
-    {
-      "id": "MDEwOlJlcG9zaXRvcnk4Nzk5MDY5MA==",
-      "name": "device-memory",
-      "owner": {
-        "login": "w3c"
-      },
-      "isArchived": false,
-      "homepageUrl": "https://w3c.github.io/device-memory/",
-      "description": "Device Memory",
-      "isPrivate": false,
-      "createdAt": "2017-04-12T00:12:37Z",
-      "labels": [
-        {
-          "name": "a11y-needs-resolution",
-          "color": "ea7472"
-        },
-        {
-          "name": "a11y-tracker",
-          "color": "ea7472"
-        },
-        {
-          "name": "bug",
-          "color": "ee0701"
-        },
-        {
-          "name": "duplicate",
-          "color": "cccccc"
-        },
-        {
-          "name": "editorial",
-          "color": "f9c0cb"
-        },
-        {
-          "name": "enhancement",
-          "color": "84b6eb"
-        },
-        {
-          "name": "feature request",
-          "color": "3181bf"
-        },
-        {
-          "name": "help wanted",
-          "color": "128A0C"
-        },
-        {
-          "name": "i18n-needs-resolution",
-          "color": "F9C9FF"
-        },
-        {
-          "name": "i18n-tracker",
-          "color": "F9C9FF"
-        },
-        {
-          "name": "invalid",
-          "color": "e6e6e6"
-        },
-        {
-          "name": "privacy-needs-resolution",
-          "color": "d4af37"
-        },
-        {
-          "name": "privacy-tracker",
-          "color": "d4af37"
-        },
-        {
-          "name": "question",
-          "color": "cc317c"
-        },
-        {
-          "name": "security-needs-resolution",
-          "color": "ffff00"
-        },
-        {
-          "name": "security-tracker",
-          "color": "ffff00"
-        },
-        {
-          "name": "tag-needs-resolution",
-          "color": "7fff00"
-        },
-        {
-          "name": "tag-tracker",
-          "color": "7fff00"
-        },
-        {
-          "name": "wontfix",
-          "color": "ffffff"
-        }
-      ],
-      "defaultBranch": {
-        "name": "main"
-      },
-      "environments": {
-        "nodes": [
-          {
-            "name": "github-pages"
-          }
-        ]
-      },
-      "branchProtectionRules": {
-        "nodes": [
-          {
-            "pattern": "main",
-            "requiredApprovingReviewCount": 1,
-            "requiredStatusCheckContexts": [],
-            "isAdminEnforced": true
-          }
-        ]
-      },
-      "w3cjson": {
-        "text": "{\n  \"group\": 45211,\n  \"contacts\": [\n    \"plehegar\"\n  ],\n  \"shortName\": \"device-memory\",\n  \"repo-type\": \"rec-track\"\n}"
-      },
-      "prpreviewjson": null,
-      "autoPublish": null,
-      "travis": null,
-      "contributing": {
-        "text": "Contributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy/) and\n[Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nFor our editing test-driven process, see [CONTRIBUTING.md](https://github.com/w3c/web-performance/blob/gh-pages/CONTRIBUTING.md).\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n"
-      },
-      "license": {
-        "text": "All documents in this Repository are licensed by contributors\nunder the \n[W3C Software and Document License](http://www.w3.org/Consortium/Legal/copyright-software).\n\n"
-      },
-      "codeOfConduct": {
-        "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n"
-      },
-      "readme": {
-        "text": "# Device Memory\n\nFor the Working Draft, see https://www.w3.org/TR/device-memory/\n\n## Motivation & Use cases\nA “one-size-fits-all” web experience does not work in a world with widely varying device capabilities. Web apps that delight users on high end devices can be unusable on low end devices, particularly in emerging markets.\nTo support a diverse web ecosystem that is inclusive of users on low end devices, apps need to be able to tailor their content to the device constraints. This allows users to consume content suited to their device, and ensures they have a good experience and fewer frustrations.\n\nDevelopers are interested in the “device class” for the following known use-cases:\n1. Serve a “lite” version of the site or specific components, for low end devices. Egs:\n- Google’s \"search lite\" is a 10KB search results page used in EM. \n- Serve a \"lite\" version of video player in Facebook\n- Serve lightweight tile images in Google Maps\n2. Normalize Metrics: analytics need to be able to normalize their metrics against the device-class. \nFor instance, a 100ms long task is a more severe issue on a Pixel vs. on a low end device.\n\nDevice memory is an interesting signal in this context. Low memory devices devices are widely used in emerging markets. Chrome telemetry indicates a large number of OOM (out-of-memory) crashes on foreground tabs on these devices. In this case, serving a lite version not only improves the user experience, it is necessary for the site to be usable at all (as opposed to crashing due to memory constraints).\n\n## Proposal\nWe propose a new HTTP Client Hints header and a web exposed API to surface device capabilities for memory (RAM).\nA Client Hints header will enable the server to deliver appropriate content, eg. a “lite” version of the site.\nThe JS API will be a convenience for analytics reporting and may be used to make runtime decisions eg. using more storage vs. making additional requests, requesting appropriate resources from the server etc.\n\n### The Header\nProposed Client Hints Header for memory: `Sec-CH-Device-Memory`\\\n`Sec-CH-Device-Memory : <value>`\\\nwhere `<value>` is an approximation of the amount of RAM in GiB (floating point number).\\\nThe `<value>` is calculated by using the actual device memory in MiB then rounding it to the nearest number where only the most significant bit can be set and the rest are zeros (nearest power of two). Then dividing that number by 1024.0 to get the value in GiB.\n\nAn upper bound and a lower bound should be set on the list of values so the fingerprinting is mitigated. The Implementations may set upper and lower bounds and adjust them dynamically over time. These bounds may even differ on different device types.\n\nThe following table illustrates some examples (note no bounds are set in these examples):\n\n| Actual in MiB | Rounded in MiB | Reported in GiB |\n|---------------|----------------|-----------------|\n| 1,793         | 2,048          | 2               |\n| 3,000         | 2,048          | 2               |\n| 3,072         | 2,048          | 2               |\n| 3,073         | 4,096          | 4               |\n| 16,384        | 16,384         | 16              |\n| 24,576        | 16,384         | 16              |\n\n#### Why separate header and rounding?\nHTTP caching doesn't deal well with mixed value headers, therefore separate headers are recommended. Also, rounding down to power of two enables caching and mitigates fingerprinting.\n\n#### When is the header sent?\nClient Hints cannot be used to enable providing network performance data on the first request, however this is being actively addressed with [this proposal](https://github.com/httpwg/http-extensions/issues/306#issuecomment-283549512).\nThe header is sent after an explicit per-origin opt-in via Client Hints mechanism. The following new hint will be added: `Accept-CH: Sec-CH-Device-Memory`\n\nFor background, [Client Hints](http://httpwg.org/http-extensions/client-hints.html) provides a set of HTTP request header fields, known as Client Hints, to deliver content that is optimized for the device. In that sense using Client Hints is a great fit for this proposal.\nClient Hints recently addressed a [significant limitation in spec](https://github.com/httpwg/http-extensions/issues/306#issuecomment-283549512): opt-in can now be persisted across browser restarts using `max-age` in header.\n\n#### Usage Guidance\nServers can advertise support for Client Hints using the Accept-CH header field or an equivalent HTML meta element with http-equiv attribute\n```\n  Accept-CH = Sec-CH-Device-Memory\n```\n\nThe Memory request header field is a number for the client’s device memory i.e. approximate amount of ram in GiB.\neg. 2024 MiB will be reported as:\n```\n  Sec-CH-Device-Memory: 2\n```\n\nServers can use this header to customize content for low memory device eg. serve light version of the app or a component such as a video player.\n\nNOTE: This header will not be immediately available in all browser. Do not assume presence of the header, and provide a graceful fallback for browsers that don't support the header.\n\n### The web exposed API\nWe propose adding the following API to navigator: `navigator.deviceMemory`\nwhich returns number of GiB of ram (floating point number) rounded to the nearest power of two (same as the header).\n\n## Why not surface Device Class directly?\nWhile exposing a composite “Device Class” would be useful for developers, it has a number of challenges: it’s hard to specify in a future-proof manner as it is constantly changing, it requires significant and ongoing work (constantly update algorithm OR classify known devices), it is difficult to reach agreement amongst vendors, and come up with something that works for all web sites etc.\nWhile this is something worth considering down the road, we think we can get most of the benefit by exposing a couple of specific signals device memory and device CPU cores. In particular device memory is a reasonable proxy for device class.\n\n## Security & Privacy\nThe client hint header and API will only be available on HTTPS secure connections.\n\nSee [Security section in Client Hints](http://httpwg.org/http-extensions/client-hints.html#security-considerations).\nRequiring per-origin opt-in with Accept-CH restricts when the header is advertised.\nTo reduce fingerprinting risk, reported value is rounded to single most significant bit, as opposed to reporting the exact value. In addition, an upper and lower bound is placed on the reported values.\n\nNOTE: Device identification is already possible and rampant today, based on UA string. E.g. https://deviceatlas.com/products/web\n\n## Relevant Links\n\n* [Facebook's device year class](https://github.com/facebook/device-year-class)\n* [HTTP Client Hints](https://github.com/igrigorik/http-client-hints)\n* [HTTP Client Hints User Guide](https://developers.google.com/web/updates/2015/09/automating-resource-selection-with-client-hints)\n* [Similar proposal for Network Speed](https://github.com/WICG/netinfo/issues/46)\n* [NavigatorConcurrentHardware API](https://developer.mozilla.org/en-US/docs/Web/API/NavigatorConcurrentHardware)\n"
-      },
-      "w3c": {
-        "group": 45211,
-        "contacts": [
-          "plehegar"
-        ],
-        "shortName": "device-memory",
-        "repo-type": [
-          "rec-track"
-        ]
       }
     },
     {
@@ -70424,166 +70286,6 @@
       }
     },
     {
-      "id": "MDEwOlJlcG9zaXRvcnk2NDE3MzIyNQ==",
-      "name": "longtasks",
-      "owner": {
-        "login": "w3c"
-      },
-      "isArchived": false,
-      "homepageUrl": "https://w3c.github.io/longtasks/",
-      "description": "Long Task API",
-      "isPrivate": false,
-      "createdAt": "2016-07-25T22:54:37Z",
-      "labels": [
-        {
-          "name": "a11y-needs-resolution",
-          "color": "ea7472"
-        },
-        {
-          "name": "a11y-tracker",
-          "color": "ea7472"
-        },
-        {
-          "name": "bug",
-          "color": "ee0701"
-        },
-        {
-          "name": "duplicate",
-          "color": "cccccc"
-        },
-        {
-          "name": "editorial",
-          "color": "fef2c0"
-        },
-        {
-          "name": "enhancement",
-          "color": "84b6eb"
-        },
-        {
-          "name": "hackathon_2020",
-          "color": "00A626"
-        },
-        {
-          "name": "help wanted",
-          "color": "128A0C"
-        },
-        {
-          "name": "i18n-needs-resolution",
-          "color": "F9C9FF"
-        },
-        {
-          "name": "i18n-tracker",
-          "color": "F9C9FF"
-        },
-        {
-          "name": "invalid",
-          "color": "e6e6e6"
-        },
-        {
-          "name": "needs tests",
-          "color": "d4c5f9"
-        },
-        {
-          "name": "privacy-needs-resolution",
-          "color": "d4af37"
-        },
-        {
-          "name": "privacy-tracker",
-          "color": "d4af37"
-        },
-        {
-          "name": "question",
-          "color": "cc317c"
-        },
-        {
-          "name": "requires-discussion",
-          "color": "f2e532"
-        },
-        {
-          "name": "requires-work",
-          "color": "c5def5"
-        },
-        {
-          "name": "security-needs-resolution",
-          "color": "ffff00"
-        },
-        {
-          "name": "security-tracker",
-          "color": "ffff00"
-        },
-        {
-          "name": "tag-needs-resolution",
-          "color": "7fff00"
-        },
-        {
-          "name": "tag-tracker",
-          "color": "7fff00"
-        },
-        {
-          "name": "test:missing-coverage",
-          "color": "d4c5f9"
-        },
-        {
-          "name": "wontfix",
-          "color": "ffffff"
-        }
-      ],
-      "defaultBranch": {
-        "name": "main"
-      },
-      "environments": {
-        "nodes": [
-          {
-            "name": "github-pages"
-          }
-        ]
-      },
-      "branchProtectionRules": {
-        "nodes": [
-          {
-            "pattern": "main",
-            "requiredApprovingReviewCount": 1,
-            "requiredStatusCheckContexts": [],
-            "isAdminEnforced": true
-          }
-        ]
-      },
-      "w3cjson": {
-        "text": "{\n  \"group\": 45211,\n  \"contacts\": [\n    \"carine\"\n  ],\n  \"shortName\": \"longtasks\",\n  \"repo-type\": \"rec-track\"\n}\n"
-      },
-      "prpreviewjson": {
-        "text": "{\n    \"src_file\": \"index.bs\",\n    \"type\": \"bikeshed\"\n}\n"
-      },
-      "autoPublish": null,
-      "travis": null,
-      "contributing": {
-        "text": "Contributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nFor our editing test-driven process, see [CONTRIBUTING.md](https://github.com/w3c/web-performance/blob/gh-pages/CONTRIBUTING.md).\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
-      },
-      "license": {
-        "text": "All documents in this Repository are licensed by contributors\nunder the \n[W3C Software and Document License](http://www.w3.org/Consortium/Legal/copyright-software).\n\n"
-      },
-      "codeOfConduct": {
-        "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n"
-      },
-      "readme": {
-        "text": "# Long Task API\n\nLong Tasks is a new real user measurement (RUM) performance API to enable applications to measure responsiveness. It enables detecting presence of “long tasks” that monopolize the UI thread for extended periods of time and block other critical tasks from being executed - e.g. reacting to user input.\n\n## Background\nAs the page is loading and while the user is interacting with the page afterwards, both the application and browser queue various events that are then executed by the browser -- e.g. the user agent schedules input events based on user’s activity, the application schedules callbacks for requestAnimationFrame and other callbacks etc. Once in the queue, these events are then dequeued one-by-one by the browser and executed — see [“the anatomy of a frame”](https://aerotwist.com/blog/the-anatomy-of-a-frame) for a high-level overview of this process in Blink.\n\nHowever, some tasks can take a long time (multiple frames), and if and when that happens, the UI thread is locked and all other tasks are blocked as well. To the user this is commonly visible as a “locked up” page where the browser is unable to respond to user input; this is a major source of bad user experience on the web today:\n\n* _Delayed [“time to Interactive”](https://github.com/tdresser/time-to-interactive)_:  while the page is loading long tasks often tie up the main thread and prevent the user from interacting with the page even though the page is visually rendered. Poorly designed third-party content is a frequent culprit.\n* _High/variable input latency_: critical user interaction events (tap, click, scroll, wheel, etc) are queued behind long tasks, which yields janky and unpredictable user experience.\n* _High/variable event handling latency_: similar to input, but for processing event callbacks (e.g. onload events, and so on), which delay application updates.\n* _Janky animations and scrolling_: some animation and scrolling interactions require coordination between compositor and main threads; if the main thread is blocked due to a long task, it can affect responsiveness of animations and scrolling.\n\nSome applications (and RUM vendors) are already attempting to identify and track cases where “long tasks” happen. For example, one known pattern is to install a ~short periodic timer and inspect the elapsed time between the successive calls: if the elapsed time is greater than the timer period, then there is high likelihood that one or more long tasks have delayed execution of the timer. This mostly works, but it has several bad performance implications: the application is polling to detect long tasks, which prevents quiescence and long idle blocks (see requestIdleCallback); it’s bad for battery life; and there is no way to know what caused the delay. (e.g. first party vs third party code)\n\n[RAIL performance model](https://developers.google.com/web/tools/chrome-devtools/profile/evaluate-performance/rail?hl=en#response-respond-in-under-100ms) suggests that applications should respond in under 100ms to user input; for touch move and scrolling in under 16ms. Our goal with this API is to surface notifications about tasks that may prevent the application from hitting these targets.\n\n## Terminology\nMajor terms:\n* **frame** or **frame context** refers to the browsing context, such as iframe (not animation frame), embed or object\n* **culprit frame** refers to the frame or container (iframe, object, embed etc) that is being implicated for the long task\n* **attribution** refers to identifying the type of work (such as script, layout etc.) that contributed significantly to the long task AND which browsing context or frame is responsible for that work.\n* **minimal frame attribution** refers to the browsing context or frame that is being implicated overall for the long task\n\n## V1 API\nLong Task API introduces a new PerformanceEntry object, which will report instances of long tasks:\n```javascript\ninterface PerformanceLongTaskTiming : PerformanceEntry {\n  [SameObject, SaveSameObject] readonly attribute FrozenArray<TaskAttributionTiming> attribution;\n};\n```\n\nAttribute definitions of PerformanceLongTaskTiming:\n* entryType: \"longtask\"\n* startTime: `DOMHighResTimeStamp` of when long task started\n* duration: elapsed time (as `DOMHighResTimeStamp`) between start and finish of task\n* name: minimal frame attribution, eg. \"same-origin\", \"cross-origin\", \"unknown\" etc. Possible values are:\n * \"self\"\n * \"same-origin-ancestor\"\n * \"same-origin-descendant\"\n * \"same-origin\"\n * \"cross-origin-ancestor\"\n * \"cross-origin-descendant\"\n * \"cross-origin-unreachable\"\n * \"multiple-contexts\"\n * \"unknown\"\n\n* attribution: `sequence` of `TaskAttributionTiming`, a new `PerformanceEntry` object to report attribution within long tasks. To see how `attribute` is populated for different values of `name` see the section below: [Pointing to the culprit](#pointing-to-the-culprit)\n\n```javascript\ninterface TaskAttributionTiming : PerformanceEntry {\n  readonly attribute DOMString containerType;\n  readonly attribute DOMString containerSrc;\n  readonly attribute DOMString containerId;\n  readonly attribute DOMString containerName;\n};\n```\n\nAttribute definitions of TaskAttributionTiming:\n* entryType: “taskattribution”\n* startTime: 0\n* duration: 0\n* name: type of attribution, eg. \"script\" or \"layout\"\n* containerType: type of container for culprit frame eg. \"iframe\" (most common), \"embed\", \"object\".\n* containerName: `DOMString`, container’s name attribute\n* containerId: `DOMString`, container’s id attribute\n* containerSrc: `DOMString`, container’s src attribute\n\n\nLong tasks events will be delivered to all observers (in frames within the page or tab) regardless of which frame was responsible for the long task. The goal is to allow all pages on the web to know if and who (first party content or third party content) is causing disruptions. \n\nThe `name` field provides minimal frame attribution so that the observing frame can respond to the issue in the proper way. In addition, the `attribution` field provides further insight into the type of work (script, layout etc) that caused the long task as well as which frame is responsible for that work. For more details on how the `attribution` is set, see the \"Pointing to the culprit\" section.\n\nThe above covers existing use cases found in the wild, enables document-level attribution, and eliminates the negative performance implications mentioned earlier. To receive these notifications, the application can subscribe to them via PerformanceObserver interface:\n\n```javascript\nconst observer = new PerformanceObserver(function(list) {\n  for (const entry of list.getEntries()) {\n     // Process long task notifications:\n     // report back for analytics and monitoring\n     // ...\n  }\n});\n\n\n// Register observer for long task notifications.\n// Since the \"buffered\" flag is set, longtasks that already occurred are received.\nobserver.observe({type: \"longtask\", buffered: true});\n\n// Long script execution after this will result in queueing \n// and receiving “longtask” entries in the observer.\n```\n\n**Long-task threshold is 50ms.** That is, the UA should emit long-task events whenever it detects tasks whose execution time exceeds >50ms. \n\n### Demo\nFor a quick demo, visit this [website](https://longtasks.glitch.me/render-jank-demo.html) on a browser which supports the Long Tasks API.\n\nFor a demo of long tasks from same-origin & cross-origin frames, see this [website](https://longtasks.glitch.me/demo.html).\nInteracting with the iframed wikipedia page will generate cross-origin long task notifications.\n\n### Pointing to the culprit\nLong task represents the top level event loop task. Within this task, different types of work (such as script, layout, style etc) may be done, and they could be executed within different frame contexts. The type of work could also be global in nature such as a long GC that is process or frame-tree wide.\n\nThus pointing to the culprit has couple of facets:\n* Pointing to the overall frame to blame for the long task on the whole: this is refered to as \"minimal frame attribution\" and is captured in the `name` field\n* Pointing to the type of work involved in the task, and its associated frame context: this is captured in `TaskAttributionTiming` objects in the `attribution` field of `PerformanceLongTaskTiming` \n\nTherefore, `name` and `attribution` fields on PerformanceLongTaskTiming together paint the picture for where the blame rests for a long task.\n\nThe security model of the web means that sometimes a long task will happen in an iframe that is unreachable from the observing frame. For instance, a long task might happen in a deeply nested iframe that is different from my origin. Or similarly, I might be an iframe doubly embedded in a document, and a long task will happen in the top-level browsing context. In the web security model, I can know from which direction the issue came, one of my ancestors or descendants, but to preserve the frame origin model, we must be careful about pointing to the specific container or frame.\n\nCurrently the TaskAttributionTiming entry in `attribution` is populated with \"script\" work (in the future layout, style etc will be added). The container or frame implicated in `attribution` should match up with the `name` as follows:\n\n| value of `name`         | frame implicated in `attribution`| \n| ----------------------- |:-------------------------:| \n| self                    | empty                     | \n| same-origin-ancestor    | same-origin culprit frame |\n| same-origin-descendant  | same-origin culprit frame | \n| same-origin             | same-origin culprit frame | \n| cross-origin-ancestor   | empty                     |\n| cross-origin-descendant | first cross-origin child frame between my own frame and culprit frame|\n| cross-origin-unreachable| empty                     |\n| multiple-contexts       | empty                     |\n| unknown                 | empty                     |\n\n\n## Privacy & Security\nLong Tasks API surfaces long tasks greater than a threshold (50ms) to developers via Javascript (Performance Observer API). It includes origin-safe attribution information about the source of the long task.\nThere is a 50ms threshold for long tasks. Together this provides adequate protection against security attacks against browser.\n\nHowever, privacy related attacks are possible, while the API doesn’t introduce any new privacy attacks, it could expedite existing privacy attacks. If this were to become an concern, additional mitigations can be implemented to address this such as dropping \"culprit\" after a per-target origin threshold is exceeded, or limiting to 10 origins per minute etc.\n\nDetailed Security & Privacy doc is here:\nhttps://docs.google.com/document/d/1tIMI1gau_q6X5EBnjDNiFS5NWV9cpYJ5KKA7xPd3VB8/edit#\n\n## V2 API Sketch\nSee: https://docs.google.com/document/d/125d69JAC7nyx-Ob0a9Z31d1uHUGu4myYQ3os9EnGfdU/edit\n\n## Alternatives Considered\n### Why not just show sub-tasks vs. top-level tasks with attribution?\nThis API will show toplevel long tasks along with attribution for specific sub-tasks which were problematic.\nFor instance, within a 50ms toplevel task, sub-tasks such as a 20ms script execution or a 30ms style & layout update -- will be attributed.\nThis raises the question -- why show the toplevel task at all? Why not only show long sub-tasks such as script, style & layout etc that are directly actionable by the user? The top level task may contain some un-attributable segments such as browser work eg. GC or browser events etc.\n\nThe rationale here is that showing the toplevel task is good for web developers, even though they will actively consume the actionable sub-tasks such as long scripts and act on them. Over time the sub-task attribution will keep expanding, making more of the long task actionable.\nShowing the top-level task gives developers a direct indication of main thread busy-ness, and since this directly impacts the user experience, it is appropriate for them to know about it as a problem signal -- even if they cannot have complete visibility or full actionability for the entire length of the long task. \nIn many cases the developers may be able to repro in lab or locally and glean additional insights and get to the root cause. \nLong tasks provide context to long sub-tasks, for instance, a 20ms style and layout or a 25ms script execution may not be terrible by themselves, but if they happen consecutively (eg. script started from rAF) and cause a long 50ms task, then this is a problem for user responsiveness.\n\n"
-      },
-      "prpreview": {
-        "src_file": "index.bs",
-        "type": "bikeshed"
-      },
-      "w3c": {
-        "group": 45211,
-        "contacts": [
-          "carine"
-        ],
-        "shortName": "longtasks",
-        "repo-type": [
-          "rec-track"
-        ]
-      }
-    },
-    {
       "id": "MDEwOlJlcG9zaXRvcnk0MjQ2NjkxMQ==",
       "name": "low-vision-a11y-tf",
       "owner": {
@@ -71578,6 +71280,22 @@
           "color": "d73a4a"
         },
         {
+          "name": "class-1",
+          "color": "845d08"
+        },
+        {
+          "name": "class-2",
+          "color": "e7dd4f"
+        },
+        {
+          "name": "class-3",
+          "color": "e0efff"
+        },
+        {
+          "name": "class-4",
+          "color": "b07fcd"
+        },
+        {
           "name": "documentation",
           "color": "0075ca"
         },
@@ -71624,6 +71342,18 @@
         {
           "name": "question",
           "color": "d876e3"
+        },
+        {
+          "name": "requirement-add",
+          "color": "6f3cf5"
+        },
+        {
+          "name": "requirement-delete",
+          "color": "01555b"
+        },
+        {
+          "name": "requirement-modify",
+          "color": "f5273c"
         },
         {
           "name": "review",
@@ -153913,7 +153643,7 @@
         "text": "{\n  \"src_file\": \"index.bs\",\n  \"type\": \"bikeshed\"\n}\n"
       },
       "autoPublish": {
-        "text": "name: deploy\non:\n  pull_request: {}\n  push:\n    branches: [main]\njobs:\n  deploy:\n    runs-on: ubuntu-24.04\n    steps:\n    - uses: actions/checkout@v7\n    - uses: w3c/spec-prod@v2.13.3\n      with:\n        GH_PAGES_BRANCH: gh-pages\n        W3C_ECHIDNA_TOKEN: ${{ secrets.ECHIDNA_TOKEN }}\n        W3C_WG_DECISION_URL: https://lists.w3.org/Archives/Public/public-browser-tools-testing/2024OctDec/0003.html\n        W3C_BUILD_OVERRIDE: |\n          status: WD\n"
+        "text": "name: deploy\non:\n  pull_request: {}\n  push:\n    branches: [main]\njobs:\n  deploy:\n    runs-on: ubuntu-24.04\n    steps:\n    - uses: actions/checkout@v7\n    - uses: w3c/spec-prod@v2.14.1\n      with:\n        GH_PAGES_BRANCH: gh-pages\n        W3C_ECHIDNA_TOKEN: ${{ secrets.ECHIDNA_TOKEN }}\n        W3C_WG_DECISION_URL: https://lists.w3.org/Archives/Public/public-browser-tools-testing/2024OctDec/0003.html\n        W3C_BUILD_OVERRIDE: |\n          status: WD\n"
       },
       "travis": null,
       "contributing": null,
@@ -192956,17 +192686,25 @@
       }
     },
     {
-      "id": "MDEwOlJlcG9zaXRvcnkxMDExNzY4ODE=",
+      "id": "MDEwOlJlcG9zaXRvcnk4Nzk5MDY5MA==",
       "name": "device-memory",
       "owner": {
         "login": "WICG"
       },
-      "isArchived": true,
-      "homepageUrl": null,
-      "description": "Redirection repo to the real spec",
+      "isArchived": false,
+      "homepageUrl": "https://wicg.github.io/device-memory/",
+      "description": "Device Memory",
       "isPrivate": false,
-      "createdAt": "2017-08-23T12:21:26Z",
+      "createdAt": "2017-04-12T00:12:37Z",
       "labels": [
+        {
+          "name": "a11y-needs-resolution",
+          "color": "ea7472"
+        },
+        {
+          "name": "a11y-tracker",
+          "color": "ea7472"
+        },
         {
           "name": "bug",
           "color": "ee0701"
@@ -192976,20 +192714,60 @@
           "color": "cccccc"
         },
         {
+          "name": "editorial",
+          "color": "f9c0cb"
+        },
+        {
           "name": "enhancement",
           "color": "84b6eb"
+        },
+        {
+          "name": "feature request",
+          "color": "3181bf"
         },
         {
           "name": "help wanted",
           "color": "128A0C"
         },
         {
+          "name": "i18n-needs-resolution",
+          "color": "F9C9FF"
+        },
+        {
+          "name": "i18n-tracker",
+          "color": "F9C9FF"
+        },
+        {
           "name": "invalid",
           "color": "e6e6e6"
         },
         {
+          "name": "privacy-needs-resolution",
+          "color": "d4af37"
+        },
+        {
+          "name": "privacy-tracker",
+          "color": "d4af37"
+        },
+        {
           "name": "question",
           "color": "cc317c"
+        },
+        {
+          "name": "security-needs-resolution",
+          "color": "ffff00"
+        },
+        {
+          "name": "security-tracker",
+          "color": "ffff00"
+        },
+        {
+          "name": "tag-needs-resolution",
+          "color": "7fff00"
+        },
+        {
+          "name": "tag-tracker",
+          "color": "7fff00"
         },
         {
           "name": "wontfix",
@@ -192997,7 +192775,7 @@
         }
       ],
       "defaultBranch": {
-        "name": "gh-pages"
+        "name": "main"
       },
       "environments": {
         "nodes": [
@@ -193007,16 +192785,43 @@
         ]
       },
       "branchProtectionRules": {
-        "nodes": []
+        "nodes": [
+          {
+            "pattern": "main",
+            "requiredApprovingReviewCount": 1,
+            "requiredStatusCheckContexts": [],
+            "isAdminEnforced": true
+          }
+        ]
       },
-      "w3cjson": null,
+      "w3cjson": {
+        "text": "{\n  \"group\": 45211,\n  \"contacts\": [\n    \"plehegar\"\n  ],\n  \"shortName\": \"device-memory\",\n  \"repo-type\": \"rec-track\"\n}"
+      },
       "prpreviewjson": null,
       "autoPublish": null,
       "travis": null,
-      "contributing": null,
-      "license": null,
-      "codeOfConduct": null,
-      "readme": null
+      "contributing": {
+        "text": "Contributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy/) and\n[Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nFor our editing test-driven process, see [CONTRIBUTING.md](https://github.com/w3c/web-performance/blob/gh-pages/CONTRIBUTING.md).\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n"
+      },
+      "license": {
+        "text": "All documents in this Repository are licensed by contributors\nunder the \n[W3C Software and Document License](http://www.w3.org/Consortium/Legal/copyright-software).\n\n"
+      },
+      "codeOfConduct": {
+        "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n"
+      },
+      "readme": {
+        "text": "# Device Memory\n\nFor the Working Draft, see https://www.w3.org/TR/device-memory/\n\n## Motivation & Use cases\nA “one-size-fits-all” web experience does not work in a world with widely varying device capabilities. Web apps that delight users on high end devices can be unusable on low end devices, particularly in emerging markets.\nTo support a diverse web ecosystem that is inclusive of users on low end devices, apps need to be able to tailor their content to the device constraints. This allows users to consume content suited to their device, and ensures they have a good experience and fewer frustrations.\n\nDevelopers are interested in the “device class” for the following known use-cases:\n1. Serve a “lite” version of the site or specific components, for low end devices. Egs:\n- Google’s \"search lite\" is a 10KB search results page used in EM. \n- Serve a \"lite\" version of video player in Facebook\n- Serve lightweight tile images in Google Maps\n2. Normalize Metrics: analytics need to be able to normalize their metrics against the device-class. \nFor instance, a 100ms long task is a more severe issue on a Pixel vs. on a low end device.\n\nDevice memory is an interesting signal in this context. Low memory devices devices are widely used in emerging markets. Chrome telemetry indicates a large number of OOM (out-of-memory) crashes on foreground tabs on these devices. In this case, serving a lite version not only improves the user experience, it is necessary for the site to be usable at all (as opposed to crashing due to memory constraints).\n\n## Proposal\nWe propose a new HTTP Client Hints header and a web exposed API to surface device capabilities for memory (RAM).\nA Client Hints header will enable the server to deliver appropriate content, eg. a “lite” version of the site.\nThe JS API will be a convenience for analytics reporting and may be used to make runtime decisions eg. using more storage vs. making additional requests, requesting appropriate resources from the server etc.\n\n### The Header\nProposed Client Hints Header for memory: `Sec-CH-Device-Memory`\\\n`Sec-CH-Device-Memory : <value>`\\\nwhere `<value>` is an approximation of the amount of RAM in GiB (floating point number).\\\nThe `<value>` is calculated by using the actual device memory in MiB then rounding it to the nearest number where only the most significant bit can be set and the rest are zeros (nearest power of two). Then dividing that number by 1024.0 to get the value in GiB.\n\nAn upper bound and a lower bound should be set on the list of values so the fingerprinting is mitigated. The Implementations may set upper and lower bounds and adjust them dynamically over time. These bounds may even differ on different device types.\n\nThe following table illustrates some examples (note no bounds are set in these examples):\n\n| Actual in MiB | Rounded in MiB | Reported in GiB |\n|---------------|----------------|-----------------|\n| 1,793         | 2,048          | 2               |\n| 3,000         | 2,048          | 2               |\n| 3,072         | 2,048          | 2               |\n| 3,073         | 4,096          | 4               |\n| 16,384        | 16,384         | 16              |\n| 24,576        | 16,384         | 16              |\n\n#### Why separate header and rounding?\nHTTP caching doesn't deal well with mixed value headers, therefore separate headers are recommended. Also, rounding down to power of two enables caching and mitigates fingerprinting.\n\n#### When is the header sent?\nClient Hints cannot be used to enable providing network performance data on the first request, however this is being actively addressed with [this proposal](https://github.com/httpwg/http-extensions/issues/306#issuecomment-283549512).\nThe header is sent after an explicit per-origin opt-in via Client Hints mechanism. The following new hint will be added: `Accept-CH: Sec-CH-Device-Memory`\n\nFor background, [Client Hints](http://httpwg.org/http-extensions/client-hints.html) provides a set of HTTP request header fields, known as Client Hints, to deliver content that is optimized for the device. In that sense using Client Hints is a great fit for this proposal.\nClient Hints recently addressed a [significant limitation in spec](https://github.com/httpwg/http-extensions/issues/306#issuecomment-283549512): opt-in can now be persisted across browser restarts using `max-age` in header.\n\n#### Usage Guidance\nServers can advertise support for Client Hints using the Accept-CH header field or an equivalent HTML meta element with http-equiv attribute\n```\n  Accept-CH = Sec-CH-Device-Memory\n```\n\nThe Memory request header field is a number for the client’s device memory i.e. approximate amount of ram in GiB.\neg. 2024 MiB will be reported as:\n```\n  Sec-CH-Device-Memory: 2\n```\n\nServers can use this header to customize content for low memory device eg. serve light version of the app or a component such as a video player.\n\nNOTE: This header will not be immediately available in all browser. Do not assume presence of the header, and provide a graceful fallback for browsers that don't support the header.\n\n### The web exposed API\nWe propose adding the following API to navigator: `navigator.deviceMemory`\nwhich returns number of GiB of ram (floating point number) rounded to the nearest power of two (same as the header).\n\n## Why not surface Device Class directly?\nWhile exposing a composite “Device Class” would be useful for developers, it has a number of challenges: it’s hard to specify in a future-proof manner as it is constantly changing, it requires significant and ongoing work (constantly update algorithm OR classify known devices), it is difficult to reach agreement amongst vendors, and come up with something that works for all web sites etc.\nWhile this is something worth considering down the road, we think we can get most of the benefit by exposing a couple of specific signals device memory and device CPU cores. In particular device memory is a reasonable proxy for device class.\n\n## Security & Privacy\nThe client hint header and API will only be available on HTTPS secure connections.\n\nSee [Security section in Client Hints](http://httpwg.org/http-extensions/client-hints.html#security-considerations).\nRequiring per-origin opt-in with Accept-CH restricts when the header is advertised.\nTo reduce fingerprinting risk, reported value is rounded to single most significant bit, as opposed to reporting the exact value. In addition, an upper and lower bound is placed on the reported values.\n\nNOTE: Device identification is already possible and rampant today, based on UA string. E.g. https://deviceatlas.com/products/web\n\n## Relevant Links\n\n* [Facebook's device year class](https://github.com/facebook/device-year-class)\n* [HTTP Client Hints](https://github.com/igrigorik/http-client-hints)\n* [HTTP Client Hints User Guide](https://developers.google.com/web/updates/2015/09/automating-resource-selection-with-client-hints)\n* [Similar proposal for Network Speed](https://github.com/WICG/netinfo/issues/46)\n* [NavigatorConcurrentHardware API](https://developer.mozilla.org/en-US/docs/Web/API/NavigatorConcurrentHardware)\n"
+      },
+      "w3c": {
+        "group": 45211,
+        "contacts": [
+          "plehegar"
+        ],
+        "shortName": "device-memory",
+        "repo-type": [
+          "rec-track"
+        ]
+      }
     },
     {
       "id": "MDEwOlJlcG9zaXRvcnkxMTAyODY1Mjc=",
@@ -200183,17 +199988,25 @@
       }
     },
     {
-      "id": "MDEwOlJlcG9zaXRvcnk4NjEwNzgwNA==",
+      "id": "MDEwOlJlcG9zaXRvcnk2NDE3MzIyNQ==",
       "name": "longtasks",
       "owner": {
         "login": "WICG"
       },
-      "isArchived": true,
-      "homepageUrl": "https://github.com/w3c/longtasks",
-      "description": "This repo has moved to the W3C org!",
+      "isArchived": false,
+      "homepageUrl": "https://wicg.github.io/longtasks/",
+      "description": "Long Task API",
       "isPrivate": false,
-      "createdAt": "2017-03-24T20:26:27Z",
+      "createdAt": "2016-07-25T22:54:37Z",
       "labels": [
+        {
+          "name": "a11y-needs-resolution",
+          "color": "ea7472"
+        },
+        {
+          "name": "a11y-tracker",
+          "color": "ea7472"
+        },
         {
           "name": "bug",
           "color": "ee0701"
@@ -200203,20 +200016,76 @@
           "color": "cccccc"
         },
         {
+          "name": "editorial",
+          "color": "fef2c0"
+        },
+        {
           "name": "enhancement",
           "color": "84b6eb"
+        },
+        {
+          "name": "hackathon_2020",
+          "color": "00A626"
         },
         {
           "name": "help wanted",
           "color": "128A0C"
         },
         {
+          "name": "i18n-needs-resolution",
+          "color": "F9C9FF"
+        },
+        {
+          "name": "i18n-tracker",
+          "color": "F9C9FF"
+        },
+        {
           "name": "invalid",
           "color": "e6e6e6"
         },
         {
+          "name": "needs tests",
+          "color": "d4c5f9"
+        },
+        {
+          "name": "privacy-needs-resolution",
+          "color": "d4af37"
+        },
+        {
+          "name": "privacy-tracker",
+          "color": "d4af37"
+        },
+        {
           "name": "question",
           "color": "cc317c"
+        },
+        {
+          "name": "requires-discussion",
+          "color": "f2e532"
+        },
+        {
+          "name": "requires-work",
+          "color": "c5def5"
+        },
+        {
+          "name": "security-needs-resolution",
+          "color": "ffff00"
+        },
+        {
+          "name": "security-tracker",
+          "color": "ffff00"
+        },
+        {
+          "name": "tag-needs-resolution",
+          "color": "7fff00"
+        },
+        {
+          "name": "tag-tracker",
+          "color": "7fff00"
+        },
+        {
+          "name": "test:missing-coverage",
+          "color": "d4c5f9"
         },
         {
           "name": "wontfix",
@@ -200224,7 +200093,7 @@
         }
       ],
       "defaultBranch": {
-        "name": "gh-pages"
+        "name": "main"
       },
       "environments": {
         "nodes": [
@@ -200234,16 +200103,49 @@
         ]
       },
       "branchProtectionRules": {
-        "nodes": []
+        "nodes": [
+          {
+            "pattern": "main",
+            "requiredApprovingReviewCount": 1,
+            "requiredStatusCheckContexts": [],
+            "isAdminEnforced": true
+          }
+        ]
       },
-      "w3cjson": null,
-      "prpreviewjson": null,
+      "w3cjson": {
+        "text": "{\n  \"group\": 45211,\n  \"contacts\": [\n    \"carine\"\n  ],\n  \"shortName\": \"longtasks\",\n  \"repo-type\": \"rec-track\"\n}\n"
+      },
+      "prpreviewjson": {
+        "text": "{\n    \"src_file\": \"index.bs\",\n    \"type\": \"bikeshed\"\n}\n"
+      },
       "autoPublish": null,
       "travis": null,
-      "contributing": null,
-      "license": null,
-      "codeOfConduct": null,
-      "readme": null
+      "contributing": {
+        "text": "Contributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nFor our editing test-driven process, see [CONTRIBUTING.md](https://github.com/w3c/web-performance/blob/gh-pages/CONTRIBUTING.md).\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
+      },
+      "license": {
+        "text": "All documents in this Repository are licensed by contributors\nunder the \n[W3C Software and Document License](http://www.w3.org/Consortium/Legal/copyright-software).\n\n"
+      },
+      "codeOfConduct": {
+        "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n"
+      },
+      "readme": {
+        "text": "# Long Task API\n\nLong Tasks is a new real user measurement (RUM) performance API to enable applications to measure responsiveness. It enables detecting presence of “long tasks” that monopolize the UI thread for extended periods of time and block other critical tasks from being executed - e.g. reacting to user input.\n\n## Background\nAs the page is loading and while the user is interacting with the page afterwards, both the application and browser queue various events that are then executed by the browser -- e.g. the user agent schedules input events based on user’s activity, the application schedules callbacks for requestAnimationFrame and other callbacks etc. Once in the queue, these events are then dequeued one-by-one by the browser and executed — see [“the anatomy of a frame”](https://aerotwist.com/blog/the-anatomy-of-a-frame) for a high-level overview of this process in Blink.\n\nHowever, some tasks can take a long time (multiple frames), and if and when that happens, the UI thread is locked and all other tasks are blocked as well. To the user this is commonly visible as a “locked up” page where the browser is unable to respond to user input; this is a major source of bad user experience on the web today:\n\n* _Delayed [“time to Interactive”](https://github.com/tdresser/time-to-interactive)_:  while the page is loading long tasks often tie up the main thread and prevent the user from interacting with the page even though the page is visually rendered. Poorly designed third-party content is a frequent culprit.\n* _High/variable input latency_: critical user interaction events (tap, click, scroll, wheel, etc) are queued behind long tasks, which yields janky and unpredictable user experience.\n* _High/variable event handling latency_: similar to input, but for processing event callbacks (e.g. onload events, and so on), which delay application updates.\n* _Janky animations and scrolling_: some animation and scrolling interactions require coordination between compositor and main threads; if the main thread is blocked due to a long task, it can affect responsiveness of animations and scrolling.\n\nSome applications (and RUM vendors) are already attempting to identify and track cases where “long tasks” happen. For example, one known pattern is to install a ~short periodic timer and inspect the elapsed time between the successive calls: if the elapsed time is greater than the timer period, then there is high likelihood that one or more long tasks have delayed execution of the timer. This mostly works, but it has several bad performance implications: the application is polling to detect long tasks, which prevents quiescence and long idle blocks (see requestIdleCallback); it’s bad for battery life; and there is no way to know what caused the delay. (e.g. first party vs third party code)\n\n[RAIL performance model](https://developers.google.com/web/tools/chrome-devtools/profile/evaluate-performance/rail?hl=en#response-respond-in-under-100ms) suggests that applications should respond in under 100ms to user input; for touch move and scrolling in under 16ms. Our goal with this API is to surface notifications about tasks that may prevent the application from hitting these targets.\n\n## Terminology\nMajor terms:\n* **frame** or **frame context** refers to the browsing context, such as iframe (not animation frame), embed or object\n* **culprit frame** refers to the frame or container (iframe, object, embed etc) that is being implicated for the long task\n* **attribution** refers to identifying the type of work (such as script, layout etc.) that contributed significantly to the long task AND which browsing context or frame is responsible for that work.\n* **minimal frame attribution** refers to the browsing context or frame that is being implicated overall for the long task\n\n## V1 API\nLong Task API introduces a new PerformanceEntry object, which will report instances of long tasks:\n```javascript\ninterface PerformanceLongTaskTiming : PerformanceEntry {\n  [SameObject, SaveSameObject] readonly attribute FrozenArray<TaskAttributionTiming> attribution;\n};\n```\n\nAttribute definitions of PerformanceLongTaskTiming:\n* entryType: \"longtask\"\n* startTime: `DOMHighResTimeStamp` of when long task started\n* duration: elapsed time (as `DOMHighResTimeStamp`) between start and finish of task\n* name: minimal frame attribution, eg. \"same-origin\", \"cross-origin\", \"unknown\" etc. Possible values are:\n * \"self\"\n * \"same-origin-ancestor\"\n * \"same-origin-descendant\"\n * \"same-origin\"\n * \"cross-origin-ancestor\"\n * \"cross-origin-descendant\"\n * \"cross-origin-unreachable\"\n * \"multiple-contexts\"\n * \"unknown\"\n\n* attribution: `sequence` of `TaskAttributionTiming`, a new `PerformanceEntry` object to report attribution within long tasks. To see how `attribute` is populated for different values of `name` see the section below: [Pointing to the culprit](#pointing-to-the-culprit)\n\n```javascript\ninterface TaskAttributionTiming : PerformanceEntry {\n  readonly attribute DOMString containerType;\n  readonly attribute DOMString containerSrc;\n  readonly attribute DOMString containerId;\n  readonly attribute DOMString containerName;\n};\n```\n\nAttribute definitions of TaskAttributionTiming:\n* entryType: “taskattribution”\n* startTime: 0\n* duration: 0\n* name: type of attribution, eg. \"script\" or \"layout\"\n* containerType: type of container for culprit frame eg. \"iframe\" (most common), \"embed\", \"object\".\n* containerName: `DOMString`, container’s name attribute\n* containerId: `DOMString`, container’s id attribute\n* containerSrc: `DOMString`, container’s src attribute\n\n\nLong tasks events will be delivered to all observers (in frames within the page or tab) regardless of which frame was responsible for the long task. The goal is to allow all pages on the web to know if and who (first party content or third party content) is causing disruptions. \n\nThe `name` field provides minimal frame attribution so that the observing frame can respond to the issue in the proper way. In addition, the `attribution` field provides further insight into the type of work (script, layout etc) that caused the long task as well as which frame is responsible for that work. For more details on how the `attribution` is set, see the \"Pointing to the culprit\" section.\n\nThe above covers existing use cases found in the wild, enables document-level attribution, and eliminates the negative performance implications mentioned earlier. To receive these notifications, the application can subscribe to them via PerformanceObserver interface:\n\n```javascript\nconst observer = new PerformanceObserver(function(list) {\n  for (const entry of list.getEntries()) {\n     // Process long task notifications:\n     // report back for analytics and monitoring\n     // ...\n  }\n});\n\n\n// Register observer for long task notifications.\n// Since the \"buffered\" flag is set, longtasks that already occurred are received.\nobserver.observe({type: \"longtask\", buffered: true});\n\n// Long script execution after this will result in queueing \n// and receiving “longtask” entries in the observer.\n```\n\n**Long-task threshold is 50ms.** That is, the UA should emit long-task events whenever it detects tasks whose execution time exceeds >50ms. \n\n### Demo\nFor a quick demo, visit this [website](https://longtasks.glitch.me/render-jank-demo.html) on a browser which supports the Long Tasks API.\n\nFor a demo of long tasks from same-origin & cross-origin frames, see this [website](https://longtasks.glitch.me/demo.html).\nInteracting with the iframed wikipedia page will generate cross-origin long task notifications.\n\n### Pointing to the culprit\nLong task represents the top level event loop task. Within this task, different types of work (such as script, layout, style etc) may be done, and they could be executed within different frame contexts. The type of work could also be global in nature such as a long GC that is process or frame-tree wide.\n\nThus pointing to the culprit has couple of facets:\n* Pointing to the overall frame to blame for the long task on the whole: this is refered to as \"minimal frame attribution\" and is captured in the `name` field\n* Pointing to the type of work involved in the task, and its associated frame context: this is captured in `TaskAttributionTiming` objects in the `attribution` field of `PerformanceLongTaskTiming` \n\nTherefore, `name` and `attribution` fields on PerformanceLongTaskTiming together paint the picture for where the blame rests for a long task.\n\nThe security model of the web means that sometimes a long task will happen in an iframe that is unreachable from the observing frame. For instance, a long task might happen in a deeply nested iframe that is different from my origin. Or similarly, I might be an iframe doubly embedded in a document, and a long task will happen in the top-level browsing context. In the web security model, I can know from which direction the issue came, one of my ancestors or descendants, but to preserve the frame origin model, we must be careful about pointing to the specific container or frame.\n\nCurrently the TaskAttributionTiming entry in `attribution` is populated with \"script\" work (in the future layout, style etc will be added). The container or frame implicated in `attribution` should match up with the `name` as follows:\n\n| value of `name`         | frame implicated in `attribution`| \n| ----------------------- |:-------------------------:| \n| self                    | empty                     | \n| same-origin-ancestor    | same-origin culprit frame |\n| same-origin-descendant  | same-origin culprit frame | \n| same-origin             | same-origin culprit frame | \n| cross-origin-ancestor   | empty                     |\n| cross-origin-descendant | first cross-origin child frame between my own frame and culprit frame|\n| cross-origin-unreachable| empty                     |\n| multiple-contexts       | empty                     |\n| unknown                 | empty                     |\n\n\n## Privacy & Security\nLong Tasks API surfaces long tasks greater than a threshold (50ms) to developers via Javascript (Performance Observer API). It includes origin-safe attribution information about the source of the long task.\nThere is a 50ms threshold for long tasks. Together this provides adequate protection against security attacks against browser.\n\nHowever, privacy related attacks are possible, while the API doesn’t introduce any new privacy attacks, it could expedite existing privacy attacks. If this were to become an concern, additional mitigations can be implemented to address this such as dropping \"culprit\" after a per-target origin threshold is exceeded, or limiting to 10 origins per minute etc.\n\nDetailed Security & Privacy doc is here:\nhttps://docs.google.com/document/d/1tIMI1gau_q6X5EBnjDNiFS5NWV9cpYJ5KKA7xPd3VB8/edit#\n\n## V2 API Sketch\nSee: https://docs.google.com/document/d/125d69JAC7nyx-Ob0a9Z31d1uHUGu4myYQ3os9EnGfdU/edit\n\n## Alternatives Considered\n### Why not just show sub-tasks vs. top-level tasks with attribution?\nThis API will show toplevel long tasks along with attribution for specific sub-tasks which were problematic.\nFor instance, within a 50ms toplevel task, sub-tasks such as a 20ms script execution or a 30ms style & layout update -- will be attributed.\nThis raises the question -- why show the toplevel task at all? Why not only show long sub-tasks such as script, style & layout etc that are directly actionable by the user? The top level task may contain some un-attributable segments such as browser work eg. GC or browser events etc.\n\nThe rationale here is that showing the toplevel task is good for web developers, even though they will actively consume the actionable sub-tasks such as long scripts and act on them. Over time the sub-task attribution will keep expanding, making more of the long task actionable.\nShowing the top-level task gives developers a direct indication of main thread busy-ness, and since this directly impacts the user experience, it is appropriate for them to know about it as a problem signal -- even if they cannot have complete visibility or full actionability for the entire length of the long task. \nIn many cases the developers may be able to repro in lab or locally and glean additional insights and get to the root cause. \nLong tasks provide context to long sub-tasks, for instance, a 20ms style and layout or a 25ms script execution may not be terrible by themselves, but if they happen consecutively (eg. script started from rAF) and cause a long 50ms task, then this is a problem for user responsiveness.\n\n"
+      },
+      "prpreview": {
+        "src_file": "index.bs",
+        "type": "bikeshed"
+      },
+      "w3c": {
+        "group": 45211,
+        "contacts": [
+          "carine"
+        ],
+        "shortName": "longtasks",
+        "repo-type": [
+          "rec-track"
+        ]
+      }
     },
     {
       "id": "MDEwOlJlcG9zaXRvcnkyNDgzODA5MDI=",
@@ -212728,11 +212630,6 @@
           "fullName": "w3c/charter-webperf"
         },
         {
-          "name": "device-memory",
-          "fullName": "w3c/device-memory",
-          "hasRecTrack": true
-        },
-        {
           "name": "element-timing",
           "fullName": "w3c/element-timing",
           "hasRecTrack": true
@@ -212755,11 +212652,6 @@
         {
           "name": "long-animation-frames",
           "fullName": "w3c/long-animation-frames",
-          "hasRecTrack": true
-        },
-        {
-          "name": "longtasks",
-          "fullName": "w3c/longtasks",
           "hasRecTrack": true
         },
         {
@@ -212822,6 +212714,16 @@
         {
           "name": "web-performance",
           "fullName": "w3c/web-performance"
+        },
+        {
+          "name": "device-memory",
+          "fullName": "WICG/device-memory",
+          "hasRecTrack": true
+        },
+        {
+          "name": "longtasks",
+          "fullName": "WICG/longtasks",
+          "hasRecTrack": true
         }
       ]
     },
