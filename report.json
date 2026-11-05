@@ -2926,11 +2926,11 @@
       "w3c/calendar",
       "w3c/captcha-accessibility",
       "w3c/cbor-ld",
-      "w3c/cg-assets",
       "w3c/cg-charter",
       "w3c/cg-monitor",
       "w3c/cg-program",
       "w3c/cg-reports",
+      "w3c/cg-spec-assets",
       "w3c/cg-spec-metadata",
       "w3c/character_phrase_tests",
       "w3c/charmod-norm",
@@ -9299,7 +9299,7 @@
       }
     ]
   },
-  "timestamp": "2026-11-04T00:32:07.711Z",
+  "timestamp": "2026-11-05T00:30:19.433Z",
   "repos": [
     {
       "id": "MDEwOlJlcG9zaXRvcnk4MTAyMTg2MA==",
@@ -31401,98 +31401,6 @@
       }
     },
     {
-      "id": "R_kgDOURRVow",
-      "name": "cg-assets",
-      "owner": {
-        "login": "w3c"
-      },
-      "isArchived": false,
-      "homepageUrl": "",
-      "description": "Assets for Community Groups",
-      "isPrivate": false,
-      "createdAt": "2026-09-07T13:49:32Z",
-      "labels": [
-        {
-          "name": "accessibility",
-          "color": "aaaaaa"
-        },
-        {
-          "name": "bug",
-          "color": "d73a4a"
-        },
-        {
-          "name": "documentation",
-          "color": "0075ca"
-        },
-        {
-          "name": "duplicate",
-          "color": "cfd3d7"
-        },
-        {
-          "name": "enhancement",
-          "color": "a2eeef"
-        },
-        {
-          "name": "good first issue",
-          "color": "7057ff"
-        },
-        {
-          "name": "help wanted",
-          "color": "008672"
-        },
-        {
-          "name": "invalid",
-          "color": "e4e669"
-        },
-        {
-          "name": "question",
-          "color": "d876e3"
-        },
-        {
-          "name": "wontfix",
-          "color": "ffffff"
-        }
-      ],
-      "defaultBranch": {
-        "name": "main"
-      },
-      "environments": {
-        "nodes": [
-          {
-            "name": "github-pages"
-          }
-        ]
-      },
-      "branchProtectionRules": {
-        "nodes": []
-      },
-      "w3cjson": {
-        "text": "{\n    \"group\":      [122803]\n,   \"contacts\":   [\"deniak\"]\n,   \"repo-type\":  \"tool\"\n}\n"
-      },
-      "prpreviewjson": null,
-      "autoPublish": null,
-      "travis": null,
-      "contributing": null,
-      "license": null,
-      "codeOfConduct": {
-        "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Conduct](https://www.w3.org/policies/code-of-conduct/).\n"
-      },
-      "readme": {
-        "text": "# cg-assets\n\nStyle sheets and scripts for W3C **Community Group specifications**.\n\nThis is the CG counterpart to [w3c/tr-design](https://github.com/w3c/tr-design),\nwhich holds the assets for W3C Technical Reports. The design implemented here was\ndeveloped and agreed in [w3c/cg-program](https://github.com/w3c/cg-program) — see\n[`proposals/spec-lifecycle.md`](https://github.com/w3c/cg-program/blob/main/proposals/spec-lifecycle.md)\nand [`beta-2026/cg-redesign-overview.md`](https://github.com/w3c/cg-program/blob/main/beta-2026/cg-redesign-overview.md)\n— and prototyped as the `spec-mockups/v13` mockups.\n\n## Files\n\n| File | What it is |\n| ---- | ---------- |\n| `css/base.css` | The W3C TR base style sheet, with the CG design bits. |\n| `css/cg-spec.css` | The CG component layer: the header box, status notices, progress bar, usage-guidance tables, buttons and icons. |\n| `css/dark.css` | The W3C TR dark overlay. |\n| `js/cg-fixup.js` | Table of contents (sidebar toggle, jump link), amendment diff toggling, wide-table wrapping, the \"W3C Community Group incubation\" warning. |\n| `js/dark.js` | The light / dark / auto theme toggle, and the code that drives the dark style sheet. |\n| `js/cg-metadata.js` | Fills the status metadata — browser support, the progress bar, the usage-guidance tables — from [cg-spec-metadata](https://github.com/w3c/cg-spec-metadata). |\n| `demo/` | Sample specifications using these assets, wired to the live metadata endpoint and deployed through GitHub Pages. See [`demo/README.md`](demo/README.md). |\n\n## How a specification uses these\n\n**The order matters.** `base.css`, `cg-spec.css` and `dark.css` all set the same\n`:root` custom properties at equal specificity, so a document that loads them out\nof order gets the wrong colours.\n\n```html\n<link rel=\"stylesheet\" href=\"BASE/css/base.css\">\n<link rel=\"stylesheet\" href=\"BASE/css/cg-spec.css\">\n<link rel=\"stylesheet\" class=\"dark-mode\" media=\"(prefers-color-scheme: dark)\"\n      href=\"BASE/css/dark.css\">\n<script src=\"BASE/js/cg-fixup.js\"></script>\n<script src=\"BASE/js/dark.js\"></script>\n<script src=\"BASE/js/cg-metadata.js\" defer></script>\n```\n\nNotes on that markup:\n\n- The dark sheet **must** carry `media=\"(prefers-color-scheme: dark)\"`, so that a\n  reader without JavaScript gets a palette that matches their system. `dark.js`\n  takes over the media list once it runs.\n- `class=\"dark-mode\"` is how `dark.js` finds the sheet to drive from the theme\n  toggle. A URL ending in `dark.css` is also recognised, but the class is\n  explicit and survives renaming.\n- Load `cg-fixup.js` before `dark.js`.\n- `cg-metadata.js` **must** be `defer`: that scripts fills the  *Usage guidance*\n  section at the foot. See [Status metadata](#status-metadata).\n\n`BASE` is not fixed yet. CG specifications are to be published on\n`incubation.w3.org` (see the redesign overview).\n\n## What the design covers\n\nTwo document kinds and three maturity stages, per the\n[CG specification lifecycle](https://github.com/w3c/cg-program/blob/main/proposals/spec-lifecycle.md):\n\n- **Living specifications** — updated in place. Header box with the maturity tag,\n  a four-state progress bar towards standardization (`.progress-list`), a browser\n  support summary, and a usage-guidance section at the foot of the document.\n- **Snapshots** — archival. Same header box, no progress bar, and a notice\n  pointing at the living specification.\n- Maturity stages **Draft**, **Transferred** and **Unmaintained**, the last of\n  which uses the red `.box--warning` variant.\n\n\n## Incubation warning\n\n`js/cg-fixup.js` adds a warning bar to the bottom of every CG specification. It fetches nothing: it reads what the generator already wrote, and its\nwording follows the same rule as the notice box, with a snapshot taking precedence over its\nmaturity.\n\n| The document is | The warning says | Elements reused |\n| --- | --- | --- |\n| a snapshot | This is a snapshot of an incubation and may be outdated! Please see the living specification for the latest updates on this incubation | `<link rel=\"canonical\">` |\n| unmaintained | This specification is no longer in development and is unmaintained. Do not use or reference. If these circumstances change in the future, we will review our guidance. | `cg-spec-maturity` |\n| transferred | This specification has been transferred! See new contact information at the top of this document. | `cg-spec-maturity`, `id=\"top-status-block\"` |\n| anything else | This is a W3C Community Group incubation | |\n\n## Status metadata\n\n`js/cg-metadata.js` fills the collected status metadata from\n[cg-spec-metadata](https://github.com/w3c/cg-spec-metadata), reading\n`https://w3c.github.io/cg-spec-metadata/specs/<shortname>.json`. A living specification and a\nsnapshot both load it, and it behaves differently according to what the document says it is.\n\n### What the document has to declare\n\n```html\n<meta name=\"cg-spec-type\" content=\"living\">          <!-- or \"snapshot\" -->\n<meta name=\"cg-spec-shortname\" content=\"scheduling-apis\">\n<meta name=\"cg-spec-maturity\" content=\"draft\">       <!-- or transferred | unmaintained -->\n```\n\nThese come from native config properties in bikeshed and ReSpec; nothing here is meant to be\nhand-written. `cg-spec-maturity` is a **build input** — `cg-metadata.js` never reads it\n(only `cg-fixup.js` does, to word the [incubation warning](#incubation-warning)). The maturity\nstage changes the markup rather than a value (a different notice box, a different number of list\nitems, no progress bar at all), so it has to be chosen when the document is generated.\n\nIf `cg-spec-type` is missing, unrecognised, or given twice with different values, the script builds\n**nothing**, records `data-cg-metadata=\"unknown-type\"`, and says so in every region. Failing closed\nis deliberate: showing live status on an archival document is a correctness problem, while a living\nspecification that cannot load its status says as much where the status would have been.\n\nA snapshot is allowed only the `living-spec` region — the address and last-edited date of the\n*living* document it points at. Everything the generator already knows stays in the markup: the\nsnapshot's own publication date and address, and the link to the snapshots index. Any other region\nis refused even if the container is present, and says why, so a copy-paste or a generator bug\ncannot put live status on a snapshot.\n\nOne consequence worth writing down: **a browser \"Save as HTML\" is not a way to make a snapshot.**\nReSpec's exporter clones the live DOM and keeps both the `<meta>` and the script, so the saved file\nwould keep calling itself a living specification and would keep refreshing. Build a snapshot with\n`cg-spec-type: snapshot` in its source metadata.\n\n### What the script builds\n\nThe script does not fill values into markup the generator wrote — it **builds the blocks**. Nothing\nthat claims to be current status is ever in the document, so it can never be stale. The generator\nleaves an empty container where each block goes:\n\n| `data-cg-region` | what the script puts there | living | snapshot |\n| --- | --- | :---: | :---: |\n| `last-edited` | \"It was last edited on `<date>`.\" | ✓ | — |\n| `progress` | the four-step progress bar | ✓ | — |\n| `browser-support` | the browser-support summary in the header box | ✓ | — |\n| `usage-guidance` | the \"This data last refreshed on\" line and the four usage-guidance tables | ✓ | — |\n| `living-spec` | \"This living specification: `<url>` (last edited: `<date>`)\" | ✓ | ✓ |\n\nPut a `<noscript>` inside a container for the no-JavaScript case — the script leaves it alone.\nNothing else may go in one; anything else is removed when the region is built.\n\nThe section around a region stays in the document, because it is structure rather than status: the\n`<h2 id=\"usage-guidance\">` (which the table of contents and the header box both link to), the\n*Get involved* section, and the closing copyright disclaimer.\n\n**A region is never silently empty.** If the fetch fails, the spec is absent from the endpoint, or\nthe document does not say what it is, every region says so. A value the collectors do not have is\nrendered as *Not available* in place rather than dropped, so a reader can tell \"nobody knows\" from\n\"nothing to report\". Both use `.cg-metadata-unavailable` / `.cg-metadata-missing` in\n`css/cg-spec.css`.\n\n### Staleness\n\nThe generator marks the root element `data-cg-metadata=\"static\"`; the script sets `fresh`, `stale`\nor `unknown-type`. There is no static fallback to reveal or hide, so these are for CSS and\ndebugging rather than for the reader — what the reader sees is the message in the region itself.\n"
-      },
-      "w3c": {
-        "group": [
-          122803
-        ],
-        "contacts": [
-          "deniak"
-        ],
-        "repo-type": [
-          "tool"
-        ]
-      }
-    },
-    {
       "id": "MDEwOlJlcG9zaXRvcnk1Mzk2MDcwMA==",
       "name": "cg-charter",
       "owner": {
@@ -31832,6 +31740,98 @@
         ],
         "repo-type": [
           "cg-report"
+        ]
+      }
+    },
+    {
+      "id": "R_kgDOURRVow",
+      "name": "cg-spec-assets",
+      "owner": {
+        "login": "w3c"
+      },
+      "isArchived": false,
+      "homepageUrl": "",
+      "description": "Assets for Community Groups",
+      "isPrivate": false,
+      "createdAt": "2026-09-07T13:49:32Z",
+      "labels": [
+        {
+          "name": "accessibility",
+          "color": "aaaaaa"
+        },
+        {
+          "name": "bug",
+          "color": "d73a4a"
+        },
+        {
+          "name": "documentation",
+          "color": "0075ca"
+        },
+        {
+          "name": "duplicate",
+          "color": "cfd3d7"
+        },
+        {
+          "name": "enhancement",
+          "color": "a2eeef"
+        },
+        {
+          "name": "good first issue",
+          "color": "7057ff"
+        },
+        {
+          "name": "help wanted",
+          "color": "008672"
+        },
+        {
+          "name": "invalid",
+          "color": "e4e669"
+        },
+        {
+          "name": "question",
+          "color": "d876e3"
+        },
+        {
+          "name": "wontfix",
+          "color": "ffffff"
+        }
+      ],
+      "defaultBranch": {
+        "name": "main"
+      },
+      "environments": {
+        "nodes": [
+          {
+            "name": "github-pages"
+          }
+        ]
+      },
+      "branchProtectionRules": {
+        "nodes": []
+      },
+      "w3cjson": {
+        "text": "{\n    \"group\":      [122803]\n,   \"contacts\":   [\"deniak\"]\n,   \"repo-type\":  \"tool\"\n}\n"
+      },
+      "prpreviewjson": null,
+      "autoPublish": null,
+      "travis": null,
+      "contributing": null,
+      "license": null,
+      "codeOfConduct": {
+        "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Conduct](https://www.w3.org/policies/code-of-conduct/).\n"
+      },
+      "readme": {
+        "text": "# cg-assets\n\nStyle sheets and scripts for W3C **Community Group specifications**.\n\nThis is the CG counterpart to [w3c/tr-design](https://github.com/w3c/tr-design),\nwhich holds the assets for W3C Technical Reports. The design implemented here was\ndeveloped and agreed in [w3c/cg-program](https://github.com/w3c/cg-program) — see\n[`proposals/spec-lifecycle.md`](https://github.com/w3c/cg-program/blob/main/proposals/spec-lifecycle.md)\nand [`beta-2026/cg-redesign-overview.md`](https://github.com/w3c/cg-program/blob/main/beta-2026/cg-redesign-overview.md)\n— and prototyped as the `spec-mockups/v13` mockups.\n\n## Files\n\n| File | What it is |\n| ---- | ---------- |\n| `css/base.css` | The W3C TR base style sheet, with the CG design bits. |\n| `css/cg-spec.css` | The CG component layer: the header box, status notices, progress bar, usage-guidance tables, buttons and icons. |\n| `css/dark.css` | The W3C TR dark overlay. |\n| `js/cg-fixup.js` | Table of contents (sidebar toggle, jump link), amendment diff toggling, wide-table wrapping, the \"W3C Community Group incubation\" warning. |\n| `js/dark.js` | The light / dark / auto theme toggle, and the code that drives the dark style sheet. |\n| `js/cg-metadata.js` | Fills the status metadata — browser support, the progress bar, the usage-guidance tables — from [cg-spec-metadata](https://github.com/w3c/cg-spec-metadata). |\n| `demo/` | Sample specifications using these assets, wired to the live metadata endpoint and deployed through GitHub Pages. See [`demo/README.md`](demo/README.md). |\n\n## How a specification uses these\n\n**The order matters.** `base.css`, `cg-spec.css` and `dark.css` all set the same\n`:root` custom properties at equal specificity, so a document that loads them out\nof order gets the wrong colours.\n\n```html\n<link rel=\"stylesheet\" href=\"BASE/css/base.css\">\n<link rel=\"stylesheet\" href=\"BASE/css/cg-spec.css\">\n<link rel=\"stylesheet\" class=\"dark-mode\" media=\"(prefers-color-scheme: dark)\"\n      href=\"BASE/css/dark.css\">\n<script src=\"BASE/js/cg-fixup.js\"></script>\n<script src=\"BASE/js/dark.js\"></script>\n<script src=\"BASE/js/cg-metadata.js\" defer></script>\n```\n\nNotes on that markup:\n\n- The dark sheet **must** carry `media=\"(prefers-color-scheme: dark)\"`, so that a\n  reader without JavaScript gets a palette that matches their system. `dark.js`\n  takes over the media list once it runs.\n- `class=\"dark-mode\"` is how `dark.js` finds the sheet to drive from the theme\n  toggle. A URL ending in `dark.css` is also recognised, but the class is\n  explicit and survives renaming.\n- Load `cg-fixup.js` before `dark.js`.\n- `cg-metadata.js` **must** be `defer`: that scripts fills the  *Usage guidance*\n  section at the foot. See [Status metadata](#status-metadata).\n\n`BASE` is not fixed yet. CG specifications are to be published on\n`incubation.w3.org` (see the redesign overview).\n\n## What the design covers\n\nTwo document kinds and three maturity stages, per the\n[CG specification lifecycle](https://github.com/w3c/cg-program/blob/main/proposals/spec-lifecycle.md):\n\n- **Living specifications** — updated in place. Header box with the maturity tag,\n  a four-state progress bar towards standardization (`.progress-list`), a browser\n  support summary, and a usage-guidance section at the foot of the document.\n- **Snapshots** — archival. Same header box, no progress bar, and a notice\n  pointing at the living specification.\n- Maturity stages **Draft**, **Transferred** and **Unmaintained**, the last of\n  which uses the red `.box--warning` variant.\n\n\n## Incubation warning\n\n`js/cg-fixup.js` adds a warning bar to the bottom of every CG specification. It fetches nothing: it reads what the generator already wrote, and its\nwording follows the same rule as the notice box, with a snapshot taking precedence over its\nmaturity.\n\n| The document is | The warning says | Elements reused |\n| --- | --- | --- |\n| a snapshot | This is a snapshot of an incubation and may be outdated! Please see the living specification for the latest updates on this incubation | `<link rel=\"canonical\">` |\n| unmaintained | This specification is no longer in development and is unmaintained. Do not use or reference. If these circumstances change in the future, we will review our guidance. | `cg-spec-maturity` |\n| transferred | This specification has been transferred! See new contact information at the top of this document. | `cg-spec-maturity`, `id=\"top-status-block\"` |\n| anything else | This is a W3C Community Group incubation | |\n\n## Status metadata\n\n`js/cg-metadata.js` fills the collected status metadata from\n[cg-spec-metadata](https://github.com/w3c/cg-spec-metadata), reading\n`https://w3c.github.io/cg-spec-metadata/specs/<shortname>.json`. A living specification and a\nsnapshot both load it, and it behaves differently according to what the document says it is.\n\n### What the document has to declare\n\n```html\n<meta name=\"cg-spec-type\" content=\"living\">          <!-- or \"snapshot\" -->\n<meta name=\"cg-spec-shortname\" content=\"scheduling-apis\">\n<meta name=\"cg-spec-maturity\" content=\"draft\">       <!-- or transferred | unmaintained -->\n```\n\nThese come from native config properties in bikeshed and ReSpec; nothing here is meant to be\nhand-written. `cg-spec-maturity` is a **build input** — `cg-metadata.js` never reads it\n(only `cg-fixup.js` does, to word the [incubation warning](#incubation-warning)). The maturity\nstage changes the markup rather than a value (a different notice box, a different number of list\nitems, no progress bar at all), so it has to be chosen when the document is generated.\n\nIf `cg-spec-type` is missing, unrecognised, or given twice with different values, the script builds\n**nothing**, records `data-cg-metadata=\"unknown-type\"`, and says so in every region. Failing closed\nis deliberate: showing live status on an archival document is a correctness problem, while a living\nspecification that cannot load its status says as much where the status would have been.\n\nA snapshot is allowed only the `living-spec` region — the address and last-edited date of the\n*living* document it points at. Everything the generator already knows stays in the markup: the\nsnapshot's own publication date and address, and the link to the snapshots index. Any other region\nis refused even if the container is present, and says why, so a copy-paste or a generator bug\ncannot put live status on a snapshot.\n\nOne consequence worth writing down: **a browser \"Save as HTML\" is not a way to make a snapshot.**\nReSpec's exporter clones the live DOM and keeps both the `<meta>` and the script, so the saved file\nwould keep calling itself a living specification and would keep refreshing. Build a snapshot with\n`cg-spec-type: snapshot` in its source metadata.\n\n### What the script builds\n\nThe script does not fill values into markup the generator wrote — it **builds the blocks**. Nothing\nthat claims to be current status is ever in the document, so it can never be stale. The generator\nleaves an empty container where each block goes:\n\n| `data-cg-region` | what the script puts there | living | snapshot |\n| --- | --- | :---: | :---: |\n| `last-edited` | \"It was last edited on `<date>`.\" | ✓ | — |\n| `progress` | the four-step progress bar | ✓ | — |\n| `browser-support` | the browser-support summary in the header box | ✓ | — |\n| `usage-guidance` | the \"This data last refreshed on\" line and the four usage-guidance tables | ✓ | — |\n| `living-spec` | \"This living specification: `<url>` (last edited: `<date>`)\" | ✓ | ✓ |\n\nPut a `<noscript>` inside a container for the no-JavaScript case — the script leaves it alone.\nNothing else may go in one; anything else is removed when the region is built.\n\nThe section around a region stays in the document, because it is structure rather than status: the\n`<h2 id=\"usage-guidance\">` (which the table of contents and the header box both link to), the\n*Get involved* section, and the closing copyright disclaimer.\n\n**A region is never silently empty.** If the fetch fails, the spec is absent from the endpoint, or\nthe document does not say what it is, every region says so. A value the collectors do not have is\nrendered as *Not available* in place rather than dropped, so a reader can tell \"nobody knows\" from\n\"nothing to report\". Both use `.cg-metadata-unavailable` / `.cg-metadata-missing` in\n`css/cg-spec.css`.\n\n### Staleness\n\nThe generator marks the root element `data-cg-metadata=\"static\"`; the script sets `fresh`, `stale`\nor `unknown-type`. There is no static fallback to reveal or hide, so these are for CSS and\ndebugging rather than for the reader — what the reader sees is the message in the region itself.\n"
+      },
+      "w3c": {
+        "group": [
+          122803
+        ],
+        "contacts": [
+          "deniak"
+        ],
+        "repo-type": [
+          "tool"
         ]
       }
     },
@@ -60106,6 +60106,10 @@
         },
         {
           "name": "t:char_sort",
+          "color": "FBCA04"
+        },
+        {
+          "name": "t:char_storing",
           "color": "FBCA04"
         },
         {
