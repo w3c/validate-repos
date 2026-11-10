@@ -5224,7 +5224,6 @@
       "w3c/ash-nazg",
       "w3c/ATAG20-auth-trans-zh",
       "w3c/calendar",
-      "w3c/design",
       "w3c/dnt",
       "w3c/earl",
       "w3c/EasierRDF",
@@ -8228,7 +8227,7 @@
       }
     ]
   },
-  "timestamp": "2026-11-09T00:29:04.286Z",
+  "timestamp": "2026-11-10T00:29:59.133Z",
   "repos": [
     {
       "id": "MDEwOlJlcG9zaXRvcnk4MTAyMTg2MA==",
@@ -27325,7 +27324,7 @@
         "nodes": []
       },
       "w3cjson": {
-        "text": " {\n    \"group\":      \"wg/media\"\n,   \"contacts\":   [\"tidoust\", \"marcoscaceres\", \"chrisn\"]\n,   \"repo-type\":  \"rec-track\"\n}\n"
+        "text": " {\n    \"group\":      \"wg/media\"\n,   \"contacts\":   [\"tidoust\", \"alastor0325\", \"chrisn\"]\n,   \"repo-type\":  \"rec-track\"\n}\n"
       },
       "prpreviewjson": {
         "text": "{\n  \"src_file\": \"index.bs\",\n  \"type\": \"bikeshed\"\n}"
@@ -27354,7 +27353,7 @@
         "group": "wg/media",
         "contacts": [
           "tidoust",
-          "marcoscaceres",
+          "alastor0325",
           "chrisn"
         ],
         "repo-type": [
@@ -28300,7 +28299,7 @@
         ]
       },
       "w3cjson": {
-        "text": "{\n    \"group\":      115198\n,   \"contacts\":   [\"tidoust\", \"chrisn\", \"marcoscaceres\"]\n,   \"repo-type\":  \"rec-track\"\n}\n"
+        "text": "{\n    \"group\":      115198\n,   \"contacts\":   [\"tidoust\", \"chrisn\", \"alastor0325\"]\n,   \"repo-type\":  \"rec-track\"\n}\n"
       },
       "prpreviewjson": null,
       "autoPublish": {
@@ -28324,7 +28323,7 @@
         "contacts": [
           "tidoust",
           "chrisn",
-          "marcoscaceres"
+          "alastor0325"
         ],
         "repo-type": [
           "rec-track"
@@ -30198,6 +30197,10 @@
         {
           "name": "help wanted",
           "color": "008672"
+        },
+        {
+          "name": "HR blocker",
+          "color": "c31d78"
         },
         {
           "name": "i18n-needs-resolution",
@@ -38299,8 +38302,8 @@
       "owner": {
         "login": "w3c"
       },
-      "isArchived": false,
-      "homepageUrl": "https://w3c.github.io/design/",
+      "isArchived": true,
+      "homepageUrl": "",
       "description": "Templates, mock-ups, proposals and design-related materials at W3C",
       "isPrivate": false,
       "createdAt": "2016-02-01T10:11:36Z",
@@ -38393,16 +38396,7 @@
         "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Conduct](https://www.w3.org/policies/code-of-conduct/).\n"
       },
       "readme": {
-        "text": "# W3C Design\n\n![Logo](https://w3c.github.io/design/logo.png)\n\nTemplates, mock-ups, proposals and design-related materials at [W3C](https://www.w3.org/)\n\n## Contents\n\n### Ongoing work\n\n* In this repo:\n  * [Working group home page template](https://w3c.github.io/design/wg-homepage/)\n    (label [🏷️ `wg-page-template`](https://github.com/w3c/design/issues?utf8=%E2%9C%93&q=label%3Awg-page-template))\n  * [New templates](templates/)\n    (label [🏷️ `templates`](https://github.com/w3c/design/issues?utf8=%E2%9C%93&q=label%3Atemplates))\n  * [New style guide](https://w3c.github.io/design/styleguide/)\n    (label [🏷️ `style-guide`](https://github.com/w3c/design/issues?utf8=%E2%9C%93&q=label%3Astyle-guide))\n* Elsewhere:\n  * [Mockups for /TR (`w3c/tr-pages`)](https://github.com/w3c/tr-pages/)\n\n### Archived material (@gbaudusseau's)\n\n*  [&ldquo;Design Lab&rdquo;](https://w3c.github.io/design/archive/index.html)\n* &ldquo;W3C Developers&rdquo;\n  * [&ldquo;Get Involved&rdquo;](https://w3c.github.io/design/archive/projects/w3c-developers/get-involved/index.html)\n  * [&ldquo;Open Source&rdquo;](https://w3c.github.io/design/archive/projects/w3c-developers/get-involved/open-source.html)\n  * [&ldquo;Projects&rdquo;](https://w3c.github.io/design/archive/projects/w3c-developers/get-involved/projects.html)\n\n## Credits\n\nCopyright &copy; 2016&ndash;2018 [World Wide Web Consortium (W3C)](https://www.w3.org/).\n\nThis project is licenced [under the terms of the MIT licence](LICENSE.md).\n\n(The logo uses an icon made by [Freepik](http://www.freepik.com) from [www.flaticon.com](http://www.flaticon.com))\n"
-      },
-      "w3c": {
-        "group": 36332,
-        "contacts": [
-          "koalie"
-        ],
-        "repo-type": [
-          "article"
-        ]
+        "text": "# W3C Design\n\nA Team-only task force between W3C's Systems Team and Communications Team focused on several aspects of the W3C design (such as templates, mock-ups, style-guide, proposals and design-related questions). This work was subsumed by the 2019 Website redesign which culminated in the [2023 redesign](https://www.w3.org/blog/2023/new-w3c-website-deployed/) and the adoption of the [W3C Design System](https://design-system.w3.org/). \n\n"
       }
     },
     {
@@ -46995,7 +46989,7 @@
         ]
       },
       "w3cjson": {
-        "text": "{\n  \"group\": 115198,\n  \"contacts\": [\n    \"tidoust\",\n    \"marcoscaceres\",\n    \"chrisn\"\n  ],\n  \"repo-type\": \"rec-track\"\n}\n"
+        "text": "{\n  \"group\": 115198,\n  \"contacts\": [\n    \"tidoust\",\n    \"alastor0325\",\n    \"chrisn\"\n  ],\n  \"repo-type\": \"rec-track\"\n}\n"
       },
       "prpreviewjson": {
         "text": "{\n    \"src_file\": \"encrypted-media-respec.html\",\n    \"type\": \"respec\"\n}\n"
@@ -47022,7 +47016,7 @@
         "group": 115198,
         "contacts": [
           "tidoust",
-          "marcoscaceres",
+          "alastor0325",
           "chrisn"
         ],
         "repo-type": [
@@ -57608,6 +57602,10 @@
         {
           "name": "cg:a11y-discov-vocab",
           "color": "005a9c"
+        },
+        {
+          "name": "cg:audio-comgp",
+          "color": "ededed"
         },
         {
           "name": "cg:font-text",
@@ -74200,7 +74198,7 @@
         ]
       },
       "w3cjson": {
-        "text": "{\n  \"group\": 115198,\n  \"contacts\": [\n    \"tidoust\",\n    \"marcoscaceres\",\n    \"chrisn\"\n  ],\n  \"repo-type\": \"rec-track\"\n}\n"
+        "text": "{\n  \"group\": 115198,\n  \"contacts\": [\n    \"tidoust\",\n    \"alastor0325\",\n    \"chrisn\"\n  ],\n  \"repo-type\": \"rec-track\"\n}\n"
       },
       "prpreviewjson": {
         "text": "{\n    \"src_file\": \"index.bs\",\n    \"type\": \"bikeshed\",\n    \"params\": {\n        \"force\": 1\n    }\n}\n"
@@ -74232,7 +74230,7 @@
         "group": 115198,
         "contacts": [
           "tidoust",
-          "marcoscaceres",
+          "alastor0325",
           "chrisn"
         ],
         "repo-type": [
@@ -74446,7 +74444,7 @@
         ]
       },
       "w3cjson": {
-        "text": " {\n    \"group\":      115198\n,   \"contacts\":   [\"tidoust\", \"chrisn\", \"marcoscaceres\"]\n,   \"repo-type\":  \"rec-track\"\n}\n"
+        "text": " {\n    \"group\":      115198\n,   \"contacts\":   [\"tidoust\", \"chrisn\", \"alastor0325\"]\n,   \"repo-type\":  \"rec-track\"\n}\n"
       },
       "prpreviewjson": null,
       "autoPublish": null,
@@ -74468,7 +74466,7 @@
         "contacts": [
           "tidoust",
           "chrisn",
-          "marcoscaceres"
+          "alastor0325"
         ],
         "repo-type": [
           "rec-track"
@@ -74778,7 +74776,7 @@
         ]
       },
       "w3cjson": {
-        "text": "{\n  \"group\":     115198,\n  \"contacts\":  [\n    \"tidoust\",\n    \"chrisn\",\n    \"marcoscaceres\"\n  ],\n  \"repo-type\": \"rec-track\"\n}\n"
+        "text": "{\n  \"group\":     115198,\n  \"contacts\":  [\n    \"tidoust\",\n    \"chrisn\",\n    \"alastor0325\"\n  ],\n  \"repo-type\": \"rec-track\"\n}\n"
       },
       "prpreviewjson": {
         "text": "{\n    \"src_file\": \"media-source-respec.html\",\n    \"type\": \"respec\"\n}\n"
@@ -74806,7 +74804,7 @@
         "contacts": [
           "tidoust",
           "chrisn",
-          "marcoscaceres"
+          "alastor0325"
         ],
         "repo-type": [
           "rec-track"
@@ -74959,7 +74957,7 @@
         "nodes": []
       },
       "w3cjson": {
-        "text": "{\n  \"group\": 115198,\n  \"contacts\": [\"tidoust\", \"marcoscaceres\", \"chrisn\"],\n  \"repo-type\": \"homepage\"\n}\n"
+        "text": "{\n  \"group\": 115198,\n  \"contacts\": [\"tidoust\", \"alastor0325\", \"chrisn\"],\n  \"repo-type\": \"homepage\"\n}\n"
       },
       "prpreviewjson": null,
       "autoPublish": null,
@@ -74976,7 +74974,7 @@
         "group": 115198,
         "contacts": [
           "tidoust",
-          "marcoscaceres",
+          "alastor0325",
           "chrisn"
         ],
         "repo-type": [
@@ -78076,7 +78074,7 @@
         ]
       },
       "w3cjson": {
-        "text": "{\n  \"group\": 115198,\n  \"contacts\": [\n    \"tidoust\",\n    \"chrisn\", \n    \"marcoscaceres\"\n  ],\n  \"repo-type\": \"rec-track\"\n}\n"
+        "text": "{\n  \"group\": 115198,\n  \"contacts\": [\n    \"tidoust\",\n    \"chrisn\", \n    \"alastor0325\"\n  ],\n  \"repo-type\": \"rec-track\"\n}\n"
       },
       "prpreviewjson": {
         "text": "{\n    \"src_file\": \"index.bs\",\n    \"type\": \"bikeshed\",\n    \"params\": {\n        \"force\": 1\n    }\n}\n"
@@ -78109,7 +78107,7 @@
         "contacts": [
           "tidoust",
           "chrisn",
-          "marcoscaceres"
+          "alastor0325"
         ],
         "repo-type": [
           "rec-track"
@@ -81203,7 +81201,7 @@
         ]
       },
       "w3cjson": {
-        "text": "{\n  \"group\": 115198,\n  \"contacts\": [\n    \"tidoust\", \"chrisn\", \"marcoscaceres\"\n  ],\n  \"repo-type\": \"note\"\n}\n"
+        "text": "{\n  \"group\": 115198,\n  \"contacts\": [\n    \"tidoust\", \"chrisn\", \"alastor0325\"\n  ],\n  \"repo-type\": \"note\"\n}\n"
       },
       "prpreviewjson": {
         "text": "{\n    \"src_file\": \"index.html\",\n    \"type\": \"respec\"\n}\n"
@@ -81233,7 +81231,7 @@
         "contacts": [
           "tidoust",
           "chrisn",
-          "marcoscaceres"
+          "alastor0325"
         ],
         "repo-type": [
           "note"
@@ -81318,7 +81316,7 @@
         ]
       },
       "w3cjson": {
-        "text": "{\n  \"group\": 115198,\n  \"contacts\": [\n    \"tidoust\", \"chrisn\", \"marcoscaceres\"\n  ],\n  \"repo-type\": \"note\"\n}\n"
+        "text": "{\n  \"group\": 115198,\n  \"contacts\": [\n    \"tidoust\", \"chrisn\", \"alastor0325\"\n  ],\n  \"repo-type\": \"note\"\n}\n"
       },
       "prpreviewjson": {
         "text": "{\n    \"src_file\": \"index.html\",\n    \"type\": \"respec\"\n}\n"
@@ -81348,7 +81346,7 @@
         "contacts": [
           "tidoust",
           "chrisn",
-          "marcoscaceres"
+          "alastor0325"
         ],
         "repo-type": [
           "note"
@@ -81433,7 +81431,7 @@
         ]
       },
       "w3cjson": {
-        "text": "{\n  \"group\": 115198,\n  \"contacts\": [\n    \"tidoust\", \"chrisn\", \"marcoscaceres\"\n  ],\n  \"repo-type\": \"note\"\n}\n"
+        "text": "{\n  \"group\": 115198,\n  \"contacts\": [\n    \"tidoust\", \"chrisn\", \"alastor0325\"\n  ],\n  \"repo-type\": \"note\"\n}\n"
       },
       "prpreviewjson": {
         "text": "{\n    \"src_file\": \"index.html\",\n    \"type\": \"respec\"\n}\n"
@@ -81463,7 +81461,7 @@
         "contacts": [
           "tidoust",
           "chrisn",
-          "marcoscaceres"
+          "alastor0325"
         ],
         "repo-type": [
           "note"
@@ -81548,7 +81546,7 @@
         ]
       },
       "w3cjson": {
-        "text": "{\n  \"group\": 115198,\n  \"contacts\": [\n    \"tidoust\", \"chrisn\", \"marcoscaceres\"\n  ],\n  \"repo-type\": \"note\"\n}\n"
+        "text": "{\n  \"group\": 115198,\n  \"contacts\": [\n    \"tidoust\", \"chrisn\", \"alastor0325\"\n  ],\n  \"repo-type\": \"note\"\n}\n"
       },
       "prpreviewjson": {
         "text": "{\n    \"src_file\": \"index.html\",\n    \"type\": \"respec\"\n}\n"
@@ -81578,7 +81576,7 @@
         "contacts": [
           "tidoust",
           "chrisn",
-          "marcoscaceres"
+          "alastor0325"
         ],
         "repo-type": [
           "note"
@@ -81663,7 +81661,7 @@
         ]
       },
       "w3cjson": {
-        "text": "{\n  \"group\": 115198,\n  \"contacts\": [\n    \"tidoust\", \"chrisn\", \"marcoscaceres\"\n  ],\n  \"repo-type\": \"note\"\n}\n"
+        "text": "{\n  \"group\": 115198,\n  \"contacts\": [\n    \"tidoust\", \"chrisn\", \"alastor0325\"\n  ],\n  \"repo-type\": \"note\"\n}\n"
       },
       "prpreviewjson": {
         "text": "{\n    \"src_file\": \"index.html\",\n    \"type\": \"respec\"\n}\n"
@@ -81693,7 +81691,7 @@
         "contacts": [
           "tidoust",
           "chrisn",
-          "marcoscaceres"
+          "alastor0325"
         ],
         "repo-type": [
           "note"
@@ -85650,7 +85648,7 @@
         ]
       },
       "w3cjson": {
-        "text": "{\n  \"group\": [\"83744\"],\n  \"contacts\": [\"sideshowbarker\"],\n  \"repo-type\": \"rec-track\"\n}\n"
+        "text": "{\n  \"group\": [\"83744\"],\n  \"contacts\": [\"ijacobs\"],\n  \"repo-type\": \"rec-track\"\n}\n"
       },
       "prpreviewjson": {
         "text": "{\n    \"src_file\": \"index.html\",\n    \"type\": \"respec\"\n}\n"
@@ -85680,7 +85678,7 @@
           "83744"
         ],
         "contacts": [
-          "sideshowbarker"
+          "ijacobs"
         ],
         "repo-type": [
           "rec-track"
@@ -87668,7 +87666,7 @@
         ]
       },
       "w3cjson": {
-        "text": " {\n    \"group\":      115198\n,   \"contacts\":   [\"tidoust\", \"chrisn\", \"marcoscaceres\"]\n,   \"repo-type\":   \"rec-track\"\n}\n"
+        "text": " {\n    \"group\":      115198\n,   \"contacts\":   [\"tidoust\", \"chrisn\", \"alastor0325\"]\n,   \"repo-type\":   \"rec-track\"\n}\n"
       },
       "prpreviewjson": {
         "text": "{\n    \"src_file\": \"index.bs\",\n    \"type\": \"bikeshed\",\n    \"params\": {\n        \"force\": 1\n    }\n}\n"
@@ -87701,7 +87699,7 @@
         "contacts": [
           "tidoust",
           "chrisn",
-          "marcoscaceres"
+          "alastor0325"
         ],
         "repo-type": [
           "rec-track"
@@ -149327,7 +149325,9 @@
       "w3cjson": {
         "text": " {\n    \"group\":      49309\n,   \"contacts\":   [\"wseltzer\"]\n,   \"repo-type\":  \"rec-track\"\n}\n"
       },
-      "prpreviewjson": null,
+      "prpreviewjson": {
+        "text": "{\n    \"src_file\": \"index.src.html\",\n    \"type\": \"bikeshed\",\n    \"params\": {\n        \"force\": 1\n    }\n}"
+      },
       "autoPublish": {
         "text": "name: CI\non:\n  pull_request: {}\n  push:\n    branches: [main]\n\njobs:\n  main:\n    name: Build, Validate, and Publish\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v5\n      - uses: w3c/spec-prod@v2\n        with:\n          SOURCE: index.src.html\n          DESTINATION: index.html\n          TOOLCHAIN: bikeshed\n          GH_PAGES_BRANCH: gh-pages\n          BUILD_FAIL_ON: nothing\n          W3C_ECHIDNA_TOKEN: ${{ secrets.ECHIDNA_TOKEN }}\n          W3C_WG_DECISION_URL: https://lists.w3.org/Archives/Public/public-webappsec/2015Mar/0170.html\n          W3C_BUILD_OVERRIDE: |\n            Shortname: csp-embedded-enforcement\n            Status: WD\n"
       },
@@ -149343,6 +149343,13 @@
       },
       "readme": {
         "text": " \r\n"
+      },
+      "prpreview": {
+        "src_file": "index.src.html",
+        "type": "bikeshed",
+        "params": {
+          "force": 1
+        }
       },
       "w3c": {
         "group": 49309,
@@ -151854,7 +151861,7 @@
         ]
       },
       "w3cjson": {
-        "text": "{\n  \"group\": 115198,\n  \"contacts\": [\n    \"tidoust\",\n    \"marcoscaceres\",\n    \"chrisn\"\n  ],\n  \"repo-type\": \"rec-track\"\n}\n"
+        "text": "{\n  \"group\": 115198,\n  \"contacts\": [\n    \"tidoust\",\n    \"alastor0325\",\n    \"chrisn\"\n  ],\n  \"repo-type\": \"rec-track\"\n}\n"
       },
       "prpreviewjson": {
         "text": " \n{\n  \"src_file\": \"index.src.html\",\n  \"type\": \"bikeshed\"\n}\n\n"
@@ -151881,7 +151888,7 @@
         "group": 115198,
         "contacts": [
           "tidoust",
-          "marcoscaceres",
+          "alastor0325",
           "chrisn"
         ],
         "repo-type": [
@@ -152652,7 +152659,7 @@
         "text": "{\n  \"src_file\": \"index.bs\",\n  \"type\": \"bikeshed\"\n}\n"
       },
       "autoPublish": {
-        "text": "name: deploy\non:\n  pull_request: {}\n  push:\n    branches: [main]\njobs:\n  deploy:\n    runs-on: ubuntu-24.04\n    steps:\n    - uses: actions/checkout@v7\n    - uses: w3c/spec-prod@v2.14.1\n      with:\n        GH_PAGES_BRANCH: gh-pages\n        W3C_ECHIDNA_TOKEN: ${{ secrets.ECHIDNA_TOKEN }}\n        W3C_WG_DECISION_URL: https://lists.w3.org/Archives/Public/public-browser-tools-testing/2024OctDec/0003.html\n        W3C_BUILD_OVERRIDE: |\n          status: WD\n"
+        "text": "name: deploy\non:\n  pull_request: {}\n  push:\n    branches: [main]\njobs:\n  deploy:\n    runs-on: ubuntu-24.04\n    steps:\n    - uses: actions/checkout@v7\n    - uses: w3c/spec-prod@v2.14.3\n      with:\n        GH_PAGES_BRANCH: gh-pages\n        W3C_ECHIDNA_TOKEN: ${{ secrets.ECHIDNA_TOKEN }}\n        W3C_WG_DECISION_URL: https://lists.w3.org/Archives/Public/public-browser-tools-testing/2024OctDec/0003.html\n        W3C_BUILD_OVERRIDE: |\n          status: WD\n"
       },
       "travis": null,
       "contributing": null,
@@ -184679,7 +184686,7 @@
         "text": "{\n  \"src_file\": \"index.bs\",\n  \"type\": \"bikeshed\",\n  \"params\": {\n    \"force\": 1\n  }\n}\n\n"
       },
       "autoPublish": {
-        "text": "name: CI\non:\n  pull_request: {}\n  push:\n    branches: [main]\njobs:\n  main:\n    name: Build, Validate and Deploy\n    runs-on: ubuntu-latest\n    permissions:\n      contents: write\n    steps:\n      - uses: actions/checkout@v7\n      - uses: w3c/spec-prod@v2.14.1\n        with:\n          GH_PAGES_BRANCH: gh-pages\n          BUILD_FAIL_ON: warning\n"
+        "text": "name: CI\non:\n  pull_request: {}\n  push:\n    branches: [main]\njobs:\n  main:\n    name: Build, Validate and Deploy\n    runs-on: ubuntu-latest\n    permissions:\n      contents: write\n    steps:\n      - uses: actions/checkout@v7\n      - uses: w3c/spec-prod@v2.14.3\n        with:\n          GH_PAGES_BRANCH: gh-pages\n          BUILD_FAIL_ON: warning\n"
       },
       "travis": null,
       "contributing": {
@@ -184790,7 +184797,7 @@
         "text": "{\n  \"src_file\": \"index.bs\",\n  \"type\": \"bikeshed\",\n  \"params\": {\n    \"force\": 1\n  }\n}\n\n"
       },
       "autoPublish": {
-        "text": "name: CI\non:\n  pull_request: {}\n  push:\n    branches: [main]\njobs:\n  main:\n    name: Build, Validate and Deploy\n    runs-on: ubuntu-latest\n    permissions:\n      contents: write\n    steps:\n      - uses: actions/checkout@v7\n      - uses: actions/setup-python@v7\n        with:\n          python-version: '3.12'\n      - uses: w3c/spec-prod@v2.14.1\n        with:\n          GH_PAGES_BRANCH: gh-pages\n          BUILD_FAIL_ON: warning\n"
+        "text": "name: CI\non:\n  pull_request: {}\n  push:\n    branches: [main]\njobs:\n  main:\n    name: Build, Validate and Deploy\n    runs-on: ubuntu-latest\n    permissions:\n      contents: write\n    steps:\n      - uses: actions/checkout@v7\n      - uses: actions/setup-python@v7\n        with:\n          python-version: '3.12'\n      - uses: w3c/spec-prod@v2.14.3\n        with:\n          GH_PAGES_BRANCH: gh-pages\n          BUILD_FAIL_ON: warning\n"
       },
       "travis": null,
       "contributing": null,
@@ -185080,7 +185087,7 @@
         "text": "{\n  \"src_file\": \"index.bs\",\n  \"type\": \"bikeshed\",\n  \"params\": {\n    \"force\": 1\n  }\n}\n\n"
       },
       "autoPublish": {
-        "text": "name: CI\non:\n  pull_request: {}\n  push:\n    branches: [main]\njobs:\n  main:\n    name: Build, Validate and Deploy\n    runs-on: ubuntu-latest\n    permissions:\n      contents: write\n    steps:\n      - uses: actions/checkout@v7\n      - uses: w3c/spec-prod@v2.14.1\n        with:\n          GH_PAGES_BRANCH: gh-pages\n          BUILD_FAIL_ON: warning\n"
+        "text": "name: CI\non:\n  pull_request: {}\n  push:\n    branches: [main]\njobs:\n  main:\n    name: Build, Validate and Deploy\n    runs-on: ubuntu-latest\n    permissions:\n      contents: write\n    steps:\n      - uses: actions/checkout@v7\n      - uses: w3c/spec-prod@v2.14.3\n        with:\n          GH_PAGES_BRANCH: gh-pages\n          BUILD_FAIL_ON: warning\n"
       },
       "travis": null,
       "contributing": {
@@ -185775,7 +185782,7 @@
         "text": "{\n    \"src_file\": \"index.bs\",\n    \"type\": \"bikeshed\",\n    \"params\": {\n        \"force\": 1\n    }\n}"
       },
       "autoPublish": {
-        "text": "name: Auto-publish\non:\n  pull_request: {}\n  push:\n    paths:\n      - index.bs\n    branches: [main]\n\njobs:\n  main:\n    name: Build, Validate and Deploy\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v7\n      - uses: w3c/spec-prod@v2.14.1\n        with:\n          GH_PAGES_BRANCH: gh-pages\n          TOOLCHAIN: bikeshed\n          VALIDATE_LINKS: false\n          BUILD_FAIL_ON: warning\n          W3C_WG_DECISION_URL: https://lists.w3.org/Archives/Public/public-webmachinelearning-wg/2021Jun/0011.html\n          W3C_ECHIDNA_TOKEN: ${{ secrets.ECHIDNA_TOKEN }}\n          W3C_BUILD_OVERRIDE: |\n            TR: https://www.w3.org/TR/webnn/\n            status: CRD\n      - name: WebNN - Lint Bikeshed Source and Generated HTML\n        id: webnn-lint\n        shell: bash\n        env:\n          BIKESHED_SOURCE: \"index.bs\"\n          GENERATED_HTML: \"index.bs.built.html\"\n        run: |\n          echo \"::group::Install Lint Tool Dependencies\"\n          cd tools\n          npm install\n          cd ..\n          echo \"::endgroup::\"\n          echo \"::group::Generate Static HTML\"\n          bikeshed --die-on=warning spec $BIKESHED_SOURCE $GENERATED_HTML\n          echo \"::endgroup::\"\n          echo \"::group::Run Lint Tool\"\n          node tools/lint.mjs --verbose --bikeshed $BIKESHED_SOURCE --html $GENERATED_HTML\n          echo \"::endgroup::\"\n"
+        "text": "name: Auto-publish\non:\n  pull_request: {}\n  push:\n    paths:\n      - index.bs\n    branches: [main]\n\njobs:\n  main:\n    name: Build, Validate and Deploy\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v7\n      - uses: w3c/spec-prod@v2.14.3\n        with:\n          GH_PAGES_BRANCH: gh-pages\n          TOOLCHAIN: bikeshed\n          VALIDATE_LINKS: false\n          BUILD_FAIL_ON: warning\n          W3C_WG_DECISION_URL: https://lists.w3.org/Archives/Public/public-webmachinelearning-wg/2021Jun/0011.html\n          W3C_ECHIDNA_TOKEN: ${{ secrets.ECHIDNA_TOKEN }}\n          W3C_BUILD_OVERRIDE: |\n            TR: https://www.w3.org/TR/webnn/\n            status: CRD\n      - name: WebNN - Lint Bikeshed Source and Generated HTML\n        id: webnn-lint\n        shell: bash\n        env:\n          BIKESHED_SOURCE: \"index.bs\"\n          GENERATED_HTML: \"index.bs.built.html\"\n        run: |\n          echo \"::group::Install Lint Tool Dependencies\"\n          cd tools\n          npm install\n          cd ..\n          echo \"::endgroup::\"\n          echo \"::group::Generate Static HTML\"\n          bikeshed --die-on=warning spec $BIKESHED_SOURCE $GENERATED_HTML\n          echo \"::endgroup::\"\n          echo \"::group::Run Lint Tool\"\n          node tools/lint.mjs --verbose --bikeshed $BIKESHED_SOURCE --html $GENERATED_HTML\n          echo \"::endgroup::\"\n"
       },
       "travis": null,
       "contributing": {
@@ -186433,7 +186440,7 @@
         "text": "{\n  \"src_file\": \"index.bs\",\n  \"type\": \"bikeshed\",\n  \"params\": {\n    \"force\": 1\n  }\n}\n\n"
       },
       "autoPublish": {
-        "text": "name: CI\non:\n  pull_request:\n    branches: [main]\n  push:\n    branches: [main]\njobs:\n  main:\n    name: Build, Validate and Deploy\n    runs-on: ubuntu-latest\n    permissions:\n      contents: write\n    steps:\n      - uses: actions/checkout@v7\n      - uses: w3c/spec-prod@v2.14.1\n        with:\n          GH_PAGES_BRANCH: gh-pages\n          BUILD_FAIL_ON: warning\n"
+        "text": "name: CI\non:\n  pull_request:\n    branches: [main]\n  push:\n    branches: [main]\njobs:\n  main:\n    name: Build, Validate and Deploy\n    runs-on: ubuntu-latest\n    permissions:\n      contents: write\n    steps:\n      - uses: actions/checkout@v7\n      - uses: w3c/spec-prod@v2.14.3\n        with:\n          GH_PAGES_BRANCH: gh-pages\n          BUILD_FAIL_ON: warning\n"
       },
       "travis": null,
       "contributing": {
