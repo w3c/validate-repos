@@ -264,6 +264,7 @@
   "w3c/sparql-results-json",
   "w3c/sparql-results-xml",
   "w3c/sparql-service-description",
+  "w3c/sparql-threat-model",
   "w3c/sparql-update",
   "w3c/speech-synthesis11",
   "w3c/src",
