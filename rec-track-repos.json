@@ -289,7 +289,6 @@
   "WebAudio/web-audio-api",
   "WebAudio/web-midi-api",
   "webmachinelearning/webnn",
-  "WICG/device-memory",
   "WICG/longtasks",
   "WICG/sub-apps"
 ]
