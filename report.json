@@ -5190,6 +5190,10 @@
         "error": "repo: false, vs repo manager: true"
       },
       {
+        "repo": "w3c/vc-recognized-entities-test-suite",
+        "error": "repo: false, vs repo manager: true"
+      },
+      {
         "repo": "w3c/vc-wg",
         "error": "repo: false, vs repo manager: true"
       },
@@ -5636,6 +5640,10 @@
       },
       {
         "repo": "w3c/vc-recognized-entities",
+        "error": "main branch is not protected"
+      },
+      {
+        "repo": "w3c/vc-recognized-entities-test-suite",
         "error": "main branch is not protected"
       },
       {
@@ -8264,7 +8272,7 @@
       }
     ]
   },
-  "timestamp": "2026-11-14T00:31:33.627Z",
+  "timestamp": "2026-11-15T00:30:21.188Z",
   "repos": [
     {
       "id": "MDEwOlJlcG9zaXRvcnk4MTAyMTg2MA==",
@@ -127775,6 +127783,94 @@
       }
     },
     {
+      "id": "R_kgDOVt3SgQ",
+      "name": "vc-recognized-entities-test-suite",
+      "owner": {
+        "login": "w3c"
+      },
+      "isArchived": false,
+      "homepageUrl": null,
+      "description": null,
+      "isPrivate": false,
+      "createdAt": "2026-11-14T04:24:56Z",
+      "labels": [
+        {
+          "name": "bug",
+          "color": "d73a4a"
+        },
+        {
+          "name": "documentation",
+          "color": "0075ca"
+        },
+        {
+          "name": "duplicate",
+          "color": "cfd3d7"
+        },
+        {
+          "name": "enhancement",
+          "color": "a2eeef"
+        },
+        {
+          "name": "good first issue",
+          "color": "7057ff"
+        },
+        {
+          "name": "help wanted",
+          "color": "008672"
+        },
+        {
+          "name": "invalid",
+          "color": "e4e669"
+        },
+        {
+          "name": "question",
+          "color": "d876e3"
+        },
+        {
+          "name": "wontfix",
+          "color": "ffffff"
+        }
+      ],
+      "defaultBranch": {
+        "name": "main"
+      },
+      "environments": {
+        "nodes": []
+      },
+      "branchProtectionRules": {
+        "nodes": []
+      },
+      "w3cjson": {
+        "text": " {\n    \"group\":      [98922]\n,   \"contacts\":   [\"iherman\"]\n,   \"repo-type\":  \"tests\"\n}\n"
+      },
+      "prpreviewjson": null,
+      "autoPublish": null,
+      "travis": null,
+      "contributing": {
+        "text": "# Verifiable Claims Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/policies/patent-policy/) and\n[Document License](https://www.w3.org/copyright/document-license/). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
+      },
+      "license": {
+        "text": "Distributed under both the\n[W3C test suite license](https://www.w3.org/copyright/test-suite-license-2023/)\nand the\n[W3C 3-clause BSD license](https://www.w3.org/copyright/3-clause-bsd-license-2008/).\n"
+      },
+      "codeOfConduct": {
+        "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Conduct](https://www.w3.org/policies/code-of-conduct/).\n"
+      },
+      "readme": {
+        "text": "\n# Specification 'vc-recognized-entities-test-suite'\n\nThis is the repository for vc-recognized-entities-test-suite. You're welcome to contribute! Let's make the Web rock our socks\noff!\n"
+      },
+      "w3c": {
+        "group": [
+          98922
+        ],
+        "contacts": [
+          "iherman"
+        ],
+        "repo-type": [
+          "tests"
+        ]
+      }
+    },
+    {
       "id": "R_kgDOJchfnw",
       "name": "vc-render-method",
       "owner": {
@@ -215418,6 +215514,11 @@
         {
           "name": "vc-recognized-entities",
           "fullName": "w3c/vc-recognized-entities",
+          "hasRecTrack": true
+        },
+        {
+          "name": "vc-recognized-entities-test-suite",
+          "fullName": "w3c/vc-recognized-entities-test-suite",
           "hasRecTrack": true
         },
         {
