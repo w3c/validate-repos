@@ -51,6 +51,7 @@
   "w3c/deviceorientation",
   "w3c/did",
   "w3c/did-resolution",
+  "w3c/digital-credential-payment-method",
   "w3c/dpub-aam",
   "w3c/dpub-aria",
   "w3c/dwbp",
