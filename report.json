@@ -8289,7 +8289,7 @@
       }
     ]
   },
-  "timestamp": "2026-11-22T00:28:31.936Z",
+  "timestamp": "2026-11-23T00:29:32.787Z",
   "repos": [
     {
       "id": "MDEwOlJlcG9zaXRvcnk4MTAyMTg2MA==",
@@ -38228,6 +38228,10 @@
         {
           "name": "Errata",
           "color": "e99695"
+        },
+        {
+          "name": "For SHACL Community",
+          "color": "ca6cef"
         },
         {
           "name": "High-Priority",
@@ -105864,6 +105868,10 @@
         {
           "name": "invalid",
           "color": "e4e669"
+        },
+        {
+          "name": "Proposed Profiles",
+          "color": "20bad8"
         },
         {
           "name": "question",
