@@ -546,7 +546,7 @@
       {
         "repo": "immersive-web/layers",
         "error": "doesn't match SW or DOC contributing",
-        "contributing": "# Immersive Web Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](https://www.w3.org/Consortium/Legal/copyright-documents). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
+        "contributing": "# Immersive Web Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
       },
       {
         "repo": "immersive-web/lighting-estimation",
@@ -1829,6 +1829,11 @@
         "contributing": "# Web Platform Incubator Community Group\n\nThis repository is being used for work in the W3C Web Platform Incubator Community Group, governed by the [W3C Community License\nAgreement (CLA)](http://www.w3.org/community/about/agreements/cla/). To make substantive contributions,\nyou must join the CG.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n"
       },
       {
+        "repo": "WICG/agent-interaction-measurement",
+        "error": "doesn't match CG contributing",
+        "contributing": "# Web Platform Incubator Community Group\n\nThis repository is being used for work in the W3C Web Platform Incubator Community Group, governed by the [W3C Community License\nAgreement (CLA)](http://www.w3.org/community/about/process/cla/). To make substantive contributions,\nyou must join the CG.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n"
+      },
+      {
         "repo": "WICG/anonymous-iframe",
         "error": "doesn't match CG contributing",
         "contributing": "# Web Platform Incubator Community Group\n\nThis repository is being used for work in the W3C Web Platform Incubator Community Group, governed by the [W3C Community License\nAgreement (CLA)](http://www.w3.org/community/about/agreements/cla/). To make substantive contributions,\nyou must join the CG.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n"
@@ -2953,7 +2958,7 @@
       {
         "repo": "immersive-web/layers",
         "error": "doesn't match SW or DOC license",
-        "license": "All documents in this Repository are licensed by contributors\nunder the \n[W3C Document License](https://www.w3.org/Consortium/Legal/copyright-documents).\n\n"
+        "license": "All documents in this Repository are licensed by contributors\nunder the \n[Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software).\n\n"
       },
       {
         "repo": "immersive-web/lighting-estimation",
@@ -4286,6 +4291,11 @@
         "license": "All Reports in this Repository are licensed by Contributors\nunder the\n[W3C Software and Document License](http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document).\n\nContributions to Specifications are made under the\n[W3C CLA](https://www.w3.org/community/about/agreements/cla/).\n\nContributions to Test Suites are made under the\n[W3C 3-clause BSD License](https://www.w3.org/Consortium/Legal/2008/03-bsd-license.html)\n\n"
       },
       {
+        "repo": "WICG/agent-interaction-measurement",
+        "error": "doesn't match CG license",
+        "license": "Contributions to Specifications are made under the\n[W3C CLA](https://www.w3.org/community/about/process/cla/).\n\nContributions to other types of Reports in this Repository are licensed by Contributors\nunder the\n[W3C Software and Document License](https://www.w3.org/copyright/software-license/).\n\nContributions to Test Suites are made under the\n[W3C 3-clause BSD License](https://www.w3.org/copyright/3-clause-bsd-license-2008/)\n\n"
+      },
+      {
         "repo": "WICG/anonymous-iframe",
         "error": "doesn't match CG license",
         "license": "All Reports in this Repository are licensed by Contributors\nunder the\n[W3C Software and Document License](http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document).\n\nContributions to Specifications are made under the\n[W3C CLA](https://www.w3.org/community/about/agreements/cla/).\n\nContributions to Test Suites are made under the\n[W3C 3-clause BSD License](https://www.w3.org/Consortium/Legal/2008/03-bsd-license.html)\n"
@@ -5440,14 +5450,6 @@
         "error": "main branch is not protected"
       },
       {
-        "repo": "w3c-fedid/digital-credentials",
-        "error": "main branch is not protected"
-      },
-      {
-        "repo": "w3c-fedid/FedCM",
-        "error": "main branch is not protected"
-      },
-      {
         "repo": "w3c-fedid/identity-handler",
         "error": "main branch is not protected"
       },
@@ -5712,10 +5714,6 @@
         "error": "main branch is not protected"
       },
       {
-        "repo": "WebAssembly/compilation-hints",
-        "error": "main branch is not protected"
-      },
-      {
         "repo": "WebAssembly/constant-time",
         "error": "main branch is not protected"
       },
@@ -5808,10 +5806,6 @@
         "error": "main branch is not protected"
       },
       {
-        "repo": "WebAssembly/relaxed-simd",
-        "error": "main branch is not protected"
-      },
-      {
         "repo": "WebAssembly/root-scanning",
         "error": "main branch is not protected"
       },
@@ -5861,6 +5855,10 @@
       },
       {
         "repo": "WICG/accessible-notifications",
+        "error": "main branch is not protected"
+      },
+      {
+        "repo": "WICG/agent-interaction-measurement",
         "error": "main branch is not protected"
       },
       {
@@ -6219,6 +6217,14 @@
       },
       {
         "repo": "immersive-web/webxr-webgpu-binding",
+        "error": "main branch protection is not admin enforced"
+      },
+      {
+        "repo": "w3c-fedid/digital-credentials",
+        "error": "main branch protection is not admin enforced"
+      },
+      {
+        "repo": "w3c-fedid/FedCM",
         "error": "main branch protection is not admin enforced"
       },
       {
@@ -7120,6 +7126,14 @@
       {
         "repo": "w3c/xml-entities",
         "error": "gh-pages branch protection is not admin enforced"
+      },
+      {
+        "repo": "WebAssembly/compilation-hints",
+        "error": "main branch protection is not admin enforced"
+      },
+      {
+        "repo": "WebAssembly/relaxed-simd",
+        "error": "main branch protection is not admin enforced"
       },
       {
         "repo": "WebAssembly/spec",
@@ -8088,6 +8102,10 @@
         "error": "gh-pages branch review is not required"
       },
       {
+        "repo": "WebAssembly/compilation-hints",
+        "error": "main branch review is not required"
+      },
+      {
         "repo": "webmachinelearning/webnn",
         "error": "main branch review is not required"
       },
@@ -8238,18 +8256,6 @@
     ],
     "missingashnazghook": [
       {
-        "repo": "gpuweb/gpuweb"
-      },
-      {
-        "repo": "w3c-fedid/digital-credentials"
-      },
-      {
-        "repo": "w3c-fedid/FedCM"
-      },
-      {
-        "repo": "w3c-fedid/proposals"
-      },
-      {
         "repo": "w3c/dnt"
       },
       {
@@ -8277,7 +8283,7 @@
       }
     ]
   },
-  "timestamp": "2026-11-25T11:32:01.545Z",
+  "timestamp": "2026-11-26T00:31:14.256Z",
   "repos": [
     {
       "id": "MDEwOlJlcG9zaXRvcnk4MTAyMTg2MA==",
@@ -8398,7 +8404,22 @@
         ]
       },
       "branchProtectionRules": {
-        "nodes": []
+        "nodes": [
+          {
+            "pattern": "glsl-dependent",
+            "requiredApprovingReviewCount": 1,
+            "requiredStatusCheckContexts": [
+              "build"
+            ],
+            "isAdminEnforced": true
+          },
+          {
+            "pattern": "*",
+            "requiredApprovingReviewCount": null,
+            "requiredStatusCheckContexts": [],
+            "isAdminEnforced": false
+          }
+        ]
       },
       "w3cjson": {
         "text": "{\n  \"group\": [96877, 125519],\n  \"contacts\": [\"tidoust\", \"Kangz\", \"grorg\"],\n  \"repo-type\": [\"tests\"]\n}"
@@ -8713,7 +8734,14 @@
         ]
       },
       "branchProtectionRules": {
-        "nodes": []
+        "nodes": [
+          {
+            "pattern": "*",
+            "requiredApprovingReviewCount": null,
+            "requiredStatusCheckContexts": [],
+            "isAdminEnforced": false
+          }
+        ]
       },
       "w3cjson": {
         "text": "{\n  \"group\": [96877, 125519],\n  \"contacts\": [\"tidoust\", \"Kangz\", \"kdashg\"],\n  \"repo-type\": [\"cg-report\", \"rec-track\"]\n}\n"
@@ -11803,26 +11831,26 @@
         ]
       },
       "w3cjson": {
-        "text": " {\n    \"group\":      109735\n,   \"contacts\":   [\"dontcallmedom\", \"himorin\"]\n,   \"repo-type\":  \"rec-track\"\n}\n"
+        "text": " {\n    \"group\":      109735\n,   \"contacts\":   [\"himorin\"]\n,   \"repo-type\":  \"rec-track\"\n}\n"
       },
       "prpreviewjson": {
         "text": "{\n    \"src_file\": \"webxrlayers-1.bs\",\n    \"type\": \"bikeshed\",\n    \"params\": {\n        \"force\": 1\n    }\n}\n"
       },
       "autoPublish": {
-        "text": "name: Build, and publish spec to GitHub Pages and /TR/\n\non:\n  pull_request: {}\n  push:\n    branches: [main]\n    paths:\n      - 'images/**'\n      - 'webxrlayers-1.bs'\n\njobs:\n  main:\n    name: Build, Validate and Deploy\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v2\n      - uses: w3c/spec-prod@v2\n        with:\n          TOOLCHAIN: bikeshed\n          SOURCE: webxrlayers-1.bs\n          DESTINATION: index.html\n          GH_PAGES_BRANCH: gh-pages\n          W3C_ECHIDNA_TOKEN: ${{ secrets.W3C_TR_TOKEN }}\n          W3C_WG_DECISION_URL: https://lists.w3.org/Archives/Public/public-immersive-web-wg/2021Sep/0004.html\n          W3C_BUILD_OVERRIDE: |\n            status: WD\n\n# not set 'warning' to BUILD_FAIL_ON (not to cause error by bikeshed warning?)\n\n"
+        "text": "name: Build, and publish spec to GitHub Pages and /TR/\n\non:\n  pull_request: {}\n  push:\n    branches: [main]\n    paths:\n      - 'images/**'\n      - 'webxrlayers-1.bs'\n\njobs:\n  main:\n    name: Build, Validate and Deploy\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v7\n      - uses: w3c/spec-prod@v2\n        with:\n          TOOLCHAIN: bikeshed\n          SOURCE: webxrlayers-1.bs\n          DESTINATION: index.html\n          GH_PAGES_BRANCH: gh-pages\n          W3C_ECHIDNA_TOKEN: ${{ secrets.W3C_TR_TOKEN }}\n          W3C_WG_DECISION_URL: https://lists.w3.org/Archives/Public/public-immersive-web-wg/2021Sep/0004.html\n          W3C_BUILD_OVERRIDE: |\n            status: WD\n\n# not set 'warning' to BUILD_FAIL_ON (not to cause error by bikeshed warning?)\n\n"
       },
       "travis": null,
       "contributing": {
-        "text": "# Immersive Web Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Document License](https://www.w3.org/Consortium/Legal/copyright-documents). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
+        "text": "# Immersive Web Working Group\n\nContributions to this repository are intended to become part of Recommendation-track documents governed by the\n[W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy-20040205/) and\n[Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software). To make substantive contributions to specifications, you must either participate\nin the relevant W3C Working Group or make a non-member patent licensing commitment.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all \ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the \nfeature, you can remove yourself with the above syntax.\n"
       },
       "license": {
-        "text": "All documents in this Repository are licensed by contributors\nunder the \n[W3C Document License](https://www.w3.org/Consortium/Legal/copyright-documents).\n\n"
+        "text": "All documents in this Repository are licensed by contributors\nunder the \n[Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software).\n\n"
       },
       "codeOfConduct": {
         "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).\n"
       },
       "readme": {
-        "text": "# WebXR Layers Specification\n\n[![Build Status](https://travis-ci.org/immersive-web/layers.svg?branch=master)](https://travis-ci.org/immersive-web/layers)\n\nThe [WebXR Layers Specification](https://immersive-web.github.io/layers) exposes WebGL and media layers for WebXR\n\n## Taking Part\n\n1. Read the [code of conduct](https://www.w3.org/Consortium/cepc/cepc-20200716/)\n2. See if your issue is being discussed in the [issues](https://github.com/immersive-web/layers/issues), or if your idea is being discussed in the [proposals repo][cgproposals].\n3. We will be publishing the minutes from the bi-weekly calls.\n4. You can also join the working group to participate in these discussions.\n\n## Specifications\n\n* [Layers](https://immersive-web.github.io/layers): Layers specification for WebXR\n* [Explainer](explainer.md)\n\n\n### Related specifications\n* [WebXR Device API - Level 1][webxrspec]: Main specification for JavaScript API for accessing VR and AR devices, including sensors and head-mounted displays.\n\nSee also [list of all specifications with detailed status in Working Group and Community Group](https://www.w3.org/immersive-web/list_spec.html). \n\n## Relevant Links\n\n* [Immersive Web Community Group][webxrcg]\n* [Immersive Web Working Group Charter][wgcharter]\n\n## Communication\n\n* [Immersive Web Working Group][webxrwg]\n* [Immersive Web Community Group][webxrcg]\n* [GitHub issues list](https://github.com/immersive-web/layers/issues)\n* [`public-immersive-web` mailing list][publiclist]\n\n## Maintainers\n\nTo generate the spec document (`index.html`) from the `index.bs` [Bikeshed][bikeshed] document:\n\n```sh\nbikeshed spec\n```\n\n## Tests\n\nFor normative changes, a corresponding\n[web-platform-tests][wpt] PR is highly appreciated. Typically,\nboth PRs will be merged at the same time. Note that a test change that contradicts the spec should\nnot be merged before the corresponding spec change. If testing is not practical, please explain why\nand if appropriate [file a web-platform-tests issue][wptissue]\nto follow up later. Add the `type:untestable` or `type:missing-coverage` label as appropriate.\n\n\n## License\n\nPer the [`LICENSE.md`](LICENSE.md) file:\n\n> All documents in this Repository are licensed by contributors under the  [W3C Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software).\n\n# Summary\n\nFor more information about this proposal, please read the [explainer](explainer.md) and issues/PRs.\n\n<!-- Links -->\n[CoC]: https://immersive-web.github.io/homepage/code-of-conduct.html\n[webxrwg]: https://w3.org/immersive-web\n[cgproposals]: https://github.com/immersive-web/proposals\n[webxrspec]: https://immersive-web.github.io/webxr/\n[webxrcg]: https://www.w3.org/community/immersive-web/\n[wgcharter]: https://www.w3.org/2020/05/immersive-Web-wg-charter.html\n[webxrref]: https://immersive-web.github.io/webxr-reference/\n[publiclist]: https://lists.w3.org/Archives/Public/public-immersive-web-wg/\n[bikeshed]: https://github.com/tabatkins/bikeshed\n[wpt]: https://github.com/web-platform-tests/wpt\n[wptissue]: https://github.com/web-platform-tests/wpt/issues/new\n"
+        "text": "# WebXR Layers Specification\n\n[![Build Status](https://travis-ci.org/immersive-web/layers.svg?branch=master)](https://travis-ci.org/immersive-web/layers)\n\nThe [WebXR Layers Specification](https://immersive-web.github.io/layers) exposes WebGL and media layers for WebXR\n\n## Taking Part\n\n1. Read the [code of conduct](https://www.w3.org/policies/code-of-conduct/)\n2. See if your issue is being discussed in the [issues](https://github.com/immersive-web/layers/issues), or if your idea is being discussed in the [proposals repo][cgproposals].\n3. We will be publishing the minutes from the bi-weekly calls.\n4. You can also join the working group to participate in these discussions.\n\n## Specifications\n\n* [Layers](https://immersive-web.github.io/layers): Layers specification for WebXR\n* [Explainer](explainer.md)\n\n\n### Related specifications\n* [WebXR Device API][webxrspec]: Main specification for JavaScript API for accessing VR and AR devices, including sensors and head-mounted displays.\n\nSee also [list of all specifications with detailed status in Working Group and Community Group](https://www.w3.org/immersive-web/list_spec.html). \n\n## Relevant Links\n\n* [Immersive Web Community Group][webxrcg]\n* [Immersive Web Working Group Charter][wgcharter]\n\n## Communication\n\n* [Immersive Web Working Group][webxrwg]\n* [Immersive Web Community Group][webxrcg]\n* [GitHub issues list](https://github.com/immersive-web/layers/issues)\n* [`public-immersive-web` mailing list][publiclist]\n\n## Maintainers\n\nTo generate the spec document (`index.html`) from the `index.bs` [Bikeshed][bikeshed] document:\n\n```sh\nbikeshed spec\n```\n\n## Tests\n\nFor normative changes, a corresponding\n[web-platform-tests][wpt] PR is highly appreciated. Typically,\nboth PRs will be merged at the same time. Note that a test change that contradicts the spec should\nnot be merged before the corresponding spec change. If testing is not practical, please explain why\nand if appropriate [file a web-platform-tests issue][wptissue]\nto follow up later. Add the `type:untestable` or `type:missing-coverage` label as appropriate.\n\n\n## License\n\nPer the [`LICENSE.md`](LICENSE.md) file:\n\n> All documents in this Repository are licensed by contributors under the  [W3C Software and Document License](https://www.w3.org/Consortium/Legal/copyright-software).\n\n# Summary\n\nFor more information about this proposal, please read the [explainer](explainer.md) and issues/PRs.\n\n<!-- Links -->\n[webxrwg]: https://w3.org/immersive-web\n[cgproposals]: https://github.com/immersive-web/proposals\n[webxrspec]: https://immersive-web.github.io/webxr/\n[webxrcg]: https://www.w3.org/community/immersive-web/\n[wgcharter]: https://www.w3.org/groups/wg/immersive-web/charters/active/\n[webxrref]: https://immersive-web.github.io/webxr-reference/\n[publiclist]: https://lists.w3.org/Archives/Public/public-immersive-web-wg/\n[bikeshed]: https://github.com/tabatkins/bikeshed\n[wpt]: https://github.com/web-platform-tests/wpt\n[wptissue]: https://github.com/web-platform-tests/wpt/issues/new\n"
       },
       "prpreview": {
         "src_file": "webxrlayers-1.bs",
@@ -11834,7 +11862,6 @@
       "w3c": {
         "group": 109735,
         "contacts": [
-          "dontcallmedom",
           "himorin"
         ],
         "repo-type": [
@@ -18257,7 +18284,14 @@
         ]
       },
       "branchProtectionRules": {
-        "nodes": []
+        "nodes": [
+          {
+            "pattern": "main",
+            "requiredApprovingReviewCount": 2,
+            "requiredStatusCheckContexts": [],
+            "isAdminEnforced": false
+          }
+        ]
       },
       "w3cjson": {
         "text": "{\n  \"group\":      \"wg/fedid\",\n  \"contacts\":   [\"simoneonofri\", \"hlflanagan\", \"wseltzer\"],\n  \"repo-type\":  \"rec-track\"\n}\n"
@@ -18486,7 +18520,14 @@
         ]
       },
       "branchProtectionRules": {
-        "nodes": []
+        "nodes": [
+          {
+            "pattern": "main",
+            "requiredApprovingReviewCount": 1,
+            "requiredStatusCheckContexts": [],
+            "isAdminEnforced": false
+          }
+        ]
       },
       "w3cjson": {
         "text": " {\n    \"group\":      \"wg/fedid\"\n,   \"contacts\":   [\"simoneonofri\", \"hlflanagan\", \"wseltzer\"]\n,   \"repo-type\":  \"rec-track\"\n}\n"
@@ -163611,7 +163652,7 @@
         "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Conduct](https://www.w3.org/policies/code-of-conduct/).\n"
       },
       "readme": {
-        "text": "<div align=\"center\">\n\n<img src=\"images/wot-logo.png\" alt=\"Web of Things\" width=\"200\">\n\n# WoT Toolchain\n\n**LinkML-based generation of Web of Things artifacts.**\n\n[![CI](https://github.com/w3c/wot-thing-description-toolchain-tmp/actions/workflows/main.yaml/badge.svg?branch=main)](https://github.com/w3c/wot-thing-description-toolchain-tmp/actions/workflows/main.yaml)\n[![W3C WoT TD](https://img.shields.io/badge/W3C-WoT%20Thing%20Description-005A9C?logo=w3c&logoColor=white)](https://www.w3.org/WoT/)\n[![Python 3.14](https://img.shields.io/badge/python-3.14-3776AB?logo=python&logoColor=white)](https://www.python.org/)\n[![LinkML](https://img.shields.io/badge/schema--driven-LinkML-2D6A4F?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAFKADAAQAAAABAAAAFAAAAACy3fD9AAAD7UlEQVQ4EX1UYWwURRSeNzu3t3ctJwrt9VQiILGRSAzaaIJ/1CjVPyaKPWNMRf9pQqjJebXSFrbXohwHxDSEhEaDEotaAqap8QcxqVEjRn8QNQ0m0kCVQu9soRze3e7tzjxnNt3L2lbfj31v3/veN2/mzRsg/yHx/tw6XddbK9Vqr8V5FAhCWGNFg7GMAHrmSlfHH8ulwmLn3blc440ydiKFBCH0O0r5WXSwQCIS6UITImwBAltQiCmDuQemd+2aC3L8izAxkG2xOTGpBsM73PJnpmmKINi3HzVNNsHqXxKCP68J2l0w07/4sRphfG/uPscV+8OUpK72vnXeB/yfbtx38H7Xdt+NRoyOy50dvyssVZ/bTTPqctGnAetWZA2Zg5sfPHo0qmLLyYbBwYbm9440F7pSPzOg/ZZlDUhfWGE9wqpW106A/PjX7tQ55ay41W0XZ+YPI5HeRXLnoUORuXnr+PVS5WEVKuxOnyVAzxeLlaT6p7KSEBH4GDNix5TDE0TLCRuvrurP9vgupdUCUCVbXYSHLGp878d0oB9wAU+1jYxodDpfuocAXs+nXy/4AJmGxHWJQ2hmdSb7mk+W6M/1cTBue2Dl/NtjLZ+rvntypSf1pzSsbyan72ICRDNFuLgQW1CCEtfhOmMf2QiHGwdy+dVcbHRdnnpi1Y1N2+LjR6ZuRmXB5Fc/T57NFLrOBkaBrBBIi37A1xKgxQwjM18uz1oCT0u/cCDS/krTcLysG63y52Mfq7QQWASKKykSYckqa+XXQADEcaqha73pLk2IEzpAX8XsOHENI4ZMrsF8AxgYCLTM5EjJ7YLXMT8op8zLEFRecXmeJmL7HqlVyzmXKiQNAU4NLw2ZsZaF2BjFMJ0QiHfEc7m6IEA2Rm5aUxzEBBDS8BahmhxA9YPW9uOntzZ6OeaELvvADas4SfPpdIlSmMAKeTZASIkcViRQCfg8M8rjP9kWeUfT8WnBy+OfjD75zPub0onCmpbUJdO0vItdr5MhTvAFWaW3otwoYwT2Xn1zx5IXJZk8Wdne9m23a2svyias4VgZDWHxh5FbB9arFT3CS52dM/KEhhwLB5uz2RX1Gh1O4LoBGV96+l6dhLzc9vWngpNTug4kEqFNtgv31giVMbsnPcYQvpi1yYfq7CbMZHUhd1m11jxmhI36A7ZNviyXxFAsFD2jgN6hBzMaM/sfkdt/Q87npKaxUQPCv623CzcV5kIsFhNVbWOVO89pKAr5ns59wVxlLyFUTjXfl+f+bpWP6ePyzWvgCxdPk90jFPJA6Ve31LHxCzt32goflGUJgwA18OdmZrwrtbmpqXQymeTB+GL7H5S4pwvLuAY7AAAAAElFTkSuQmCC&logoColor=white)](https://linkml.io/)\n[![License: MIT](https://img.shields.io/badge/license-MIT-0B7A75)](https://opensource.org/licenses/MIT)\n\n</div>\n\nThe WoT Toolchain is a work area for moving Web of Things (WoT) resource generation to LinkML schema modules. It is intended to replace the manual maintenance of WoT resources — SHACL shapes, JSON Schema, JSON-LD context files, OWL ontologies — and the `index.html` specification generation currently handled by the [existing toolchain](https://github.com/w3c/wot-thing-description/tree/main/toolchain) in the [W3C WoT Thing Description repository](https://github.com/w3c/wot-thing-description).\n\nThe toolchain models WoT resources in LinkML and generates the related artifacts from the same schema modules. Its aim is to prevent drift between those resources and the generated HTML sections of the [WoT Thing Description specification](https://www.w3.org/TR/wot-thing-description/).\n\n> [!IMPORTANT]\n> This work area is in progress. The toolchain is intended to be integrated into the official [TD](https://github.com/w3c/wot-thing-description/) repository after review and Working Group consensus.\n\n## Usage\n\n### Requirements\n\n- Python 3.14, as declared in `pyproject.toml`;\n- [uv](https://docs.astral.sh/uv/); and\n- [Graphviz](https://graphviz.org/), required by `generate-wot-resources` to generate class-hierarchy diagrams for the index.html.\n\n```bash\ngit clone https://github.com/w3c/wot-thing-description-toolchain-tmp.git\ncd wot-thing-description-toolchain-tmp\nuv sync\nuv run pre-commit install\n```\n\n### Generating Artifacts\n\n`wotis` is the Python command-line interface one can use.\n\nTo generate the WoT resources run\n\n```bash\nuv run wotis generate-wot-resources -d\n```\n\nOptions:\n - `generate-wot-resources` generates the resource artifacts\n - `-d` additionally generates the ReSpec TD specification and its assertion CSV inventory\n\nRun `uv run wotis --help` to view all the available command and options.\n\nGenerated files are written under `resources/gens/`. Do not edit them directly.\n\nNote: The [Testing](#testing) section covers the checks and controls that can be performed.\n\n## How It Works\n\nThe source models are maintained manually by the WoT Working Group:\n\n- **WoT LinkML schema modules** — the root module [`td-linkml`](resources/schemas/thing_description.yaml) imports [`hctl-linkml`](resources/schemas/hypermedia.yaml), [`wotsec-linkml`](resources/schemas/wot_security.yaml), and [`jsonschema-linkml`](resources/schemas/jsonschema.yaml)\n- **Static ReSpec template and Jinja templates** — `resources/index.template.html` and `resources/jinja_templates/`\n- **TD/TM JSON snippets** — example snippets with `_snippets.yaml` metadata\n\nFrom these source models, the generation pipeline has two paths:\n\n1. **LinkML resource generation + postprocessors** takes the schema modules and produces the following WoT resource artifacts under `resources/gens/`:\n   - **JSON Schema** (`jsonschema/jsonschema.json`) — validation of TD and TM JSON representations\n   - **JSON-LD context** (`jsonldcontext/context.jsonld`) — TD JSON-LD terms, types, and containers\n   - **SHACL shapes** (`shacl/shapes.shacl.ttl`) — validation of RDF representations of TD and TM instances\n   - **OWL ontology** (`owl/ontology.owl.ttl`) — TD vocabulary terms and relationships\n   - **TypeScript definitions** (`typescript/`) — type definitions for [node-wot](https://github.com/eclipse-thingweb/node-wot)\n   - **Visualizations** (`visualization/`) — class-hierarchy diagrams\n\n2. **Snippet rendering + ReSpec specification generation**, enabled by `-d`, takes the schema modules, `resources/index.template.html`, Jinja templates, and the TD/TM JSON snippets. It produces:\n   - **Generated ReSpec `index.html`** — vocabulary tables, assertions, and rendered TD/TM example snippets\n   - **Assertion CSV inventory** (`assertions/`) — inventory of assertions in the TD specification\n\n![WoT Toolchain generation flow](images/wot-toolchain.svg)\n\nPostprocessors are custom Python functions in [`src/wotis/postprocessors/`](src/wotis/postprocessors/). They modify a raw LinkML generator output only where the generator cannot represent a TD requirement directly or needs a documented adjustment to produce the required TD representation. [`Known LinkML Gaps`](docs/known-linkml-gaps.md) records each known limitation and workaround.\n\n## Testing\n\nRun the complete checks after generating artifacts:\n\n```bash\nuv run pytest tests/ -v\n```\n\nThe checks include:\n\n- `tests/test_td_instance_gate.py`: validates valid and invalid TD/TM 2.0 test instances against the generated JSON Schema.\n- `tests/test_td_crosscheck.py`: compares generated-schema validation verdicts with the upstream W3C TD schemas manually specified in `resources/upstream/schemas/`.\n- `tests/test_golden_diff.py`: compares generated JSON Schema, JSON-LD context, and generated specification sections with machine-updatable snapshots in `tests/snapshots/`.\n- `tests/test_golden_form_structure.py` and `tests/test_spec_content_rendering.py`: check generated ReSpec structure and rendering behavior.\n- `tests/test_snippet_schema.py` and `tests/test_snippet_crossrefs.py`: validate snippet metadata, source files, and ReSpec cross-references.\n\n`resources/upstream/html/index.html` and `resources/upstream/assertions.csv` are upstream reference files used for TD specification and assertion-inventory comparison. `tests/snapshots/` contains this toolchain's generated-output snapshots; update them only with `uv run pytest tests/test_golden_diff.py --update-goldens` after reviewing an intended change.\n\nThe test suite has no accepted validation differences. A generated-schema rejection of a valid sample or a mismatch with the W3C reference schema fails the relevant test directly.\n\nSee [tests/README.md](tests/README.md) for the complete test inventory and the upstream reference files used by each check.\n\n## Development\n\nUseful commands:\n\n```bash\n# Generate resource artifacts only\nuv run wotis generate-wot-resources\n\n# Generate resource artifacts and the ReSpec TD specification\nuv run wotis generate-wot-resources -d\n\n# Run the complete test suite\nuv run pytest tests/ -v\n\n# Check linting\nuv run ruff check .\n```\n\nBefore changing a schema or generator, read the [modeling guidelines](docs/guidelines/index.md) for naming conventions, custom annotations, postprocessor patterns, and snippet authoring. For documented LinkML limitations and workarounds, see [`Known LinkML Gaps`](docs/known-linkml-gaps.md). Files under `resources/gens/` are generated outputs and should not be edited manually. Each postprocessor should document the LinkML limitation it addresses.\n\n## Current Status\n\nCurrent work focuses on JSON Schema parity, generated TD specification vocabulary tables, snippet validation, and assertion inventory comparison with the upstream TD repository. SHACL and OWL artifacts are generated; deeper automated consistency checks for those artifacts are not currently part of the test gates.\n\n## Contributing\n\nContributions, issue reports, and review are welcome. Keep each change focused, generate the affected artifacts, and run the relevant checks before opening a pull request. For schema and generated-output changes, describe the compatibility impact in the pull request.\n\n## License\n\nLicensed under the MIT License.\n"
+        "text": "<div align=\"center\">\n\n<img src=\"images/wot-logo.png\" alt=\"Web of Things\" width=\"200\">\n\n# WoT Toolchain\n\n**LinkML-based generation of Web of Things artifacts.**\n\n[![CI](https://github.com/w3c/wot-thing-description-toolchain-tmp/actions/workflows/main.yaml/badge.svg?branch=main)](https://github.com/w3c/wot-thing-description-toolchain-tmp/actions/workflows/main.yaml)\n[![W3C WoT TD](https://img.shields.io/badge/W3C-WoT%20Thing%20Description-005A9C?logo=w3c&logoColor=white)](https://www.w3.org/WoT/)\n[![Python 3.14](https://img.shields.io/badge/python-3.14-3776AB?logo=python&logoColor=white)](https://www.python.org/)\n[![LinkML](https://img.shields.io/badge/schema--driven-LinkML-2D6A4F?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAFKADAAQAAAABAAAAFAAAAACy3fD9AAAD7UlEQVQ4EX1UYWwURRSeNzu3t3ctJwrt9VQiILGRSAzaaIJ/1CjVPyaKPWNMRf9pQqjJebXSFrbXohwHxDSEhEaDEotaAqap8QcxqVEjRn8QNQ0m0kCVQu9soRze3e7tzjxnNt3L2lbfj31v3/veN2/mzRsg/yHx/tw6XddbK9Vqr8V5FAhCWGNFg7GMAHrmSlfHH8ulwmLn3blc440ydiKFBCH0O0r5WXSwQCIS6UITImwBAltQiCmDuQemd+2aC3L8izAxkG2xOTGpBsM73PJnpmmKINi3HzVNNsHqXxKCP68J2l0w07/4sRphfG/uPscV+8OUpK72vnXeB/yfbtx38H7Xdt+NRoyOy50dvyssVZ/bTTPqctGnAetWZA2Zg5sfPHo0qmLLyYbBwYbm9440F7pSPzOg/ZZlDUhfWGE9wqpW106A/PjX7tQ55ay41W0XZ+YPI5HeRXLnoUORuXnr+PVS5WEVKuxOnyVAzxeLlaT6p7KSEBH4GDNix5TDE0TLCRuvrurP9vgupdUCUCVbXYSHLGp878d0oB9wAU+1jYxodDpfuocAXs+nXy/4AJmGxHWJQ2hmdSb7mk+W6M/1cTBue2Dl/NtjLZ+rvntypSf1pzSsbyan72ICRDNFuLgQW1CCEtfhOmMf2QiHGwdy+dVcbHRdnnpi1Y1N2+LjR6ZuRmXB5Fc/T57NFLrOBkaBrBBIi37A1xKgxQwjM18uz1oCT0u/cCDS/krTcLysG63y52Mfq7QQWASKKykSYckqa+XXQADEcaqha73pLk2IEzpAX8XsOHENI4ZMrsF8AxgYCLTM5EjJ7YLXMT8op8zLEFRecXmeJmL7HqlVyzmXKiQNAU4NLw2ZsZaF2BjFMJ0QiHfEc7m6IEA2Rm5aUxzEBBDS8BahmhxA9YPW9uOntzZ6OeaELvvADas4SfPpdIlSmMAKeTZASIkcViRQCfg8M8rjP9kWeUfT8WnBy+OfjD75zPub0onCmpbUJdO0vItdr5MhTvAFWaW3otwoYwT2Xn1zx5IXJZk8Wdne9m23a2svyias4VgZDWHxh5FbB9arFT3CS52dM/KEhhwLB5uz2RX1Gh1O4LoBGV96+l6dhLzc9vWngpNTug4kEqFNtgv31giVMbsnPcYQvpi1yYfq7CbMZHUhd1m11jxmhI36A7ZNviyXxFAsFD2jgN6hBzMaM/sfkdt/Q87npKaxUQPCv623CzcV5kIsFhNVbWOVO89pKAr5ns59wVxlLyFUTjXfl+f+bpWP6ePyzWvgCxdPk90jFPJA6Ve31LHxCzt32goflGUJgwA18OdmZrwrtbmpqXQymeTB+GL7H5S4pwvLuAY7AAAAAElFTkSuQmCC&logoColor=white)](https://linkml.io/)\n[![License: MIT](https://img.shields.io/badge/license-MIT-0B7A75)](https://opensource.org/licenses/MIT)\n\n</div>\n\nThe WoT Toolchain is a work area for moving Web of Things (WoT) resource generation to LinkML schema modules. It is intended to replace the manual maintenance of WoT resources — SHACL shapes, JSON Schema, JSON-LD context files, OWL ontologies — and the `index.html` specification generation currently handled by the [existing toolchain](https://github.com/w3c/wot-thing-description/tree/main/toolchain) in the [W3C WoT Thing Description repository](https://github.com/w3c/wot-thing-description).\n\nThe toolchain models WoT resources in LinkML and generates the related artifacts from the same schema modules. Its aim is to prevent drift between those resources and the generated HTML sections of the [WoT Thing Description specification](https://www.w3.org/TR/wot-thing-description/).\n\n> [!IMPORTANT]\n> This work area is in progress. The toolchain is intended to be integrated into the official [TD](https://github.com/w3c/wot-thing-description/) repository after review and Working Group consensus.\n\n## Usage\n\n### Requirements\n\n- Python 3.14, as declared in `pyproject.toml`;\n- [uv](https://docs.astral.sh/uv/); and\n- [Graphviz](https://graphviz.org/), required by `generate-wot-resources` to generate class-hierarchy diagrams for the index.html.\n\n```bash\ngit clone https://github.com/w3c/wot-thing-description-toolchain-tmp.git\ncd wot-thing-description-toolchain-tmp\nuv sync\nuv run pre-commit install\n```\n\n### Generating Artifacts\n\n`wot-toolchain` is the Python command-line interface one can use.\n\nTo generate the WoT resources run\n\n```bash\nuv run wot-toolchain generate-wot-resources\n```\n\nIt runs the generators listed under `generators` in `wot-toolchain.yaml`. With `spec` listed, it also builds the ReSpec TD specification and its assertion CSV inventory.\n\nRun `uv run wot-toolchain --help` to view all the available command and options.\n\nGenerated files are written under `resources/gens/`. Do not edit them directly.\n\nNote: The [Testing](#testing) section covers the checks and controls that can be performed.\n\n## How It Works\n\nThe source models are maintained manually by the WoT Working Group:\n\n- **WoT LinkML schema modules** — the root module [`td-linkml`](resources/schemas/thing_description.yaml) imports [`hctl-linkml`](resources/schemas/hypermedia.yaml), [`wotsec-linkml`](resources/schemas/wot_security.yaml), and [`jsonschema-linkml`](resources/schemas/jsonschema.yaml)\n- **Static ReSpec template and Jinja templates** — `resources/index.template.html` and `resources/jinja_templates/`\n- **TD/TM JSON snippets** — example snippets with `_snippets.yaml` metadata\n\nFrom these source models, the generation pipeline has two paths:\n\n1. **LinkML resource generation + postprocessors** takes the schema modules and produces the following WoT resource artifacts under `resources/gens/`:\n   - **JSON Schema** (`jsonschema/jsonschema.json`) — validation of TD and TM JSON representations\n   - **JSON-LD context** (`jsonldcontext/context.jsonld`) — TD JSON-LD terms, types, and containers\n   - **SHACL shapes** (`shacl/shapes.shacl.ttl`) — validation of RDF representations of TD and TM instances\n   - **OWL ontology** (`owl/ontology.owl.ttl`) — TD vocabulary terms and relationships\n   - **TypeScript definitions** (`typescript/`) — type definitions for [node-wot](https://github.com/eclipse-thingweb/node-wot)\n   - **Visualizations** (`visualization/`) — class-hierarchy diagrams\n\n2. **Snippet rendering + ReSpec specification generation**, enabled by `-d`, takes the schema modules, `resources/index.template.html`, Jinja templates, and the TD/TM JSON snippets. It produces:\n   - **Generated ReSpec `index.html`** — vocabulary tables, assertions, and rendered TD/TM example snippets\n   - **Assertion CSV inventory** (`assertions/`) — inventory of assertions in the TD specification\n\n![WoT Toolchain generation flow](images/wot-toolchain.svg)\n\nPostprocessors are custom Python functions in [`src/wot_toolchain/artifacts/`](src/wot_toolchain/artifacts/). They modify a raw LinkML generator output only where the generator cannot represent a TD requirement directly or needs a documented adjustment to produce the required TD representation. [`Known LinkML Gaps`](docs/known-linkml-gaps.md) records each known limitation and workaround.\n\n## Testing\n\nRun the complete checks after generating artifacts:\n\n```bash\nuv run pytest tests/ -v\n```\n\nThe checks include:\n\n- `tests/conformance/test_valid_and_invalid_instances.py`: validates valid and invalid TD/TM 2.0 test instances against the generated JSON Schema.\n- `tests/conformance/test_json_schema_vs_upstream.py`: compares generated-schema validation verdicts with the upstream W3C TD schemas manually specified in `resources/upstream/schemas/`.\n- `tests/goldens/test_snapshots.py`: compares generated JSON Schema, JSON-LD context, and generated specification sections with machine-updatable snapshots in `tests/resources/snapshots/`.\n- `tests/goldens/test_spec_form_sections.py` and `tests/unit/spec/test_spec_content_html.py`: check generated ReSpec structure and rendering behavior.\n- `tests/unit/snippets/test_snippets_yaml.py` and `tests/unit/snippets/test_snippet_ids.py`: validate snippet metadata, source files, and ReSpec cross-references.\n\n`resources/upstream/html/index.html` and `resources/upstream/assertions.csv` are upstream reference files used for TD specification and assertion-inventory comparison. `tests/resources/snapshots/` contains this toolchain's generated-output snapshots; update them only with `uv run pytest tests/goldens/test_snapshots.py --update-goldens` after reviewing an intended change.\n\nThe test suite has no accepted validation differences. A generated-schema rejection of a valid sample or a mismatch with the W3C reference schema fails the relevant test directly.\n\nSee [tests/README.md](tests/README.md) for the complete test inventory and the upstream reference files used by each check.\n\n## Development\n\nUseful commands:\n\n```bash\n# Generate the resource artifacts and the ReSpec TD specification\nuv run wot-toolchain generate-wot-resources\n\n# Run the complete test suite\nuv run pytest tests/ -v\n\n# Check linting\nuv run ruff check .\n```\n\nBefore changing a schema or generator, read the [modeling guidelines](docs/guidelines/index.md) for naming conventions, custom annotations, postprocessor patterns, and snippet authoring. For documented LinkML limitations and workarounds, see [`Known LinkML Gaps`](docs/known-linkml-gaps.md). Files under `resources/gens/` are generated outputs and should not be edited manually. Each postprocessor should document the LinkML limitation it addresses.\n\n## Current Status\n\nCurrent work focuses on JSON Schema parity, generated TD specification vocabulary tables, snippet validation, and assertion inventory comparison with the upstream TD repository. SHACL and OWL artifacts are generated; deeper automated consistency checks for those artifacts are not currently part of the test gates.\n\n## Contributing\n\nContributions, issue reports, and review are welcome. Keep each change focused, generate the affected artifacts, and run the relevant checks before opening a pull request. For schema and generated-output changes, describe the compatibility impact in the pull request.\n\n## License\n\nLicensed under the MIT License.\n"
       }
     },
     {
@@ -168429,7 +168470,14 @@
         ]
       },
       "branchProtectionRules": {
-        "nodes": []
+        "nodes": [
+          {
+            "pattern": "main",
+            "requiredApprovingReviewCount": 1,
+            "requiredStatusCheckContexts": [],
+            "isAdminEnforced": false
+          }
+        ]
       },
       "w3cjson": null,
       "prpreviewjson": null,
@@ -169102,7 +169150,16 @@
         ]
       },
       "branchProtectionRules": {
-        "nodes": []
+        "nodes": [
+          {
+            "pattern": "main",
+            "requiredApprovingReviewCount": 1,
+            "requiredStatusCheckContexts": [
+              "build"
+            ],
+            "isAdminEnforced": true
+          }
+        ]
       },
       "w3cjson": null,
       "prpreviewjson": {
@@ -169918,7 +169975,14 @@
         "nodes": []
       },
       "branchProtectionRules": {
-        "nodes": []
+        "nodes": [
+          {
+            "pattern": "main",
+            "requiredApprovingReviewCount": null,
+            "requiredStatusCheckContexts": [],
+            "isAdminEnforced": true
+          }
+        ]
       },
       "w3cjson": {
         "text": "{\n  \"group\": 34270,\n  \"contacts\": [\n    \"ylafon\"\n  ],\n  \"policy\": \"restricted\",\n  \"repo-type\": \"tool\"\n}\n"
@@ -169997,7 +170061,14 @@
         ]
       },
       "branchProtectionRules": {
-        "nodes": []
+        "nodes": [
+          {
+            "pattern": "gh-pages",
+            "requiredApprovingReviewCount": null,
+            "requiredStatusCheckContexts": [],
+            "isAdminEnforced": true
+          }
+        ]
       },
       "w3cjson": null,
       "prpreviewjson": null,
@@ -170119,7 +170190,14 @@
         "nodes": []
       },
       "branchProtectionRules": {
-        "nodes": []
+        "nodes": [
+          {
+            "pattern": "gh-pages",
+            "requiredApprovingReviewCount": null,
+            "requiredStatusCheckContexts": [],
+            "isAdminEnforced": true
+          }
+        ]
       },
       "w3cjson": null,
       "prpreviewjson": null,
@@ -170246,7 +170324,14 @@
         ]
       },
       "branchProtectionRules": {
-        "nodes": []
+        "nodes": [
+          {
+            "pattern": "gh-pages",
+            "requiredApprovingReviewCount": null,
+            "requiredStatusCheckContexts": [],
+            "isAdminEnforced": true
+          }
+        ]
       },
       "w3cjson": null,
       "prpreviewjson": null,
@@ -170315,7 +170400,14 @@
         ]
       },
       "branchProtectionRules": {
-        "nodes": []
+        "nodes": [
+          {
+            "pattern": "gh-pages",
+            "requiredApprovingReviewCount": null,
+            "requiredStatusCheckContexts": [],
+            "isAdminEnforced": true
+          }
+        ]
       },
       "w3cjson": null,
       "prpreviewjson": null,
@@ -170814,7 +170906,14 @@
         ]
       },
       "branchProtectionRules": {
-        "nodes": []
+        "nodes": [
+          {
+            "pattern": "gh-pages",
+            "requiredApprovingReviewCount": null,
+            "requiredStatusCheckContexts": [],
+            "isAdminEnforced": true
+          }
+        ]
       },
       "w3cjson": null,
       "prpreviewjson": null,
@@ -171070,7 +171169,14 @@
         ]
       },
       "branchProtectionRules": {
-        "nodes": []
+        "nodes": [
+          {
+            "pattern": "gh-pages",
+            "requiredApprovingReviewCount": null,
+            "requiredStatusCheckContexts": [],
+            "isAdminEnforced": true
+          }
+        ]
       },
       "w3cjson": null,
       "prpreviewjson": null,
@@ -171398,7 +171504,14 @@
         ]
       },
       "branchProtectionRules": {
-        "nodes": []
+        "nodes": [
+          {
+            "pattern": "main",
+            "requiredApprovingReviewCount": 1,
+            "requiredStatusCheckContexts": [],
+            "isAdminEnforced": false
+          }
+        ]
       },
       "w3cjson": null,
       "prpreviewjson": {
@@ -171483,7 +171596,14 @@
         ]
       },
       "branchProtectionRules": {
-        "nodes": []
+        "nodes": [
+          {
+            "pattern": "gh-pages",
+            "requiredApprovingReviewCount": null,
+            "requiredStatusCheckContexts": [],
+            "isAdminEnforced": true
+          }
+        ]
       },
       "w3cjson": null,
       "prpreviewjson": null,
@@ -171633,7 +171753,14 @@
         ]
       },
       "branchProtectionRules": {
-        "nodes": []
+        "nodes": [
+          {
+            "pattern": "main",
+            "requiredApprovingReviewCount": null,
+            "requiredStatusCheckContexts": [],
+            "isAdminEnforced": true
+          }
+        ]
       },
       "w3cjson": null,
       "prpreviewjson": null,
@@ -171696,7 +171823,14 @@
         ]
       },
       "branchProtectionRules": {
-        "nodes": []
+        "nodes": [
+          {
+            "pattern": "main",
+            "requiredApprovingReviewCount": null,
+            "requiredStatusCheckContexts": [],
+            "isAdminEnforced": true
+          }
+        ]
       },
       "w3cjson": null,
       "prpreviewjson": null,
@@ -171980,7 +172114,14 @@
         ]
       },
       "branchProtectionRules": {
-        "nodes": []
+        "nodes": [
+          {
+            "pattern": "main",
+            "requiredApprovingReviewCount": null,
+            "requiredStatusCheckContexts": [],
+            "isAdminEnforced": true
+          }
+        ]
       },
       "w3cjson": null,
       "prpreviewjson": null,
@@ -172682,7 +172823,14 @@
         "nodes": []
       },
       "branchProtectionRules": {
-        "nodes": []
+        "nodes": [
+          {
+            "pattern": "gh-pages",
+            "requiredApprovingReviewCount": null,
+            "requiredStatusCheckContexts": [],
+            "isAdminEnforced": true
+          }
+        ]
       },
       "w3cjson": null,
       "prpreviewjson": null,
@@ -173154,7 +173302,14 @@
         ]
       },
       "branchProtectionRules": {
-        "nodes": []
+        "nodes": [
+          {
+            "pattern": "gh-pages",
+            "requiredApprovingReviewCount": null,
+            "requiredStatusCheckContexts": [],
+            "isAdminEnforced": true
+          }
+        ]
       },
       "w3cjson": null,
       "prpreviewjson": null,
@@ -173229,7 +173384,14 @@
         ]
       },
       "branchProtectionRules": {
-        "nodes": []
+        "nodes": [
+          {
+            "pattern": "main",
+            "requiredApprovingReviewCount": 1,
+            "requiredStatusCheckContexts": [],
+            "isAdminEnforced": false
+          }
+        ]
       },
       "w3cjson": null,
       "prpreviewjson": null,
@@ -173294,7 +173456,14 @@
         ]
       },
       "branchProtectionRules": {
-        "nodes": []
+        "nodes": [
+          {
+            "pattern": "gh-pages",
+            "requiredApprovingReviewCount": null,
+            "requiredStatusCheckContexts": [],
+            "isAdminEnforced": true
+          }
+        ]
       },
       "w3cjson": null,
       "prpreviewjson": null,
@@ -173365,7 +173534,14 @@
         ]
       },
       "branchProtectionRules": {
-        "nodes": []
+        "nodes": [
+          {
+            "pattern": "main",
+            "requiredApprovingReviewCount": null,
+            "requiredStatusCheckContexts": [],
+            "isAdminEnforced": true
+          }
+        ]
       },
       "w3cjson": null,
       "prpreviewjson": null,
@@ -173986,7 +174162,23 @@
         ]
       },
       "branchProtectionRules": {
-        "nodes": []
+        "nodes": [
+          {
+            "pattern": "main",
+            "requiredApprovingReviewCount": 1,
+            "requiredStatusCheckContexts": [
+              "asan",
+              "build (ubuntu-latest)",
+              "build (windows-latest)",
+              "tsan",
+              "ubsan",
+              "emscripten",
+              "lint",
+              "build (macos-15)"
+            ],
+            "isAdminEnforced": false
+          }
+        ]
       },
       "w3cjson": null,
       "prpreviewjson": null,
@@ -174461,7 +174653,14 @@
         "nodes": []
       },
       "branchProtectionRules": {
-        "nodes": []
+        "nodes": [
+          {
+            "pattern": "main",
+            "requiredApprovingReviewCount": 0,
+            "requiredStatusCheckContexts": [],
+            "isAdminEnforced": false
+          }
+        ]
       },
       "w3cjson": {
         "text": " {\n    \"group\":      [78073]\n,   \"contacts\":   [\"ericprud\"]\n,   \"repo-type\":  \"cg-report\"\n}\n"
@@ -175553,7 +175752,14 @@
         ]
       },
       "branchProtectionRules": {
-        "nodes": []
+        "nodes": [
+          {
+            "pattern": "main",
+            "requiredApprovingReviewCount": 1,
+            "requiredStatusCheckContexts": [],
+            "isAdminEnforced": false
+          }
+        ]
       },
       "w3cjson": {
         "text": " {\n    \"group\":      [78073]\n,   \"contacts\":   [\"ericprud\"]\n,   \"repo-type\":  \"cg-report\"\n}\n"
@@ -176857,7 +177063,14 @@
         ]
       },
       "branchProtectionRules": {
-        "nodes": []
+        "nodes": [
+          {
+            "pattern": "old",
+            "requiredApprovingReviewCount": 1,
+            "requiredStatusCheckContexts": [],
+            "isAdminEnforced": false
+          }
+        ]
       },
       "w3cjson": {
         "text": " {\n    \"group\":      [78073]\n,   \"contacts\":   [\"ericprud\"]\n,   \"repo-type\":  \"cg-report\"\n}\n"
@@ -177244,7 +177457,14 @@
         "nodes": []
       },
       "branchProtectionRules": {
-        "nodes": []
+        "nodes": [
+          {
+            "pattern": "main",
+            "requiredApprovingReviewCount": 0,
+            "requiredStatusCheckContexts": [],
+            "isAdminEnforced": false
+          }
+        ]
       },
       "w3cjson": null,
       "prpreviewjson": null,
@@ -178445,7 +178665,14 @@
         "nodes": []
       },
       "branchProtectionRules": {
-        "nodes": []
+        "nodes": [
+          {
+            "pattern": "main",
+            "requiredApprovingReviewCount": 1,
+            "requiredStatusCheckContexts": [],
+            "isAdminEnforced": false
+          }
+        ]
       },
       "w3cjson": {
         "text": " {\n    \"group\":      [78073]\n,   \"contacts\":   [\"ericprud\"]\n,   \"repo-type\":  \"cg-report\"\n}\n"
@@ -179642,7 +179869,32 @@
         ]
       },
       "branchProtectionRules": {
-        "nodes": []
+        "nodes": [
+          {
+            "pattern": "main",
+            "requiredApprovingReviewCount": 1,
+            "requiredStatusCheckContexts": [
+              "build (ubuntu-latest)",
+              "build (windows-latest)",
+              "emscripten",
+              "lint",
+              "sanitize (asan, debug)",
+              "sanitize (asan, release)",
+              "sanitize (ubsan, debug)",
+              "sanitize (ubsan, release)",
+              "wasm2c-memchecked",
+              "min-cmake",
+              "build (macos-latest)"
+            ],
+            "isAdminEnforced": false
+          },
+          {
+            "pattern": "rlbox",
+            "requiredApprovingReviewCount": null,
+            "requiredStatusCheckContexts": [],
+            "isAdminEnforced": false
+          }
+        ]
       },
       "w3cjson": null,
       "prpreviewjson": null,
@@ -182734,7 +182986,14 @@
         "nodes": []
       },
       "branchProtectionRules": {
-        "nodes": []
+        "nodes": [
+          {
+            "pattern": "main",
+            "requiredApprovingReviewCount": 0,
+            "requiredStatusCheckContexts": [],
+            "isAdminEnforced": false
+          }
+        ]
       },
       "w3cjson": null,
       "prpreviewjson": null,
@@ -182803,7 +183062,14 @@
         "nodes": []
       },
       "branchProtectionRules": {
-        "nodes": []
+        "nodes": [
+          {
+            "pattern": "main",
+            "requiredApprovingReviewCount": 1,
+            "requiredStatusCheckContexts": [],
+            "isAdminEnforced": false
+          }
+        ]
       },
       "w3cjson": null,
       "prpreviewjson": null,
@@ -183279,7 +183545,14 @@
         ]
       },
       "branchProtectionRules": {
-        "nodes": []
+        "nodes": [
+          {
+            "pattern": "main",
+            "requiredApprovingReviewCount": 1,
+            "requiredStatusCheckContexts": [],
+            "isAdminEnforced": false
+          }
+        ]
       },
       "w3cjson": null,
       "prpreviewjson": null,
@@ -187497,6 +187770,98 @@
         ],
         "repo-type": [
           "process"
+        ]
+      }
+    },
+    {
+      "id": "R_kgDOV4xv1A",
+      "name": "agent-interaction-measurement",
+      "owner": {
+        "login": "WICG"
+      },
+      "isArchived": false,
+      "homepageUrl": null,
+      "description": "Explainer for measuring agent-mediated web experiences: tool calls, interactions, and optional outcomes.",
+      "isPrivate": false,
+      "createdAt": "2026-11-23T13:44:01Z",
+      "labels": [
+        {
+          "name": "accessibility",
+          "color": "f143ab"
+        },
+        {
+          "name": "bug",
+          "color": "d73a4a"
+        },
+        {
+          "name": "documentation",
+          "color": "0075ca"
+        },
+        {
+          "name": "duplicate",
+          "color": "cfd3d7"
+        },
+        {
+          "name": "enhancement",
+          "color": "a2eeef"
+        },
+        {
+          "name": "good first issue",
+          "color": "7057ff"
+        },
+        {
+          "name": "help wanted",
+          "color": "008672"
+        },
+        {
+          "name": "invalid",
+          "color": "e4e669"
+        },
+        {
+          "name": "question",
+          "color": "d876e3"
+        },
+        {
+          "name": "wontfix",
+          "color": "ffffff"
+        }
+      ],
+      "defaultBranch": {
+        "name": "main"
+      },
+      "environments": {
+        "nodes": []
+      },
+      "branchProtectionRules": {
+        "nodes": []
+      },
+      "w3cjson": {
+        "text": " {\n    \"group\":      [80485]\n,   \"contacts\":   [\"yoavweiss\"]\n,   \"repo-type\":  \"cg-report\"\n}\n"
+      },
+      "prpreviewjson": null,
+      "autoPublish": null,
+      "travis": null,
+      "contributing": {
+        "text": "# Web Platform Incubator Community Group\n\nThis repository is being used for work in the W3C Web Platform Incubator Community Group, governed by the [W3C Community License\nAgreement (CLA)](http://www.w3.org/community/about/process/cla/). To make substantive contributions,\nyou must join the CG.\n\nIf you are not the sole contributor to a contribution (pull request), please identify all\ncontributors in the pull request comment.\n\nTo add a contributor (other than yourself, that's automatic), mark them one per line as follows:\n\n```\n+@github_username\n```\n\nIf you added a contributor by mistake, you can remove them in a comment with:\n\n```\n-@github_username\n```\n\nIf you are making a pull request on behalf of someone else but you had no part in designing the\nfeature, you can remove yourself with the above syntax.\n"
+      },
+      "license": {
+        "text": "Contributions to Specifications are made under the\n[W3C CLA](https://www.w3.org/community/about/process/cla/).\n\nContributions to other types of Reports in this Repository are licensed by Contributors\nunder the\n[W3C Software and Document License](https://www.w3.org/copyright/software-license/).\n\nContributions to Test Suites are made under the\n[W3C 3-clause BSD License](https://www.w3.org/copyright/3-clause-bsd-license-2008/)\n\n"
+      },
+      "codeOfConduct": {
+        "body": "# Code of Conduct\n\nAll documentation, code and communication under this repository are covered by the [W3C Code of Conduct](https://www.w3.org/policies/code-of-conduct/).\n"
+      },
+      "readme": {
+        "text": "# Agent Interaction Measurement\n\n**Author:** [Yoav Weiss](https://github.com/yoavweiss)\n\n**Status:** Personal draft for proposed incubation.\n\n**Discuss:** [Issues](https://github.com/yoavweiss/agent-interaction-measurement/issues) · [Pull requests](https://github.com/yoavweiss/agent-interaction-measurement/pulls)\n\n## Problem\n\nAgents combine tool calls, DOM actuation, and navigation to accomplish tasks on websites. Sites can instrument their own code, but cannot reliably tell who invoked it, where the agent spent its time, or whether the result was useful. A fast, successful tool callback does not necessarily mean a fast, successful user experience.\n\nDevelopers and RUM providers need a common way to measure these experiences without wrapping every tool or integrating separately with every agent provider. This would help them improve reliability and latency without accessing the user's conversation.\n\n## Use cases\n\n| Question | Proposed signal |\n| --- | --- |\n| Are my tools used, fast, and completing successfully? | `tool-call` timing and status. |\n| Are calls coming from an agent or page script? | Coarse caller attribution. |\n| Are tools understood and useful to the agent? | Optional tool assessments and same-origin correlation of repeated calls. |\n| Where is time spent across tools, DOM actuation, and user confirmations? | `agent-interaction` timing and steps. |\n| Did the experience go well for the user? | Optional `agent-outcome` feedback and assessments. |\n\n## Proposal\n\nAdd three new [PerformanceEntry](https://www.w3.org/TR/performance-timeline/#the-performanceentry-interface) types, that cover the above use cases.\n\n\n```js\nif (\"PerformanceObserver\" in globalThis) {\n  const observer = new PerformanceObserver(list => {\n    for (const entry of list.getEntries()) {\n      // Aggregate selected fields according to entry.entryType.\n    }\n  });\n\n  for (const type of [\"tool-call\", \"agent-interaction\", \"agent-outcome\"]) {\n    if (PerformanceObserver.supportedEntryTypes.includes(type)) {\n      observer.observe({ type, buffered: true });\n    }\n  }\n}\n```\n\nRUM providers could export `tool-call` and `agent-interaction` entries as [OpenTelemetry GenAI](https://github.com/open-telemetry/semantic-conventions-genai) `execute_tool` and `invoke_agent` spans, respectively.\n\n### 1. `tool-call`\n\nOne invocation of a [WebMCP](https://webmachinelearning.github.io/webmcp/) tool, observed by the document that registered it. The design should also cover tools from the [declarative API exploration](https://github.com/webmachinelearning/webmcp/blob/main/declarative-api-explainer.md), whose completion hooks still need definition.\n\n| Field | Meaning |\n| --- | --- |\n| `name` | Registered tool name. |\n| `startTime` | A timestamp indicating the initial tool callback. |\n| `duration` | Millisecond duration of the callback's run time. |\n| `toolOrigin` | Origin that registered the tool. |\n| `declarative` | Whether the tool was registered declaratively. |\n| `caller` | `\"browser-agent\"`, `\"extension\"`, `\"page\"`, or `\"unknown\"`, based on browser-established provenance. |\n| `status` | `\"success\"`, `\"error\"`, `\"invalid-input\"`, or `\"cancelled\"`. |\n| `interactionId` | Opaque origin-scoped interaction ID, or `null` when unavailable. |\n| `callerOrigin` (optional) | Calling origin, only for `caller: \"page\"`. |\n| `agentBrand` (optional) | Agent brand, only for `caller: \"browser-agent\"`. |\n| `model` (optional) | Model used by the agent. |\n| `agentToolAssessment` (optional) | `\"usable\"`, `\"problematic\"`, or `\"unknown\"`. |\n\n`success` means the callback fulfilled, not necessarily that its result was useful. `error` covers a throw or rejection without exposing exception details. `invalid-input` means an attempted invocation failed input validation before the callback ran.\n\nIf a callback requests user input after dispatch, its wall-clock duration includes that wait. Interaction steps can identify it separately. Cancellation produces one terminal measurement, even if the callback continues running.\n\n### 2. `agent-interaction`\n\nThis entry measures the time it takes for an agent to act on a user request, regardless of whether that request involved using WebMCP.\nAn interaction starts when the agent begins acting on a user request and ends when it finishes, asks a new conversational question, or gives up. A temporary confirmation or elicitation does not split the turn.\n\n| Field | Meaning |\n| --- | --- |\n| `name` | Empty string. |\n| `interactionId` | Opaque identifier scoped to the receiving origin. |\n| `startTime` | A timestamp indicating the start of the interaction. |\n| `duration` | Millisecond duration of the interaction. |\n| `steps` | Bounded, coarsened array of `{ type, startTime, duration }`. |\n\nCandidate step types are `\"tool-call\"`, `\"dom-actuation\"`, `\"navigation\"`, `\"thinking\"`, and `\"awaiting-user\"`. Parallel activity can overlap, so step durations are not necessarily additive.\n\nCalls within the same interaction share an origin-scoped ID that persists across same-origin navigations. New interactions get new IDs, and different origins receive different IDs. Timestamps remain relative to each document's `performance.timeOrigin`; their cross-document representation and precision remain open questions.\n\nEntries would be emitted when the interaction ends. Navigation or visibility-change snapshots could expose partial progress, but would need explicit partial/final semantics to prevent double-counting. Neither a same-origin navigation nor a visibility change ends the interaction by itself.\n\n### 3. `agent-outcome`\n\nOptional feedback associated with the receiving origin's interactions, distinct from tool execution status.\n\n| Field | Meaning |\n| --- | --- |\n| `name` | Empty string. |\n| `startTime` | A timestamp indicating the end of the latest interaction relevant to the outcome. |\n| `duration` | `0`. |\n| `interactionIds` | Bounded list of relevant IDs from that origin, including earlier same-origin documents. |\n| `userFeedback` | `\"positive\"`, `\"negative\"`, `\"none\"`, or `\"unknown\"`. |\n| `agentTaskAssessment` | `\"completed\"`, `\"completed with difficulties\"`, `\"abandoned\"`, `\"failed\"`, or `\"unknown\"`. |\n\nExposing the user feedback is optional and depends on user consent for sharing that data.\nThe agent's task assessment should be taken as a signal from the agent.\n\nGiven that feedback may arrive after navigation or page closure, we should explore a [Reporting API](https://www.w3.org/TR/reporting/) option/alternative to a `PerformanceEntry` for this.\n\n## Information needed from agents\n\n- **Execution:** Browser WebMCP hooks can supply dispatch, completion, cancellation, and known caller provenance.\n- **Interactions:** Cooperating agents must supply turn boundaries and processing/waiting states, integrated with browser actuation attribution.\n- **Assessments and feedback:** Only the agent or its feedback UI can supply these; they must be optional and safely scoped.\n\nBrowser-integrated agents could use internal interfaces. Extension agents need a browser-mediated bridge; injected page script alone may be indistinguishable from other page script. In-page agents may need a web-exposed API to provide interaction data. Those built on the [Prompt API](https://webmachinelearning.github.io/prompt-api/) may not: the browser runs their model and dispatches their tool calls, so it can observe both directly. Local agents external to the browser may need a WebDriver BiDi API that enables them to report this information.\n\n## Privacy and security\n\nThe performance entries described in this explainer expose new information.\nDetails about WebMCP tools callers, their origin, the agent and model and the agent's assessment of the tools are all novel information.\nSimilarly, the data exposed by agent-interaction and agent-outcome is novel as well.\n\nWhile this data is required for site operators to ship WebMCP tools at scale and improve them over time, it's data for [ancillary use](https://www.w3.org/TR/privacy-principles/#dfn-ancillary-use).\nWe should be careful about that data and make sure that it doesn't expose any unnecessary information about the user, and their goals. On top of that, we should make sure that no cross-site information is exposed.\n\nInformation derived from the user interactions with the agent (e.g. `userFeedback`) should be subject to user consent.\n\nAgent and model identity need particular care, as they pose a risk of increasing the fingerprinting surface (e.g. for users that use uncommon agents/models).\n\n## Considered alternatives\n\n### Backend communication with agent providers\nThe agent-bound information could also be reached through proprieary dashboards provided by the agent-providers.\nThat would require each site to establish a relationship with every agent provider in order to keep track of their agentic experiences. That seems suboptimal.\n\n### Developer tools only\nBrowsers could surface agent interactions in developer tools without exposing them to the web. That sidesteps most privacy concerns, allows richer detail, and [drew interest](https://github.com/w3c/tpac2026-breakouts/issues/63) for Prompt API observability at TPAC 2026.\nHowever, it only helps debug individual sessions, and doesn't tell sites how their tools perform for real users. It also doesn't help developers know how their sites perform with agents/models they are not explicitly testing.\n\n## Open questions\n\n1. How should agent turns relate to [Event Timing's `interactionId`](https://www.w3.org/TR/event-timing/#dom-performanceeventtiming-interactionid), UI updates, and human interventions? Should agentic interactions count for the purposes of [INP](https://developer.mozilla.org/en-US/docs/Glossary/Interaction_to_next_paint)? Tying tool calls to the UI updates they cause may need [AsyncContext](https://github.com/tc39/proposal-async-context)-style task attribution.\n2. What APIs should we provide to agent implementations (in-page or external to the browser) to enable them to provide the necessary data?\n3. How can we safely represent agentic interactions that span origins and sites? How can we define the interaction start and end at the origin's boundaries?\n4. Should `caller` distinguish page script invoking tools directly from a page's own Prompt API session invoking them?\n5. If built-in AI APIs like the Prompt API gain their own performance entries, as [discussed at TPAC 2026](https://github.com/w3c/tpac2026-breakouts/issues/63), should those share `interactionId`s with the agent interactions they're part of?\n\n## Background\n\nThis develops the [straw proposal in WebMCP issue #186](https://github.com/webmachinelearning/webmcp/issues/186#issuecomment-6369314489) and the [12 November 2026 WebML CG resolution](https://www.w3.org/2026/11/12-webmachinelearning-minutes.html#cad0) requesting an Agent Interaction Measurement explainer. The discussion includes [demand for RUM without tool wrappers](https://github.com/webmachinelearning/webmcp/issues/186#issuecomment-5510686305), [user-control concerns](https://github.com/webmachinelearning/webmcp/issues/186#issuecomment-4929491673), and [fingerprinting concerns](https://github.com/webmachinelearning/webmcp/issues/186#issuecomment-6413798793).\n\nThanks to participants in that discussion and in the [TPAC 2026 breakout on on-device AI observability](https://github.com/w3c/tpac2026-breakouts/issues/63), which explored the adjacent case of sites running their own inference through the Prompt API.\n"
+      },
+      "w3c": {
+        "group": [
+          80485
+        ],
+        "contacts": [
+          "yoavweiss"
+        ],
+        "repo-type": [
+          "cg-report"
         ]
       }
     },
@@ -214328,6 +214693,10 @@
         {
           "name": "admin",
           "fullName": "WICG/admin"
+        },
+        {
+          "name": "agent-interaction-measurement",
+          "fullName": "WICG/agent-interaction-measurement"
         },
         {
           "name": "agentic-webdriver-bidi",
